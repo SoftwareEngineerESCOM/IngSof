@@ -7,3 +7,4 @@ Este txt es para comprobar que sus equipos estan configurados y listos pra traba
 5. git push
 
 Arturo Rivas Rojas
+Plata García Josué
