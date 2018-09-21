@@ -1,0 +1,32 @@
+Manual de git
+NOTA:todo lo que este entre corchetes es un parametro que debes sustituir con todo y corchetes segun tus necesidades
+***********************************************************************************************************
+Configuración inicial
+
+1. git config --global user.name "[usuario]"
+2. git config --global user.email "[email]"
+
+Opcional para revisar si todo se guardo bien
+
+ git config --list
+
+***********************************************************************************************************
+Comandos de descarga
+
++ git clone [url] // descarga el repositorio en la carpeta donde se ejecute el comando
+
+***********************************************************************************************************
+SECUENCIA PARA TRABAJAR
+
+Comandos preparativos:
+estos comandos los ejecutaremos antes de empezar a trabajar, dentro de la carpeta del repositorio que clonamos.
+
+1. git checkout [branch_name] // cambia la rama en la que trabajas a la que indiques
+2. git pull // te aseguras de tener la version mas reciente, actualizas
+
+Comandos de operación:
+estos comando los ejecutaremos cuando hallamos terminado de modificar o agregar archivos a la carpeta del repositorio que clonamos.
+
+3. git add . //este comando agrega todos los archivos y cambios que hallamos hecho
+4. git commit -m "[comentario significativo]" //agrega un mensaje a nuestra actualización
+5. git push //este comando sube los cabios que hallamos hecho al repositorio remoto al que esta en linea y todos pueden ver nuestros cambios
