@@ -1,0 +1,33 @@
+package com.alumnos.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.alumnos.models.Alumno;
+import com.alumnos.models.Materia;
+import com.alumnos.repositories.AlumnoRepository;
+
+@RestController()   // This means that this class is a Controller
+@RequestMapping("/alumno")
+public class AlumnoController {
+	
+	@Autowired
+	private AlumnoRepository alumnoRepo;
+
+	@GetMapping("/crear")
+	public String crearMateria (@RequestParam String nombre, @RequestParam String boleta, @RequestParam Materia materia) {
+		Alumno alumno = new Alumno(nombre,boleta);
+		alumno.setMateria(materia);
+		alumnoRepo.save(alumno);
+		return "Saved";
+	}
+
+	@GetMapping("/buscar")
+	public @ResponseBody Iterable<Materias> buscarMaterias() {
+		return alumnoRepo.findAll();
+	}
+}

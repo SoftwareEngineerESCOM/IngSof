@@ -1,0 +1,5 @@
+package com.alumnos.repositories;
+
+public interface AlumoRepository {
+
+}
