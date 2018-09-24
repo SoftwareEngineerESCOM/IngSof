@@ -1,5 +1,0 @@
-package com.alumnos.repositories;
-
-public interface MateriaRepository {
-
-}

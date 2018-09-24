@@ -1,6 +1,0 @@
-package com.alumnos.controllers;
-
-@Controller
-public class MainController {
-
-}
