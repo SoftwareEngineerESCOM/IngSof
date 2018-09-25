@@ -1,5 +1,6 @@
 package com.alumnos.models;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.Entity;
@@ -19,11 +20,12 @@ public class Alumno {
     private String boleta;
  
 	@ManyToMany(mappedBy = "alumnos")
-    private Set<Materias> materias;
-    
+    private Set<Materias> materias = new HashSet<Materias>();
+	
 	public Alumno() {
 		super();
-	}	
+	}
+	
 	public Alumno(String nombre, String boleta) {
 		super();
 		this.nombre = nombre;

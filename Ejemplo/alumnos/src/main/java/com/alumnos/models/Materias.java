@@ -6,15 +6,20 @@ import java.util.Set;
 import javax.persistence.*;
 import javax.persistence.ManyToMany;
 
+import org.hibernate.annotations.NaturalId;
+
+
 @Entity
 @Table(name="materia")
 public class Materias implements Serializable {
 
 	private static final long serialVersionUID = -3009157732242241606L;
+
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
     private String grupo;
+    @NaturalId
     private String nombre;
     
     @ManyToMany(cascade = CascadeType.ALL)
@@ -22,17 +27,13 @@ public class Materias implements Serializable {
     private Set<Alumno> alumnos;
        
     public Materias() {
-    	super();
-    }
+		super();
+	}
+    
 	public Materias(String nombre, String grupo) {
 		super();
 		this.nombre = nombre;
 		this.grupo = grupo;
-	}
-	public Materias(String[] datos) {
-		super();
-		this.nombre = datos[0];
-		this.grupo = datos[1];
 	}
 	public Materias(String nombre, String grupo,Set<Alumno> alumnos) {
 		super();
@@ -61,8 +62,14 @@ public class Materias implements Serializable {
         return alumnos;
     }
 
-    public void setAlumnos(Set<Alumno> alumnos) {
-        this.alumnos = alumnos;
+    public void setAlumnos(Alumno alumnos) {
+        this.alumnos.add(alumnos);
     }
-	    	
+
+	@Override
+	public String toString() {
+		return "{\"id\":" + id + ", \"nombre\" :" +" \" "+nombre+" \" "+"}";
+		//Este string es por conveniencia, debido a que nos ayuda a la hora de la creación de nuestro JSON que responderemos en alguna llamada.
+	}
+		    	
 }
