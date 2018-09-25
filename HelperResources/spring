@@ -1,0 +1,245 @@
+#!/bin/bash
+
+# Absolute path to this script, e.g. /home/user/bin/foo.sh
+SCRIPT=$(readlink -f "$0")
+# Absolute path this script is in, thus /home/user/bin
+SCRIPTPATH=$(dirname "$SCRIPT")
+
+springTemplatesDir="$SCRIPTPATH/springTemplates"
+
+function trim() {
+    local var="$*"
+    # remove leading whitespace characters
+    var="${var#"${var%%[![:space:]]*}"}"
+    # remove trailing whitespace characters
+    var="${var%"${var##*[![:space:]]}"}"   
+    echo -n "$var"
+}
+
+function getGroupId() {
+    tag=$(sed -n '/<groupId>/,/<\/groupId>/p; /<\/groupId>/q' pom.xml)
+    tag=$(trim $tag)
+    groupId="${tag//<groupId>/}"
+    groupId="${groupId//<\/groupId>/}"
+    echo $groupId
+}
+
+function getGroup() {
+    groupId=$1
+    group="${groupId//\./\/}"
+    echo $group
+}
+
+function resourceCreator() {
+    resourceName=$1
+    TYPE=$2
+
+    groupId=$(getGroupId)
+    group=$(getGroup $groupId)
+    package="${groupId}.${resourceName}"
+
+    directory="src/main/java/${group}/${resourceName}"
+    empty=""
+    className="${resourceName^}${TYPE}"
+    className="${className/Model/$empty}"
+    resourcePath="${directory}/${className}.java"
+    className="${className/Repository/$empty}"
+    
+
+    if ! [ -d "${directory}" ]; then
+        mkdir "${directory}"
+    fi
+
+    # if there is no file
+    if ! [ -f "${resourcePath}" ]; then
+        cp -R "${springTemplatesDir}/${TYPE}Template.java" "${resourcePath}"
+
+        sed -i -e "s/${TYPE}Template/${className}/g" "${resourcePath}"
+
+        className="${className/Service/$empty}"
+        className="${className/RestController/$empty}"
+        className="${className/Controller/$empty}"
+
+        sed -i -e "s/ServiceT/${className}/g" "${resourcePath}"
+        sed -i -e "s/serviceT/${className,}/g" "${resourcePath}"
+
+        sed -i -e "s/package com\.san/package ${package}/g" "${resourcePath}"
+        sed -i -e "s/home/${resourceName}/g" "${resourcePath}"
+        sed -i -e "s/Object/${resourceName^}/g" "${resourcePath}"
+        sed -i -e "s/object/${resourceName}/g" "${resourcePath}"
+        echo "${TYPE} created."
+    else
+        echo "${TYPE} already exists."
+    fi
+}
+
+function createModel() {
+    resourceName=$1
+    resourceCreator $resourceName "Model"
+}
+
+# this variable -> $? stores the state returned from the latest called function
+function createController() {
+    resourceName=$1
+    resourceCreator $resourceName "Controller"
+}
+
+function createRestController() {
+    resourceName=$1
+    resourceCreator $resourceName "RestController"
+}
+
+function createService() {
+    resourceName=$1
+    resourceCreator $resourceName "Service"
+}
+
+function createRepository() {
+    resourceName=$1
+    resourceCreator $resourceName "Repository"
+}
+
+function createView() {
+    resourceName=$1
+    viewName=$2
+    createdFromResource=$3
+    viewDir="src/main/webapp/views/${resourceName}"
+
+    if ! [ -d "$viewDir" ]; then
+        mkdir $viewDir
+    fi
+
+    if ! [ -f "${viewDir}/${viewName}.jsp" ]; then
+
+        cp -R "${springTemplatesDir}/viewTemplate.jsp" "${viewDir}/${viewName}.jsp"
+        
+        echo "View created."
+
+        if [ "$createdFromResource" == 0 ]; then
+            createController $resourceName
+            createService $resourceName
+            createModel $resourceName
+            createRepository $resourceName
+        fi
+
+    else
+        echo "View already exists."
+    fi
+}
+
+function createServiceModel() {
+    resourceName=$1
+
+    createService $resourceName
+
+    createModel $resourceName
+}
+
+function createResource() {
+    resourceName=$1
+    
+    createController $resourceName
+    
+    createServiceModel $resourceName
+
+    createRepository $resourceName
+
+    createView $resourceName "index" 1
+
+    echo "Done"
+}
+
+function createRestResource() {
+    resourceName=$1
+    
+    createRestController $resourceName
+    
+    createServiceModel $resourceName
+
+    createRepository $resourceName
+
+    echo "Done"
+}
+
+if [ "$1" == "example" ]; then
+    # if there is directory and not override option
+    if [ -d "$1" ] && [ "$2" != "ov" ]; then
+        echo "Directory already exists"
+    else
+        cp -TR "${springTemplatesDir}/example" $1
+        echo "Done, check this example"
+    fi
+fi
+
+if [ "$1" == "view" ]; then
+    resourceName=$2
+    viewName=$3
+    createView $resourceName $viewName 0
+fi
+
+if [ "$1" == "res" ]; then
+    resourceName=$2
+    createResource $resourceName
+fi
+
+if [ "$1" == "rest" ]; then
+    resourceName=$2
+    createRestResource $resourceName
+fi
+
+if [ "$1" == "service" ]; then
+    resourceName=$2
+    createService $resourceName
+fi
+
+if [ "$1" == "repo" ]; then
+    resourceName=$2
+    createRepository $resourceName
+fi
+
+if [ "$1" == "new" ]; then
+    
+    if [ -d "$2" ] && [ "$4" != "ov" ]; then
+        echo "Directory already exists"
+    else
+        groupId=$3
+        # code to replace all ocurrences of dots with slashes
+        group="${groupId//\./\/}"
+        javasrc="${2}/src/main/java/${group}"
+        
+        # -p option to create all folders needed
+        mkdir -p "${javasrc}/greeting"
+        mkdir -p "${javasrc}/config"
+        mkdir -p "${2}/src/main/resources"
+
+        # -TR to treat the contents as normal file not directory, and override
+        cp -TR "${springTemplatesDir}/example/src/main/resources/application.properties" "${2}/src/main/resources/application.properties"
+        cp -TR "${springTemplatesDir}/example/pom.xml" "${2}/pom.xml"
+        cp -TR "${springTemplatesDir}/example/src/main/webapp" "${2}/src/main/webapp"
+
+        cp -TR "${springTemplatesDir}/MainTemplate.java" "${javasrc}/Main.java"
+        cp -TR "${springTemplatesDir}/GreetingController.java" "${javasrc}/greeting/GreetingController.java"
+        cp -TR "${springTemplatesDir}/SpringConfigTemplate.java" "${javasrc}/config/SpringConfig.java"
+
+        # code used to replace string1 with string2 in a file
+        sed -i -e "s/example/${2}/g" "${2}/pom.xml"
+        sed -i -e "s/com.san/${groupId}/g" "${2}/pom.xml"
+
+        sed -i -e "s/package com\.san/package ${groupId}/g" "${javasrc}/Main.java"
+        sed -i -e "s/package com\.san/package ${groupId}/g" "${javasrc}/greeting/GreetingController.java"
+        sed -i -e "s/package com\.san/package ${groupId}/g" "${javasrc}/config/SpringConfig.java"
+
+        sed -i -e "s/MainTemplate/Main/g" "${javasrc}/Main.java"
+        sed -i -e "s/SpringConfigTemplate/SpringConfig/g" "${javasrc}/config/SpringConfig.java"
+
+        echo "Done, build something amazing!"
+    fi
+fi
+
+if [ "$1" == "run" ]; then
+    if [ "$2" == "jar" ]; then
+        java -jar target/*.jar
+    else
+        mvn spring-boot:run
+    fi
+fi
