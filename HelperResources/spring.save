@@ -1,6 +1,6 @@
 #!/bin/bash
 
-springTemplatesDir="/home/davidjchavez/ProgramFiles/Scripts/springTemplates"
+springTemplatesDir="/home/san/ProgramFiles/Scripts/spri"
 
 function trim() {
     local var="$*"
