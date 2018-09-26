@@ -3,7 +3,7 @@
   <bpmn:collaboration id="Collaboration_0ca5wyq">
     <bpmn:participant id="Participant_1ok4jfs" name="Departamento de innovación curricular" processRef="Process_1upysz9" />
     <bpmn:participant id="Participant_0386hu4" name="Departamento de innovación educativa" processRef="Process_1owtj7m" />
-    <bpmn:messageFlow id="MessageFlow_1f3u1d6" name="Paquete de unidad de aprendizaje" sourceRef="Participant_0386hu4" targetRef="StartEvent_0ugu9y5" />
+    <bpmn:messageFlow id="MessageFlow_1f3u1d6" name="Enviar paquete de unidad de aprendizaje para revisión" sourceRef="Participant_0386hu4" targetRef="StartEvent_0ugu9y5" />
     <bpmn:messageFlow id="MessageFlow_1xfd8sv" sourceRef="Task_0iyh22k" targetRef="Participant_0386hu4" />
   </bpmn:collaboration>
   <bpmn:process id="Process_1upysz9" isExecutable="false">
@@ -136,7 +136,7 @@
         <di:waypoint x="146" y="1164" />
         <di:waypoint x="146" y="1310" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="164" y="1178" width="58" height="40" />
+          <dc:Bounds x="148" y="1178" width="90" height="53" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="StartEvent_1jpqabp_di" bpmnElement="StartEvent_0ugu9y5">
