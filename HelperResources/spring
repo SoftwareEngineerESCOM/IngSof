@@ -1,6 +1,15 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 springTemplatesDir="/home/davidjchavez/ProgramFiles/Scripts/springTemplates"
+=======
+# Absolute path to this script, e.g. /home/user/bin/foo.sh
+SCRIPT=$(readlink -f "$0")
+# Absolute path this script is in, thus /home/user/bin
+SCRIPTPATH=$(dirname "$SCRIPT")
+
+springTemplatesDir="$SCRIPTPATH/springTemplates"
+>>>>>>> bf94d59687d50ea698865b4e7f5b35425803e17c
 
 function trim() {
     local var="$*"
