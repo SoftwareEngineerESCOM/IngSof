@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {1.2.1}Resumen}{7}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Elementos del proceso}{7}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Descripci\IeC {\'o}n de Tareas}{7}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}PROC-04 Correcci\IeC {\'o}n de una Unidad de Aprendizaje}{9}{section.1.3}
+\contentsline {section}{\numberline {1.3}PROC-04 Elaboraci\IeC {\'o}n del Plan de Estudios}{9}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Resumen}{9}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Elementos del proceso}{9}{subsection.1.3.2}
 \contentsline {subsection}{\numberline {1.3.3}Descripci\IeC {\'o}n de Tareas}{9}{subsection.1.3.3}

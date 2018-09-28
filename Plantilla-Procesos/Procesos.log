@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.16)  25 SEP 2018 00:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.16)  27 SEP 2018 21:20
 entering extended mode
 **./Procesos.tex
 (Procesos.tex
@@ -495,7 +495,7 @@ code.tex
 )))) (Procesos.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
- (C1-DP/MP/CreacionPA.aux) (C1-DP/SP1/CreacionUA.aux) (C1-DP/SP4/CorreccionesUA
+ (C1-DP/MP/CreacionPA.aux) (C1-DP/SP1/CreacionUA.aux) (C1-DP/SP4/PlanDeEstudios
 .aux))
 \openout1 = `Procesos.aux'.
 
@@ -1010,10 +1010,10 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 18.
  [8 <./C1-DP/SP1/IG-SP1/BPMN-02.png>]
-\openout2 = `C1-DP/SP4/CorreccionesUA.aux'.
+\openout2 = `C1-DP/SP4/PlanDeEstudios.aux'.
 
 
-(C1-DP/SP4/CorreccionesUA.tex
+(C1-DP/SP4/PlanDeEstudios.tex
 File: IG-GRAL/bpmn.png Graphic file (type png)
 <use IG-GRAL/bpmn.png>
 Package pdftex.def Info: IG-GRAL/bpmn.png  used on input line 1.
@@ -1079,12 +1079,12 @@ Package babel Info: Redefining spanish shorthand "?
 
 LaTeX Warning: Hyper reference `' on page 9 undefined on input line 15.
 
-<C1-DP/SP4/Image/CorreccionBPMN.png, id=132, 759.83875pt x 403.5075pt>
-File: C1-DP/SP4/Image/CorreccionBPMN.png Graphic file (type png)
-<use C1-DP/SP4/Image/CorreccionBPMN.png>
-Package pdftex.def Info: C1-DP/SP4/Image/CorreccionBPMN.png  used on input line
- 18.
-(pdftex.def)             Requested size: 475.45825pt x 252.49326pt.
+<C1-DP/SP4/Image/PlanDeEstudiosBPMN.png, id=132, 1940.24875pt x 575.14874pt>
+File: C1-DP/SP4/Image/PlanDeEstudiosBPMN.png Graphic file (type png)
+<use C1-DP/SP4/Image/PlanDeEstudiosBPMN.png>
+Package pdftex.def Info: C1-DP/SP4/Image/PlanDeEstudiosBPMN.png  used on input 
+line 18.
+(pdftex.def)             Requested size: 475.45825pt x 140.93462pt.
 )
 File: IG-GRAL/headerInp.JPG Graphic file (type jpg)
 <use IG-GRAL/headerInp.JPG>
@@ -1117,36 +1117,7 @@ Package babel Info: Redefining spanish shorthand "?
  [9
 
 
-]
-File: IG-GRAL/headerPar.JPG Graphic file (type jpg)
-<use IG-GRAL/headerPar.JPG>
-Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 21.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 21.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 21.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 21.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 21.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 21.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 21.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 21.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 21.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 21.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 21.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 21.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 21.
- [10 <./C1-DP/SP4/Image/CorreccionBPMN.png>]
+ <./C1-DP/SP4/Image/PlanDeEstudiosBPMN.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
  (Procesos.aux
@@ -1154,24 +1125,21 @@ LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 
 (C1-DP/MP/CreacionPA.aux) (C1-DP/SP1/CreacionUA.aux)
-(C1-DP/SP4/CorreccionesUA.aux))
+(C1-DP/SP4/PlanDeEstudios.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `Procesos.out' has not changed.
-(rerunfilecheck)             Checksum: 92FF54ED382B363539ED4E2B99387C3F;963.
+(rerunfilecheck)             Checksum: 5492500182AA740FC9E9C1BFAE1F8B90;956.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 10004 strings out of 494891
- 150331 string characters out of 3178613
- 260636 words of memory out of 3000000
+ 10003 strings out of 494891
+ 150344 string characters out of 3178613
+ 260631 words of memory out of 3000000
  13379 multiletter control sequences out of 15000+200000
  15168 words of font info for 57 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
@@ -1187,9 +1155,9 @@ pk/ljfour/public/cmbright/dpi864/cmbr10.pk> </home/arturo/.miktex/texmfs/data/f
 onts/pk/ljfour/public/cmbright/dpi720/cmbr10.pk> </home/arturo/.miktex/texmfs/d
 ata/fonts/pk/ljfour/public/cmbright/dpi864/cmbr17.pk></home/arturo/.miktex/texm
 fs/install/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on Procesos.pdf (10 pages, 295428 bytes).
+Output written on Procesos.pdf (9 pages, 321183 bytes).
 PDF statistics:
- 424 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
+ 423 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
  150 words of extra memory for PDF output out of 10000 (max. 10000000)
 
