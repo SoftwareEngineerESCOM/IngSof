@@ -5,22 +5,27 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { IndexComponent } from './index/index.component';
+
+import {SharedModule} from './modules/shared/shared.module';
 
 const routes: Routes = [
-  {path: 'Inicio', component: AppComponent},
-  {path: '', redirectTo: '/Inicio', pathMatch: 'full'},
+  {path: 'Index', component: IndexComponent},
+  {path: '', redirectTo: '/Index', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    NgbModule.forRoot()
+    NgbModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
