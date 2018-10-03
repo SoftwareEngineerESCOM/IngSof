@@ -6,28 +6,36 @@
 %	B - Baja
 %	MB - Muy Baja
 
+%El  sistema  debe  permitir  el  registro,  consulta  y  actualizaci ́on  de  los veh ́ıculos con los que cuenta la empresa con el fin de hacer una correcta planeaci ́on de entregas
+
 \begin{table}[htbp!]
 	\begin{requerimientos}
-		\FRitem{RU}{}{}{}
-		\FRitem{RU}{}{}{}
-		\FRitem{RU}{}{}{}
-		\FRitem{RU}{}{}{}
-		\FRitem{...}{...}{...}{...}
+		\FRitem{RF}{Formatos para la unidad de aprendizaje}{El sistema debe contar con los formatos:
+            \begin{itemize}
+            	\item Descripción general de la asignatura.
+            	\item Programa de la asignatura.
+            \end{itemize}}{MA}
+		\FRitem{RF}{Vista preliminar}{El sistema debe permitir la visualización previa del llenado de los formatos con el fin de mejorar y agilizar la supervisión de los mismos}{A}
+		\FRitem{RF}{Guardado de la información}{El sistema debe permitir el guardado total o parcial de los formatos}{A}
+		\FRitem{RF}{Exportación de formatos}{El sistema debe permitir la descarga de los documentos en formato PDF con el fin de preservar la información}{A}
+		\FRitem{RF}{Aprobación de formatos}{El sistema debe contar con un mecanismo de aprobación de los formatos cuando cuando éstos estén correctos}{MA}
+		\FRitem{RF}{Notificaciones}{El sistema debe generar notificaciones sobre el estado actual del los formatos}{A}
 	\end{requerimientos}
-    \caption{Requerimientos funcionales del sistema.}
-    \label{tbl:}
+    \caption{Requerimientos funcionales del sistema para la creación de una Unidad de Aprendizaje}
+    \label{tbl:RFUA}
 \end{table}
 
 % -------------- TABLA PARA REQUERIMIENTOS DEL USUARIO ---------------- % 
 
 \begin{table}[htbp!]
 	\begin{requerimientosU}
-		\URitem{RU}{}{}
-		\URitem{RU}{}{}
-		\URitem{RU}{}{}
-		\URitem{RU}{}{}
-		\URitem{...}{...}{...}
+		\URitem{RU}{Registro de Unidades de Aprendizaje}{El usuario requiere un mecanismo a través del cual pueda hacer el registro de una unidad de aprendizaje}
+		\URitem{RU}{Modificación de Unidad de Aprendizaje}{El usuario requiere un mecanismo que le permita hacer modificaciones a la Unidad de Aprendizaje en caso de que ésta tenga que ajustarse}
+		\URitem{RU}{Consulta de Unidad de Aprendizaje}{El usuario requiere un mecanismo que le permita consultar la vista previa de la creación de la unidad de aprendizaje antes de enviarla a revisión}
+		\URitem{RU}{Guardado de la información}{El usuario requiere un mecanismo que le permita guardar el estado actual de la unidad de aprendizaje con la finalidad de que pueda continuar su labor hasta que ésta sea finalizada}
+		\URitem{RU}{Aprobación de formatos}{El usuario requiere un mecanismo que le permita aprobar los formatos cuando éstos hayan sido finalizados y esten correctos}
+		\URitem{RU}{Notificaciones}{El usuario requiere un mecanismo que le permita ser notificado acerca del estado actual de los formatos}
 	\end{requerimientosU}
-    \caption{Requerimientos del usuario}
+    \caption{Requerimientos del usuario para la creación de una Unidad de Aprendizaje}
     \label{tbl:}
 \end{table}
