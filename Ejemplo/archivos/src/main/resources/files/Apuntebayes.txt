@@ -1,0 +1,21 @@
+Calculo de bayes.
+
+1.- Ingresar las clases y los patrones de cada clase.
+
+2.- Obtener centroide con la formula de sumatoria de cada una de las clases
+
+3.- Caluclar discriminante
+
+
+Clasificadores basados en métricas.
+
+Distancia City blick r = 1 Magnitud de un punto.
+
+Distancia Euclidana. r = 2 Raíz cuadrada normal.
+
+Distancia Infinito r = INF 
+
+Diseñar un clasificador baado en metricas.
+
+
+
