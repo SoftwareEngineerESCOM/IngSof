@@ -1,0 +1,62 @@
+body{
+  background-color: #4FC3F7 ;
+  width: 100%; 
+  height: 100%;
+}
+
+html{
+    position: relative;
+    height: 100%;
+}
+
+.imagen{
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  top: -30px;
+  left: 0px;
+  right: -40px;
+  position: fixed;
+  background-image: url(../img/a.jpg);
+  background-size: 100%;
+  background-position: 100%;
+}
+
+.centro{
+  position: absolute;
+  text-align: center; 
+  padding: 5px 500px 100px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #34495E;
+}
+
+.centro1{
+  padding: 10px 170px 100px;
+}
+.derecha { float: right; }
+.izquierda { float: left; }
+.row{
+    position: absolute;
+    width: 100%; /*largo*/
+    height: 90px; /*altura*/
+    margin: 10px auto;
+    padding: 30px 100px 20px;
+    text-align: center;
+    background: #616A6B;
+}
+
+.row2{
+    position: absolute;
+    width: 100%; /*largo*/
+    height: 90px; /*altura*/
+    padding: 30px00px 20px;
+    text-align: center;
+    background: #616A6B;
+}
+
+.img{
+  padding: 100px 550px 150px;
+}
+
+.imgs{
+  padding: 350px 500px 150px;
+}
