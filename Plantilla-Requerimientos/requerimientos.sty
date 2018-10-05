@@ -67,19 +67,19 @@
 
 % ---------- PARA UN ITEM DE REQ. FUNCIONAL -------------------- %
 
-\newcommand{\FRitem}[4]{\par{#1} & {#2} & {#3} & {#4}\\ \hline}%& {#4} \\ \hline}
+\newcommand{\FRitem}[5]{\par{#1} & {#2} & {#3} & {#4} & {#5}\\ \hline}%& {#4} \\ \hline}
 
 \newenvironment{requerimientos}[1][tblReqColor]
 {%
 	\arrayrulecolor{#1}%
-	\par\noindent\begin{longtable}{| p{.03\textwidth} | p{.2\textwidth} | p{.625\textwidth} |p{.075\textwidth} |}
+	\par\noindent\begin{longtable}{| p{.03\textwidth} | p{.2\textwidth} | p{.5\textwidth} |p{.075\textwidth} |p{.75\textwidth} |}
 		\arrayrulecolor{#1}%
 		\hline%
 		\rowcolor{#1}%
-		\multicolumn{4}{|c|}{\bf\color{white}Requerimientos funcionales}\\%
+		\multicolumn{5}{|c|}{\bf\color{white}Identificación de requerimientos}\\%
 		\arrayrulecolor{white}%
 		\rowcolor{#1}%
-		\FRitem{\color{white}Id}{\color{white} Nombre}{\color{white} Descripción}{\color{white} Prioridad}\endhead%
+		\FRitem{\color{white}Id}{\color{white} Nombre}{\color{white} Descripción}{\color{white} Prioridad}{\color{white} Origen}\endhead%
 		\arrayrulecolor{#1}%
 }{%
 	\end{longtable} %
