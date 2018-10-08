@@ -6,19 +6,36 @@
   <bpmn:process id="Process_1" isExecutable="true">
     <bpmn:laneSet id="LaneSet_1hpf1hr">
       <bpmn:lane id="Lane_1uqurl5" name="Academia">
+        <bpmn:flowNodeRef>Task_0giet6a</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0r3ftdh</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0vj1adj</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0eme9nz</bpmn:flowNodeRef>
         <bpmn:childLaneSet id="LaneSet_11i8xjq" />
       </bpmn:lane>
       <bpmn:lane id="Lane_1haj6xf" name="Comisión de Diseño Curricular">
         <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Task_0m0nv48</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndEvent_0jewkyi</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_03pngna</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_10o2wfk</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0m0nv48</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1pmvacg</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_0ggaqks</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_0l65cgn</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1yvrjwp</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1wclboh</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0z11pil</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_05olcxq</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_15ea3wc</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0iu5ocy</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0imbkp3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1hydrhp</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_1ij9vwk" name="Profesor" />
+      <bpmn:lane id="Lane_1ij9vwk" name="Profesor">
+        <bpmn:flowNodeRef>Task_0ccl4l1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0si8qjw</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1wnzg41</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1uqhini</bpmn:flowNodeRef>
+      </bpmn:lane>
     </bpmn:laneSet>
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>SequenceFlow_1lt8m00</bpmn:outgoing>
@@ -42,47 +59,105 @@
     </bpmn:subProcess>
     <bpmn:sequenceFlow id="SequenceFlow_03plzvi" sourceRef="Task_10o2wfk" targetRef="Task_0l65cgn" />
     <bpmn:sequenceFlow id="SequenceFlow_11l4vsh" sourceRef="Task_0l65cgn" targetRef="Task_1yvrjwp" />
-    <bpmn:task id="Task_0m0nv48">
+    <bpmn:task id="Task_0m0nv48" name="Seleccionar contenidos curriculares">
       <bpmn:incoming>SequenceFlow_1nl6idj</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0pkzdi9</bpmn:outgoing>
     </bpmn:task>
     <bpmn:sequenceFlow id="SequenceFlow_1nl6idj" sourceRef="Task_1yvrjwp" targetRef="Task_0m0nv48" />
     <bpmn:dataObjectReference id="DataObjectReference_1xzqmsh" name="Plantilla sin llenar" dataObjectRef="DataObject_06oab61" />
     <bpmn:dataObject id="DataObject_06oab61" />
     <bpmn:dataObjectReference id="DataObjectReference_12jpslm" name="Plantilla llenada hasta el punto 2 " dataObjectRef="DataObject_1lpbpxk" />
     <bpmn:dataObject id="DataObject_1lpbpxk" />
-    <bpmn:userTask id="Task_1pmvacg" name="Elabora el Objetivo General">
+    <bpmn:task id="Task_1pmvacg" name="Elabora el Objetivo General">
       <bpmn:incoming>SequenceFlow_18ep1le</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1crxx5z</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:userTask id="Task_0ggaqks" name="Elaborar Perfil de Ingreso">
+    </bpmn:task>
+    <bpmn:task id="Task_0ggaqks" name="Elaborar Perfil de Ingreso">
       <bpmn:incoming>SequenceFlow_1crxx5z</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_15bykrh</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:userTask id="Task_0l65cgn" name="Analizar las implicaciones del Modelo Acadé,ico en el diseño del programa.">
+    </bpmn:task>
+    <bpmn:task id="Task_0l65cgn" name="Analizar las implicaciones del Modelo Acadé,ico en el diseño del programa.">
       <bpmn:incoming>SequenceFlow_03plzvi</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_11l4vsh</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:userTask id="Task_1yvrjwp" name="Elaborar los objetivos curriculares">
+    </bpmn:task>
+    <bpmn:task id="Task_1yvrjwp" name="Elaborar los objetivos curriculares">
       <bpmn:incoming>SequenceFlow_11l4vsh</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1nl6idj</bpmn:outgoing>
       <bpmn:dataOutputAssociation id="DataOutputAssociation_1vysv3j">
         <bpmn:targetRef>DataObjectReference_12jpslm</bpmn:targetRef>
       </bpmn:dataOutputAssociation>
-    </bpmn:userTask>
+    </bpmn:task>
+    <bpmn:task id="Task_1wclboh" name=" Identificar y estructurar las Unidades de Aprendizaje">
+      <bpmn:incoming>SequenceFlow_0pkzdi9</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1reposv</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_0pkzdi9" sourceRef="Task_0m0nv48" targetRef="Task_1wclboh" />
+    <bpmn:sequenceFlow id="SequenceFlow_1reposv" sourceRef="Task_1wclboh" targetRef="Task_0imbkp3" />
+    <bpmn:task id="Task_0giet6a" />
+    <bpmn:task id="Task_0r3ftdh" />
+    <bpmn:task id="Task_0vj1adj" />
+    <bpmn:task id="Task_0ccl4l1" />
+    <bpmn:task id="Task_0si8qjw" />
+    <bpmn:task id="Task_1wnzg41" />
+    <bpmn:task id="Task_0eme9nz" />
+    <bpmn:task id="Task_1uqhini" />
+    <bpmn:task id="Task_0z11pil" name="Diseñan las salidas laterales y otros elementos curriculares">
+      <bpmn:incoming>SequenceFlow_1bg3yb4</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0y5ljey</bpmn:outgoing>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_1saxevo">
+        <bpmn:targetRef>DataObjectReference_1jmc0in</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_1bg3yb4" sourceRef="Task_0imbkp3" targetRef="Task_0z11pil" />
+    <bpmn:sequenceFlow id="SequenceFlow_0y5ljey" sourceRef="Task_0z11pil" targetRef="Task_1hydrhp" />
+    <bpmn:dataObjectReference id="DataObjectReference_1jmc0in" name="Plantilla llenada hasta el punto 3" dataObjectRef="DataObject_0ibtya5" />
+    <bpmn:dataObject id="DataObject_0ibtya5" />
+    <bpmn:task id="Task_05olcxq" name="Elaborar programa de actualización y formación del personal académico">
+      <bpmn:incoming>SequenceFlow_1m7knq2</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0wr88tx</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_1m7knq2" sourceRef="Task_1hydrhp" targetRef="Task_05olcxq" />
+    <bpmn:task id="Task_15ea3wc" name="Identificar las necesidades para la puesta en marcha del nuevo plan de estudios. ">
+      <bpmn:incoming>SequenceFlow_0wr88tx</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1blliig</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_0wr88tx" sourceRef="Task_05olcxq" targetRef="Task_15ea3wc" />
+    <bpmn:task id="Task_0iu5ocy" name="Definir los criterios, lineamientos y procedimientos para la evaluación del diseño curricular. ">
+      <bpmn:incoming>SequenceFlow_1blliig</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1ogulpy</bpmn:outgoing>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_0m9px6j">
+        <bpmn:targetRef>DataObjectReference_0qjyq37</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_1blliig" sourceRef="Task_15ea3wc" targetRef="Task_0iu5ocy" />
+    <bpmn:subProcess id="Task_0imbkp3" name="Elaborar mapa curricular">
+      <bpmn:incoming>SequenceFlow_1reposv</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1bg3yb4</bpmn:outgoing>
+    </bpmn:subProcess>
+    <bpmn:subProcess id="Task_1hydrhp" name="Elaborar el perfil del profesor">
+      <bpmn:incoming>SequenceFlow_0y5ljey</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1m7knq2</bpmn:outgoing>
+    </bpmn:subProcess>
+    <bpmn:dataObjectReference id="DataObjectReference_0qjyq37" name="Plantlla completamente llenada" dataObjectRef="DataObject_0xiro13" />
+    <bpmn:dataObject id="DataObject_0xiro13" />
+    <bpmn:endEvent id="EndEvent_0jewkyi">
+      <bpmn:incoming>SequenceFlow_1ogulpy</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_1ogulpy" sourceRef="Task_0iu5ocy" targetRef="EndEvent_0jewkyi" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0mq8ci5">
       <bpmndi:BPMNShape id="Participant_0z7xydh_di" bpmnElement="Participant_0z7xydh">
-        <dc:Bounds x="188" y="-117" width="1340" height="605" />
+        <dc:Bounds x="188" y="-117" width="2414" height="605" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_1uqurl5_di" bpmnElement="Lane_1uqurl5">
-        <dc:Bounds x="218" y="176" width="1310" height="164" />
+        <dc:Bounds x="218" y="176" width="2384" height="164" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_1haj6xf_di" bpmnElement="Lane_1haj6xf">
-        <dc:Bounds x="218" y="-117" width="1310" height="293" />
+        <dc:Bounds x="218" y="-117" width="2384" height="293" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_1ij9vwk_di" bpmnElement="Lane_1ij9vwk">
-        <dc:Bounds x="218" y="340" width="1310" height="148" />
+        <dc:Bounds x="218" y="340" width="2384" height="148" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="256" y="67" width="36" height="36" />
@@ -146,18 +221,120 @@
         <di:waypoint x="392" y="-14" />
         <di:waypoint x="392" y="45" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="UserTask_0atdp6n_di" bpmnElement="Task_1pmvacg">
+      <bpmndi:BPMNShape id="Task_1dvf7pp_di" bpmnElement="Task_1pmvacg">
         <dc:Bounds x="492" y="45" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="UserTask_07gujus_di" bpmnElement="Task_0ggaqks">
+      <bpmndi:BPMNShape id="Task_0j6wj3i_di" bpmnElement="Task_0ggaqks">
         <dc:Bounds x="642" y="45" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="UserTask_18iohvw_di" bpmnElement="Task_0l65cgn">
+      <bpmndi:BPMNShape id="Task_0krx1sd_di" bpmnElement="Task_0l65cgn">
         <dc:Bounds x="946" y="45" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="UserTask_08ia7nd_di" bpmnElement="Task_1yvrjwp">
+      <bpmndi:BPMNShape id="Task_1vebqoa_di" bpmnElement="Task_1yvrjwp">
         <dc:Bounds x="1098" y="45" width="100" height="80" />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1wclboh_di" bpmnElement="Task_1wclboh">
+        <dc:Bounds x="1402" y="45" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0pkzdi9_di" bpmnElement="SequenceFlow_0pkzdi9">
+        <di:waypoint x="1350" y="85" />
+        <di:waypoint x="1402" y="85" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1reposv_di" bpmnElement="SequenceFlow_1reposv">
+        <di:waypoint x="1502" y="85" />
+        <di:waypoint x="1554" y="85" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_0giet6a_di" bpmnElement="Task_0giet6a">
+        <dc:Bounds x="1402" y="219" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0r3ftdh_di" bpmnElement="Task_0r3ftdh">
+        <dc:Bounds x="794" y="219" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0vj1adj_di" bpmnElement="Task_0vj1adj">
+        <dc:Bounds x="1250" y="219" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0ccl4l1_di" bpmnElement="Task_0ccl4l1">
+        <dc:Bounds x="794" y="373" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0si8qjw_di" bpmnElement="Task_0si8qjw">
+        <dc:Bounds x="1250" y="373" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1wnzg41_di" bpmnElement="Task_1wnzg41">
+        <dc:Bounds x="1402" y="373" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0eme9nz_di" bpmnElement="Task_0eme9nz">
+        <dc:Bounds x="1858" y="219" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1uqhini_di" bpmnElement="Task_1uqhini">
+        <dc:Bounds x="1858" y="373" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0z11pil_di" bpmnElement="Task_0z11pil">
+        <dc:Bounds x="1706" y="45" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1bg3yb4_di" bpmnElement="SequenceFlow_1bg3yb4">
+        <di:waypoint x="1654" y="85" />
+        <di:waypoint x="1706" y="85" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="DataObjectReference_1jmc0in_di" bpmnElement="DataObjectReference_1jmc0in">
+        <dc:Bounds x="1808" y="-65" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1787" y="-95" width="79" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0y5ljey_di" bpmnElement="SequenceFlow_0y5ljey">
+        <di:waypoint x="1806" y="85" />
+        <di:waypoint x="1858" y="85" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_1saxevo_di" bpmnElement="DataOutputAssociation_1saxevo">
+        <di:waypoint x="1806" y="85" />
+        <di:waypoint x="1828" y="85" />
+        <di:waypoint x="1826" y="-15" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_05olcxq_di" bpmnElement="Task_05olcxq">
+        <dc:Bounds x="2010" y="45" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1m7knq2_di" bpmnElement="SequenceFlow_1m7knq2">
+        <di:waypoint x="1958" y="85" />
+        <di:waypoint x="2010" y="85" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_15ea3wc_di" bpmnElement="Task_15ea3wc">
+        <dc:Bounds x="2162" y="45" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0wr88tx_di" bpmnElement="SequenceFlow_0wr88tx">
+        <di:waypoint x="2110" y="85" />
+        <di:waypoint x="2162" y="85" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_0iu5ocy_di" bpmnElement="Task_0iu5ocy">
+        <dc:Bounds x="2314" y="45" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1blliig_di" bpmnElement="SequenceFlow_1blliig">
+        <di:waypoint x="2262" y="85" />
+        <di:waypoint x="2314" y="85" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="SubProcess_0qamere_di" bpmnElement="Task_0imbkp3">
+        <dc:Bounds x="1554" y="45" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="SubProcess_1ntacd1_di" bpmnElement="Task_1hydrhp">
+        <dc:Bounds x="1858" y="45" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataObjectReference_0qjyq37_di" bpmnElement="DataObjectReference_0qjyq37">
+        <dc:Bounds x="2426" y="-73" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2406" y="-16" width="76" height="40" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_0m9px6j_di" bpmnElement="DataOutputAssociation_0m9px6j">
+        <di:waypoint x="2364" y="45" />
+        <di:waypoint x="2364" y="-48" />
+        <di:waypoint x="2426" y="-48" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_0jewkyi_di" bpmnElement="EndEvent_0jewkyi">
+        <dc:Bounds x="2466" y="67" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1ogulpy_di" bpmnElement="SequenceFlow_1ogulpy">
+        <di:waypoint x="2414" y="85" />
+        <di:waypoint x="2466" y="85" />
+      </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
