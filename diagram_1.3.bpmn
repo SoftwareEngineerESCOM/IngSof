@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_0lf4fqc" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="2.0.3">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" id="Definitions_0lf4fqc" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="2.0.1">
   <bpmn:collaboration id="Collaboration_0ca5wyq">
     <bpmn:participant id="Participant_1ok4jfs" name="Departamento de innovación curricular" processRef="Process_1upysz9" />
     <bpmn:participant id="Participant_0386hu4" name="Departamento de innovación educativa" processRef="Process_1owtj7m" />
@@ -21,6 +21,7 @@
         <bpmn:flowNodeRef>ExclusiveGateway_03231pt</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1rp3eds</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_0iyh22k</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndEvent_0k4yhlt</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_1s1i5mu" name="Analista">
         <bpmn:flowNodeRef>Task_0mjw8vz</bpmn:flowNodeRef>
@@ -145,11 +146,13 @@
     <bpmn:sequenceFlow id="SequenceFlow_1d6xkdq" sourceRef="IntermediateThrowEvent_13iavmi" targetRef="ExclusiveGateway_03231pt" />
     <bpmn:sendTask id="Task_1rp3eds" name="Solicitar presencia del docente">
       <bpmn:incoming>SequenceFlow_1lpqqm8</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1qmaq20</bpmn:outgoing>
     </bpmn:sendTask>
     <bpmn:sequenceFlow id="SequenceFlow_02qujfd" name="Documento sin áreas de oportunidad" sourceRef="ExclusiveGateway_03231pt" targetRef="Task_0iyh22k" />
     <bpmn:sendTask id="Task_0iyh22k" name="Enviar documentos al departamento de innovación educativa">
       <bpmn:incoming>SequenceFlow_1fqinh9</bpmn:incoming>
       <bpmn:incoming>SequenceFlow_02qujfd</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1gt02x0</bpmn:outgoing>
       <bpmn:property id="Property_1lde9lw" name="__targetRef_placeholder" />
       <bpmn:dataInputAssociation id="DataInputAssociation_17kud2d">
         <bpmn:sourceRef>DataObjectReference_1k4lck5</bpmn:sourceRef>
@@ -158,21 +161,32 @@
     </bpmn:sendTask>
     <bpmn:dataObjectReference id="DataObjectReference_1k4lck5" name="Documento con áreas de oportunidad" dataObjectRef="DataObject_0hxwlj0" />
     <bpmn:dataObject id="DataObject_0hxwlj0" />
+    <bpmn:sequenceFlow id="SequenceFlow_1gt02x0" sourceRef="Task_0iyh22k" targetRef="EndEvent_0k4yhlt" />
+    <bpmn:sequenceFlow id="SequenceFlow_1qmaq20" sourceRef="Task_1rp3eds" targetRef="EndEvent_0k4yhlt" />
+    <bpmn:endEvent id="EndEvent_0k4yhlt">
+      <bpmn:extensionElements>
+        <camunda:properties>
+          <camunda:property />
+        </camunda:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>SequenceFlow_1gt02x0</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_1qmaq20</bpmn:incoming>
+    </bpmn:endEvent>
   </bpmn:process>
   <bpmn:process id="Process_1owtj7m" isExecutable="false" />
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0ca5wyq">
       <bpmndi:BPMNShape id="Participant_1ok4jfs_di" bpmnElement="Participant_1ok4jfs">
-        <dc:Bounds x="70" y="1160" width="1713" height="830" />
+        <dc:Bounds x="70" y="1160" width="1831" height="830" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Participant_0386hu4_di" bpmnElement="Participant_0386hu4">
         <dc:Bounds x="70" y="848" width="600" height="250" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_13yla58_di" bpmnElement="Lane_13yla58">
-        <dc:Bounds x="100" y="1160" width="1683" height="394" />
+        <dc:Bounds x="100" y="1160" width="1801" height="394" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_1s1i5mu_di" bpmnElement="Lane_1s1i5mu">
-        <dc:Bounds x="100" y="1554" width="1683" height="436" />
+        <dc:Bounds x="100" y="1554" width="1801" height="436" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="MessageFlow_1f3u1d6_di" bpmnElement="MessageFlow_1f3u1d6">
         <di:waypoint x="146" y="1098" />
@@ -181,7 +195,7 @@
           <dc:Bounds x="150" y="1105" width="90" height="53" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="StartEvent_1jpqabp_di" bpmnElement="StartEvent_0ugu9y5">
+      <bpmndi:BPMNShape id="StartEvent_1jpqabp_di" bpmnElement="StartEvent_0ugu9y5" bioc:stroke="#43A047" bioc:fill="#C8E6C9">
         <dc:Bounds x="128" y="1329" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataObjectReference_03ixpyd_di" bpmnElement="DataObjectReference_03ixpyd">
@@ -263,8 +277,9 @@
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="MessageFlow_1xfd8sv_di" bpmnElement="MessageFlow_1xfd8sv">
-        <di:waypoint x="1476" y="1425" />
-        <di:waypoint x="1476" y="1124" />
+        <di:waypoint x="1525" y="1436" />
+        <di:waypoint x="1615" y="1436" />
+        <di:waypoint x="1615" y="1124" />
         <di:waypoint x="635" y="1124" />
         <di:waypoint x="635" y="1098" />
       </bpmndi:BPMNEdge>
@@ -394,6 +409,18 @@
           <dc:Bounds x="1117" y="1407" width="74" height="40" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1gt02x0_di" bpmnElement="SequenceFlow_1gt02x0">
+        <di:waypoint x="1525" y="1465" />
+        <di:waypoint x="1836" y="1465" />
+        <di:waypoint x="1836" y="1346" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1qmaq20_di" bpmnElement="SequenceFlow_1qmaq20">
+        <di:waypoint x="1760" y="1328" />
+        <di:waypoint x="1818" y="1328" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_19urchl_di" bpmnElement="EndEvent_0k4yhlt" bioc:stroke="#E53935" bioc:fill="#FFCDD2">
+        <dc:Bounds x="1818" y="1310" width="36" height="36" />
+      </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
