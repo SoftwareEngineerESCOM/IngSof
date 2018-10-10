@@ -1,5 +1,5 @@
-% -------------- TABLA PARA REQUERIMIENTOS FUNCIONALES ---------------- % 
-% Nomenclatura para la prioridad: 
+% -------------- TABLA PARA REQUERIMIENTOS FUNCIONALES ---------------- %
+% Nomenclatura para la prioridad:
 %	MA - Muy Alta
 %	A - Alta
 %	M - Media
@@ -12,25 +12,26 @@
 	\begin{requerimientos}
 
 
-		\FRitem{RF}{Guardado de formato}{El sistema debe contar con  formato de Plan de Estudios}{A}{Origen}
-			
-		\FRitem{RF}{Registrar Plan de Estudios}{El sistema debe permitir ingresar  la información por etapas del formato de Plan de Estudios }{A}{Origen}
-		
-		\FRitem{RF}{ Notificaciones en Plan de Estudios}{ El usuario requiere un mecanismo que le permite informarse de la aprobación o rechazo en cada una de las etapas de la formato de plan de estudios}{A}{Origen}
+		%\FRitem{RP1}{Guardado de formato}{El sistema debe contar con  formato de Plan de Estudios}{A}{Origen}
 
-		\FRitem{RF}{Comentarios}{El usuario requiere un mecanismo que le permita conocer los comentarios de la aprobación o rechazo de cada etapa del formato de Plan de Estudios}{A}{Origen}
+		\FRitem{RP1}{Registrar Plan de Estudios}{El sistema debe permitir ingresar la información por punto de la plantilla del Plan de Estudios.}{A}{Origen}
 
-		\FRitem{RF}{Exportación de formatos}{El sistema debe permitir la descarga del  formato PDF con el fin de preservar la información}{A}{Origen}
+        \FRitem{RP2}{Guardar avances}{El sistema debe permitir guardar el estado actual de cada punto del Plan de estudios con la finalidad de poder continuar en otro momento.}{A}{Origen}
 
-		\FRitem{RU}{Modificación de Plan de Estudios}{El usuario requiere un mecanismo que le permita hacer modificaciones a cada etapa del formato del Plan de Estudios en caso de que ésta tenga que ajustarse}{x}{Usuario}
+        \FRitem{RP3}{Mostrar Comentarios}{El sistema debe permitir visualizar los comentarios realizados en la plantilla del Plan de Estudios en caso de que existan.}{A}{Origen}
 
-		\FRitem{RU}{Consulta  por etepa de Plan de Estudios}{El usuario requiere un mecanismo que le permita consultar la vista previa de de cada etapa de Plan de Estudios}{x}{Usuario}
-		
+        %\FRitem{RP5}{Exportación de formatos}{El sistema debe permitir la descarga del  formato PDF con el fin de preservar la información}{A}{Origen}
 
-		\FRitem{RU}{Guardado de la información}{El usuario requiere un mecanismo que le permita guardar el estado actual de cada etapa del Plan de estudios con la finalidad de que pueda continuar su labor hasta que ésta sea finalizada}{x}{Usuario}
+        \FRitem{RP4}{Modificar el Plan de Estudios}{El sistema debe permitir hacer modificaciones a cualquier punto de la plantilla del Plan de Estudios, solo de ser necesario.}{M}{Origen}
+
+        \FRitem{RP5}{Consultar el Plan de Estudios}{El sistema debe permitir consultar cada uno de los puntos de la plantilla del Plan de Estudios.}{M}{Origen}
+
+        \FRitem{RP6}{Habilitar etapas del Plan de Estudios}{El sistema debe habilitar los puntos de la plantilla una vez que se hayan terminado de registrar los puntos anteriores a este.}{M}{Origen}
+
+		\FRitem{RP7}{Notificar al Usuario}{ El sistema debe informar al usuario de la aprobación o rechazo de cada punto de la plantilla del plan de estudios.}{B}{Origen}
 
 	\end{requerimientos}
-    \caption{Requerimientos funcionales del sistema para la elaboración del Plan de Estudios}
+    \caption{Requerimientos funcionales del sistema para el subproceso de elaboración del Plan de Estudios}
     \label{tbl:RFUA}
 \end{table}
 
