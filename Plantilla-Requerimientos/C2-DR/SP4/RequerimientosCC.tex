@@ -6,14 +6,31 @@
 %	B - Baja
 %	MB - Muy Baja
 
+%El  sistema  debe  permitir  el  registro,  consulta  y  actualizaci ́on  de  los veh ́ıculos con los que cuenta la empresa con el fin de hacer una correcta planeaci ́on de entregas
+
 \begin{table}[htbp!]
 	\begin{requerimientos}
-		\FRitem{RU}{}{}{}{}
-		\FRitem{RU}{}{}{}{}
-		\FRitem{RU}{}{}{}{}
-		\FRitem{RU}{}{}{}{}
-		\FRitem{...}{...}{...}{...}{}
+
+
+		\FRitem{RF}{Guardado de formato}{El sistema debe contar con  formato de Plan de Estudios}{A}{Origen}
+			
+		\FRitem{RF}{Registrar Plan de Estudios}{El sistema debe permitir ingresar  la información por etapas del formato de Plan de Estudios }{A}{Origen}
+		
+		\FRitem{RF}{ Notificaciones en Plan de Estudios}{ El usuario requiere un mecanismo que le permite informarse de la aprobación o rechazo en cada una de las etapas de la formato de plan de estudios}{A}{Origen}
+
+		\FRitem{RF}{Comentarios}{El usuario requiere un mecanismo que le permita conocer los comentarios de la aprobación o rechazo de cada etapa del formato de Plan de Estudios}{A}{Origen}
+
+		\FRitem{RF}{Exportación de formatos}{El sistema debe permitir la descarga del  formato PDF con el fin de preservar la información}{A}{Origen}
+
+		\FRitem{RU}{Modificación de Plan de Estudios}{El usuario requiere un mecanismo que le permita hacer modificaciones a cada etapa del formato del Plan de Estudios en caso de que ésta tenga que ajustarse}{x}{Usuario}
+
+		\FRitem{RU}{Consulta  por etepa de Plan de Estudios}{El usuario requiere un mecanismo que le permita consultar la vista previa de de cada etapa de Plan de Estudios}{x}{Usuario}
+		
+
+		\FRitem{RU}{Guardado de la información}{El usuario requiere un mecanismo que le permita guardar el estado actual de cada etapa del Plan de estudios con la finalidad de que pueda continuar su labor hasta que ésta sea finalizada}{x}{Usuario}
+
 	\end{requerimientos}
-    \caption{Requerimientos funcionales del sistema.}
-    \label{tbl:}
+    \caption{Requerimientos funcionales del sistema para la elaboración del Plan de Estudios}
+    \label{tbl:RFUA}
 \end{table}
+
