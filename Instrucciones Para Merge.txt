@@ -1,0 +1,22 @@
+PASO 0.
+	Todas las ramas deben estar actualizadas a su ultima versión en github
+PASO 1.
+	git clone https://github.com/SoftwareEngineerESCOM/IngSof
+PASO 2.
+	git checkout [branch_name]
+PASO 3.
+	git pull
+PASO 4.
+	git checkout master
+PASO 5.
+	git pull
+PASO 6.
+	git merge --no-ff --no-commit [branch_name]
+PASO 7.
+	git add .
+PASO 8.
+	git commit -m "comentario"
+PASO 9.
+	git push
+
+// si hay conflictos ejecutar " git status ".
