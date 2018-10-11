@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" id="Definitions_0lf4fqc" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="2.0.1">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" id="Definitions_0lf4fqc" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="2.0.3">
   <bpmn:collaboration id="Collaboration_0ca5wyq">
     <bpmn:participant id="Participant_1ok4jfs" name="Departamento de innovación curricular" processRef="Process_1upysz9" />
     <bpmn:participant id="Participant_0386hu4" name="Departamento de innovación educativa" processRef="Process_1owtj7m" />
     <bpmn:messageFlow id="MessageFlow_1f3u1d6" name="Enviar paquete de unidad de aprendizaje para revisión" sourceRef="Participant_0386hu4" targetRef="StartEvent_0ugu9y5" />
     <bpmn:messageFlow id="MessageFlow_1xfd8sv" sourceRef="Task_0iyh22k" targetRef="Participant_0386hu4" />
     <bpmn:messageFlow id="MessageFlow_066rgjt" sourceRef="Task_1rp3eds" targetRef="Participant_0386hu4" />
+    <bpmn:messageFlow id="MessageFlow_1iggfu4" name="El docente llega al departamento de desarrollo e innovacion currcular" sourceRef="Participant_0386hu4" targetRef="Task_192a45t" />
   </bpmn:collaboration>
   <bpmn:process id="Process_1upysz9" isExecutable="false">
     <bpmn:laneSet id="LaneSet_1jjcryn">
@@ -21,56 +22,99 @@
         <bpmn:flowNodeRef>ExclusiveGateway_03231pt</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1rp3eds</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_0iyh22k</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>EndEvent_0k4yhlt</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_192a45t</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_1s1i5mu" name="Analista">
         <bpmn:flowNodeRef>Task_0mjw8vz</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Task_0xqx9xw</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_0okq1dh</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_083kik7</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>ExclusiveGateway_1uxmjzx</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>IntermediateThrowEvent_0k08ine</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0xqx9xw</bpmn:flowNodeRef>
       </bpmn:lane>
     </bpmn:laneSet>
     <bpmn:sequenceFlow id="SequenceFlow_1gn2bzw" sourceRef="Task_0qf4aam" targetRef="Task_0xqx9xw" />
     <bpmn:sequenceFlow id="SequenceFlow_06dsxe0" sourceRef="Task_0okq1dh" targetRef="Task_15byekf" />
     <bpmn:sequenceFlow id="SequenceFlow_15zjeol" sourceRef="Task_15byekf" targetRef="Task_1l0kmi6" />
-    <bpmn:sequenceFlow id="SequenceFlow_0e88mcq" name="Documento con áreas de oportunidad" sourceRef="ExclusiveGateway_03231pt" targetRef="Task_07tlb8f" />
+    <bpmn:sequenceFlow id="SequenceFlow_0e88mcq" name="subpaquete con áreas de oportunidad" sourceRef="ExclusiveGateway_03231pt" targetRef="Task_07tlb8f" />
     <bpmn:sequenceFlow id="SequenceFlow_1ln715g" sourceRef="Task_0xqx9xw" targetRef="Task_0mjw8vz" />
     <bpmn:sequenceFlow id="SequenceFlow_03k89os" name="Áreas de oportunidad encontradas " sourceRef="ExclusiveGateway_1uxmjzx" targetRef="Task_083kik7" />
-    <bpmn:sequenceFlow id="SequenceFlow_0c9q6ir" name="Documento sin areas de oportunidad" sourceRef="ExclusiveGateway_1uxmjzx" targetRef="Task_0okq1dh" />
-    <bpmn:receiveTask id="Task_15byekf" name="Recibir documentos revisados">
-      <bpmn:incoming>SequenceFlow_06dsxe0</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_15zjeol</bpmn:outgoing>
-    </bpmn:receiveTask>
-    <bpmn:userTask id="Task_0mjw8vz" name="revisar paquete de unidad de aprendizaje">
-      <bpmn:incoming>SequenceFlow_1ln715g</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_1xydtoz</bpmn:outgoing>
-    </bpmn:userTask>
+    <bpmn:sequenceFlow id="SequenceFlow_0c9q6ir" name="propuesta de unidad de aprendizaje sin areas de oportunidad" sourceRef="ExclusiveGateway_1uxmjzx" targetRef="Task_0okq1dh" />
     <bpmn:sequenceFlow id="SequenceFlow_0yqtk98" sourceRef="StartEvent_0ugu9y5" targetRef="Task_05q8kye" />
     <bpmn:sequenceFlow id="SequenceFlow_0kzdjic" sourceRef="Task_05q8kye" targetRef="Task_0qf4aam" />
-    <bpmn:dataObjectReference id="DataObjectReference_03ixpyd" name="paquete de unidades de aprendizaje" dataObjectRef="DataObject_1wkrvsr" />
-    <bpmn:dataObject id="DataObject_1wkrvsr" />
-    <bpmn:startEvent id="StartEvent_0ugu9y5">
-      <bpmn:outgoing>SequenceFlow_0yqtk98</bpmn:outgoing>
-      <bpmn:messageEventDefinition />
-    </bpmn:startEvent>
-    <bpmn:receiveTask id="Task_0xqx9xw" name="recibir paquete de Jefe de Innovación curricular">
-      <bpmn:incoming>SequenceFlow_1gn2bzw</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_1ln715g</bpmn:outgoing>
-      <bpmn:property id="Property_0ezqm7l" name="__targetRef_placeholder" />
-      <bpmn:dataInputAssociation id="DataInputAssociation_1xefghe">
-        <bpmn:sourceRef>DataObjectReference_03ixpyd</bpmn:sourceRef>
-        <bpmn:targetRef>Property_0ezqm7l</bpmn:targetRef>
-      </bpmn:dataInputAssociation>
-      <bpmn:multiInstanceLoopCharacteristics />
-    </bpmn:receiveTask>
-    <bpmn:sendTask id="Task_0qf4aam" name="Enviar paquete a analista">
-      <bpmn:incoming>SequenceFlow_0kzdjic</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_1gn2bzw</bpmn:outgoing>
-      <bpmn:multiInstanceLoopCharacteristics />
+    <bpmn:sequenceFlow id="SequenceFlow_098s0m8" sourceRef="Task_07tlb8f" targetRef="ExclusiveGateway_1edvqet" />
+    <bpmn:sequenceFlow id="SequenceFlow_1fqinh9" name="Menos de 3 revisiones" sourceRef="ExclusiveGateway_1edvqet" targetRef="Task_0iyh22k" />
+    <bpmn:sequenceFlow id="SequenceFlow_1lpqqm8" name="Más de 3 revisiones y se consideran importantes los cambios" sourceRef="ExclusiveGateway_1edvqet" targetRef="Task_1rp3eds" />
+    <bpmn:sequenceFlow id="SequenceFlow_1xydtoz" sourceRef="Task_0mjw8vz" targetRef="IntermediateThrowEvent_0k08ine" />
+    <bpmn:sequenceFlow id="SequenceFlow_0b5u4z3" sourceRef="IntermediateThrowEvent_0k08ine" targetRef="ExclusiveGateway_1uxmjzx" />
+    <bpmn:sequenceFlow id="SequenceFlow_14uk3ue" sourceRef="Task_1l0kmi6" targetRef="IntermediateThrowEvent_13iavmi" />
+    <bpmn:sequenceFlow id="SequenceFlow_1d6xkdq" sourceRef="IntermediateThrowEvent_13iavmi" targetRef="ExclusiveGateway_03231pt" />
+    <bpmn:sequenceFlow id="SequenceFlow_02qujfd" name="subpaquete de unidades de aprendizaje sin áreas de oportunidad" sourceRef="ExclusiveGateway_03231pt" targetRef="Task_0iyh22k" />
+    <bpmn:dataObjectReference id="DataObjectReference_1k4lck5" name=" paquete con  propuestas de UA con áreas de oportunidad" dataObjectRef="DataObject_0hxwlj0" />
+    <bpmn:dataObject id="DataObject_0hxwlj0" />
+    <bpmn:sendTask id="Task_1rp3eds" name="Solicitar presencia del docente">
+      <bpmn:incoming>SequenceFlow_1lpqqm8</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_05pqxqh</bpmn:outgoing>
     </bpmn:sendTask>
-    <bpmn:task id="Task_05q8kye" name="Dividir paquete en paquetes para cada analista">
+    <bpmn:exclusiveGateway id="ExclusiveGateway_03231pt">
+      <bpmn:incoming>SequenceFlow_1d6xkdq</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0e88mcq</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_02qujfd</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:intermediateCatchEvent id="IntermediateThrowEvent_13iavmi" name="1 Día">
+      <bpmn:incoming>SequenceFlow_14uk3ue</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1d6xkdq</bpmn:outgoing>
+      <bpmn:timerEventDefinition />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:userTask id="Task_1l0kmi6" name="Revisar subpaquete recibido">
+      <bpmn:incoming>SequenceFlow_15zjeol</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_14uk3ue</bpmn:outgoing>
+      <bpmn:property id="Property_0rgdb1o" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_08sdg7x">
+        <bpmn:sourceRef>DataObjectReference_01r222k</bpmn:sourceRef>
+        <bpmn:targetRef>Property_0rgdb1o</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_1dps559">
+        <bpmn:targetRef>DataObjectReference_01r222k</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:userTask>
+    <bpmn:intermediateCatchEvent id="IntermediateThrowEvent_0k08ine" name="Maximo 1 Día">
+      <bpmn:incoming>SequenceFlow_1xydtoz</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0b5u4z3</bpmn:outgoing>
+      <bpmn:timerEventDefinition />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:exclusiveGateway id="ExclusiveGateway_1uxmjzx">
+      <bpmn:incoming>SequenceFlow_0b5u4z3</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_03k89os</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_0c9q6ir</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:dataObjectReference id="DataObjectReference_1fvl9iu" name="paquete de unidad de aprendizaje con observaciones" dataObjectRef="DataObject_1r6muf8" />
+    <bpmn:dataObject id="DataObject_1r6muf8" />
+    <bpmn:sendTask id="Task_0okq1dh" name="Enviar documentos a Jefe de Innovación Curricular">
+      <bpmn:incoming>SequenceFlow_0c9q6ir</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_0l3806w</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_06dsxe0</bpmn:outgoing>
+      <bpmn:property id="Property_12gz1uo" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_1ndxhe5">
+        <bpmn:sourceRef>DataObjectReference_1fvl9iu</bpmn:sourceRef>
+        <bpmn:targetRef>Property_12gz1uo</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+    </bpmn:sendTask>
+    <bpmn:exclusiveGateway id="ExclusiveGateway_1edvqet">
+      <bpmn:incoming>SequenceFlow_098s0m8</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1fqinh9</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_1lpqqm8</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:manualTask id="Task_07tlb8f" name="agregar áreas de oportunidad a propuestas de unidades de aprendizaje">
+      <bpmn:incoming>SequenceFlow_0e88mcq</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_098s0m8</bpmn:outgoing>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_18dk1fs">
+        <bpmn:targetRef>DataObjectReference_1k4lck5</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:manualTask>
+    <bpmn:dataObjectReference id="DataObjectReference_07cad2p" name="Paquete de Unidades de Aprendizaje" dataObjectRef="DataObject_1dfks5b" />
+    <bpmn:dataObject id="DataObject_1dfks5b" />
+    <bpmn:task id="Task_05q8kye" name="Dividir paquete en subpaquetes para cada analista">
       <bpmn:incoming>SequenceFlow_0yqtk98</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0kzdjic</bpmn:outgoing>
       <bpmn:property id="Property_1mfityd" name="__targetRef_placeholder" />
@@ -82,111 +126,102 @@
         <bpmn:targetRef>DataObjectReference_03ixpyd</bpmn:targetRef>
       </bpmn:dataOutputAssociation>
     </bpmn:task>
-    <bpmn:dataObjectReference id="DataObjectReference_07cad2p" name="Paques de Unidades de Aprendizaje" dataObjectRef="DataObject_1dfks5b" />
-    <bpmn:dataObject id="DataObject_1dfks5b" />
-    <bpmn:manualTask id="Task_07tlb8f" name="Redactar documentos con areas de oportunidad">
-      <bpmn:incoming>SequenceFlow_0e88mcq</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_098s0m8</bpmn:outgoing>
-      <bpmn:dataOutputAssociation id="DataOutputAssociation_18dk1fs">
-        <bpmn:targetRef>DataObjectReference_1k4lck5</bpmn:targetRef>
-      </bpmn:dataOutputAssociation>
-    </bpmn:manualTask>
-    <bpmn:exclusiveGateway id="ExclusiveGateway_1edvqet">
-      <bpmn:incoming>SequenceFlow_098s0m8</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_1fqinh9</bpmn:outgoing>
-      <bpmn:outgoing>SequenceFlow_1lpqqm8</bpmn:outgoing>
-    </bpmn:exclusiveGateway>
-    <bpmn:sequenceFlow id="SequenceFlow_098s0m8" sourceRef="Task_07tlb8f" targetRef="ExclusiveGateway_1edvqet" />
-    <bpmn:sequenceFlow id="SequenceFlow_1fqinh9" name="Menos de 3 revisiones" sourceRef="ExclusiveGateway_1edvqet" targetRef="Task_0iyh22k" />
-    <bpmn:sequenceFlow id="SequenceFlow_1lpqqm8" name="Más de 3 revisiones y se consideran importantes los cambios" sourceRef="ExclusiveGateway_1edvqet" targetRef="Task_1rp3eds" />
-    <bpmn:sendTask id="Task_0okq1dh" name="Enviar documentos a Jefe de Innovación Curricular">
-      <bpmn:incoming>SequenceFlow_0c9q6ir</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_06dsxe0</bpmn:outgoing>
-      <bpmn:property id="Property_12gz1uo" name="__targetRef_placeholder" />
-      <bpmn:dataInputAssociation id="DataInputAssociation_1ndxhe5">
-        <bpmn:sourceRef>DataObjectReference_1fvl9iu</bpmn:sourceRef>
-        <bpmn:targetRef>Property_12gz1uo</bpmn:targetRef>
+    <bpmn:sendTask id="Task_0qf4aam" name="Enviar subpaquete a analista">
+      <bpmn:incoming>SequenceFlow_0kzdjic</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1gn2bzw</bpmn:outgoing>
+      <bpmn:property id="Property_11q9mdq" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_18c0tyh">
+        <bpmn:sourceRef>DataObjectReference_03ixpyd</bpmn:sourceRef>
+        <bpmn:targetRef>Property_11q9mdq</bpmn:targetRef>
       </bpmn:dataInputAssociation>
+      <bpmn:multiInstanceLoopCharacteristics />
     </bpmn:sendTask>
-    <bpmn:dataObjectReference id="DataObjectReference_1fvl9iu" name="paquete de unidad de aprendizaje con observaciones" dataObjectRef="DataObject_1r6muf8" />
-    <bpmn:dataObject id="DataObject_1r6muf8" />
-    <bpmn:manualTask id="Task_083kik7" name="Redactar archivo con comentarios">
-      <bpmn:incoming>SequenceFlow_03k89os</bpmn:incoming>
-      <bpmn:dataOutputAssociation id="DataOutputAssociation_05lodfr">
-        <bpmn:targetRef>DataObjectReference_1fvl9iu</bpmn:targetRef>
+    <bpmn:startEvent id="StartEvent_0ugu9y5">
+      <bpmn:outgoing>SequenceFlow_0yqtk98</bpmn:outgoing>
+      <bpmn:messageEventDefinition />
+    </bpmn:startEvent>
+    <bpmn:dataObjectReference id="DataObjectReference_03ixpyd" name="subpaquete de unidades de aprendizaje" dataObjectRef="DataObject_1wkrvsr" />
+    <bpmn:dataObject id="DataObject_1wkrvsr" />
+    <bpmn:userTask id="Task_0mjw8vz" name="revisar subpaquete de unidad de aprendizaje">
+      <bpmn:incoming>SequenceFlow_1ln715g</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1xydtoz</bpmn:outgoing>
+      <bpmn:property id="Property_1xuuws8" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_0i3x082">
+        <bpmn:sourceRef>DataObjectReference_0ddm1cy</bpmn:sourceRef>
+        <bpmn:targetRef>Property_1xuuws8</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_0mtdhsk">
+        <bpmn:targetRef>DataObjectReference_0ddm1cy</bpmn:targetRef>
       </bpmn:dataOutputAssociation>
-    </bpmn:manualTask>
-    <bpmn:exclusiveGateway id="ExclusiveGateway_1uxmjzx">
-      <bpmn:incoming>SequenceFlow_0b5u4z3</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_03k89os</bpmn:outgoing>
-      <bpmn:outgoing>SequenceFlow_0c9q6ir</bpmn:outgoing>
-    </bpmn:exclusiveGateway>
-    <bpmn:sequenceFlow id="SequenceFlow_1xydtoz" sourceRef="Task_0mjw8vz" targetRef="IntermediateThrowEvent_0k08ine" />
-    <bpmn:intermediateCatchEvent id="IntermediateThrowEvent_0k08ine" name="Maximo 1 Día">
-      <bpmn:incoming>SequenceFlow_1xydtoz</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_0b5u4z3</bpmn:outgoing>
-      <bpmn:timerEventDefinition />
-    </bpmn:intermediateCatchEvent>
-    <bpmn:sequenceFlow id="SequenceFlow_0b5u4z3" sourceRef="IntermediateThrowEvent_0k08ine" targetRef="ExclusiveGateway_1uxmjzx" />
-    <bpmn:userTask id="Task_1l0kmi6" name="Revisar documentos recibidos">
-      <bpmn:incoming>SequenceFlow_15zjeol</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_14uk3ue</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:sequenceFlow id="SequenceFlow_14uk3ue" sourceRef="Task_1l0kmi6" targetRef="IntermediateThrowEvent_13iavmi" />
-    <bpmn:intermediateCatchEvent id="IntermediateThrowEvent_13iavmi" name="1 Día">
-      <bpmn:incoming>SequenceFlow_14uk3ue</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_1d6xkdq</bpmn:outgoing>
-      <bpmn:timerEventDefinition />
-    </bpmn:intermediateCatchEvent>
-    <bpmn:exclusiveGateway id="ExclusiveGateway_03231pt">
-      <bpmn:incoming>SequenceFlow_1d6xkdq</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_0e88mcq</bpmn:outgoing>
-      <bpmn:outgoing>SequenceFlow_02qujfd</bpmn:outgoing>
-    </bpmn:exclusiveGateway>
-    <bpmn:sequenceFlow id="SequenceFlow_1d6xkdq" sourceRef="IntermediateThrowEvent_13iavmi" targetRef="ExclusiveGateway_03231pt" />
-    <bpmn:sendTask id="Task_1rp3eds" name="Solicitar presencia del docente">
-      <bpmn:incoming>SequenceFlow_1lpqqm8</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_1qmaq20</bpmn:outgoing>
-    </bpmn:sendTask>
-    <bpmn:sequenceFlow id="SequenceFlow_02qujfd" name="Documento sin áreas de oportunidad" sourceRef="ExclusiveGateway_03231pt" targetRef="Task_0iyh22k" />
-    <bpmn:sendTask id="Task_0iyh22k" name="Enviar documentos al departamento de innovación educativa">
+    <bpmn:receiveTask id="Task_15byekf" name="Recibir subpaquete de unidades de aprendizaje revisado por analista">
+      <bpmn:incoming>SequenceFlow_06dsxe0</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_15zjeol</bpmn:outgoing>
+    </bpmn:receiveTask>
+    <bpmn:receiveTask id="Task_0xqx9xw" name="recibir subpaquete de Jefe de Innovación curricular">
+      <bpmn:incoming>SequenceFlow_1gn2bzw</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1ln715g</bpmn:outgoing>
+      <bpmn:multiInstanceLoopCharacteristics />
+    </bpmn:receiveTask>
+    <bpmn:sequenceFlow id="SequenceFlow_0l3806w" sourceRef="Task_083kik7" targetRef="Task_0okq1dh" />
+    <bpmn:sendTask id="Task_0iyh22k" name="Enviar paquete al departamento de innovación educativa">
       <bpmn:incoming>SequenceFlow_1fqinh9</bpmn:incoming>
       <bpmn:incoming>SequenceFlow_02qujfd</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_1gt02x0</bpmn:outgoing>
       <bpmn:property id="Property_1lde9lw" name="__targetRef_placeholder" />
       <bpmn:dataInputAssociation id="DataInputAssociation_17kud2d">
         <bpmn:sourceRef>DataObjectReference_1k4lck5</bpmn:sourceRef>
         <bpmn:targetRef>Property_1lde9lw</bpmn:targetRef>
       </bpmn:dataInputAssociation>
+      <bpmn:dataInputAssociation id="DataInputAssociation_10214sp">
+        <bpmn:sourceRef>DataObjectReference_06x0f8b</bpmn:sourceRef>
+        <bpmn:targetRef>Property_1lde9lw</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
     </bpmn:sendTask>
-    <bpmn:dataObjectReference id="DataObjectReference_1k4lck5" name="Documento con áreas de oportunidad" dataObjectRef="DataObject_0hxwlj0" />
-    <bpmn:dataObject id="DataObject_0hxwlj0" />
-    <bpmn:sequenceFlow id="SequenceFlow_1gt02x0" sourceRef="Task_0iyh22k" targetRef="EndEvent_0k4yhlt" />
-    <bpmn:sequenceFlow id="SequenceFlow_1qmaq20" sourceRef="Task_1rp3eds" targetRef="EndEvent_0k4yhlt" />
-    <bpmn:endEvent id="EndEvent_0k4yhlt">
-      <bpmn:extensionElements>
-        <camunda:properties>
-          <camunda:property />
-        </camunda:properties>
-      </bpmn:extensionElements>
-      <bpmn:incoming>SequenceFlow_1gt02x0</bpmn:incoming>
-      <bpmn:incoming>SequenceFlow_1qmaq20</bpmn:incoming>
-    </bpmn:endEvent>
+    <bpmn:manualTask id="Task_083kik7" name="Redactar archivo propuesta de unidad de aprendizaje con comentarios">
+      <bpmn:incoming>SequenceFlow_03k89os</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0l3806w</bpmn:outgoing>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_05lodfr">
+        <bpmn:targetRef>DataObjectReference_1fvl9iu</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:manualTask>
+    <bpmn:dataObjectReference id="DataObjectReference_0ddm1cy" name="nombre de documento pendiente" dataObjectRef="DataObject_0pzrgvv" />
+    <bpmn:dataObject id="DataObject_0pzrgvv" />
+    <bpmn:dataObjectReference id="DataObjectReference_01r222k" name="documento con nombe penditene" dataObjectRef="DataObject_0duokk6" />
+    <bpmn:dataObject id="DataObject_0duokk6" />
+    <bpmn:sequenceFlow id="SequenceFlow_05pqxqh" sourceRef="Task_1rp3eds" targetRef="Task_192a45t" />
+    <bpmn:task id="Task_192a45t" name="Hacer correciones pertinentes">
+      <bpmn:incoming>SequenceFlow_05pqxqh</bpmn:incoming>
+      <bpmn:property id="Property_14frvwp" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_0pwy8om">
+        <bpmn:sourceRef>DataObjectReference_12pzbc6</bpmn:sourceRef>
+        <bpmn:targetRef>Property_14frvwp</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_19qj5df">
+        <bpmn:targetRef>DataObjectReference_12pzbc6</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_0ns3tyo">
+        <bpmn:targetRef>DataObjectReference_06x0f8b</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:task>
+    <bpmn:dataObjectReference id="DataObjectReference_12pzbc6" name="Documento con nombre pendiente" dataObjectRef="DataObject_13b2npo" />
+    <bpmn:dataObject id="DataObject_13b2npo" />
+    <bpmn:dataObjectReference id="DataObjectReference_06x0f8b" name="paquete de propuesta aprobad de unidad de aprendizaje" dataObjectRef="DataObject_1ybm2sc" />
+    <bpmn:dataObject id="DataObject_1ybm2sc" />
   </bpmn:process>
   <bpmn:process id="Process_1owtj7m" isExecutable="false" />
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0ca5wyq">
       <bpmndi:BPMNShape id="Participant_1ok4jfs_di" bpmnElement="Participant_1ok4jfs">
-        <dc:Bounds x="70" y="1160" width="1831" height="830" />
+        <dc:Bounds x="70" y="1160" width="2026" height="830" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Participant_0386hu4_di" bpmnElement="Participant_0386hu4">
         <dc:Bounds x="70" y="848" width="600" height="250" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_13yla58_di" bpmnElement="Lane_13yla58">
-        <dc:Bounds x="100" y="1160" width="1801" height="394" />
+        <dc:Bounds x="100" y="1160" width="1996" height="394" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_1s1i5mu_di" bpmnElement="Lane_1s1i5mu">
-        <dc:Bounds x="100" y="1554" width="1801" height="436" />
+        <dc:Bounds x="100" y="1554" width="1996" height="436" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="MessageFlow_1f3u1d6_di" bpmnElement="MessageFlow_1f3u1d6">
         <di:waypoint x="146" y="1098" />
@@ -201,7 +236,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_03ixpyd_di" bpmnElement="DataObjectReference_03ixpyd">
         <dc:Bounds x="268" y="1424" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="308" y="1429" width="60" height="40" />
+          <dc:Bounds x="192" y="1429" width="74" height="40" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="SendTask_0tvhh5f_di" bpmnElement="Task_0qf4aam">
@@ -212,11 +247,6 @@
         <di:waypoint x="429" y="1487" />
         <di:waypoint x="394" y="1487" />
         <di:waypoint x="394" y="1606" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="DataInputAssociation_1xefghe_di" bpmnElement="DataInputAssociation_1xefghe">
-        <di:waypoint x="286" y="1474" />
-        <di:waypoint x="286" y="1646" />
-        <di:waypoint x="344" y="1646" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="SequenceFlow_1ln715g_di" bpmnElement="SequenceFlow_1ln715g">
         <di:waypoint x="444" y="1646" />
@@ -231,7 +261,7 @@
         <di:waypoint x="721" y="1714" />
         <di:waypoint x="721" y="1757" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="619" y="1818" width="62" height="40" />
+          <dc:Bounds x="649" y="1694" width="62" height="40" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="ManualTask_0c5jbpk_di" bpmnElement="Task_083kik7">
@@ -244,7 +274,7 @@
         <di:waypoint x="737" y="1646" />
         <di:waypoint x="800" y="1646" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="718" y="1579" width="74" height="40" />
+          <dc:Bounds x="728" y="1561" width="74" height="66" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="DataObjectReference_1fvl9iu_di" bpmnElement="DataObjectReference_1fvl9iu">
@@ -273,7 +303,7 @@
         <di:waypoint x="1219" y="1328" />
         <di:waypoint x="1279" y="1328" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1196" y="1268" width="78" height="40" />
+          <dc:Bounds x="1196" y="1236" width="79" height="40" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="MessageFlow_1xfd8sv_di" bpmnElement="MessageFlow_1xfd8sv">
@@ -310,13 +340,13 @@
         <di:waypoint x="379" y="1347" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataOutputAssociation_16adlqg_di" bpmnElement="DataOutputAssociation_16adlqg">
-        <di:waypoint x="314" y="1387" />
-        <di:waypoint x="297" y="1424" />
+        <di:waypoint x="286" y="1387" />
+        <di:waypoint x="286" y="1424" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="DataObjectReference_07cad2p_di" bpmnElement="DataObjectReference_07cad2p">
         <dc:Bounds x="175" y="1236" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="162" y="1293" width="62" height="40" />
+          <dc:Bounds x="162" y="1293" width="63" height="40" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="DataInputAssociation_1kt2gtr_di" bpmnElement="DataInputAssociation_1kt2gtr">
@@ -329,7 +359,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_1k4lck5_di" bpmnElement="DataObjectReference_1k4lck5">
         <dc:Bounds x="1278" y="1412" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1322" y="1402" width="78" height="40" />
+          <dc:Bounds x="1329" y="1382" width="81" height="53" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="DataOutputAssociation_18dk1fs_di" bpmnElement="DataOutputAssociation_18dk1fs">
@@ -380,7 +410,7 @@
       <bpmndi:BPMNShape id="IntermediateCatchEvent_019z0kc_di" bpmnElement="IntermediateThrowEvent_0k08ine">
         <dc:Bounds x="615" y="1628" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="601" y="1671" width="68" height="14" />
+          <dc:Bounds x="601" y="1671" width="69" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_0b5u4z3_di" bpmnElement="SequenceFlow_0b5u4z3">
@@ -406,21 +436,91 @@
         <di:waypoint x="1194" y="1498" />
         <di:waypoint x="1425" y="1498" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1117" y="1407" width="74" height="40" />
+          <dc:Bounds x="1117" y="1407" width="74" height="66" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="SequenceFlow_1gt02x0_di" bpmnElement="SequenceFlow_1gt02x0">
-        <di:waypoint x="1525" y="1465" />
-        <di:waypoint x="1836" y="1465" />
-        <di:waypoint x="1836" y="1346" />
+      <bpmndi:BPMNEdge id="SequenceFlow_0l3806w_di" bpmnElement="SequenceFlow_0l3806w">
+        <di:waypoint x="771" y="1797" />
+        <di:waypoint x="818" y="1797" />
+        <di:waypoint x="818" y="1687" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="SequenceFlow_1qmaq20_di" bpmnElement="SequenceFlow_1qmaq20">
-        <di:waypoint x="1760" y="1328" />
-        <di:waypoint x="1818" y="1328" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="EndEvent_19urchl_di" bpmnElement="EndEvent_0k4yhlt" bioc:stroke="#E53935" bioc:fill="#FFCDD2">
-        <dc:Bounds x="1818" y="1310" width="36" height="36" />
+      <bpmndi:BPMNShape id="DataObjectReference_0ddm1cy_di" bpmnElement="DataObjectReference_0ddm1cy">
+        <dc:Bounds x="507" y="1741" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="498" y="1798" width="55" height="40" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_0mtdhsk_di" bpmnElement="DataOutputAssociation_0mtdhsk">
+        <di:waypoint x="541" y="1686" />
+        <di:waypoint x="541" y="1741" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_0i3x082_di" bpmnElement="DataInputAssociation_0i3x082">
+        <di:waypoint x="525" y="1741" />
+        <di:waypoint x="525" y="1686" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_18c0tyh_di" bpmnElement="DataInputAssociation_18c0tyh">
+        <di:waypoint x="304" y="1449" />
+        <di:waypoint x="406" y="1449" />
+        <di:waypoint x="406" y="1387" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="DataObjectReference_01r222k_di" bpmnElement="DataObjectReference_01r222k">
+        <dc:Bounds x="981" y="1192" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="874" y="1203" width="86" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="DataInputAssociation_08sdg7x_di" bpmnElement="DataInputAssociation_08sdg7x">
+        <di:waypoint x="1015" y="1242" />
+        <di:waypoint x="1015" y="1288" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_1dps559_di" bpmnElement="DataOutputAssociation_1dps559">
+        <di:waypoint x="986" y="1288" />
+        <di:waypoint x="986" y="1242" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_192a45t_di" bpmnElement="Task_192a45t">
+        <dc:Bounds x="1814" y="1288" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_05pqxqh_di" bpmnElement="SequenceFlow_05pqxqh">
+        <di:waypoint x="1760" y="1328" />
+        <di:waypoint x="1814" y="1328" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MessageFlow_1iggfu4_di" bpmnElement="MessageFlow_1iggfu4">
+        <di:waypoint x="670" y="858" />
+        <di:waypoint x="1865" y="858" />
+        <di:waypoint x="1875" y="1288" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1264" y="787" width="81" height="66" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="DataObjectReference_12pzbc6_di" bpmnElement="DataObjectReference_12pzbc6">
+        <dc:Bounds x="2023" y="1303" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1996" y="1266" width="90" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_19qj5df_di" bpmnElement="DataOutputAssociation_19qj5df">
+        <di:waypoint x="1915" y="1328" />
+        <di:waypoint x="2023" y="1328" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_0pwy8om_di" bpmnElement="DataInputAssociation_0pwy8om">
+        <di:waypoint x="2023" y="1313" />
+        <di:waypoint x="1914" y="1313" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="DataObjectReference_06x0f8b_di" bpmnElement="DataObjectReference_06x0f8b">
+        <dc:Bounds x="1776" y="1424" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1765" y="1481" width="58" height="66" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_0ns3tyo_di" bpmnElement="DataOutputAssociation_0ns3tyo">
+        <di:waypoint x="1864" y="1368" />
+        <di:waypoint x="1864" y="1449" />
+        <di:waypoint x="1812" y="1449" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_10214sp_di" bpmnElement="DataInputAssociation_10214sp">
+        <di:waypoint x="1774" y="1465" />
+        <di:waypoint x="1525" y="1465" />
+      </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
