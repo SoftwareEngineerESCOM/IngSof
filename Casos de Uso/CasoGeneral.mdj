@@ -757,7 +757,7 @@
 											"top": 531.5,
 											"width": 103,
 											"height": 13,
-											"text": "Registrar Etapas"
+											"text": "Registrar Etapa"
 										},
 										{
 											"_type": "LabelView",
@@ -790,7 +790,7 @@
 									"font": "Arial;13;0",
 									"left": 567.5,
 									"top": 524.5,
-									"width": 113.32080078125,
+									"width": 113,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFmZSEJzNWiLzU="
@@ -1229,7 +1229,7 @@
 											"top": 579.5,
 											"width": 106,
 											"height": 13,
-											"text": "Finalizar Etapas"
+											"text": "Finalizar Etapa"
 										},
 										{
 											"_type": "LabelView",
@@ -1809,7 +1809,7 @@
 											"top": 387.5,
 											"width": 96,
 											"height": 13,
-											"text": "Editar Etapas"
+											"text": "Editar Etapa"
 										},
 										{
 											"_type": "LabelView",
@@ -6982,7 +6982,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFmZRj3jtQfN4k="
 					},
-					"name": "Registrar Etapas",
+					"name": "Registrar Etapa",
 					"ownedElements": [
 						{
 							"_type": "UMLInclude",
@@ -7057,7 +7057,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFmZRj3jtQfN4k="
 					},
-					"name": "Finalizar Etapas",
+					"name": "Finalizar Etapa",
 					"ownedElements": [
 						{
 							"_type": "UMLExtend",
@@ -7374,7 +7374,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFmZRj3jtQfN4k="
 					},
-					"name": "Editar Etapas",
+					"name": "Editar Etapa",
 					"ownedElements": [
 						{
 							"_type": "UMLExtend",
