@@ -4,14 +4,29 @@
 %	M - Media
 %	B - Baja
 
+<<<<<<< HEAD
+=======
+\textbf{Nota:} Se usa :
+	\begin{itemize}
+		\item \textbf{JDIC:} Jefe de departamento de Innovación curricular
+		\item La  prioridad máxima es 1 y la mínima es 5
+	\end{itemize}
+>>>>>>> 6ed0294c859ed0f1f59f1e1d2b933ac22ee229ef
 
 \begin{table}[htbp!]
 	\begin{requerimientos}
-		\FRitem{RU}{}{}{}{}
-		\FRitem{RU}{}{}{}{}
-		\FRitem{RU}{}{}{}{}
-		\FRitem{RU}{}{}{}{}
-		\FRitem{...}{...}{...}{...}{}
+		\FRitem{RU}{Recibir Plan de estudios}{El sistema informará al JDIC que se ha recibido un nuevo (o nueva corrección de) Plan de estudios}{B}{Origen}
+		\FRitem{RU}{Consultar Planes de estudio en revisión}{El Sistema le mostrará al JDIC todos los planes de estudios (nombre, identificador y  escuela) que están en revisión y su estatus (sin asignar analista, en revisión de analista, en revisión de JDIC, esperando corrección y aprobado)}{A}{}
+		\FRitem{RU}{Asignar analista}{El JDIC podrá asignar un analista a un plan de estudios cuando su estatus sea (sin asignar analista o en revisión de analista)}{A}{Origen}
+		\FRitem{RU}{Consultar asignaciones del analista}{El Sistema le mostrará al usuario analista los plan de estudios que tiene asignados (nombre, identificador y  escuela)}{M}{Usuario}
+		\FRitem{RU}{Mostrar información de sección de Plan de estudios}{El sistema mostrará toda la información del plan de estudios por secciones   registrado por la Unidada Académica, así como los comentarios y campos ya aprobados}{A}{Usuario}
+		\FRitem{RU}{Asignar comentarios}{El sistema guardará los comentarios escritos por, el Analista o JDIC (dependiendo el estatus del Plan de estudios) anexando la fecha y matrícula del empleado, durante la consulta de la información   sobre cada atributo no aprobado del plan de estudios}{M}{Origen}
+		\FRitem{RU}{Asignar aprobación}{El Analista o JDIC (dependiendo es estatus del plan de estudios) podrá marcar los campos que fueron aceptados en su revisión (durante la consulta de la información), en caso de haberlos}{M}{Usuario}
+		\FRitem{RU}{Restringir comentario}{El Sistema no permitirá escribir comentarios a los campos que cuenten con aprobación.}{B}{Origen}
+		\FRitem{RU}{Enviar Plan de estudios a JDIC}{Cuando el analista haya terminado de revisar un plan de estudios el sistema cambiará el estatus del documento en revisión de JDIC}{M}{Origen}
+		\FRitem{RU}{Regresar Plan de estudios con comentarios}{Si al terminar la revisión existen correcciones, entonces se envía de regreso a la unidad de académica con los respectivos comentarios}{A}{Origen}
+		\FRitem{RU}{Versionar Plan de estudios}{Una vez terminada la revisión, el sistema deberá guardar un respaldo del plan de estudios indicando la fecha , sin importar que no fue aprobado}{B}{Origen}
+		\FRitem{RU}{Aprobación de Plan de estudios}{Si el plan de estudios no presenta correcciones después de la revisión entonces se permitirá la elaboración del dictamen técnico y oficio de aprobación}{M}{Origen}
 	\end{requerimientos}
     \caption{Requerimientos funcionales del sistema.}
     \label{tbl:}
