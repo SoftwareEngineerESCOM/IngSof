@@ -165,6 +165,23 @@
 										},
 										{
 											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFmetrMDX6i+jo=",
+											"_parent": {
+												"$ref": "AAAAAAFmdgH7irvVq88="
+											},
+											"model": {
+												"$ref": "AAAAAAFmetrLzn6f6MM="
+											},
+											"font": "Arial;13;0",
+											"left": 277,
+											"top": 196,
+											"width": 270.6005859375,
+											"height": 13,
+											"text": "+Horas Totales",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
 											"_id": "AAAAAAFmdgf1e8FVnvU=",
 											"_parent": {
 												"$ref": "AAAAAAFmdgH7irvVq88="
@@ -174,7 +191,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 277,
-											"top": 196,
+											"top": 211,
 											"width": 270.6005859375,
 											"height": 13,
 											"text": "+Créditos Totales",
@@ -191,7 +208,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 277,
-											"top": 211,
+											"top": 226,
 											"width": 270.6005859375,
 											"height": 13,
 											"text": "+Créditos  Formación  Institucional",
@@ -208,7 +225,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 277,
-											"top": 226,
+											"top": 241,
 											"width": 270.6005859375,
 											"height": 13,
 											"text": "+Créditos Formación Científica Básica",
@@ -225,7 +242,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 277,
-											"top": 241,
+											"top": 256,
 											"width": 270.6005859375,
 											"height": 13,
 											"text": "+Créditos de Foración Profesional",
@@ -242,7 +259,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 277,
-											"top": 256,
+											"top": 271,
 											"width": 270.6005859375,
 											"height": 13,
 											"text": "+Créditos de Formación Terminal e Integración",
@@ -259,7 +276,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 277,
-											"top": 271,
+											"top": 286,
 											"width": 270.6005859375,
 											"height": 13,
 											"text": "+Número de Semestres",
@@ -270,7 +287,7 @@
 									"left": 272,
 									"top": 161,
 									"width": 280.6005859375,
-									"height": 128
+									"height": 143
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -283,7 +300,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 272,
-									"top": 289,
+									"top": 304,
 									"width": 280.6005859375,
 									"height": 10
 								},
@@ -325,7 +342,7 @@
 							"left": 272,
 							"top": 136,
 							"width": 280.6005859375,
-							"height": 163,
+							"height": 178,
 							"nameCompartment": {
 								"$ref": "AAAAAAFmdgH7ibvQAjQ="
 							},
@@ -856,7 +873,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 395,
-									"top": 330,
+									"top": 337,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -877,7 +894,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 380,
-									"top": 330,
+									"top": 337,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -898,7 +915,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 424,
-									"top": 331,
+									"top": 338,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -982,7 +999,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 395,
-									"top": 318,
+									"top": 333,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -1002,7 +1019,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 382,
-									"top": 320,
+									"top": 335,
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -1022,7 +1039,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 423,
-									"top": 314,
+									"top": 329,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -1067,7 +1084,7 @@
 								"$ref": "AAAAAAFmdgJ4obwpZfc="
 							},
 							"lineStyle": 1,
-							"points": "410:375;411:299",
+							"points": "410:375;411:314",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFmdgS7zbzDuII="
@@ -1511,7 +1528,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgH7iLvNCrI="
 							},
-							"name": "Progarma Académico"
+							"name": "Progarma Académico",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1519,7 +1537,16 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgH7iLvNCrI="
 							},
-							"name": "Unidad Académica"
+							"name": "Unidad Académica",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFmetrLzn6f6MM=",
+							"_parent": {
+								"$ref": "AAAAAAFmdgH7iLvNCrI="
+							},
+							"name": "Horas Totales"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1527,7 +1554,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgH7iLvNCrI="
 							},
-							"name": "Créditos Totales"
+							"name": "Créditos Totales",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1535,7 +1563,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgH7iLvNCrI="
 							},
-							"name": "Créditos  Formación  Institucional"
+							"name": "Créditos  Formación  Institucional",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1543,7 +1572,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgH7iLvNCrI="
 							},
-							"name": "Créditos Formación Científica Básica"
+							"name": "Créditos Formación Científica Básica",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1551,7 +1581,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgH7iLvNCrI="
 							},
-							"name": "Créditos de Foración Profesional"
+							"name": "Créditos de Foración Profesional",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1559,7 +1590,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgH7iLvNCrI="
 							},
-							"name": "Créditos de Formación Terminal e Integración"
+							"name": "Créditos de Formación Terminal e Integración",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1567,7 +1599,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgH7iLvNCrI="
 							},
-							"name": "Número de Semestres"
+							"name": "Número de Semestres",
+							"type": ""
 						}
 					]
 				},
@@ -1628,7 +1661,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgIlHbv5IMU="
 							},
-							"name": "Nombre"
+							"name": "Nombre",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1636,7 +1670,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgIlHbv5IMU="
 							},
-							"name": "Área de Formación"
+							"name": "Área de Formación",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1644,7 +1679,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgIlHbv5IMU="
 							},
-							"name": "Crédios TEPIC"
+							"name": "Crédios TEPIC",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1652,7 +1688,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgIlHbv5IMU="
 							},
-							"name": "Créditos SATCA"
+							"name": "Créditos SATCA",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1660,7 +1697,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgIlHbv5IMU="
 							},
-							"name": "Horas Semanales"
+							"name": "Horas Semanales",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1668,7 +1706,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgIlHbv5IMU="
 							},
-							"name": "Dependencias de Unidad de Aprendizaje"
+							"name": "Dependencias de Unidad de Aprendizaje",
+							"type": ""
 						}
 					]
 				},
@@ -1716,7 +1755,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgJ4obwns/A="
 							},
-							"name": "Número"
+							"name": "Número",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1724,7 +1764,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFmdgJ4obwns/A="
 							},
-							"name": "Número de Unidades de Aprendizaje"
+							"name": "Número de Unidades de Aprendizaje",
+							"type": ""
 						}
 					]
 				}
