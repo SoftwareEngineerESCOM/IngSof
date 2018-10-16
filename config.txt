@@ -1,0 +1,11 @@
+Este txt es para comprobar que sus equipos estan configurados y listos pra trabajar.
+
+1. git pull
+2. agreguen su nombre y guarden
+3. git add .
+4. git commit -m "configurado"
+5. git push
+
+Arturo Rivas Rojas
+Plata García Josué
+Christian Andres Cervantes Moreno 

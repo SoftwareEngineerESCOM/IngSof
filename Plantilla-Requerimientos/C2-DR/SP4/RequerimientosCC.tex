@@ -1,17 +1,35 @@
-% -------------- TABLA PARA REQUERIMIENTOS FUNCIONALES ---------------- % 
-% Nomenclatura para la prioridad: 
+% -------------- TABLA PARA REQUERIMIENTOS FUNCIONALES ---------------- %
+% Nomenclatura para la prioridad:
+%	MA - Muy Alta
 %	A - Alta
 %	M - Media
 %	B - Baja
 
+%El  sistema  debe  permitir  el  registro,  consulta  y  actualizaci ́on  de  los veh ́ıculos con los que cuenta la empresa con el fin de hacer una correcta planeaci ́on de entregas
+
 \begin{table}[htbp!]
 	\begin{requerimientos}
-		\FRitem{RU}{}{}{}{}
-		\FRitem{RU}{}{}{}{}
-		\FRitem{RU}{}{}{}{}
-		\FRitem{RU}{}{}{}{}
-		\FRitem{...}{...}{...}{...}{}
+
+
+			\FRitem{RM1}{Registrar Mapa Curricular}{El Usuario Miembro de la Comisión puede registrar el Mapa Curricular.}{A}{Origen}
+	
+		\FRitem{RM2}{Registrar Unidad de Aprendizaje}{El sistema debe permitir ingresar Unidades de Aprendizaje en el Mapa Curricular.}{A}{Origen}
+		
+        \FRitem{RM3}{Guardar Mapa Curricular}{El sistema debe permitir guardar el estado actual del Mapa Curricular .}{A}{Origen}
+        
+	\FRitem{RM4}{Finalizar Mapa Curricular}{El sistema debe permitir finalizar el registro del estado actual del Mapa  Curricular.}{M}{Origen}
+
+		\FRitem{RM5}{Consultar Unidad de Aprendizaje }{El sistema debe permitir visualizar las Unidades de Aprendizaje del Mapa Curricular.}{M}{Origen}
+		
+		\FRitem{RM6}{Modificar Unidad de Aprendizaje }{El sistema debe permitir hacer modificaciones a cualquier Unidad de Aprendizaje del Mapa Curricular.}{M}{Origen}
+		
+		 \FRitem{RM7}{Registrar dependencias de Unidad de Aprendizaje}{ El Sistema debe permitir el registro de dependencias de las Unidades de Aprendizaje.}{M}{Origen}
+
+		\FRitem{RM8}{Validar Mapa Curricular}{ El Usuario Jefe  de Innovación Educativa  valida el estado del Mapa Curricular.}{M}{Origen}
+
+        \FRitem{RM9}{Enviar Comentarios}{ El Sistema permite enviar comentarios  de la validación del Mapa Curricular por el  Usuario Jefe  de Innovación Educativa.}{A}{Origen}
 	\end{requerimientos}
-    \caption{Requerimientos funcionales del sistema.}
-    \label{tbl:}
+    \caption{Requerimientos funcionales del sistema para el subproceso de elaboración del Plan de Estudios}
+    \label{tbl:RFUA}
 \end{table}
+
