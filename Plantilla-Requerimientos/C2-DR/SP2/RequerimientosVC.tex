@@ -5,19 +5,29 @@
 %	M - Media
 %	B - Baja
 %	MB - Muy Baja
+JDDIC : Jefe del Departamento de Desarrollo e Innovación Curricular.\\
+JDIA: Jefe del Departamento de Innovación Académica. Es el jefe del JDDIC.\\
+Propuesta de unidad de aprendizaje: documento con secciones las cuales se revisan y pueden tener comentarios o no.\\
+Comentario u Observación: cuando no se cumple algún punto de una sección de la propuesta de unidad de aprendizaje se agrega un comentario explicando por qué no se cumple dicho punto y como cambiarlo.\\
+Sección: parte del documento que agrupa información relacionada.\\
 
 \begin{table}[htbp!]
 	\begin{requerimientos}
-		\FRitem{RF1}{Visualización de propuestas}{El usuario analista y JDDIC podrán visualizar  el contenido  de la propuesta de cada unidad de aprendizaje.}{A}{Usuario}
-		\FRitem{RF2}{Recibo de paquetes}{El usuario JDDIC podrá recibir los paquetes de propuestas de unidades de aprendizaje del jefe de innovación educativa de la Unidad Académica correspondiente.}{A}{Usuario}
+		\FRitem{RF1}{Visualización de propuestas}{El usuario analista, JDDIC y JDIA podrán visualizar  el contenido  de la propuesta de cada unidad de aprendizaje.}{A}{Usuario}
+		\FRitem{RF2}{Recibo de paquetes}{El usuario JDDIC y JDIA podrán recibir los paquetes de propuestas de unidades de aprendizaje del jefe de innovación educativa de la Unidad Académica correspondiente.}{A}{Usuario}
 		\FRitem{RF2-1}{Asignación de paquetes}{El usuario JDDIC podrá asignar los paquetes recibidos de la Unidad Académica correspondiente a sus analistas.}{A}{Usuario}
+		\FRitem{RF2-2}{Desasignar paquetes}{El usuario JDDIC podrá desasignar los paquetes recibidos de la Unidad Académica correspondiente previamente asignados a un analista.}{A}{Usuario}
 		\FRitem{RF3}{Envío de paquetes}{El usuario JDDIC podrá mandar los paquetes al jefe de innovación educativa de la unidad académica correspondiente.}{A}{Usuario}
-		\FRitem{RF4}{Creación de comentarios}{El usuario analista y JDDIC  podrán agregar comentarios a las partes no aprobadas de la propuesta de cada unidad de aprendizaje.}{A}{Usuario}
-		\FRitem{RF5}{Autorización de secciones}{El analista podrá autorizar secciones de la de propuesta de unidad de aprendizaje.}{M}{Usuario}
-		\FRitem{RF5-1}{Identificador de usuarios}{A los analistas y el JDDIC se les agregará una matrícula única con las que se les identifica como autores de los comentarios en la propuesta de unidad de aprendizaje}{M}{Usuario}
+		\FRitem{RF4}{Creación de comentarios}{El usuario analista, JDIA y JDDIC  podrán agregar comentarios a las partes no aprobadas de la propuesta de cada unidad de aprendizaje.}{A}{Usuario}
+		\FRitem{RF4-1}{Eliminación de comentarios}{El usuario analista, JDIA y JDDIC  podrán eliminar los comentarios previamente realizados en la propuesta de cada unidad de aprendizaje que se le asignó.}{A}{Usuario}
+		\FRitem{RF4-2}{Modificación de comentarios}{El usuario analista, JDIA y JDDIC  podrán modificar los comentarios previamente realizados en la propuesta de cada unidad de aprendizaje que se le asignó.}{A}{Usuario}
+		\FRitem{RF4-3}{Agregar Subrayado de texto}{Los usuarios analista, JDIA y JDDIC podrán  agregar un subrayado a partes de la propuesta de cada unidad de aprendizaje que se le asignó que no han sido previamente aprobadas.}{M}{Usuario}
+		\FRitem{RF4-4}{Quitar Subrayado de texto}{Los usuarios analista, JDIA y JDDIC podrán quitar subrayados previamente agregados en el documento.}{M}{Usuario}
+		\FRitem{RF5}{Autorización de secciones}{El analista, JDIA y JDDIC podrá autorizar secciones de la de propuesta de unidad de aprendizaje.}{M}{Usuario}
+		\FRitem{RF5-1}{Identificador de usuarios}{A los analistas, JDIA y el JDDIC se les agregará una matrícula única con las que se les identifica como autores de los comentarios en la propuesta de unidad de aprendizaje.}{M}{Usuario}
 		\FRitem{RF5-2}{Acceso de documentos asignados}{El usuario analista sólo podrá añadir comentarios a los documentos que le fueron asignados por el usuario JDDIC.}{M}{Usuario}
-		\FRitem{RF5.3}{Bloqueo de secciones autorizadas}{El sistema impedirá agregar comentarios de las secciones del documento aprobadas anteriormente.}{B}{Origen}
-		\FRitem{RF5.4}{Registro de hora de actualización}{El sistema guardará la fecha y hora de cada modificación realizada en el área de comentarios por los usuarios analista y el JDDIC en el documento de propuesta de unidad de aprendizaje.}{B}{Origen}
+		\FRitem{RF5-3}{Bloqueo de secciones autorizadas}{El sistema impedirá agregar comentarios de las secciones del documento aprobadas anteriormente.}{B}{Origen}
+		\FRitem{RF5-4}{Registro de hora de actualización}{El sistema guardará la fecha y hora de cada modificación realizada en el área de comentarios por los usuarios analista y el JDDIC en el documento de propuesta de unidad de aprendizaje.}{B}{Origen}
 	\end{requerimientos}
     \caption{Requerimientos funcionales del sistema.}
     \label{tbl:}
