@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.17)  18 OCT 2018 17:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.17)  18 OCT 2018 22:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1014,9 +1014,12 @@ Overfull \hbox (5.77756pt too wide) in paragraph at lines 12--12
  []
 
 
-Underfull \hbox (badness 7133) in paragraph at lines 12--12
-[]|\OT1/cmbr/m/n/10 Gestionar Uni-dad de
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\OT1/cmbr/m/n/10 Registrar Uni-dad de
  []
+
+
+LaTeX Warning: Hyper reference `fig:MD' on page 4 undefined on input line 12.
 
 
 Overfull \hbox (5.77756pt too wide) in paragraph at lines 15--15
@@ -1029,18 +1032,13 @@ Overfull \hbox (5.77756pt too wide) in paragraph at lines 18--18
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 18--18
-[]|\OT1/cmbr/m/n/10 Finalizar Car-ga Ma-pa
- []
-
-
 Overfull \hbox (5.77756pt too wide) in paragraph at lines 21--21
 []\OT1/cmbr/m/n/10 RM4| 
  []
 
 
-Underfull \hbox (badness 6094) in paragraph at lines 21--21
-[]|\OT1/cmbr/m/n/10 Guardar Avan-ces del
+Underfull \hbox (badness 2229) in paragraph at lines 21--21
+[]|\OT1/cmbr/m/n/10 Finalizar Car-ga Ma-pa
  []
 
 
@@ -1069,71 +1067,107 @@ Overfull \hbox (5.77756pt too wide) in paragraph at lines 36--36
  []
 
 
+Underfull \hbox (badness 7907) in paragraph at lines 36--36
+[]|\OT1/cmbr/m/n/10 Modificar Uni-dad de
+ []
+
+
 Overfull \hbox (11.02751pt too wide) in paragraph at lines 39--39
 []\OT1/cmbr/m/n/10 RM10| 
  []
 
 
-Overfull \hbox (340.16487pt too wide) in alignment at lines 11--41
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\OT1/cmbr/m/n/10 Eliminar Uni-dad de
+ []
+
+
+Overfull \hbox (11.02751pt too wide) in paragraph at lines 42--42
+[]\OT1/cmbr/m/n/10 RM11| 
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 42--42
+[]|\OT1/cmbr/m/n/10 Guardar Avan-ces del
+ []
+
+
+Overfull \hbox (11.02751pt too wide) in paragraph at lines 45--45
+[]\OT1/cmbr/m/n/10 RM12| 
+ []
+
+
+Overfull \hbox (11.02751pt too wide) in paragraph at lines 48--48
+[]\OT1/cmbr/m/n/10 RM13| 
+ []
+
+
+Overfull \hbox (11.02751pt too wide) in paragraph at lines 51--51
+[]\OT1/cmbr/m/n/10 RM14| 
+ []
+
+
+Overfull \hbox (11.02751pt too wide) in paragraph at lines 54--54
+[]\OT1/cmbr/m/n/10 RM15| 
+ []
+
+
+Overfull \hbox (11.02751pt too wide) in paragraph at lines 57--57
+[]\OT1/cmbr/m/n/10 RM16| 
+ []
+
+
+Overfull \hbox (340.16487pt too wide) in alignment at lines 11--59
  [] [] [] [] [] 
  []
+
+
+LaTeX Warning: Float too large for page by 34.56555pt on input line 62.
 
 <C2-DR/SP4/Image/CasosDeUso.jpg, id=23, 2576.62625pt x 1201.48875pt>
 File: C2-DR/SP4/Image/CasosDeUso.jpg Graphic file (type jpg)
 <use C2-DR/SP4/Image/CasosDeUso.jpg>
-Package pdftex.def Info: C2-DR/SP4/Image/CasosDeUso.jpg  used on input line 56.
+Package pdftex.def Info: C2-DR/SP4/Image/CasosDeUso.jpg  used on input line 74.
 
 (pdftex.def)             Requested size: 475.45825pt x 221.70361pt.
-
-LaTeX Warning: Hyper reference `RM11' on page 4 undefined on input line 71.
-
-
-LaTeX Warning: Hyper reference `RM13' on page 4 undefined on input line 78.
-
-
-LaTeX Warning: Hyper reference `RM12' on page 4 undefined on input line 79.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<IG-GRAL/headerPar.JPG, id=35, 432.11438pt x 45.16875pt>
+)
+<IG-GRAL/headerPar.JPG, id=38, 432.11438pt x 45.16875pt>
 File: IG-GRAL/headerPar.JPG Graphic file (type jpg)
 <use IG-GRAL/headerPar.JPG>
-Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 81.
+Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 19.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
 LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <5> not available
-(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 81.
-LaTeX Font Info:    Try loading font information for U+mvs on input line 81.
-
-(/usr/share/texlive/texmf-dist/tex/latex/marvosym/umvs.fd)
+(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 19.
+LaTeX Font Info:    Try loading font information for U+mvs on input line 19.
+ (/usr/share/texlive/texmf-dist/tex/latex/marvosym/umvs.fd)
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 19.
  [4
 
- <./IG-GRAL/headerPar.JPG>])
-<IG-GRAL/headerInp.JPG, id=46, 437.38406pt x 45.92157pt>
+ <./IG-GRAL/headerPar.JPG> <./C2-DR/SP4/Image/CasosDeUso.jpg>]
+<IG-GRAL/headerInp.JPG, id=48, 437.38406pt x 45.92157pt>
 File: IG-GRAL/headerInp.JPG Graphic file (type jpg)
 <use IG-GRAL/headerInp.JPG>
 Package pdftex.def Info: IG-GRAL/headerInp.JPG  used on input line 19.
@@ -1162,7 +1196,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 19.
- [5 <./IG-GRAL/headerInp.JPG> <./C2-DR/SP4/Image/CasosDeUso.jpg>]
+ [5 <./IG-GRAL/headerInp.JPG>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
 
@@ -1181,23 +1215,23 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 10277 strings out of 492982
- 150412 string characters out of 6134895
- 272482 words of memory out of 5000000
- 13631 multiletter control sequences out of 15000+600000
+ 10281 strings out of 492982
+ 150438 string characters out of 6134895
+ 284680 words of memory out of 5000000
+ 13635 multiletter control sequences out of 15000+600000
  14578 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,15n,45p,325b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,15n,45p,347b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr17.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/hfbright/hfbrbx10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/hfbright/hfbrsl8.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/marvosym/marvosym.pfb>
-Output written on DR.pdf (5 pages, 413509 bytes).
+Output written on DR.pdf (5 pages, 414750 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 79 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  10 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
