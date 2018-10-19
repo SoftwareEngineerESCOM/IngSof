@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.17)  18 OCT 2018 17:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.10.8)  19 OCT 2018 11:05
 entering extended mode
 **./DR.tex
 (DR.tex
 LaTeX2e <2018-04-01> patch level 5
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk10.clo"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk10.clo"
 File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -27,34 +27,35 @@ Package: documento 2010/05/30, v1.0 CDT-ESCOM-IPN Plantilla para reportes de la
 box {o\global \mathchardef \accent@spacefactor \spacefactor }\accent 19 o\egrou
 p \spacefactor \accent@spacefactor n
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
-"
+)
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2018/06/05 3.22 The Babel package
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def"
+
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def"
 File: switch.def 2018/06/05 3.22 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-spanish\spani
-sh.ldf"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-spanish\spanis
+h.ldf"
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2018/06/05 3.22 Babel common definitions
 \babel@savecnt=\count89
 \U@D=\dimen103
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.de
-f")
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.def
+")
 \bbl@dirlevel=\count90
 )
 \es@quottoks=\toks16
@@ -64,8 +65,8 @@ Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmbright\cmbright.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmbright\cmbright.st
+y"
 Package: cmbright 2005/04/13 v8.1 (WaS)
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -133,60 +134,55 @@ LaTeX Info: Redefining \LaTeXe on input line 139.
 LaTeX Font Info:    Try loading font information for OT1+cmbr on input line 144
 .
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmbright\ot1cmbr.fd
-"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmbright\ot1cmbr.fd"
 File: ot1cmbr.fd 2005/04/13 v8.1 (WaS)
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.st
+y"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
-"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.st
+y"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+ ("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphi
-cs.cfg"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphic
+s.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex
-.def"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.
+def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.
-cfg"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.c
+fg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\dvipsnam.d
-ef"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\dvipsnam.de
+f"
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wallpaper\wallpaper
-.sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wallpaper\wallpaper.
+sty"
 Package: wallpaper 2005/01/18, v1.01 easy wallpaper formatting (MHFW)
-
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+ ("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
+) ("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count92
 \calc@Bcount=\count93
@@ -199,24 +195,23 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count94
 \calc@Cskip=\skip45
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty
-"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
 Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\atbegshi
-.sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.
+sty"
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarer
-r.sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarerr
+.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.
-sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.s
+ty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.st
-y"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty
+"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )))
 \wpXoffset=\skip46
@@ -228,8 +223,8 @@ Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 \tileX=\skip52
 \tileY=\skip53
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.st
+y"
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip54
@@ -242,17 +237,17 @@ s
 \f@nch@O@olf=\skip61
 \f@nch@O@orf=\skip62
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.st
+y"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.st
+y"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.st
+y"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count95
@@ -268,10 +263,10 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen115
 \Gm@dimlist=\toks18
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
-fg"))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cf
+g"))
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.st
+y"
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip63
 \mylen=\skip64
@@ -281,8 +276,8 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \pyy=\skip68
 \pxx=\skip69
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\marvosym\marvosym.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\marvosym\marvosym.st
+y"
 Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
 )) (procesos.sty (requerimientos.sty
 
@@ -295,8 +290,7 @@ Type  H <return>  for immediate help.
 l.1  P
       aquete requerimientos.sty
 ? 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.sty
-"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.sty"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip70
 \LTright=\skip71
@@ -314,17 +308,17 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count102
 \LT@p@ftn=\toks19
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.st
+y"
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-h
-yperref.sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hy
+perref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-g
-eneric.sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-ge
+neric.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -363,28 +357,27 @@ Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.st
-y"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty
+"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.
-sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.s
+ty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen117
 \Hy@linkcounter=\count103
 \Hy@pagecounter=\count104
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
-"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count105
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.c
-fg"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.cf
+g"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `bookmarks' set `true' on input line 4383.
@@ -397,7 +390,7 @@ Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
 \c@Hy@tempcnt=\count106
- ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+ ("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 Overfull \hbox (2173.51645pt too wide) in paragraph at lines 1--30
 []\OT1/cmbr/m/n/10 Paquete re-que-ri-mien-tos.sty                              
                                                                                
@@ -439,26 +432,26 @@ LaTeX Info: Redefining \pageref on input line 6443.
 )
 Package hyperref Info: Driver: hpdftex.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.de
-f"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+"
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \Fld@listcount=\count111
 \c@bookmark@seq@number=\count112
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilec
-heck.sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilech
+eck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip74
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.st
-y"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty
+"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.st
+y"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks20
 \symAMSa=\mathgroup4
@@ -466,10 +459,10 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\colortbl.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\colortbl.st
+y"
 Package: colortbl 2018/05/02 v1.0c Color table columns (DPC)
- ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
+ ("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
 \col@sep=\dimen121
 \ar@mcellbox=\box30
@@ -482,21 +475,21 @@ Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
 \everycr=\toks22
 \minrowclearance=\skip77
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.st
+y"
 Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
 \multirow@colwidth=\skip78
 \multirow@cntb=\count113
 \multirow@dima=\skip79
 \bigstrutjot=\dimen123
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\chapterfolder\chapt
-erfolder.sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\chapterfolder\chapte
+rfolder.sty"
 Package: chapterfolder 2005/11/24 v2.0 Package for dealing with folder
 \c@@cf@currentpos=\count114
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.s
-ty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.st
+y"
 \lst@mode=\count115
 \lst@gtempboxa=\box32
 \lst@token=\toks23
@@ -510,29 +503,26 @@ ty"
 \lst@lineno=\count120
 \lst@maxwidth=\dimen127
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.st
-y"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 \c@lstnumber=\count121
 \lst@skipnumbers=\count122
 \lst@framebox=\box33
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.c
-fg"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.cf
+g"
 File: listings.cfg 2018/09/02 1.7 listings configuration
 ))
 Package: listings 2018/09/02 1.7 (Carsten Heinz)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\keystroke\keystroke
-.sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\keystroke\keystroke.
+sty"
 Package: keystroke 2010/04/23 v1.6 3D keystrokes (SuSE GmbH/RN)
 \suse@key=\box34
 \keystroke@left=\box35
 \keystroke@right=\box36
 \keystroke@middle=\box37
-
-! I can't write on file `DR.pdf'.
-Please type another file name for output: 
 <keystroke_left.pdf, id=1, 42.1575pt x 195.73125pt>
 File: keystroke_left.pdf Graphic file (type pdf)
 <use keystroke_left.pdf>
@@ -549,37 +539,18 @@ File: keystroke_right.pdf Graphic file (type pdf)
 Package pdftex.def Info: keystroke_right.pdf  used on input line 173.
 (pdftex.def)             Requested size: 42.15738pt x 195.73076pt.
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfke
-ys.sty"
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
-keys.code.tex"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkey
+s.sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfk
+eys.code.tex"
 \pgfkeys@pathtoks=\toks24
 \pgfkeys@temptoks=\toks25
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
-keysfiltered.code.tex"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfk
+eysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks26
-)))) (DR.aux
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
- (C2-DR/MP/RequerimientosMP.aux)
-(C2-DR/SP1/RequerimientosUA.aux) (C2-DR/SP2/RequerimientosVC.aux
-
-LaTeX Warning: Label `tbl:' multiply defined.
-
-) (C2-DR/SP3/RequerimientosVS.aux
-
-LaTeX Warning: Label `tbl:' multiply defined.
-
-) (C2-DR/SP4/RequerimientosCC.aux
-
-LaTeX Warning: Label `tbl:' multiply defined.
-
-) (C2-DR/SP5/RequerimientosAB.aux
-
-LaTeX Warning: Label `tbl:' multiply defined.
-
-))
+))))
+No file DR.aux.
 \openout1 = `DR.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -598,9 +569,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
-
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
-i"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mkii
+"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count123
 \scratchdimen=\dimen128
@@ -614,12 +584,11 @@ i"
 \makeMPintoPDFobject=\count128
 \everyMPtoPDFconversion=\toks28
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-b
-ase.sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-ba
+se.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
-"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -666,13 +635,12 @@ G,.JBIG2,.JB2,.eps]
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 11.
-
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
-y"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitle
-string.sty"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitles
+tring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count129
@@ -680,12 +648,11 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
- (DR.out) (DR.out)
 \@outlinefile=\write3
 \openout3 = `DR.out'.
 
 \c@lstlisting=\count130
-<IG-GRAL/headerInp.jpg, id=10, 437.38406pt x 45.92157pt>
+<IG-GRAL/headerInp.jpg, id=6, 437.38406pt x 45.92157pt>
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 14.
@@ -694,7 +661,7 @@ LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <5> not available
 (Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 14.
 LaTeX Font Info:    Try loading font information for U+mvs on input line 14.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\marvosym\umvs.fd")
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\marvosym\umvs.fd")
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 14.
 Package babel Info: Redefining spanish shorthand >>
@@ -722,9 +689,9 @@ Package babel Info: Redefining spanish shorthand "?
 
 [1
 
-{C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./IG-GRAL/he
-aderInp.jpg>]
-<IG-GRAL/headerPar.jpg, id=20, 432.11438pt x 45.16875pt>
+{C:/Users/Yoo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./IG-GRAL/hea
+derInp.jpg>]
+<IG-GRAL/headerPar.jpg, id=16, 432.11438pt x 45.16875pt>
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 14.
@@ -759,15 +726,15 @@ Package babel Info: Redefining spanish shorthand "?
 LaTeX Font Info:    Try loading font information for OML+cmbrm on input line 14
 .
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmbright\omlcmbrm.f
-d"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmbright\omlcmbrm.fd
+"
 File: omlcmbrm.fd 2005/04/13 v8.1 (WaS)
 )
 LaTeX Font Info:    Try loading font information for OMS+cmbrs on input line 14
 .
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmbright\omscmbrs.f
-d"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmbright\omscmbrs.fd
+"
 File: omscmbrs.fd 2005/04/13 v8.1 (WaS)
 )
 Package babel Info: Redefining spanish shorthand <<
@@ -831,10 +798,7 @@ been already used, duplicate ignored
 l.15 \tableofcontents
                       [2
 
-] (DR.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
+]
 \tf@toc=\write4
 \openout4 = `DR.toc'.
 
@@ -966,8 +930,7 @@ Overfull \hbox (340.16487pt too wide) in alignment at lines 13--13
 
 LaTeX Font Info:    Try loading font information for OMS+cmbr on input line 17.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmbright\omscmbr.fd
-"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmbright\omscmbr.fd"
 File: omscmbr.fd 2005/04/13 v8.1 (WaS)
 )
 LaTeX Font Info:    Font shape `OMS/cmbr/m/n' in size <10> not available
@@ -1294,7 +1257,7 @@ Package babel Info: Redefining spanish shorthand "?
  (C2-DR/SP5/RequerimientosAB.tex
 LaTeX Font Info:    Try loading font information for U+lasy on input line 2.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+("C:\Users\Yoo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 Overfull \hbox (5.75258pt too wide) in paragraph at lines 14--14
@@ -1394,11 +1357,17 @@ LaTeX Info: Redefining \% on input line 23.
 (C2-DR/SP4/RequerimientosCC.aux) (C2-DR/SP5/RequerimientosAB.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
-Package rerunfilecheck Info: File `DR.out' has not changed.
-(rerunfilecheck)             Checksum: FAF3F95768504A5E5BA7BB24B5EB85D5;71.
 
 
-LaTeX Warning: There were multiply-defined labels.
+Package rerunfilecheck Warning: File `DR.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `DR.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  FAF3F95768504A5E5BA7BB24B5EB85D5;71.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  )
@@ -1409,29 +1378,29 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
 ### semi simple group (level 1) entered at line 2 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9986 strings out of 492973
- 153598 string characters out of 3127135
- 289707 words of memory out of 3000000
- 13593 multiletter control sequences out of 15000+200000
+ 9958 strings out of 492973
+ 151780 string characters out of 3127578
+ 286460 words of memory out of 3000000
+ 13585 multiletter control sequences out of 15000+200000
  11170 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,15n,45p,327b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public
-\cmbright\dpi600\cmbrsy10.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\public\cmbright\dpi600\cmbrbx10.pk> <C:\Users\User\AppData\Local\MiKTeX\
-2.9\fonts\pk\ljfour\public\cmbright\dpi864\cmbr10.pk> <C:\Users\User\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi720\cmbr10.pk> <C:\Users\User
-\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbr17.pk> <C:
-\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\cmb
-r17.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright
-\dpi600\cmbr8.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\publi
-c\cmbright\dpi375\cmbrsl8.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\public\cmbright\dpi600\cmbr10.pk><C:/Users/User/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><C:/Users/User/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on .pdf (13 pages, 136094 bytes).
+ <C:\Users\Yoo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\
+cmbright\dpi600\cmbrsy10.pk> <C:\Users\Yoo\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\public\cmbright\dpi600\cmbrbx10.pk> <C:\Users\Yoo\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\public\cmbright\dpi864\cmbr10.pk> <C:\Users\Yoo\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi720\cmbr10.pk> <C:\Users\Yoo\AppD
+ata\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbr17.pk> <C:\User
+s\Yoo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\cmbr17.pk
+> <C:\Users\Yoo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600
+\cmbr8.pk> <C:\Users\Yoo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbrig
+ht\dpi375\cmbrsl8.pk> <C:\Users\Yoo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\pu
+blic\cmbright\dpi600\cmbr10.pk><C:/Users/Yoo/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/latxfont/lasy10.pfb><C:/Users/Yoo/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/marvosym/marvosym.pfb>
+Output written on DR.pdf (13 pages, 134714 bytes).
 PDF statistics:
- 357 PDF objects out of 1000 (max. 8388607)
+ 349 PDF objects out of 1000 (max. 8388607)
  26 named destinations out of 1000 (max. 500000)
- 34 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
