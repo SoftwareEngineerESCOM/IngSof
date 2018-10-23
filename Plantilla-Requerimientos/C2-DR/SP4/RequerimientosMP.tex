@@ -9,55 +9,188 @@
 \begin{table}[htbp!]
     \begin{requerimientos}
 
-        \FRitem{RM1}{Registrar Mapa Curricular}{El Usuario Miembro de la Comisión puede registrar los datos del Mapa Curricular acorde al \hyperref[MD-SP4]{Modelo de Datos}.}{A}{Origen}
-        \label{RM1}
+%-----------------------------------------------------Requerimeintos de Usuario-----------------------------------------------------------
 
-        \FRitem{RM2}{Registrar Unidad de Aprendizaje}{El sistema debe permitir ingresar los datos de las Unidades de Aprendizaje que componen al Mapa Curricular acorde al \hyperref[MD-SP4]{Modelo de Datos}.}{A}{Origen}
-        \label{RM2}
+        \FRitem{SP4-U1}{Registrar Programa Académico}{El usuario Jefe de Innovación Educativa registra los datos del Programas Académicos, acorde a la entidad Programa Académico del \hyperref[MDD]{Modelo de Datos}.}{A}{Origen}
+        \label{SP4-U1}
 
-        \FRitem{RM3}{Finalizar Mapa Curricular}{El sistema debe permitir finalizar el registro del Mapa  Curricular.}{A}{Origen}
-        \label{RM3}
+        \FRitem{SP4-U2}{Registrar Plan de Estudios}{El usuario Jefe de Innovación Educativa registra los datos del Plan de estudios , acorde a la entidad Plan de Estudios del \hyperref[MDD]{Modelo de Datos}.}{A}{Origen}
+        \label{SP4-U2}
 
-        \FRitem{RM4}{Guardar Mapa Curricular}{El sistema debe permitir guardar el estado actual del Mapa Curricular .}{M}{Origen}
-        \label{RM4}
+        \FRitem{SP4-U3}{Registrar Unidad de Aprendizaje}{El usuario Docente registra los datos de las Unidades de Aprendizaje, de acorde a la entidad Unidad de Aprendizaje del \hyperref[MDD]{Modelo de Datos},  que contiene el Mapa Curricular.}{A}{Origen}
+        \label{SP4-U3}
 
-        \FRitem{RM5}{Consultar Mapa Curricular }{El sistema debe permitir visualizar la totalidad de los contenidos del Mapa Curricular registrados.}{M}{Origen}
-        \label{RM5}
+        \FRitem{SP4-U4}{Registrar Usuarios}{El usuario Jefe de Innovación Educativa registra a los usuarios (Analista y Docente).}{A}{Origen}
+        \label{SP4-U4}
 
-        \FRitem{RM6}{Editar Mapa Curricular }{El sistema debe permitir modificar la información general del Mapa Curricular.}{M}{Origen}
-        \label{RM6}
+        \FRitem{SP4-U5}{Consultar Programas Académicos }{El usuario Jefe de Innovación Educativa visualiza la informacion de los Programas Académicos.}{A}{Origen}
+        \label{SP4-U5}
 
-        \FRitem{RM7}{Eliminar Unidad de Aprendizaje }{El sistema debe permitir eliminar las Unidades de Aprendizaje registradas.}{M}{Origen}
-        \label{RM7}
+        \FRitem{SP4-U6}{Consultar Planes de Estudios }{El usuario Jefe de Innovación Educativa visualiza la informacion de los Planes de Estudios.}{A}{Origen}
+        \label{SP4-U6}
 
-        \FRitem{RM8}{Gestionar dependencias de Unidad de Aprendizaje}{ El Sistema debe permitir la gestión de las dependencias entre las Unidades de Aprendizaje.}{M}{Origen}
-        \label{RM8}
+        \FRitem{SP4-U7}{Consultar Programas Académicos }{El usuario Jefe de Innovación Educativa visualiza la informacion de los Programas Académicos registrados.}{A}{Origen}
+        \label{SP4-U7}
 
-        \FRitem{RM9}{Validar congruencia en el Mapa Curricular}{ El Sistema validará la congruencia de los datos registrados.}{M}{Origen}
-        \label{RM9}
+        \FRitem{SP4-U8}{Consultar Mapa Curricular }{El usuario Docente visualiza la totalidad de los contenidos del Mapa Curricular registrados.}{A}{Origen}
+        \label{SP4-U8}
 
-        \FRitem{RM10}{Aprobar Mapa Curricular}{el Sistema debe permitirle al Usuario Jefe  de Innovación Educativa aprobar el Mapa Curricular.}{M}{Origen}
-        \label{RM10}
+        \FRitem{SP4-U9}{Consultar Usuarios}{El usuario  Jefe de Innovación Educativa consulta los usuarios.}{A}{Origen}
+        \label{SP4-U9}
 
-        \FRitem{RM11}{Enviar Comentarios}{ El Sistema debe permitirle al Usuario Jefe de Innovación Educativa enviar comentarios de corrección sobre el Mapa Curricular.}{M}{Origen}
-        \label{RM11}
+        \FRitem{SP4-U10}{Finalizar Carga Mapa Curricular}{El usuario Docente finaliza el registro de todas las Unidades de Aprendizaje que contiene el Mapa  Curricular.}{A}{Origen}
+        \label{SP4-U10}
 
-        \FRitem{RM12}{Visualizar Comentarios}{ El Sistema debe permitirle al Usuario Miembro de la Comisión visualizar comentarios hechos al Mapa Curricular, tanto por el Departamento de Innovación Educativa como por la DES.}{M}{Origen}
-        \label{RM12}
+        \FRitem{SP4-U11}{Asignar tareas a los usuarios de la Unidad Académica}{El usuario Jefe de Innovación Educativa asigna tareas a los usuarios.}{A}{Origen}
+        \label{SP4-U11}
 
-        \FRitem{RM13}{Modificar Unidad de Aprendizaje }{El sistema debe permitir hacer modificaciones a cualquiera de las Unidades de Aprendizaje registradas.}{B}{Origen}
-        \label{RM13}
-
+        \FRitem{SP4-U12}{Generar Tareas}{El usuario Jefe de Innovación Educativa genera las tareas de registro (Mapas Curriculares y Programas Sintéticos).}{A}{Origen}
+        \label{SP4-U12}
 
     \end{requerimientos}
-    \caption{Requerimientos funcionales del sistema para el subproceso de elaboración del Mapa Curricular}
-    \label{tbl:RFUA}
+\caption{Requerimientos de Usuario 1/2 del subproceso de elaboración del Mapa Curricular}
+\label{tbl:SP4-RU1}
+\end{table}
+
+\begin{table}[htbp!]
+    \begin{requerimientos}
+        \FRitem{SP4-U13}{Consultar Tareas}{Los usuarios visualizan las tareas a las que están asignados.}{A}{Origen}
+        \label{SP4-U13}
+
+        \FRitem{SP4-U14}{Enviar Comentarios}{ Los usuarios del Departamento de Innovación Educativa envían comentarios de corrección sobre el Mapa Curricular una vez que el registro haya finalizado.}{A}{Origen}
+        \label{SP4-U14}
+
+        \FRitem{SP4-U15}{Visualizar Comentarios}{ El Usuario Docente visualiza los comentarios hechos al Mapa Curricular, tanto por el Departamento de Innovación Educativa como por la DES.}{A}{Origen}
+        \label{SP4-U15}
+
+        \FRitem{SP4-U16}{Modificar Unidad de Aprendizaje}{El usuario Docente modifica los datos de las Unidades de Aprendizaje registradas.}{M}{Origen}
+        \label{SP4-U16}
+
+        \FRitem{SP4-U17}{Eliminar Unidad de Aprendizaje}{El usuario Docente elimina las Unidades de Aprendizaje registradas.}{M}{Origen}
+        \label{SP4-U17}
+
+        \FRitem{SP4-U18}{Guardar Avances del Mapa Curricular}{El usuario Docente guarda las Unidades de Aprendizaje que este vaya registrando.}{M}{Origen}
+        \label{SP4-U18}
+
+        \FRitem{SP4-U19}{Aprobar Mapa Curricular}{El usuario Jefe  de Innovación Educativa aprueba el Mapa Curricular una vez que el registro haya finalizado.}{M}{Origen}
+        \label{SP4-U19}
+
+        \FRitem{SP4-U20}{Revisar Mapa Curricular}{El usuario Analista revisa el Mapa Curricular una vez que el registro haya finalizado.}{B}{Origen}
+        \label{SP4-U20}
+
+        \FRitem{SP4-U21}{Modificar Programa Académico}{El usuario Jefe de Innovación Educativa modifica los datos de los Programas Académicos.}{B}{Origen}
+        \label{SP4-U21}
+
+        \FRitem{SP4-U22}{Modificar Plan de Estudios}{El usuario Jefe de Innovación Educativa modifica los datos del Plan de Estudios.}{B}{Origen}
+        \label{SP4-U22}
+
+        \FRitem{SP4-U23}{Modificar Información de Usuarios}{El usuario Jefe de Innovación Educativa modifica la información general de los usuarios.}{B}{Origen}
+        \label{SP4-U23}
+
+        \FRitem{SP4-U24}{Eliminar Usuarios}{El usuario Jefe de Innovación Educativa elimina a cualquier usuario.}{B}{Origen}
+        \label{SP4-U24}
+
+    \end{requerimientos}
+\caption{Requerimientos  de Usuario 2/2 del subproceso de elaboración del Mapa Curricular}
+\label{tbl:SP4-RU2}
+\end{table}
+%------------------------------------------------------Requerimeintos Funcionales-----------------------------------------------------------
+
+\begin{table}[htbp!]
+    \begin{requerimientos}
+
+        \FRitem{SP4-F1}{Registrar Programa Académico}{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" registre los datos de los Programas Académicos, acorde a la entidad Programa Académico del \hyperref[MDD]{Modelo de Datos}.}{A}{Origen}
+        \label{SP4-F1}
+
+        \FRitem{SP4-F2}{Registrar Plan de Estudios}{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" registre los datos del Plan de estudios , acorde a la entidad Plan de Estudios del \hyperref[MDD]{Modelo de Datos}.}{A}{Origen}
+        \label{SP4-F2}
+
+        \FRitem{SP4-F3}{Registrar Unidad de Aprendizaje}{El sistema debe permitir que el usuario de tipo "Docente" registre los datos de las Unidades de Aprendizaje, acorde a la entidad Unidad de Aprendizaje del \hyperref[MDD]{Modelo de Datos}.}{A}{Origen}
+        \label{SP4-F3}
+
+        \FRitem{SP4-F4}{Registrar Usuarios}{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" registre a los usuarios (Analista y Docente).}{A}{Origen}
+        \label{SP4-F4}
+
+        \FRitem{SP4-F5}{Consultar Programas Académicos }{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" consulte los Programas Académicos.}{A}{Origen}
+        \label{SP4-F5}
+
+        \FRitem{SP4-F6}{Consultar Planes de Estudios }{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" consulte los Planes de Estudios de los Programas Académicos.}{A}{Origen}
+        \label{SP4-F6}
+
+        \FRitem{SP4-F7}{Consultar Mapa Curricular }{El sistema debe permitir que el usuario de tipo "Docente" visualice todos los registros existentes del Mapa curricular.}{A}{Origen}
+        \label{SP4-F7}
+
+        \FRitem{SP4-F8}{Consultar Usuarios}{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" consulte los usuarios.}{A}{Origen}
+        \label{SP4-F8}
+
+        \FRitem{SP4-F9}{Finalizar Tarea}{El sistema debe permitir que los usuarios indiquen cuando hayan finalizado una Tarea.}{A}{Origen}
+        \label{SP4-F9}
+
+        \FRitem{SP4-F10}{Asignar tareas a los usuarios de la Unidad Académica}{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" asigne tareas a los usuarios.}{A}{Origen}
+        \label{SP4-F10}
+
+        \FRitem{SP4-F11}{Generar Tareas}{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" genere las tareas de registro (Mapas Curriculares y Programas Sintéticos).}{A}{Origen}
+        \label{SP4-F11}
+
+        \FRitem{SP4-F120}{Consultar Tareas}{El sistema debe permitir que los usuarios visualicen las tareas a las que están asignados.}{A}{Origen}
+        \label{SP4-F12}
+
+        \FRitem{SP4-F13}{Validar congruencia en el Mapa Curricular}{ Si algunos de los datos ingresados se contradicen el sistema no permitirá que se guarden hasta resolver el conflicto.}{A}{Origen}
+        \label{SP4-F13}
+
+    \end{requerimientos}
+    \caption{Requerimientos Funcionales 1/2 del subproceso de elaboración del Mapa Curricular}
+    \label{tbl:SP4-RF1}
+\end{table}
+
+\begin{table}[htbp!]
+    \begin{requerimientos}
+
+        \FRitem{SP4-F14}{Enviar Comentarios}{ El sistema debe permitir que los usuarios de tipo "Analista" y  "Jefe de Innovación Educativa" envíen comentarios de corrección sobre el Mapa Curricular una vez que el usuario de tipo "Docente" haya finalizado el registro.}{A}{Origen}
+        \label{SP4-F14}
+
+        \FRitem{SP4-F15}{Visualizar Comentarios}{ El sistema debe permitir que el usuario de tipo "Docente" visualice los comentarios hechos a las tareas que este asignado, tanto los hechos por el Departamento de Innovación Educativa como por la DES.}{A}{Origen}
+        \label{SP4-F15}
+
+        \FRitem{SP4-F16}{Modificar Unidad de Aprendizaje}{El sistema debe permitir que el usuario de tipo "Docente" modifique lod dato de las Unidades de Aprendizaje que contiene el Mapa Curricular.}{M}{Origen}
+        \label{SP4-F16}
+
+        \FRitem{SP4-F17}{Eliminar Unidad de Aprendizaje}{El sistema debe permitir que el usuario de tipo "Docente" elimine las Unidades de Aprendizaje registradas.}{M}{Origen}
+        \label{SP4-F17}
+
+        \FRitem{SP4-F18}{Guardar Avances del Mapa Curricular}{El sistema debe permitirle al usuario Docente guardar las Unidades de Aprendizaje que éste vaya registrando.}{M}{Origen}
+        \label{SP4-F18}
+
+        \FRitem{SP4-F19}{Aprobar Mapa Curricular}{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" apruebe el Mapa Curricular una vez que el usuario de tipo "Analista" haya finalizada la revisión.}{M}{Origen}
+        \label{SP4-F19}
+
+        \FRitem{SP4-F20}{Revisar Mapa Curricular}{El sistema debe permitir que el usuario de tipo "Analista" revise el Mapa Curricular  una vez que el usuario de tipo "Docente" haya finalizada el registro.}{B}{Origen}
+        \label{SP4-F20}
+
+        \FRitem{SP4-F21}{Modificar Programa Académico}{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" modifique los datos de los Programas Académicos.}{B}{Origen}
+        \label{SP4-F21}
+
+        \FRitem{SP4-F22}{Modificar Plan de Estudios}{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" modifique los datos del Plan de Estudios.}{B}{Origen}
+        \label{SP4-F22}
+
+        \FRitem{SP4-F23}{Modificar Usuarios de la Unidad Académica}{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" modifique la información general de cualquier usuario.}{B}{Origen}
+        \label{SP4-F23}
+
+        \FRitem{SP4-F24}{Eliminar Usuarios de la Unidad Académica}{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" elimine a cualquier usuario.}{B}{Origen}
+        \label{SP4-F24}
+
+        \FRitem{SP4-F25}{Notificar al Usuario}{El sistema informará al usuario de los cambios de estatus de las tareas a las que está asignado.}{B}{Origen}
+        \label{SP4-F25}
+
+    \end{requerimientos}
+    \caption{Requerimientos Funcionale 2/2 del subproceso de elaboración del Mapa Curricular}
+    \label{tbl:SP4-RF2}
 \end{table}
 
 \begin{figure}[htbp]
     \begin{center}
-        \includegraphics[width=.50\textwidth]{C2-DR/SP4/Image/ModeloDeDatosMC}
-        \label{MD-SP4}
+        \includegraphics[width=.95\textwidth]{C2-DR/SP4/Image/ModeloDeDatosjpg}
+        \label{MDD}
         \caption{Modelo de Datos Subproceso para la  Carga del Mapa Curricular}
     \end{center}
 \end{figure}
@@ -66,27 +199,35 @@
 	\begin{center}
 		\includegraphics[width=.95\textwidth]{C2-DR/SP4/Image/CasosDeUso}
 		\caption{Casos de Uso Subproceso para la  Carga del Mapa Curricular}
-		\label{CU-SP4}
+		\label{DCU-4}
 	\end{center}
 \end{figure}
 
 \begin{center}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		ID & Caso de uso & Requerimientos & Encargado \\ \hline
-        1 & Registrar Mapa Curricular & \hyperref[RM1]{RM1} & Josué \\ \hline
-        2 & Guardar Mapa Curricular & \hyperref[RM4]{RM4} & Andrés \\ \hline
-        3 & Consultar Mapa Curricular & \hyperref[RM5]{RM5} & Arturo \\ \hline
-		4 & Editar Información General & \hyperref[RM6]{RM6} & Josué \\ \hline
-        5 & Finalizar Mapa Curricular & \hyperref[RM3]{RM3} & Josué \\ \hline
-        6 & Aprobar Mapa Curricular & \hyperref[RM11]{RM11} & Andrés \\ \hline
-        7 & Registrar Unidades de Aprendizaje & \hyperref[RM2]{RM2} & Arturo \\ \hline
-        8 & Editar Unidades de Aprendizaje & \hyperref[RM8]{RM8} & Andrés \\ \hline
-        9 & Eliminar Unidades de Aprendizaje & \hyperref[RM7]{RM7} & Arturo \\ \hline
-        10 & Registrar Dependencias & \hyperref[RM9]{RM9} & Andrés \\ \hline
-        11 & Editar Dependencias & \hyperref[RM9]{RM9} & Josué \\ \hline
-        12 & Eliminar Dependencias & \hyperref[RM9]{RM9} & Arturo \\ \hline
-        13 & Visualizar Comentarios & \hyperref[RM13]{RM13} & Josué \\ \hline
-        14 & Enviar Comentarios & \hyperref[RM12]{RM12} & Andrés \\ \hline
+		ID        & Caso de uso                        & Requerimientos                                            & Encargado \\ \hline
+        SP4-CU1   & Registrar Programa Académico       & \hyperref[SP4-U1]{SP4-U1} y \hyperref[SP4-U2]{SP4-U2}     & Josué \\ \hline
+        SP4-CU2   & Registrar Mapa Curricular          & \hyperref[SP4-U3]{SP4-U3} y \hyperref[SP4-U2]{SP4-U2}     & Andrés \\ \hline
+        SP4-CU3   & Registrar Unidad de Aprendizaje    & \hyperref[SP4-U3]{SP4-U3}                                 & Andrés \\ \hline
+        SP4-CU4   & Registrar Usuario                  & \hyperref[SP4-U4]{SP4-U4}                                 & Arturo \\ \hline
+        SP4-CU5   & Consultar Programa Académico       & \hyperref[SP4-U5]{SP4-U5} y \hyperref[SP4-U6]{SP4-U6}     & Josué \\ \hline
+        SP4-CU6   & Consultar Mapa Curricular          & \hyperref[SP4-U7]{SP4-U7}                                 & Andrés \\ \hline
+        SP4-CU7   & Consultar Usuarios                 & \hyperref[SP4-U8]{SP4-U8}                                 & Josué \\ \hline
+        SP4-CU8   & Consultar Tareas                   & \hyperref[SP4-U13]{SP4-U13}                               & Arturo \\ \hline
+        SP4-CU9   & Editar Programa Académico          & \hyperref[SP4-U20]{SP4-U20} y \hyperref[SP4-U21]{SP4-U21} & Josué \\ \hline
+        SP4-CU10  & Editar Unidad   de Aprendizaje     & \hyperref[SP4-U15]{SP4-U15}                               & Andrés \\ \hline
+        SP4-CU11  & Editar Usuario                     & \hyperref[SP4-U22]{SP4-U22}                               & Josué \\ \hline
+        SP4-CU12  & Eliminar Unidad de Aprendizaje     & \hyperref[SP4-U16]{SP4-U16}                               & Andrés \\ \hline
+        SP4-CU13  & Eliminar Usuario                   & \hyperref[SP4-U23]{SP4-U23}                               & Josué \\ \hline
+        SP4-CU14  & Guardar Avances del Mapa Curricular& \hyperref[SP4-U17]{SP4-U17}                               & Andrés \\ \hline
+        SP4-CU15  & Aprobar Mapa Curricular            & \hyperref[SP4-U18]{SP4-U18}                               & Arturo \\ \hline
+        SP4-CU16  & Revisar Mapa Curricular            & \hyperref[SP4-U19]{SP4-U19}                               & Arturo \\ \hline
+        SP4-CU17  & Visualizar Comentarios             & \hyperref[SP4-U14]{SP4-U14}                               & Andrés \\ \hline
+        SP4-CU18  & Escribir Comentarios               & \hyperref[SP4-U15]{SP4-U15}                               & Josué \\ \hline
+        SP4-CU19  & Asignar Tarea                      & \hyperref[SP4-U10]{SP4-U10}                               & Arturo \\ \hline
+        SP4-CU20  & Generar Tarea                      & \hyperref[SP4-U11]{SP4-U11}                               & Arturo \\ \hline
+        SP4-CU21  & Consultar Tarea                    & \hyperref[SP4-U12]{SP4-U12}                               & Arturo \\ \hline
+        SP4-CU22  & Finalizar Tarea                    & \hyperref[SP4-U9]{SP4-U9}                                 & Josué \\ \hline
     \end{tabular}
 \end{center}
