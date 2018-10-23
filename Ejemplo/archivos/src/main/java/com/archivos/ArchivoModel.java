@@ -35,7 +35,7 @@ public class ArchivoModel {
 	}
 
 	public String getPath() {
-		return nombre;
+		return path;
 	}
 	public void setPath(String path) {
 		this.path = path;
