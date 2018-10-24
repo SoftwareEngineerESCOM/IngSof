@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.11)  23 OCT 2018 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.11)  24 OCT 2018 10:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -748,11 +748,6 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 32--32
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-[]|\OT1/cmbr/m/n/10 Consultar Pro-gra-mas
- []
-
-
 Overfull \hbox (6.15256pt too wide) in paragraph at lines 35--35
 []\OT1/cmbr/m/n/10 SP4-
  []
@@ -963,33 +958,38 @@ Overfull \hbox (2.4026pt too wide) in paragraph at lines 90--90
  []
 
 
-Overfull \hbox (340.16487pt too wide) in alignment at lines 57--93
+Overfull \hbox (6.15256pt too wide) in paragraph at lines 93--93
+[]\OT1/cmbr/m/n/10 SP4-
+ []
+
+
+Overfull \hbox (2.4026pt too wide) in paragraph at lines 93--93
+\OT1/cmbr/m/n/10 U25| 
+ []
+
+
+Overfull \hbox (340.16487pt too wide) in alignment at lines 57--96
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (0.67323pt too wide) in paragraph at lines 101--101
+Overfull \hbox (0.67323pt too wide) in paragraph at lines 104--104
 []|[]\OT1/cmbr/m/n/10 Prioridad[]| 
  []
 
 
-Overfull \hbox (340.16487pt too wide) in alignment at lines 101--101
+Overfull \hbox (340.16487pt too wide) in alignment at lines 104--104
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (6.15256pt too wide) in paragraph at lines 102--102
+Overfull \hbox (6.15256pt too wide) in paragraph at lines 105--105
 []|\OT1/cmbr/m/n/10 SP4-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
 []|\OT1/cmbr/m/n/10 Registrar Pro-gra-ma
- []
-
-
-Overfull \hbox (6.15256pt too wide) in paragraph at lines 105--105
-[]\OT1/cmbr/m/n/10 SP4-
  []
 
 
@@ -998,13 +998,13 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 108--108
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmbr/m/n/10 Registrar Uni-dad de
+Overfull \hbox (6.15256pt too wide) in paragraph at lines 111--111
+[]\OT1/cmbr/m/n/10 SP4-
  []
 
 
-Overfull \hbox (6.15256pt too wide) in paragraph at lines 111--111
-[]\OT1/cmbr/m/n/10 SP4-
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]|\OT1/cmbr/m/n/10 Registrar Uni-dad de
  []
 
 
@@ -1013,13 +1013,13 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 114--114
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
-[]|\OT1/cmbr/m/n/10 Consultar Pro-gra-mas
+Overfull \hbox (6.15256pt too wide) in paragraph at lines 117--117
+[]\OT1/cmbr/m/n/10 SP4-
  []
 
 
-Overfull \hbox (6.15256pt too wide) in paragraph at lines 117--117
-[]\OT1/cmbr/m/n/10 SP4-
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+[]|\OT1/cmbr/m/n/10 Consultar Pro-gra-mas
  []
 
 
@@ -1043,23 +1043,18 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 129--129
  []
 
 
-Overfull \hbox (1.44427pt too wide) in paragraph at lines 129--129
-\OT1/cmbr/m/n/10 F10| 
- []
-
-
-Underfull \hbox (badness 3780) in paragraph at lines 129--129
-[]|\OT1/cmbr/m/n/10 Asignar ta-reas a los
- []
-
-
 Overfull \hbox (6.15256pt too wide) in paragraph at lines 132--132
 []\OT1/cmbr/m/n/10 SP4-
  []
 
 
 Overfull \hbox (1.44427pt too wide) in paragraph at lines 132--132
-\OT1/cmbr/m/n/10 F11| 
+\OT1/cmbr/m/n/10 F10| 
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 132--132
+[]|\OT1/cmbr/m/n/10 Asignar ta-reas a los
  []
 
 
@@ -1068,8 +1063,8 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 135--135
  []
 
 
-Overfull \hbox (6.69423pt too wide) in paragraph at lines 135--135
-\OT1/cmbr/m/n/10 F120| 
+Overfull \hbox (1.44427pt too wide) in paragraph at lines 135--135
+\OT1/cmbr/m/n/10 F11| 
  []
 
 
@@ -1078,46 +1073,46 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 138--138
  []
 
 
-Overfull \hbox (1.44427pt too wide) in paragraph at lines 138--138
-\OT1/cmbr/m/n/10 F13| 
+Overfull \hbox (6.69423pt too wide) in paragraph at lines 138--138
+\OT1/cmbr/m/n/10 F120| 
  []
 
 
-Overfull \hbox (340.16487pt too wide) in alignment at lines 101--141
- [] [] [] [] [] 
- []
-
-
-LaTeX Warning: Float too large for page by 8.92119pt on input line 144.
-
-
-Overfull \hbox (0.67323pt too wide) in paragraph at lines 148--148
-[]|[]\OT1/cmbr/m/n/10 Prioridad[]| 
- []
-
-
-Overfull \hbox (340.16487pt too wide) in alignment at lines 148--148
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (6.15256pt too wide) in paragraph at lines 149--149
-[]|\OT1/cmbr/m/n/10 SP4-
- []
-
-
-Overfull \hbox (1.44427pt too wide) in paragraph at lines 149--149
-\OT1/cmbr/m/n/10 F14| 
- []
-
-
-Overfull \hbox (6.15256pt too wide) in paragraph at lines 152--152
+Overfull \hbox (6.15256pt too wide) in paragraph at lines 141--141
 []\OT1/cmbr/m/n/10 SP4-
  []
 
 
+Overfull \hbox (1.44427pt too wide) in paragraph at lines 141--141
+\OT1/cmbr/m/n/10 F13| 
+ []
+
+
+Overfull \hbox (340.16487pt too wide) in alignment at lines 104--144
+ [] [] [] [] [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 8.92119pt on input line 147.
+
+
+Overfull \hbox (0.67323pt too wide) in paragraph at lines 151--151
+[]|[]\OT1/cmbr/m/n/10 Prioridad[]| 
+ []
+
+
+Overfull \hbox (340.16487pt too wide) in alignment at lines 151--151
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.15256pt too wide) in paragraph at lines 152--152
+[]|\OT1/cmbr/m/n/10 SP4-
+ []
+
+
 Overfull \hbox (1.44427pt too wide) in paragraph at lines 152--152
-\OT1/cmbr/m/n/10 F15| 
+\OT1/cmbr/m/n/10 F14| 
  []
 
 
@@ -1127,12 +1122,7 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 155--155
 
 
 Overfull \hbox (1.44427pt too wide) in paragraph at lines 155--155
-\OT1/cmbr/m/n/10 F16| 
- []
-
-
-Underfull \hbox (badness 7907) in paragraph at lines 155--155
-[]|\OT1/cmbr/m/n/10 Modificar Uni-dad de
+\OT1/cmbr/m/n/10 F15| 
  []
 
 
@@ -1142,17 +1132,12 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 158--158
 
 
 Overfull \hbox (1.44427pt too wide) in paragraph at lines 158--158
-\OT1/cmbr/m/n/10 F17| 
+\OT1/cmbr/m/n/10 F16| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
-[]|\OT1/cmbr/m/n/10 Eliminar Uni-dad de
- []
-
-
-Underfull \hbox (badness 6125) in paragraph at lines 158--158
-[]|\OT1/cmbr/m/n/10 El sis-te-ma de-be per-mi-tir que el usua-rio de ti-po
+Underfull \hbox (badness 7907) in paragraph at lines 158--158
+[]|\OT1/cmbr/m/n/10 Modificar Uni-dad de
  []
 
 
@@ -1162,12 +1147,17 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 161--161
 
 
 Overfull \hbox (1.44427pt too wide) in paragraph at lines 161--161
-\OT1/cmbr/m/n/10 F18| 
+\OT1/cmbr/m/n/10 F17| 
  []
 
 
-Underfull \hbox (badness 6094) in paragraph at lines 161--161
-[]|\OT1/cmbr/m/n/10 Guardar Avan-ces del
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+[]|\OT1/cmbr/m/n/10 Eliminar Uni-dad de
+ []
+
+
+Underfull \hbox (badness 6125) in paragraph at lines 161--161
+[]|\OT1/cmbr/m/n/10 El sis-te-ma de-be per-mi-tir que el usua-rio de ti-po
  []
 
 
@@ -1177,7 +1167,12 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 164--164
 
 
 Overfull \hbox (1.44427pt too wide) in paragraph at lines 164--164
-\OT1/cmbr/m/n/10 F19| 
+\OT1/cmbr/m/n/10 F18| 
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 164--164
+[]|\OT1/cmbr/m/n/10 Guardar Avan-ces del
  []
 
 
@@ -1187,7 +1182,7 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 167--167
 
 
 Overfull \hbox (1.44427pt too wide) in paragraph at lines 167--167
-\OT1/cmbr/m/n/10 F20| 
+\OT1/cmbr/m/n/10 F19| 
  []
 
 
@@ -1197,12 +1192,7 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 170--170
 
 
 Overfull \hbox (1.44427pt too wide) in paragraph at lines 170--170
-\OT1/cmbr/m/n/10 F21| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--170
-[]|\OT1/cmbr/m/n/10 Modificar Pro-gra-ma
+\OT1/cmbr/m/n/10 F20| 
  []
 
 
@@ -1212,7 +1202,12 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 173--173
 
 
 Overfull \hbox (1.44427pt too wide) in paragraph at lines 173--173
-\OT1/cmbr/m/n/10 F22| 
+\OT1/cmbr/m/n/10 F21| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+[]|\OT1/cmbr/m/n/10 Modificar Pro-gra-ma
  []
 
 
@@ -1222,7 +1217,7 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 176--176
 
 
 Overfull \hbox (1.44427pt too wide) in paragraph at lines 176--176
-\OT1/cmbr/m/n/10 F23| 
+\OT1/cmbr/m/n/10 F22| 
  []
 
 
@@ -1232,7 +1227,7 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 179--179
 
 
 Overfull \hbox (1.44427pt too wide) in paragraph at lines 179--179
-\OT1/cmbr/m/n/10 F24| 
+\OT1/cmbr/m/n/10 F23| 
  []
 
 
@@ -1242,183 +1237,206 @@ Overfull \hbox (6.15256pt too wide) in paragraph at lines 182--182
 
 
 Overfull \hbox (1.44427pt too wide) in paragraph at lines 182--182
+\OT1/cmbr/m/n/10 F24| 
+ []
+
+
+Overfull \hbox (6.15256pt too wide) in paragraph at lines 185--185
+[]\OT1/cmbr/m/n/10 SP4-
+ []
+
+
+Overfull \hbox (1.44427pt too wide) in paragraph at lines 185--185
 \OT1/cmbr/m/n/10 F25| 
  []
 
 
-Overfull \hbox (340.16487pt too wide) in alignment at lines 148--185
+Overfull \hbox (6.15256pt too wide) in paragraph at lines 188--188
+[]\OT1/cmbr/m/n/10 SP4-
+ []
+
+
+Overfull \hbox (1.44427pt too wide) in paragraph at lines 188--188
+\OT1/cmbr/m/n/10 F26| 
+ []
+
+
+Overfull \hbox (340.16487pt too wide) in alignment at lines 151--191
  [] [] [] [] [] 
  []
+
+
+LaTeX Warning: Float too large for page by 21.42119pt on input line 194.
 
 <C2-DR/SP4/Image/ModeloDeDatosjpg.jpg, id=29, 3095.565pt x 2123.935pt>
 File: C2-DR/SP4/Image/ModeloDeDatosjpg.jpg Graphic file (type jpg)
 <use C2-DR/SP4/Image/ModeloDeDatosjpg.jpg>
 Package pdftex.def Info: C2-DR/SP4/Image/ModeloDeDatosjpg.jpg  used on input li
-ne 192.
+ne 198.
 (pdftex.def)             Requested size: 475.45825pt x 326.22493pt.
-<C2-DR/SP4/Image/CasosDeUso.jpg, id=30, 2948.01375pt x 1472.50125pt>
+<C2-DR/SP4/Image/CasosDeUso.jpg, id=30, 2758.305pt x 1285.80376pt>
 File: C2-DR/SP4/Image/CasosDeUso.jpg Graphic file (type jpg)
 <use C2-DR/SP4/Image/CasosDeUso.jpg>
-Package pdftex.def Info: C2-DR/SP4/Image/CasosDeUso.jpg  used on input line 200
+Package pdftex.def Info: C2-DR/SP4/Image/CasosDeUso.jpg  used on input line 206
 .
-(pdftex.def)             Requested size: 475.45825pt x 237.4699pt.
+(pdftex.def)             Requested size: 475.45825pt x 221.6248pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<IG-GRAL/headerPar.jpg, id=57, 432.11438pt x 45.16875pt>
+<IG-GRAL/headerPar.jpg, id=50, 432.11438pt x 45.16875pt>
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 233.
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 235.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
 LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <5> not available
-(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 233.
+(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 235.
 
-LaTeX Font Info:    Try loading font information for U+mvs on input line 233.
+LaTeX Font Info:    Try loading font information for U+mvs on input line 235.
 
 (/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd)
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
  [4
 
  <./IG-GRAL/headerPar.JPG>]
-<IG-GRAL/headerInp.jpg, id=69, 437.38406pt x 45.92157pt>
+<IG-GRAL/headerInp.jpg, id=62, 437.38406pt x 45.92157pt>
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 233.
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 235.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
  [5 <./IG-GRAL/headerInp.JPG>]
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 233.
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 235.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
  [6]
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 233.
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 235.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
  [7]
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 233.
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 235.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 235.
  [8 <./C2-DR/SP4/Image/ModeloDeDatosjpg.jpg>])
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
@@ -1463,10 +1481,10 @@ Package rerunfilecheck Info: File `DR.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 9972 strings out of 492649
- 146272 string characters out of 6118254
- 349572 words of memory out of 5000000
- 13647 multiletter control sequences out of 15000+600000
+ 9974 strings out of 492649
+ 146290 string characters out of 6118254
+ 351557 words of memory out of 5000000
+ 13649 multiletter control sequences out of 15000+600000
  14578 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,15n,45p,350b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1475,10 +1493,10 @@ mf-dist/fonts/type1/public/hfbright/hfbr17.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/hfbright/hfbr8.pfb></usr/share/texmf-dist/fonts/type1/public/hfbright
 /hfbrbx10.pfb></usr/share/texmf-dist/fonts/type1/public/hfbright/hfbrsl8.pfb></
 usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on DR.pdf (9 pages, 2017354 bytes).
+Output written on DR.pdf (9 pages, 1927355 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
  21 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
