@@ -1,4 +1,4 @@
- \begin{UseCase}[marker]{SP4-CU2}{Resgistrar Programa Académico}
+ \begin{UseCase}[marker]{SP4-CU1}{Resgistrar Programa Académico}
 	{
 		El Usuario Jefe de Innovación Educativa inscribe los datos de un Programa Académico.
 	}
@@ -10,7 +10,9 @@
 	\UCitem{Objetivo}{Validar e inscribir el nombre de un Programa Académico.}
 	\UCitem{Precondiciones}{Tener los catágoso llenos.}
 	\UCitem{Entradas}{Datos de entrada: Nombre}
-	\UCitem{Salidas}{MSA1 MSA2}
+	\UCitem{Salidas}{MSG1 Los campos marcados con (*) son obligatorios. MSG2 Registro finalizado exitosamente.
+MSG3. ¿Seguro que desea cancelar el registro?
+}
 	\UCitem{Resumen}{El usuario Jefe de Innovación Educativa inscribe el nombre de un nuevo Programa Académico.}
 	\UCitem{Postcondiciones}{El Progaram Académico estara inscrito en el Sistema,}
 	\UCitem{Restricciones}{Ninguna}
@@ -21,5 +23,42 @@
 	\UCitem{Autor}{Josué Eliasaf Plata García}
 	\UCitem{Fecha}{24/10/2018}
  \end{UseCase}
+
+Trayectoria Principal
+1.	El sistema Muestra la interfaz de usuario IU1 RegistrarProgramaAcadémico.
+2.	El usuario ingresa el nombre del Programa Académico.
+8.	El usuario termina la operación presionando el botón Guardar. [Trayectoria A] [Trayectoria B]
+9.	El sistema verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria C]
+10.	El sistema guarda la información del Programa Académico en la base de datos.
+11.	El sistema muestra el mensaje MSG2. Registro finalizado exitosamente.
+12.	El usuario cierra el mensaje presionando el botón Aceptar.
+13.	El sistema muestra la interfaz de usuario IU2 RegistrarPlanDeEstudios.
+
+Trayectoria Alternativa A.
+Condición: El usuario presiona el botón cancelar.
+1.	El usuario presiona el botón cancelar.
+2.	El sistema muestra el mensaje MSG3. ¿Seguro que desea cancelar el registro? 
+3.	El usuario confirma la operación presionando sí.
+4.	El sistema muestra la interfaz de usuario IU “Consultar Programas Académicos”
+-	- - - - Fin de la trayectoria
+
+Trayectoria Alternativa B
+Condición: El usuario por error presiona el botón cancelar.
+1.	El usuario presiona el botón cancelar.
+2.	El sistema muestra el mensaje MSG3. ¿Seguro que desea cancelar el registro? 
+3.	El usuario cancela la operación presionando no.
+4.	El sistema cierra el mensaje.
+5.	Continua con el paso 8 de la trayectoria principal del CU1.
+-	- - - - Fin de la trayectoria
+
+Trayectoria Alternativa C
+Condición: Uno o más campos obligatorios no fueron contestados.
+1.	El sistema detecta uno o más campos sin contestar.
+2.	El sistema muestra mensaje MSG1. Los campos marcados con (*) son obligatorios.
+3.	El usuario cierra el mensaje presionando el botón aceptar.
+4.	El sistema continuo en el paso 2 de la trayectoria principal del CU1.
+-	- - - - Fin de la trayectoria.
+
+
 
 
