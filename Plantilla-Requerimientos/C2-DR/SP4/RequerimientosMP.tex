@@ -14,7 +14,7 @@
         \FRitem{SP4-U1}{Registrar Programa Académico}{El usuario Jefe de Innovación Educativa registra los datos del Programas Académicos, acorde a la entidad Programa Académico del \hyperref[MDD]{Modelo de Datos}.}{A}{Origen}
         \label{SP4-U1}
 
-        \FRitem{SP4-U2}{Registrar Plan de Estudios}{El usuario Jefe de Innovación Educativa registra los datos del Plan de estudios , acorde a la entidad Plan de Estudios del \hyperref[MDD]{Modelo de Datos}.}{A}{Origen}
+        \FRitem{SP4-U2}{Registrar Plan de Estudios}{El usuario Doncente registra los datos del Plan de estudios , acorde a la entidad Plan de Estudios del \hyperref[MDD]{Modelo de Datos}.}{A}{Origen}
         \label{SP4-U2}
 
         \FRitem{SP4-U3}{Registrar Unidad de Aprendizaje}{El usuario Docente registra los datos de las Unidades de Aprendizaje, de acorde a la entidad Unidad de Aprendizaje del \hyperref[MDD]{Modelo de Datos},  que contiene el Mapa Curricular.}{A}{Origen}
@@ -47,13 +47,6 @@
         \FRitem{SP4-U12}{Generar Tareas}{El usuario Jefe de Innovación Educativa genera las tareas de registro (Mapas Curriculares y Programas Sintéticos).}{A}{Origen}
         \label{SP4-U12}
 
-    \end{requerimientos}
-\caption{Requerimientos de Usuario 1/2 del subproceso de elaboración del Mapa Curricular}
-\label{tbl:SP4-RU1}
-\end{table}
-
-\begin{table}[htbp!]
-    \begin{requerimientos}
         \FRitem{SP4-U13}{Consultar Tareas}{Los usuarios visualizan las tareas a las que están asignados.}{A}{Origen}
         \label{SP4-U13}
 
@@ -93,19 +86,10 @@
         \FRitem{SP4-U25}{Login}{El usuario ingresa a su cuenta.}{B}{Origen}
         \label{SP4-U25}
 
-    \end{requerimientos}
-\caption{Requerimientos  de Usuario 2/2 del subproceso de elaboración del Mapa Curricular}
-\label{tbl:SP4-RU2}
-\end{table}
-%------------------------------------------------------Requerimeintos Funcionales-----------------------------------------------------------
-
-\begin{table}[htbp!]
-    \begin{requerimientos}
-
         \FRitem{SP4-F1}{Registrar Programa Académico}{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" registre los datos de los Programas Académicos, acorde a la entidad Programa Académico del \hyperref[MDD]{Modelo de Datos}.}{A}{Origen}
         \label{SP4-F1}
 
-        \FRitem{SP4-F2}{Registrar Plan de Estudios}{El sistema debe permitir que el usuario de tipo "Jefe de Innovación Educativa" registre los datos del Plan de estudios , acorde a la entidad Plan de Estudios del \hyperref[MDD]{Modelo de Datos}.}{A}{Origen}
+        \FRitem{SP4-F2}{Registrar Plan de Estudios}{El sistema debe permitir que el usuario de tipo "Docente" registre los datos del Plan de estudios , acorde a la entidad Plan de Estudios del \hyperref[MDD]{Modelo de Datos}.}{A}{Origen}
         \label{SP4-F2}
 
         \FRitem{SP4-F3}{Registrar Unidad de Aprendizaje}{El sistema debe permitir que el usuario de tipo "Docente" registre los datos de las Unidades de Aprendizaje, acorde a la entidad Unidad de Aprendizaje del \hyperref[MDD]{Modelo de Datos}.}{A}{Origen}
@@ -140,14 +124,6 @@
 
         \FRitem{SP4-F13}{Validar congruencia en el Mapa Curricular}{ Si algunos de los datos ingresados se contradicen el sistema no permitirá que se guarden hasta resolver el conflicto.}{A}{Origen}
         \label{SP4-F13}
-
-    \end{requerimientos}
-    \caption{Requerimientos Funcionales 1/2 del subproceso de elaboración del Mapa Curricular}
-    \label{tbl:SP4-RF1}
-\end{table}
-
-\begin{table}[htbp!]
-    \begin{requerimientos}
 
         \FRitem{SP4-F14}{Enviar Comentarios}{ El sistema debe permitir que los usuarios de tipo "Analista" y  "Jefe de Innovación Educativa" envíen comentarios de corrección sobre el Mapa Curricular una vez que el usuario de tipo "Docente" haya finalizado el registro.}{A}{Origen}
         \label{SP4-F14}
@@ -189,8 +165,8 @@
         \label{SP4-F26}
 
     \end{requerimientos}
-    \caption{Requerimientos Funcionale 2/2 del subproceso de elaboración del Mapa Curricular}
-    \label{tbl:SP4-RF2}
+    \caption{Requerimientos del subproceso de elaboración del Mapa Curricular}
+    \label{tbl:SP4-R}
 \end{table}
 
 \begin{figure}[htbp]
@@ -232,7 +208,7 @@
         SP4-CU17  & Generar Tarea                      & \hyperref[SP4-U12]{SP4-U12}                              & Arturo \\ \hline
     \end{tabular}
 \end{center}
-\input{C2-DR/SP4/Casos/SP4-CU100/Login}
+% \input{C2-DR/SP4/Casos/SP4-CU100/Login}
 % \input{C2-DR/SP4/Casos/SP4-CU1/RegistrarProgramaAcademico}
 % \input{C2-DR/SP4/Casos/SP4-CU2/RegistrarPlanDeEstudio}
 % \input{C2-DR/SP4/Casos/SP4-CU3/RegistrarUnidadDeAprendizaje}
