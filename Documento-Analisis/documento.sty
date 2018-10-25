@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{documento}[2010/05/30, v1.0 CDT-ESCOM-IPN Plantilla para reportes de la Coordinación]
+\ProvidesPackage{documento}[2010/05/30, v1.0 Plantilla para la materia de IS]
 
 \usepackage[utf8]{inputenc}                      % Codificación de caracteres en UTF-8.
 \usepackage[spanish]{babel}                      % Cambia las variables del documento a español.
@@ -37,7 +37,7 @@
 \fancyhead[RE]{} 
 \fancyhead[LO]{} 
 
-\fancyfoot[CO,CE]{{\tiny\color{subTitleColor}\em Av. Juan de Dios Bátiz esq. Miguel Othón de Mendizabal S/N Col. Lindavista, GAM, D. F. {\color{sectionColor}\Telefon} 57296000 Ext. 52054 {\color{sectionColor}\Letter} ulises.velez@gmail.com}}
+\fancyfoot[CO,CE]{{\tiny\color{subTitleColor}\em Av. Juan de Dios Bátiz esq. Miguel Othón de Mendizabal S/N Col. Lindavista, GAM, D. F. {\color{sectionColor}\Telefon} 57296000 Ext. 52054 {\color{sectionColor}\Letter}}}
 \fancyfoot[RO,LE]{\footnotesize\thepage}
 
 
@@ -99,8 +99,6 @@
 
 \newenvironment{Titemize}{\vspace{-.8em}}{\vspace{0em}}
 
-%==========================================================================
-% use \Titem Bla bla bla
 %==========================================================================
 \newcommand{\Titem}[1][\textbullet]{%
 	\par{ \color{colorPrincipal}{#1} }%
