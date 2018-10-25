@@ -1,5 +1,1 @@
 \babel@toc {spanish}{}
-\contentsline {section}{\numberline {0.1}SP4-CU1 01}{10}{section.0.1}
-\contentsline {subsection}{\numberline {0.1.1}Descripci\IeC {\'o}n completa}{10}{subsection.0.1.1}
-\contentsline {subsection}{\numberline {0.1.2}Atributos importantes}{10}{subsection.0.1.2}
-\contentsline {subsection}{\numberline {0.1.3}Trayectorias del Caso de Uso}{10}{subsection.0.1.3}
