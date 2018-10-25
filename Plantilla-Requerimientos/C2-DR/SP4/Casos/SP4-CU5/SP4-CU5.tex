@@ -1,0 +1,86 @@
+ \begin{UseCase}[marker]{SP4-CU5}{Consultar Programas Académicos}
+	{
+		El usuario Jefe de Innovación Educativa visualiza la informacion
+de los Programas Académicos.
+	}
+	\UCitem{Version}{1}
+	\UCitem{Super UC}{Ninguno}
+	\UCitem[\Actor]{Principal}{Jefe de Innovación Educativa desea visualizar en pantalla los Programas Académicos almacenados en el Sistema.}
+	\UCitem[\ActorS]{Secundarios}{Ninguno} 
+	\UCitem{Propósito o Justificación}{El Usuario Jefe de Innovación Educativa visualize los Programas Académicos almacenados en el Sistema.}
+	\UCitem{Objetivo}{Mostrar en pantalla una lista de los Programas Académicos.}
+	\UCitem{Precondiciones}{Tener los catálogos llenos.}
+	\UCitem{Entradas}{Datos de entrada: Ninguna}
+	\UCitem{Salidas}{
+					 MSG4. ¿Seguro que desea editar el Programa Académico?
+					 MSG5. ¿Seguro que desea cancelar la consulta de Pogramas Académicos?
+					 MSG6. ¿Seguro que desea registrar un Programa Académico?
+					 
+}
+	\UCitem{Resumen}{El usuario Jefe de Innovación Educativa visualiza una lista de Programas Académicos ya registrados, en esta lista visualiza el nombre del Programa Académico y al lado del nombre un botón  que le permita ir a SP4-CU9 "Editar Programa Académico" del Programa Académico correspondiente.}
+	\UCitem{Postcondiciones}{Ninguna}
+	\UCitem{Restricciones}{Ninguna}
+	\UCitem{Prioridad}{\Square Alta }
+	\UCitem{Suposiciones}{El Usuario Jefe de Innovación Educativa visualiza los Programas Académicos en una lista.}
+	\UCitem{Área}{Casos de Uso del Jefe de Innovación Educativa}
+	\UCitem{Referencias}{Model de Datos,SP4-U5}
+	\UCitem{Autor}{Josué Eliasaf Plata García}
+	\UCitem{Fecha}{24/10/2018}
+ \end{UseCase}
+
+Trayectoria Principal
+1.	El sistema Muestra la interfaz de usuario IU5 ConsultarProgramaAcadémico.
+2.	El sistema muestrala lista de Programas Académicos registrados. [Trayectoria A][Trayectoria B][Trayectoria C][Trayectoria D][Trayectoria E][Trayectoria F]
+
+Trayectoria Alternativa A.
+Condición: El usuario presiona el botón cancelar.
+1.	El usuario presiona el botón cancelar.
+2.	El sistema muestra el mensaje MSG5. ¿Seguro que desea cancelar la consulta de Pogramas Académicos?
+3.	El usuario confirma la operación presionando sí.
+4.	El sistema muestra la interfaz de usuario IU 2 “Consultar Tareas”
+-	- - - - Fin de la trayectoria
+
+Trayectoria Alternativa B
+Condición: El usuario por error presiona el botón cancelar.
+1.	El usuario presiona el botón cancelar.
+2.	El sistema muestra el mensaje MSG5. ¿Seguro que desea cancelar la consulta de Pogramas Académicos?
+3.	El usuario cancela la operación presionando no.
+4.	El sistema cierra el mensaje.
+5.	Continua con el paso 1 de la trayectoria principal del CU5.
+
+Trayectoria Alternativa C.
+Condición: El usuario presiona el botón Registrar Programa Académico.
+1.	El usuario presiona el botón Registrar.
+2.	El sistema muestra el mensaje MSG6. ¿Seguro que desea registrar un Programa Académico?
+3.	El usuario confirma la operación presionando sí.
+4.	El sistema muestra la interfaz de usuario IU 2.4.1 “Registrar Programas Académicos”
+-	- - - - Fin de la trayectoria
+
+Trayectoria Alternativa D
+Condición: El usuario por error presiona el botón  Registrar Programa Académico.
+1.	El usuario presiona el botón cancelar.
+2.	El sistema muestra el mensaje MSG6. ¿Seguro que desea registrar un Programa Académico?
+3.	El usuario cancela la operación presionando no.
+4.	El sistema cierra el mensaje.
+5.	Continua con el paso 1 de la trayectoria principal del CU5.
+-	- - - - Fin de la trayectoria
+
+Trayectoria Alternativa E.
+Condición: El usuario presiona el botón Editar.
+1.	El usuario presiona el botón Editar.
+2.	El sistema muestra el mensaje MSG4. ¿Seguro que desea editar el Programa Académico?
+3.	El usuario confirma la operación presionando sí.
+4.	El sistema muestra la interfaz de usuario IU 2.4.1 “Editar Programas Académicos”
+-	- - - - Fin de la trayectoria
+
+Trayectoria Alternativa F
+Condición: El usuario por error presiona el botón Editar.
+1.	El usuario presiona el botón cancelar.
+2.	El sistema muestra el mensaje MSG4. ¿Seguro que desea editar el Programa Académico?
+3.	El usuario cancela la operación presionando no.
+4.	El sistema cierra el mensaje.
+5.	Continua con el paso 1 de la trayectoria principal del CU5.
+-	- - - - Fin de la trayectoria
+
+
+
