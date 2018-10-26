@@ -1,0 +1,64 @@
+\chapter{Especificación de Casos de Uso}
+
+% REGISTRAR BIBLIOGRAFÍA.
+\begin{UseCase}{SP2-CU5}{Finalizar revisión de paquetes de propuestas de aprendizaje}{El usuario jefe de desarrollo e innovación curricular podrá aprobar un paquete de unidades de aprendizaje.}
+		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Autor}{\color{Gray}Parra Garcilazo Cinthya Dolores}
+		\UCitem{Supervisa}{\color{Gray}}
+		\UCitem{Actor}{\hyperlink{Usuario}{Usuario}}
+		\UCitem{Propósito}{Dar por concluida la revisón de un paquete de Unidades de Aprendizaje.}
+		\UCitem{Entradas}{Las entradas para el registro de una referencia bibliográfica serán:
+          \begin{itemize}
+          	\item Unidades de aprendizaje
+          	\item Unidad Académica
+            \item Semestre
+            \item Analistas
+          \end{itemize}
+        }
+		\UCitem{Origen}{Teclado, mouse.}
+		\UCitem{Salidas}{
+        	\begin{itemize}
+        	   \item MSG. Revisión de paquete finalizada. Paquete enviado.
+                \item MSG2. Error al finalizar paquete.
+
+        	\end{itemize}
+        }
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{ Se sigue la SP2-BR10.}
+		\UCitem{Postcondiciones}{El paquete es enviado a la unidad de aprendizaje correspondiete como aprobado, no se hacen más modificaciones a ninguna unidad de aprendizaje.}
+		\UCitem{Errores}{}
+		\UCitem{Estado}{Revisión.}
+		\UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+
+
+    \UCpaso Muestra la interfaz de usuario \IUref{Gestión de paquetes}{GestionPaquetes}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Finalizar}
+    \UCpaso Verifica en la base de datos que todas las unidades de aprendizaje tengan el estado de revisado [Tayectoria A]
+    \UCpaso Envía notificación a la Unidad de Aprendizaje correspondiente de Paquete Aprobado. [Trayectoria B]
+    \UCpaso Muestra el mensaje \MSGref {MSG}{Paquete enviado a la unidad académica correspondiente} 
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
+    \UCpaso Cambia el estado del paquete a enviado.
+    \UCpaso Remueve la tabla con la información del paquete aprobado de la lista de tareas.
+
+\end{UCtrayectoria}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{No están todas las unidades de aprendizaje en estado de aprobado.}
+    \UCpaso Muestra el mensaje \MSGref {MSG}{Deben estar todas las unidades de aprendizaje aprobadas} 
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+
+
+\begin{UCtrayectoriaA}{A}{No están todas las unidades de aprendizaje en estado de aprobado.}
+    \UCpaso Muestra el mensaje \MSGref {MSG}{Hubo problemas para enviar el paquete, intente de nuevo} 
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
+\end{UCtrayectoriaA}
+
