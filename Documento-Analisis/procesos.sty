@@ -180,7 +180,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Comando para describir una trayectoria principal
-% use: 
+% use:
 % \begin{UCtrayectoria}{prefijo}{nombre}
 %    \UCpaso[\UCActor] El actor oprime el boton buscar
 %    \UCpaso[\UCsist] El sistema ...
@@ -200,7 +200,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Comando para describir trayectorias Alternativas
-% use: 
+% use:
 % \begin{UCtrayectoriaA}{Id}{Condicion}
 %    \UCpaso[\UCActor] El actor oprime el boton buscar
 %    \UCpaso[\UCsist] El sistema ...
@@ -242,8 +242,8 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Comandos para agregar un paso a una trayectoria, el paso puede ser 
-% dado por el actor \UCactor o por el sistema \UCsist, por defecto el 
+% Comandos para agregar un paso a una trayectoria, el paso puede ser
+% dado por el actor \UCactor o por el sistema \UCsist, por defecto el
 % paso es dado por el sistema.
 % usar \UCpaso[\UCactor]
 \newcommand{\UCpaso}[1][\UCsist]{\item #1 }
@@ -259,7 +259,7 @@
 }
 
 \newcommand{\BRitem}[1][]{\item[#1]}
- 
+
 %\newcommand{\IUbutton}[1]{\framebox[1.1\width][c]{#1}}
 \newcommand{\IUbutton}[1]{\keystroke{#1}}
 
