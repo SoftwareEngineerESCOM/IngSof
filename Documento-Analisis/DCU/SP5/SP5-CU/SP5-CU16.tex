@@ -1,0 +1,117 @@
+
+
+% CONSULTAR TAREAS DEL ANALISTA
+\begin{UseCase}{M-CU16}{Consultar tareas del analista}{Un analista de la DES podrá consultar ver una lista de sus tareas pendientes.}
+		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Autor}{\color{Gray}Ramos Diaz Enrique}
+		\UCitem{Supervisa}{\color{Gray}Abigail Nicolás Sayago}
+		\UCitem{Actor}{\hyperlink{Analista}{Analista}}
+		\UCitem{Propósito}{Saber qué tareas tiene un analista por hacer, ya sea revisión de mapas curriculares o revisión de unidades de aprendizaje. }
+		\UCitem{Entradas}{
+          \begin{itemize}
+          	\item Filtrado de tareas por mapa curricular, por unidad de aprendizaje, o mostrar todas.
+          	\item Selección de unidad académica.
+            \item Selección de programa académico.
+            \item Clic en botón buscar.
+          \end{itemize}
+        }
+		\UCitem{Origen}{Mouse.}
+		\UCitem{Salidas}{
+        	\begin{itemize}
+        		\item Listado de tareas asignadas, según el filtrado de búsqueda.
+                \item MSGR1. No se han cargado los catálogos.
+                \item MSGR3. No existen registros de programas académicos. 
+                \item MSGR4. No hay tareas pendientes por revisar. 
+                \item MSGR5. Por el momento no puede consultar las tareas asignadas.
+                \item MSGR6. Ha ocurrido un error con la base de datos.
+        	\end{itemize}
+        }
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{
+		\item1.- El catalogo de unidades académicas debe de existir y cargarse correctamente.
+		\item2.- Debe existir al menos un programa académico en estado de revisión
+		\item3.- El analista debe tener tareas asignadas pendientes por hacer.
+		}
+		\UCitem{Postcondiciones}{\item1.- Habilita la llamada a los casos de uso M-CU4 y M-CU17.}
+		\UCitem{Errores}{\item El catálogo de unidades académicas no se cargo correctamente.
+		\item Hubo un problema al conectarse con el servidor
+		\item Hubo un problema al conectarse con la base de datos}
+		\UCitem{Estado}{Consulta.}
+		\UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+    
+    \UCpaso[\UCactor] Presiona en el menú de navegación principal la opción de \IUbutton{Tareas}.
+    
+    \UCpaso Muestra la interfaz de Consulta de Tareas. [Trayectoria A] [Trayectoria B] [Trayectoria C]
+
+    \UCpaso[\UCactor] Selecciona el filtrado de las tareas a consultar, ya sean por mapa curricular, unidades de aprendizaje, o todas las que tiene asignadas.
+    \UCpaso[\UCactor] Selecciona la unidad académica. [Trayectoria D]
+    \UCpaso[\UCactor] Selecciona el programa académico. [Trayectoria E]
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Buscar}.[Trayectoria F]
+    \UCpaso Muestra las tareas que coinciden con la búsqueda. [Trayectoria G] [Trayectoria H] 
+    
+    
+\end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{El analista desea sólo consultar las tareas relacionadas a unidades de aprendizaje}
+	\UCpaso De forma predeterminada, muestra las tareas asignadas relacionados a unidades de aprendizaje. [Trayectoria G] [Trayectoria H] 
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA B -------------------------
+
+\begin{UCtrayectoriaA}{B}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
+	\UCpaso No encuentra la interfaz de Consulta de Tareas.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSGR5}{Por el momento no puede consultar sus tareas asignadas}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{M-CU16}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
+
+\begin{UCtrayectoriaA}{C}{La base de datos no está disponible, o hubo un error de conexión.}
+    \UCpaso El sistema muestra el mensaje \MSGref{MSGR6}{Ha ocurrido un error con la base de datos}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{M-CU16}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA D -------------------------
+
+\begin{UCtrayectoriaA}{D}{No existen registros en el catálogo de unidades académicas.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSGR1}{No se han cargado los catálogos}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{M-CU16}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA E -------------------------
+
+\begin{UCtrayectoriaA}{E}{No existen programas académicos registrados en la base de datos.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSGR3}{No existen registros de programas académicos}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{M-CU16}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA F -------------------------
+
+\begin{UCtrayectoriaA}{F}{No existen tareas asignadas para la búsqueda efectuada.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSGR4}{No hay tareas pendientes por revisar }.
+    \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{M-CU16}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA G -------------------------
+
+\begin{UCtrayectoriaA}{G}{Existen más de 30 resultados, y el analista desea consultar las tareas restantes.}
+	\UCpaso [\UCactor] Presiona el botón \IUbutton{Siguiente}. 
+    \UCpaso Muestra el resto de las tareas que coinciden con la búsqueda. [Trayectoria G] [Trayectoria H] 
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA G -------------------------
+
+\begin{UCtrayectoriaA}{H}{El analista desea realizar una nueva búsqueda.}
+    \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{M-CU16}.
+\end{UCtrayectoriaA}
+
