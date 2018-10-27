@@ -1,11 +1,10 @@
-\chapter{Especificación de Casos de Uso}
+\chapter{SP2-CU7 Finalizar revisión de paquetes de propuestas de unidades de aprendizaje}
 
-% REGISTRAR BIBLIOGRAFÍA.
-\begin{UseCase}{SP2-CU5}{Finalizar revisión de paquetes de propuestas de aprendizaje}{El usuario jefe de desarrollo e innovación curricular podrá aprobar un paquete de unidades de aprendizaje.}
+\begin{UseCase}{SP2-CU5}{Finalizar revisión de paquetes de propuestas de unidades de aprendizaje}{El usuario jefe de desarrollo e innovación curricular podrá aprobar un paquete de unidades de aprendizaje.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Parra Garcilazo Cinthya Dolores}
 		\UCitem{Supervisa}{\color{Gray}}
-		\UCitem{Actor}{\hyperlink{Usuario}{Usuario}}
+		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Desarrollo e Innovación Curricular}}
 		\UCitem{Propósito}{Dar por concluida la revisón de un paquete de Unidades de Aprendizaje.}
 		\UCitem{Entradas}{Las entradas para el registro de una referencia bibliográfica serán:
           \begin{itemize}
@@ -35,11 +34,11 @@
 \begin{UCtrayectoria}{Principal}
 
 
-    \UCpaso Muestra la interfaz de usuario \IUref{Gestión de paquetes}{GestionPaquetes}.
+    \UCpaso Muestra la interfaz de usuario \IUref{SP2-IU-GestionPaquetes}
     \UCpaso[\UCactor] Presiona el botón \IUbutton {Finalizar}
-    \UCpaso Verifica en la base de datos que todas las unidades de aprendizaje tengan el estado de revisado [Tayectoria A]
-    \UCpaso Envía notificación a la Unidad de Aprendizaje correspondiente de Paquete Aprobado. [Trayectoria B]
-    \UCpaso Muestra el mensaje \MSGref {MSG}{Paquete enviado a la unidad académica correspondiente} 
+    \UCpaso Verifica en la base de datos que todas las unidades de aprendizaje tengan el estado de revisado\hyperref[SP2-CU5-A]{Trayectoria A}.
+    \UCpaso Envía notificación a la Unidad de Aprendizaje correspondiente de Paquete Aprobado. \hyperref[SP2-CU5-B]{Trayectoria B}.
+    \UCpaso Muestra el mensaje \MSGref {MSG1}
     \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
     \UCpaso Cambia el estado del paquete a enviado.
     \UCpaso Remueve la tabla con la información del paquete aprobado de la lista de tareas.
@@ -48,17 +47,50 @@
 
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-
+\label{SP2-CU5-A}
 \begin{UCtrayectoriaA}{A}{No están todas las unidades de aprendizaje en estado de aprobado.}
-    \UCpaso Muestra el mensaje \MSGref {MSG}{Deben estar todas las unidades de aprendizaje aprobadas} 
+    \UCpaso Muestra el mensaje \MSGref {MSG6}
     \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 
-
-\begin{UCtrayectoriaA}{A}{No están todas las unidades de aprendizaje en estado de aprobado.}
-    \UCpaso Muestra el mensaje \MSGref {MSG}{Hubo problemas para enviar el paquete, intente de nuevo} 
+\label{SP2-CU5-B}
+\begin{UCtrayectoriaB}{B}{No están todas las unidades de aprendizaje en estado de aprobado.}
+    \UCpaso Muestra el mensaje \MSGref {MSG5}
     \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
-\end{UCtrayectoriaA}
+\end{UCtrayectoriaB}
+
+
+%------------------------ Pantallas de este caso de uso -------------------------
+\chapter{Pantallas}
+ \begin{figure}
+  \centering
+    \includegraphics[width=0.7\textwidth]{DCU/SP2/Pantallas/GestionPaquetes}
+  \caption{SP2-IU-GestionPaquetes}
+  \label{SP2-IU-GestionPaquetes}
+\end{figure}
+
+%------------------------ Mensajes de este caso de uso -------------------------
+\chapter{Pantallas}
+ \begin{figure}
+  \centering
+    \includegraphics[width=0.7\textwidth]{DCU/SP2/mensajes/MSG1}
+   \caption{SP2-MSG1}
+  \label{SP2-MSG1}
+\end{figure}
+
+ \begin{figure}
+  \centering
+    \includegraphics[width=0.7\textwidth]{DCU/SP2/mensajes/MSG5}
+  \caption{SP2-MSG5}
+  \label{SP2-MSG5}
+\end{figure}
+
+ \begin{figure}
+  \centering
+    \includegraphics[width=0.7\textwidth]{DCU/SP2/mensajes/MSG6}
+  \caption{SP2-MSG6}
+  \label{SP2-MSG6}
+\end{figure}
 
