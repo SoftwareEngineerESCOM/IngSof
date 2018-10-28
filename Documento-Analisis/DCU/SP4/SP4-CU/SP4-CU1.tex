@@ -23,9 +23,9 @@
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{ El Programa Académico que se desea registrar, no debe existir previamente en el sistema.}
 		\UCitem{Postcondiciones}{El Programa Académico quedó registrado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo.}
-		\UCitem{Errores}{E1. Entrada inválida de un carácter no alfanumérico.}
+		\UCitem{Errores}{E1. El nombre del Programa Académico contiene uno o más caracteres no alfanuméricos.}
 		\UCitem{Estado}{Revisión.}
-		\UCitem{Observaciones}{}
+		\UCitem{Observaciones}{El nombre un Programa Académico puede ser igual a otro.}
 \end{UseCase}
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
@@ -81,8 +81,8 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 
-\begin{UCtrayectoriaA}{D}{El Nombre de Programa Académico contiene carácteres no alfanuméricos}
-	\UCpaso El Sistema detecta carácteres no alfanuméricos E1.
+\begin{UCtrayectoriaA}{D}{El Nombre de Programa Académico contiene caracteres no alfanuméricos}
+	\UCpaso El Sistema detecta caracteres no alfanuméricos E1.
     \UCpaso Muestra el mensaje \MSGref{MSG4}{Entrada no Alfanumérica.}.
     \UCpaso Continúa en el paso 1 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
