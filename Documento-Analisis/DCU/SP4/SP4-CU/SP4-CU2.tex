@@ -1,17 +1,17 @@
 % REGISTRAR PLAN DE ESTUDIOS.
-\begin{UseCase}{SP4-CU2}{Registrar Plan de Estudio}{El usuario Docente ingresa los datos del Plan de estudios, acorde a la entidad Plan de Estudios del Modelo de Dato.}
+\begin{UseCase}{SP4-CU2}{Registrar Plan de Estudios}{El usuario Docente ingresa los datos del Plan de Estudios, acorde a la entidad Plan de Estudios del Modelo de Dato.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Cervantes Moreno Christian Andres}
 		\UCitem{Supervisa}{\color{Gray}}
 		\UCitem{Actor}{\hyperlink{Usuario}{Docente}}
-		\UCitem{Propósito}{Registrar el año, modalidad, total de créditos (TEPIC / SATCA) y horas totales (Practicas / Teóricas) a un Programa Académico.}
-		\UCitem{Entradas}{Las entradas para el registro de Plan de Estudio serán:
+		\UCitem{Propósito}{Registrar el año, modalidad, total de créditos (TEPIC / SATCA) y horas totales (Prácticas / Teóricas) a un Plan de Estudios.}
+		\UCitem{Entradas}{Las entradas para el registro del Plan de Estudios serán:
           \begin{itemize}
-          	\item Año.
-          	\item Créditos Totales TEPIC.
-            \item Créditos Totales SATCA.
-            \item Total horas / Teoría.
-            \item Total horas / Práctica.
+          	\item Año (Tipo entero).
+          	\item Créditos Totales TEPIC (Tipo double).
+            \item Créditos Totales SATCA (Tipo double).
+            \item Total horas / Teoría (Tipo entero).
+            \item Total horas / Práctica (Tipo entero).
             \item Modalidad.
           \end{itemize}
         }
@@ -20,15 +20,21 @@
         	\begin{itemize}
         		\item MSG1. Los campos marcados con (*) son obligatorios
                 \item MSG2. Registro finalizado exitosamente.
-                \item MSG3 ¿Seguro que desea cancelar?.
-                \item MSG4 Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde.
+                \item MSG3. ¿Seguro que desea cancelar?.
+                \item MSG4. Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde.
+                \item MSG5. Entrada no valida.
 
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
-		\UCitem{Precondiciones}{ Debe de existir un Programa Académico.}
+		\UCitem{Precondiciones}{ Debe de existir al menos un Programa Académico en el sistema.}
 		\UCitem{Postcondiciones}{El Plan de Estudio queda registrado en el sistema.}
-		\UCitem{Errores}{}
+		\UCitem{Errores}{ 
+			  \begin{itemize}
+				\item E1. Entrada invalida de un caracter no entero.
+				\item E2. Entrada invalida de un caracter no double.
+			\end{itemize}
+		}
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
 \end{UseCase}
@@ -37,19 +43,19 @@
 \begin{UCtrayectoria}{Principal}
 
     %Usuario
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Consultar} de la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}
+    \UCpaso[\UCactor] Presiona el checkbox que se encuentra en la columna consultar de la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}
 
 	%Sistema
     \UCpaso El sistema carga el catálogo de modalidad.[Trayectoria A]
 
 
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1.1-D}{Registrar Plan de Estudios}.
-    \UCpaso[\UCactor] Ingresa el año del plan de estudios que desea registrar.
+    \UCpaso[\UCactor] Ingresa el año del Plan de Estudios que desea registrar.
     \UCpaso[\UCactor] Selecciona la modalidad del Plan de Estudios.
     \UCpaso[\UCactor] Ingresa los créditos totales TEPIC del Plan de Estudios.
     \UCpaso[\UCactor] Ingresa los créditos totales SATCA del Plan de Estudios.
     \UCpaso[\UCactor] Ingresa el total de Horas/Teorías del Plan de Estudios.
-    \UCpaso[\UCactor] Ingresa el total de Horas/Practicas del Plan de Estudios.
+    \UCpaso[\UCactor] Ingresa el total de Horas/Prácticas del Plan de Estudios.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B] [Trayectoria C]
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
 
@@ -78,7 +84,7 @@
 \begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo de modalidad}
 	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{registrar}
-	\UCpaso Muestra el mensaje \MSGref{MSG4}{.Los catálogos necesarios no estan disponibles por el momento, favor de intentarlo más tarde. }
+	\UCpaso Muestra el mensaje \MSGref{MSG4}{.Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde. }
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
 	 \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
 
@@ -103,7 +109,7 @@
 	\UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
 	\UCpaso Cierra el mensaje.
-	\UCpaso Continua en el paso 8 de la trayectoria principal del \UCref{SP4-CU2}.
+	\UCpaso Continúa en el paso 8 de la trayectoria principal del \UCref{SP4-CU2}.
 \end{UCtrayectoriaA}
 
 
@@ -114,5 +120,5 @@
 	\UCpaso Detecta uno o más campos sin contestar.
 	\UCpaso Muestra el mensaje \MSGref{MSG1}{Los campos marcados con (*) son obligatorios}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP4-CU2}.
+	\UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU2}.
 \end{UCtrayectoriaA}
