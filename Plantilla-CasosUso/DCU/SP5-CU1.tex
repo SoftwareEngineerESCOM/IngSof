@@ -1,0 +1,105 @@
+
+
+% INICIAR SESION
+\begin{UseCase}{SP5-CU1}{Iniciar sesión}{Los diversos usuarios podrán ingresar al sistema.}
+        \UCitem{Versión}{\color{Gray}2.0}
+        \UCitem{Autor}{\color{Gray}Nicolás Sayago Abigail}
+     
+        \UCitem{Supervisa}{\color{Gray}Ramos Díaz Enrique}
+        \UCitem{Actor}{\hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA}, \hyperlink{Analista de la DES}{Analista de la DES},\hyperlink{JUA}{JUA}, \hyperlink{Analista de la UA}{Analista de la UA}, \hyperlink{Docente}{Docente}. }
+        \UCitem{Propósito}{Contribuir a la gestión del proceso de creación de Unidades de Aprendizaje.}
+        \UCitem{Entradas}{Las entradas para el inicio de sesión serán:
+          \begin{itemize}
+            \item Matrícula.
+            \item Contraseña.
+          \end{itemize}
+        }
+        \UCitem{Origen}{Teclado.}
+        \UCitem{Salidas}{
+            \begin{itemize}
+                \item Página principal del sistema.
+                \item \label{MSGR1} MSGR1. Matrícula y/o contraseña no validas.
+                \item \label{MSGR5} MSGR5. Por el momento la página solicitada no esta disponible.
+                \item \label{MSGR6} MSGR6. Ha ocurrido un error con la base de datos.
+                \item \label{MSGR7} MSGR7. La matrícula ingresada no se encuentra registrada en el sistema.
+            \end{itemize}
+        }
+        \UCitem{Destino}{Pantalla.}
+        \UCitem{Precondiciones}{1.- La matrícula ingresada tiene una cuenta de usuario en el sistema.
+        }
+        \UCitem{Postcondiciones}{1. El usuario puede ver sus opciones en el sistema, dependiendo del caso.}
+        \UCitem{Errores}{
+            \begin{itemize}
+                \item La matrícula ingresada no se encuentra registrada en el sistema.
+                \item Matrícula incorrecta.
+                \item Contraseña incorrecta.
+                \item Matrícula y contraseña incorrecta.
+                \item Hubo un problema al conectarse con el servidor.
+                \item Hubo un problema al conectarse con la base de datos.
+            \end{itemize}
+        }
+        \UCitem{Estado}{Acceso.}
+        \UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+    
+    \UCpaso[\UCactor] Ingresa el url en el navegador establecido en la RN (por definir). [Trayectoria A] 
+    \UCpaso Muestra la interfaz de usuario \IUref{IU3}{Inicio de sesion}.
+    \UCpaso[\UCactor] Ingresa su matrícula.
+    \UCpaso[\UCactor] Ingresa su contraseña.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Entrar} de la interfaz de usuario \IUref{IU3}{Inicio de sesión}  [Trayectoria A][Trayectoria C] [Trayectoria D] [Trayectoria E] [Trayectoria F]
+\end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
+    \UCpaso No se puede mostrar la página solicitada.
+    \UCpaso El sistema muestra el \hyperref[MSGR5]{MSGR5. Por el momento la página solicitada no esta disponible}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU1}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+
+\begin{UCtrayectoriaA}{B}{La matrícula y/o contraseña son incorrectas.}
+    \UCpaso El sistema muestra el  \hyperref[MSGR1]{MSGR1. Matrícula y/o contraseña no validas}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{SP5-CU1}.
+\end{UCtrayectoriaA}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
+
+\begin{UCtrayectoriaA}{C}{El usuario es un JDIA ó JDIC.}
+    \UCpaso Muestra la interfaz de usuario \IUref{IU4}{Bienvenida para el JDIA ó JDIC}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
+
+\begin{UCtrayectoriaA}{D}{El usuario es un JUA.}
+    \UCpaso Muestra la interfaz de usuario \IUref{IU6}{Bienvenida para el JUA}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
+
+\begin{UCtrayectoriaA}{E}{El usuario es un analista de la DES, analista de la UA o docente.}
+    \UCpaso Muestra la interfaz de usuario \IUref{IU5}{Bienvenida para analistas}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+
+\begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
+    \UCpaso El sistema muestra el mensaje \hyperref[MSGR6]{MSGR6. Ha ocurrido un error con la base de datos}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU1}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
+
+\begin{UCtrayectoriaA}{G}{La matrícula ingresada no se encuentra registrada en el sistema.}
+    \UCpaso El sistema muestra el mensaje \hyperref[MSGR7]{MSGR7. La matrícula ingresada no se encuentra registrada en el sistema}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU1}.
+\end{UCtrayectoriaA}
