@@ -1,0 +1,103 @@
+% REGISTRAR BIBLIOGRAFÍA.
+\begin{UseCase}{SP4-CU5}{Consultar Programas Académicos}{El usuario Jefe de Innovación Educativa visualiza la informacion
+de los Programas Académicos.}
+
+
+		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
+		\UCitem{Supervisa}{\color{Gray}}
+		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa}}
+		\UCitem{Propósito}{El Usuario Jefe de Innovación Educativa visualize una lista  de  los Programas Académicos almacenados en el Sistema.}
+		\UCitem{Entradas}{Las entradas para el consulta de Programa Académico:
+          \begin{itemize}
+          	\item Ninguna
+          \end{itemize}
+        }
+		\UCitem{Origen}{Ninguno}
+		\UCitem{Salidas}{
+        	\begin{itemize}
+        		\item MSG4. ¿Seguro que desea editar el Programa Académico?
+                \item  MSG5. ¿Seguro que desea cancelar la consulta de Pogramas Académicos?
+                \item  MSG6. ¿Seguro que desea registrar un Programa Académico?
+                \item  MSG7. Por ahorita no se puede consultar.
+        	\end{itemize}
+        }
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{                 \item El catalogo de tipo de Programa Académico debe de estar cargado en el sistema}
+		\UCitem{Postcondiciones}{Ninguna}
+		\UCitem{Errores}{E1. No se cargaron los catálogos de Programas Académicos.}
+		\UCitem{Estado}{Revisión.}
+		\UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Consultar Programa Académico} de la interfaz de usuario menu para Jefe de Innovación Educativa de Abi
+
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.2-J}{Consultar Programa Académico}.
+    \UCpaso[\UCactor] El sistema muestrala lista de Programas Académicos registrados. [Trayectoria A][Trayectoria B][Trayectoria C][Trayectoria D][Trayectoria E][Trayectoria F][Trayectoria G]
+\end{UCtrayectoria}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
+
+
+\begin{UCtrayectoriaA}{A}{ El actor presiona el botón cancelar.}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
+    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Seguro que desea cancelar la consulta de Pogramas Académicos?}.
+    \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
+    \UCpaso Muestra la interfaz de usuario menu para Jefe de Innovación Educativa (Pantalla de Abi)
+\end{UCtrayectoriaA}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+
+\begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón Cancelar}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
+    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Seguro que desea cancelar la consulta de Pogramas Académicos?}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
+    \UCpaso Cierra el mensaje.
+    \UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU5}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
+
+\begin{UCtrayectoriaA}{C}{El usuario presiona el botón Registrar Programa Académico.}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{Resgistrar Programa Académico}
+    \UCpaso Muestra el mensaje \MSGref{MSG6}{¿Seguro que desea registrar un Programa Académico?}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+\UCpaso Muestra la interfaz de usuario \IUref{IU2.4.1-J}{Registrar Programas Académicos}
+%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
+
+
+\begin{UCtrayectoriaA}{D}{El usuario presiona accidentalmente el botón Registrar Programa Académico.}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{Resgistrar Programa Académico}
+    \UCpaso Muestra el mensaje \MSGref{MSG6}{¿Seguro que desea registrar un Programa Académico?}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
+    \UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU5}.
+    
+%------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
+
+\begin{UCtrayectoriaA}{E}{El usuario presiona el botón Editar.}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{Editar}
+    \UCpaso Muestra el mensaje \MSGref{MSG4}{¿Seguro que desea editar el Programa Académico?}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+\UCpaso Muestra la interfaz de usuario \IUref{IU2.4.1-J}{Editar Programas Académicos}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+
+
+\begin{UCtrayectoriaA}{F}{El usuario presiona accidentalmente el botón Editar.}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{Editar}
+    \UCpaso Muestra el mensaje \MSGref{MSG4}{¿Seguro que desea editar el Programa Académico?}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
+    \UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU5}.
+   
+    %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+
+\begin{UCtrayectoriaA}{F}{No cargan los catálogos de Programas Académicos}
+    \UCpaso Muestra el mensaje \MSGref{MSG7}{Por ahorita no se puede consultar.}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+\UCpaso Muestra la interfaz de usuario Menu para Jefe de Innovación Educativa(Pantalla de Abi)
+
