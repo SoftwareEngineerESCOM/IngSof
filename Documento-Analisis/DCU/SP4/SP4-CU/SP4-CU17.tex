@@ -1,13 +1,13 @@
 % REGISTRAR BIBLIOGRAFÍA.
-\begin{UseCase}{SP4-CU17}{Generar Tarea}{El usuario Jefe de Innovación Educativa podrá registrar una nueva tarea en el sistema.}
+\begin{UseCase}{SP4-CU17}{Generar Tarea}{El usuario Jefe de Innovación Educativa podrá registrar una nueva Tarea en el sistema.}
         \UCitem{Versión}{\color{Gray}1.0}
         \UCitem{Autor}{\color{Gray}Rivas Rojas Arturo}
         \UCitem{Supervisa}{\color{Gray}}
         \UCitem{Actor}{\hyperlink{JDIE}{Jefe de Innovación Educativa}}
-        \UCitem{Propósito}{Agregar tareas de registro al sistema y asignárselas a un Docente.}
+        \UCitem{Propósito}{Agregar Tareas de registro al sistema y asignárselas a un Docente.}
         \UCitem{Entradas}{Las entradas para el registro de una Tarea serán:
             \begin{itemize}
-                \item Matricula de Empleado.
+                \item Matrícula de Empleado.
                 \item Tarea(tipo).
                 \item Programa Académico.
                 \item Unidad de Aprendizaje (de ser necesaria).
@@ -17,7 +17,7 @@
         \UCitem{Origen}{Teclado.}
         \UCitem{Salidas}{
             \begin{itemize}
-                \item MSG1. Los campos marcados con (*) son obligatorios
+                \item MSG1. Todos los campos son obligatorios.
                 \item MSG2. Registro finalizado exitosamente.
                 \item MSG3. La fecha que ha ingresado es invalida.
                 \item MSG5. ¿Seguro que desea cancelar?
@@ -28,11 +28,15 @@
         \UCitem{Precondiciones}{
             \begin{itemize}
                 \item Debe de haber mínimo un Docente así como un Programa Académico previamente registrados en el sistema.
-                \item El catalogo de tarea.
+                \item El catálogo de tarea.
             \end{itemize}
         }
-        \UCitem{Postcondiciones}{La tarea sera asignada al Usuario y sera posible consultar su estado.}
-        \UCitem{Errores}{}
+        \UCitem{Postcondiciones}{La tarea será asignada al Usuario y será posible consultar su estado.}
+        \UCitem{Errores}{
+            \begin{itemize}
+                \item No existen o no pudieron cargarse los catálogo necearios.
+            \end{itemize}
+        }
         \UCitem{Estado}{Revisión.}
         \UCitem{Observaciones}{}
 \end{UseCase}
@@ -41,18 +45,18 @@
 \begin{UCtrayectoria}{Principal}
 
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Generar Tarea} de la interfaz de usuario \IUref{IU2.3-J}{Asignar Tareas}
-    \UCpaso Carga el catalogo de tipo de tarea. [Trayectoria A]
-    \UCpaso Carga las Matriculas de Empleado de los Docentes de la Unidad Académica. [Trayectoria A]
+    \UCpaso Carga el catálogo de tipo de tarea. [Trayectoria A]
+    \UCpaso Carga las Matrículas de Empleado de los Docentes de la Unidad Académica. [Trayectoria A]
     \UCpaso Carga los Programas Académicos de la Unidad Académica. [Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.3.2-J}{Generar Tarea}.
-    \UCpaso[\UCactor] Selecciona la Matricula del Empleado que al que desea asignar la tarea.
+    \UCpaso[\UCactor] Selecciona la Matrícula del Empleado que al que desea asignar la tarea.
     \UCpaso[\UCactor] Selecciona el Tipo de tarea.[Trayectoria B]
     \UCpaso[\UCactor] Selecciona el Programa Académico.
     \UCpaso[\UCactor] Selecciona la Fecha de Entrega.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria C]
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
-    \UCpaso Verifica que la fecha sea valida. [Trayectoria E]
-    \UCpaso Guarda la información de la tarea en la base de datos.
+    \UCpaso Verifica que la fecha sea válida. [Trayectoria E]
+    \UCpaso Persiste los datos ingresados.
     \UCpaso Muestra el mensaje \MSGref{MSG2}{Registro finalizado exitosamente}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.3-J}{Asignar Tareas}.
@@ -67,18 +71,17 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 
-\begin{UCtrayectoriaA}{B}{El actor selecciona como tipo "Registrar Unidad de Aprendizaje" de la tarea.}
+\begin{UCtrayectoriaA}{B}{El actor selecciona como tipo de tarea "Registrar Unidad de Aprendizaje".}
     \UCpaso Muestra el campo Unidad de Aprendizaje.
-    \UCpaso[\UCactor] selecciona la Unidad de Aprendizaje que se desea asignar.
-    \UCpaso Continua en el paso 8 de la trayectoria principal del \UCref{SP4-CU17}.
+    \UCpaso[\UCactor] Selecciona la Unidad de Aprendizaje que se desea asignar.
+    \UCpaso Continúa en el paso 8 de la trayectoria principal del \UCref{SP4-CU17}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 
 \begin{UCtrayectoriaA}{C}{El actor presiona el botón Cancelar}
     \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Seguro que desea cancelar el registro?}.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Si}.
-    \UCpaso Cierra el mensaje.
+    \UCpaso[\UCactor] ierra el mensaje presionando el botón \IUbutton{Si}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.3-J}{Asignar Tareas}.
 \end{UCtrayectoriaA}
 
@@ -86,25 +89,24 @@
 
 \begin{UCtrayectoriaA}{C}{El actor presiona accidentalmente el botón Cancelar}
     \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Seguro que desea cancelar el registro?}.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
-    \UCpaso Cierra el mensaje.
-    \UCpaso Continua en el paso 10 de la trayectoria principal del \UCref{SP4-CU17}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
+    \UCpaso Continúa en el paso 10 de la trayectoria principal del \UCref{SP4-CU17}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 
-\begin{UCtrayectoriaA}{D}{Uno o más campos obligatorios no fueron contestados.}
+\begin{UCtrayectoriaA}{D}{Uno o más campos no fueron contestados.}
     %\UCpaso Detecta uno o más campos sin contestar.
-    \UCpaso Muestra el mensaje \MSGref{MSG1}{Los campos marcados con (*) son obligatorios}.
+    \UCpaso Muestra el mensaje \MSGref{MSG1}{Todos los campos son obligatorios}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 6 de la trayectoria principal del \UCref{SP4-CU17}.
+    \UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU17}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 
-\begin{UCtrayectoriaA}{E}{La fecha que se ingreso es una fecha pasada.}
+\begin{UCtrayectoriaA}{E}{La fecha que se ingresó es una fecha pasada.}
     %\UCpaso Detecta que la fecha es pasada.
-    \UCpaso Muestra el mensaje \MSGref{MSG3}{La fecha que ha ingresado es invalida}.
+    \UCpaso Muestra el mensaje \MSGref{MSG3}{La fecha que ha ingresado es inválida}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 9 de la trayectoria principal del \UCref{SP4-CU17}.
+    \UCpaso Continúa en el paso 9 de la trayectoria principal del \UCref{SP4-CU17}.
 \end{UCtrayectoriaA}
