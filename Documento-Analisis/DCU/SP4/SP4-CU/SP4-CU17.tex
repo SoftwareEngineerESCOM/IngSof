@@ -1,6 +1,6 @@
 % REGISTRAR BIBLIOGRAFÍA.
 \begin{UseCase}{SP4-CU17}{Generar Tarea}{El usuario Jefe de Innovación Educativa podrá registrar una nueva Tarea en el sistema.}
-        \UCitem{Versión}{\color{Gray}1.0}
+        \UCitem{Versión}{\color{Gray}1.1}
         \UCitem{Autor}{\color{Gray}Rivas Rojas Arturo}
         \UCitem{Supervisa}{\color{Gray}}
         \UCitem{Actor}{\hyperlink{JDIE}{Jefe de Innovación Educativa}}
@@ -28,13 +28,13 @@
         \UCitem{Precondiciones}{
             \begin{itemize}
                 \item Debe de haber mínimo un Docente así como un Programa Académico previamente registrados en el sistema.
-                \item El catálogo de tarea.
+                \item El catálogo de Tarea.
             \end{itemize}
         }
-        \UCitem{Postcondiciones}{La tarea será asignada al Usuario y será posible consultar su estado.}
+        \UCitem{Postcondiciones}{La Tarea será asignada al Usuario y será posible consultar su estado.}
         \UCitem{Errores}{
             \begin{itemize}
-                \item No existen o no pudieron cargarse los catálogo necearios.
+                \item E1. No existen o no pudieron encontrarse los catálogo necesarios.
             \end{itemize}
         }
         \UCitem{Estado}{Revisión.}
@@ -45,12 +45,12 @@
 \begin{UCtrayectoria}{Principal}
 
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Generar Tarea} de la interfaz de usuario \IUref{IU2.3-J}{Asignar Tareas}
-    \UCpaso Carga el catálogo de tipo de tarea. [Trayectoria A]
+    \UCpaso Carga el catálogo de tipo de Tarea. [Trayectoria A]
     \UCpaso Carga las Matrículas de Empleado de los Docentes de la Unidad Académica. [Trayectoria A]
     \UCpaso Carga los Programas Académicos de la Unidad Académica. [Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.3.2-J}{Generar Tarea}.
-    \UCpaso[\UCactor] Selecciona la Matrícula del Empleado que al que desea asignar la tarea.
-    \UCpaso[\UCactor] Selecciona el Tipo de tarea.[Trayectoria B]
+    \UCpaso[\UCactor] Selecciona la Matrícula del Empleado que al que desea asignar la Tarea.
+    \UCpaso[\UCactor] Selecciona el Tipo de Tarea.[Trayectoria B]
     \UCpaso[\UCactor] Selecciona el Programa Académico.
     \UCpaso[\UCactor] Selecciona la Fecha de Entrega.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria C]
@@ -71,7 +71,7 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 
-\begin{UCtrayectoriaA}{B}{El actor selecciona como tipo de tarea "Registrar Unidad de Aprendizaje".}
+\begin{UCtrayectoriaA}{B}{El actor selecciona como tipo de Tarea Registrar Unidad de Aprendizaje.}
     \UCpaso Muestra el campo Unidad de Aprendizaje.
     \UCpaso[\UCactor] Selecciona la Unidad de Aprendizaje que se desea asignar.
     \UCpaso Continúa en el paso 8 de la trayectoria principal del \UCref{SP4-CU17}.

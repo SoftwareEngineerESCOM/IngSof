@@ -4,11 +4,7 @@
 \contentsline {subsection}{\numberline {1.1.1}Descripci\IeC {\'o}n completa}{6}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Atributos importantes}{6}{subsection.1.1.2}
 \contentsline {subsection}{\numberline {1.1.3}Trayectorias del Caso de Uso}{6}{subsection.1.1.3}
-\contentsline {section}{\numberline {1.2}SP4-CU2 Registrar Plan de Estudio}{8}{section.1.2}
+\contentsline {section}{\numberline {1.2}SP4-CU17 Generar Tarea}{8}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Descripci\IeC {\'o}n completa}{8}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Atributos importantes}{8}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Trayectorias del Caso de Uso}{9}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}SP4-CU17 Generar Tarea}{11}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Descripci\IeC {\'o}n completa}{11}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Atributos importantes}{11}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Trayectorias del Caso de Uso}{12}{subsection.1.3.3}
