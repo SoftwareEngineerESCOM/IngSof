@@ -1,18 +1,19 @@
-% REGISTRAR PLAN DE ESTUDIOS.
-\begin{UseCase}{SP4-CU2}{Registrar Plan de Estudios}{El usuario Docente ingresa los datos del Plan de Estudios, acorde a la entidad Plan de Estudios del Modelo de Dato.}
+% REGISTRAR UNIDAD DE APRENDIZAJE.
+\begin{UseCase}{SP4-CU3}{Registrar Unidad de Aprendizaje}{El usuario Docente registra los datos de las Unidades de Aprendizaje del Modelo de Datos, que contiene el Mapa Curricular.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Cervantes Moreno Christian Andres}
 		\UCitem{Supervisa}{\color{Gray} Evelyn Reyes}
 		\UCitem{Actor}{\hyperlink{Usuario}{Docente}}
-		\UCitem{Propósito}{Registrar el año, modalidad, total de créditos (TEPIC / SATCA) y horas totales (Prácticas / Teóricas) a un Plan de Estudios.}
-		\UCitem{Entradas}{Las entradas para el registro del Plan de Estudios serán:
+		\UCitem{Propósito}{Registrar el nombre, créditos TEPIC, créditos SATCA, horas Teoría/Semana, horas Práctica/semana, Área de formación y semestre de una Unidad de Aprendizaje.}
+		\UCitem{Entradas}{Las entradas para el registro de la Unidad de Aprendizaje serán:
           \begin{itemize}
-          	\item Año (Tipo entero).
+          	\item Nombre (Tipo carácter).
           	\item Créditos Totales TEPIC (Tipo double).
             \item Créditos Totales SATCA (Tipo double).
             \item Total horas / Teoría (Tipo entero).
             \item Total horas / Práctica (Tipo entero).
-            \item Modalidad.
+            \item Área de Formación.
+            \item Semestre
           \end{itemize}
         }
 		\UCitem{Origen}{Teclado, Mouse}
@@ -27,12 +28,13 @@
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
-		\UCitem{Precondiciones}{ Debe de existir al menos un Programa Académico en el sistema.}
-		\UCitem{Postcondiciones}{El Plan de Estudio queda registrado en el sistema.}
+		\UCitem{Precondiciones}{ Debe de existir al menos un Plan de Estudios en el sistema.}
+		\UCitem{Postcondiciones}{La Unidad de Aprendizaje queda registrada en el sistema.}
 		\UCitem{Errores}{ 
 			  \begin{itemize}
 				\item E1. Entrada invalida de un caracter no entero.
 				\item E2. Entrada invalida de un caracter no double.
+				\item E2. Entrada invalida de un carácter
 			\end{itemize}
 		}
 		\UCitem{Estado}{Revisión.}
@@ -43,23 +45,24 @@
 \begin{UCtrayectoria}{Principal}
 
     %Usuario
-    \UCpaso[\UCactor] Presiona el checkbox que se encuentra en la columna consultar de la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}
+    \UCpaso[\UCactor] Presiona el botón Registrar Unidad de Aprendizaje de la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
 
 	%Sistema
     \UCpaso El sistema carga el catálogo de modalidad.[Trayectoria A]
 
 
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.1.1-D}{Registrar Plan de Estudios}.
-    \UCpaso[\UCactor] Ingresa el año del Plan de Estudios que desea registrar.
-    \UCpaso[\UCactor] Selecciona la modalidad del Plan de Estudios.
-    \UCpaso[\UCactor] Ingresa los créditos totales TEPIC del Plan de Estudios.
-    \UCpaso[\UCactor] Ingresa los créditos totales SATCA del Plan de Estudios.
-    \UCpaso[\UCactor] Ingresa el total de Horas/Teorías del Plan de Estudios.
-    \UCpaso[\UCactor] Ingresa el total de Horas/Prácticas del Plan de Estudios.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.1.2-D}{Registrar Unidad de Aprendizaje}.
+    \UCpaso[\UCactor] Ingresa el nombre de la Unidad de Aprendizaje que desea registrar.
+    \UCpaso[\UCactor] Ingresa los créditos totales TEPIC de la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Ingresa los créditos totales SATCAde la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Ingresa el total de Horas/Teorías de la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Ingresa el total de Horas/Prácticas de la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Selecciona el área de formación al que pertenece la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Selecciona el semestre al que pertenece la Unidad de Aprendizaje.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B] [Trayectoria C]
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
 
-    \UCpaso Guarda la información del Plan de Estudios en la base de datos.
+    \UCpaso Guarda la información de la Unidad de Aprendizaje en la base de datos.
 
     \UCpaso El sistema muestra el mensaje \MSGref{MSG2}{Registro finalizado exitosamente}.
 
@@ -93,7 +96,7 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 
-\begin{UCtrayectoriaA}{B}{El actor quiere cancelar el registro del Plan de Estudio.}
+\begin{UCtrayectoriaA}{B}{El actor quiere cancelar el registro de Unidad de Aprendizaje.}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
 	\UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
@@ -109,7 +112,7 @@
 	\UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
 	\UCpaso Cierra el mensaje.
-	\UCpaso Continúa en el paso 8 de la trayectoria principal del \UCref{SP4-CU2}.
+	\UCpaso Continúa en el paso 9 de la trayectoria principal del \UCref{SP4-CU3}.
 \end{UCtrayectoriaA}
 
 
