@@ -1,0 +1,45 @@
+\begin{UseCase}{SP1-CU11}{Eliminar tiempos de la Unidad de Aprendizaje}{El usuario podrá eliminar los tiempos asignados de cada Unidad de Aprendizaje.}
+    \UCitem{Versión}{\color{Gray}1.0}
+    \UCitem{Autor}{\color{Gray}Maldonado Carpio Jorge Enrique}
+    \UCitem{Supervisa}{\color{Gray}Ramírez Martínez Janet Naibi}
+    \UCitem{Actor}{\hyperlink{Usuario}{Usuario}}
+    \UCitem{Propósito}{Eliminar los tiempos correspondientes a una de las Unidades de Aprendizaje.}
+    \UCitem{Entradas}{
+      \begin{itemize}
+      \end{itemize}
+    }
+    \UCitem{Origen}{Teclado.}
+    \UCitem{Salidas}{
+        \begin{itemize}
+            \item MSG1 ¿Seguro que desea eliminar el registro?
+            \item MSG2 Registro Eliminado.
+        \end{itemize}
+    }
+    \UCitem{Destino}{Pantalla.}
+    \UCitem{Precondiciones}{Debe existir el registro de los tiempos de la unidad de aprendizaje.}
+    \UCitem{Postcondiciones}{Los tiempos asignados quedan eliminados del sistema.}
+    \UCitem{Errores}{}
+    \UCitem{Estado}{Revisión.}
+    \UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Eliminar} de la interfaz de usuario \IUref{XXXXX}{Página Principal}
+\UCpaso Muestra la interfaz de usuario \IUref{XXXXXXX}{Registro de bibliografía}.
+\UCpaso El sistema muestra el mensaje \MSGref{MSG1}{¿Seguro que desea eliminar el registro?}.
+\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Si}. [Trayectoria A] 
+\UCpaso El sistema muestra el mensaje \MSGref{MSG2}{Registro Eliminado}.   
+\UCpaso[\UCactor] Cierra el MSG2 presionando el botón \IUbutton{Ok}.
+\UCpaso Muestra la interfaz de usuario \IUref{IU1}{Página principal}.
+\end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNARTIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{El usuario quiere cancelar la eliminación de los tiempos de la unidad de aprendizaje.}
+
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
+\UCpaso Continua en el paso 7 de la trayectoria principal del \UCref{SP1-CU11}.
+
+\end{UCtrayectoriaA}
