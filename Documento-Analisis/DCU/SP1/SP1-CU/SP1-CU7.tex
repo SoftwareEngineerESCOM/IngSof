@@ -1,0 +1,51 @@
+\ chapter {Especificación de Casos de Uso}
+% REGISTRAR BIBLIOGRAFÍA.
+\ begin {UseCase} {SP1-CU7} {Eliminar autores de la bibliografía} {El usuario podrá eliminar autores a la bibliografía.}
+		\ UCitem {Versión} { \ color {Gris} 1.0}
+		\ UCitem {Autor} { \ color {Gris} López Rivera Aiko Dallane}
+		\ UCitem {Supervisa} { \ color {Gris}}
+		\ UCitem {Actor} { \ hyperlink {Usuario} {Usuario}}
+		\ UCitem {Propósito} {Eliminar autores de la bibliografía.}
+		\ UCitem {Entradas} {Las entradas para el registro de los autores a la bibliografía serán:
+		\ begin {itemize}
+		\ end {detallar}
+        }
+		\ UCitem {Origen} {Teclado.}
+		\ UCitem {Salidas} {
+        	\ begin {itemize}
+        		\ item MSG1. ¿Seguro que deseas eliminar este autor?
+                \ item MSG2. Registro eliminado exitosamente.
+
+        	\ end {detallar}
+        }
+		\ UCitem {Destino} {Pantalla.}
+		\ UCitem {Precondiciones} {Debe exister el autor previamente en el sistema.}
+		\ UCitem {Postcondiciones} {El autor queda eliminado en el sistema.}
+		\ UCitem {Errores} {}
+		\ UCitem {Estado} {Revisión.}
+		\ UCitem {Observaciones} {}
+\ end {UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+\ UCpaso [ \ UCactor ] Presiona el botón \ IUbutton {Registrar autor/autores} de la interfaz de usuario \ IUref {IU6} {Página Principal}
+
+% \ UCpaso El sistema busca el formulario \ Formref {FM1} {Registrar autor/autores}.
+
+\UCpaso Muestra la interfaz de usuario \IUref{IU6}{Registro del autor/autores}.
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Eliminar autor} de la interfaz de usuario \IUref{IU7}{Página Principal}
+\UCpaso El sistema muestra el mensaje \MSGref {MSG1} {¿Seguro que deseas eliminar este autor?}.
+\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Aceptar}. [Trayectoria A] 
+\UCpaso El sistema muestra el mensaje \MSGref{MSG2}{Registro eliminado exitosamente}.   
+\UCpaso[\UCactor] Cierra el MSG2 presionando el botón \IUbutton{Ok}.
+\UCpaso Muestra la interfaz de usuario \IUref{IU6}{Página principal}.
+\end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNARTIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{El usuario desea cancelar la eliminación del autor de la bibliografía.}
+
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
+\UCpaso Continua en el paso 7 de la trayectoria principal del \UCref{CU7}.
+
+\end{UCtrayectoriaA}
