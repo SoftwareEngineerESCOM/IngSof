@@ -46,7 +46,7 @@
 
 \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados. [Trayectoria B]
 
-\UCpaso Verifica que todos los campos hayan sido llenados correctamente con base a la Regla de Negocio \UCBussinesRule{}{}. [Trayectoria C]
+\UCpaso Verifica que todos los campos hayan sido llenados correctamente con base a la Regla de Negocio. [Trayectoria C] %\UCBussinesRule{}{}. 
 
 
 \UCpaso Guarda la información de los tiempos de la Unidad de Aprendizaje en la base de datos.
@@ -79,7 +79,7 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 
-\begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados de acuerdo a la Regla de Negocio \UCBussinesRule{}{}}
+\begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados de acuerdo a la Regla de Negocio} %\UCBussinesRule{}{}}
 \UCpaso Detecta uno o más campos contestados incorrectamente.
 \UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos no fueron contestados correctamente.}
 \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
