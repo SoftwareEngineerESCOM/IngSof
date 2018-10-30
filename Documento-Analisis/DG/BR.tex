@@ -1,0 +1,136 @@
+\chapter{Especificación de Reglas del Negocio}
+\section{Reglas de Operación}
+
+\begin{BussinesRule}{BR}{Jefes de Departamento e Innovación curricular }
+     \BRitem[Tipo: Estructural]
+    \BRitem[Clase: Habilitadora]
+    \BRitem[Nivel: Control]
+    \BRitem[Descripción: Solo puede existir un único Jefe de Departamento e Innovación curricular.]
+    \BRitem[Motivación: Restringir el numero de Usuarios capaces de Gestionar Usuarios]
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR}{Jefes de Innovación Educativa }
+    \BRitem[Tipo: Estructura]
+    \BRitem[Clase: Habilitadora]
+    \BRitem[Nivel: Control]
+    \BRitem[Descripción: Solo puede existir un único Jefe de Innovación Educativa por Unidad Académica.]
+    \BRitem[Motivación: Tener un único responsable por Unidad Académica.]
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR}{Máquina de Estados de una Tarea.}
+    \BRitem[Tipo: Flujo]
+    \BRitem[Clase: Habilitadora]
+    \BRitem[Nivel: Control]
+    \BRitem[Descripción: Según el estado de la Tarea son los permisos de quien puede modificar la información relacionada con esta.]
+    \BRitem[Motivación: Tener un mayor control sobre la información]
+    \BRitem[Ejemplo Positivo:La Tarea de registrar Mapa Curricular se aprobó después de que el analista y el jefe la revisaran.]
+    \BRitem[Ejemplo Negativo: La Tarea de registrar Unidad de Aprendizaje se empezó a revisar antes de que terminara su registro.]
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR}{Tareas de Registro.}
+    \BRitem[Tipo: Flujo]
+    \BRitem[Clase: Habilitadora]
+    \BRitem[Nivel: Control]
+    \BRitem[Descripción: Solo los Docentes pueden registrar Mapas Curriculares y Unidades de Aprendizaje.]
+    \BRitem[Motivación: Cuestiones de jerarquía dentro de la Unidad Académica]
+    \BRitem[Ejemplo Positivo:El usuario Docente registra un Mapa Curricular o una Unidad de Aprendizaje.]
+    \BRitem[Ejemplo Negativo:El usuario Analista registra un Mapa Curricular o una Unidad de Aprendizaje]
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR}{Revisión de Tareas.}
+    \BRitem[Tipo: Flujo]
+    \BRitem[Clase: Habilitadora]
+    \BRitem[Nivel: Control]
+    \BRitem[Descripción: Solo los analistas y los jefes  pueden revisar Mapas Curriculares o Unidades de Aprendizaje]
+    \BRitem[Motivación: Cuestiones de jerarquía dentro de la Unidad Académica.]
+    \BRitem[Ejemplo Positivo:El Analista revisa un Mapa Curricular y sus respectivas Unidades de Aprendizaje.]
+    \BRitem[Ejemplo Negativo: El Docente revisa un Mapa Curricular y Unidades de Aprendizaje.]
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR}{Aprobación de Tareas.}
+    \BRitem[Tipo: Flujo]
+    \BRitem[Clase: Habilitadora]
+    \BRitem[Nivel: Control]
+    \BRitem[Descripción: Una Tarea es aprobada si al terminar de revisar no contiene comentarios]
+    \BRitem[Motivación: Poder saber cuando una tarea a finalizado.]
+    \BRitem[Ejemplo Positivo:El Jefe de Innovación Educativa no agrego comentarios por lo que se aprueba.]
+    \BRitem[Ejemplo Negativo: El Jefe de Innovación Educativa agrega comentario y aun así se aprueba el documento.]
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR}{Rechazo de Tareas.}
+    \BRitem[Tipo: Flujo]
+    \BRitem[Clase: Habilitadora]
+    \BRitem[Nivel: Control]
+    \BRitem[Descripción: Una Tarea es rechazada si al terminar de revisar contiene comentarios]
+    \BRitem[Motivación: Poder saber caundo uan tarea debe volver al estado de Registor.]
+    \BRitem[Ejemplo Positivo:El Jefe de Innovación Educativa agrego comentarios por lo que se rechaza.]
+    \BRitem[Ejemplo Negativo: Ni el Jefe de Innovación Educativa ni el Analista agregaron comentarios y aun así se apruebó.]
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR}{Analistas revisando una Tarea}
+    \BRitem[Tipo: Relación]
+    \BRitem[Clase:Habilitadora]
+    \BRitem[Nivel: Control]
+    \BRitem[Descripción: Una Tarea debe tener solo un analista asignado para su revisión, y un analista puede tener muchos Tareas asignados para su revisión.]
+    \BRitem[Motivación: Distribuir los procesos de revisión en la DES de forma óptima y eficiente, para evitar carga de trabajo.]
+    \BRitem[Ejemplo Positivo: Mapa curricular Plan 2018: analista 1 asignado, Unidad de Aprendizaje "Ingenieria de Software" Plan 2018: analista 1 asignado.]
+    \BRitem[Ejemplo Negativo: Mapa curricular Plan 2018: 3 analista asignados]
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR}{Planes de Estudios en rediseño por Programa Académico}
+    \BRitem[Tipo:] Relación.
+    \BRitem[Clase:] Habilitadora.
+    \BRitem[Nivel:] Control.
+    \BRitem[Descripción:] Un Programa Académico puede tener unicamente un Plan de Estudios en rediseño.
+    \BRitem[Motivación: Una Prograama Académico puede tener varios Planes de Estudios activos pero solo se rediseña el mas actual pues este fue el rediseño de los anterior] .
+    \BRitem[Ejemplo Positivo:] Ingeniería en Sistemas Computacionales: Plan 2019.
+    \BRitem[Ejemplo Negativo:] Licenciatura en Economía: Plan 2000, Plan 2009, Plan 2014, Plan 2018.
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR}{Existen los catálogos }
+    \BRitem[Tipo: Regla de inferencia de un hecho]
+    \BRitem[Clase: Habilitadora]
+    \BRitem[Nivel: Control]
+    \BRitem[Descripción: Existen catálogos de :
+Modalidades
+    Escolarizada
+    Mixta
+    No Escolarizada
+Tipo de Usuario
+    Docente
+    Analista
+Tareas
+    Registrar Mapa Curricular
+    Registrar Unidad de Aprendizaje]
+    \BRitem[Motivación: Mantener los datos en un estado consistente.]
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR}{La matrícula del empleado es única.}
+    \BRitem[Tipo: Relación]
+    \BRitem[Clase: Habilitadora]
+    \BRitem[Nivel: Control]
+    \BRitem[Descripción:Cada una de las matrículas de los empleados registrados en el sistema cuentan con una matrícula única.]
+    \BRitem[Motivación: Poder identificar a los usuarios.]
+    \BRitem[Ejemplo Positivo:El Empleado Juan Perez tiene una matricula 2014000990  y El Empleado Armando López Doriga  tiene una matricula 2014000991 .]
+    \BRitem[Ejemplo Negativo: El Empleado Juan Perez tiene una matricula 2014000990 y El Empleado Armando López Doriga  tiene una matricula 2014000990 .]
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR} {El nombre de la Unidad de Aprendizaje es único.}
+    \BRitem[Tipo: Relación]
+    \BRitem[Clase: Habilitadora]
+    \BRitem[Nivel: Control]
+    \BRitem[Descripción: Cada  una de las Unidades de Aprendizaje dentro de un mismo Programa Académico tienen un nombre único]
+    \BRitem[Motivación:  Que no exista redundancia en la información y la base de datos este siempre en un estado consistente.]
+    \BRitem[Ejemplo Positivo:En un Programa Académico  tenemos la materia Ingeniería de Software y Administración de Proyectos.]
+    \BRitem[Ejemplo Negativo: En un Programa Académico  tenemos la materia Ingeniería de Software y  Ingeniería de Software.]
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR} {El nombre del Programa Académico es único.}
+    \BRitem[Tipo: Relación]
+    \BRitem[Clase: Habilitadora]
+    \BRitem[Nivel: Control]
+    \BRitem[Descripción: El nombre de los Programas Académicos es único dentro de la Unidad Académica]
+    \BRitem[Motivación:  Que no exista redundancia en la información y la base de datos este siempre en un estado consistente.]
+    \BRitem[Ejemplo Positivo:En una Unidad Académica existen los Programas Académicos Ingenieria en Sistemas Computacionales y Ingenieria en Comunicaciones y Electrónica.]
+    \BRitem[Ejemplo Negativo: En una Unidad Académica existen los Programas Académicos Ingenieria en Sistemas Computacionales y Ingenieria en Sistemas Computacionales.]
+\end{BussinesRule}
