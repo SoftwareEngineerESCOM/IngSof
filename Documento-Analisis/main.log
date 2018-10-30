@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  29 OCT 2018 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  30 OCT 2018 10:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -754,294 +754,378 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 2.
 
-Overfull \hbox (167.79399pt too wide) in paragraph at lines 29--29
+Overfull \hbox (54.15181pt too wide) in paragraph at lines 25--25
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 
  []
 
 
-Overfull \hbox (54.43796pt too wide) in paragraph at lines 30--30
+Overfull \hbox (23.47113pt too wide) in paragraph at lines 27--27
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+
+ []
+
+
+Overfull \hbox (50.31013pt too wide) in paragraph at lines 28--28
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
 
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 31.
-[5]
-Overfull \hbox (54.15181pt too wide) in paragraph at lines 39--39
+(babel)             in language  on input line 33.
+[5pdfTeX warning (ext4): destination with the same identifier (name{BR}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.33     \BRitem[Nivel: Control]
+                                pdfTeX warning (ext4): destination with the sam
+e identifier (name{BR}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.33     \BRitem[Nivel: Control]
+                                ]pdfTeX warning (ext4): destination with the sa
+me identifier (name{BR}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 ...in{BussinesRule}{BR}{Revisión de Tareas.}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{BR}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.50 ...{BussinesRule}{BR}{Aprobación de Tareas.}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{BR}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.60 \begin{BussinesRule}{BR}{Rechazo de Tareas.}
+                                                 
+Overfull \hbox (20.1294pt too wide) in paragraph at lines 68--68
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
 
  []
 
-
-Overfull \hbox (23.47113pt too wide) in paragraph at lines 41--41
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
-
- []
-
-
-Overfull \hbox (50.31013pt too wide) in paragraph at lines 42--42
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
-
- []
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.60     Registrar Unidad de Aprendizaje]
-                                         
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.60     Registrar Unidad de Aprendizaje]
-                                         
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.60     Registrar Unidad de Aprendizaje]
-                                         
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! LaTeX Error: \begin{description} on input line 44 ended by \end{itemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+pdfTeX warning (ext4): destination with the same identifier (name{BR}) has been
+ already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.70 ...sRule}{BR}{Analistas revisando una Tarea.}
                                                   
-l.60     Registrar Unidad de Aprendizaje]
-                                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Too many }'s.
-\sbox ...hbox {\color@setgroup #2\color@endgroup }
-                                                  
-l.60     Registrar Unidad de Aprendizaje]
-                                         
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.61 ...tener los datos en un estado consistente.]
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 61
-[][]
- []
-
-
-! LaTeX Error: \begin{document} ended by \end{description}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 \end{BussinesRule}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.62 \end{BussinesRule}
-                       
-Things are pretty mixed up, but I think the worst is over.
-
-
-! LaTeX Error: \begin{document} ended by \end{BussinesRule}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 \end{BussinesRule}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.62 \end{BussinesRule}
-                       
-Things are pretty mixed up, but I think the worst is over.
-
-
-Overfull \hbox (36.07672pt too wide) in paragraph at lines 69--69
+Overfull \hbox (172.69125pt too wide) in paragraph at lines 75--75
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--69
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
 
  []
 
 
-Overfull \hbox (181.07193pt too wide) in paragraph at lines 71--71
+Overfull \hbox (28.7462pt too wide) in paragraph at lines 76--76
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
 
  []
 
 
-Overfull \hbox (189.47752pt too wide) in paragraph at lines 72--72
+Overfull \hbox (164.59401pt too wide) in paragraph at lines 77--77
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
-
- []
-
-
-Overfull \hbox (60.67123pt too wide) in paragraph at lines 79--79
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
-
- []
-
-
-Overfull \hbox (30.32668pt too wide) in paragraph at lines 80--80
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 
  []
 
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 80.
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 78.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 80.
-[6]
-Overfull \hbox (53.70737pt too wide) in paragraph at lines 81--81
+(babel)             in language  on input line 78.
+[6pdfTeX warning (ext4): destination with the same identifier (name{BR}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.78 \end{BussinesRule}
+                       ]pdfTeX warning (ext4): destination with the same identi
+fier (name{BR}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.80 ...ios en rediseño por Programa Académico.}
+                                                  
+Overfull \hbox (244.71104pt too wide) in paragraph at lines 85--86
+[]
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{BR}) has been
+ already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 \begin{BussinesRule}{BR}{Asignar tareas.}
+                                              pdfTeX warning (ext4): destinatio
+n with the same identifier (name{BR}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.101 ...n{BussinesRule}{BR}{Tiempos de entregas.}
+                                                  
+Overfull \hbox (67.874pt too wide) in paragraph at lines 108--108
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
 
  []
 
 
-Overfull \hbox (33.66557pt too wide) in paragraph at lines 82--82
+Overfull \hbox (42.15999pt too wide) in paragraph at lines 109--109
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{BR}) has been
+ already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.112 ... los datos solicitados son obligatorios.}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{BR}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.124 ...ussinesRule}{BR}{Existen los catálogos.}
+                                                  
+<IG-GRAL/headerInp.jpg, id=116, 437.38406pt x 45.92157pt>
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 126.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 126.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 126.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 126.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 126.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 126.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 126.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 126.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 126.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 126.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 126.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 126.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 126.
+ [7 <./IG-GRAL/headerInp.JPG>]
+Overfull \hbox (355.03667pt too wide) in paragraph at lines 139--139
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{BR}) has been
+ already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.142 ...R}{La matrícula del empleado es única.}
+                                                  
+Overfull \hbox (36.07672pt too wide) in paragraph at lines 147--147
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
+
+ []
+
+
+Overfull \hbox (181.07193pt too wide) in paragraph at lines 149--149
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+
+ []
+
+
+Overfull \hbox (189.47752pt too wide) in paragraph at lines 150--150
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{BR}) has been
+ already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.152 ...e de la Unidad de Aprendizaje es único.}
+                                                  
+Overfull \hbox (60.67123pt too wide) in paragraph at lines 157--157
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
+
+ []
+
+
+Overfull \hbox (30.32668pt too wide) in paragraph at lines 158--158
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
+
+ []
+
+
+Overfull \hbox (53.70737pt too wide) in paragraph at lines 159--159
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+
+ []
+
+
+Overfull \hbox (33.66557pt too wide) in paragraph at lines 160--160
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{BR}) has been
+ already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.162 ...ombre del Programa Académico es único.}
+                                                  
+Overfull \hbox (30.32668pt too wide) in paragraph at lines 168--168
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
+
+ []
+
+
+Overfull \hbox (264.82213pt too wide) in paragraph at lines 169--169
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
+
+ []
+
+
+Overfull \hbox (258.77489pt too wide) in paragraph at lines 170--170
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
 
  []
 
 )
-<IG-GRAL/headerInp.jpg, id=122, 437.38406pt x 45.92157pt>
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 17.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 17.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 17.
 Package babel Info: Redefining spanish shorthand >>
@@ -1066,44 +1150,10 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 17.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 17.
- [7 <./IG-GRAL/headerInp.JPG>]
+ [8]
 \openout2 = `DG/MSG.aux'.
 
  (./DG/MSG.tex)
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 27.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 27.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 27.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 27.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 27.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 27.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 27.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 27.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 27.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 27.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 27.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 27.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 27.
- [8
-
-
-
-
-]
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 27.
@@ -1141,11 +1191,16 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 31.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 31.
-[9]
+[9
+
+
+
+
+]
 \openout2 = `DCU/SP4/SP4-CU.aux'.
 
  (./DCU/SP4/SP4-CU.tex (./DCU/SP4/SP4-CU/SP4-CU1.tex
-<images/uc/default.png, id=136, 926.46124pt x 57.21375pt>
+<images/uc/default.png, id=130, 926.46124pt x 57.21375pt>
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 2.
@@ -1215,17 +1270,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--32
 
  []
 
-<images/uc/actor.png, id=139, 96.36pt x 74.2775pt>
+<images/uc/actor.png, id=133, 96.36pt x 74.2775pt>
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 34.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-<images/uc/iu.png, id=140, 61.22874pt x 55.20625pt>
+<images/uc/iu.png, id=134, 61.22874pt x 55.20625pt>
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
 Package pdftex.def Info: images/uc/iu.png  used on input line 34.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
-<images/uc/usecase.png, id=142, 91.34125pt x 61.22874pt>
+<images/uc/usecase.png, id=136, 91.34125pt x 61.22874pt>
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 36.
@@ -1973,13 +2028,13 @@ File: images/uc/usecase.png Graphic file (type png)
 Package pdftex.def Info: images/uc/usecase.png  used on input line 111.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 ) (./DCU/SP4/IU/pantallas.tex
-<images/SP4/Docente/2-ConsultarTareas-D.jpg, id=320, 677.53125pt x 328.8285pt>
+<images/SP4/Docente/2-ConsultarTareas-D.jpg, id=314, 677.53125pt x 328.8285pt>
 File: images/SP4/Docente/2-ConsultarTareas-D.jpg Graphic file (type jpg)
 <use images/SP4/Docente/2-ConsultarTareas-D.jpg>
 Package pdftex.def Info: images/SP4/Docente/2-ConsultarTareas-D.jpg  used on in
 put line 1.
 (pdftex.def)             Requested size: 375.36299pt x 182.18085pt.
-<images/SP4/Docente/2-1-ConsultarMapaCurricular-D.jpeg, id=321, 674.52pt x 444.
+<images/SP4/Docente/2-1-ConsultarMapaCurricular-D.jpeg, id=315, 674.52pt x 444.
 4605pt>
 File: images/SP4/Docente/2-1-ConsultarMapaCurricular-D.jpeg Graphic file (type 
 jpg)
@@ -1987,7 +2042,7 @@ jpg)
 Package pdftex.def Info: images/SP4/Docente/2-1-ConsultarMapaCurricular-D.jpeg 
  used on input line 3.
 (pdftex.def)             Requested size: 375.36299pt x 247.34312pt.
-<images/SP4/Docente/2-1-1-RegistrarPlanDeEstudios-D.jpeg, id=322, 732.336pt x 2
+<images/SP4/Docente/2-1-1-RegistrarPlanDeEstudios-D.jpeg, id=316, 732.336pt x 2
 93.29575pt>
 File: images/SP4/Docente/2-1-1-RegistrarPlanDeEstudios-D.jpeg Graphic file (typ
 e jpg)
@@ -1996,7 +2051,7 @@ Package pdftex.def Info: images/SP4/Docente/2-1-1-RegistrarPlanDeEstudios-D.jpe
 g  used on input line 5.
 (pdftex.def)             Requested size: 375.36299pt x 150.33069pt.
 <images/SP4/JefeDeInnovacionEducativa/2-2-ConsultarProgramasAcademicos-J.jpeg, 
-id=323, 733.5405pt x 383.031pt>
+id=317, 733.5405pt x 383.031pt>
 File: images/SP4/JefeDeInnovacionEducativa/2-2-ConsultarProgramasAcademicos-J.j
 peg Graphic file (type jpg)
 <use images/SP4/JefeDeInnovacionEducativa/2-2-ConsultarProgramasAcademicos-J.jp
@@ -2005,7 +2060,7 @@ Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/2-2-ConsultarProg
 ramasAcademicos-J.jpeg  used on input line 7.
 (pdftex.def)             Requested size: 375.36299pt x 196.00366pt.
 <images/SP4/JefeDeInnovacionEducativa/2-2-1-RegistrarEditarProgramaAcademico-J.
-jpeg, id=324, 732.93825pt x 215.00325pt>
+jpeg, id=318, 732.93825pt x 215.00325pt>
 File: images/SP4/JefeDeInnovacionEducativa/2-2-1-RegistrarEditarProgramaAcademi
 co-J.jpeg Graphic file (type jpg)
 <use images/SP4/JefeDeInnovacionEducativa/2-2-1-RegistrarEditarProgramaAcademic
@@ -2013,7 +2068,7 @@ o-J.jpeg>
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/2-2-1-RegistrarEd
 itarProgramaAcademico-J.jpeg  used on input line 9.
 (pdftex.def)             Requested size: 375.36299pt x 110.11278pt.
-<images/SP4/JefeDeInnovacionEducativa/2-3-AsignarTareas-J.jpeg, id=325, 729.927
+<images/SP4/JefeDeInnovacionEducativa/2-3-AsignarTareas-J.jpeg, id=319, 729.927
 pt x 389.65575pt>
 File: images/SP4/JefeDeInnovacionEducativa/2-3-AsignarTareas-J.jpeg Graphic fil
 e (type jpg)
@@ -2021,7 +2076,7 @@ e (type jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/2-3-AsignarTareas
 -J.jpeg  used on input line 11.
 (pdftex.def)             Requested size: 375.36299pt x 200.38063pt.
-<images/SP4/JefeDeInnovacionEducativa/2-3-2-GenerarTarea-J.jpeg, id=326, 732.33
+<images/SP4/JefeDeInnovacionEducativa/2-3-2-GenerarTarea-J.jpeg, id=320, 732.33
 6pt x 387.24675pt>
 File: images/SP4/JefeDeInnovacionEducativa/2-3-2-GenerarTarea-J.jpeg Graphic fi
 le (type jpg)
@@ -2167,9 +2222,9 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
  10194 strings out of 492649
- 150338 string characters out of 6118254
+ 150397 string characters out of 6118254
  271959 words of memory out of 5000000
- 13680 multiletter control sequences out of 15000+600000
+ 13686 multiletter control sequences out of 15000+600000
  16117 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,15n,45p,327b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2205,10 +2260,10 @@ share/texmf-dist/fonts/type1/public/hfbright/hfbrsl10.pfb></usr/share/texmf-dis
 t/fonts/type1/public/hfbright/hfbrsl8.pfb></usr/share/texmf-dist/fonts/type1/pu
 blic/hfbright/hfbrsy10.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/m
 arvosym.pfb>
-Output written on main.pdf (20 pages, 601110 bytes).
+Output written on main.pdf (20 pages, 603632 bytes).
 PDF statistics:
- 434 PDF objects out of 1000 (max. 8388607)
- 380 compressed objects within 4 object streams
- 162 named destinations out of 1000 (max. 500000)
+ 427 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
+ 156 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
