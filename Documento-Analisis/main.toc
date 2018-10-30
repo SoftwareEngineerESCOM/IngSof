@@ -1,0 +1,21 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Especificaci\IeC {\'o}n de Reglas del Negocio}{5}{chapter.1}
+\contentsline {chapter}{\numberline {2}Mensajes}{11}{chapter.2}
+\contentsline {chapter}{\numberline {3}Identificaci\IeC {\'o}n de Requerimientos}{13}{chapter.3}
+\contentsline {chapter}{\numberline {4}Especificaci\IeC {\'o}n de Casos de Uso}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}SP1-CU1 Registrar bibliograf\IeC {\'\i }a de la UA}{28}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Descripci\IeC {\'o}n completa}{28}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Atributos importantes}{28}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Trayectorias del Caso de Uso}{29}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}SP1-CU7 Eliminar autores de la bibliograf\IeC {\'\i }a}{33}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Descripci\IeC {\'o}n completa}{33}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Atributos importantes}{33}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Trayectorias del Caso de Uso}{33}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}SP1-CU10 Registrar tiempos de la Unidad de Aprendizaje}{35}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Descripci\IeC {\'o}n completa}{35}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Atributos importantes}{35}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Trayectorias del Caso de Uso}{36}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}SP1-CU11 Eliminar tiempos de la Unidad de Aprendizaje}{38}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Descripci\IeC {\'o}n completa}{38}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Atributos importantes}{38}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Trayectorias del Caso de Uso}{38}{subsection.4.4.3}
