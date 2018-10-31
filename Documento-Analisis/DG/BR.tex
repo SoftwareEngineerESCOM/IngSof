@@ -1,7 +1,7 @@
 \chapter{Especificación de Reglas del Negocio}
 
 \begin{BussinesRule}{BR1}{Jefe de División de Innovación Académica y Jefe de Departamento e Innovación curricular.}
-     \BRitem[Tipo: Estructural]
+    \BRitem[Tipo: Estructural]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
     \BRitem[Descripción: Solo pueden existir un Jefe de División de Innovación Académica y un Jefe de Departamento e Innovación curricular.]
@@ -271,4 +271,37 @@ Ejemplo: Escartín, MªJ., Palomar, M. y Súarez, E. (1997)
     \BRitem[Ejemplo Negativo:] Un libro cuyo número de autores es 5, se referencia a los autores de la siguiente manera:
 
     Ejemplo: Escartín, MªJ., Palomar, M., Chavez, C., Salinas, L.A. y Súarez, E. (1997)
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR24}{Debe existir al menos un criterio de evaluación para una Unidad de Aprendizaje}
+	\BRitem[Tipo:] Regla de integridad estructural.
+	\BRitem[Clase:] Habilitadora.
+	\BRitem[Nivel:] Control.
+	\BRitem[Descripción:] Para cada Unidad de Aprendizaje debe existir al menos un criterio de evaluación cuyo porcentaje asociado sería de 100\%, sin embargo, puede tener tantos criterios como el docente decida.
+	\BRitem[Motivación:] Que el docente que imparta dicha Unidad de Aprendizaje tenga al menos un referente para evaluar a sus alumnos.
+	\BRitem[Ejemplo positivo:] La Unidad de Aprendizaje ``Ingeniería de Sofware'' tiene como único criterio de evaluación el desarrollo de un proyecto cuyo porcentaje equivale al 100\% de la calificación del alumno.
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR25}{La suma de los porcentajes de cada evaluación debe ser igual a 100\%}
+	\BRitem[Tipo:] Regla de operación.
+	\BRitem[Clase:] Habilitadora.
+	\BRitem[Nivel:] Control.
+	\BRitem[Descripción:] La suma total de los porcentajes de cada evaluación registrada por el docente, debe ser exactamente igual al 100\%.
+	\BRitem[Motivación:] Que exista coherencia al momento de evaluar y que el alumno pueda identificar de dónde proviene su calificación.
+	\BRitem[Ejemplo positivo:] Las evaluaciones registradas para la Unidad de Aprendizaje ``Ingeniería de Software'' son
+		\begin{itemize}
+			\item 20\% Examen oral.
+			\item 20\% Tareas.
+			\item 60\% Proyecto final.
+		\end{itemize}
+		En total, los porcentajes suman el 100\% de la calificación del alumno.
+\end{BussinesRule}
+
+\begin{BussinesRule}{}{}
+	\BRitem[Tipo:]
+	\BRitem[Clase:]
+	\BRitem[Nivel:]
+	\BRitem[Descripción:]
+	\BRitem[Motivación:]
+	\BRitem[Ejemplo positivo:]
 \end{BussinesRule}
