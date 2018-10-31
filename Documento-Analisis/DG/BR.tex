@@ -1,14 +1,14 @@
 \chapter{Especificación de Reglas del Negocio}
 
-\begin{BussinesRule}{BR}{Jefes de Departamento e Innovación curricular.}
+\begin{BussinesRule}{BR1}{Jefe de División de Innovación Académica y Jefe de Departamento e Innovación curricular.}
      \BRitem[Tipo: Estructural]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
-    \BRitem[Descripción: Solo puede existir un único Jefe de Departamento e Innovación curricular.]
+    \BRitem[Descripción: Solo pueden existir un Jefe de División de Innovación Académica y un Jefe de Departamento e Innovación curricular.]
     \BRitem[Motivación: Restringir el numero de Usuarios capaces de Gestionar Usuarios]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Jefes de Innovación Educativa.}
+\begin{BussinesRule}{BR2}{Jefes de Innovación Educativa.}
     \BRitem[Tipo: Estructura]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -16,7 +16,43 @@
     \BRitem[Motivación: Tener un único responsable por Unidad Académica.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Máquina de Estados de una Tarea.}
+\begin{BussinesRule}{BR3}{Gestión de Usuarios}
+    \BRitem[Tipo: Autorización.]
+    \BRitem[Clase: Ejecutiva.]
+    \BRitem[Nivel: Influencia.]
+    \BRitem[Descripción:  Solo los Jefes pueden registrar, consultar, modificar y eliminar los datos de los usuarios que estén a su cargo, la organización sera la siguiente:
+Jefe de División de Innovación Académica:
+    Jefe de Departamento de Desarrollo e Innovación curricular
+    Jefe de Innovación Educativa
+    Analista
+Jefe de Departamento de Desarrollo e Innovación curricular:
+    Jefe de Innovación Educativa
+    Analista
+Jefe de Innovación Educativa:
+    Docente
+	Analista
+	]
+    \BRitem[Motivación: Permitir a los Jefes tener un control sobre el acceso al sistema.]
+    \BRitem[Ejemplo Positivo: El Jefe de División de Innovación Académica  actualiza el título de un analista.]
+    \BRitem[Ejemplo Negativo: Un analista modifica  el nombre de otro analista.]
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo}
+    \BRitem[Tipo:] Integradora
+    \BRitem[Clase:]Habilitadora
+    \BRitem[Nivel:] Control
+    \BRitem[Descripción:] La zona de trabajos de un Usuario se determinará de la siguiente manera:
+Jefe de División de Innovación Académica:DES.
+Jefe de Departamento de Desarrollo e Innovación curricular: DES.
+Jefe de Innovación Educativa: Unidad Académica .
+Docente: Unidad Académica donde pertenezca el usuario que lo creo.
+Analista: Donde pertenezca el usuario que lo creo.]
+    \BRitem[Motivación: Identificar que usuarios pertenecen a cada área y así saber que permisos tienen y a que informació pueden acceder.]
+    \BRitem[Ejemplo Positivo: La zona de trabajo de un Docente creado por el Jefe de Innovación Educativa de la ESCOM es la ESCOM]
+    \BRitem[Ejemplo Negativo: La zona de trabajo del Jefe de Innovación Educativa de la ESCOM es la DES]
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR5}{Máquina de Estados de una Tarea.}
     \BRitem[Tipo: Flujo]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -26,7 +62,7 @@
     \BRitem[Ejemplo Negativo: La Tarea de registrar Unidad de Aprendizaje se empezó a revisar antes de que terminara su registro.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Tareas de Registro.}
+\begin{BussinesRule}{BR6}{Tareas de Registro.}
     \BRitem[Tipo: Flujo]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -36,7 +72,7 @@
     \BRitem[Ejemplo Negativo:El usuario Analista registra un Mapa Curricular o una Unidad de Aprendizaje]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Revisión de Tareas.}
+\begin{BussinesRule}{BR7}{Revisión de Tareas.}
     \BRitem[Tipo: Flujo]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -46,7 +82,7 @@
     \BRitem[Ejemplo Negativo: El Docente revisa un Mapa Curricular y Unidades de Aprendizaje.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Aprobación de Tareas.}
+\begin{BussinesRule}{BR8}{Aprobación de Tareas.}
     \BRitem[Tipo: Flujo]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -56,7 +92,7 @@
     \BRitem[Ejemplo Negativo: El Jefe de Innovación Educativa agrega comentario y aun así se aprueba el documento.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Aprobación de Tareas Seccionada}
+\begin{BussinesRule}{BR9}{Aprobación de Tareas Seccionada}
     \BRitem[Tipo:Condición]
     \BRitem[Clase:Habilitadora]
     \BRitem[Nivel:Control]
@@ -67,17 +103,17 @@
     \BRitem[Ejemplo Negativo:Una sección es aprobada y fue modificada.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Rechazo de Tareas.}
+\begin{BussinesRule}{BR10}{Rechazo de Tareas.}
     \BRitem[Tipo: Flujo]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
     \BRitem[Descripción: Una Tarea es rechazada si al terminar de revisar contiene comentarios]
-    \BRitem[Motivación: Poder saber caundo uan tarea debe volver al estado de Registor.]
+    \BRitem[Motivación: Poder saber cuando una tarea debe volver al estado de Registro.]
     \BRitem[Ejemplo Positivo:El Jefe de Innovación Educativa agrego comentarios por lo que se rechaza.]
     \BRitem[Ejemplo Negativo: Ni el Jefe de Innovación Educativa ni el Analista agregaron comentarios y aun así se apruebó.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Asignar tareas.}
+\begin{BussinesRule}{BR11}{Asignar tareas.}
     \BRitem[Tipo:]Autorización.
     \BRitem[Clase:]Ejecutiva.
     \BRitem[Nivel:]Control.
@@ -88,7 +124,7 @@
     \BRitem[Ejemplo Negativo:] El analista le asigna una tarea al Jefe de Departamento e Innovación curricular.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Tiempos de entregas.}
+\begin{BussinesRule}{BR12}{Tiempos de entregas.}
     \BRitem[Tipo:Integridad]
     \BRitem[Clase:Cronometrado]
     \BRitem[Nivel: Control]
@@ -98,18 +134,18 @@
     \BRitem[Ejemplo Negativo: Una propuesta de unidad de aprendizaje puede ser revisada por un analista en cualquier momento.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Todos los datos solicitados son obligatorios.}
+\begin{BussinesRule}{BR13}{Todos los datos solicitados son obligatorios.}
     \BRitem[Tipo: Regla de Operación]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
-    \BRitem[Descripción: Los campos solitcitados, no se pueden ser dejados en blanco ]
+    \BRitem[Descripción: Los campos solicitados, no se pueden ser dejados en blanco ]
     \BRitem[Sentencia:]
     \BRitem[Motivación: Que la base de datos esté siempre en un estado consistente.]
     \BRitem[Ejemplo Positivo:El usuario ingresa todos los datos solicitados y prosigue con su operación.]
     \BRitem[Ejemplo Negativo: El usuario deja campos vacios y el sistema le permite continuar.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Existen los catálogos.}
+\begin{BussinesRule}{BR14}{Existen los catálogos.}
     \BRitem[Tipo: Regla de inferencia de un hecho]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -121,13 +157,16 @@ Modalidades
 Tipo de Usuario
     Docente
     Analista
+    Jefe de División de Innovación Académica
+    Jefe de Departamento de Desarrollo e Innovación Curricular
+    Jefe de Innovación Educativa
 Tareas
     Registrar Mapa Curricular
     Registrar Unidad de Aprendizaje]
     \BRitem[Motivación: Mantener los datos en un estado consistente.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Planes de Estudios en rediseño por Programa Académico.}
+\begin{BussinesRule}{BR15}{Planes de Estudios en re diseño por Programa Académico.}
     \BRitem[Tipo:] Relación.
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
@@ -137,7 +176,7 @@ Tareas
     \BRitem[Ejemplo Negativo:] Licenciatura en Economía: Plan 2000, Plan 2009, Plan 2014, Plan 2018.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{La matrícula del empleado es única.}
+\begin{BussinesRule}{BR16}{La matrícula del empleado es única.}
     \BRitem[Tipo: Relación]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -147,7 +186,7 @@ Tareas
     \BRitem[Ejemplo Negativo: El Empleado Juan Perez tiene una matricula 2014000990 y El Empleado Armando López Doriga  tiene una matricula 2014000990 .]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR} {El nombre de la Unidad de Aprendizaje es único.}
+\begin{BussinesRule}{BR17} {El nombre de la Unidad de Aprendizaje es único.}
     \BRitem[Tipo: Relación]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -157,7 +196,7 @@ Tareas
     \BRitem[Ejemplo Negativo: En un Programa Académico  tenemos la materia Ingeniería de Software y  Ingeniería de Software.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{ Longitud máxima de Unidad de aprendizaje.}
+\begin{BussinesRule}{BR18}{ Longitud máxima de Unidad de aprendizaje.}
     \BRitem[Tipo: Regla de inferencia de un hecho]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -168,7 +207,7 @@ Tareas
     \BRitem[Ejemplo Negativo: El usuario deja campos obligatorios y el sistema le permite continuar.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR} {El nombre del Programa Académico es único.}
+\begin{BussinesRule}{BR19} {El nombre del Programa Académico es único.}
     \BRitem[Tipo: Relación]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -178,7 +217,7 @@ Tareas
     \BRitem[Ejemplo Negativo: En una Unidad Académica existen los Programas Académicos Ingeniería en Sistemas Computacionales y Ingeniería en Sistemas Computacionales.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Las horas totales deben de estar entre 350 y 450 horas.}
+\begin{BussinesRule}{BR20}{Las horas totales deben de estar entre 350 y 450 horas.}
     \BRitem[Tipo: Regla de operación]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -188,7 +227,7 @@ Tareas
     \BRitem[Ejemplo Negativo:  El usuario llena los dato de total de horas con 40000 horas.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Un libro tiene un ISBN único.}
+\begin{BussinesRule}{BR21}{Un libro tiene un ISBN único.}
     \BRitem[Tipo:] Regla de integridad referencial.
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
@@ -198,7 +237,7 @@ Tareas
     \BRitem[Ejemplo Negativo:] Para el planteamiento anterior no cumple la regla que el ISBN sea el mismo para ambos libros, puesto que uno es escrito por un autor, y el otro es escrito por otro autor.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Longitud del ISBN.}
+\begin{BussinesRule}{BR22}{Longitud del ISBN.}
     \BRitem[Tipo:] Regla de integridad estructural.
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
@@ -217,7 +256,7 @@ El resultado finalmente será:  ISBN: 978 - 607 - 0000 - 00 - 0
     \BRitem[Ejemplo Negativo:]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Un libro con más de 3 autores es sólo citado por los primeros 3}
+\begin{BussinesRule}{BR23}{Un libro con más de 3 autores es sólo citado por los primeros 3}
     \BRitem[Tipo:] Regla de integridad estructural.
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.

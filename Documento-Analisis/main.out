@@ -1,20 +1,19 @@
 \BOOKMARK [0][-]{chapter.1}{Especificaci\363n de Reglas del Negocio}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Mensajes}{}% 2
-\BOOKMARK [0][-]{chapter.3}{Identificaci\363n de Requerimientos}{}% 3
-\BOOKMARK [0][-]{chapter.4}{Especificaci\363n de Casos de Uso}{}% 4
-\BOOKMARK [1][-]{section.4.1}{SP1-CU1 Registrar bibliograf\355a de la UA}{chapter.4}% 5
-\BOOKMARK [2][-]{subsection.4.1.1}{Descripci\363n completa}{section.4.1}% 6
-\BOOKMARK [2][-]{subsection.4.1.2}{Atributos importantes}{section.4.1}% 7
-\BOOKMARK [2][-]{subsection.4.1.3}{Trayectorias del Caso de Uso}{section.4.1}% 8
-\BOOKMARK [1][-]{section.4.2}{SP1-CU7 Eliminar autores de la bibliograf\355a}{chapter.4}% 9
-\BOOKMARK [2][-]{subsection.4.2.1}{Descripci\363n completa}{section.4.2}% 10
-\BOOKMARK [2][-]{subsection.4.2.2}{Atributos importantes}{section.4.2}% 11
-\BOOKMARK [2][-]{subsection.4.2.3}{Trayectorias del Caso de Uso}{section.4.2}% 12
-\BOOKMARK [1][-]{section.4.3}{SP1-CU10 Registrar tiempos de la Unidad de Aprendizaje}{chapter.4}% 13
-\BOOKMARK [2][-]{subsection.4.3.1}{Descripci\363n completa}{section.4.3}% 14
-\BOOKMARK [2][-]{subsection.4.3.2}{Atributos importantes}{section.4.3}% 15
-\BOOKMARK [2][-]{subsection.4.3.3}{Trayectorias del Caso de Uso}{section.4.3}% 16
-\BOOKMARK [1][-]{section.4.4}{SP1-CU11 Eliminar tiempos de la Unidad de Aprendizaje}{chapter.4}% 17
-\BOOKMARK [2][-]{subsection.4.4.1}{Descripci\363n completa}{section.4.4}% 18
-\BOOKMARK [2][-]{subsection.4.4.2}{Atributos importantes}{section.4.4}% 19
-\BOOKMARK [2][-]{subsection.4.4.3}{Trayectorias del Caso de Uso}{section.4.4}% 20
+\BOOKMARK [0][-]{chapter.2}{Identificaci\363n de Requerimientos}{}% 2
+\BOOKMARK [0][-]{chapter.3}{Especificaci\363n de Casos de Uso}{}% 3
+\BOOKMARK [1][-]{section.3.1}{SP1-CU1 Registrar bibliograf\355a de la UA}{chapter.3}% 4
+\BOOKMARK [2][-]{subsection.3.1.1}{Descripci\363n completa}{section.3.1}% 5
+\BOOKMARK [2][-]{subsection.3.1.2}{Atributos importantes}{section.3.1}% 6
+\BOOKMARK [2][-]{subsection.3.1.3}{Trayectorias del Caso de Uso}{section.3.1}% 7
+\BOOKMARK [1][-]{section.3.2}{SP1-CU7 Eliminar autores de la bibliograf\355a}{chapter.3}% 8
+\BOOKMARK [2][-]{subsection.3.2.1}{Descripci\363n completa}{section.3.2}% 9
+\BOOKMARK [2][-]{subsection.3.2.2}{Atributos importantes}{section.3.2}% 10
+\BOOKMARK [2][-]{subsection.3.2.3}{Trayectorias del Caso de Uso}{section.3.2}% 11
+\BOOKMARK [1][-]{section.3.3}{SP1-CU10 Registrar tiempos de la Unidad de Aprendizaje}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.3.1}{Descripci\363n completa}{section.3.3}% 13
+\BOOKMARK [2][-]{subsection.3.3.2}{Atributos importantes}{section.3.3}% 14
+\BOOKMARK [2][-]{subsection.3.3.3}{Trayectorias del Caso de Uso}{section.3.3}% 15
+\BOOKMARK [1][-]{section.3.4}{SP1-CU11 Eliminar tiempos de la Unidad de Aprendizaje}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.4.1}{Descripci\363n completa}{section.3.4}% 17
+\BOOKMARK [2][-]{subsection.3.4.2}{Atributos importantes}{section.3.4}% 18
+\BOOKMARK [2][-]{subsection.3.4.3}{Trayectorias del Caso de Uso}{section.3.4}% 19
