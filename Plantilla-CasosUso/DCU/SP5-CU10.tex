@@ -1,0 +1,71 @@
+\begin{UseCase}{SP5-CU10}{Editar datos de empleados.}{Los jefes (\hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA}, \hyperlink{JUA}{JUA}) podran realizar modificaciones a la información de los empleados (usuarios o no)  a su cargo}
+        \UCitem{Versión}{\color{Gray}1.0}
+        \UCitem{Autor}{\color{Gray}Hernández Ruiz Rafael}
+        \UCitem{Supervisa}{\color{Gray}Abigail Nicolás Sayago}
+        \UCitem{Actor}{\hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA}, \hyperlink{JUA}{JUA}.}
+        \UCitem{Propósito}{Poder realizar modificaciones en la información de los empleados por motivos de actualización o errores }
+        \UCitem{Entradas}{
+          \begin{itemize}
+            \item Matricula del empleado.
+            \item Clic en botón buscar.
+        \end{itemize}}
+        \UCitem{Origen}{Mouse.}
+        \UCitem{Salidas}{
+            \begin{itemize}
+                \item Información del empleado (nombre, apellido paterno, apellido materno, titulo, cargo, lugar de trabajo y contraseña).
+                \item \label{MSGR4} MSGR4. No se han cargado los catálogos.
+                \item \label{MSGR8} MSGR8. Empleado Modificado.  
+            \end{itemize}
+        }
+        \UCitem{Destino}{Pantalla.}
+        \UCitem{Precondiciones}{ \begin{itemize}
+            \item Debe existir por lo menos un registro en el catálogo de cargos.
+            \item Debe existir por lo menos un registro en el catalogo de lugares de trabajo.
+        \end{itemize} }
+        \UCitem{Postcondiciones}{}
+        \UCitem{Errores}{ \begin{itemize}
+        \item El catálogo de cargos no se cargo correctamente.
+        \item Hubo un problema al conectarse con el servidor.
+        \item Hubo un problema al conectarse con la base de datos. \end{itemize}}
+        \UCitem{Estado}{Gestión.}
+        \UCitem{Observaciones}{}
+
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+    
+    \UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU2}{Gestionar empleados} la opción de editar un usuario. 
+    \UCpaso  El sistema verifica la existencia de registros en los catálogos cargos  y  lugares de trabajo . [Trayectoria B] 
+    \UCpaso El sistema carga la información del catalogo de empleado  según la \hyperlink{reglas-BR3}{BR3} para el actor. [Trayectoria E]
+    \UCpaso El sistema carga la pantalla  \IUref{IU7}{Editar empleados}.
+    \UCpaso[\UCactor] Edita la información de los empleados.[Trayectoria C] [Trayectoria D] 
+    \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Modificar}.
+    \UCpaso El sistema realiza la modificación de la información del empleado.
+    \UCpaso  El sistema muestra el \hyperref[MSGR8]{MSGR8. Empleado modificado}.    
+    \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{B}{No existen registros en los catálogos.}
+    \UCpaso     El sistema muestra el \hyperref[MSGR4]{MSGR4. No se han cargado los catálogos}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{C}{Cambio en el cargo de un usuario.}
+    \UCpaso     El sistema ajustara las opciones de zona de trabajo de acuerdo con el cargo y el actor según la \hyperlink{reglas-BR4}{BR4}.
+    \UCpaso     Continua en el paso 5 de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{D}{El actor presiono el botón \IUbutton{Cancelar}.}
+ \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}
+\end{UCtrayectoriaA}
+\begin{UCtrayectoriaA}{E}{El empleados es solo un recurso humano y no usuario.}
+ \UCpaso El sistema carga la pantalla  \IUref{IU8}{Editar empleados no usuarios}.
+    \UCpaso[\UCactor] Edita la información de los empleados.[Trayectoria F] [Trayectoria D] 
+    \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Modificar}.
+    \UCpaso El sistema realiza la modificación de la información del empleado.
+    \UCpaso  El sistema muestra el \hyperref[MSGR8]{MSGR8. Empleado modificado}.    
+    \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}
+\end{UCtrayectoriaA}
+\begin{UCtrayectoriaA}{F}{Cambio en el cargo de un usuario.}
+    \UCpaso     El sistema ajustara las opciones de zona de trabajo de acuerdo con el cargo y el actor según la \hyperlink{reglas-BR4}{BR4}.
+    \UCpaso     Continua en el paso 2 de la trayectoria E.
+\end{UCtrayectoriaA}
