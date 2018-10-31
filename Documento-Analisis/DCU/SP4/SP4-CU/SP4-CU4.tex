@@ -1,42 +1,46 @@
 \chapter{Especificación de Casos de Uso}
 
 % REGISTRAR BIBLIOGRAFÍA.
-\begin{UseCase}{CU1}{Registrar Usuario}{El usuario Jefe de Innovación Educativa podrá registrar un usuario de su Unidad Academica.}
+\begin{UseCase}{CU1}{Registrar Recurso Humano}{El usuario Jefe de Innovación Educativa ingresa los datos de los Recursos Humanos de su Unidad Académica.}
         \UCitem{Versión}{\color{Gray}1.0}
         \UCitem{Autor}{\color{Gray}Rivas Rojas Arturo}
         \UCitem{Supervisa}{\color{Gray}}
         \UCitem{Actor}{\hyperlink{JDIE}{Jefe de Innovación Educativa}}
-        \UCitem{Propósito}{Otorgar acceso al sitema a un Analista o Docente.}
-        \UCitem{Entradas}{Las entradas para el registro de un usuario serán:
+        \UCitem{Propósito}{.}
+        \UCitem{Entradas}{Las entradas para el registro de un Recurso Humano serán:
           \begin{itemize}
             \item Matricula de Empleado.
-            \item Tipo.
+            \item Cargo.
             \item Titulo.
             \item Nombre.
             \item Apellido Paterno.
             \item Apellido Materno.
-            \item Contraseña.
           \end{itemize}
         }
         \UCitem{Origen}{Teclado.}
         \UCitem{Salidas}{
             \begin{itemize}
-                \item MSG1 Los campos marcados con (*) son obligatorios
+                \item MSG1 Todos los campos son obligatorios
                 \item MSG2 Registro finalizado exitosamente.
-                \item MSG3 El Usuario con la Matricula de Empleado [Número de Matricula de Empleado] ya existe.
-                \item MSG5 ¿Esta seguro que desea cancelar el registro?
-                \item MSG6 Hubo un error al momento de registrar el usuario, porfavor intentelo mas tarde.
+                \item MSG3 El Recurso Humano con la Matricula de Empleado [Número de Matricula de Empleado] ya existe.
+                \item MSG5 ¿Esta seguro que desea cancelar?
+                \item MSG6 Ocurrio un error, porfavor intentelo mas tarde.
+                \item MSG7 Los catálogos necesarios no están disponibles por el momento, por favor inténtelo mas tarde.
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
         \UCitem{Precondiciones}{
             \begin{itemize}
-                \item El usuario a registrar, no debe existir previamente en el sistema.
-                \item El catalogo de tipo de usuario debe de estar cargado en el sistema
+                \item El Recurso Humano a registrar, no debe existir previamente en el sistema.
+                \item El catálogo de Cargo debe de estar cargado en el sistema.
             \end{itemize}
         }
-        \UCitem{Postcondiciones}{El usuario estara quedara registrado en el sitema, permitiendo consultarlo y asignarle tareas.}
-        \UCitem{Errores}{}
+        \UCitem{Postcondiciones}{El Recurso Humano quedara registrado en el sitema, permitiendo consultarlo y relacionarlo a una Unidad de Aprendizaje.}
+        \UCitem{Errores}{
+            \begin{itemize}
+                \item E1. No existen o no pudieron encontrarse los catálogo necesarios.
+            \end{itemize}
+        }
         \UCitem{Estado}{Revisión.}
         \UCitem{Observaciones}{}
 \end{UseCase}
@@ -44,7 +48,7 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Usuario} de la interfaz de usuario \IUref{IU2.4}{Consulta de Usuarios}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Recurso Humano} de la interfaz de usuario \IUref{IU2.4}{Consulta de Usuarios}
     \UCpaso El sistema carga el catálogo de tipos de Usuario. [Trayectoria A]
     \UCpaso El sistema muestra la interfaz de usuario \IUref{IU2.4.1}{Registro de Usuario}.
     \UCpaso[\UCactor] Ingresa la Matricula de Empleado.
@@ -72,17 +76,6 @@
     \UCpaso Muestra la interfaz de usuario \IUref{IU1}{Página principal}.
 \end{UCtrayectoria}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA X -------------------------
-
-\begin{comment}
-\begin{UCtrayectoriaA}{A}{El sistema no encuentra ningún formulario para mostrar.}
-    \UCpaso No encuentra ningún formulario para mostrar.
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG6}{Por el momento no se puede registrar la bibliografía}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{CU1}.
-\end{UCtrayectoriaA}
-\end{comment}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 
 \begin{UCtrayectoriaA}{A}{El usuario quiere agregar más autores para el libro que está registrando.}
@@ -93,55 +86,10 @@
     \UCpaso Continua en el paso 10 de la trayectoria principal del \UCref{CU1}
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA A.1 -----------------------
-
-\begin{UCtrayectoriaA}{A.1}{El usuario presionó por error el botón \IUbutton{$\bigoplus$}.}
-    %\UCpaso[\UCactor] Presiona el botón \IUbutton{$\ominus$} que se encuentra a un lado del campo ``Nombre'' del formulario \Formref{IU2}{Registro de bibliografía}
-    \UCpaso Elimina los campos agregados.
-    \UCpaso Continua en el paso 9 de la trayectoria principal del \UCref{CU1}
-\end{UCtrayectoriaA}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA A.2 -----------------------
-
-\begin{UCtrayectoriaA}{A.2}{El usuario ya registró 3 autores para un libro}
-    \UCpaso Oculta el botón \IUbutton{$\bigoplus$}.
-    \UCpaso Continua en el paso 10 de la trayectoria principal del \UCref{1}
-\end{UCtrayectoriaA}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-
-\begin{UCtrayectoriaA}{B}{El actor quiere cancelar el registro de la bibliografía.}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
-    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Seguro que desea cancelar el registro?}.
-    \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
-    \UCpaso Muestra la interfaz de usuario \IUref{IU1}{Página principal}
-\end{UCtrayectoriaA}
-
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 
-\begin{UCtrayectoriaA}{C}{El actor presiona accidentalmente el botón Cancelar}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
-    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Seguro que desea cancelar el registro?}.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
-    \UCpaso Cierra el mensaje.
-    \UCpaso Continua en el paso 10 de la trayectoria principal del \UCref{CU1}.
-\end{UCtrayectoriaA}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 
-\begin{UCtrayectoriaA}{D}{Uno o más campos obligatorios no fueron contestados.}
-    \UCpaso Detecta uno o más campos sin contestar.
-    \UCpaso Muestra el mensaje \MSGref{MSG1}{Los campos marcados con (*) son obligatorios}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{CU1}.
-\end{UCtrayectoriaA}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
-
-\begin{UCtrayectoriaA}{E}{El ISBN que se intenta registrar ya existe en el sistema.}
-    \UCpaso Encuentra un libro registrado con el mismo ISBN que el libro que se está registrando.
-    \UCpaso Muestra el mensaje \MSGref{MSG3}{El libro con el ISBN [Número de ISBN] ya existe.}
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}
-    \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{CU1}.
-\end{UCtrayectoriaA}
