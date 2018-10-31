@@ -1,26 +1,39 @@
 \BOOKMARK [0][-]{chapter.1}{Identificaci\363n de Requerimientos}{}% 1
-\BOOKMARK [0][-]{chapter.2}{SP2-CU7 Finalizar revisi\363n de paquetes de propuestas de unidades de aprendizaje}{}% 2
-\BOOKMARK [1][-]{section.2.1}{SP2-CU5 Finalizar revisi\363n de paquetes de propuestas de unidades de aprendizaje}{chapter.2}% 3
+\BOOKMARK [0][-]{chapter.2}{SP2-CU4 Desasignar unidades de aprendizaje a un analista }{}% 2
+\BOOKMARK [1][-]{section.2.1}{SP2-CU4 Desasignar unidades de apendizaje a un analista}{chapter.2}% 3
 \BOOKMARK [2][-]{subsection.2.1.1}{Descripci\363n completa}{section.2.1}% 4
 \BOOKMARK [2][-]{subsection.2.1.2}{Atributos importantes}{section.2.1}% 5
 \BOOKMARK [2][-]{subsection.2.1.3}{Trayectorias del Caso de Uso}{section.2.1}% 6
 \BOOKMARK [0][-]{chapter.3}{Pantallas}{}% 7
-\BOOKMARK [0][-]{chapter.4}{Pantallas}{}% 8
-\BOOKMARK [0][-]{chapter.5}{SP2-CU7 Autorizar Secci\363n Descripci\363n de Unidad de Aprendizaje}{}% 9
-\BOOKMARK [1][-]{section.5.1}{SP2-CU7 \040Autorizar Secci\363n Descripci\363n de Unidad de Aprendizaje }{chapter.5}% 10
+\BOOKMARK [0][-]{chapter.4}{Mensajes}{}% 8
+\BOOKMARK [0][-]{chapter.5}{SP2-CU5 Finalizar revisi\363n de paquetes de propuestas de unidades de aprendizaje}{}% 9
+\BOOKMARK [1][-]{section.5.1}{SP2-CU5 Finalizar revisi\363n de paquetes de propuestas de unidades de aprendizaje}{chapter.5}% 10
 \BOOKMARK [2][-]{subsection.5.1.1}{Descripci\363n completa}{section.5.1}% 11
 \BOOKMARK [2][-]{subsection.5.1.2}{Atributos importantes}{section.5.1}% 12
 \BOOKMARK [2][-]{subsection.5.1.3}{Trayectorias del Caso de Uso}{section.5.1}% 13
 \BOOKMARK [0][-]{chapter.6}{Pantallas}{}% 14
-\BOOKMARK [0][-]{chapter.7}{SP2-CU8 Autorizar Secci\363n Tiempos Asignados de Unidad de Aprendizaje}{}% 15
-\BOOKMARK [1][-]{section.7.1}{SP2-CU8 \040Autorizar Secci\363n Tiempos Asignados de Unidad de Aprendizaje}{chapter.7}% 16
-\BOOKMARK [2][-]{subsection.7.1.1}{Descripci\363n completa}{section.7.1}% 17
-\BOOKMARK [2][-]{subsection.7.1.2}{Atributos importantes}{section.7.1}% 18
-\BOOKMARK [2][-]{subsection.7.1.3}{Trayectorias del Caso de Uso}{section.7.1}% 19
-\BOOKMARK [0][-]{chapter.8}{Pantallas}{}% 20
-\BOOKMARK [0][-]{chapter.9}{SP2-CU14 Agregar comentarios a propuesta de unidad de aprendizaje}{}% 21
-\BOOKMARK [1][-]{section.9.1}{SP2-CU14 \040Agregar comentarios a propuesta de unidad de aprendizaje }{chapter.9}% 22
-\BOOKMARK [2][-]{subsection.9.1.1}{Descripci\363n completa}{section.9.1}% 23
-\BOOKMARK [2][-]{subsection.9.1.2}{Atributos importantes}{section.9.1}% 24
-\BOOKMARK [2][-]{subsection.9.1.3}{Trayectorias del Caso de Uso}{section.9.1}% 25
-\BOOKMARK [0][-]{chapter.10}{Pantallas}{}% 26
+\BOOKMARK [0][-]{chapter.7}{Mensajes}{}% 15
+\BOOKMARK [0][-]{chapter.8}{SP2-CU7 Autorizar Secci\363n Descripci\363n de Unidad de Aprendizaje}{}% 16
+\BOOKMARK [1][-]{section.8.1}{SP2-CU7 \040Autorizar Secci\363n Descripci\363n de Unidad de Aprendizaje }{chapter.8}% 17
+\BOOKMARK [2][-]{subsection.8.1.1}{Descripci\363n completa}{section.8.1}% 18
+\BOOKMARK [2][-]{subsection.8.1.2}{Atributos importantes}{section.8.1}% 19
+\BOOKMARK [2][-]{subsection.8.1.3}{Trayectorias del Caso de Uso}{section.8.1}% 20
+\BOOKMARK [0][-]{chapter.9}{Pantallas}{}% 21
+\BOOKMARK [0][-]{chapter.10}{SP2-CU8 Autorizar Secci\363n Tiempos Asignados de Unidad de Aprendizaje}{}% 22
+\BOOKMARK [1][-]{section.10.1}{SP2-CU8 \040Autorizar Secci\363n Tiempos Asignados de Unidad de Aprendizaje}{chapter.10}% 23
+\BOOKMARK [2][-]{subsection.10.1.1}{Descripci\363n completa}{section.10.1}% 24
+\BOOKMARK [2][-]{subsection.10.1.2}{Atributos importantes}{section.10.1}% 25
+\BOOKMARK [2][-]{subsection.10.1.3}{Trayectorias del Caso de Uso}{section.10.1}% 26
+\BOOKMARK [0][-]{chapter.11}{Pantallas}{}% 27
+\BOOKMARK [0][-]{chapter.12}{SP2-CU14 Agregar comentarios a propuesta de unidad de aprendizaje}{}% 28
+\BOOKMARK [1][-]{section.12.1}{SP2-CU14 \040Agregar comentarios a propuesta de unidad de aprendizaje }{chapter.12}% 29
+\BOOKMARK [2][-]{subsection.12.1.1}{Descripci\363n completa}{section.12.1}% 30
+\BOOKMARK [2][-]{subsection.12.1.2}{Atributos importantes}{section.12.1}% 31
+\BOOKMARK [2][-]{subsection.12.1.3}{Trayectorias del Caso de Uso}{section.12.1}% 32
+\BOOKMARK [0][-]{chapter.13}{Pantallas}{}% 33
+\BOOKMARK [0][-]{chapter.14}{SP2-CU17 Agregar subrayado a propuesta de unidad de aprendizaje}{}% 34
+\BOOKMARK [1][-]{section.14.1}{SP2-CU17 \040Agregar subrayado a propuesta de unidad de aprendizaje }{chapter.14}% 35
+\BOOKMARK [2][-]{subsection.14.1.1}{Descripci\363n completa}{section.14.1}% 36
+\BOOKMARK [2][-]{subsection.14.1.2}{Atributos importantes}{section.14.1}% 37
+\BOOKMARK [2][-]{subsection.14.1.3}{Trayectorias del Caso de Uso}{section.14.1}% 38
+\BOOKMARK [0][-]{chapter.15}{Pantallas}{}% 39
