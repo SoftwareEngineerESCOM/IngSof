@@ -1,0 +1,183 @@
+% EDITAR UNIDAD DE APRENDIZAJE.
+\begin{UseCase}{SP4-CU9}{Editar Unidad de Aprendizaje}{El usuario Docente modifica los datos de las Unidades de Aprendizaje registradas en el sistema..}
+		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Autor}{\color{Gray}Cervantes Moreno Christian Andres}
+		\UCitem{Supervisa}{\color{Gray} Evelyn Reyes}
+		\UCitem{Actor}{\hyperlink{Usuario}{Docente}}
+		\UCitem{Propósito}{Editar el nombre, créditos TEPIC, créditos SATCA, horas Teoría/Semana, horas Práctica/semana, Área de formación y semestre de una Unidad de Aprendizaje.}
+		\UCitem{Entradas}{Las entradas para la modificación de la Unidad de Aprendizaje serán:
+          \begin{itemize}
+          	\item Nombre (Tipo carácter).
+          	\item Créditos Totales TEPIC (Tipo double).
+            \item Créditos Totales SATCA (Tipo double).
+            \item Total horas / Teoría (Tipo entero).
+            \item Total horas / Práctica (Tipo entero).
+            \item Área de Formación.
+            \item Semestre
+          \end{itemize}
+        }
+		\UCitem{Origen}{Teclado, Mouse}
+		\UCitem{Salidas}{
+        	\begin{itemize}
+        		\item MSG1. Los campos marcados con (*) son obligatorios
+                \item MSG2. Unidad de Aprendizaje modificada exitosamente.
+                \item MSG3. ¿Seguro que desea cancelar?.
+                \item MSG4. Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde.
+                \item MSG5. Entrada no valida.
+
+        	\end{itemize}
+        }
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{ Debe de existir al menos una Unidad de Aprendizaje registrada en el sistema.}
+		\UCitem{Postcondiciones}{La Unidad de Aprendizaje queda modificada en el sistema.}
+		\UCitem{Errores}{ 
+			  \begin{itemize}
+				\item E1. Entrada invalida de un caracter no entero.
+				\item E2. Entrada invalida de un caracter no double.
+				\item E2. Entrada invalida de un carácter
+			\end{itemize}
+		}
+		\UCitem{Estado}{Revisión.}
+		\UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+
+    %Usuario
+    \UCpaso[\UCactor] Presiona el checkbox Editar de la Unidad de Aprendizaje que desea editar de la Interfaz de usuario  \IUref{IU2.1-D}{Consultar Mapa Curricular}.
+
+	%Sistema
+    \UCpaso El sistema carga el catálogo de la Unidad de Aprendizaje.[Trayectoria A]
+
+
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.1.2-D}{Registrar Unidad de Aprendizaje}.
+    \UCpaso[\UCactor] Elige los campos que desea modificar.[Trayectoria B].
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B] [Trayectoria C]
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
+
+    \UCpaso Guarda la información de la Unidad de Aprendizaje en la base de datos.
+
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG2}{Registro finalizado exitosamente}.
+
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
+\end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA X -------------------------
+
+\begin{comment}
+\begin{UCtrayectoriaA}{A}{El sistema no encuentra ningún formulario para mostrar.}
+	\UCpaso No encuentra ningún formulario para mostrar.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG6}{Por el momento no se puede registrar la bibliografía}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{CU1}.
+\end{UCtrayectoriaA}
+\end{comment}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo de la Unidad de Aprendizaje}
+	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{registrar}
+	\UCpaso Muestra el mensaje \MSGref{MSG4}{.Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde. }
+	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
+	 \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
+
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
+
+\begin{UCtrayectoriaA}{B.1}{El usuario desea modificar el nombre de la Unidad de Aprendizaje.}
+	\UCpaso[\UCactor] Borra el nombre de la Unidad de Aprendizaje.
+	\UCpaso[\UCactor] Ingresa el nombre de la Unidad de Aprendizaje.
+	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU9}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B.2 -------------------------
+
+\begin{UCtrayectoriaA}{B.2}{El usuario desea modificar los créditos TEPIC de la Unidad de Aprendizaje.}
+	\UCpaso[\UCactor] Borra los créditos TEPIC de la Unidad de Aprendizaje.
+	\UCpaso[\UCactor] Ingresa los nuevos créditos TEPIC la Unidad de Aprendizaje.
+	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU9}.
+\end{UCtrayectoriaA}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B.3 -------------------------
+
+\begin{UCtrayectoriaA}{B.3}{El usuario desea modificar los créditos SATCA de la Unidad de Aprendizaje.}
+	\UCpaso[\UCactor] Borra los créditos SATCA de la Unidad de Aprendizaje.
+	\UCpaso[\UCactor] Ingresa los nuevos créditos SATCA la Unidad de Aprendizaje.
+	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU9}.
+\end{UCtrayectoriaA}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B.4 -------------------------
+
+\begin{UCtrayectoriaA}{B.4}{El usuario desea modificar las horas Teoría/Semana de la Unidad de Aprendizaje.}
+	\UCpaso[\UCactor] Borra las horas Teoría/Semana de la Unidad de Aprendizaje.
+	\UCpaso[\UCactor] Ingresa las nuevas horas Teoría/Semana SATCA la Unidad de Aprendizaje.
+	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU9}.
+\end{UCtrayectoriaA}
+
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B.5 -------------------------
+
+\begin{UCtrayectoriaA}{B.5}{El usuario desea modificar las horas Práctica/Semana de la Unidad de Aprendizaje.}
+	\UCpaso[\UCactor] Borra las horas Práctica/Semana de la Unidad de Aprendizaje.
+	\UCpaso[\UCactor] Ingresa las nuevas horas Práctica/Semana SATCA la Unidad de Aprendizaje.
+	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU9}.
+\end{UCtrayectoriaA}
+
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B.6 -------------------------
+
+\begin{UCtrayectoriaA}{B.6}{El usuario desea modificar el área de formación de la Unidad de Aprendizaje.}
+	\UCpaso[\UCactor] Selecciona el área de formación al que pertenece la Unidad de Aprendizaje.
+	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU9}.
+\end{UCtrayectoriaA}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B.7 -------------------------
+
+\begin{UCtrayectoriaA}{B.7}{El usuario desea modificar el área de formación de la Unidad de Aprendizaje.}
+	\UCpaso[\UCactor] Selecciona el semestre al que pertenece la Unidad de Aprendizaje.
+	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU9}.
+\end{UCtrayectoriaA}
+
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
+
+\begin{UCtrayectoriaA}{C}{El actor quiere cancelar el registro de Unidad de Aprendizaje.}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
+	\UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
+	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
+	\UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
+\end{UCtrayectoriaA}
+
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
+
+\begin{UCtrayectoriaA}{D}{El actor presiona accidentalmente el botón Cancelar}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
+	\UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
+	\UCpaso Cierra el mensaje.
+	\UCpaso Continúa en el paso 9 de la trayectoria principal del \UCref{SP4-CU3}.
+\end{UCtrayectoriaA}
+
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
+
+\begin{UCtrayectoriaA}{E}{Uno o más campos obligatorios no fueron contestados.}
+	\UCpaso Detecta uno o más campos sin contestar.
+	\UCpaso Muestra el mensaje \MSGref{MSG1}{Los campos marcados con (*) son obligatorios}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU2}.
+\end{UCtrayectoriaA}
