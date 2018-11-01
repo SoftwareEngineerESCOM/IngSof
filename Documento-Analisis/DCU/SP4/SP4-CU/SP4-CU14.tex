@@ -1,5 +1,5 @@
 % REGISTRAR BIBLIOGRAFÍA.
-\begin{UseCase}{SP4-CU17}{Generar Tarea}{El usuario Jefe de Innovación Educativa registra nuevas Tareas en el sistema.}
+\begin{UseCase}{SP4-CU14}{Generar Tarea}{El usuario Jefe de Innovación Educativa registra nuevas Tareas en el sistema.}
         \UCitem{Versión}{\color{Gray}1.1}
         \UCitem{Autor}{\color{Gray}Rivas Rojas Arturo}
         \UCitem{Supervisa}{\color{Gray}}
@@ -76,7 +76,7 @@
 \begin{UCtrayectoriaA}{B}{El actor selecciona como tipo de Tarea Registrar Unidad de Aprendizaje.}
     \UCpaso Muestra el campo Unidad de Aprendizaje.
     \UCpaso[\UCactor] Selecciona la Unidad de Aprendizaje que se desea asignar.
-    \UCpaso Continúa en el paso 8 de la trayectoria principal del \UCref{SP4-CU17}.
+    \UCpaso Continúa en el paso 8 de la trayectoria principal del \UCref{SP4-CU14}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
@@ -92,7 +92,7 @@
 \begin{UCtrayectoriaA}{C}{El actor presiona accidentalmente el botón Cancelar}
     \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Está seguro que desea cancelar el registro?}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
-    \UCpaso Continúa en el paso 10 de la trayectoria principal del \UCref{SP4-CU17}.
+    \UCpaso Continúa en el paso 10 de la trayectoria principal del \UCref{SP4-CU14}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
@@ -100,7 +100,7 @@
 \begin{UCtrayectoriaA}{D}{Uno o más campos no fueron contestados.}
     \UCpaso Muestra el mensaje \MSGref{MSG1}{Todos los campos son obligatorios}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU17}.
+    \UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU14}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
@@ -108,7 +108,7 @@
 \begin{UCtrayectoriaA}{E}{La fecha que se ingresó es una fecha pasada.}
     \UCpaso Muestra el mensaje \MSGref{MSG3}{La fecha que ha ingresado es inválida}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continúa en el paso 9 de la trayectoria principal del \UCref{SP4-CU17}.
+    \UCpaso Continúa en el paso 9 de la trayectoria principal del \UCref{SP4-CU14}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------

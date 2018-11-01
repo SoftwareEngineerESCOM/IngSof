@@ -29,9 +29,9 @@
         }
         \UCitem{Puntos de Exteción}{
             \begin{itemize}
-                \item \UCref{SP4-CU4}.
-                \item \UCref{SP4-CU10}.
-                \item \UCref{SP4-CU13}.
+                \item \UCref{SP4-CU4}: Registrar Recurso Humano.
+                \item \UCref{SP4-CU10}: Editar Recurso Humano.
+                \item \UCref{SP4-CU15}: Eliminar Recurso Humano.
             \end{itemize}
         }
         \UCitem{Estado}{Revisión.}
@@ -42,7 +42,8 @@
 \begin{UCtrayectoria}{Principal}
 
     \UCpaso[\UCactor] Presiona la opción de Gestionar Recursos Humanos del menú del la Interfaz de Inicio (abi).
-    \UCpaso El sistema carga el catálogo de Cargo. [Trayectoria A]
+    \UCpaso Carga el catálogo de Cargo. [Trayectoria A]
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Gestionar Recursos Humanos}.
     \UCpaso[\UCactor] Selecciona el Cargo que desea como filtro. [Trayectoria B]
     \UCpaso[\UCactor] Aplica el filtro presionando el botón \IUbutton{Buscar}.
     \UCpaso Muestra tabla con los datos de los Recursos Humanos que cumplan con el filtro.
@@ -59,7 +60,7 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 
-\begin{UCtrayectoriaA}{B}{El actor no selecciona ningun Cargo}
+\begin{UCtrayectoriaA}{B}{El actor no selecciona ningún Cargo}
     \UCpaso Muestra una tabla con los datos de todos los Recursos Humanos.
     \UCpaso Repite la trayectoria principal del \UCref{SP4-CU7} desde el paso 3.
 \end{UCtrayectoriaA}
