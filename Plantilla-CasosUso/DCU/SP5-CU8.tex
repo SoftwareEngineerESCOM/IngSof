@@ -18,9 +18,9 @@
         \UCitem{Salidas}{
             \begin{itemize}
                 \item Lista de empleados de un cargo en específico con sus datos (cargo, nombre, matricula, titulo unidad académica). 
-                \item \label{MSGR4} MSGR4. No se han cargado los catálogos.
-                \item \label{MSGR2} MSGR2. No hay usuarios registrados con ese cargo.
-                \item \label{MSGR3} MSGR3. ¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?. 
+                \item \label{MSGR7} MSGR7. Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.
+                \item \label{MSGR2} MSGR21. No hay usuarios registrados con ese cargo.
+                \item \label{MSGR3} MSGR23. ¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?. 
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -43,33 +43,32 @@
     \UCpaso[\UCactor] Selecciona el cargo de los empleados a buscar. 
     \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Buscar}. [Trayectoria D] [Trayectoria C] [Trayectoria E]
     
-    \UCpaso El sistema despliega la información de los empleados permitidos para el Jefe de División de Innovación Académica de acuerdo a la regla de negocio SP5-RNX (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria Principal punto 2] [Trayectoria F]
+    \UCpaso El sistema despliega la información de los empleados permitidos para el Jefe de División de Innovación Académica de acuerdo a la regla de negocio BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria Principal punto 2] [Trayectoria F]
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{B}{No existen registros en el catálogo de cargos.}
-    \UCpaso     El sistema muestra el \hyperref[MSGR4]{MSGR4. No se han cargado los catálogos}.
+    \UCpaso     El sistema muestra el \hyperref[MSGR7]{MSGR7.Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{No existen  empleados con el cargo seleccionado.}
-    \UCpaso     El sistema muestra el \hyperref[MSGR2]{MSGR2. No hay usuarios registrados con ese cargo}.
+    \UCpaso     El sistema muestra el \hyperref[MSGR21]{MSGR21. No hay usuarios registrados con ese cargo}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{D}{El actor es el Jefe de Departamento e Innovación Curricular.}
- \UCpaso El sistema despliega la información  de los empleados permitidos para el Jefe de Departamento e Innovación Curricular de acuerdo a la BRXX (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria F]
+ \UCpaso El sistema despliega la información  de los empleados permitidos para el Jefe de Departamento e Innovación Curricular de acuerdo a la BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria F]
   \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU8}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{E}{El actor es el JUA.}
- \UCpaso El sistema despliega la información  de los empleados permitidos para el JUA de acuerdo a la BRXX (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}.[Trayectoria F]
+ \UCpaso El sistema despliega la información  de los empleados permitidos para el JUA de acuerdo a la BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}.[Trayectoria F]
  \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU8}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{F}{El actor presiona el botón \IUbutton{X}.}
-    \UCpaso El sistema muestra el mensaje \hyperref[MSGR3]{MSGR3. ¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?} solicitando confirmación. [Trayectoria G]
+    \UCpaso El sistema muestra el mensaje \hyperref[MSGR23]{MSGR23. ¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?} solicitando confirmación. [Trayectoria G]
     \UCpaso[\UCactor] El actor presiona el botón \IUbutton{Cancelar}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{G}{El actor presiona el botón \IUbutton{Aceptar}.}
     \UCpaso     El sistema elimina al empleado.  
 \end{UCtrayectoriaA}
-
