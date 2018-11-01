@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.25)  31 OCT 2018 11:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=latex 2018.9.15)  1 NOV 2018 10:50
 entering extended mode
 **./SP4-CU3.tex
 (SP4-CU3.tex
@@ -4965,11 +4965,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 24 strings out of 492970
- 451 string characters out of 3126149
- 60189 words of memory out of 3000000
- 3996 multiletter control sequences out of 15000+200000
+ 24 strings out of 492974
+ 379 string characters out of 3120073
+ 60052 words of memory out of 3000000
+ 3994 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  16i,1n,16p,227b,104s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+No pages of output.

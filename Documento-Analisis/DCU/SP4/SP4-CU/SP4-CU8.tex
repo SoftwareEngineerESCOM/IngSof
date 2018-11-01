@@ -1,0 +1,98 @@
+% REGISTRAR BIBLIOGRAFÍA.
+\begin{UseCase}{SP4-CU8}{Editar Programa Académico}{El Usuario modifica los datos de los Programas Académicos.}
+
+		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
+		\UCitem{Supervisa}{\color{Gray}}
+		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa}}
+		\UCitem{Propósito}{Cambiar el nombre del Programa Académico en el sistema.}
+		\UCitem{Entradas}{Las entradas para Editar Programa Académico:
+          \begin{itemize}
+          	\item Nombre (Tipo Alfanumérico)
+          \end{itemize}
+        }
+		\UCitem{Origen}{Teclado.}
+		\UCitem{Salidas}{
+        	\begin{itemize}
+        		\item MSG1. Los campos marcados con (*) son obligatorios
+                \item MSG2. Registro finalizado exitosamente.
+                \item MSG3 ¿Seguro que desea cancelar?
+                \item MSG4 Entrada no Alfanumérica.
+        	\end{itemize}
+        }
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{}
+		\UCitem{Postcondiciones}{El Programa Académico quedó actualizado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo o quedó sin modificarse.}
+		\UCitem{Errores}{E1. El nombre del Programa Académico contiene uno o más caracteres no alfanuméricos.}
+		\UCitem{Estado}{Revisión.}
+		\UCitem{Observaciones}{El nombre de un Programa Académico puede ser igual a otro.}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{IU2.2-J}{Consultar Programas Académicos}
+
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.2.1-J}{Registrar Programa Académico}.
+    
+    \UCpaso Cargar el nombre del Programa Académico. [Trayectoria E]
+    
+    \UCpaso[\UCactor] Ingresa el nuevo nombre del Programa Académico.
+
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria A] [Trayectoria B]
+
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados. [Trayectoria C][Trayectoria D]
+
+    \UCpaso Guarda la información del Programa Académico correspondiente.
+
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG2}{Registro finalizado exitosamente}.
+
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.2-J}{Consultar Programas Académicos}.
+\end{UCtrayectoria}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
+
+
+\begin{UCtrayectoriaA}{A}{El actor quiere cancelar el registro de la bibliografía.}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
+    \UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
+    \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.2-J}{Consultar Programas Académicos}
+\end{UCtrayectoriaA}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+
+\begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón Cancelar}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
+    \UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
+    \UCpaso Cierra el mensaje.
+    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU1}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
+
+\begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados.}
+	\UCpaso Detecta uno o más campos sin contestar.
+    \UCpaso Muestra el mensaje \MSGref{MSG1}{Los campos marcados con (*) son obligatorios}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU1}.
+\end{UCtrayectoriaA}
+%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
+
+\begin{UCtrayectoriaA}{D}{El Nombre de Programa Académico contiene caracteres no alfanuméricos}
+	\UCpaso El Sistema detecta caracteres no alfanuméricos E1.
+    \UCpaso Muestra el mensaje \MSGref{MSG4}{Entrada no Alfanumérica.}.
+    \UCpaso Continúa en el paso 1 de la trayectoria principal del \UCref{SP4-CU1}.
+\end{UCtrayectoriaA}
+    %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
+
+\begin{UCtrayectoriaA}{E}{No cargan los catálogos de Programas Académicos.}
+    \UCpaso Muestra el mensaje \MSGref{MSG7}{Por ahorita no se puede consultar.}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+\UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa(Pantalla de Abi).
+\end{UCtrayectoriaA}
