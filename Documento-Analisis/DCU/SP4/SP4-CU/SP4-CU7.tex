@@ -1,0 +1,67 @@
+\begin{UseCase}{CU1}{Consultar Recursos Humanos}{El usuario Jefe de Innovación Educativa visualiza los Recursos Humanos Registrados de su Unidad Académica.}
+        \UCitem{Versión}{\color{Gray}1.0}
+        \UCitem{Autor}{\color{Gray}Rivas Rojas Arturo}
+        \UCitem{Supervisa}{\color{Gray}}
+        \UCitem{Actor}{\hyperlink{JDIE}{Jefe de Innovación Educativa}}
+        \UCitem{Propósito}{.}
+        \UCitem{Entradas}{Las entradas para la consulta de Recursos Humanos serán:
+          \begin{itemize}
+            \item Cargo.
+          \end{itemize}
+        }
+        \UCitem{Origen}{Teclado.}
+        \UCitem{Salidas}{La salida sera en forma de tabla con los siguientes datos
+            \begin{itemize}
+                \item Matricula de Empleado.
+                \item Cargo.
+                \item Título.
+                \item Nombre.
+                \item Apellido Paterno.
+                \item Apellido Materno.
+                \item Botón para Editar ese Recurso Humano.
+                \item Botón para Eliminar ese Recurso Humano.
+            \end{itemize}
+        }
+        \UCitem{Destino}{Pantalla.}
+        \UCitem{Precondiciones}{
+            \begin{itemize}
+                \item El catálogo de Cargo debe de estar cargado en el sistema.
+            \end{itemize}
+        }
+        \UCitem{Postcondiciones}{Los Recursos Humanos desplegados en pantalla podran ser editados o eliminados.}
+        \UCitem{Errores}{
+            \begin{itemize}
+                \item E1. No existen o no pudieron cargarse los catálogo necesarios.
+            \end{itemize}
+        }
+        \UCitem{Estado}{Revisión.}
+        \UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+
+    \UCpaso[\UCactor] Presiona la opción de Gestionar Recursos Humanos del menú del la Interfaz de Inicio (abi).
+    \UCpaso El sistema carga el catálogo de Cargo. [Trayectoria A]
+    \UCpaso[\UCactor] Selecciona el Cargo que desea como filtro. [Trayectoria B]
+    \UCpaso[\UCactor] Aplica el filtro presionando el botón \IUbutton{Buscar}.
+    \UCpaso Muestra tabla con los datos de los Recursos Humanos que cumplan con el filtro.
+\end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{Los catálogos no se pudieron cargar.}
+    \UCpaso Muestra el mensaje \MSGref{MSG6}{Los catálogos necesarios no están disponibles por el momento, por favor inténtelo mas tarde}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra la interfaz de Inicio (abi) .
+
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+
+\begin{UCtrayectoriaA}{B}{El actor no selecciona ningun Cargo}
+    \UCpaso Muestra una tabla con los datos de todos los Recursos Humanos.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Gestionar Recursos Humanos}.
+\end{UCtrayectoriaA}
+

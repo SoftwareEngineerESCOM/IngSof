@@ -1,6 +1,3 @@
-\chapter{Especificación de Casos de Uso}
-
-% REGISTRAR BIBLIOGRAFÍA.
 \begin{UseCase}{CU1}{Registrar Recurso Humano}{El usuario Jefe de Innovación Educativa ingresa los datos de los Recursos Humanos de su Unidad Académica.}
         \UCitem{Versión}{\color{Gray}1.0}
         \UCitem{Autor}{\color{Gray}Rivas Rojas Arturo}
@@ -11,7 +8,7 @@
           \begin{itemize}
             \item Matricula de Empleado.
             \item Cargo.
-            \item Titulo.
+            \item Título.
             \item Nombre.
             \item Apellido Paterno.
             \item Apellido Materno.
@@ -23,9 +20,9 @@
                 \item MSG1 Todos los campos son obligatorios
                 \item MSG2 Registro finalizado exitosamente.
                 \item MSG3 El Recurso Humano con la Matricula de Empleado [Número de Matricula de Empleado] ya existe.
-                \item MSG5 ¿Esta seguro que desea cancelar?
-                \item MSG6 Ocurrio un error, porfavor intentelo mas tarde.
-                \item MSG7 Los catálogos necesarios no están disponibles por el momento, por favor inténtelo mas tarde.
+                \item MSG5 ¿Está seguro que desea cancelar?
+                \item MSG6 Los catálogos necesarios no están disponibles por el momento, por favor inténtelo mas tarde.
+                \item MSG7 Ocurrio un error, porfavor intentelo mas tarde.
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -38,7 +35,7 @@
         \UCitem{Postcondiciones}{El Recurso Humano quedara registrado en el sitema, permitiendo consultarlo y relacionarlo a una Unidad de Aprendizaje.}
         \UCitem{Errores}{
             \begin{itemize}
-                \item E1. No existen o no pudieron encontrarse los catálogo necesarios.
+                \item E1. No existen o no pudieron cargarse los catálogo necesarios.
             \end{itemize}
         }
         \UCitem{Estado}{Revisión.}
@@ -48,48 +45,68 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Recurso Humano} de la interfaz de usuario \IUref{IU2.4}{Consulta de Usuarios}
-    \UCpaso El sistema carga el catálogo de tipos de Usuario. [Trayectoria A]
-    \UCpaso El sistema muestra la interfaz de usuario \IUref{IU2.4.1}{Registro de Usuario}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{(+)Registrar Recurso Humano} de la interfaz de usuario \IUref{IU2.4-J}{Gestionar Recursos Humanos}
+    \UCpaso El sistema carga el catálogo de Cargo. [Trayectoria A]
+    \UCpaso El sistema carga el catálogo de Título. [Trayectoria A]
+    \UCpaso El sistema muestra la interfaz de usuario \IUref{IU2.4.1-J}{Registrar Recurso Humano}.
     \UCpaso[\UCactor] Ingresa la Matricula de Empleado.
-    \UCpaso[\UCactor] Ingresa el ISBN asociado al libro que está registrando.
-    \UCpaso[\UCactor] Ingresa el nombre de la editorial que publicó el libro.
-    \UCpaso[\UCactor] Ingresa el año de publicación del libro que se está registrando.
-    \UCpaso[\UCactor] Ingresa la edición del libro.
-    \UCpaso[\UCactor] Ingresa la ciudad de publicación.
-    \UCpaso[\UCactor] Ingresa el nombre, apellido paterno y apellido materno  del autor del libro que se está registrando. [Trayectoria A]
-
-    %\UCpaso[\UCactor] Ingresa los datos que se le solicitan en el formulario \Formref{FM1}{Registrar bibliografía}. [Trayectoria B]
-
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria B] [Trayectoria C]
-
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
-
-    \UCpaso Valida que no exista un libro con el mismo ISBN. [Trayectoria E]
-
-    \UCpaso Guarda la información de la bibliografía en la base de datos.
-
+    \UCpaso[\UCactor] Selecciona el Cargo.
+    \UCpaso[\UCactor] Selecciona el Título.
+    \UCpaso[\UCactor] Ingresa el Nombre.
+    \UCpaso[\UCactor] Ingresa el Apellido Paterno.
+    \UCpaso[\UCactor] Ingresa el Apellido Materno.
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B]
+    \UCpaso Verifica que todos los campos hayan sido contestados. [Trayectoria C]
+    \UCpaso Valida que no exista un Recurso Humano con la misma Matricula. [Trayectoria D]
+    \UCpaso Persiste los datos ingresados. [Trayectoria E]
     \UCpaso El sistema muestra el mensaje \MSGref{MSG2}{Registro finalizado exitosamente}.
-
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-
-    \UCpaso Muestra la interfaz de usuario \IUref{IU1}{Página principal}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoria}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 
-\begin{UCtrayectoriaA}{A}{El usuario quiere agregar más autores para el libro que está registrando.}
-    %\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
-    \UCpaso Verifica que no se exceda el límite de autores para un libro con base en la regla \BRref{BR4}{Un libro con más de 3 autores es sólo citado por los primeros 3}. [Trayectoria A.2]
-    \UCpaso Agrega los campos para registrar a un nuevo autor.
-    \UCpaso[\UCactor] Llena los campos: ``nombre'', ``apellido paterno'' y ``apellido materno'' del nuevo autor.
-    \UCpaso Continua en el paso 10 de la trayectoria principal del \UCref{CU1}
+\begin{UCtrayectoriaA}{A}{Los catálogos no se pudieron cargar.}
+    \UCpaso Muestra el mensaje \MSGref{MSG6}{Los catálogos necesarios no están disponibles por el momento, por favor inténtelo mas tarde}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 
+\begin{UCtrayectoriaA}{B}{El actor presiona el botón Cancelar}
+    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Está seguro que desea cancelar el registro?}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Gestionar Recursos Humanos}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
+
+\begin{UCtrayectoriaA}{B.1}{El actor presiona accidentalmente el botón Cancelar}
+    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Está seguro que desea cancelar el registro?}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
+    \UCpaso Continúa en el paso 11 de la trayectoria principal del \UCref{SP4-CU4}.
+\end{UCtrayectoriaA}
+
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
+
+\begin{UCtrayectoriaA}{C}{Uno o más campos no fueron contestados.}
+    \UCpaso Muestra el mensaje \MSGref{MSG1}{Todos los campos son obligatorios}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU4}.
+\end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 
+\begin{UCtrayectoriaA}{D}{La Matricula de Empleado ingresada ya está registrada en el sistema.}
+    \UCpaso Muestra el mensaje \MSGref{MSG3}{El Recurso Humano con la Matricula de Empleado [Número de Matricula de Empleado] ya existe}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU4}.
+\end{UCtrayectoriaA}
+
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
+
+\begin{UCtrayectoriaA}{E}{Ocurre un error al momento de persistir los datos.}
+    \UCpaso Muestra el mensaje \MSGref{MSG7}{Ocurrio un error, porfavor intentelo mas tarde.}
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Gestionar Recursos Humanos}.
+\end{UCtrayectoriaA}

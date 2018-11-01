@@ -1,26 +1,14 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}Especificaci\IeC {\'o}n de Reglas del Negocio}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1}Reglas de Operaci\IeC {\'o}n}{5}{section.1.1}
-\contentsline {chapter}{\numberline {2}Mensajes}{11}{chapter.2}
-\contentsline {chapter}{\numberline {3}Especificaci\IeC {\'o}n de Casos de Uso}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}SP4-CU1 Registrar Programa Acad\IeC {\'e}mico}{14}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Descripci\IeC {\'o}n completa}{14}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Atributos importantes}{14}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Trayectorias del Caso de Uso}{14}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}SP4-CU2 Registrar Plan de Estudios}{16}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Descripci\IeC {\'o}n completa}{16}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Atributos importantes}{16}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Trayectorias del Caso de Uso}{17}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}SP4-CU3 Registrar Unidad de Aprendizaje}{19}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Descripci\IeC {\'o}n completa}{19}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Atributos importantes}{19}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Trayectorias del Caso de Uso}{20}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}Especificaci\IeC {\'o}n de Casos de Uso}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}CU1 Registrar Recurso Humano}{24}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Descripci\IeC {\'o}n completa}{24}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Atributos importantes}{24}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Trayectorias del Caso de Uso}{25}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}SP4-CU5 Consultar Programas Acad\IeC {\'e}micos}{27}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Descripci\IeC {\'o}n completa}{27}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Atributos importantes}{27}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Trayectorias del Caso de Uso}{27}{subsection.4.2.3}
+\contentsline {chapter}{\numberline {1}Especificaci\IeC {\'o}n de Casos de Uso}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}SP4-CU3 Registrar Unidad de Aprendizaje}{6}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Descripci\IeC {\'o}n completa}{6}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Atributos importantes}{6}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Trayectorias del Caso de Uso}{7}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}CU1 Registrar Recurso Humano}{9}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Descripci\IeC {\'o}n completa}{9}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Atributos importantes}{9}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Trayectorias del Caso de Uso}{10}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}SP4-CU5 Consultar Programas Acad\IeC {\'e}micos}{12}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Descripci\IeC {\'o}n completa}{12}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Atributos importantes}{12}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Trayectorias del Caso de Uso}{12}{subsection.1.3.3}

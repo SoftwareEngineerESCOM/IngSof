@@ -20,8 +20,9 @@
                 \item MSG1. Todos los campos son obligatorios.
                 \item MSG2. Registro finalizado exitosamente.
                 \item MSG3. La fecha que ha ingresado es inválida.
-                \item MSG5. ¿Seguro que desea cancelar?
+                \item MSG5. ¿Está seguro que desea cancelar?
                 \item MSG6. Los catálogos necesarios no están disponibles por el momento, por favor inténtelo mas tarde.
+                \item MSG7 Ocurrio un error, porfavor intentelo mas tarde.
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -35,6 +36,7 @@
         \UCitem{Errores}{
             \begin{itemize}
                 \item E1. No existen o no pudieron encontrarse los catálogo necesarios.
+                \item E2. Problemas de conexión al persistir los datos.
             \end{itemize}
         }
         \UCitem{Estado}{Revisión.}
@@ -88,7 +90,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA C.1 -------------------------
 
 \begin{UCtrayectoriaA}{C}{El actor presiona accidentalmente el botón Cancelar}
-    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Seguro que desea cancelar el registro?}.
+    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Está seguro que desea cancelar el registro?}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
     \UCpaso Continúa en el paso 10 de la trayectoria principal del \UCref{SP4-CU17}.
 \end{UCtrayectoriaA}
@@ -96,7 +98,6 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 
 \begin{UCtrayectoriaA}{D}{Uno o más campos no fueron contestados.}
-    %\UCpaso Detecta uno o más campos sin contestar.
     \UCpaso Muestra el mensaje \MSGref{MSG1}{Todos los campos son obligatorios}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU17}.
@@ -105,8 +106,15 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 
 \begin{UCtrayectoriaA}{E}{La fecha que se ingresó es una fecha pasada.}
-    %\UCpaso Detecta que la fecha es pasada.
     \UCpaso Muestra el mensaje \MSGref{MSG3}{La fecha que ha ingresado es inválida}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 9 de la trayectoria principal del \UCref{SP4-CU17}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+
+\begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
+    \UCpaso Muestra el mensaje \MSGref{MSG7}{Ocurrio un error, porfavor intentelo mas tarde.}
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.3-J}{Asignar Tareas}.
 \end{UCtrayectoriaA}
