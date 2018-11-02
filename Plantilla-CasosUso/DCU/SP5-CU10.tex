@@ -13,8 +13,8 @@
         \UCitem{Salidas}{
             \begin{itemize}
                 \item Información del empleado (nombre, apellido paterno, apellido materno, titulo, cargo, lugar de trabajo y contraseña).
-                \item \label{MSGR4} MSGR4. No se han cargado los catálogos.
-                \item \label{MSGR8} MSGR8. Empleado Modificado.  
+                \item \label{MSG7} MSG7. Los catálogos necesarios no se han cargado, favor de intentarlo más tarde
+                \item \label{MSG27} MSG27. Empleado modificado.  
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -41,12 +41,12 @@
     \UCpaso[\UCactor] Edita la información de los empleados.[Trayectoria C] [Trayectoria D] 
     \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Modificar}.
     \UCpaso El sistema realiza la modificación de la información del empleado.
-    \UCpaso  El sistema muestra el \hyperref[MSGR8]{MSGR8. Empleado modificado}.    
+    \UCpaso  El sistema muestra el \hyperref[MSG27]{MSG27. Empleado modificado}.    
     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{B}{No existen registros en los catálogos.}
-    \UCpaso     El sistema muestra el \hyperref[MSGR4]{MSGR4. No se han cargado los catálogos}.
+    \UCpaso     El sistema muestra el \hyperref[MSG7]{MSG7. Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{Cambio en el cargo de un usuario.}
@@ -62,7 +62,7 @@
     \UCpaso[\UCactor] Edita la información de los empleados.[Trayectoria F] [Trayectoria D] 
     \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Modificar}.
     \UCpaso El sistema realiza la modificación de la información del empleado.
-    \UCpaso  El sistema muestra el \hyperref[MSGR8]{MSGR8. Empleado modificado}.    
+    \UCpaso  El sistema muestra el \hyperref[MSG27]{MSG27. Empleado modificado}.    
     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}
 \end{UCtrayectoriaA}
 \begin{UCtrayectoriaA}{F}{Cambio en el cargo de un usuario.}
