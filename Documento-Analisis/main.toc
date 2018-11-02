@@ -32,7 +32,11 @@
 \contentsline {subsection}{\numberline {1.8.1}Descripci\IeC {\'o}n completa}{26}{subsection.1.8.1}
 \contentsline {subsection}{\numberline {1.8.2}Atributos importantes}{26}{subsection.1.8.2}
 \contentsline {subsection}{\numberline {1.8.3}Trayectorias del Caso de Uso}{27}{subsection.1.8.3}
-\contentsline {section}{\numberline {1.9}SP4-CU14 Generar Tarea}{30}{section.1.9}
+\contentsline {section}{\numberline {1.9}SP4-CU10 Editar Plan de Estudios}{30}{section.1.9}
 \contentsline {subsection}{\numberline {1.9.1}Descripci\IeC {\'o}n completa}{30}{subsection.1.9.1}
 \contentsline {subsection}{\numberline {1.9.2}Atributos importantes}{30}{subsection.1.9.2}
 \contentsline {subsection}{\numberline {1.9.3}Trayectorias del Caso de Uso}{31}{subsection.1.9.3}
+\contentsline {section}{\numberline {1.10}SP4-CU14 Generar Tarea}{34}{section.1.10}
+\contentsline {subsection}{\numberline {1.10.1}Descripci\IeC {\'o}n completa}{34}{subsection.1.10.1}
+\contentsline {subsection}{\numberline {1.10.2}Atributos importantes}{34}{subsection.1.10.2}
+\contentsline {subsection}{\numberline {1.10.3}Trayectorias del Caso de Uso}{35}{subsection.1.10.3}
