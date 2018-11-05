@@ -1,14 +1,22 @@
 % REGISTRAR BIBLIOGRAFÍA.
-\begin{UseCase}{SP4-CU8}{Editar Programa Académico}{El Usuario modifica los datos de los Programas Académicos.}
+\begin{UseCase}{SP4-CU11}{Editar Recurso Humano}{El usuario Jefe de Innovación Educativa modifica la información general de los usuarios}
 
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
 		\UCitem{Supervisa}{\color{Gray}}
 		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa}}
-		\UCitem{Propósito}{Cambiar el nombre del Programa Académico en el sistema.}
+		\UCitem{Propósito}{Cambiar los datos de un Recursho Humano.}
 		\UCitem{Entradas}{Las entradas para Editar Programa Académico:
           \begin{itemize}
+          	\item Matrícula de Empleado (Tipo Alfanumérico)
           	\item Nombre (Tipo Alfanumérico)
+          	\item Primer Apellido (Tipo Alfanumérico)
+          	\item Segundo Apellido (Tipo Alfanumérico)
+          	\item Título (Tipo Alfanumérico)
+          	\item Cargo (Tipo Alfanumérico)
+          	
+          	\item Lugar de Trabajo (Tipo Alfanumérico)
+          	
           \end{itemize}
         }
 		\UCitem{Origen}{Teclado.}
@@ -18,49 +26,55 @@
                 \item MSG2. Registro finalizado exitosamente.
                 \item MSG3 ¿Seguro que desea cancelar?
                 \item MSG4 Entrada no Alfanumérica.
+                \item MSG7 Por ahorita no se puede consultar.
+                 \item MSG8 Matrícula no encontrada.
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{}
-		\UCitem{Postcondiciones}{El Programa Académico quedó actualizado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo o quedó sin modificarse.}
-		\UCitem{Errores}{E1. El nombre del Programa Académico contiene uno o más caracteres no alfanuméricos.}
+		\UCitem{Postcondiciones}{El Recurso Humano quedó actualizado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo o quedó sin modificarse.}
+		\UCitem{Errores}{E1. Algúna entrada  contiene uno o más caracteres no alfanuméricos.
+		E2. No se encontró el Recurso Humano.
+		}
 		\UCitem{Estado}{Revisión.}
-		\UCitem{Observaciones}{El nombre de un Programa Académico puede ser igual a otro.}
+		\UCitem{Observaciones}{Ninguna matrícula de empleado es igual.}
 \end{UseCase}
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{IU2.2-J}{Consultar Programas Académicos}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{IU2.4-J}{Consultar Recurso Humano}
 
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.2.1-J}{Registrar/Editar Programa Académico}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.4.1-J}{Registrar/Editar Recurso Humano}.
+
+	\UCpaso Ingresa la matrícula del Recurso Humano. [Trayectoria F]    
     
-    \UCpaso Cargar el nombre del Programa Académico. [Trayectoria E]
+    \UCpaso Cargar Recurso Humano. [Trayectoria E]
     
-    \UCpaso[\UCactor] Ingresa el nuevo nombre del Programa Académico.
+    \UCpaso[\UCactor] Cambia los datos de Recurso Humano.
 
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria A] [Trayectoria B]
 
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados. [Trayectoria C][Trayectoria D]
 
-    \UCpaso Guarda la información del Programa Académico correspondiente.
+    \UCpaso Guarda la información del Recurso Humano correspondiente.
 
     \UCpaso El sistema muestra el mensaje \MSGref{MSG2}{Registro finalizado exitosamente}.
 
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.2-J}{Consultar Programas Académicos}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Consultar Recurso Humano}
 \end{UCtrayectoria}
 
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 
 
-\begin{UCtrayectoriaA}{A}{El actor quiere cancelar la edición  del Programa Académico correspondiente.}
+\begin{UCtrayectoriaA}{A}{El actor quiere cancelar la edición  del Recurso Humano correspondiente.}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
     \UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
     \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.2-J}{Consultar Programas Académicos}
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Consultar Recurso Humano}
 \end{UCtrayectoriaA}
 
 
@@ -71,7 +85,7 @@
     \UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
     \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
     \UCpaso Cierra el mensaje.
-    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU1}.
+    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
@@ -80,19 +94,26 @@
 	\UCpaso Detecta uno o más campos sin contestar.
     \UCpaso Muestra el mensaje \MSGref{MSG1}{Los campos marcados con (*) son obligatorios}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU1}.
+    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 
-\begin{UCtrayectoriaA}{D}{El Nombre de Programa Académico contiene caracteres no alfanuméricos}
+\begin{UCtrayectoriaA}{D}{Alguna entrada  contiene caracteres no alfanuméricos}
 	\UCpaso El Sistema detecta caracteres no alfanuméricos E1.
     \UCpaso Muestra el mensaje \MSGref{MSG4}{Entrada no Alfanumérica.}.
-    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU1}.
+    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
     %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 
-\begin{UCtrayectoriaA}{E}{No cargan los catálogos de Programas Académicos.}
+\begin{UCtrayectoriaA}{E}{No cargan los catálogos de Recurso Humano.}
     \UCpaso Muestra el mensaje \MSGref{MSG7}{Por ahorita no se puede consultar.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 \UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa(Pantalla de Abi).
+\end{UCtrayectoriaA}
+    %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+
+\begin{UCtrayectoriaA}{E}{No existe ningun Recurso Humano con esa matrícula.}
+    \UCpaso Muestra el mensaje \MSGref{MSG8}{Matrícula no encontrada}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+\UCpaso Continua en el paso  de búsqueda de matrícula.
 \end{UCtrayectoriaA}
