@@ -1,5 +1,5 @@
 % REGISTRAR BIBLIOGRAFÍA.
-\begin{UseCase}{SP4-CU5}{Consultar Programas Académicos}{El usuario Jefe de Innovación Educativa visualiza la informacion
+\begin{UseCase}{SP4-CU5}{Consultar Programas Académicos}{El usuario Jefe de Innovación Educativa visualiza la información
 de los Programas Académicos.}
 
 
@@ -7,8 +7,8 @@ de los Programas Académicos.}
 		\UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
 		\UCitem{Supervisa}{\color{Gray}}
 		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa}}
-		\UCitem{Propósito}{El Usuario Jefe de Innovación Educativa visualize una lista  de  los Programas Académicos almacenados en el Sistema.}
-		\UCitem{Entradas}{Las entradas para el consulta de Programa Académico:
+		\UCitem{Propósito}{El Usuario Jefe de Innovación Educativa puede visualizar una lista  de  los Programas Académicos almacenados en el Sistema.}
+		\UCitem{Entradas}{Las entradas para la consulta del Programa Académico:
           \begin{itemize}
           	\item Ninguna
           \end{itemize}
@@ -17,13 +17,13 @@ de los Programas Académicos.}
 		\UCitem{Salidas}{
         	\begin{itemize}
         		\item MSG4. ¿Seguro que desea editar el Programa Académico?
-                \item  MSG5. ¿Seguro que desea cancelar la consulta de Pogramas Académicos?
+                \item  MSG5. ¿Seguro que desea cancelar la consulta de Programas Académicos?
                 \item  MSG6. ¿Seguro que desea registrar un Programa Académico?
                 \item  MSG7. Por ahorita no se puede consultar.
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
-		\UCitem{Precondiciones}{El catalogo de tipo de Programa Académico debe de estar cargado en el sistema}
+		\UCitem{Precondiciones}{El catálogo de tipo Programa Académico debe de estar cargado en el sistema.}
 		\UCitem{Postcondiciones}{Ninguna}
 		\UCitem{Errores}{E1. No se cargaron los catálogos de Programas Académicos.}
 		\UCitem{Estado}{Revisión.}
@@ -45,7 +45,7 @@ de los Programas Académicos.}
 
 \begin{UCtrayectoriaA}{A}{ El actor presiona el botón cancelar.}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
-    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Seguro que desea cancelar la consulta de Pogramas Académicos?}.
+    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Seguro que desea cancelar la consulta de Programas Académicos?}.
     \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
     \UCpaso Muestra la interfaz de usuario menú para Jefe de Innovación Educativa (Pantalla de Abi)
 \end{UCtrayectoriaA}
@@ -55,7 +55,7 @@ de los Programas Académicos.}
 
 \begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón Cancelar}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
-    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Seguro que desea cancelar la consulta de Pogramas Académicos?}.
+    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Seguro que desea cancelar la consulta de Programas Académicos?}.
     \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
     \UCpaso Cierra el mensaje.
     \UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU5}.
@@ -64,7 +64,7 @@ de los Programas Académicos.}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 
 \begin{UCtrayectoriaA}{C}{El usuario presiona el botón Registrar Programa Académico.}
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{Resgistrar Programa Académico}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Programa Académico}
     \UCpaso Muestra el mensaje \MSGref{MSG6}{¿Seguro que desea registrar un Programa Académico?}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 \UCpaso Muestra la interfaz de usuario \IUref{IU2.4.1-J}{Registrar Programas Académicos}
@@ -73,7 +73,7 @@ de los Programas Académicos.}
 
 
 \begin{UCtrayectoriaA}{D}{El usuario presiona accidentalmente el botón Registrar Programa Académico.}
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{Resgistrar Programa Académico}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Programa Académico}
     \UCpaso Muestra el mensaje \MSGref{MSG6}{¿Seguro que desea registrar un Programa Académico?}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
     \UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU5}.
