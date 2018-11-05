@@ -1,0 +1,73 @@
+\begin{UseCase}{SP1-CU11}{Registrar Unidad de Aprendizaje.}
+		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Autor}{\color{Gray}Maldonado Carpio Jorge Enrique}
+		\UCitem{Supervisa}{\color{Gray}Ramírez Martínez Janet Naibi}
+		\UCitem{Actor}{\hyperlink{Usuario}{Usuario}}
+		\UCitem{Propósito}{Renovar o Modificar el plan de estudios existente.}
+		\UCitem{Entradas}{
+          \begin{itemize}
+            \item{Nombre}
+            \item{Propósito de la Unidad de Aprendizaje}
+            \item{Orientación Didáctica}
+            \item{Intención Educativa}
+          \end{itemize}
+        }
+		\UCitem{Origen}{Teclado.}
+		\UCitem{Salidas}{
+        	\begin{itemize}
+                \item MSG1. Los campos marcados con (*) son obligatorios
+                \item MSG2. Registro finalizado exitosamente.
+                \item MSG3 ¿Seguro que desea cancelar el registro?
+        	\end{itemize}
+        }
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{Los catologos de Tipo, Semestre,Academia y Enseñanza no deben de estar vacios.}
+		\UCitem{Postcondiciones}{La Unidad de Aprendizaje queda registrada en la base de datos.}
+		\UCitem{Errores}{}
+		\UCitem{Estado}{Revisión.}
+		\UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+    
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Unidad de Aprendizaje} de la interfaz de usuario \IUref{XXXXX}{Página Principal}
+    
+    \UCpaso Muestra la interfaz de usuario \IUref{XXXXXXX}{Registro de Unidad de Aprendizaje}.
+    \UCpaso[\UCactor] Ingresa el nombre de la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Ingresa el propósito de la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Ingresa la orientación didáctica de la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Ingresa la intención educativa de la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Selecciona el tipo de la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Selecciona el semestre de la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Selecciona el academia de la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Selecciona la enseñanza de la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Ingresa las horas de teoría por semana.
+    \UCpaso[\UCactor] Ingresa las horas de práctica por semana.
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Continuar}. [Trayectoria A] 
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados. [Trayectoria B]
+    
+    \UCpaso Calcula las horas teoría por semestre de la Unidad de Aprendizaje.
+    \UCpaso Calcula las horas práctica por semestre de la Unidad de Aprendizaje.
+    \UCpaso Calcula las horas totales por semestre de la Unidad de Aprendizaje.
+    \UCpaso Guarda la información de la Unidad de Aprendizaje en la base de datos.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG2}{Registro finalizado exitosamente}.
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{A}{El usuario quiere cancelar el registro de los tiempos de la unidad de aprendizaje.}
+
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
+    \UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
+    \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
+    \UCpaso Muestra la interfaz de usuario \IUref{SP1-IUXX}{Página principal}
+    
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+
+\begin{UCtrayectoriaA}{B}{Uno o más campos obligatorios no fueron contestados.}
+	\UCpaso Detecta uno o más campos sin contestar.
+    \UCpaso Muestra el mensaje \MSGref{MSG1}{Los campos marcados con (*) son obligatorios}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{SP1-CU10}.
+\end{UCtrayectoriaA}
