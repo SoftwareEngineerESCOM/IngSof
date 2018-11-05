@@ -1,0 +1,135 @@
+% REGISTRAR BIBLIOGRAFÍA.
+\ begin {UseCase} {CU6} {Registrar autores de la bibliografía} {El usuario podrá registrar máximo 3 autores a la bibliografía.}
+		\ UCitem {Versión} { \ color {Gris} 1.0}
+		\ UCitem {Autor} { \ color {Gris} López Rivera Aiko Dallane}
+		\ UCitem {Supervisa} { \ color {Gris}}
+		\ UCitem {Actor} { \ hyperlink {Usuario} {Usuario}}
+		\ UCitem {Propósito} {Asignar los autores a la bibliografía a través de un identificador único.}
+		\ UCitem {Entradas} {Las entradas para el registro de los autores a la bibliografía serán:
+		\ begin {itemize}
+			\ item Nombre del autor.
+            \ item Primer apellido.
+            \ item Segundo apellido. 
+		\ end {detallar}
+        }
+		\ UCitem {Origen} {Teclado.}
+		\ UCitem {Salidas} {
+        	\ begin {itemize}
+        		\ item MSG1. Los campos marcados con (*) son obligatorios
+                \ item MSG2. Registro finalizado exitosamente.
+                \ item MSG3. El autor ya existe con el ID(identificador).
+                \ item MSG4. ¿Seguro que desea cancelar el registro?
+                \ item MSG5. Por el momento no se puede registrar el autor. 
+
+        	\ end {detallar}
+        }
+		\ UCitem {Destino} {Pantalla.}
+		\ UCitem {Precondiciones} {El autor que se puede registrar, no debe existir previamente en el sistema.}
+		\ UCitem {Postcondiciones} {El autor queda registrado en el sistema.}
+		\ UCitem {Errores} {}
+		\ UCitem {Estado} {Revisión.}
+		\ UCitem {Observaciones} {}
+\ end {UseCase}
+
+% --------------------------- CU TRAYECTORIA PRINCIPAL ------------------- ------
+\ begin {UCtrayectoria} {Principal}
+
+    \ UCpaso [ \ UCactor ] Presiona el botón \ IUbutton {Registrar autor/autores} de la interfaz de usuario \ IUref {IU6} {Página Principal}
+
+    % \ UCpaso El sistema busca el formulario \ Formref {FM1} {Registrar autor/autores}.
+
+    \ UCpaso Muestra la interfaz de usuario \ IUref {IU6} {Registro del autor/autores}.
+    \ UCpaso [ \ UCactor ] Ingresa el nombre del autor del libro que se está registrando.
+    \ UCpaso [ \ UCactor ] Ingresa el apellido paterno del autor del libro que se está registrando.
+    \ UCpaso [ \ UCactor ] Ingresa el apellido materno del autor del libro que se está registrando. [Trayectoria A]
+
+    % \ UCpaso [\ UCactor] Ingrese los datos que se solicitan en el formulario \ Formref {FM1} {Registrar autor/autores}. [Trayectoria B]
+
+    \ UCpaso [ \ UCactor ] Termina la operación presionando el botón \ IUbutton {Finalizar}. [Trayectoria B] [Trayectoria C]
+
+    \ UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
+
+    \ UCpaso Valida que el autor no exista en la base de datos. [Trayectoria E]
+
+    \ UCpaso Guarda la información del autor en la base de datos.
+
+    \ UCpaso El sistema muestra el mensaje \ MSGref {MSG2} {Registro finalizado exitosamente}.
+
+    \ UCpaso [ \ UCactor ] Cierra el mensaje presionando el botón \ IUbutton {Aceptar}.
+
+    \ UCpaso Muestra la interfaz de usuario \ IUref {IU6} {Página principal}.
+\ end {UCtrayectoria}
+
+% ------------------------ CU TRAYECTORIA ALTERNARIVA X --------------------- ----
+
+\ begin {comentario}
+\ begin {UCtrayectoriaA} {A} {El sistema no encuentra ningún formulario para mostrar.}
+	\ UCpaso No encuentra ningún formulario para mostrar.
+    \ UCpaso El sistema muestra el mensaje \ MSGref {MSG5} {Por el momento no se puede registrar el autor}.
+    \ UCpaso [ \ UCactor ] Cierra el mensaje presionando el botón \ IUbutton {Aceptar}.
+    \ UCpaso Continua en el paso 1 de la trayectoria principal del \ UCref {CU6}.
+\ end {UCtrayectoriaA}
+\ end {comentario}
+
+% ------------------------ CU TRAYECTORIA ALTERNARIVA A --------------------- ----
+
+\ begin {UCtrayectoriaA} {A} {El usuario quiere agregar más autores para el libro que está registrando.}
+	% \ UCpaso [\ UCactor] Presiona el botón \ IUbutton {$ \ bigoplus $} que se encuentra a un lado del campo 'Nombre' 'del formulario \ IUref {IU6} {Registrar autor/autores} [Trayectoria A.1]
+    \ UCpaso Verifica que no se exceda el límite de autores para un libro con base en la regla \ BRref {BR4} {Un libro con más de 3 autores es sólo citado por los primeros 3}. [Trayectoria A.2]
+    \ UCpaso Agrega los campos para registrar un nuevo autor.
+    \ UCpaso [ \ UCactor ] Llena los campos: `` nombre '', `` apellido paterno '' y `` apellido materno '' del nuevo autor.
+    \ UCpaso Continua en el paso 10 de la trayectoria principal del \ UCref {CU6}
+\ end {UCtrayectoriaA}
+
+% ------------------------ CU TRAYECTORIA ALTERNARIVA A.1 ------------------- ----
+
+\ begin {UCtrayectoriaA} {A.1} {El usuario presionó por error el botón \ IUbutton { $ \ bigoplus $ }.}
+	% \ UCpaso [\ UCactor] Presiona el botón \ IUbutton {$ \ ominus $} que se encuentra a un lado del campo 'Nombre' 'del formulario \ Formref {IU6} {Registrar autor/autores}
+    \ UCpaso Elimina los campos agregados.
+    \ UCpaso Continua en el paso 9 de la trayectoria principal del \ UCref {CU6}
+\ end {UCtrayectoriaA}
+
+% ------------------------ CU TRAYECTORIA ALTERNARIVA A.2 ------------------- ----
+
+\ begin {UCtrayectoriaA} {A.2} {El usuario ya ha registrado 3 autores para un libro}
+	\ UCpaso Oculta el botón \ IUbutton { $ \ bigoplus $ }.
+    \ UCpaso Continua en el paso 10 de la trayectoria principal del \ UCref {CU6}
+\ end {UCtrayectoriaA}
+
+% ------------------------ CU TRAYECTORIA ALTERNARIVA B --------------------- ----
+
+\ begin {UCtrayectoriaA} {B} {El actor quiere cancelar el registro de la bibliografía.}
+	\ UCpaso [ \ UCactor ] Presiona el botón \ IUbutton {Cancelar}.
+    \ UCpaso Muestra el mensaje \ MSGref {MSG4} {¿Seguro que desea cancelar el registro?}.
+    \ UCpaso [ \ UCactor ] Confirma la operación presionando el botón \ IUbutton {Si}.
+    \ UCpaso Muestra la interfaz de usuario \ IUref {IU6} {Página principal}
+\ end {UCtrayectoriaA}
+
+
+% ------------------------ CU TRAYECTORIA ALTERNARIVA C --------------------- ----
+
+\ begin {UCtrayectoriaA} {C} {El actor presiona accidentalmente el botón Cancelar}
+	\ UCpaso [ \ UCactor ] Presiona el botón \ IUbutton {Cancelar}
+    \ UCpaso Muestra el mensaje \ MSGref {MSG4} {¿Seguro que desea cancelar el registro?}.
+    \ UCpaso [ \ UCactor ] Presiona el botón \ IUbutton {No}.
+    \ UCpaso Cierra el mensaje.
+    \ UCpaso Continua en el paso 10 de la trayectoria principal del \ UCref {CU6}.
+\ end {UCtrayectoriaA}
+
+% ------------------------ CU TRAYECTORIA ALTERNARIVA D --------------------- ----
+
+\ begin {UCtrayectoriaA} {D} {Uno o más campos obligatorios no fueron contestados.}
+	\ UCpaso Detecta uno o más campos sin contestar.
+    \ UCpaso Muestra el mensaje \ MSGref {MSG1} {Los campos marcados con (*) son obligatorios}.
+    \ UCpaso [ \ UCactor ] Cierra el mensaje presionando el botón \ IUbutton {Aceptar}.
+    \ UCpaso Continua en el paso 3 de la trayectoria principal del \ UCref {CU1}.
+\ end {UCtrayectoriaA}
+
+% ------------------------ CU TRAYECTORIA ALTERNARIVA E --------------------- ----
+
+\ begin {UCtrayectoriaA} {E} {El autor que se intenta registrar ya existe en el sistema.}
+	\ UCpaso Encuentra el autor previamente ya registrado en la base de datos.
+    \ UCpaso Muestra el mensaje \ MSGref {MSG3} {El autor ya existe con el ID(identificador).}
+    \ UCpaso [ \ UCactor ] Cierra el mensaje presionando el botón \ IUbutton {Aceptar}
+    \ UCpaso Continua en el paso 3 de la trayectoria principal del \ UCref {CU6}.
+\ end {UCtrayectoriaA}
