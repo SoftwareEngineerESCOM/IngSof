@@ -1,58 +1,64 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Identificaci\IeC {\'o}n de Requerimientos}{5}{chapter.1}
-\contentsline {chapter}{\numberline {2}SP2-CU4 Desasignar unidades de aprendizaje a un analista }{19}{chapter.2}
-\contentsline {section}{\numberline {2.1}SP2-CU4 Desasignar unidades de aprendizaje a un analista}{20}{section.2.1}
+\contentsline {chapter}{\numberline {2}SP2-CU2 Consultar paquetes de Unidad de Aprendizaje del Jefe de Innovaci\IeC {\'o}n}{19}{chapter.2}
+\contentsline {section}{\numberline {2.1}SP2-CU2 Consultar paquetes de Unidad de Aprendizaje del Jefe de Innovaci\IeC {\'o}n}{20}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Descripci\IeC {\'o}n completa}{20}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Atributos importantes}{20}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Trayectorias del Caso de Uso}{20}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.3}Trayectorias del Caso de Uso}{21}{subsection.2.1.3}
 \contentsline {chapter}{\numberline {3}Pantallas}{23}{chapter.3}
-\contentsline {chapter}{\numberline {4}Mensajes}{25}{chapter.4}
-\contentsline {chapter}{\numberline {5}SP2-CU5 Finalizar revisi\IeC {\'o}n de paquetes de propuestas de unidades de aprendizaje}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}SP2-CU5 Finalizar revisi\IeC {\'o}n de paquetes de propuestas de unidades de aprendizaje}{28}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Descripci\IeC {\'o}n completa}{28}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Atributos importantes}{28}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Trayectorias del Caso de Uso}{29}{subsection.5.1.3}
-\contentsline {chapter}{\numberline {6}Pantallas}{31}{chapter.6}
-\contentsline {chapter}{\numberline {7}Mensajes}{33}{chapter.7}
-\contentsline {chapter}{\numberline {8}SP2-CU7 Autorizar Secci\IeC {\'o}n Descripci\IeC {\'o}n de Unidad de Aprendizaje}{35}{chapter.8}
-\contentsline {section}{\numberline {8.1}SP2-CU7 Autorizar Secci\IeC {\'o}n Descripci\IeC {\'o}n de Unidad de Aprendizaje }{36}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Descripci\IeC {\'o}n completa}{36}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Atributos importantes}{36}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}Trayectorias del Caso de Uso}{37}{subsection.8.1.3}
-\contentsline {chapter}{\numberline {9}Pantallas}{39}{chapter.9}
-\contentsline {chapter}{\numberline {10}SP2-CU8 Autorizar Secci\IeC {\'o}n Tiempos Asignados de Unidad de Aprendizaje}{41}{chapter.10}
-\contentsline {section}{\numberline {10.1}SP2-CU8 Autorizar Secci\IeC {\'o}n Tiempos Asignados de Unidad de Aprendizaje}{42}{section.10.1}
+\contentsline {chapter}{\numberline {4}SP2-CU4 Desasignar unidades de aprendizaje a un analista }{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}SP2-CU4 Desasignar unidades de aprendizaje a un analista}{26}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Descripci\IeC {\'o}n completa}{26}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Atributos importantes}{26}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Trayectorias del Caso de Uso}{26}{subsection.4.1.3}
+\contentsline {chapter}{\numberline {5}Pantallas}{29}{chapter.5}
+\contentsline {chapter}{\numberline {6}Mensajes}{31}{chapter.6}
+\contentsline {chapter}{\numberline {7}SP2-CU5 Finalizar revisi\IeC {\'o}n de paquetes de propuestas de unidades de aprendizaje}{33}{chapter.7}
+\contentsline {section}{\numberline {7.1}SP2-CU5 Finalizar revisi\IeC {\'o}n de paquetes de propuestas de unidades de aprendizaje}{34}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Descripci\IeC {\'o}n completa}{34}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Atributos importantes}{34}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Trayectorias del Caso de Uso}{35}{subsection.7.1.3}
+\contentsline {chapter}{\numberline {8}Pantallas}{37}{chapter.8}
+\contentsline {chapter}{\numberline {9}Mensajes}{39}{chapter.9}
+\contentsline {chapter}{\numberline {10}SP2-CU7 Autorizar Secci\IeC {\'o}n Descripci\IeC {\'o}n de Unidad de Aprendizaje}{41}{chapter.10}
+\contentsline {section}{\numberline {10.1}SP2-CU7 Autorizar Secci\IeC {\'o}n Descripci\IeC {\'o}n de Unidad de Aprendizaje }{42}{section.10.1}
 \contentsline {subsection}{\numberline {10.1.1}Descripci\IeC {\'o}n completa}{42}{subsection.10.1.1}
 \contentsline {subsection}{\numberline {10.1.2}Atributos importantes}{42}{subsection.10.1.2}
 \contentsline {subsection}{\numberline {10.1.3}Trayectorias del Caso de Uso}{43}{subsection.10.1.3}
 \contentsline {chapter}{\numberline {11}Pantallas}{45}{chapter.11}
-\contentsline {chapter}{\numberline {12}SP2-CU9 Autorizar Secci\IeC {\'o}n Evaluaci\IeC {\'o}n y Acreditaci\IeC {\'o}n de Unidad de Aprendizaje}{47}{chapter.12}
-\contentsline {section}{\numberline {12.1}SP2-CU9 Autorizar Secci\IeC {\'o}n Evaluaci\IeC {\'o}n y Acreditaci\IeC {\'o}n de Unidad de Aprendizaje}{48}{section.12.1}
+\contentsline {chapter}{\numberline {12}SP2-CU8 Autorizar Secci\IeC {\'o}n Tiempos Asignados de Unidad de Aprendizaje}{47}{chapter.12}
+\contentsline {section}{\numberline {12.1}SP2-CU8 Autorizar Secci\IeC {\'o}n Tiempos Asignados de Unidad de Aprendizaje}{48}{section.12.1}
 \contentsline {subsection}{\numberline {12.1.1}Descripci\IeC {\'o}n completa}{48}{subsection.12.1.1}
 \contentsline {subsection}{\numberline {12.1.2}Atributos importantes}{48}{subsection.12.1.2}
 \contentsline {subsection}{\numberline {12.1.3}Trayectorias del Caso de Uso}{49}{subsection.12.1.3}
 \contentsline {chapter}{\numberline {13}Pantallas}{51}{chapter.13}
-\contentsline {chapter}{\numberline {14}SP2-CU10 Autorizar Secci\IeC {\'o}n Bibliograf\IeC {\'\i }a de Unidad de Aprendizaje }{53}{chapter.14}
-\contentsline {section}{\numberline {14.1}SP2-CU10 Autorizar Secci\IeC {\'o}n Bibliograf\IeC {\'\i }a de Unidad de Aprendizaje}{54}{section.14.1}
+\contentsline {chapter}{\numberline {14}SP2-CU9 Autorizar Secci\IeC {\'o}n Evaluaci\IeC {\'o}n y Acreditaci\IeC {\'o}n de Unidad de Aprendizaje}{53}{chapter.14}
+\contentsline {section}{\numberline {14.1}SP2-CU9 Autorizar Secci\IeC {\'o}n Evaluaci\IeC {\'o}n y Acreditaci\IeC {\'o}n de Unidad de Aprendizaje}{54}{section.14.1}
 \contentsline {subsection}{\numberline {14.1.1}Descripci\IeC {\'o}n completa}{54}{subsection.14.1.1}
 \contentsline {subsection}{\numberline {14.1.2}Atributos importantes}{54}{subsection.14.1.2}
 \contentsline {subsection}{\numberline {14.1.3}Trayectorias del Caso de Uso}{55}{subsection.14.1.3}
 \contentsline {chapter}{\numberline {15}Pantallas}{57}{chapter.15}
-\contentsline {chapter}{\numberline {16}SP2-CU14 Agregar comentarios a propuesta de unidad de aprendizaje}{59}{chapter.16}
-\contentsline {section}{\numberline {16.1}SP2-CU14 Agregar comentarios a propuesta de unidad de aprendizaje }{60}{section.16.1}
+\contentsline {chapter}{\numberline {16}SP2-CU10 Autorizar Secci\IeC {\'o}n Bibliograf\IeC {\'\i }a de Unidad de Aprendizaje }{59}{chapter.16}
+\contentsline {section}{\numberline {16.1}SP2-CU10 Autorizar Secci\IeC {\'o}n Bibliograf\IeC {\'\i }a de Unidad de Aprendizaje}{60}{section.16.1}
 \contentsline {subsection}{\numberline {16.1.1}Descripci\IeC {\'o}n completa}{60}{subsection.16.1.1}
 \contentsline {subsection}{\numberline {16.1.2}Atributos importantes}{60}{subsection.16.1.2}
 \contentsline {subsection}{\numberline {16.1.3}Trayectorias del Caso de Uso}{61}{subsection.16.1.3}
 \contentsline {chapter}{\numberline {17}Pantallas}{63}{chapter.17}
-\contentsline {chapter}{\numberline {18}SP2-CU15 Modificar comentarios a propuesta de Unidad de Aprendizaje}{65}{chapter.18}
-\contentsline {section}{\numberline {18.1}SP2-CU15 Modificar comentarios a propuesta de Unidad de Aprendizaje }{66}{section.18.1}
+\contentsline {chapter}{\numberline {18}SP2-CU14 Agregar comentarios a propuesta de unidad de aprendizaje}{65}{chapter.18}
+\contentsline {section}{\numberline {18.1}SP2-CU14 Agregar comentarios a propuesta de unidad de aprendizaje }{66}{section.18.1}
 \contentsline {subsection}{\numberline {18.1.1}Descripci\IeC {\'o}n completa}{66}{subsection.18.1.1}
 \contentsline {subsection}{\numberline {18.1.2}Atributos importantes}{66}{subsection.18.1.2}
 \contentsline {subsection}{\numberline {18.1.3}Trayectorias del Caso de Uso}{67}{subsection.18.1.3}
 \contentsline {chapter}{\numberline {19}Pantallas}{69}{chapter.19}
-\contentsline {chapter}{\numberline {20}SP2-CU17 Agregar subrayado a propuesta de Unidad de Aprendizaje}{71}{chapter.20}
-\contentsline {section}{\numberline {20.1}SP2-CU17 Agregar subrayado a propuesta de Unidad de Aprendizaje }{72}{section.20.1}
+\contentsline {chapter}{\numberline {20}SP2-CU15 Modificar comentarios a propuesta de Unidad de Aprendizaje}{71}{chapter.20}
+\contentsline {section}{\numberline {20.1}SP2-CU15 Modificar comentarios a propuesta de Unidad de Aprendizaje }{72}{section.20.1}
 \contentsline {subsection}{\numberline {20.1.1}Descripci\IeC {\'o}n completa}{72}{subsection.20.1.1}
 \contentsline {subsection}{\numberline {20.1.2}Atributos importantes}{72}{subsection.20.1.2}
 \contentsline {subsection}{\numberline {20.1.3}Trayectorias del Caso de Uso}{73}{subsection.20.1.3}
 \contentsline {chapter}{\numberline {21}Pantallas}{75}{chapter.21}
+\contentsline {chapter}{\numberline {22}SP2-CU17 Agregar subrayado a propuesta de Unidad de Aprendizaje}{77}{chapter.22}
+\contentsline {section}{\numberline {22.1}SP2-CU17 Agregar subrayado a propuesta de Unidad de Aprendizaje }{78}{section.22.1}
+\contentsline {subsection}{\numberline {22.1.1}Descripci\IeC {\'o}n completa}{78}{subsection.22.1.1}
+\contentsline {subsection}{\numberline {22.1.2}Atributos importantes}{78}{subsection.22.1.2}
+\contentsline {subsection}{\numberline {22.1.3}Trayectorias del Caso de Uso}{79}{subsection.22.1.3}
+\contentsline {chapter}{\numberline {23}Pantallas}{81}{chapter.23}
