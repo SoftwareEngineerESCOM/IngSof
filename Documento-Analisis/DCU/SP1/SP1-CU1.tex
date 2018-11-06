@@ -2,7 +2,7 @@
 
 % REGISTRAR BIBLIOGRAFÍA.
 \begin{UseCase}{SP1-CU1}{Registrar bibliografía de la UA}{El usuario podrá registrar una o más bibliografías en el sistema.}
-		\UCitem{Versión}{\color{Gray}1.1}
+		\UCitem{Versión}{\color{Gray}1.2}
 		\UCitem{Autor}{\color{Gray}Ramírez Martínez Janet Naibi}
 		\UCitem{Supervisa}{\color{Gray}Cervantes Delgadillo Mauricio}
 		\UCitem{Actor}{\hyperlink{Docente}{Docente}}
@@ -21,11 +21,11 @@
 		\UCitem{Origen}{Teclado y Mouse}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item MSG1. Los campos marcados con (*) son obligatorios.
-                \item MSG2. Registro finalizado exitosamente.
-                \item MSG3. El libro con el ISBN [Número de ISBN] ya existe.
-                %\item MSG5. ¿Seguro que desea cancelar el registro?
-                \item MSG6. Por el momento no se puede realizar el registro.
+        		\item MSG4. Los campos marcados con (*) son obligatorios.
+                \item MSG5. Registro finalizado exitosamente.
+                \item MSG6. ¿Seguro que desea cancelar el registro?
+                \item MSG8. El libro con el ISBN "Número de ISBN" ya existe.
+                \item MSG9. Por el momento no se puede realizar el registro.
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -33,7 +33,7 @@
 		\UCitem{Postcondiciones}{La bibliografía queda registrada en el sistema.}
 		\UCitem{Errores}{}
 		\UCitem{Estado}{Revisión.}
-		\UCitem{Observaciones}{Si el autor no se encuentra en la lista de autores mostrados por esta interfaz, se tendrá que presionar el \IUbutton{Registrar autor} para ingresar el registro a la base de datos}
+		\UCitem{Observaciones}{Si el autor no se encuentra en la lista de autores mostrados por esta interfaz, se tendrá que presionar el \IUbutton{Registrar autor} para ingresar el nuevo registro a la base de datos.}
 \end{UseCase}
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
@@ -78,7 +78,7 @@
 
 \begin{UCtrayectoriaA}{A}{Los catálogos están vacios.}
 	\UCpaso No encuentra información en los catálogos.
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG6.}{Por el momento no se puede realizar el registro.}
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG9.}{Por el momento no se puede realizar el registro.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     %\UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{CU1}.
 \end{UCtrayectoriaA}
@@ -88,7 +88,7 @@
 \begin{UCtrayectoriaA}{B}{No existe el(los) autor(es) requerido(s) en la lista de autores disponibles.}
     \UCpaso[\UCactor] No encuentra al autor requerido.
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Autor} de la \IUref{IU7}{Registrar bibliografía.}
-    \UCpaso Muestra la \IUref{IU7.1}{Registrar Autor.}
+    \UCpaso Muestra el modal \IUref{IU7.1}{Registrar Autor de la bibliografía}.
     \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP1-CU6}.
 \end{UCtrayectoriaA}
 
@@ -96,7 +96,7 @@
 
 \begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados.}
 	\UCpaso Detecta uno o más campos sin contestar.
-    \UCpaso Muestra el mensaje \MSGref{MSG1.}{Los campos marcados con (*) son obligatorios.}
+    \UCpaso Muestra el mensaje \MSGref{MSG4.}{Los campos marcados con (*) son obligatorios.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU1}.
 \end{UCtrayectoriaA}
@@ -105,7 +105,7 @@
 
 \begin{UCtrayectoriaA}{D}{El ISBN que se intenta registrar ya existe en el sistema.}
 	\UCpaso Encuentra un libro registrado con el mismo ISBN que el libro que se está registrando.
-    \UCpaso Muestra el mensaje \MSGref{MSG3.}{El libro con el ISBN [Número de ISBN] ya existe.}
+    \UCpaso Muestra el mensaje \MSGref{MSG8.}{El libro con el ISBN "Número de ISBN" ya existe.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU1}.
 \end{UCtrayectoriaA}
