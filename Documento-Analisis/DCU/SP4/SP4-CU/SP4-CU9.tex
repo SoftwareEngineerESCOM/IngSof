@@ -19,7 +19,7 @@
 		\UCitem{Origen}{Teclado, Mouse}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item MSG1. Los campos marcados con (*) son obligatorios
+        		\item MSG1. Todos los campos son obligatorios
                 \item MSG2. Unidad de Aprendizaje modificada exitosamente.
                 \item MSG3. ¿Seguro que desea cancelar?.
                 \item MSG4. Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde.
@@ -30,7 +30,7 @@
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{ Debe de existir al menos una Unidad de Aprendizaje registrada en el sistema.}
 		\UCitem{Postcondiciones}{La Unidad de Aprendizaje queda modificada en el sistema.}
-		\UCitem{Errores}{ 
+		\UCitem{Errores}{
 			  \begin{itemize}
 				\item E1. Entrada inválida de un caracter no entero.
 				\item E2. Entrada inválida de un caracter no double.
@@ -65,17 +65,6 @@
 
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
 \end{UCtrayectoria}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA X -------------------------
-
-\begin{comment}
-\begin{UCtrayectoriaA}{A}{El sistema no encuentra ningún formulario para mostrar.}
-	\UCpaso No encuentra ningún formulario para mostrar.
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG6}{Por el momento no se puede registrar la bibliografía}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{CU1}.
-\end{UCtrayectoriaA}
-\end{comment}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 
@@ -175,9 +164,9 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 
-\begin{UCtrayectoriaA}{E}{Uno o más campos obligatorios no fueron contestados.}
+\begin{UCtrayectoriaA}{E}{Uno o más campos no fueron contestados.}
 	\UCpaso Detecta uno o más campos sin contestar.
-	\UCpaso Muestra el mensaje \MSGref{MSG1}{Los campos marcados con (*) son obligatorios}.
+	\UCpaso Muestra el mensaje \MSGref{MSG1}{Todos los campos son obligatorios}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU2}.
 \end{UCtrayectoriaA}

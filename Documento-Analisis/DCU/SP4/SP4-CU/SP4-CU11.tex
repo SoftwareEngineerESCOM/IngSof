@@ -13,25 +13,25 @@
           	\item Primer Apellido (Tipo Alfanumérico)
           	\item Segundo Apellido (Tipo Alfanumérico)
           	\item Título (Tipo Alfanumérico)
-          	\item Cargo (Tipo Alfanumérico) 	
+          	\item Cargo (Tipo Alfanumérico)
           	\item Lugar de Trabajo (Tipo Alfanumérico)
-          	
+
           \end{itemize}
         }
 		\UCitem{Origen}{Teclado.}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item MSG1. Los campos marcados con (*) son obligatorios
+        		\item MSG1. Todos los campos son obligatorios
                 \item MSG2. Registro finalizado exitosamente.
                 \item MSG3 ¿Seguro que desea cancelar?
                 \item MSG4 Entrada no Alfanumérica.
-                \item MSG7 Por ahorita no se puede consultar.
+                \item MSG7 Por el momento no se puede consultar.
                 \item MSG8 Matrícula no encontrada.
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{}
-		\UCitem{Postcondiciones}{El Recurso Humano quedó actualizado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo o quedó sin modificarse.}
+		\UCitem{Postcondiciones}{El Recurso Humano quedó actualizado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo.}
 		\UCitem{Errores}{E1. Algúna entrada  contiene uno o más caracteres no alfanuméricos.
 		E2. No se encontró el Recurso Humano.
 		}
@@ -46,10 +46,10 @@
 
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.4.1-J}{Editar Recurso Humano}.
 
-	\UCpaso Ingresa la matrícula del Recurso Humano. [Trayectoria F]    
-    
+	\UCpaso Ingresa la matrícula del Recurso Humano. [Trayectoria F]
+
     \UCpaso Cargar datos del Recurso Humano correspondiente. [Trayectoria E]
-    
+
     \UCpaso[\UCactor] Cambia los datos de Recurso Humano.
 
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria A] [Trayectoria B]
@@ -89,9 +89,9 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 
-\begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados.}
+\begin{UCtrayectoriaA}{C}{Uno o más campos no fueron contestados.}
 	\UCpaso Detecta uno o más campos sin contestar.
-    \UCpaso Muestra el mensaje \MSGref{MSG1}{Los campos marcados con (*) son obligatorios}.
+    \UCpaso Muestra el mensaje \MSGref{MSG1}{Todos los campos son obligatorios}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
@@ -105,7 +105,7 @@
     %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 
 \begin{UCtrayectoriaA}{E}{No cargan los catálogos de Recurso Humano.}
-    \UCpaso Muestra el mensaje \MSGref{MSG7}{Por ahorita no se puede consultar.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG7}{Por el momento no se puede consultar.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 \UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa(Pantalla de Abi).
 \end{UCtrayectoriaA}
@@ -114,5 +114,5 @@
 \begin{UCtrayectoriaA}{E}{No existe ningun Recurso Humano con esa matrícula.}
     \UCpaso Muestra el mensaje \MSGref{MSG8}{Matrícula no encontrada}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-\UCpaso Continua en el paso  de búsqueda de matrícula.
+\UCpaso Continúa en el paso  de búsqueda de matrícula.
 \end{UCtrayectoriaA}

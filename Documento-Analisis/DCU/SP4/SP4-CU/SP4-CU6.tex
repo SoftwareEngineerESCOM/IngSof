@@ -16,7 +16,7 @@
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{ Debe de existir al menos un Plan de Estudios con Unidades de Aprendizaje registrado en el sistema.}
 		\UCitem{Postcondiciones}{El Plan de Estudios y las Unidades de Aprendizaje son visualizadas en el sistema.}
-		\UCitem{Errores}{ 
+		\UCitem{Errores}{
 			  \begin{itemize}
 				\item E1. El sistema no permite editar Plan de Estudios con las Unidades de Aprendizaje registradas.
 				\item E2. El sistema no permite eliminar Plan de Estudios con las Unidades de Aprendizaje registradas.
@@ -30,7 +30,7 @@
 	}
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
-		
+
 \end{UseCase}
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
@@ -45,11 +45,10 @@
 
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
     \UCpaso[\UCactor] Selecciona el semestre de la Unidades de Aprendizaje que desea consultar.
-    \UCpaso Muestra las Unidades de Aprendizaje registradas en el sistema.
-    \UCpaso si lo desea, selecciona la opción de eliminar Unidad de Aprendizaje. [Trayectoria B]
-    
+    \UCpaso Muestra las Unidades de Aprendizaje registradas en el sistema.[Trayectoria B][Trayectoria B.1]
 
-   
+
+
 \end{UCtrayectoria}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA X -------------------------
@@ -77,22 +76,22 @@
 
 
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 
-\begin{UCtrayectoriaA}{B.1}{El usuario desea eliminar la Unidad de Aprendizaje.}
+\begin{UCtrayectoriaA}{B}{El usuario desea eliminar la Unidad de Aprendizaje.}
 	\UCpaso  Muestra el mensaje \MSGref{MSG1}{¿Seguro que desea eliminar el registro?}.
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Aceptar}.
 	\UCpaso Elimina la Unidad de Aprendizaje.
 \end{UCtrayectoriaA}
 
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA B.2 -------------------------
+%------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
 
-\begin{UCtrayectoriaA}{B.2}{El actor presiona accidentalmente el botón Eliminar}
+\begin{UCtrayectoriaA}{B.1}{El actor presiona accidentalmente el botón Eliminar}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
 	\UCpaso Muestra el mensaje \MSGref{MSG1}{¿Seguro que desea eliminar el registro?}.
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
 	\UCpaso Cierra el mensaje.
-	
+
 \end{UCtrayectoriaA}
 
