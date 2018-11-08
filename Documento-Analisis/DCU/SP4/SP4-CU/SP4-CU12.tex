@@ -1,0 +1,88 @@
+\begin{UseCase}{SP4-CU12}{Revisar Mapa Curricular}{Los usuarios Jefes y Analista visualizan los Contenidos de un Mapa Curricular y de ser necesario agregan comentarios.}
+        \UCitem{Versión}{\color{Gray}1.0}
+        \UCitem{Autor}{\color{Gray}Rivas Rojas Arturo}
+        \UCitem{Supervisa}{\color{Gray}}
+        \UCitem{Actor}{\hyperlink{JDIE}{Jefe de Innovación Educativa}, \hyperlink{JDIA}{Jefe División de Innovación Académica}, \hyperlink{JDDIC}{Jefe de Departamento de Desarrollo e Innovación Curricular} y \hyperlink{A}{Analista}}
+        \UCitem{Propósito}{Realizar la revisión y aprobación de un Mapa Curricular.}
+        \UCitem{Entradas}{Las entradas para la revisión de un Mapa Curricular serán:
+          \begin{itemize}
+            \item Comentarios.
+          \end{itemize}
+        }
+        \UCitem{Origen}{Teclado.}
+        \UCitem{Salidas}{
+            \begin{itemize}
+                \item MSG1. ¿Está seguro que desea finalizar?.
+                \item MSG2. Revisión finalizada exitosamente.
+                \item MSG3. Ocurrió un error, por favor inténtelo más tarde.
+            \end{itemize}
+        }
+        \UCitem{Destino}{Pantalla.}
+        \UCitem{Precondiciones}{
+            \begin{itemize}
+                \item Para el Analista debe haberse concluido la tarea de registro del Mapa Curricular.
+                \item Para los Jefes debe haberse concluido la tarea de revisión del Mapa Curricular por parte del Analista.
+            \end{itemize}
+        }
+        \UCitem{Postcondiciones}{
+            \begin{itemize}
+                \item Después de que lo haya revisado un Analista lo puede revisar su Jefe.
+                \item Después de que el Jefe de Innovación Educativa lo haya revisado y aprobado ahora lo podrán revisar en la DES.
+            \end{itemize}
+        }
+        \UCitem{Errores}{}
+        \UCitem{Puntos de Extensión}{}
+        \UCitem{Estado}{Revisión.}
+        \UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Consultar} de la Interfaz de usuario  \IUref{IU2-D}{Consultar Tareas}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU3-A}{Revisar Mapa Curricular}.
+    \UCpaso[\UCactor] Selecciona el semestre de la Unidades de Aprendizaje que desea revisar. [Trayectoria A]
+    \UCpaso Expande el semestre seleccionado mostrando las Unidades de Aprendizaje registradas en el sistema. [Trayectoria A]
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}.
+    \UCpaso Muestra el mensaje \MSGref{MSG1}{¿Está seguro que desea finalizar?.}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}. [Trayectoria B]
+    \UCpaso Muestra el mensaje \MSGref{MSG2}{Revisión finalizada exitosamente}.[Trayectoria C]
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}.
+\end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{El actor presiona (lápiz) para comentar sobre los datos}
+    \UCpaso Muestra una ventana emergente solicitando el comentario.
+    \UCpaso[\UCactor] Cierra la ventana presionando el botón \IUbutton{Aceptar}. [Trayectoria A.1]
+    \UCpaso Continúa la trayectoria principal del \UCref{SP4-CU12} desde el paso 3.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A.1 -------------------------
+
+\begin{UCtrayectoriaA}{A.1}{El actor presiona accidentalmente (lápiz) para comentar sobre los datos}
+    \UCpaso[\UCactor] Cierra la ventana presionando el botón \IUbutton{Cancelar}.
+    \UCpaso Continúa la trayectoria principal del \UCref{SP4-CU12} desde el paso 3.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+\begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón Finalizar}
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
+    \UCpaso Continúa la trayectoria principal del \UCref{SP4-CU12} desde el paso 3.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
+\begin{UCtrayectoriaA}{C}{El actor realizó comentarios}
+    \UCpaso Persiste los datos. [Trayectoria C.1]
+    \UCpaso Muestra el mensaje \MSGref{MSG2}{Revisión finalizada exitosamente}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA C.1 -------------------------
+\begin{UCtrayectoriaA}{C.1}{Ocurre un error al momento de persistir los datos}
+    \UCpaso Muestra el mensaje \MSGref{MSG3}{Ocurrió un error, por favor inténtelo más tarde.}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}.
+\end{UCtrayectoriaA}
