@@ -1,5 +1,5 @@
 \begin{UseCase}{SP5-CU3}{Consultar usuarios}{El  Jefe de División de Innovación Académica podrá visualizar la información de los empleados.}
-        \UCitem{Versión}{\color{Gray}2.0}
+        \UCitem{Versión}{\color{Gray}3.0}
         \UCitem{Autor}{\color{Gray}Hernández Ruiz Rafael}
         \UCitem{Supervisa}{\color{Gray}Abigail Nicolás Sayago}
         \UCitem{Actor}{\hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA}, \hyperlink{JUA}{JUA}.}
@@ -17,8 +17,8 @@
             \begin{itemize}
                 \item Lista de empleados de un cargo en específico con sus datos (cargo, nombre, matricula, titulo unidad académica). 
                 \item \label{MSG7} MSG7. Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.
-                \item \label{MSGR2} MSG21. No hay usuarios registrados con ese cargo.
-                \item \label{MSGR3} MSG22. ¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?
+                \item \label{MSG21} MSG21. No hay usuarios registrados con ese cargo.
+                \item \label{MSG22} MSG22. ¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -30,7 +30,7 @@
         \item Hubo un problema al conectarse con la base de datos. \end{itemize}}
         \UCitem{Estado}{Gestión.}
         \UCitem{Observaciones}{}
-        \UCitem{Puntos de extensión}{Casos de uso  \UCref{SP5-CU10} , \UCref{SP5-CU11}. }
+        \UCitem{Puntos de extensión}{Casos de uso  \UCref{SP5-CU5}}
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
