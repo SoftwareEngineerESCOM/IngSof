@@ -1,0 +1,113 @@
+\chapter{SP2-CU12 Autorizar Unidad Temática de Unidad de Aprendizaje}
+\begin{UseCase}{SP2-CU12}{ Autorizar Unidad Temática de Unidad de Aprendizaje}{El analista podrá visualizar la información de una Unidad Temática de la unidad de aprendizaje para poder aprobarla.} 
+		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Autor}{\color{Gray}Domínguez López Humberto}
+		\UCitem{Supervisa}{\color{Gray}Parra Garcilazo Cinthya Dolores}
+		\UCitem{Actor}{Analista}
+		\UCitem{Propósito}{Que el analista conozca una Unidad Temática de la propuesta de Unidad de Aprendizaje para determinar si necesita correcciones.}
+		\UCitem{Entradas}{Clic en botones:
+          \begin{itemize}
+          	\item Finalizar Revisión.
+          	\item Guardar.
+            \item Cancelar.
+            \item Nuevo Comentario.
+            \item Subrayar.
+            \item Eliminar subrayado.
+            \item Editar Comentario.
+            \item Eliminar Comentario.
+          \end{itemize}
+        }
+		\UCitem{Origen}{Mouse.}
+		\UCitem{Salidas}{
+        	\begin{itemize}
+        		\hypertarget{MSG15}{\item MSG15. ¿Está seguro que desea Cancelar la revisión?
+				Se perderán las Anotaciones que no hayas guardado anteriormente.}
+                \hypertarget{MSG16}{\item MSG16. ¿Está seguro de Finalizar la Revisión?}
+                \hypertarget{MSG17}{\item MSG17 Sección Aprobada.}
+                
+               \hypertarget{MSG18}{ \item MSG18 Revisión de Sección Finalizada.}
+                \hypertarget{MSG19}{\item MSG19 Anotaciones En Sección Guardadas Correctamente.}
+
+        	\end{itemize}
+        }
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{ Se llamó el caso de uso SP2-CU1}
+		\UCitem{Postcondiciones}{Se habilita la llamada a los casos de uso SP2-CU14, SP2-CU15, SP2-CU16, SP2-CU17.}
+		\UCitem{Errores}{}
+		\UCitem{Estado}{Revisión.}
+		\UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+
+    \UCpaso[\UCactor] presiona el botón  \IUbutton{Unidad Temática} de la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
+	\UCpaso El sistema obtiene el nombre de las unidades temáticas pertenecientes a la unidad de aprendizaje.
+	\UCpaso El sistema muestra el nombre de las unidades temáticas en el menú de la interfaz  de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
+
+    \UCpaso[\UCactor] selecciona la unidad temática que desee visualizar.
+     
+         \UCpaso El sistema obtiene la información correspondiente a la a la Unidad Temática seleccionada.
+         
+    \UCpaso El sistema obtiene la bitácora de comentarios correspondientes a la Unidad Temática. 
+    
+    \UCpaso El sistema verifica que la Unidad Temática   no haya sido aprobada anteriormente. Regla de Negocio BR9. \hyperlink{SP2-CU12-A1}{Trayectoria A1}. 
+    
+    \UCpaso El sistema muestra la interfaz de usuario  \IUref{SP2-IU-Unidad-Tematica}{Unidad Temática}. 
+    
+    \UCpaso[\UCactor] presiona el botón \IUbutton{Finalizar Revisión}. \hyperlink{SP2-CU12-A2}{Trayectoria A2}.
+    \UCpaso El sistema muestra el \MSGref{MSG16}{¿Está seguro de Finalizar la Revisión?}.
+    
+    \UCpaso	El sistema verifica que no existan nuevos comentarios o subrayados para la Unidad Temática. Regla de Negocio BR8. \hyperlink{SP2-CU12-A3}{Trayectoria A3}. 
+    
+    \UCpaso El sistema pone el estado de la Unidad Temática en “Aprobado”.
+    
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG17}{Sección Aprobada}.
+
+    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
+
+\end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A1 -------------------------
+
+\begin{UCtrayectoriaA}{A1}{La sección de la Unidad de Aprendizaje ya ha sido aprobada anteriormente.}
+
+	\hypertarget{SP2-CU12-A1}{\UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-Unidad-Tematica}{Unidad Temática}.}
+    \UCpaso El sistema deshabilita los botones superiores: \IUbutton{Nuevo Comentario}, \IUbutton{Subrayar}, \IUbutton{Eliminar Subrayado}.
+    \UCpaso El sistema deshabilita los botones inferiores: \IUbutton{Cancelar}, \IUbutton{Guardar}, \IUbutton{Finalizar Revisión}.
+    \UCpaso El sistema deshabilita los botones laterales de: \IUbutton{Modificar Comentario}, \IUbutton{Eliminar Comentario}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A2 -------------------------
+	
+\begin{UCtrayectoriaA}{A2}{El analista no desea finalizar aun la revisión de la sección de la Unidad de Aprendizaje.}
+
+    \hypertarget{SP2-CU12-A2}{\UCpaso[\UCactor] presiona el botón \IUbutton{Guardar} \hyperlink{SP2-CU12-A2.1}{Trayectoria A2.1}}. 
+    \UCpaso El sistema guarda los nuevos comentaros y subrayados hechos durante esa sesión.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG19}{Anotaciones En Sección Guardadas Correctamente}.
+    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A2.1 -----------------------
+\begin{UCtrayectoriaA}{A2.1}{El analista desea cancelar todo lo que haya hecho en la sección de la Unidad de Aprendizaje durante esa sesión.}
+
+	\hypertarget{SP2-CU12-A2.1}{\UCpaso[\UCactor] presiona el botón \IUbutton{Cancelar}}. 
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG15}{¿Está seguro que desea Cancelar la revisión? Se perderán las Anotaciones que no hayas guardado anteriormente.}
+Se perderán las Anotaciones que no hayas guardado anteriormente. .
+    \UCpaso El sistema elimina los nuevos comentaros y subrayados hechos durante esa sesión.
+    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A3 -----------------------
+	
+\begin{UCtrayectoriaA}{A3}{El analista realizo comentarios y subrayados para su posterior corrección en la sección de la Unidad de Aprendizaje.} 
+
+	\hypertarget{SP2-CU12-A3}{\UCpaso El sistema pone el estado Unidad Temática en “Revisado”.}
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG18}{Revisión de Sección Finalizada}.
+    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
+\end{UCtrayectoriaA}
+
+\chapter{Pantallas}
+\IUfig[0.75]{SP2-Pantallas/Inicio}{SP2-IU-INICIO}{Sección Inicio}
+\IUfig[0.75]{SP2-Pantallas/Unidad_Tematica}{SP2-IU-Unidad-Tematica}{Unidad Temática}
+
