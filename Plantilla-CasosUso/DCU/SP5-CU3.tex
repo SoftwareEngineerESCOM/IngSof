@@ -1,6 +1,4 @@
-
-
-\begin{UseCase}{SP5-CU8}{Consultar usuarios del Jefe de División de Innovación Académica. }{El  Jefe de División de Innovación Académica podrá visualizar la información de los empleados.}
+\begin{UseCase}{SP5-CU3}{Consultar usuarios}{El  Jefe de División de Innovación Académica podrá visualizar la información de los empleados.}
         \UCitem{Versión}{\color{Gray}2.0}
         \UCitem{Autor}{\color{Gray}Hernández Ruiz Rafael}
         \UCitem{Supervisa}{\color{Gray}Abigail Nicolás Sayago}
@@ -48,6 +46,8 @@
 
 \begin{UCtrayectoriaA}{B}{No existen registros en el catálogo de cargos.}
     \UCpaso     El sistema muestra el \hyperref[MSG7]{MSG7.Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU1}{Menú}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{No existen  empleados con el cargo seleccionado.}
@@ -56,12 +56,12 @@
 
 \begin{UCtrayectoriaA}{D}{El actor es el Jefe de Departamento e Innovación Curricular.}
  \UCpaso El sistema despliega la información  de los empleados permitidos para el Jefe de Departamento e Innovación Curricular de acuerdo a la BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria F]
-  \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU8}.
+  \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU3}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{E}{El actor es el JUA.}
  \UCpaso El sistema despliega la información  de los empleados permitidos para el JUA de acuerdo a la BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}.[Trayectoria F]
- \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU8}.
+ \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU3}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{F}{El actor presiona el botón \IUbutton{X}.}
