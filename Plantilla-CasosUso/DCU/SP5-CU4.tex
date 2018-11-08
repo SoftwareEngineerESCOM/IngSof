@@ -1,0 +1,114 @@
+% CASO DE USO: Registrar usuario
+\begin{UseCase}{SP5-CU4}{Registrar Usuario.}{El \hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA} y  \hyperlink{JUA}{JUA} podrán crear las cuentas de los empleados que están a su cargo. }
+        \UCitem{Versión}{\color{Gray}1.0}
+        \UCitem{Autor}{\color{Gray}Hernández Ruiz Rafael}
+        \UCitem{Supervisa}{\color{Gray}Ramos Diaz Enrique}
+        \UCitem{Actor}{\hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA}, \hyperlink{JUA}{JUA}.}
+        \UCitem{Propósito}{Contar con los usuarios involucrados en el proceso para que interactúen en el sistema. }
+        \UCitem{Entradas}{
+          \begin{itemize}
+            \item Matricula del empleado.
+            \item Apellido Paterno.
+            \item Apellido Materno.
+            \item Titulo.
+            \item Cargo.
+            \item Lugar de trabajo.
+            \item Contraseña.
+            \item Clic en el botón registrar.
+        \end{itemize}}
+        \UCitem{Origen}{Mouse y teclado.}
+        \UCitem{Salidas}{
+            \begin{itemize}
+            \item \label{MSG27} MSG7. Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.
+            \item \label{MSG25} MSG25. Ha ocurrido un error con la base de datos.
+                \item \label{MSG29} MSG29. El usuario se ha registrado exitosamente.
+                \item \label{MSG30} MSG30. Error, el usuario ya existe en el sistema. 
+                \item \label{MSG31} MSG31. Inconsistencia en los datos. Verifique los campos e intente de nuevo.
+                \item \label{MSG31} MSG32. No existen recursos humanos registrados en el sistema con la matrícula ingresada.
+            \end{itemize}
+        }
+        \UCitem{Destino}{Pantalla.}
+        \UCitem{Precondiciones}{ \begin{itemize}
+            \item Debe existir por lo menos un registro en el catálogo de cargos.
+            \item Debe existir por lo menos un registro en el catalogo de lugares de trabajo.
+        \end{itemize} }
+        \UCitem{Postcondiciones}{La gestión del nuevo usuario.}
+        \UCitem{Errores}{ \begin{itemize}
+        \item El catálogo de cargos no se cargo correctamente.
+        \item Hubo un problema al conectarse con la base de datos. \end{itemize}}
+        \UCitem{Estado}{Gestión y registro.}
+        \UCitem{Observaciones}{}
+
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal.}
+    
+  \UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU2}{Gestionar empleados} el botón \IUbutton{+}.
+    \UCpaso  El sistema verifica la existencia de registros en los catálogos cargos  y  lugares de trabajo. [Trayectoria B] 
+    \UCpaso El sistema carga la información del catalogo de empleado  según la \hyperlink{reglas-BR3}{BR3} para el actor. [Trayectoria G]
+    \UCpaso El sistema carga la pantalla  \IUref{IU8}{Registrar empleados}.
+    \UCpaso[\UCactor] Ingresa la matrícula del empleado 
+    \UCpaso[\UCactor] Da clic en el icono con la lupa de la interfaz de usuario \IUref{IU8}{Registrar empleados}. [Trayectoria H]
+    
+    \UCpaso El sistema busca en la base de datos si el usuario se encuentra registrado como un recurso humano. [Trayectoria G]
+    \UCpaso El sistema muestra el \hyperref[MSG29]{MSG32. No existen recursos humanos registrados en el sistema con la matrícula ingresada.}
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso[\UCactor]
+    Captura la información del empleado.[Trayectoria C] [Trayectoria D] 
+    \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Registrar}.
+    \UCpaso El sistema verifica la consistencia de la información. [Trayectoria E] [Trayectoria F]
+    \UCpaso El sistema registra al empleado.
+    \UCpaso  El sistema muestra el \hyperref[MSG29]{MSG29. El usuario se ha registrado exitosamente}.    
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
+\end{UCtrayectoria}
+
+
+\begin{UCtrayectoriaA}{B}{No existen registros en los catálogos.}
+    \UCpaso El sistema muestra el mensaje \hyperref[MSG7]{MSG7. Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{C}{El actor selecciona el cargo del empleado.}
+    \UCpaso     El sistema ajustara las opciones de zona de trabajo de acuerdo con el cargo y el actor según la \hyperlink{reglas-BR4}{BR4}.
+    \UCpaso Continua en el paso 10 de la trayectoria principal del \UCref{SP5-CU4}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{D}{El actor presiono el botón \IUbutton{Cancelar}.}
+ \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{E}{El usuario ya estaba registrado en el sistema.}
+ \UCpaso El sistema muestra el \hyperref[MSG30]{MSG30. Error, el usuario ya existe en el sistema.} 
+ \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+ \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP5-CU4}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{F}{Los datos están incompletos o incorrectos.}
+ \UCpaso El sistema muestra el \hyperref[MSG31]{MSG31. Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
+ \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+ \UCpaso Continua en el paso 10 de la trayectoria principal del \UCref{SP5-CU4}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
+
+\begin{UCtrayectoriaA}{G}{La base de datos no está disponible, o hubo un error de conexión.}
+    \UCpaso El sistema muestra el mensaje \hyperref[MSG25]{MSG25. Ha ocurrido un error con la base de datos}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
+
+\begin{UCtrayectoriaA}{H}{El usuario se encuentra registrado en el sistema como un recurso humano.}
+    
+    \UCpaso El sistema autocompleta los campos de nombre, apellido paterno, apellido materno, título, cargo y lugar de trabajo en el formulario de la interfaz de usuario \IUref{IU8}{Registrar empleados}.
+    \UCpaso[\UCactor] Captura la contraseña para el nuevo usuario.
+    \UCpaso[\UCactor] Presiona el botón de \IUbutton{Registrar}.
+    \UCpaso El sistema verifica la consistencia de la información. [Trayectoria E] [Trayectoria F]
+    \UCpaso El sistema registra al empleado.
+    \UCpaso  El sistema muestra el \hyperref[MSG29]{MSG29. El usuario se ha registrado exitosamente}.    
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
+\end{UCtrayectoriaA}
