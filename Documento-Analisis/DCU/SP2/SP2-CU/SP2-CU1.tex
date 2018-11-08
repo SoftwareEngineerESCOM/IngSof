@@ -1,151 +1,65 @@
-\chapter{Especificación de Casos de Uso}
+\chapter{SP2-CU1 Consultar contenido de propuesta de Unidad de Aprendizaje}
 
-% REGISTRAR BIBLIOGRAFÍA.
-\begin{UseCase}{CU1}{Registrar referencias bibliográficas}{El usuario podrá registrar una o más referencias bibliográficas en el sistema.}
+\begin{UseCase}{SP2-CU2}{ Consultar contenido de propuesta de Unidad de Aprendizaje}{El usuario jefe de desarrollo e innovación curricular, analista y jefe de la división de innovación académica podrán consultar los contenidos de las unidades de aprendizaje de la unidad académica correspondiente.}
 		\UCitem{Versión}{\color{Gray}1.0}
-		\UCitem{Autor}{\color{Gray}Ramírez Martínez Janet Naibi}
+		\UCitem{Autor}{\color{Gray}Parra Garcilazo Cinthya Dolores}
 		\UCitem{Supervisa}{\color{Gray}}
-		\UCitem{Actor}{\hyperlink{Usuario}{Usuario}}
-		\UCitem{Propósito}{Asignar las referencias bibliográficas sugeridas a distintas unidades de aprendizaje a través de un identificador único.}
-		\UCitem{Entradas}{Las entradas para el registro de una referencia bibliográfica serán:
+		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Desarrollo e Innovación Curricular, analista y Jefe de la División de Innovación Académica}}
+		\UCitem{Propósito}{Verificar que el contenido que fue llenado por el capital humano de la unidad académica correspondiente pueda ser aprobado o cuene con áreas de oportunidad.}
+		\UCitem{Entradas}{Las entradas para consultar una propuesta de unidades de aprendizaje son:
           \begin{itemize}
-          	\item ISBN.
-          	\item Título del libro.
-            \item Año de publicación.
-            \item Edición.
-            \item Ciudad de publicación.
-            \item Editorial.
+          	\item Unidad Académica
+            \item Programa académico
+		\item Semestre
+		\item Número de revisión
           \end{itemize}
-Las entradas para el autor del libro serán
-		\begin{itemize}
-        	\item Identificador.
-			\item Nombre del autor.
-            \item Primer apellido.
-            \item Segundo apellido.
-		\end{itemize}
         }
-		\UCitem{Origen}{Teclado.}
+		\UCitem{Origen}{Teclado, mouse.}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item MSG1. Los campos marcados con (*) son obligatorios
-                \item MSG2. Registro finalizado exitosamente.
-                \item MSG3 El libro con el ISBN [Número de ISBN] ya existe.
-                \item MSG5 ¿Seguro que desea cancelar el registro?
-                \item MSG6 Por el momento no se puede registrar la bibliografía.
+        	   \item MSG25. Ha ocurrido un error con la base de datos.
 
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
-		\UCitem{Precondiciones}{ El libro que se desea registrar, no debe existir previamente en el sistema.}
-		\UCitem{Postcondiciones}{La bibliografía queda registrada en el sistema.}
-		\UCitem{Errores}{}
-		\UCitem{Estado}{Revisión.}
+		\UCitem{Precondiciones}{ 
+			\begin{itemize}
+        	   \item El usuario debe estar autorizado para acceder a dicha unidad de aprendizaje.
+		   \item 
+
+        	\end{itemize}
+		}
+		\UCitem{Postcondiciones}{Se visualiza el paquete de unidades de aprendizaje de un semestre en particular, elegido por el usuario.}
+		\UCitem{Errores}{No hay conexión con la base de datos.}
+		\UCitem{Estado}{Aprobado.}
 		\UCitem{Observaciones}{}
 \end{UseCase}
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar bibliografía} de la interfaz de usuario \IUref{IU1}{Página Principal}
 
-    %\UCpaso El sistema busca el formulario \Formref{FM1}{Registrar bibliografía}. [Trayectoria A]
+    \UCpaso Muestra la interfaz de usuario \IUref{xxxxx}{Consulta tareas} %no tengo la vista.
+    \UCpaso [\UCactor] Selecciona el botón \IUbutton {->} (Ir A) de la unidad de aprendizaje que quiera consultar. \hyperref[SP2-CU1-A]{Trayectoria A}.
+    \UCpaso  Muestra la interfaz de usuario \IUref{Inicio}.
 
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2}{Registro de bibliografía}.
-    \UCpaso[\UCactor] Ingresa el título del libro que desea registrar.
-    \UCpaso[\UCactor] Ingresa el ISBN asociado al libro que está registrando.
-    \UCpaso[\UCactor] Ingresa el nombre de la editorial que publicó el libro.
-    \UCpaso[\UCactor] Ingresa el año de publicación del libro que se está registrando.
-    \UCpaso[\UCactor] Ingresa la edición del libro.
-    \UCpaso[\UCactor] Ingresa la ciudad de publicación.
-    \UCpaso[\UCactor] Ingresa el nombre, apellido paterno y apellido materno  del autor del libro que se está registrando. [Trayectoria A]
-
-    %\UCpaso[\UCactor] Ingresa los datos que se le solicitan en el formulario \Formref{FM1}{Registrar bibliografía}. [Trayectoria B]
-
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria B] [Trayectoria C]
-
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
-
-    \UCpaso Valida que no exista un libro con el mismo ISBN. [Trayectoria E]
-
-    \UCpaso Guarda la información de la bibliografía en la base de datos.
-
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG2}{Registro finalizado exitosamente}.
-
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-
-    \UCpaso Muestra la interfaz de usuario \IUref{IU1}{Página principal}.
 \end{UCtrayectoria}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA X -------------------------
-
-\begin{comment}
-\begin{UCtrayectoriaA}{A}{El sistema no encuentra ningún formulario para mostrar.}
-	\UCpaso No encuentra ningún formulario para mostrar.
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG6}{Por el momento no se puede registrar la bibliografía}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{CU1}.
-\end{UCtrayectoriaA}
-\end{comment}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-
-\begin{UCtrayectoriaA}{A}{El usuario quiere agregar más autores para el libro que está registrando.}
-	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
-    \UCpaso Verifica que no se exceda el límite de autores para un libro con base en la regla \BRref{BR4}{Un libro con más de 3 autores es sólo citado por los primeros 3}. [Trayectoria A.2]
-    \UCpaso Agrega los campos para registrar a un nuevo autor.
-    \UCpaso[\UCactor] Llena los campos: ``nombre'', ``apellido paterno'' y ``apellido materno'' del nuevo autor.
-    \UCpaso Continua en el paso 10 de la trayectoria principal del \UCref{CU1}
+\label{SP2-CU1-A}
+\begin{UCtrayectoriaA}{A}{El usuario no tiene el permiso para acceder a la unidad de aprendizaje.}
+    \UCpaso Muestra el mensaje MSG24. Por el momento la página solicitada no esta disponible
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA A.1 -----------------------
-
-\begin{UCtrayectoriaA}{A.1}{El usuario presionó por error el botón \IUbutton{$\bigoplus$}.}
-	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\ominus$} que se encuentra a un lado del campo ``Nombre'' del formulario \Formref{IU2}{Registro de bibliografía}
-    \UCpaso Elimina los campos agregados.
-    \UCpaso Continua en el paso 9 de la trayectoria principal del \UCref{CU1}
-\end{UCtrayectoriaA}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA A.2 -----------------------
-
-\begin{UCtrayectoriaA}{A.2}{El usuario ya registró 3 autores para un libro}
-	\UCpaso Oculta el botón \IUbutton{$\bigoplus$}.
-    \UCpaso Continua en el paso 10 de la trayectoria principal del \UCref{1}
-\end{UCtrayectoriaA}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-
-\begin{UCtrayectoriaA}{B}{El actor quiere cancelar el registro de la bibliografía.}
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
-    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Seguro que desea cancelar el registro?}.
-    \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
-    \UCpaso Muestra la interfaz de usuario \IUref{IU1}{Página principal}
-\end{UCtrayectoriaA}
+%------------------------ Pantallas de este caso de uso -------------------------
+\chapter{Pantallas}
+ \begin{figure}
+  \centering
+    \includegraphics[width=0.7\textwidth]{DCU/SP2/Pantallas/Inicio}
+  \caption{SP2-IU-ConsultaPaquete}
+  \label{SP2-IU-ConsultaPaquete}
+\end{figure}
 
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-
-\begin{UCtrayectoriaA}{C}{El actor presiona accidentalmente el botón Cancelar}
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
-    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Seguro que desea cancelar el registro?}.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
-    \UCpaso Cierra el mensaje.
-    \UCpaso Continua en el paso 10 de la trayectoria principal del \UCref{CU1}.
-\end{UCtrayectoriaA}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-
-\begin{UCtrayectoriaA}{D}{Uno o más campos obligatorios no fueron contestados.}
-	\UCpaso Detecta uno o más campos sin contestar.
-    \UCpaso Muestra el mensaje \MSGref{MSG1}{Los campos marcados con (*) son obligatorios}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{CU1}.
-\end{UCtrayectoriaA}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
-
-\begin{UCtrayectoriaA}{E}{El ISBN que se intenta registrar ya existe en el sistema.}
-	\UCpaso Encuentra un libro registrado con el mismo ISBN que el libro que se está registrando.
-    \UCpaso Muestra el mensaje \MSGref{MSG3}{El libro con el ISBN [Número de ISBN] ya existe.}
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}
-    \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{CU1}.
-\end{UCtrayectoriaA}
