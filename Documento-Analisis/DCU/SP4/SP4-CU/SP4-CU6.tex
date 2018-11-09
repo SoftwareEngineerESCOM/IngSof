@@ -1,5 +1,5 @@
 % Consultar Mapa Curricular.
-\begin{UseCase}{SP4-CU6}{COnsultar Mapa Curricular}{El usuario Docente visualiza la totalidad de los contenidos del Mapa Curricular registrados.}
+\begin{UseCase}{SP4-CU6}{Consultar Mapa Curricular}{El usuario Docente visualiza la totalidad de los contenidos del Mapa Curricular registrados.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Cervantes Moreno Christian Andres}
 		\UCitem{Supervisa}{\color{Gray} Evelyn Reyes}
@@ -66,8 +66,8 @@
 
 \begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo de la Unidad de Aprendizaje}
 	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{registrar}
-	\UCpaso Muestra el mensaje \MSGref{MSG4}{.Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde. }
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{rconsultar}
+	\UCpaso Muestra el mensaje \MSGref{MSG2}{.Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde. }
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
 	 \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}
 
@@ -88,7 +88,6 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
 
 \begin{UCtrayectoriaA}{B.1}{El actor presiona accidentalmente el botón Eliminar}
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
 	\UCpaso Muestra el mensaje \MSGref{MSG1}{¿Seguro que desea eliminar el registro?}.
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
 	\UCpaso Cierra el mensaje.
