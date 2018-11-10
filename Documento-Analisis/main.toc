@@ -34,5 +34,5 @@
 \contentsline {subsection}{\numberline {1.0.32}MSG31. Los cambios se guardaron exitosamente.}{35}{subsection.1.0.32}
 \contentsline {subsection}{\numberline {1.0.33}MSG32. Todos los campos son obligatorios}{35}{subsection.1.0.33}
 \contentsline {subsection}{\numberline {1.0.34}MSG33. El Recurso Humano con la Matr\IeC {\'\i }cula de Empleado [N\IeC {\'u}mero de Matr\IeC {\'\i }cula de Empleado] ya existe.}{35}{subsection.1.0.34}
-\contentsline {subsection}{\numberline {1.0.35}MSG34. \IeC {\textquestiondown }Esta\GenericError {(inputenc) }{Package inputenc Error: Unicode char ́ (U+301)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.} seguro que desea Eliminar al Usuario con Matricula [no.matricula]?}{35}{subsection.1.0.35}
+\contentsline {subsection}{\numberline {1.0.35}MSG34. \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea Eliminar al Recurso Humano con Matricula [no.matricula]?}{35}{subsection.1.0.35}
 \contentsline {chapter}{\numberline {2}Especificaci\IeC {\'o}n de Casos de Uso}{41}{chapter.2}

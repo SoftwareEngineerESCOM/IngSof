@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.17)  10 NOV 2018 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.17)  10 NOV 2018 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -801,9 +801,6 @@ LaTeX Info: Redefining \% on input line 23.
 
 LaTeX Warning: Label `fig:MSG21' multiply defined.
 
-
-LaTeX Warning: Label `fig:MSG27' multiply defined.
-
 ))
 \openout1 = `main.aux'.
 
@@ -1000,27 +997,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 32.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 32.
- [3]
-
-! Package inputenc Error: Unicode char \GenericError {(inputenc)               
- }{Package inputenc Error: Unicode char ́ (U+301)
-(inputenc) not set up for use with LaTeX}{See the inputenc package documentatio
-n for explanation.}{Your command was ignored.
-(inputenc) Type  I <command> <return>  to replace it with another command,
-(inputenc) or  <return>  to continue without it.} (U+301)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...la [no.matricula]?}{35}{subsection.1.0.35}
-                                                  
-Your command was ignored.
-Type I <command><return>to replace it with another command,
-or <return>to continue without it.
-
-)
+ [3])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -1032,7 +1009,8 @@ Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 18.
 LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <5> not available
 (Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 18.
 LaTeX Font Info:    Try loading font information for U+mvs on input line 18.
- (/usr/share/texlive/texmf-dist/tex/latex/marvosym/umvs.fd)
+
+(/usr/share/texlive/texmf-dist/tex/latex/marvosym/umvs.fd)
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 18.
 Package babel Info: Redefining spanish shorthand >>
@@ -2520,49 +2498,6 @@ File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 455.
 (pdftex.def)             Requested size: 200.19054pt x 267.27354pt.
-
-
-! Package inputenc Error: Unicode char ́ (U+301)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.456 ...ro de Matrícula de Empleado] ya existe.}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Unicode char ́ (U+301)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.456 ...ro de Matrícula de Empleado] ya existe.}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Unicode char ́ (U+301)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.463 ...al Usuario con Matricula [no.matricula]?}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 463.
 Package babel Info: Redefining spanish shorthand >>
@@ -2579,20 +2514,6 @@ File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 470.
 (pdftex.def)             Requested size: 200.19054pt x 267.27354pt.
-
-! Package inputenc Error: Unicode char ́ (U+301)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.471 ...al Usuario con Matricula [no.matricula]?}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 )
 File: IG-GRAL/headerInp.JPG Graphic file (type jpg)
 <use IG-GRAL/headerInp.JPG>
@@ -2818,7 +2739,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FDA6011C8298F2B466583E2D6EA9BA3A;4404.
+(rerunfilecheck)             Checksum: FA49A689EEF30A68DBCBBC4189BC5913;4414.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2826,20 +2747,20 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
  ) 
 Here is how much of TeX's memory you used:
- 10485 strings out of 492982
- 153117 string characters out of 6134895
- 261344 words of memory out of 5000000
- 13732 multiletter control sequences out of 15000+600000
+ 10475 strings out of 492982
+ 152991 string characters out of 6134895
+ 261411 words of memory out of 5000000
+ 13722 multiletter control sequences out of 15000+600000
  14873 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,15n,45p,613b,673s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,15n,45p,327b,673s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr17.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/hfbright/hfbrbx10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/hfbright/hfbrsl8.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/marvosym/marvosym.pfb>
-Output written on main.pdf (41 pages, 133343 bytes).
+Output written on main.pdf (41 pages, 133334 bytes).
 PDF statistics:
  464 PDF objects out of 1000 (max. 8388607)
  404 compressed objects within 5 object streams
