@@ -72,6 +72,18 @@
 	\hypersetup{linkcolor=refColor}%
 }
 
+\newcommand{\MSGdes}[3]{%
+	\subsection{#1 #2}%
+	Descripción: #3%
+	\begin{figure}[htbp!]%
+		\begin{center}%
+			\hypertarget{#1}{\includegraphics[width=0.75\textwidth]{images/MSG/ancla}}%
+			\caption{#1 #2}%
+			\label{#1}%
+		\end{center}%
+	\end{figure}%
+}
+
 \newcommand{\Trayref}[1]{$[$Trayectoria #1$]$}
 \newcommand{\RFref}[1]{%
 \hypersetup{linkcolor=RFReferenceColor}%
