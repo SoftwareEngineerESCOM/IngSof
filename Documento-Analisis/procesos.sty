@@ -4,7 +4,6 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{listings}
 \usepackage{keystroke}
-\usepackage{fancybox}
 \RequirePackage{pgfkeys}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -73,12 +72,12 @@
 	\hypersetup{linkcolor=refColor}%
 }
 
-\newcommand{\MSGdes}[3]{%
+\newcommand{\MSGdes}[4]{%
 	\hypertarget{#1}{\subsection{#1 #2}}%
 	Descripción: #3%
 	\begin{figure}[htbp!]%
 		\begin{center}%
-			\includegraphics[width=0.75\textwidth]{images/MSG/ancla}%
+			\includegraphics[width=0.75\textwidth]{images/MSG/#4}%
 			\caption{#1 #2}%
 			\label{#1}%
 		\end{center}%
@@ -274,8 +273,7 @@
 \newcommand{\BRitem}[1][]{\item[#1]}
 
 %\newcommand{\IUbutton}[1]{\framebox[1.1\width][c]{#1}}
-\cornersize{.2}
-\newcommand{\IUbutton}[1]{\Ovalbox{\bf #1}}
+\newcommand{\IUbutton}[1]{\keystroke{#1}}
 
 \newenvironment{Citemize}%
 {%
