@@ -72,6 +72,18 @@
 	\hypersetup{linkcolor=refColor}%
 }
 
+\newcommand{\MSGdes}[3]{%
+	\subsection{#1 #2}%
+	Descripción: #3%
+	\begin{figure}[htbp!]%
+		\begin{center}%
+			\hypertarget{#1}{\includegraphics[width=0.75\textwidth]{images/MSG/ancla}}%
+			\caption{#1 #2}%
+			\label{#1}%
+		\end{center}%
+	\end{figure}%
+}
+
 \newcommand{\Trayref}[1]{$[$Trayectoria #1$]$}
 \newcommand{\RFref}[1]{%
 \hypersetup{linkcolor=RFReferenceColor}%
@@ -180,7 +192,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Comando para describir una trayectoria principal
-% use: 
+% use:
 % \begin{UCtrayectoria}{prefijo}{nombre}
 %    \UCpaso[\UCActor] El actor oprime el boton buscar
 %    \UCpaso[\UCsist] El sistema ...
@@ -200,7 +212,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Comando para describir trayectorias Alternativas
-% use: 
+% use:
 % \begin{UCtrayectoriaA}{Id}{Condicion}
 %    \UCpaso[\UCActor] El actor oprime el boton buscar
 %    \UCpaso[\UCsist] El sistema ...
@@ -242,8 +254,8 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Comandos para agregar un paso a una trayectoria, el paso puede ser 
-% dado por el actor \UCactor o por el sistema \UCsist, por defecto el 
+% Comandos para agregar un paso a una trayectoria, el paso puede ser
+% dado por el actor \UCactor o por el sistema \UCsist, por defecto el
 % paso es dado por el sistema.
 % usar \UCpaso[\UCactor]
 \newcommand{\UCpaso}[1][\UCsist]{\item #1 }
@@ -259,7 +271,7 @@
 }
 
 \newcommand{\BRitem}[1][]{\item[#1]}
- 
+
 %\newcommand{\IUbutton}[1]{\framebox[1.1\width][c]{#1}}
 \newcommand{\IUbutton}[1]{\keystroke{#1}}
 
