@@ -4,7 +4,6 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{listings}
 \usepackage{keystroke}
-\usepackage{fancybox}
 \RequirePackage{pgfkeys}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -71,6 +70,18 @@
 	\hypersetup{linkcolor=UCBussinesRuleColor}%
 	\hyperlink{#1}{#1 #2}%
 	\hypersetup{linkcolor=refColor}%
+}
+
+\newcommand{\MSGdes}[3]{%
+	\subsection{#1 #2}%
+	Descripción: #3%
+	\begin{figure}[htbp!]%
+		\begin{center}%
+			\hypertarget{#1}{\includegraphics[width=0.75\textwidth]{images/MSG/ancla}}%
+			\caption{#1 #2}%
+			\label{#1}%
+		\end{center}%
+	\end{figure}%
 }
 
 \newcommand{\Trayref}[1]{$[$Trayectoria #1$]$}
@@ -181,7 +192,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Comando para describir una trayectoria principal
-% use: 
+% use:
 % \begin{UCtrayectoria}{prefijo}{nombre}
 %    \UCpaso[\UCActor] El actor oprime el boton buscar
 %    \UCpaso[\UCsist] El sistema ...
@@ -201,7 +212,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Comando para describir trayectorias Alternativas
-% use: 
+% use:
 % \begin{UCtrayectoriaA}{Id}{Condicion}
 %    \UCpaso[\UCActor] El actor oprime el boton buscar
 %    \UCpaso[\UCsist] El sistema ...
@@ -240,12 +251,11 @@
 % de una trayectoria actor o sistema
 \newcommand\UCactor{\includegraphics[height=11pt]{images/uc/actor}}
 \newcommand\UCsist{\includegraphics[height=11pt]{images/uc/usecase}}
-\newcommand\BtnModal{\includegraphics[height=11pt]{images/uc/launch} }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Comandos para agregar un paso a una trayectoria, el paso puede ser 
-% dado por el actor \UCactor o por el sistema \UCsist, por defecto el 
+% Comandos para agregar un paso a una trayectoria, el paso puede ser
+% dado por el actor \UCactor o por el sistema \UCsist, por defecto el
 % paso es dado por el sistema.
 % usar \UCpaso[\UCactor]
 \newcommand{\UCpaso}[1][\UCsist]{\item #1 }
@@ -261,11 +271,9 @@
 }
 
 \newcommand{\BRitem}[1][]{\item[#1]}
- 
+
 %\newcommand{\IUbutton}[1]{\framebox[1.1\width][c]{#1}}
-%\newcommand{\IUbutton}[1]{\keystroke{#1}}
-\cornersize{.2}
-\newcommand{\IUbutton}[1]{\Ovalbox{\bf #1}}
+\newcommand{\IUbutton}[1]{\keystroke{#1}}
 
 \newenvironment{Citemize}%
 {%
