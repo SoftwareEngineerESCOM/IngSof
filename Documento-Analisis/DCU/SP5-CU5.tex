@@ -38,10 +38,10 @@
     \UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU2}{Gestionar empleados} la opción de editar un usuario. 
     \UCpaso  El sistema verifica la existencia de registros en los catálogos cargos  y  lugares de trabajo . [Trayectoria B] 
     \UCpaso El sistema carga la información del catalogo de empleado  según la \BRref{BR3}{Gestión de Usuarios} para el actor.
-    \UCpaso El sistema carga la pantalla  \IUref{IU7}{Editar empleados}.
+    \UCpaso El sistema carga la pantalla  \IUref{IU7}{Editar empleados}. [Trayectoria G] 
     \UCpaso[\UCactor] Edita la información de los empleados.[Trayectoria C] [Trayectoria D][Trayectoria E]
     \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Modificar}.
-    \UCpaso El sistema realiza la modificación de la información del empleado.
+    \UCpaso El sistema realiza la modificación de la información del empleado. [Trayectoria F] 
     \UCpaso  El sistema muestra el \MSGref{MSG27}{Empleado modificado}.    
     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}
 \end{UCtrayectoria}
@@ -60,7 +60,23 @@
 \begin{UCtrayectoriaA}{D}{El actor presiono el botón \IUbutton{Cancelar}.}
  \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}
 \end{UCtrayectoriaA}
+
 \begin{UCtrayectoriaA}{E}{El actor presiona el \IUbutton{+} que esta a un costado del cargo.}
  \UCpaso El sistema agrega otro selector de cargo y la información de este según la \BRref{BR3}{Gestión de Usuarios} para el actor.
  \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
+
+\begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{G}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
+    \UCpaso No se puede mostrar la página solicitada.
+    \UCpaso El sistema muestra el \MSGref{MSG24}{Por el momento la página solicitada no esta disponible}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}

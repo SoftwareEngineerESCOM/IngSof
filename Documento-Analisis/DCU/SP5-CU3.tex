@@ -37,11 +37,11 @@
     
     \UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU1}{Menú} la opción de gestionar usuarios. 
     \UCpaso  El sistema verifica la existencia de registros del catalogo. [Trayectoria B] 
-    \UCpaso El sistema carga la pantalla  \IUref{IU2}{Gestionar empleados}.
+    \UCpaso El sistema carga la pantalla  \IUref{IU2}{Gestionar empleados}. [Trayectoria I] 
     \UCpaso[\UCactor] Selecciona el cargo de los empleados a buscar. 
     \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Buscar}. [Trayectoria D] [Trayectoria C] [Trayectoria E]
     
-    \UCpaso El sistema despliega la información de los empleados permitidos para el Jefe de División de Innovación Académica de acuerdo a la regla de negocio BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria Principal punto 2] [Trayectoria F]
+    \UCpaso El sistema despliega la información de los empleados permitidos para el Jefe de División de Innovación Académica de acuerdo a la regla de negocio BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria Principal punto 2] [Trayectoria F] [Trayectoria H] 
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{B}{No existen registros en el catálogo de cargos.}
@@ -55,12 +55,12 @@
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{D}{El actor es el Jefe de Departamento e Innovación Curricular.}
- \UCpaso El sistema despliega la información  de los empleados permitidos para el Jefe de Departamento e Innovación Curricular de acuerdo a la BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria F]
+ \UCpaso El sistema despliega la información  de los empleados permitidos para el Jefe de Departamento e Innovación Curricular de acuerdo a la BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria F] [Trayectoria H] 
   \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU3}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{E}{El actor es el JIE.}
- \UCpaso El sistema despliega la información  de los empleados permitidos para el JIE de acuerdo a la BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}.[Trayectoria F]
+ \UCpaso El sistema despliega la información  de los empleados permitidos para el JIE de acuerdo a la BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}.[Trayectoria F] [Trayectoria H] 
  \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU3}.
 \end{UCtrayectoriaA}
 
@@ -70,5 +70,23 @@
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{G}{El actor presiona el botón \IUbutton{Aceptar}.}
-    \UCpaso     El sistema elimina al empleado.  
+    \UCpaso     El sistema elimina al empleado. [Trayectoria H]   
 \end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
+
+\begin{UCtrayectoriaA}{H}{La base de datos no está disponible, o hubo un error de conexión.}
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU1}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA I -------------------------
+
+\begin{UCtrayectoriaA}{I}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
+    \UCpaso No se puede mostrar la página solicitada.
+    \UCpaso El sistema muestra el \MSGref{MSG24}{Por el momento la página solicitada no esta disponible}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
+\end{UCtrayectoriaA}
+
