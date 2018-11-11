@@ -4,6 +4,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{listings}
 \usepackage{keystroke}
+\usepackage{fancybox}
 \RequirePackage{pgfkeys}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -251,7 +252,7 @@
 % de una trayectoria actor o sistema
 \newcommand\UCactor{\includegraphics[height=11pt]{images/uc/actor}}
 \newcommand\UCsist{\includegraphics[height=11pt]{images/uc/usecase}}
-
+\newcommand\BtnModal{\includegraphics[height=11pt]{images/uc/launch}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Comandos para agregar un paso a una trayectoria, el paso puede ser
@@ -273,7 +274,8 @@
 \newcommand{\BRitem}[1][]{\item[#1]}
 
 %\newcommand{\IUbutton}[1]{\framebox[1.1\width][c]{#1}}
-\newcommand{\IUbutton}[1]{\keystroke{#1}}
+\cornersize{.2}
+\newcommand{\IUbutton}[1]{\Ovalbox{\bf #1}}
 
 \newenvironment{Citemize}%
 {%
