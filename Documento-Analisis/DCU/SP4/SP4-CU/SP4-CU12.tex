@@ -12,9 +12,9 @@
         \UCitem{Origen}{Teclado.}
         \UCitem{Salidas}{
             \begin{itemize}
-                \item MSG1. ¿Está seguro que desea finalizar?.
-                \item MSG2. Revisión finalizada exitosamente.
-                \item MSG3. Ocurrió un error, por favor inténtelo más tarde.
+				\item \MSGref {MSG16}{¿Está seguro de finalizar la revisión?}
+				\item \MSGref {MSG18}{Revisión de Sección Finalizada.}
+				\item \MSGref {MSG24}{Por el momento la página solicitada no esta disponible.}   
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -44,9 +44,9 @@
     \UCpaso[\UCactor] Selecciona el semestre de la Unidades de Aprendizaje que desea revisar. [Trayectoria A]
     \UCpaso Expande el semestre seleccionado mostrando las Unidades de Aprendizaje registradas en el sistema. [Trayectoria A]
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}.
-    \UCpaso Muestra el mensaje \MSGref{MSG1}{¿Está seguro que desea finalizar?.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG16}{¿Está seguro de finalizar la revisión?}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}. [Trayectoria B]
-    \UCpaso Muestra el mensaje \MSGref{MSG2}{Revisión finalizada exitosamente}.[Trayectoria C]
+    \UCpaso Muestra el mensaje \MSGref{MSG18}{Revisión de Sección Finalizada.}.[Trayectoria C]
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}.
 \end{UCtrayectoria}
@@ -75,14 +75,14 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 \begin{UCtrayectoriaA}{C}{El actor realizó comentarios}
     \UCpaso Persiste los datos. [Trayectoria C.1]
-    \UCpaso Muestra el mensaje \MSGref{MSG2}{Revisión finalizada exitosamente}.
+    \UCpaso Muestra el mensaje \MSGref{MSG18}{Revisión de Sección Finalizada.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C.1 -------------------------
 \begin{UCtrayectoriaA}{C.1}{Ocurre un error al momento de persistir los datos}
-    \UCpaso Muestra el mensaje \MSGref{MSG3}{Ocurrió un error, por favor inténtelo más tarde.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG24}{Por el momento la página solicitada no esta disponible.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}.
 \end{UCtrayectoriaA}

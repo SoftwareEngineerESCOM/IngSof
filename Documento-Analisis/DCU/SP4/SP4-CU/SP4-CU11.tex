@@ -13,25 +13,26 @@
           	\item Primer Apellido (Tipo Alfanumérico)
           	\item Segundo Apellido (Tipo Alfanumérico)
           	\item Título (Tipo Alfanumérico)
-          	\item Cargo (Tipo Alfanumérico)
+          	\item Cargo (Tipo Alfanumérico) 	
           	\item Lugar de Trabajo (Tipo Alfanumérico)
-
+          	
           \end{itemize}
         }
 		\UCitem{Origen}{Teclado.}
 		\UCitem{Salidas}{
-        	\begin{itemize}
-        		\item MSG1. Todos los campos son obligatorios
-                \item MSG2. Registro finalizado exitosamente.
-                \item MSG3 ¿Seguro que desea cancelar?
-                \item MSG4 Entrada no Alfanumérica.
-                \item MSG7 Por el momento no se puede consultar.
-                \item MSG8 Matrícula no encontrada.
+        	\begin{itemize}{
+        		\item \MSGref {MSG4} {Los campos marcados con (*) son obligatorios.}
+                \item \MSGref {MSG31}{ Los cambios se guardaron exitosamente.}
+                \item \MSGref {MSG29} {¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+                \item \MSGref {MSG7} {Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+				\item \MSGref {MSG9} {Por el momento no se puede realizar el registro.}
+				\itam \MSGref {MSG20}{ Los campos no fueron contestados correctamente.}
+                \item \MSGref {MSG26} {La matrícula ingresada no se encuentra registrada en el sistema.}
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{}
-		\UCitem{Postcondiciones}{El Recurso Humano quedó actualizado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo.}
+		\UCitem{Postcondiciones}{El Recurso Humano quedó actualizado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo o quedó sin modificarse.}
 		\UCitem{Errores}{E1. Algúna entrada  contiene uno o más caracteres no alfanuméricos.
 		E2. No se encontró el Recurso Humano.
 		}
@@ -46,10 +47,10 @@
 
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.4.1-J}{Editar Recurso Humano}.
 
-	\UCpaso Ingresa la matrícula del Recurso Humano. [Trayectoria F]
-
+	\UCpaso Ingresa la matrícula del Recurso Humano. [Trayectoria F]    
+    
     \UCpaso Cargar datos del Recurso Humano correspondiente. [Trayectoria E]
-
+    
     \UCpaso[\UCactor] Cambia los datos de Recurso Humano.
 
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria A] [Trayectoria B]
@@ -58,7 +59,7 @@
 
     \UCpaso Guarda la información del Recurso Humano correspondiente.
 
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG2}{Registro finalizado exitosamente}.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{ Los cambios se guardaron exitosamente.}.
 
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 
@@ -71,7 +72,7 @@
 
 \begin{UCtrayectoriaA}{A}{El actor quiere cancelar la edición  del Recurso Humano correspondiente.}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
-    \UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
+    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
     \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Consultar Recurso Humano}
 \end{UCtrayectoriaA}
@@ -81,7 +82,7 @@
 
 \begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón Cancelar}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
-    \UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
+    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
     \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
     \UCpaso Cierra el mensaje.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
@@ -89,9 +90,9 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 
-\begin{UCtrayectoriaA}{C}{Uno o más campos no fueron contestados.}
+\begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados.}
 	\UCpaso Detecta uno o más campos sin contestar.
-    \UCpaso Muestra el mensaje \MSGref{MSG1}{Todos los campos son obligatorios}.
+    \UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
@@ -99,20 +100,20 @@
 
 \begin{UCtrayectoriaA}{D}{Alguna entrada  contiene caracteres no alfanuméricos}
 	\UCpaso El Sistema detecta caracteres no alfanuméricos E1.
-    \UCpaso Muestra el mensaje \MSGref{MSG4}{Entrada no Alfanumérica.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG20}{ Los campos no fueron contestados correctamente.}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
     %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 
 \begin{UCtrayectoriaA}{E}{No cargan los catálogos de Recurso Humano.}
-    \UCpaso Muestra el mensaje \MSGref{MSG7}{Por el momento no se puede consultar.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 \UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa(Pantalla de Abi).
 \end{UCtrayectoriaA}
     %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 
-\begin{UCtrayectoriaA}{E}{No existe ningún Recurso Humano con esa matrícula.}
-    \UCpaso Muestra el mensaje \MSGref{MSG8}{Matrícula no encontrada}.
+\begin{UCtrayectoriaA}{E}{No existe ningun Recurso Humano con esa matrícula.}
+    \UCpaso Muestra el mensaje \MSGref{MSG26}{La matrícula ingresada no se encuentra registrada en el sistema.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-\UCpaso Continúa en el paso  de búsqueda de matrícula.
+\UCpaso Continua en el paso  de búsqueda de matrícula.
 \end{UCtrayectoriaA}

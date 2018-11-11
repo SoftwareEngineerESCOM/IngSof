@@ -1,5 +1,5 @@
 % EDITAR UNIDAD DE APRENDIZAJE.
-\begin{UseCase}{SP4-CU9}{Editar Unidad de Aprendizaje}{El usuario Docente modifica los datos de las Unidades de Aprendizaje registradas en el sistema.}
+\begin{UseCase}{SP4-CU9}{Editar Unidad de Aprendizaje}{El usuario Docente modifica los datos de las Unidades de Aprendizaje registradas en el sistema..}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Cervantes Moreno Christian Andres}
 		\UCitem{Supervisa}{\color{Gray} Evelyn Reyes}
@@ -19,22 +19,22 @@
 		\UCitem{Origen}{Teclado, Mouse}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item MSG1. Todos los campos son obligatorios
-                \item MSG2. Unidad de Aprendizaje modificada exitosamente.
-                \item MSG3. ¿Seguro que desea cancelar?.
-                \item MSG4. Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde.
-                \item MSG5. Entrada no válida.
+        		\item  \MSGref {MSG4}{ Los campos marcados con (*) son obligatorios.}
+                \item \MSGref {MSG31}{ Los cambios se guardaron exitosamente.}
+                \item \MSGref {MSG29} {¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+                \item \MSGref {MSG7} {Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+				\item \MSGref { MSG9} {Por el momento no se puede realizar el registro.}
 
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{ Debe de existir al menos una Unidad de Aprendizaje registrada en el sistema.}
 		\UCitem{Postcondiciones}{La Unidad de Aprendizaje queda modificada en el sistema.}
-		\UCitem{Errores}{
+		\UCitem{Errores}{ 
 			  \begin{itemize}
-				\item E1. Entrada inválida de un caracter no entero.
-				\item E2. Entrada inválida de un caracter no double.
-				\item E2. Entrada inválida de un caracter.
+				\item E1. Entrada invalida de un caracter no entero.
+				\item E2. Entrada invalida de un caracter no double.
+				\item E2. Entrada invalida de un carácter
 			\end{itemize}
 		}
 		\UCitem{Estado}{Revisión.}
@@ -53,24 +53,34 @@
 
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1.2-D}{Registrar Unidad de Aprendizaje}.
     \UCpaso[\UCactor] Elige los campos que desea modificar.[Trayectoria B].
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria C] [Trayectoria D]
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria E]
-    \UCpaso Verifica que los datos correspondan al tipo de dato de cada campo.
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B] [Trayectoria C]
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
 
-    \UCpaso Guarda la información de la Unidad de Aprendizaje.
+    \UCpaso Guarda la información de la Unidad de Aprendizaje en la base de datos.
 
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG2}{Registro finalizado exitosamente}.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}.
 
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
 \end{UCtrayectoria}
 
+%------------------------ CU TRAYECTORIA ALTERNARIVA X -------------------------
+
+\begin{comment}
+\begin{UCtrayectoriaA}{A}{El sistema no encuentra ningún formulario para mostrar.}
+	\UCpaso No encuentra ningún formulario para mostrar.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG9}{Por el momento no se puede realizar el registro.}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{CU1}.
+\end{UCtrayectoriaA}
+\end{comment}
+
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 
 \begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo de la Unidad de Aprendizaje}
-	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
-	\UCpaso Muestra el mensaje \MSGref{MSG4}{.Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde. }
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{registrar}
+	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
 	 \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
 
@@ -143,7 +153,7 @@
 
 \begin{UCtrayectoriaA}{C}{El actor quiere cancelar el registro de Unidad de Aprendizaje.}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
-	\UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
+	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
 	\UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
 \end{UCtrayectoriaA}
@@ -154,7 +164,7 @@
 
 \begin{UCtrayectoriaA}{D}{El actor presiona accidentalmente el botón Cancelar}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
-	\UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
+	\UCpaso Muestra el mensaje \MSGref{MSG29}{ ¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
 	\UCpaso Cierra el mensaje.
 	\UCpaso Continúa en el paso 9 de la trayectoria principal del \UCref{SP4-CU3}.
@@ -164,9 +174,9 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 
-\begin{UCtrayectoriaA}{E}{Uno o más campos no fueron contestados.}
+\begin{UCtrayectoriaA}{E}{Uno o más campos obligatorios no fueron contestados.}
 	\UCpaso Detecta uno o más campos sin contestar.
-	\UCpaso Muestra el mensaje \MSGref{MSG1}{Todos los campos son obligatorios}.
+	\UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios.}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU2}.
 \end{UCtrayectoriaA}
