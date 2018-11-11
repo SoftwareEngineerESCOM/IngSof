@@ -14,10 +14,12 @@
 		\UCitem{Origen}{Teclado.}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item MSG1. Los campos marcados con (*) son obligatorios
-                \item MSG2. Registro finalizado exitosamente.
-                \item MSG3 ¿Seguro que desea cancelar?
-                \item MSG4 Entrada no Alfanumérica.
+        		
+        		\item \MSGref{MSG32}{Todos los campos son obligatorios}
+                \item \MSGref{MSG5}{Registro finalizado exitosamente.}
+                \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+                \item \MSGref{MSG20}{Los campos no fueron contestados correctamente.}
+                \item \MSGref{MSG24}{Por el momento la página solicitada no esta disponible}.
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -45,7 +47,7 @@
 
     \UCpaso Guarda la información del Programa Académico correspondiente.
 
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG2}{Registro finalizado exitosamente}.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente.}
 
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 
@@ -58,7 +60,7 @@
 
 \begin{UCtrayectoriaA}{A}{El actor quiere cancelar la edición  del Programa Académico correspondiente.}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
-    \UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
+    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
     \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.2-J}{Consultar Programas Académicos}
 \end{UCtrayectoriaA}
@@ -68,7 +70,7 @@
 
 \begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón Cancelar}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
-    \UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
+    \UCpaso Muestra el mensaje\MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
     \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
     \UCpaso Cierra el mensaje.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU1}.
@@ -78,7 +80,7 @@
 
 \begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados.}
 	\UCpaso Detecta uno o más campos sin contestar.
-    \UCpaso Muestra el mensaje \MSGref{MSG1}{Los campos marcados con (*) son obligatorios}.
+    \UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
@@ -86,13 +88,13 @@
 
 \begin{UCtrayectoriaA}{D}{El Nombre de Programa Académico contiene caracteres no alfanuméricos}
 	\UCpaso El Sistema detecta caracteres no alfanuméricos E1.
-    \UCpaso Muestra el mensaje \MSGref{MSG4}{Entrada no Alfanumérica.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG20}{Los campos no fueron contestados correctamente.}
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
     %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 
 \begin{UCtrayectoriaA}{E}{No cargan los catálogos de Programas Académicos.}
-    \UCpaso Muestra el mensaje \MSGref{MSG7}{Por el momento no se puede consultar.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG24}{Por el momento la página solicitada no esta disponible}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 \UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa(Pantalla de Abi).
 \end{UCtrayectoriaA}

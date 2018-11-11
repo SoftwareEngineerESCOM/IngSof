@@ -9,8 +9,9 @@
 		\UCitem{Origen}{Teclado, Mouse}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item MSG1. ¿Seguro que desea eliminar?
-                \item MSG2. Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde.
+ 
+        		\item \MSGref{MSG36}{¿Seguro que desea eliminar el registro?}.
+                \item \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde}.
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -67,7 +68,7 @@
 \begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo de la Unidad de Aprendizaje}
 	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{rconsultar}
-	\UCpaso Muestra el mensaje \MSGref{MSG2}{.Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde. }
+	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde}.
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
 	 \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}
 
@@ -79,7 +80,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 
 \begin{UCtrayectoriaA}{B}{El usuario desea eliminar la Unidad de Aprendizaje.}
-	\UCpaso  Muestra el mensaje \MSGref{MSG1}{¿Seguro que desea eliminar el registro?}.
+	\UCpaso  Muestra el mensaje \MSGref{MSG36}{¿Seguro que desea eliminar el registro?}.
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Aceptar}.
 	\UCpaso Elimina la Unidad de Aprendizaje.
 \end{UCtrayectoriaA}
@@ -88,7 +89,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
 
 \begin{UCtrayectoriaA}{B.1}{El actor presiona accidentalmente el botón Eliminar}
-	\UCpaso Muestra el mensaje \MSGref{MSG1}{¿Seguro que desea eliminar el registro?}.
+	\UCpaso Muestra el mensaje \MSGref{MSG36}{¿Seguro que desea eliminar el registro?}.
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
 	\UCpaso Cierra el mensaje.
 

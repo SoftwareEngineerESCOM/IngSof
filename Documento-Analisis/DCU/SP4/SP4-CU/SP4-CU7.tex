@@ -12,8 +12,10 @@
         \UCitem{Origen}{Teclado.}
         \UCitem{Salidas}{
             \begin{itemize}
-                \item MSG1. Los catálogos necesarios no están disponibles por el momento, por favor inténtelo más tarde.
-                \item MSG2. ¿Está seguro que desea Eliminar al Usuario con Matricula [no.matricula]?
+                \item \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde}.
+                
+                \item \MSGref{MSG34}{¿Está seguro que desea Eliminar al Recurso Humano con Matricula [no.matricula]}.
+   
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -54,7 +56,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 
 \begin{UCtrayectoriaA}{A}{Los catálogos no se pudieron cargar.}
-    \UCpaso Muestra el mensaje \MSGref{MSG1}{Los catálogos necesarios no están disponibles por el momento, por favor inténtelo más tarde}.
+    \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de Inicio (abi) .
 \end{UCtrayectoriaA}
@@ -70,14 +72,14 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 
 \begin{UCtrayectoriaA}{C}{El actor presiona la casilla "Eliminar" de un Recurso Humano desplegado}
-    \UCpaso Muestra el mensaje \MSGref{MSG2}{¿Está seguro que desea Eliminar al Recurso Humano con la Matricula de Empleado [no.matricula]?}.
+    \UCpaso Muestra el mensaje \MSGref{MSG34}{¿Está seguro que desea Eliminar al Recurso Humano con Matricula [no.matricula]}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
     \UCpaso Repite la trayectoria principal del \UCref{SP4-CU7} desde el paso 3.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C.1 -------------------------
 
 \begin{UCtrayectoriaA}{C.1}{El actor presiona por accidente la casilla "Eliminar" de un Recurso Humano desplegado}
-    \UCpaso Muestra el mensaje \MSGref{MSG2}{¿Está seguro que desea Eliminar al Recurso Humano con la Matricula de Empleado [no.matricula]?}.
+    \UCpaso Muestra el mensaje \MSGref{MSG34}{¿Está seguro que desea Eliminar al Recurso Humano con Matricula [no.matricula]}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
     \UCpaso Repite la trayectoria principal del \UCref{SP4-CU7} desde el paso 3.
 \end{UCtrayectoriaA}
