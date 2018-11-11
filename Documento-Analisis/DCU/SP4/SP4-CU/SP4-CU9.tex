@@ -19,18 +19,18 @@
 		\UCitem{Origen}{Teclado, Mouse}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item  \MSGref {MSG4}{ Los campos marcados con (*) son obligatorios.}
-                \item \MSGref {MSG31}{ Los cambios se guardaron exitosamente.}
-                \item \MSGref {MSG29} {¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-                \item \MSGref {MSG7} {Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
-				\item \MSGref { MSG9} {Por el momento no se puede realizar el registro.}
+        		\item \MSGref{MSG32}{Todos los campos son obligatorios.}
+                \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
+                \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+                \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+				\item \MSGref{MSG9}{Por el momento no se puede realizar el registro.}
 
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{ Debe de existir al menos una Unidad de Aprendizaje registrada en el sistema.}
 		\UCitem{Postcondiciones}{La Unidad de Aprendizaje queda modificada en el sistema.}
-		\UCitem{Errores}{ 
+		\UCitem{Errores}{
 			  \begin{itemize}
 				\item E1. Entrada invalida de un caracter no entero.
 				\item E2. Entrada invalida de un caracter no double.
@@ -176,7 +176,7 @@
 
 \begin{UCtrayectoriaA}{E}{Uno o más campos obligatorios no fueron contestados.}
 	\UCpaso Detecta uno o más campos sin contestar.
-	\UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios.}.
+	\UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU2}.
 \end{UCtrayectoriaA}

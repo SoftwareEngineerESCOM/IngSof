@@ -12,9 +12,9 @@
         \UCitem{Origen}{Teclado.}
         \UCitem{Salidas}{
             \begin{itemize}
-				\item \MSGref {MSG16}{¿Está seguro de finalizar la revisión?}
-				\item \MSGref {MSG18}{Revisión de Sección Finalizada.}
-				\item \MSGref {MSG24}{Por el momento la página solicitada no esta disponible.}   
+				\item \MSGref{MSG16}{¿Está seguro de finalizar la revisión?}
+				\item \MSGref{MSG18}{Revisión de Sección Finalizada.}
+				\item \MSGref{MSG25}{Ha ocurrido un error con la base de datos.}
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -82,7 +82,7 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C.1 -------------------------
 \begin{UCtrayectoriaA}{C.1}{Ocurre un error al momento de persistir los datos}
-    \UCpaso Muestra el mensaje \MSGref{MSG24}{Por el momento la página solicitada no esta disponible.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Ha ocurrido un error con la base de datos.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}.
 \end{UCtrayectoriaA}
