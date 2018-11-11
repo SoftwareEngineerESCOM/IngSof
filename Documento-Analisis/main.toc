@@ -25,7 +25,7 @@
 \contentsline {subsection}{\numberline {1.0.23}MSG22 \IeC {\textquestiondown }Seguro de eliminar al empleado ''Nombre'' con matr\IeC {\'\i }cula: ''Matr\IeC {\'\i }cula'' del sistema?}{17}{subsection.1.0.23}
 \contentsline {subsection}{\numberline {1.0.24}MSG23 Los porcentajes de evaluaci\IeC {\'o}n no cumplen con el porcentaje total.}{17}{subsection.1.0.24}
 \contentsline {subsection}{\numberline {1.0.25}MSG24 Por el momento la p\IeC {\'a}gina solicitada no esta disponible.}{17}{subsection.1.0.25}
-\contentsline {subsection}{\numberline {1.0.26}MSG25 Ha ocurrido un error con la base de datos.}{17}{subsection.1.0.26}
+\contentsline {subsection}{\numberline {1.0.26}MSG25 Servicios no disponibles por el momento.}{17}{subsection.1.0.26}
 \contentsline {subsection}{\numberline {1.0.27}MSG26 La matr\IeC {\'\i }cula ingresada no se encuentra registrada en el sistema.}{19}{subsection.1.0.27}
 \contentsline {subsection}{\numberline {1.0.28}MSG27 Empleado modificado.}{19}{subsection.1.0.28}
 \contentsline {subsection}{\numberline {1.0.29}MSG28 El autor: "Nombre Primer Apellido Segundo Apellido" ya existe.}{19}{subsection.1.0.29}

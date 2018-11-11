@@ -17,12 +17,12 @@
         \UCitem{Origen}{Teclado.}
         \UCitem{Salidas}{
             \begin{itemize}
-                \item MSG1 Todos los campos son obligatorios
-                \item MSG2 Registro finalizado exitosamente.
-                \item MSG3 El Recurso Humano con la Matrícula de Empleado [Número de Matrícula de Empleado] ya existe.
-                \item MSG5 ¿Está seguro que desea cancelar?
-                \item MSG6 Los catálogos necesarios no están disponibles por el momento, por favor inténtelo más tarde.
-                \item MSG7 Ocurrió un error, por favor inténtelo más tarde.
+                \item MSG32 Todos los campos son obligatorios
+                \item MSG5 Registro finalizado exitosamente.
+                \item MSG33 El Recurso Humano con la Matrícula de Empleado [Número de Matrícula de Empleado] ya existe.
+                \item MSG29 ¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.
+                \item MSG7 Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.
+                \item MSG25 Ha ocurrido un error con la base de datos.
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -59,7 +59,7 @@
     \UCpaso Verifica que todos los campos hayan sido contestados. [Trayectoria C]
     \UCpaso Valida que no exista un Recurso Humano con la misma Matrícula. [Trayectoria D]
     \UCpaso Persiste los datos ingresados. [Trayectoria E]
-    \UCpaso Muestra el mensaje \MSGref{MSG2}{Registro finalizado exitosamente}.
+    \UCpaso Muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoria}
@@ -67,14 +67,14 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 
 \begin{UCtrayectoriaA}{A}{Los catálogos no se pudieron cargar.}
-    \UCpaso Muestra el mensaje \MSGref{MSG6}{Los catálogos necesarios no están disponibles por el momento, por favor inténtelo más tarde}.
+    \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 
 \begin{UCtrayectoriaA}{B}{El actor presiona el botón Cancelar}
-    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Está seguro que desea cancelar el registro?}.
+    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}
@@ -90,7 +90,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 
 \begin{UCtrayectoriaA}{C}{Uno o más campos no fueron contestados.}
-    \UCpaso Muestra el mensaje \MSGref{MSG1}{Todos los campos son obligatorios}.
+    \UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU4}.
 \end{UCtrayectoriaA}
@@ -98,7 +98,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 
 \begin{UCtrayectoriaA}{D}{La Matrícula de Empleado ingresada ya está registrada en el sistema.}
-    \UCpaso Muestra el mensaje \MSGref{MSG3}{El Recurso Humano con la Matrícula de Empleado [Número de Matrícula de Empleado] ya existe}.
+    \UCpaso Muestra el mensaje \MSGref{MSG33}{El Recurso Humano con la Matrícula de Empleado [Número de Matrícula de Empleado] ya existe}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU4}.
 \end{UCtrayectoriaA}
@@ -106,7 +106,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 
 \begin{UCtrayectoriaA}{E}{Ocurre un error al momento de persistir los datos.}
-    \UCpaso Muestra el mensaje \MSGref{MSG7}{Ocurrió un error, por favor inténtelo más tarde.}
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Ha ocurrido un error con la base de datos.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}

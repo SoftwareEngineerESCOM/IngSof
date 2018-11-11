@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.17)  10 NOV 2018 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.17)  10 NOV 2018 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -781,19 +781,32 @@ File: keystroke_right.pdf Graphic file (type pdf)
 Package pdftex.def Info: keystroke_right.pdf  used on input line 173.
 (pdftex.def)             Requested size: 42.15738pt x 195.73076pt.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box36
+\shadowsize=\dimen128
+\@Sbox=\box37
+\do@VerbBox=\toks24
+\the@fancyput=\toks25
+\this@fancyput=\toks26
+\EndVerbatimTokens=\toks27
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks24
-\pgfkeys@temptoks=\toks25
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks26
+\pgfkeys@tmptoks=\toks30
 )))) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks27
-\verbatim@line=\toks28
-\verbatim@in@stream=\read1
+\every@verbatim=\toks31
+\verbatim@line=\toks32
+\verbatim@in@stream=\read2
 ) (./main.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
@@ -820,16 +833,16 @@ LaTeX Info: Redefining \% on input line 10.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
-\scratchdimen=\dimen128
-\scratchbox=\box36
+\scratchdimen=\dimen129
+\scratchbox=\box38
 \nofMPsegments=\count123
 \nofMParguments=\count124
-\everyMPshowfont=\toks29
+\everyMPshowfont=\toks33
 \MPscratchCnt=\count125
-\MPscratchDim=\dimen129
+\MPscratchDim=\dimen130
 \MPnumerator=\count126
 \makeMPintoPDFobject=\count127
-\everyMPtoPDFconversion=\toks30
+\everyMPtoPDFconversion=\toks34
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -847,7 +860,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box37
+\AtBeginShipoutBox=\box39
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -897,8 +910,8 @@ LaTeX Info: Redefining \pageref on input line 10.
 LaTeX Info: Redefining \nameref on input line 10.
 
 (./main.out) (./main.out)
-\@outlinefile=\write3
-\openout3 = `main.out'.
+\@outlinefile=\write4
+\openout4 = `main.out'.
 
 \c@lstlisting=\count129
 LaTeX Font Info:    Try loading font information for OML+cmbrm on input line 13
@@ -1030,8 +1043,8 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 78.
  [4 <./IG-GRAL/headerPar.JPG>])
-\tf@toc=\write4
-\openout4 = `main.toc'.
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
 <IG-GRAL/headerInp.JPG, id=481, 437.38406pt x 45.92157pt>
 File: IG-GRAL/headerInp.JPG Graphic file (type jpg)
@@ -2311,178 +2324,179 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 2.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 2.
-LaTeX Font Info:    Try loading font information for OMS+cmbr on input line 13.
+LaTeX Font Info:    Try loading font information for OMS+cmbr on input line 12.
 
 (/usr/share/texlive/texmf-dist/tex/latex/cmbright/omscmbr.fd
 File: omscmbr.fd 2005/04/13 v8.1 (WaS)
 )
 LaTeX Font Info:    Font shape `OMS/cmbr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmbrs/m/n' tried instead on input line 13.
+(Font)              Font shape `OMS/cmbrs/m/n' tried instead on input line 12.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 28.
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 
  []
 
 <images/uc/actor.png, id=650, 96.36pt x 74.2775pt>
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 34.
+Package pdftex.def Info: images/uc/actor.png  used on input line 33.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 <images/uc/iu.png, id=651, 61.22874pt x 55.20625pt>
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 34.
+Package pdftex.def Info: images/uc/iu.png  used on input line 33.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 <images/uc/usecase.png, id=653, 91.34125pt x 61.22874pt>
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 36.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 35.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 36.
+Package pdftex.def Info: images/uc/iu.png  used on input line 35.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: IG-GRAL/headerPar.JPG Graphic file (type jpg)
 <use IG-GRAL/headerPar.JPG>
-Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 37.
+Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 36.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 [26
 
- <./images/uc/default.png> <./images/uc/actor.png> </usr/share/texlive/texmf-di
-st/tex/latex/keystroke/keystroke_left.pdf> </usr/share/texlive/texmf-dist/tex/l
-atex/keystroke/keystroke_middle.pdf> </usr/share/texlive/texmf-dist/tex/latex/k
-eystroke/keystroke_right.pdf> <./images/uc/iu.png>]
+ <./images/uc/default.png> <./images/uc/actor.png> <./images/uc/iu.png>]
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 37.
+Package pdftex.def Info: images/uc/actor.png  used on input line 36.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 39.
+Package pdftex.def Info: images/uc/actor.png  used on input line 38.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 41.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 40.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 
-Overfull \hbox (0.89537pt too wide) in paragraph at lines 41--42
+Overfull \hbox (0.89537pt too wide) in paragraph at lines 40--41
 [][] \OT1/cmbr/m/n/10 Ve-ri-fi-ca que to-dos los cam-pos mar-ca-dos co-mo obli-
 ga-to-rios ha-yan si-do con-tes-ta-dos. [Tra-yec-to-ria C][Trayectoria
  []
 
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 43.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 42.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 45.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 44.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 47.
+Package pdftex.def Info: images/uc/actor.png  used on input line 46.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 49.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 48.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 49.
+Package pdftex.def Info: images/uc/iu.png  used on input line 48.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 50.
+(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 49.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 57.
+Package pdftex.def Info: images/uc/actor.png  used on input line 56.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 58.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 57.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 59.
+Package pdftex.def Info: images/uc/actor.png  used on input line 58.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 60.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 59.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 60.
+Package pdftex.def Info: images/uc/iu.png  used on input line 59.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 67.
+Package pdftex.def Info: images/uc/actor.png  used on input line 66.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 68.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 67.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 69.
+Package pdftex.def Info: images/uc/actor.png  used on input line 68.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 69.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 70.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 71.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 76.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 77.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 78.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 79.
+Package pdftex.def Info: images/uc/actor.png  used on input line 78.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 80.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 79.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 84.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
@@ -2491,10 +2505,6 @@ Package pdftex.def Info: images/uc/usecase.png  used on input line 85.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 86.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 87.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 ) (./DCU/SP4/SP4-CU/SP4-CU2.tex
 File: IG-GRAL/headerInp.JPG Graphic file (type jpg)
@@ -2573,70 +2583,74 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 2.
 File: IG-GRAL/headerPar.JPG Graphic file (type jpg)
 <use IG-GRAL/headerPar.JPG>
-Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 40.
+Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 39.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 [28]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 39.
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
 
  []
 
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 46.
+Package pdftex.def Info: images/uc/actor.png  used on input line 45.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 46.
+Package pdftex.def Info: images/uc/iu.png  used on input line 45.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 49.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 48.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 52.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 51.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 52.
+Package pdftex.def Info: images/uc/iu.png  used on input line 51.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
+File: images/uc/actor.png Graphic file (type png)
+<use images/uc/actor.png>
+Package pdftex.def Info: images/uc/actor.png  used on input line 52.
+(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 53.
@@ -2661,138 +2675,134 @@ File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 58.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: images/uc/actor.png Graphic file (type png)
-<use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 59.
-(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 60.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 59.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 62.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 61.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 64.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 63.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 66.
+Package pdftex.def Info: images/uc/actor.png  used on input line 65.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 68.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 67.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 68.
+Package pdftex.def Info: images/uc/iu.png  used on input line 67.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 86.
+Package pdftex.def Info: images/uc/actor.png  used on input line 85.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 87.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 86.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 88.
+Package pdftex.def Info: images/uc/actor.png  used on input line 87.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 89.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 88.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 89.
+Package pdftex.def Info: images/uc/iu.png  used on input line 88.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 97.
+Package pdftex.def Info: images/uc/actor.png  used on input line 96.
+(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 97.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/actor.png Graphic file (type png)
+<use images/uc/actor.png>
+Package pdftex.def Info: images/uc/actor.png  used on input line 98.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: IG-GRAL/headerInp.JPG Graphic file (type jpg)
 <use IG-GRAL/headerInp.JPG>
-Package pdftex.def Info: IG-GRAL/headerInp.JPG  used on input line 98.
+Package pdftex.def Info: IG-GRAL/headerInp.JPG  used on input line 99.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 [29]
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 98.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/actor.png Graphic file (type png)
-<use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 99.
-(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 100.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 99.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 100.
+Package pdftex.def Info: images/uc/iu.png  used on input line 99.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 108.
+Package pdftex.def Info: images/uc/actor.png  used on input line 107.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 109.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 108.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 110.
+Package pdftex.def Info: images/uc/actor.png  used on input line 109.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 110.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 111.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 112.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 119.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 120.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 121.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 122.
+Package pdftex.def Info: images/uc/actor.png  used on input line 121.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 123.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 122.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 ) (./DCU/SP4/SP4-CU/SP4-CU3.tex
 File: IG-GRAL/headerPar.JPG Graphic file (type jpg)
@@ -2871,70 +2881,78 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 2.
 File: IG-GRAL/headerInp.JPG Graphic file (type jpg)
 <use IG-GRAL/headerInp.JPG>
-Package pdftex.def Info: IG-GRAL/headerInp.JPG  used on input line 42.
+Package pdftex.def Info: IG-GRAL/headerInp.JPG  used on input line 40.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 [31]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 40.
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 
  []
 
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 48.
+Package pdftex.def Info: images/uc/actor.png  used on input line 46.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 48.
+Package pdftex.def Info: images/uc/iu.png  used on input line 46.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 51.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 49.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 54.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 52.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 54.
+Package pdftex.def Info: images/uc/iu.png  used on input line 52.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
+File: images/uc/actor.png Graphic file (type png)
+<use images/uc/actor.png>
+Package pdftex.def Info: images/uc/actor.png  used on input line 53.
+(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/actor.png Graphic file (type png)
+<use images/uc/actor.png>
+Package pdftex.def Info: images/uc/actor.png  used on input line 54.
+(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 55.
@@ -2959,14 +2977,10 @@ File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 60.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: images/uc/actor.png Graphic file (type png)
-<use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 61.
-(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: images/uc/actor.png Graphic file (type png)
-<use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 62.
-(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 61.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 63.
@@ -2975,38 +2989,38 @@ File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 65.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 67.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 69.
+Package pdftex.def Info: images/uc/actor.png  used on input line 67.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 71.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 69.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 71.
+Package pdftex.def Info: images/uc/iu.png  used on input line 69.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 87.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/actor.png Graphic file (type png)
+<use images/uc/actor.png>
+Package pdftex.def Info: images/uc/actor.png  used on input line 88.
+(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 89.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/actor.png Graphic file (type png)
-<use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 90.
-(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 91.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 91.
+Package pdftex.def Info: images/uc/iu.png  used on input line 89.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
+File: images/uc/actor.png Graphic file (type png)
+<use images/uc/actor.png>
+Package pdftex.def Info: images/uc/actor.png  used on input line 97.
+(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: IG-GRAL/headerPar.JPG Graphic file (type jpg)
 <use IG-GRAL/headerPar.JPG>
 Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 98.
@@ -3036,6 +3050,10 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 98.
 [32]
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 98.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 99.
@@ -3044,18 +3062,18 @@ File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 100.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/iu.png Graphic file (type png)
+<use images/uc/iu.png>
+Package pdftex.def Info: images/uc/iu.png  used on input line 100.
+(pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 101.
+Package pdftex.def Info: images/uc/actor.png  used on input line 108.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 102.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 109.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/iu.png Graphic file (type png)
-<use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 102.
-(pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 110.
@@ -3064,33 +3082,25 @@ File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 111.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 112.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 120.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 121.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 112.
+Package pdftex.def Info: images/uc/actor.png  used on input line 122.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 113.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 114.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 122.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 123.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/actor.png Graphic file (type png)
-<use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 124.
-(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 125.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 ) (./DCU/SP4/SP4-CU/SP4-CU4.tex
 File: IG-GRAL/headerInp.JPG Graphic file (type jpg)
@@ -5837,35 +5847,6 @@ File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 44.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: IG-GRAL/headerPar.JPG Graphic file (type jpg)
-<use IG-GRAL/headerPar.JPG>
-Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 47.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 47.
-[62]
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 47.
@@ -5874,6 +5855,35 @@ File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
 Package pdftex.def Info: images/uc/iu.png  used on input line 47.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
+File: IG-GRAL/headerPar.JPG Graphic file (type jpg)
+<use IG-GRAL/headerPar.JPG>
+Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 48.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 48.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 48.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 48.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 48.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 48.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 48.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 48.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 48.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 48.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 48.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 48.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 48.
+[62]
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 48.
@@ -5923,14 +5933,14 @@ File: images/uc/iu.png Graphic file (type png)
 Package pdftex.def Info: images/uc/iu.png  used on input line 86.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 ) (./DCU/SP4/IU/pantallas.tex
-<images/SP4/Docente/2-ConsultarTareas-D.jpg, id=1426, 677.53125pt x 328.8285pt>
+<images/SP4/Docente/2-ConsultarTareas-D.jpg, id=1422, 677.53125pt x 328.8285pt>
 
 File: images/SP4/Docente/2-ConsultarTareas-D.jpg Graphic file (type jpg)
 <use images/SP4/Docente/2-ConsultarTareas-D.jpg>
 Package pdftex.def Info: images/SP4/Docente/2-ConsultarTareas-D.jpg  used on in
 put line 1.
 (pdftex.def)             Requested size: 375.36299pt x 182.18085pt.
-<images/SP4/Docente/2-1-ConsultarMapaCurricular-D.jpeg, id=1427, 674.52pt x 444
+<images/SP4/Docente/2-1-ConsultarMapaCurricular-D.jpeg, id=1423, 674.52pt x 444
 .4605pt>
 File: images/SP4/Docente/2-1-ConsultarMapaCurricular-D.jpeg Graphic file (type 
 jpg)
@@ -5938,7 +5948,7 @@ jpg)
 Package pdftex.def Info: images/SP4/Docente/2-1-ConsultarMapaCurricular-D.jpeg 
  used on input line 3.
 (pdftex.def)             Requested size: 375.36299pt x 247.34312pt.
-<images/SP4/Analista/3-RevisarMapaCurricular-A.jpeg, id=1428, 674.52pt x 444.46
+<images/SP4/Analista/3-RevisarMapaCurricular-A.jpeg, id=1424, 674.52pt x 444.46
 05pt>
 File: images/SP4/Analista/3-RevisarMapaCurricular-A.jpeg Graphic file (type jpg
 )
@@ -5946,7 +5956,7 @@ File: images/SP4/Analista/3-RevisarMapaCurricular-A.jpeg Graphic file (type jpg
 Package pdftex.def Info: images/SP4/Analista/3-RevisarMapaCurricular-A.jpeg  us
 ed on input line 5.
 (pdftex.def)             Requested size: 375.36299pt x 247.34312pt.
-<images/SP4/Docente/2-1-1-RegistrarPlanDeEstudios-D.jpeg, id=1429, 732.336pt x 
+<images/SP4/Docente/2-1-1-RegistrarPlanDeEstudios-D.jpeg, id=1425, 732.336pt x 
 293.29575pt>
 File: images/SP4/Docente/2-1-1-RegistrarPlanDeEstudios-D.jpeg Graphic file (typ
 e jpg)
@@ -5954,7 +5964,7 @@ e jpg)
 Package pdftex.def Info: images/SP4/Docente/2-1-1-RegistrarPlanDeEstudios-D.jpe
 g  used on input line 7.
 (pdftex.def)             Requested size: 375.36299pt x 150.33069pt.
-<images/SP4/Docente/2-1-2-RegistrarEditarUnidadDeAprendizaje-D.jpeg, id=1430, 7
+<images/SP4/Docente/2-1-2-RegistrarEditarUnidadDeAprendizaje-D.jpeg, id=1426, 7
 32.93825pt x 387.849pt>
 File: images/SP4/Docente/2-1-2-RegistrarEditarUnidadDeAprendizaje-D.jpeg Graphi
 c file (type jpg)
@@ -5963,7 +5973,7 @@ Package pdftex.def Info: images/SP4/Docente/2-1-2-RegistrarEditarUnidadDeAprend
 izaje-D.jpeg  used on input line 9.
 (pdftex.def)             Requested size: 375.36299pt x 198.63481pt.
 <images/SP4/JefeDeInnovacionEducativa/2-2-ConsultarProgramasAcademicos-J.jpeg, 
-id=1431, 733.5405pt x 383.031pt>
+id=1427, 733.5405pt x 383.031pt>
 File: images/SP4/JefeDeInnovacionEducativa/2-2-ConsultarProgramasAcademicos-J.j
 peg Graphic file (type jpg)
 <use images/SP4/JefeDeInnovacionEducativa/2-2-ConsultarProgramasAcademicos-J.jp
@@ -5972,7 +5982,7 @@ Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/2-2-ConsultarProg
 ramasAcademicos-J.jpeg  used on input line 11.
 (pdftex.def)             Requested size: 375.36299pt x 196.00366pt.
 <images/SP4/JefeDeInnovacionEducativa/2-2-1-RegistrarEditarProgramaAcademico-J.
-jpeg, id=1432, 732.93825pt x 215.00325pt>
+jpeg, id=1428, 732.93825pt x 215.00325pt>
 File: images/SP4/JefeDeInnovacionEducativa/2-2-1-RegistrarEditarProgramaAcademi
 co-J.jpeg Graphic file (type jpg)
 <use images/SP4/JefeDeInnovacionEducativa/2-2-1-RegistrarEditarProgramaAcademic
@@ -5980,7 +5990,7 @@ o-J.jpeg>
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/2-2-1-RegistrarEd
 itarProgramaAcademico-J.jpeg  used on input line 13.
 (pdftex.def)             Requested size: 375.36299pt x 110.11278pt.
-<images/SP4/JefeDeInnovacionEducativa/2-4-GestionarRH-J.jpeg, id=1433, 610.0792
+<images/SP4/JefeDeInnovacionEducativa/2-4-GestionarRH-J.jpeg, id=1429, 610.0792
 5pt x 380.622pt>
 File: images/SP4/JefeDeInnovacionEducativa/2-4-GestionarRH-J.jpeg Graphic file 
 (type jpg)
@@ -5988,7 +5998,7 @@ File: images/SP4/JefeDeInnovacionEducativa/2-4-GestionarRH-J.jpeg Graphic file
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/2-4-GestionarRH-J
 .jpeg  used on input line 15.
 (pdftex.def)             Requested size: 375.36299pt x 234.18857pt.
-<images/SP4/JefeDeInnovacionEducativa/2-4-1-RegistrarEditarRH-J.jpeg, id=1434, 
+<images/SP4/JefeDeInnovacionEducativa/2-4-1-RegistrarEditarRH-J.jpeg, id=1430, 
 686.565pt x 362.85562pt>
 File: images/SP4/JefeDeInnovacionEducativa/2-4-1-RegistrarEditarRH-J.jpeg Graph
 ic file (type jpg)
@@ -6025,41 +6035,17 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 32.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 32.
- [63]
+ [63 <./images/SP4/Docente/2-ConsultarTareas-D.jpg>]
+
+LaTeX Warning: Text page 64 contains only floats.
+
+
+Overfull \vbox (3.21886pt too high) has occurred while \output is active []
+
 File: IG-GRAL/headerPar.JPG Graphic file (type jpg)
 <use IG-GRAL/headerPar.JPG>
 Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 32.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 32.
- [64 <./images/SP4/Docente/2-ConsultarTareas-D.jpg> <./images/SP4/Docente/2-1-C
-onsultarMapaCurricular-D.jpeg>]
-File: IG-GRAL/headerInp.JPG Graphic file (type jpg)
-<use IG-GRAL/headerInp.JPG>
-Package pdftex.def Info: IG-GRAL/headerInp.JPG  used on input line 32.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 32.
 Package babel Info: Redefining spanish shorthand >>
@@ -6085,38 +6071,8 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 32.
 
-[65 <./images/SP4/Analista/3-RevisarMapaCurricular-A.jpeg> <./images/SP4/Docent
-e/2-1-1-RegistrarPlanDeEstudios-D.jpeg>]
-File: IG-GRAL/headerPar.JPG Graphic file (type jpg)
-<use IG-GRAL/headerPar.JPG>
-Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 32.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 32.
- [66 <./images/SP4/Docente/2-1-2-RegistrarEditarUnidadDeAprendizaje-D.jpeg> <./
-images/SP4/JefeDeInnovacionEducativa/2-2-ConsultarProgramasAcademicos-J.jpeg>]
+[64 <./images/SP4/Docente/2-1-ConsultarMapaCurricular-D.jpeg> <./images/SP4/Ana
+lista/3-RevisarMapaCurricular-A.jpeg>]
 File: IG-GRAL/headerInp.JPG Graphic file (type jpg)
 <use IG-GRAL/headerInp.JPG>
 Package pdftex.def Info: IG-GRAL/headerInp.JPG  used on input line 32.
@@ -6145,8 +6101,8 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 32.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 32.
- [67 <./images/SP4/JefeDeInnovacionEducativa/2-2-1-RegistrarEditarProgramaAcade
-mico-J.jpeg> <./images/SP4/JefeDeInnovacionEducativa/2-4-GestionarRH-J.jpeg>]
+ [65 <./images/SP4/Docente/2-1-1-RegistrarPlanDeEstudios-D.jpeg> <./images/SP4/
+Docente/2-1-2-RegistrarEditarUnidadDeAprendizaje-D.jpeg>]
 File: IG-GRAL/headerPar.JPG Graphic file (type jpg)
 <use IG-GRAL/headerPar.JPG>
 Package pdftex.def Info: IG-GRAL/headerPar.JPG  used on input line 32.
@@ -6175,28 +6131,59 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 32.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 32.
- [68 <./images/SP4/JefeDeInnovacionEducativa/2-4-1-RegistrarEditarRH-J.jpeg>]
+ [66 <./images/SP4/JefeDeInnovacionEducativa/2-2-ConsultarProgramasAcademicos-J
+.jpeg> <./images/SP4/JefeDeInnovacionEducativa/2-2-1-RegistrarEditarProgramaAca
+demico-J.jpeg>]
+File: IG-GRAL/headerInp.JPG Graphic file (type jpg)
+<use IG-GRAL/headerInp.JPG>
+Package pdftex.def Info: IG-GRAL/headerInp.JPG  used on input line 32.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 32.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 32.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 32.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 32.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 32.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 32.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 32.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 32.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 32.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 32.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 32.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 32.
+ [67 <./images/SP4/JefeDeInnovacionEducativa/2-4-GestionarRH-J.jpeg> <./images/
+SP4/JefeDeInnovacionEducativa/2-4-1-RegistrarEditarRH-J.jpeg>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
  (./main.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
- (./DG/MSG.aux)
-(./DCU/SP4/SP4-CU.aux))
+ (./DG/MSG.aux) (./DCU/SP4/SP4-CU.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 39708AC930A16537DBED660335EDE1D9;8518.
+(rerunfilecheck)             Checksum: 43F71CD84209C762C2D9A19F56CC1B16;8516.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
  ) 
 Here is how much of TeX's memory you used:
- 11231 strings out of 492982
- 162892 string characters out of 6134895
- 274166 words of memory out of 5000000
- 13865 multiletter control sequences out of 15000+600000
+ 11419 strings out of 492982
+ 165225 string characters out of 6134895
+ 277590 words of memory out of 5000000
+ 14050 multiletter control sequences out of 15000+600000
  16117 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,16n,49p,327b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,16n,51p,327b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{IU3} has been referenced but does not exist, repl
 aced by a fixed one
 
@@ -6225,12 +6212,13 @@ st/fonts/type1/public/hfbright/hfbr9.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/hfbright/hfbrbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/hfbright/hfbrsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hf
 bright/hfbrsl8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/h
-fbrsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/marvosym/marvosym
-.pfb>
-Output written on main.pdf (68 pages, 837321 bytes).
+fbrsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont
+/lcirclew.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/marvosym/marvos
+ym.pfb>
+Output written on main.pdf (67 pages, 834731 bytes).
 PDF statistics:
- 1655 PDF objects out of 1728 (max. 8388607)
- 1538 compressed objects within 16 object streams
- 656 named destinations out of 1000 (max. 500000)
+ 1647 PDF objects out of 1728 (max. 8388607)
+ 1530 compressed objects within 16 object streams
+ 655 named destinations out of 1000 (max. 500000)
  808 words of extra memory for PDF output out of 10000 (max. 10000000)
 

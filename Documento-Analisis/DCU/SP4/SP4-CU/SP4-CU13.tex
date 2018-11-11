@@ -13,7 +13,7 @@
 		\UCitem{Origen}{Teclado}
 		\UCitem{Salidas}{
         	\begin{itemize}
-                \item MSG1. Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde.
+                \item MSG7. Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -46,7 +46,7 @@
 
     \UCpaso Muestra la interfaz de usuario \IUref{IU3}{Consultar Planes de Estudios}.
     \UCpaso[\UCactor] Selecciona la Unidad Académica que desea consultar sus Planes de Estudios. [Trayectoria B].
-    \UCpaso Muestra los Planes de Estudios de la Unidad Académica seleccionada anteriormente que están registrados en el sistema.  
+    \UCpaso Muestra los Planes de Estudios de la Unidad Académica seleccionada anteriormente que están registrados en el sistema.
 
 
 \end{UCtrayectoria}
@@ -67,7 +67,7 @@
 \begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo de los Planes de Estudios.}
 	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{rconsultar}
-	\UCpaso Muestra el mensaje \MSGref{MSG1}{.Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde. }
+	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
 	 \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}
 
@@ -81,8 +81,8 @@
 \begin{UCtrayectoriaA}{B}{El sistema no carga el catálogo de los Planes de Estudios.}
 	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
 	\UCpaso[\UCactor]Selecciona la Unidad de Aprendizaje.
-	\UCpaso Muestra el mensaje \MSGref{MSG1}{.Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde. }
+	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
 	\UCpaso Muestra la interfaz de usuario \IUref{IU3}{Consultar Planes de Estudios}
-	
+
 \end{UCtrayectoriaA}
