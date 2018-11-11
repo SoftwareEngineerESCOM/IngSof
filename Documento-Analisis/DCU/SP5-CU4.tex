@@ -19,12 +19,12 @@
         \UCitem{Origen}{Mouse y teclado.}
         \UCitem{Salidas}{
             \begin{itemize}
-            \item \label{MSG27} MSG7. Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.
-            \item \label{MSG25} MSG25. Servicios no disponibles por el momento.
-                \item \label{MSG29} MSG29. El usuario se ha registrado exitosamente.
-                \item \label{MSG30} MSG30. Error, el usuario ya existe en el sistema. 
-                \item \label{MSG31} MSG31. Inconsistencia en los datos. Verifique los campos e intente de nuevo.
-                \item \label{MSG31} MSG32. No existen recursos humanos registrados en el sistema con la matrícula ingresada.
+                \item \MSGref{MSG27}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
+                \item \MSGref{MSG5}{Registro finalizado exitosamente.}
+                \item \MSGref{MSG30}{ Error, el usuario ya existe en el sistema.}
+                \item \MSGref{MSG31}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
+                \item \MSGref{MSG32}{No existen recursos humanos registrados en el sistema con la matrícula ingresada.}
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -45,20 +45,20 @@
     
   \UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU2}{Gestionar empleados} el botón \IUbutton{+}.
     \UCpaso  El sistema verifica la existencia de registros en los catálogos cargos  y  lugares de trabajo. [Trayectoria B] 
-    \UCpaso El sistema carga la información del catalogo de empleado  según la \hyperlink{reglas-BR3}{BR3} para el actor. [Trayectoria G]
+    \UCpaso El sistema carga la información del catalogo de empleado  según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria G]
     \UCpaso El sistema carga la pantalla  \IUref{IU8}{Registrar empleados}.
     \UCpaso[\UCactor] Ingresa la matrícula del empleado 
     \UCpaso[\UCactor] Da clic en el icono con la lupa de la interfaz de usuario \IUref{IU8}{Registrar empleados}. [Trayectoria H]
     
     \UCpaso El sistema busca en la base de datos si el usuario se encuentra registrado como un recurso humano. [Trayectoria G]
-    \UCpaso El sistema muestra el \hyperref[MSG29]{MSG32. No existen recursos humanos registrados en el sistema con la matrícula ingresada.}
+    \UCpaso El sistema muestra el \MSGref{MSG32}{No existen recursos humanos registrados en el sistema con la matrícula ingresada.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso[\UCactor]
     Captura la información del empleado.[Trayectoria C] [Trayectoria D] 
     \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Registrar}.
     \UCpaso El sistema verifica la consistencia de la información. [Trayectoria E] [Trayectoria F]
     \UCpaso El sistema registra al empleado.
-    \UCpaso  El sistema muestra el \hyperref[MSG29]{MSG29. El usuario se ha registrado exitosamente}.    
+    \UCpaso  El sistema muestra el \MSGref{MSG5}{Registro finalizado exitosamente}.    
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoria}
@@ -71,7 +71,7 @@
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{El actor selecciona el cargo del empleado.}
-    \UCpaso     El sistema ajustara las opciones de zona de trabajo de acuerdo con el cargo y el actor según la \hyperlink{reglas-BR4}{BR4}.
+    \UCpaso     El sistema ajustara las opciones de zona de trabajo de acuerdo con el cargo y el actor según la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo.}
     \UCpaso Continua en el paso 10 de la trayectoria principal del \UCref{SP5-CU4}.
 \end{UCtrayectoriaA}
 
@@ -80,13 +80,13 @@
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{E}{El usuario ya estaba registrado en el sistema.}
- \UCpaso El sistema muestra el \hyperref[MSG30]{MSG30. Error, el usuario ya existe en el sistema.} 
+ \UCpaso El sistema muestra el \MSGref{MSG30}{Error, el usuario ya existe en el sistema.} 
  \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
  \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP5-CU4}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{F}{Los datos están incompletos o incorrectos.}
- \UCpaso El sistema muestra el \hyperref[MSG31]{MSG31. Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
+ \UCpaso El sistema muestra el \MSGref{MSG31}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
  \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
  \UCpaso Continua en el paso 10 de la trayectoria principal del \UCref{SP5-CU4}.
 \end{UCtrayectoriaA}
@@ -94,7 +94,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
 
 \begin{UCtrayectoriaA}{G}{La base de datos no está disponible, o hubo un error de conexión.}
-    \UCpaso El sistema muestra el mensaje \hyperref[MSG25]{MSG25. Ha ocurrido un error con la base de datos}.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
      \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
@@ -108,7 +108,7 @@
     \UCpaso[\UCactor] Presiona el botón de \IUbutton{Registrar}.
     \UCpaso El sistema verifica la consistencia de la información. [Trayectoria E] [Trayectoria F]
     \UCpaso El sistema registra al empleado.
-    \UCpaso  El sistema muestra el \hyperref[MSG29]{MSG29. El usuario se ha registrado exitosamente}.    
+    \UCpaso  El sistema muestra el \MSGref{MSG5}{Registro finalizado exitosamente}.    
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}

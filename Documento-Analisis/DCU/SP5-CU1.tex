@@ -17,9 +17,9 @@
             \begin{itemize}
                 \item Página principal del sistema.
                 \item \MSGref{MSG0}{Matrícula y/o contraseña no válidas.}
-                \item \label{MSG24} MSG24. Por el momento la página solicitada no esta disponible.
-                \item \label{MSG25} MSG25. Servicios no disponibles por el momento.
-                \item \label{MSG26} MSG26. La matrícula ingresada no se encuentra registrada en el sistema.
+                \item \MSGref{MSG24}{Por el momento la página solicitada no esta disponible.}
+                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
+                \item \MSGref{MSG26}{La matrícula ingresada no se encuentra registrada en el sistema.}
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -54,7 +54,7 @@
 
 \begin{UCtrayectoriaA}{A}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
     \UCpaso No se puede mostrar la página solicitada.
-    \UCpaso El sistema muestra el \hyperref[MSG24]{MSG24. Por el momento la página solicitada no esta disponible}.
+    \UCpaso El sistema muestra el \MSGref{MSG24}{Por el momento la página solicitada no esta disponible}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}
@@ -62,7 +62,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 
 \begin{UCtrayectoriaA}{B}{La matrícula y/o contraseña son incorrectas.}
-    \UCpaso El sistema muestra el  \hyperref[MSG0]{MSG0. Matrícula y/o contraseña no válidas}.
+    \UCpaso El sistema muestra el  \MSGref{MSG20}{Matrícula y/o contraseña no válidas}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}
@@ -89,7 +89,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 
 \begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
-    \UCpaso El sistema muestra el mensaje \hyperref[MSG25]{MSG25. Ha ocurrido un error con la base de datos}.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Ha ocurrido un error con la base de datos}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}
@@ -97,7 +97,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
 
 \begin{UCtrayectoriaA}{G}{La matrícula ingresada no se encuentra registrada en el sistema.}
-    \UCpaso El sistema muestra el mensaje \hyperref[MSG26]{MSG26. La matrícula ingresada no se encuentra registrada en el sistema}.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG26}{La matrícula ingresada no se encuentra registrada en el sistema}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}

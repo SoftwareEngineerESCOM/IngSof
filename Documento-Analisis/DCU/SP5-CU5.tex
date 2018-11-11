@@ -13,8 +13,8 @@
         \UCitem{Salidas}{
             \begin{itemize}
                 \item Información del empleado (nombre, apellido paterno, apellido materno, titulo, cargo, lugar de trabajo y contraseña).
-                \item \label{MSG7} MSG7. Los catálogos necesarios no se han cargado, favor de intentarlo más tarde
-                \item \label{MSG27} MSG27. Empleado modificado.
+                \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}
+                \item \MSGref{MSG27}{Empleado modificado.}
            
             \end{itemize}
         }
@@ -37,23 +37,23 @@
     
     \UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU2}{Gestionar empleados} la opción de editar un usuario. 
     \UCpaso  El sistema verifica la existencia de registros en los catálogos cargos  y  lugares de trabajo . [Trayectoria B] 
-    \UCpaso El sistema carga la información del catalogo de empleado  según la \hyperlink{reglas-BR3}{BR3} para el actor.
+    \UCpaso El sistema carga la información del catalogo de empleado  según la \BRref{BR3}{Gestión de Usuarios} para el actor.
     \UCpaso El sistema carga la pantalla  \IUref{IU7}{Editar empleados}.
     \UCpaso[\UCactor] Edita la información de los empleados.[Trayectoria C] [Trayectoria D] 
     \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Modificar}.
     \UCpaso El sistema realiza la modificación de la información del empleado.
-    \UCpaso  El sistema muestra el \hyperref[MSG27]{MSG27. Empleado modificado}.    
+    \UCpaso  El sistema muestra el \MSGref{MSG27}{Empleado modificado}.    
     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{B}{No existen registros en los catálogos.}
-    \UCpaso     El sistema muestra el \hyperref[MSG7]{MSG7. Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}.
+    \UCpaso     El sistema muestra el \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{Cambio en el cargo de un usuario.}
-    \UCpaso     El sistema ajustara las opciones de zona de trabajo de acuerdo con el cargo y el actor según la \hyperlink{reglas-BR4}{BR4}.
+    \UCpaso     El sistema ajustara las opciones de zona de trabajo de acuerdo con el cargo y el actor según la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo.}
     \UCpaso     Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
 \end{UCtrayectoriaA}
 

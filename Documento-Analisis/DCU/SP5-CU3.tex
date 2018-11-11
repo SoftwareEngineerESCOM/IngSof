@@ -16,9 +16,9 @@
         \UCitem{Salidas}{
             \begin{itemize}
                 \item Lista de empleados de un cargo en específico con sus datos (cargo, nombre, matricula, titulo unidad académica). 
-                \item \label{MSG7} MSG7. Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.
-                \item \label{MSG21} MSG21. No hay usuarios registrados con ese cargo.
-                \item \label{MSG22} MSG22. ¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?
+                \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+                \item \MSGref{MSG21}{No hay usuarios registrados con ese cargo.}
+                \item \MSGref{MSG22}{¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?}
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -45,13 +45,13 @@
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{B}{No existen registros en el catálogo de cargos.}
-    \UCpaso     El sistema muestra el \hyperref[MSG7]{MSG7.Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}.
+    \UCpaso     El sistema muestra el \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU1}{Menú}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{No existen  empleados con el cargo seleccionado.}
-    \UCpaso     El sistema muestra el \hyperref[MSG21]{MSG21. No hay usuarios registrados con ese cargo}.
+    \UCpaso     El sistema muestra el \MSGref{MSG21}{No hay usuarios registrados con ese cargo}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{D}{El actor es el Jefe de Departamento e Innovación Curricular.}
@@ -65,7 +65,7 @@
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{F}{El actor presiona el botón \IUbutton{X}.}
-    \UCpaso El sistema muestra el mensaje \hyperref[MSG22]{MSG22. ¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?} solicitando confirmación. [Trayectoria G]
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG22}{¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?} solicitando confirmación. [Trayectoria G]
     \UCpaso[\UCactor] El actor presiona el botón \IUbutton{Cancelar}.
 \end{UCtrayectoriaA}
 
