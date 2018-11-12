@@ -36,17 +36,12 @@
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
 \end{UseCase}
-
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-
     %Usuario
     \UCpaso[\UCactor] Presiona el checkbox que se encuentra en la columna consultar de la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}
-
 	%Sistema
     \UCpaso El sistema carga el catálogo de modalidad.[Trayectoria A]
-
-
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1.1-D}{Registrar Plan de Estudios}.
     \UCpaso[\UCactor] Ingresa el año del Plan de Estudios que desea registrar.
     \UCpaso[\UCactor] Selecciona la modalidad del Plan de Estudios.
@@ -56,66 +51,33 @@
     \UCpaso[\UCactor] Ingresa el total de Horas/Prácticas del Plan de Estudios.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B] [Trayectoria C]
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
-
     \UCpaso Guarda la información del Plan de Estudios en la base de datos.
-
     \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
-
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
 \end{UCtrayectoria}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA X -------------------------
-
-\begin{comment}
-\begin{UCtrayectoriaA}{A}{El sistema no encuentra ningún formulario para mostrar.}
-	\UCpaso No encuentra ningún formulario para mostrar.
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG6}{Por el momento no se puede registrar la bibliografía}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{CU1}.
-\end{UCtrayectoriaA}
-\end{comment}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-
 \begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo de modalidad}
-	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{registrar}
 	\UCpaso Muestra el mensaje \MSGref{MSG7}{ Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
 	 \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
-
 \end{UCtrayectoriaA}
-
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-
-\begin{UCtrayectoriaA}{B}{El actor quiere cancelar el registro del Plan de Estudio.}
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
+\begin{UCtrayectoriaA}{B}{El actor presiona el botón \IUbutton{Cancelar}.}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar}.
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
 	\UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
 \end{UCtrayectoriaA}
-
-
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-
-\begin{UCtrayectoriaA}{C}{El actor presiona accidentalmente el botón Cancelar}
+\begin{UCtrayectoriaA}{C}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar}.
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
 	\UCpaso Cierra el mensaje.
 	\UCpaso Continúa en el paso 8 de la trayectoria principal del \UCref{SP4-CU2}.
 \end{UCtrayectoriaA}
-
-
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-
-\begin{UCtrayectoriaA}{D}{Uno o más campos obligatorios no fueron contestados.}
-	\UCpaso Detecta uno o más campos sin contestar.
+\begin{UCtrayectoriaA}{D}{El sistema detecta uno o más campos sin contestar.}
 	\UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU2}.

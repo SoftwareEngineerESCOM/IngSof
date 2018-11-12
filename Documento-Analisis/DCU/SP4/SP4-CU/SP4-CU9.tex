@@ -58,25 +58,23 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo de la Unidad de Aprendizaje}
 	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
-	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Aceptar}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	 \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 \begin{UCtrayectoriaA}{C}{El actor presiona el botón \IUbutton{Cancelar}}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
-	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
 	\UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
 \begin{UCtrayectoriaA}{D}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{ ¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
-	\UCpaso Cierra el mensaje.
-    \UCpaso Continúa la trayectoria principal del \UCref{SP4-CU9} desde el paso 8.
+    \UCpaso Continúa en el paso 8 de la trayectoria principal del \UCref{SP4-CU9}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C-------------------------
 \begin{UCtrayectoriaA}{E}{El sistema detecta uno o más campos sin contestar.}
 	\UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continúa la trayectoria principal del \UCref{SP4-CU9} desde el paso 6.
+    \UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU9}.
 \end{UCtrayectoriaA}

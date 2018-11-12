@@ -39,7 +39,7 @@
 \begin{UCtrayectoria}{Principal}
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Consultar} de la Interfaz de usuario  \IUref{IU2-D}{Consultar Tareas}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU3-A}{Revisar Mapa Curricular}.
-    \UCpaso[\UCactor] Selecciona el semestre de la Unidades de Aprendizaje que desea revisar. [Trayectoria A]
+    \UCpaso[\UCactor] Selecciona el semestre de la Unidades de Aprendizaje que desea revisar. [Trayectoria A][Trayectoria A.1]
     \UCpaso Expande el semestre seleccionado mostrando las Unidades de Aprendizaje registradas en el sistema. [Trayectoria A]
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}.
     \UCpaso Muestra el mensaje \MSGref{MSG16}{¿Está seguro de finalizar la revisión?}.
@@ -49,20 +49,21 @@
     \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}.
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\begin{UCtrayectoriaA}{A}{El actor presiona (lápiz) para comentar sobre los datos}
+\begin{UCtrayectoriaA}{A}{El actor presiona el botón \IUbutton{lápiz}.}
     \UCpaso Muestra una ventana emergente solicitando el comentario.
-    \UCpaso[\UCactor] Cierra la ventana presionando el botón \IUbutton{Aceptar}. [Trayectoria A.1]
-    \UCpaso Continúa la trayectoria principal del \UCref{SP4-CU12} desde el paso 3.
+    \UCpaso[\UCactor] Cierra la ventana presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU12}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A.1 -------------------------
-\begin{UCtrayectoriaA}{A.1}{El actor presiona accidentalmente (lápiz) para comentar sobre los datos}
+\begin{UCtrayectoriaA}{A.1}{El actor presiona accidentalmente \IUbutton{lápiz}.}
+    \UCpaso Muestra una ventana emergente solicitando el comentario.
     \UCpaso[\UCactor] Cierra la ventana presionando el botón \IUbutton{Cancelar}.
-    \UCpaso Continúa la trayectoria principal del \UCref{SP4-CU12} desde el paso 3.
+    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU12}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-\begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón Finalizar}
+\begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón \IUbutton{Finalizar}}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
-    \UCpaso Continúa la trayectoria principal del \UCref{SP4-CU12} desde el paso 3.
+    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU12}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 \begin{UCtrayectoriaA}{C}{El actor realizó comentarios}
