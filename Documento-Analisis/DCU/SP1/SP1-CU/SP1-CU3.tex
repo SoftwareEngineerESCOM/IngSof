@@ -1,72 +1,72 @@
 % REGISTRAR EVALUACIÓN Y ACREDITACIÓN DE LA UA.
 \begin{UseCase}{SP1-CU3}{Registrar la evaluación y acreditación de la UA}{El usuario podrá registrar la forma de evaluación con sus respectivos porcentajes y además podrá seleccionar la forma de acreditación de la UA.}
-		\UCitem{Versión}{\color{Gray}1.1}
-		\UCitem{Autor}{\color{Gray}Ramírez Martínez Janet Naibi.}
-		\UCitem{Supervisa}{\color{Gray}Cervantes Delgadillo Mauricio.}
-		\UCitem{Actor}{\hyperlink{Docente}{Docente}}
-		\UCitem{Propósito}{Registrar las evaluaciones que deberá tener la Unidad de Aprendizaje para poder tener un marco de referencia al evaluar al alumno, y además poder conocer el medio para poder acreditar dicha Unidad de Aprendizaje.}
-		\UCitem{Entradas}{Las entradas para el registro de las evaluaciones serán:
+        \UCitem{Versión}{\color{Gray}1.1}
+        \UCitem{Autor}{\color{Gray}Ramírez Martínez Janet Naibi.}
+        \UCitem{Supervisa}{\color{Gray}Cervantes Delgadillo Mauricio.}
+        \UCitem{Actor}{\hyperlink{Docente}{Docente}}
+        \UCitem{Propósito}{Registrar las evaluaciones que deberá tener la Unidad de Aprendizaje para poder tener un marco de referencia al evaluar al alumno, y además poder conocer el medio para poder acreditar dicha Unidad de Aprendizaje.}
+        \UCitem{Entradas}{Las entradas para el registro de las evaluaciones serán:
           \begin{itemize}
             \item Nombre del criterio de evaluación.
             \item Porcentaje del criterio ingresado en el punto anterior.
           \end{itemize}
         }
-		\UCitem{Origen}{Teclado y Mouse.}
-		\UCitem{Salidas}{
-        	\begin{itemize}
-        		\item MSG4. Los campos marcados con (*) son obligatorios.
+        \UCitem{Origen}{Teclado y Mouse.}
+        \UCitem{Salidas}{
+            \begin{itemize}
+                \item MSG4. Los campos marcados con (*) son obligatorios.
                 \item MSG5. Registro finalizado exitosamente.
                 \item MSG23. Los porcentajes de evaluación no cumplen con el porcentaje total obligatorio.
                 \item MSG9. Por el momento no se puede realizar el registro.
-        	\end{itemize}
+            \end{itemize}
         }
-		\UCitem{Destino}{Pantalla.}
-		\UCitem{Precondiciones}{
-			\begin{itemize}
-				\item Debe existir un criterio de evaluación para poder asignarle un porcentaje.
-				\item El catálogo de acreditación debe tener información.
-			\end{itemize}
-		}
-		\UCitem{Postcondiciones}{La evaluación y acreditación de la Unidad de Aprendizaje quedan registradas en la base de datos.}
-		\UCitem{Errores}{}
-		\UCitem{Estado}{Revisión.}
-		\UCitem{Observaciones}{Se pueden agregar tantos criterios como el actor desee siempre y cuando el porcentaje final total de la Unidad de Aprendizaje sea siempre de 100\%}.
+        \UCitem{Destino}{Pantalla.}
+        \UCitem{Precondiciones}{
+            \begin{itemize}
+                \item Debe existir un criterio de evaluación para poder asignarle un porcentaje.
+                \item El catálogo de acreditación debe tener información.
+            \end{itemize}
+        }
+        \UCitem{Postcondiciones}{La evaluación y acreditación de la Unidad de Aprendizaje quedan registradas en la base de datos.}
+        \UCitem{Errores}{}
+        \UCitem{Estado}{Revisión.}
+        \UCitem{Observaciones}{Se pueden agregar tantos criterios como el actor desee siempre y cuando el porcentaje final total de la Unidad de Aprendizaje sea siempre de 100\%}.
 \end{UseCase}
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-	\UCpaso[\UCactor] Presiona el botón \BtnModal que se encuentra a un lado del campo ``Contenidos'' de la \IUref{IU.01}{Registrar el Programa Sintético}.
-       
+    \UCpaso[\UCactor] Presiona el botón \BtnModal que se encuentra a un lado del campo ``Contenidos'' de la \IUref{IU.01}{Registrar el Programa Sintético}.
+
     \UCpaso Extrae la información del catálogo ``Acreditación'' de la base de datos. [Trayectoria A]
-    
+
     \UCpaso Muestra el modal \IUref{MIU1.02}{Registrar Evaluación y Acreditación}.
 
     \UCpaso[\UCactor] Selecciona la(s) forma(s) de acreditación de la lista acreditaciones disponibles. [Trayectoria B]
-    
+
     \UCpaso[\UCactor] Ingresa el criterio de evaluación con base en la regla \BRref{BR24}{Debe existir al menos un criterio de evaluación para una Unidad de Aprendizaje}. [Trayectoria C]
-    
+
     \UCpaso[\UCactor] Ingresa el porcentaje de la evaluación registrada anteriormente con base en la regla \BRref{BR25}{La suma de los porcentajes de cada evaluación debe ser igual a 100\%}.
-    
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Continuar}.    
-        
+
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Continuar}.
+
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
-    
+
     \UCpaso Valida que la suma de los porcentajes sea igual a 100\%. [Trayectoria E]
-    
+
     \UCpaso Guarda la información de la evaluación y acreditación en la base de datos.
-    
+
     \UCpaso El sistema muestra el mensaje \MSGref{MSG5.}{Registro finalizado exitosamente}.
-    
+
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    
+
     \UCpaso Muestra la interfaz de usuario \IUref{IU}{Registrar Detalles de la UA}.
 \end{UCtrayectoria}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
 
 \begin{UCtrayectoriaA}{A}{El catálogo está vacío}
-	\UCpaso No encuentra información en los catálogos.
+    \UCpaso No encuentra información en los catálogos.
     \UCpaso El sistema muestra el mensaje \MSGref{MSG9.}{Por el momento no se puede realizar el registro.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 %    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{CU1}.
@@ -90,17 +90,17 @@
 
 
 \begin{UCtrayectoriaA}{C}{El docente quiere agregar más criterios de evaluación.}
-	\UCpaso[\UCactor] Quiere agregar más criterios de evaluación para la Unidad de Aprendizaje.
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Evaluación} que se encuentra debajo del campo ``Porcentaje''.
-	\UCpaso Despliega otro campo ``Evaluación'' con su respectivo campo ``Porcentaje''.
-	\UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU3}.
+    \UCpaso[\UCactor] Quiere agregar más criterios de evaluación para la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Evaluación} que se encuentra debajo del campo ``Porcentaje''.
+    \UCpaso Despliega otro campo ``Evaluación'' con su respectivo campo ``Porcentaje''.
+    \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU3}.
 \end{UCtrayectoriaA}
 
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA D -------------------------
 
 \begin{UCtrayectoriaA}{D}{Uno o más campos obligatorios no fueron contestados.}
-	\UCpaso Detecta uno o más campos sin contestar.
+    \UCpaso Detecta uno o más campos sin contestar.
     \UCpaso Muestra el mensaje \MSGref{MSG4.}{Los campos marcados con (*) son obligatorios.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU3}.
@@ -110,7 +110,7 @@
 %------------------------ CU TRAYECTORIA ALTERNATIVA E -------------------------
 
 \begin{UCtrayectoriaA}{E}{La suma de los porcentajes es distinta a 100\%}
-	\UCpaso Detecta que la suma de los porcentajes dados por el usuario no cumplen con el 100\% requerido.
+    \UCpaso Detecta que la suma de los porcentajes dados por el usuario no cumplen con el 100\% requerido.
     \UCpaso Muestra el mensaje \MSGref{MSG23.}{Los porcentajes de evaluación no cumplen con el porcentaje total obligatorio.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 6 de la trayectoria principal del \UCref{SP1-CU3}.
