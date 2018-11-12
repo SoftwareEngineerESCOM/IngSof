@@ -32,16 +32,13 @@
             \begin{itemize}
                 \item \UCref{SP4-CU4}: Registrar Recurso Humano.
                 \item \UCref{SP4-CU10}: Editar Recurso Humano.
-                \item \UCref{SP4-CU15}: Eliminar Recurso Humano.
             \end{itemize}
         }
         \UCitem{Estado}{Revisión.}
         \UCitem{Observaciones}{}
 \end{UseCase}
-
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-
     \UCpaso[\UCactor] Presiona la opción de Gestionar Recursos Humanos del menú del la Interfaz de Inicio (abi).
     \UCpaso Carga el catálogo de Cargo. [Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Gestionar Recursos Humanos}.
@@ -50,35 +47,26 @@
     \UCpaso Muestra tabla con los datos de los Recursos Humanos que cumplan con el filtro.
     \UCpaso Repite la trayectoria principal del \UCref{SP4-CU7} desde el paso 3. [Trayectoria C] [Trayectoria C.1]
 \end{UCtrayectoria}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-
 \begin{UCtrayectoriaA}{A}{Los catálogos no se pudieron cargar.}
     \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de Inicio (abi) .
 \end{UCtrayectoriaA}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-
 \begin{UCtrayectoriaA}{B}{El actor no selecciona ningún Cargo}
     \UCpaso Muestra una tabla con los datos de todos los Recursos Humanos.
-    \UCpaso Repite la trayectoria principal del \UCref{SP4-CU7} desde el paso 3.
-
+    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU7}.
 \end{UCtrayectoriaA}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-
-\begin{UCtrayectoriaA}{C}{El actor presiona la casilla "Eliminar" de un Recurso Humano desplegado}
+\begin{UCtrayectoriaA}{C}{El actor presiona el botón \IUbutton{X} de un Recurso Humano}
     \UCpaso Muestra el mensaje \MSGref{MSG34}{¿Está seguro que desea Eliminar al Recurso Humano con Matricula [no.matricula]}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
-    \UCpaso Repite la trayectoria principal del \UCref{SP4-CU7} desde el paso 3.
+    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU7}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C.1 -------------------------
-
-\begin{UCtrayectoriaA}{C.1}{El actor presiona por accidente la casilla "Eliminar" de un Recurso Humano desplegado}
+\begin{UCtrayectoriaA}{C.1}{El actor presiona accidentalmente el botón \IUbutton{X} de un Recurso Humano}
     \UCpaso Muestra el mensaje \MSGref{MSG34}{¿Está seguro que desea Eliminar al Recurso Humano con Matricula [no.matricula]}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
-    \UCpaso Repite la trayectoria principal del \UCref{SP4-CU7} desde el paso 3.
+    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU7}.
 \end{UCtrayectoriaA}
-

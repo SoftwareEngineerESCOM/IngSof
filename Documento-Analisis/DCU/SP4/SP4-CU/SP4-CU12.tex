@@ -14,7 +14,7 @@
             \begin{itemize}
 				\item \MSGref{MSG16}{¿Está seguro de finalizar la revisión?}
 				\item \MSGref{MSG18}{Revisión de Sección Finalizada.}
-				\item \MSGref{MSG25}{Ha ocurrido un error con la base de datos.}
+				\item \MSGref{MSG37}{Ha ocurrido un error al guardar los datos.}
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -35,13 +35,11 @@
         \UCitem{Estado}{Revisión.}
         \UCitem{Observaciones}{}
 \end{UseCase}
-
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Consultar} de la Interfaz de usuario  \IUref{IU2-D}{Consultar Tareas}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU3-A}{Revisar Mapa Curricular}.
-    \UCpaso[\UCactor] Selecciona el semestre de la Unidades de Aprendizaje que desea revisar. [Trayectoria A]
+    \UCpaso[\UCactor] Selecciona el semestre de la Unidades de Aprendizaje que desea revisar. [Trayectoria A][Trayectoria A.1]
     \UCpaso Expande el semestre seleccionado mostrando las Unidades de Aprendizaje registradas en el sistema. [Trayectoria A]
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}.
     \UCpaso Muestra el mensaje \MSGref{MSG16}{¿Está seguro de finalizar la revisión?}.
@@ -50,28 +48,23 @@
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}.
 \end{UCtrayectoria}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-
-\begin{UCtrayectoriaA}{A}{El actor presiona (lápiz) para comentar sobre los datos}
+\begin{UCtrayectoriaA}{A}{El actor presiona el botón \IUbutton{lápiz}.}
     \UCpaso Muestra una ventana emergente solicitando el comentario.
-    \UCpaso[\UCactor] Cierra la ventana presionando el botón \IUbutton{Aceptar}. [Trayectoria A.1]
-    \UCpaso Continúa la trayectoria principal del \UCref{SP4-CU12} desde el paso 3.
+    \UCpaso[\UCactor] Cierra la ventana presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU12}.
 \end{UCtrayectoriaA}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA A.1 -------------------------
-
-\begin{UCtrayectoriaA}{A.1}{El actor presiona accidentalmente (lápiz) para comentar sobre los datos}
+\begin{UCtrayectoriaA}{A.1}{El actor presiona accidentalmente \IUbutton{lápiz}.}
+    \UCpaso Muestra una ventana emergente solicitando el comentario.
     \UCpaso[\UCactor] Cierra la ventana presionando el botón \IUbutton{Cancelar}.
-    \UCpaso Continúa la trayectoria principal del \UCref{SP4-CU12} desde el paso 3.
+    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU12}.
 \end{UCtrayectoriaA}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-\begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón Finalizar}
+\begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón \IUbutton{Finalizar}}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
-    \UCpaso Continúa la trayectoria principal del \UCref{SP4-CU12} desde el paso 3.
+    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU12}.
 \end{UCtrayectoriaA}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 \begin{UCtrayectoriaA}{C}{El actor realizó comentarios}
     \UCpaso Persiste los datos. [Trayectoria C.1]
@@ -79,10 +72,9 @@
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}.
 \end{UCtrayectoriaA}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA C.1 -------------------------
 \begin{UCtrayectoriaA}{C.1}{Ocurre un error al momento de persistir los datos}
-    \UCpaso Muestra el mensaje \MSGref{MSG25}{Ha ocurrido un error con la base de datos.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG37}{Ha ocurrido un error al guardar los datos.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}.
 \end{UCtrayectoriaA}

@@ -23,8 +23,6 @@
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
 				\item \MSGref{MSG9}{Por el momento no se puede realizar el registro.}
-
-
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -39,135 +37,43 @@
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
 \end{UseCase}
-
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-
     %Usuario
     \UCpaso[\UCactor] Presiona el botón Editar de la Interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
-
 	%Sistema
     \UCpaso El sistema carga el catálogo del Plan de Estudios.[Trayectoria A]
-
-
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1.1-D}{Registrar Plan de Estudios}.
     \UCpaso[\UCactor] Elige los campos que desea modificar.[Trayectoria B].
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B] [Trayectoria C]
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
-
     \UCpaso Guarda la información de la Unidad de Aprendizaje en la base de datos.
-
     \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}.
-
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
 \end{UCtrayectoria}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA X -------------------------
-
-\begin{comment}
-\begin{UCtrayectoriaA}{A}{El sistema no encuentra ningún formulario para mostrar.}
-	\UCpaso No encuentra ningún formulario para mostrar.
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG9}{Por el momento no se puede realizar el registro.}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{CU1}.
-\end{UCtrayectoriaA}
-\end{comment}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-
 \begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo del Plan de Estudios}
 	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{registrar}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar}
 	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
-	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
 	 \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
-
 \end{UCtrayectoriaA}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
-
-\begin{UCtrayectoriaA}{B.1}{El usuario desea modificar el año del Plan de Estudios.}
-	\UCpaso[\UCactor] Borra el año del Plan de Estudios.
-	\UCpaso[\UCactor] Ingresa el nuevo año del Plan de Estudios.
-	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU10}.
-\end{UCtrayectoriaA}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA B.2 -------------------------
-
-\begin{UCtrayectoriaA}{B.2}{El usuario desea modificar los créditos TEPIC del Plan de Estuidos.}
-	\UCpaso[\UCactor] Borra los créditos TEPIC del Plan de Estudios.
-	\UCpaso[\UCactor] Ingresa los nuevos créditos TEPIC del Plan de Estudios.
-	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU10}.
-\end{UCtrayectoriaA}
-
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA B.3 -------------------------
-
-\begin{UCtrayectoriaA}{B.3}{El usuario desea modificar los créditos TEPIC de la Unidad de Aprendizaje.}
-	\UCpaso[\UCactor] Borra los créditos SATCA del Plan de Estudios.
-	\UCpaso[\UCactor] Ingresa los nuevos créditos SATCA del Plan de Estudios.
-	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU10}.
-\end{UCtrayectoriaA}
-
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA B.4 -------------------------
-
-\begin{UCtrayectoriaA}{B.4}{: El usuario desea modificar las Horas/Teoría del Plan de Estudios.}
-	\UCpaso[\UCactor] Borra las Horas/Teoría del Plan de Estudios.
-	\UCpaso[\UCactor] Ingresa las nuevas Horas/Teoría del Plan de Estudios.
-	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU10}.
-\end{UCtrayectoriaA}
-
-
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA B.5 -------------------------
-
-\begin{UCtrayectoriaA}{B.5}{El usuario desea modificar las Horas/Prácticas del Plan de Estudios.}
-	\UCpaso[\UCactor] Borra las Horas/Prácticas del Plan de Estudios.
-	\UCpaso[\UCactor] Ingresa las nuevas Horas/Prácticas del Plan de Estudios.
-	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU10}.
-\end{UCtrayectoriaA}
-
-
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA B.6 -------------------------
-
-\begin{UCtrayectoriaA}{B.6}{El usuario desea modificar la modalidad del Plan de Estudios.}
-	\UCpaso[\UCactor] Selecciona la modalidad a la que pertenece el Plan de Estudios.
-	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU10}.
-\end{UCtrayectoriaA}
-
-
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-
-\begin{UCtrayectoriaA}{C}{El actor quiere cancelar el registro de Unidad de Aprendizaje.}
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
+\begin{UCtrayectoriaA}{C}{El actor presiona el botón \IUbutton{Cancelar}}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
-	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
 	\UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
 \end{UCtrayectoriaA}
-
-
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-
-\begin{UCtrayectoriaA}{D}{El actor presiona accidentalmente el botón Cancelar}
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
+\begin{UCtrayectoriaA}{D}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
-	\UCpaso Cierra el mensaje.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
 	\UCpaso Continúa en el paso 9 de la trayectoria principal del \UCref{SP4-CU3}.
 \end{UCtrayectoriaA}
-
-
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
-
-\begin{UCtrayectoriaA}{E}{Uno o más campos obligatorios no fueron contestados.}
-	\UCpaso Detecta uno o más campos sin contestar.
+\begin{UCtrayectoriaA}{E}{El sistema detecta uno o más campos sin contestar.}
 	\UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU2}.
