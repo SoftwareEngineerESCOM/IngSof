@@ -1,4 +1,4 @@
-\begin{UseCase}{SP5-CU3}{Consultar usuarios}{El  Jefe de División de Innovación Académica podrá visualizar la información de los empleados.}
+\begin{UseCase}{SP5-CU3}{Consultar usuarios}{El \hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA} y  \hyperlink{JIE}{JIE}  podrá visualizar la información de los empleados.}
         \UCitem{Versión}{\color{Gray}3.0}
         \UCitem{Autor}{\color{Gray}Hernández Ruiz Rafael}
         \UCitem{Supervisa}{\color{Gray}Abigail Nicolás Sayago}
@@ -37,11 +37,11 @@
     
     \UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU1}{Menú} la opción de gestionar usuarios. 
     \UCpaso  El sistema verifica la existencia de registros del catalogo. [Trayectoria B] 
-    \UCpaso El sistema carga la pantalla  \IUref{IU2}{Gestionar empleados}. [Trayectoria I] 
+    \UCpaso El sistema carga la pantalla  \IUref{IU2}{Gestionar empleados}. [Trayectoria G] 
     \UCpaso[\UCactor] Selecciona el cargo de los empleados a buscar. 
-    \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Buscar}. [Trayectoria D] [Trayectoria C] [Trayectoria E]
+    \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Buscar}.  [Trayectoria C] 
     
-    \UCpaso El sistema despliega la información de los empleados permitidos para el Jefe de División de Innovación Académica de acuerdo a la regla de negocio BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria Principal punto 2] [Trayectoria F] [Trayectoria H] 
+    \UCpaso El sistema despliega la información de los empleados permitidos para el actor correspondiente de acuerdo a la regla de negocio BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria Principal punto 2] [Trayectoria D] [Trayectoria F] 
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{B}{No existen registros en el catálogo de cargos.}
@@ -54,36 +54,27 @@
     \UCpaso     El sistema muestra el \MSGref{MSG21}{No hay usuarios registrados con ese cargo}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{D}{El actor es el Jefe de Departamento e Innovación Curricular.}
- \UCpaso El sistema despliega la información  de los empleados permitidos para el Jefe de Departamento e Innovación Curricular de acuerdo a la BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria F] [Trayectoria H] 
-  \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU3}.
-\end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{E}{El actor es el JIE.}
- \UCpaso El sistema despliega la información  de los empleados permitidos para el JIE de acuerdo a la BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}.[Trayectoria F] [Trayectoria H] 
- \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU3}.
-\end{UCtrayectoriaA}
-
-\begin{UCtrayectoriaA}{F}{El actor presiona el botón \IUbutton{X}.}
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG22}{¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?} solicitando confirmación. [Trayectoria G]
+\begin{UCtrayectoriaA}{D}{El actor presiona el botón \IUbutton{X}.}
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG22}{¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?} solicitando confirmación. [Trayectoria E]
     \UCpaso[\UCactor] El actor presiona el botón \IUbutton{Cancelar}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{G}{El actor presiona el botón \IUbutton{Aceptar}.}
-    \UCpaso     El sistema elimina al empleado. [Trayectoria H]   
+\begin{UCtrayectoriaA}{E}{El actor presiona el botón \IUbutton{Aceptar}.}
+    \UCpaso     El sistema elimina al empleado. [Trayectoria F]   
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 
-\begin{UCtrayectoriaA}{H}{La base de datos no está disponible, o hubo un error de conexión.}
+\begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
     \UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA I -------------------------
+%------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
 
-\begin{UCtrayectoriaA}{I}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
+\begin{UCtrayectoriaA}{G}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
     \UCpaso No se puede mostrar la página solicitada.
     \UCpaso El sistema muestra el \MSGref{MSG24}{Por el momento la página solicitada no esta disponible}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
