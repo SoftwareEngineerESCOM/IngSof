@@ -1,27 +1,27 @@
 % Consultar Planes de Estudio.
-\begin{UseCase}{SP4-CU13}{Consultar Planes de Estudios}{El usuario Docente visualiza la totalidad de los contenidos de los Planes de Estudios registrados.}
+\begin{UseCase}{SP4-CU13}{Consultar Planes de Estudios}{El usuario Jefe de Innovación Educativa visualiza los Planes de Estudios asociados a un mismo Programa Académico.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Cervantes Moreno Christian Andres}
 		\UCitem{Supervisa}{\color{Gray} Evelyn Reyes}
-		\UCitem{Actor}{\hyperlink{Usuario}{Docente}}
-		\UCitem{Propósito}{Visualizar los Planes de Estudios registrados en el sistema.}
-		\UCitem{Entradas}{Las entradas para la consulta de los Planes de Estudios serán:
+		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa}}
+		\UCitem{Propósito}{Visualizar los Planes de Estudios asociados a un mismo Programa Académico y su informacion .}
+		\UCitem{Entradas}{
 			\begin{itemize}
-				\item Unidad Académica.
-			\end{itemize}
+				\item Ninguna
+        	\end{itemize}
 		}
-		\UCitem{Origen}{Teclado}
+		\UCitem{Origen}{}
 		\UCitem{Salidas}{
         	\begin{itemize}
-                \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+                \item \MSGref{MSG38}{¿Está seguro que desea generar una nueva tarea para el registro de un nuevo Plan de Estudios?}
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
-		\UCitem{Precondiciones}{Debe de existir al menos un Plan de Estudio registrado en el sistema.}
-		\UCitem{Postcondiciones}{Los Planes de Estudios son visualizados en el sistema.}
+		\UCitem{Precondiciones}{Debe de existir al menos un Programa Académico registrado en el sistema.}
+		\UCitem{Postcondiciones}{}
 		\UCitem{Errores}{
 			  \begin{itemize}
-				\item E1. El sistema no carga los Planes de Estudios de la Unidad Académica.
+				\item E1. El sistema no puede consultar los datos.
 			\end{itemize}
 		}
 	 \UCitem{Puntos de Exteción}{
@@ -31,58 +31,23 @@
 	}
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
-
 \end{UseCase}
-
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-
     %Usuario
-    \UCpaso[\UCactor] Presiona el botón Consultar de la Interfaz de usuario  \IUref{IU2-D}{Consultar Tareas}.
-
-	%Sistema
-    \UCpaso El sistema carga el catálogo del Planes de Estudios. [Trayectoria A]
-
-
-    \UCpaso Muestra la interfaz de usuario \IUref{IU3}{Consultar Planes de Estudios}.
-    \UCpaso[\UCactor] Selecciona la Unidad Académica que desea consultar sus Planes de Estudios. [Trayectoria B].
-    \UCpaso Muestra los Planes de Estudios de la Unidad Académica seleccionada anteriormente que están registrados en el sistema.
-
-
+    \UCpaso[\UCactor] Presiona sobre un Programa Académico en la Interfaz de usuario  \IUref{IU2.2-J}{Consultar Programa Académico}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.2.2-J}{Consultar Planes de Estudios}.
+    \UCpaso Muestra los Planes de Estudios de la Unidad Académica seleccionada anteriormente que están registrados en el sistema. [Trayectoria A][Trayectoria A.1]
 \end{UCtrayectoria}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA X -------------------------
-
-\begin{comment}
-\begin{UCtrayectoriaA}{A}{El sistema no encuentra ningún formulario para mostrar.}
-	\UCpaso No encuentra ningún formulario para mostrar.
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG6}{Por el momento no se puede registrar la bibliografía}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{CU1}.
-\end{UCtrayectoriaA}
-\end{comment}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-
-\begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo de los Planes de Estudios.}
-	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{rconsultar}
-	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
-	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
+\begin{UCtrayectoriaA}{A}{El actor presiona el botón  \IUbutton{+}.}
+	\UCpaso Muestra el mensaje \MSGref{MSG38}{¿Está seguro que desea generar una tarea para el registro de un nuevo Plan de Estudios?}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
 	 \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}
-
 \end{UCtrayectoriaA}
-
-
-
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-
-\begin{UCtrayectoriaA}{B}{El sistema no carga el catálogo de los Planes de Estudios.}
-	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
-	\UCpaso[\UCactor]Selecciona la Unidad de Aprendizaje.
-	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
-	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
-	\UCpaso Muestra la interfaz de usuario \IUref{IU3}{Consultar Planes de Estudios}
-
+%------------------------ CU TRAYECTORIA ALTERNARIVA A.1 -------------------------
+\begin{UCtrayectoriaA}{A.1}{El actor presiona accidentalmente el botón  \IUbutton{+}.}
+	\UCpaso Muestra el mensaje \MSGref{MSG38}{¿Está seguro que desea generar una tarea para el registro de un nuevo Plan de Estudios?}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
+	\UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU13}.
 \end{UCtrayectoriaA}

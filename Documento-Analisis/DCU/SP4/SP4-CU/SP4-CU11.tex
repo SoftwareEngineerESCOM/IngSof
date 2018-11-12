@@ -23,9 +23,7 @@
                 \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
-			    \item \MSGref{MSG9}{Por el momento no se puede realizar el registro.}
 			    \item \MSGref{MSG20}{Los campos no fueron contestados correctamente.}
-                \item \MSGref{MSG26}{La matrícula ingresada no se encuentra registrada en el sistema.}
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -37,81 +35,46 @@
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{Ninguna matrícula de empleado es igual.}
 \end{UseCase}
-
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{IU2.4-J}{Consultar Recurso Humano}
-
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.4.1-J}{Editar Recurso Humano}.
-
-	\UCpaso Ingresa la matrícula del Recurso Humano. [Trayectoria F]
-
-    \UCpaso Cargar datos del Recurso Humano correspondiente. [Trayectoria E]
-
-    \UCpaso[\UCactor] Cambia los datos de Recurso Humano.
-
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria A] [Trayectoria B]
-
+    \UCpaso Cargar datos del Recurso Humano correspondiente. [Trayectoria A]
+    \UCpaso[\UCactor] Modifica los campos deseados.
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B] [Trayectoria B.1]
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados. [Trayectoria C][Trayectoria D]
-
     \UCpaso Guarda la información del Recurso Humano correspondiente.
-
     \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{ Los cambios se guardaron exitosamente.}.
-
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Consultar Recurso Humano}
 \end{UCtrayectoria}
-
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-
-
-\begin{UCtrayectoriaA}{A}{El actor quiere cancelar la edición  del Recurso Humano correspondiente.}
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
+    %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
+\begin{UCtrayectoriaA}{A}{No cargan los catálogos de Recurso Humano.}
+    \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+\UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa(Pantalla de Abi).
+\end{UCtrayectoriaA}
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+\begin{UCtrayectoriaA}{B}{El actor presionael botón \IUbutton{Cancelar}.}
     \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
-    \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Consultar Recurso Humano}
 \end{UCtrayectoriaA}
-
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-
-\begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón Cancelar}
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
+\begin{UCtrayectoriaA}{B.1}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
     \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
-    \UCpaso Cierra el mensaje.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-
-\begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados.}
-	\UCpaso Detecta uno o más campos sin contestar.
+\begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar.}
     \UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-
 \begin{UCtrayectoriaA}{D}{Alguna entrada  contiene caracteres no alfanuméricos}
-	\UCpaso El Sistema detecta caracteres no alfanuméricos E1.
+    \UCpaso El Sistema detecta caracteres no alfanuméricos E1.
     \UCpaso Muestra el mensaje \MSGref{MSG20}{ Los campos no fueron contestados correctamente.}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
-\end{UCtrayectoriaA}
-    %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
-
-\begin{UCtrayectoriaA}{E}{No cargan los catálogos de Recurso Humano.}
-    \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-\UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa(Pantalla de Abi).
-\end{UCtrayectoriaA}
-    %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
-
-\begin{UCtrayectoriaA}{E}{No existe ningún Recurso Humano con esa matrícula.}
-    \UCpaso Muestra el mensaje \MSGref{MSG26}{La matrícula ingresada no se encuentra registrada en el sistema.}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-\UCpaso Continua en el paso  de búsqueda de matrícula.
 \end{UCtrayectoriaA}
