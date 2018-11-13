@@ -23,7 +23,7 @@
                 \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
-			    \item \MSGref{MSG20}{Los campos no fueron contestados correctamente.}
+			    \item \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -74,6 +74,6 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 \begin{UCtrayectoriaA}{D}{El Sistema detecta caracteres no alfanumérico.}
-    \UCpaso Muestra el mensaje \MSGref{MSG20}{ Los campos no fueron contestados correctamente.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG35}{ Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}

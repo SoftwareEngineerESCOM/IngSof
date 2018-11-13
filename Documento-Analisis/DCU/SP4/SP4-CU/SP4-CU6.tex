@@ -9,7 +9,7 @@
 		\UCitem{Origen}{Mouse}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item \MSGref{MSG36}{¿Está seguro que desea eliminar la Unidad de Aprendizaje [Nombre de la UNidad de Aprendizaje]?}.
+        		\item \MSGref{MSG38}{¿Está seguro que desea eliminar la Unidad de Aprendizaje [Nombre de la UNidad de Aprendizaje]?}.
         		\item \MSGref{MSG39}{¿Está seguro que desea eliminar el Semestre [Número del Semestre]?}.
         		\item \MSGref{MSG30}{Está seguro que desea finalizar? Ya no podrá realizar modificaciones}.
         	\end{itemize}
@@ -43,15 +43,6 @@
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}. [Trayectoria D]
     \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}.
 \end{UCtrayectoria}
-%------------------------ CU TRAYECTORIA ALTERNARIVA X -------------------------
-\begin{comment}
-\begin{UCtrayectoriaA}{A}{El sistema no encuentra ningún formulario para mostrar.}
-	\UCpaso No encuentra ningún formulario para mostrar.
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG6}{Por el momento no se puede registrar la bibliografía}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{CU1}.
-\end{UCtrayectoriaA}
-\end{comment}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El actor presiona el botón \IUbutton{+}.}
 	\UCpaso Agrega el siguiente Semestre en la numeración.
