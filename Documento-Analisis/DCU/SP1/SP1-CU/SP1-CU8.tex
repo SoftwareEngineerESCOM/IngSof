@@ -1,0 +1,103 @@
+% REGISTRAR EVALUACIÓN DE LOS APRENDIZAJES.
+\begin{UseCase}{SP1-CU8}{Registrar la Evaluación de los Aprendizajes}{El usuario podrá registrar la evaluación de los aprendizajes esperados para cada unidad temática con su respectivo porcentaje y tipo de evaluación.}
+		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Autor}{\color{Gray}Ramírez Martínez Janet Naibi.}
+		\UCitem{Supervisa}{\color{Gray}Cervantes Delgadillo Mauricio.}
+		\UCitem{Actor}{\hyperlink{Docente}{Docente}}
+		\UCitem{Propósito}{Que el alumno sepa de dónde proviene su calificación y además que el docente pueda tener un marco de referencia para evaluar al alumno.}
+		\UCitem{Entradas}{Las entradas serán:
+          \begin{itemize}
+            \item Nombre del criterio de evaluación.
+            \item Porcentaje del criterio ingresado en el punto anterior.
+            \item Evaluación. %evaluación continua, evaluación escrita.
+          \end{itemize}
+        }
+		\UCitem{Origen}{Teclado y Mouse.}
+		\UCitem{Salidas}{
+        	\begin{itemize}
+        		\item MSG4. Los campos marcados con (*) son obligatorios.
+                \item MSG5. Registro finalizado exitosamente.
+                \item MSG9. Por el momento no se puede realizar el registro.
+                \item MSG23. Los porcentajes de evaluación no cumplen con el porcentaje total obligatorio.
+        	\end{itemize}
+        }
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{
+			\begin{itemize}
+				\item Se debe haber registrado previamente los Contenidos de la Unidad de Aprendizaje.
+				\item Los catálogos deben contener información. 
+				\item Debe existir un criterio de evaluación para poder asignarle un porcentaje.
+				\item Se debe haber elaborado la Unidad Temática con sus respectivos temas y subtemas.  
+			\end{itemize}
+		}
+		\UCitem{Postcondiciones}{La Evaluación de los Aprendizajes queda registrada en la base de datos.}
+		\UCitem{Errores}{}
+		\UCitem{Estado}{Revisión.}
+		\UCitem{Observaciones}{La Evaluación de los Aprendizajes se debe realizar para cada Unidad Temática.}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+
+	\UCpaso[\UCactor] Presiona el botón \BtnModal que se encuentra a un lado del campo ``Evaluación de los Aprendizajes'' de la \IUref{IU.03}{Registrar Unidad Temática}.
+	
+	\UCpaso Extrae la información de los catálogos de la base de datos. [Trayectoria A]
+
+    \UCpaso Muestra el modal \IUref{MIU3.02}{Registrar Evaluación de los Aprendizajes}.
+    
+    \UCpaso[\UCactor] Ingresa el criterio de evaluación con base en la regla \BRref{BR24}{Debe existir al menos un criterio de evaluación para una Unidad de Aprendizaje}. [Trayectoria B]
+
+    \UCpaso[\UCactor] Ingresa el porcentaje de la evaluación registrada anteriormente con base en la regla \BRref{BR25}{La suma de los porcentajes de cada evaluación debe ser igual a 100\%}.
+    
+    \UCpaso[\UCactor] Selecciona la evaluación del criterio que ingresó en el paso 4.
+    
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}.
+
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria C]
+
+    \UCpaso Valida que la suma de los porcentajes sea igual a 100\%. [Trayectoria D]
+
+    \UCpaso Guarda la información de la Evaluación de los Aprendizajes en la base de datos.
+
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG5.}{Registro finalizado exitosamente}.
+
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+
+    \UCpaso Muestra la interfaz de usuario \IUref{SP1-IU}{Principal}.
+    
+\end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{Uno o más catálogos están vacíos}.
+	\UCpaso No encuentra información en los catálogos.
+    \UCpaso Muestra el mensaje \MSGref{MSG9.}{Por el momento no se puede realizar el registro.}
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{SP1-IU}{Principal}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA B -------------------------
+
+\begin{UCtrayectoriaA}{B}{El docente quiere agregar más criterios de evaluación.}
+    \UCpaso[\UCactor] Quiere agregar más criterios de evaluación para la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Evaluación} que se encuentra debajo del campo ``Porcentaje''.
+    \UCpaso Despliega otro campo ``Evaluación'' con su respectivo campo ``Porcentaje''.
+    \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU3}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
+
+\begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados.}
+	\UCpaso Detecta uno o más campos sin contestar.
+    \UCpaso Muestra el mensaje \MSGref{MSG4.}{Los campos marcados con (*) son obligatorios.}
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU8}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA D -------------------------
+
+\begin{UCtrayectoriaA}{D}{La suma de los porcentajes es distinta a 100\%}
+    \UCpaso Detecta que la suma de los porcentajes dados por el usuario no cumplen con el 100\% requerido.
+    \UCpaso Muestra el mensaje \MSGref{MSG23.}{Los porcentajes de evaluación no cumplen con el porcentaje total obligatorio.}
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 6 de la trayectoria principal del \UCref{SP1-CU8}.
+\end{UCtrayectoriaA}
