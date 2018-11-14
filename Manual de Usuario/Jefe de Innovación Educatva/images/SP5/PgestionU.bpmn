@@ -9,7 +9,7 @@
       <bpmn:incoming>SequenceFlow_1wp8h47</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1gmumzm</bpmn:outgoing>
     </bpmn:inclusiveGateway>
-    <bpmn:startEvent id="StartEvent_1" name="Ingresar al modulo de Gestión de Recursos Humanos">
+    <bpmn:startEvent id="StartEvent_1" name="Ingresar al modulo de Gestión de Usuarios">
       <bpmn:outgoing>SequenceFlow_1kahfui</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:endEvent id="EndEvent_14fulqd" name="Salir">
@@ -21,19 +21,19 @@
       <bpmn:outgoing>SequenceFlow_1onqrcz</bpmn:outgoing>
       <bpmn:outgoing>SequenceFlow_1wp8h47</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:userTask id="Task_0bhpdar" name="Visualizar&#10;Recursos Humanos">
+    <bpmn:userTask id="Task_0bhpdar" name="Visualizar&#10;Usuarios">
       <bpmn:incoming>SequenceFlow_1gmumzm</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0meb7cw</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:userTask id="Task_041uem3" name="Editar un &#10;Recurso &#10;Humano">
+    <bpmn:userTask id="Task_041uem3" name="Editar un &#10;Usuario">
       <bpmn:incoming>SequenceFlow_17aaqf2</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0e8fip8</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:userTask id="Task_12cvd0n" name="Buscar&#10;Recursos&#10;Humano">
+    <bpmn:userTask id="Task_12cvd0n" name="Buscar&#10;Usuario&#10;">
       <bpmn:incoming>SequenceFlow_1nba26w</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1xb4fsm</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:userTask id="Task_1dp8yfd" name="Eliminar un Recurso Humano">
+    <bpmn:userTask id="Task_1dp8yfd" name="Eliminar un Usuario">
       <bpmn:incoming>SequenceFlow_0mlavwe</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0j4p5dd</bpmn:outgoing>
     </bpmn:userTask>
@@ -44,7 +44,7 @@
       <bpmn:outgoing>SequenceFlow_17aaqf2</bpmn:outgoing>
       <bpmn:outgoing>SequenceFlow_1wdhqwz</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:userTask id="Task_0h4zxx3" name="Registrar un nuevo Recurso Humano">
+    <bpmn:userTask id="Task_0h4zxx3" name="Registrar un nuevo Usuario">
       <bpmn:incoming>SequenceFlow_1wdhqwz</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_02ccj0u</bpmn:outgoing>
     </bpmn:userTask>
@@ -78,7 +78,7 @@
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1" bioc:stroke="#43A047" bioc:fill="#C8E6C9">
         <dc:Bounds x="279" y="100" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="272" y="143" width="53" height="66" />
+          <dc:Bounds x="272" y="143" width="53" height="53" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_1onqrcz_di" bpmnElement="SequenceFlow_1onqrcz">
