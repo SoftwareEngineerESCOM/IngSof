@@ -308,6 +308,42 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 		\end{itemize}
 \end{BussinesRule}
 
+\begin{BussinesRule}{BR27}{ Longitud máxima de matricula.}
+    \BRitem[Tipo: ]Regla de inferencia de un hecho.
+    \BRitem[Clase: ]Habilitadora.
+    \BRitem[Nivel: ]Control.
+    \BRitem[Descripción: ]La matricula tiene un tamaño máximo de 10 caracteres y es la matricula que tiene cada trabajador del IPN.
+    \BRitem[Sentencia:]
+    \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
+    \BRitem[Ejemplo Positivo:] . 2014171285
+    \BRitem[Ejemplo Negativo: ]. 20111111111
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR28}{ Longitud máxima de contraseña.}
+    \BRitem[Tipo: ]Regla de inferencia de un hecho.
+    \BRitem[Clase: ]Habilitadora.
+    \BRitem[Nivel: ]Control.
+    \BRitem[Descripción: ]La contraseña tiene un tamaño máximo de 6 caracteres y no debe llevar acentos.
+    \BRitem[Sentencia:]
+    \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
+    \BRitem[Ejemplo Positivo:] . abc123
+    \BRitem[Ejemplo Negativo: ]. abé123333
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR29}{ Matricula unica para cada Usuario o Recurso Humano.}
+    \BRitem[Tipo: ]Regla de inferencia de un hecho.
+    \BRitem[Clase: ]Habilitadora.
+    \BRitem[Nivel: ]Control.
+    \BRitem[Descripción: ]La matricula debe ser unica para cada usuario o Recurso Humano, se debe usar la clave que el instituto les otorga como trabajadores.
+    \BRitem[Sentencia:]
+    \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
+    \BRitem[Ejemplo Positivo:] . Para el JDIC la matricula sea : 2014171285 y para el JDIE la matricula sea : 2014090680
+    \BRitem[Ejemplo Negativo: ]. Para el JDIC la matricula sea : 2014171285 y para el JDIE la matricula sea : 2014171285
+\end{BussinesRule}
+
+
+
+
 %\begin{BussinesRule}{}{}
 %   \BRitem[Tipo:]
 %   \BRitem[Clase:]
