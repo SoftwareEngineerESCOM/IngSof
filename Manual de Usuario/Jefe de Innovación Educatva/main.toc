@@ -1,0 +1,34 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Presentaci\IeC {\'o}n}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Objetivos del Manual}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Objetivos particulares}{4}{subsection.1.1.2}
+\contentsline {chapter}{\numberline {2}Descripci\IeC {\'o}n del Proceso}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Proceso de gesti\IeC {\'o}n de Programas Acad\IeC {\'e}micos}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Jefe de Innovaci\IeC {\'o}n Educativa de la Unidad Acad\IeC {\'e}mica}{5}{subsection.2.1.1}
+\contentsline {subsubsection}{Gesti\IeC {\'o}n de Recursos Humanos}{6}{section*.2}
+\contentsline {subsubsection}{Gesti\IeC {\'o}n de Programas Acad\IeC {\'e}micos}{6}{section*.3}
+\contentsline {chapter}{\numberline {3}Gesti\IeC {\'o}n de Recursos Humanos}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Consulta de Recursos Humanos}{8}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Buscar Recursos Humanos seg\IeC {\'u}n su cargo}{9}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Editar Recursos Humanos}{9}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Eliminar Recursos Humanos}{10}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Registrar Recursos Humanos}{10}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Registro de Recursos Humanos}{11}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Posibles errores}{12}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Edici\IeC {\'o}n de Recursos Humanos}{14}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Posibles errores}{15}{subsection.3.3.1}
+\contentsline {chapter}{\numberline {4}Gesti\IeC {\'o}n de Programas Acad\IeC {\'e}micos}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Consulta de Programas Acad\IeC {\'e}micos}{17}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Editar Recursos Humanos}{17}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Registrar Recursos Humanos}{18}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Registro de Programas Acad\IeC {\'e}micos}{19}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Posibles errores}{20}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Edici\IeC {\'o}n de Programas Acad\IeC {\'e}micos}{21}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Posibles errores}{22}{subsection.4.3.1}
+\contentsline {chapter}{\numberline {5}Gesti\IeC {\'o}n de Plan de Estudios}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Consulta de Planes de Estudios}{23}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Buscar Planes de Estudio seg\IeC {\'u}n su cargo}{24}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Editar Planes de Estudios}{25}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Edici\IeC {\'o}n de Planes de Estudios}{26}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Posibles errores}{29}{subsection.5.2.1}
