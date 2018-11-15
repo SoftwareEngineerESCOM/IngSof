@@ -1,7 +1,7 @@
 \chapter{Especificación de Reglas del Negocio}
 \section{Reglas de Operación}
 
-\begin{BussinesRule}{BR}{Jefes de Departamento e Innovación curricular.}
+\begin{BussinesRule}{BR0}{Jefes de Departamento e Innovación curricular.}
      \BRitem[Tipo: Estructural]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -9,7 +9,7 @@
     \BRitem[Motivación: Restringir el numero de Usuarios capaces de Gestionar Usuarios]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Jefes de Innovación Educativa.}
+\begin{BussinesRule}{BR1}{Jefes de Innovación Educativa.}
     \BRitem[Tipo: Estructura]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -17,7 +17,7 @@
     \BRitem[Motivación: Tener un único responsable por Unidad Académica.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Máquina de Estados de una Tarea.}
+\begin{BussinesRule}{BR2}{Máquina de Estados de una Tarea.}
     \BRitem[Tipo: Flujo]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -27,7 +27,7 @@
     \BRitem[Ejemplo Negativo: La Tarea de registrar Unidad de Aprendizaje se empezó a revisar antes de que terminara su registro.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Tareas de Registro.}
+\begin{BussinesRule}{BR3}{Tareas de Registro.}
     \BRitem[Tipo: Flujo]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -37,7 +37,7 @@
     \BRitem[Ejemplo Negativo:El usuario Analista registra un Mapa Curricular o una Unidad de Aprendizaje]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Revisión de Tareas.}
+\begin{BussinesRule}{BR4}{Revisión de Tareas.}
     \BRitem[Tipo: Flujo]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -47,7 +47,7 @@
     \BRitem[Ejemplo Negativo: El Docente revisa un Mapa Curricular y Unidades de Aprendizaje.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Aprobación de Tareas.}
+\begin{BussinesRule}{BR5}{Aprobación de Tareas.}
     \BRitem[Tipo: Flujo]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -57,7 +57,7 @@
     \BRitem[Ejemplo Negativo: El Jefe de Innovación Educativa agrega comentario y aun así se aprueba el documento.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Aprobación de Tareas Seccionada}
+\begin{BussinesRule}{BR6}{Aprobación de Tareas Seccionada}
     \BRitem[Tipo:Condición]
     \BRitem[Clase:Habilitadora]
     \BRitem[Nivel:Control]
@@ -68,7 +68,7 @@
     \BRitem[Ejemplo Negativo:Una sección es aprobada y fue modificada.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Rechazo de Tareas.}
+\begin{BussinesRule}{BR7}{Rechazo de Tareas.}
     \BRitem[Tipo: Flujo]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -78,7 +78,7 @@
     \BRitem[Ejemplo Negativo: Ni el Jefe de Innovación Educativa ni el Analista agregaron comentarios y aun así se apruebó.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Asignar tareas.}
+\begin{BussinesRule}{BR8}{Asignar tareas.}
     \BRitem[Tipo:]Autorización.
     \BRitem[Clase:]Ejecutiva.
     \BRitem[Nivel:]Control.
@@ -89,7 +89,7 @@
     \BRitem[Ejemplo Negativo:] El analista le asigna una tarea al Jefe de Departamento e Innovación curricular.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Tiempos de entregas.}
+\begin{BussinesRule}{BR9}{Tiempos de entregas.}
     \BRitem[Tipo:Integridad]
     \BRitem[Clase:Cronometrado]
     \BRitem[Nivel: Control]
@@ -99,7 +99,7 @@
     \BRitem[Ejemplo Negativo: Una propuesta de unidad de aprendizaje puede ser revisada por un analista en cualquier momento.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Todos los datos solicitados son obligatorios.}
+\begin{BussinesRule}{BR10}{Todos los datos solicitados son obligatorios.}
     \BRitem[Tipo: Regla de Operación]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -110,7 +110,7 @@
     \BRitem[Ejemplo Negativo: El usuario deja campos vacios y el sistema le permite continuar.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Existen los catálogos.}
+\begin{BussinesRule}{BR11}{Existen los catálogos.}
     \BRitem[Tipo: Regla de inferencia de un hecho]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -128,7 +128,7 @@ Tareas
     \BRitem[Motivación: Mantener los datos en un estado consistente.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Planes de Estudios en rediseño por Programa Académico.}
+\begin{BussinesRule}{BR12}{Planes de Estudios en rediseño por Programa Académico.}
     \BRitem[Tipo:] Relación.
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
@@ -138,7 +138,7 @@ Tareas
     \BRitem[Ejemplo Negativo:] Licenciatura en Economía: Plan 2000, Plan 2009, Plan 2014, Plan 2018.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{La matrícula del empleado es única.}
+\begin{BussinesRule}{BR13}{La matrícula del empleado es única.}
     \BRitem[Tipo: Relación]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -148,7 +148,7 @@ Tareas
     \BRitem[Ejemplo Negativo: El Empleado Juan Perez tiene una matricula 2014000990 y El Empleado Armando López Doriga  tiene una matricula 2014000990 .]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR} {El nombre de la Unidad de Aprendizaje es único.}
+\begin{BussinesRule}{BR14} {El nombre de la Unidad de Aprendizaje es único.}
     \BRitem[Tipo: Relación]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -158,7 +158,7 @@ Tareas
     \BRitem[Ejemplo Negativo: En un Programa Académico  tenemos la materia Ingeniería de Software y  Ingeniería de Software.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{ Longitud máxima de Unidad de aprendizaje.}
+\begin{BussinesRule}{BR15}{ Longitud máxima de Unidad de aprendizaje.}
     \BRitem[Tipo: Regla de inferencia de un hecho]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -169,7 +169,7 @@ Tareas
     \BRitem[Ejemplo Negativo: El usuario deja campos obligatorios y el sistema le permite continuar.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR} {El nombre del Programa Académico es único.}
+\begin{BussinesRule}{BR16} {El nombre del Programa Académico es único.}
     \BRitem[Tipo: Relación]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
@@ -179,7 +179,7 @@ Tareas
     \BRitem[Ejemplo Negativo: En una Unidad Académica existen los Programas Académicos Ingeniería en Sistemas Computacionales y Ingeniería en Sistemas Computacionales.]
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR}{Las horas totales deben de estar entre 350 y 450 horas.}
+\begin{BussinesRule}{BR17}{Las horas totales deben de estar entre 350 y 450 horas.}
     \BRitem[Tipo: Regla de operación]
     \BRitem[Clase: Habilitadora]
     \BRitem[Nivel: Control]
