@@ -1,0 +1,80 @@
+\begin{UseCase}{SP1-CU10}{Registrar Evaluación y Acreditación de la Relación de Prácticas}{El usuario podrá registrar la Evaluación y Acreditación de la Relación de Prácticas correspondiente a una Unidad de Aprendizaje}
+
+        \UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Autor}{\color{Gray}Maldonado Carpio Jorge Enrique}
+		\UCitem{Supervisa}{\color{Gray}Ramírez Martínez Janet Naibi}
+		\UCitem{Actor}{\hyperlink{Usuario}{Usuario}}
+		\UCitem{Propósito}{Poblar de Unidades Temáticas  a una Unidad de Aprendizaje.}
+		\UCitem{Entradas}{Las entradas para el registro de tiempos de la Unidad de Aprendizaje serán:
+          \begin{itemize}
+          	\item Acreditación.
+          	\item Evaluación.
+          	\item Porcentaje.
+          \end{itemize}
+        }
+		\UCitem{Origen}{Teclado y Mouse.}
+		\UCitem{Salidas}{}
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{}
+		\UCitem{Postcondiciones}{La Evaluación y Acreditación de la Relación de Prácticas correspondiente a una Unidad de Aprendizaje queda registrada en el sistema.}
+		\UCitem{Errores}{}
+		\UCitem{Estado}{Revisión.}
+		\UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+    
+    \UCpaso[\UCactor] Presiona el botón \BtnModal que se encuentra a un lado del campo ``Evaluación y Acreditación'' \IUref{SP1-U4}{Registrar Relación de Prácticas}
+    \UCpaso Muestra la interfaz de usuario \IUref{SP1-MIU4-1}{Registrar Evaluación y Acreditación}.
+    \UCpaso[\UCactor] Ingresa la Acreditación de la Relación de Prácticas.
+    \UCpaso[\UCactor] Ingresa la Evaluación de la Relación de Prácticas con base en la regla \BRref{BR29}{Debe existir al menos un criterio de evaluación para la Relación de Prácticas.}.
+    \UCpaso[\UCactor] Ingresa el Porcentaje de la Evaluación de la Relación de Prácticas con base en la regla \BRref{BR25}{La suma de los porcentajes de cada evaluación debe ser igual a 100\%}.
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria A][Trayectoria B]
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados.[Trayectoria C]
+    \UCpaso Valida que la suma de los porcentajes sea igual a 100\%.[Trayectoria D]
+    \UCpaso Guarda la información de la Evaluación y Acreditación de la Relación de Prácticas.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{OK}. 
+    \UCpaso Muestra la interfaz de usuario  \IUref{SP1-U4}{Registrar Relación de Prácticas}.
+\end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNARTIVA A -------------------------
+\begin{UCtrayectoriaA}{A}{El usuario desea agregar más de una Evaluación de la Relación de Prácticas.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Evaluación}
+    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU10}.
+    
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{B}{El usuario desea cancelar el registro Evaluación y Acreditación de la Relación de Prácticas.}
+
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Cerrar}
+    \UCpaso Muestra el \MSGref{MSG6}{¿Seguro que desea cancelar el registro?}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Si} [Trayectoria B.1]
+    \UCpaso Continua en el paso 13 de la trayectoria principal del \UCref{SP1-CU10}.
+    
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{B.1}{El usuario no desea cancelar el registro Evaluación y Acreditación de la Relación de Prácticas.}
+    
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{No}
+    \UCpaso Continua en el paso 15 de la trayectoria principal del \UCref{SP1-CU10}.
+    
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados.}
+	\UCpaso Detecta uno o más campos sin contestar.
+    \UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU10}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{D}{La suma de los porcentajes es distinta a 100\%}
+    \UCpaso Detecta que la suma de los porcentajes dados por el usuario no cumplen con el 100\% requerido.
+    \UCpaso Muestra el mensaje \MSGref{MSG23.}{Los porcentajes de evaluación no cumplen con el porcentaje total obligatorio.}
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU10}.
+\end{UCtrayectoriaA}
+
+
+
