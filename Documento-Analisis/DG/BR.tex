@@ -23,7 +23,7 @@
     \BRitem[Descripción:] Solo los jefes (Jefe de División de Innovación Académica, Jefe de Departamento de Desarrollo e Innovación curricular y jefe de Innovación Educativa ) pueden registrar, consultar y cambiar  la información de los empleados que estén a su cargo, la organización para saber que usuario controla  la información de otro  será la siguiente:
     \begin{itemize}
         \item Jefe de División de Innovación Académica: Jefe de Departamento de Desarrollo e Innovación curricular, jefe de Innovación Educativa y analista de la DES.
-        \item Jefe de Departamento de Desarrollo e Innovación curricular: Jefe de Innovación Educativa y analista de la DES.
+        \item Jefe de Departamento de Desarrollo e Innovación curricular: ]efe de Innovación Educativa y analista de la DES.
         \item Jefe de Innovación Educativa: Docente y analista de su unidad académica. 
     \end{itemize}
     \BRitem[Motivación:] Permitir a los Jefes tener un control sobre el acceso al sistema.
@@ -41,7 +41,7 @@
         \item Jefe de Departamento de Desarrollo e Innovación curricular: DES.
         \item Jefe de Innovación Educativa: Unidad Académica.
         \item Docente: Unidad Académica de su Jefe de Innovación Educativa.
-        \item Analista: DES o Unidad Académica de su Jefe de Innovación Educativa.
+        \item Analista:  DES o Unidad Académica de su Jefe de Innovación Educativa.
     \end{itemize}
     \BRitem[Motivación:] Identificar que usuarios pertenecen a cada área y así saber que permisos tienen y a que informació pueden acceder.
     \BRitem[Ejemplo Positivo:] La zona de trabajo de un Docente creado por el Jefe de Innovación Educativa de la ESCOM es la ESCOM.
@@ -145,7 +145,7 @@
     \BRitem[Tipo: ]Regla de inferencia de un hecho.
     \BRitem[Clase: ]Habilitadora.
     \BRitem[Nivel: ]Control.
-    \BRitem[Descripción:] Existen catálogos de:
+    \BRitem[Descripción: ]Existen catálogos de:
     \begin{itemize}
         \item Modalidades
             Escolarizada\\
@@ -161,7 +161,7 @@
             Registrar Mapa Curricular\\
             Registrar Unidad de Aprendizaje]
     \end{itemize}
-    \BRitem[Motivación:] Mantener los datos en un estado consistente.
+    \BRitem[Motivación: ]Mantener los datos en un estado consistente.
 \end{BussinesRule}
 
 \begin{BussinesRule}{BR15}{Planes de Estudios en re diseño por Programa Académico.}
@@ -222,7 +222,7 @@
     \BRitem[Descripción: ]Un Plan de Estudios debe tener entre 350 y 450 horas.
     \BRitem[Motivación:] Distribuir las horas entre las unidades de aprendizaje.
     \BRitem[Ejemplo Positivo:] El usuario llena los dato de total de horas con 400 horas.
-    \BRitem[Ejemplo Negativo:] El usuario llena los dato de total de horas con 40000 horas.
+    \BRitem[Ejemplo Negativo: ] El usuario llena los dato de total de horas con 40000 horas.
 \end{BussinesRule}
 
 \begin{BussinesRule}{BR21}{Un libro tiene un ISBN único.}
@@ -272,30 +272,75 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 \end{BussinesRule}
 
 \begin{BussinesRule}{BR24}{Debe existir al menos un criterio de evaluación para una Unidad de Aprendizaje.}
-	\BRitem[Tipo:] Regla de integridad estructural.
-	\BRitem[Clase:] Habilitadora.
-	\BRitem[Nivel:] Control.
-	\BRitem[Descripción:] Para cada Unidad de Aprendizaje debe existir al menos un criterio de evaluación cuyo porcentaje asociado sería de 100\%, sin embargo, puede tener tantos criterios como el docente decida.
-	\BRitem[Motivación:] Que el docente que imparta dicha Unidad de Aprendizaje tenga al menos un referente para evaluar a sus alumnos.
-	\BRitem[Ejemplo positivo:] La Unidad de Aprendizaje ``Ingeniería de Sofware'' tiene como único criterio de evaluación el desarrollo de un proyecto cuyo porcentaje equivale al 100\% de la calificación del alumno.
+    \BRitem[Tipo:] Regla de integridad estructural.
+    \BRitem[Clase:] Habilitadora.
+    \BRitem[Nivel:] Control.
+    \BRitem[Descripción:] Para cada Unidad de Aprendizaje debe existir al menos un criterio de evaluación cuyo porcentaje asociado sería de 100\%, sin embargo, puede tener tantos criterios como el docente decida.
+    \BRitem[Motivación:] Que el docente que imparta dicha Unidad de Aprendizaje tenga al menos un referente para evaluar a sus alumnos.
+    \BRitem[Ejemplo positivo:] La Unidad de Aprendizaje ``Ingeniería de Sofware'' tiene como único criterio de evaluación el desarrollo de un proyecto cuyo porcentaje equivale al 100\% de la calificación del alumno.
 \end{BussinesRule}
 
 \begin{BussinesRule}{BR25}{La suma de los porcentajes de cada evaluación debe ser igual a 100\%.}
-	\BRitem[Tipo:] Regla de operación.
-	\BRitem[Clase:] Habilitadora.
-	\BRitem[Nivel:] Control.
-	\BRitem[Descripción:] La suma total de los porcentajes de cada evaluación registrada por el docente, debe ser exactamente igual al 100\%.
-	\BRitem[Motivación:] Que exista coherencia al momento de evaluar y que el alumno pueda identificar de dónde proviene su calificación.
-	\BRitem[Ejemplo positivo:] Las evaluaciones registradas para la Unidad de Aprendizaje ``Ingeniería de Software'' son:
-		\begin{itemize}
-			\item 20\% Examen oral.
-			\item 20\% Tareas.
-			\item 60\% Proyecto final.
-		\end{itemize}
-		En total, los porcentajes suman el 100\% de la calificación del alumno.
+    \BRitem[Tipo:] Regla de operación.
+    \BRitem[Clase:] Habilitadora.
+    \BRitem[Nivel:] Control.
+    \BRitem[Descripción:] La suma total de los porcentajes de cada evaluación registrada por el docente, debe ser exactamente igual al 100\%.
+    \BRitem[Motivación:] Que exista coherencia al momento de evaluar y que el alumno pueda identificar de dónde proviene su calificación.
+    \BRitem[Ejemplo positivo:] Las evaluaciones registradas para la Unidad de Aprendizaje ``Ingeniería de Software'' son:
+        \begin{itemize}
+            \item 20\% Examen oral.
+            \item 20\% Tareas.
+            \item 60\% Proyecto final.
+        \end{itemize}
+        En total, los porcentajes suman el 100\% de la calificación del alumno.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR26}{Información de los usuarios.}
+\begin{BussinesRule}{BR26}{Vigencia de una Unidad de Aprendizaje}
+    \BRitem[Tipo:] Regla de integridad referencial.
+    \BRitem[Clase:] Cronometrada.
+    \BRitem[Nivel:] Control.
+    \BRitem[Descripción:] La vigencia de una Unidad de Aprendizaje comienza en el año en el que está siendo diseñada o rediseñada hasta cinco años posteriores.
+    \BRitem[Motivación:] Que los a los alumnos se les impartan las Unidades de Aprendizaje más actualizadas y no estén trabajando con cosas obsoletas.
+    \BRitem[Ejemplo positivo:] Para una Unidad de Aprendizaje que está siendo diseñada o rediseñada el día 13/11/2018 cumple la regla:
+        \begin{itemize}
+            \item 13/11/2023.
+            \item 2023.
+        \end{itemize}
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR27}{ Longitud máxima de matricula.}
+    \BRitem[Tipo: ]Regla de inferencia de un hecho.
+    \BRitem[Clase: ]Habilitadora.
+    \BRitem[Nivel: ]Control.
+    \BRitem[Descripción: ]La matricula tiene un tamaño máximo de 10 caracteres y es la matricula que tiene cada trabajador del IPN.
+    \BRitem[Sentencia:]
+    \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
+    \BRitem[Ejemplo Positivo:] . 2014171285
+    \BRitem[Ejemplo Negativo: ]. 20111111111
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR28}{ Longitud máxima de contraseña.}
+    \BRitem[Tipo: ]Regla de inferencia de un hecho.
+    \BRitem[Clase: ]Habilitadora.
+    \BRitem[Nivel: ]Control.
+    \BRitem[Descripción: ]La contraseña tiene un tamaño máximo de 6 caracteres y no debe llevar acentos.
+    \BRitem[Sentencia:]
+    \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
+    \BRitem[Ejemplo Positivo:] . abc123
+    \BRitem[Ejemplo Negativo: ]. abé123333
+\end{BussinesRule}
+
+
+\begin{BussinesRule}{BR29}{Debe existir al menos un criterio de evaluación para la Relación de Prácticas.}
+    \BRitem[Tipo:] Regla de integridad estructural.
+    \BRitem[Clase:] Habilitadora.
+    \BRitem[Nivel:] Control.
+    \BRitem[Descripción:] Para cada Práctica debe existir al menos un criterio de evaluación cuyo porcentaje asociado sería de 100\%, sin embargo, puede tener tantos criterios como el docente decida.
+    \BRitem[Motivación:] Que cada práctica tenga al menos un referente para evaluar a sus alumnos.
+    \BRitem[Ejemplo positivo:] La Práctica 1 de la Unidad de Aprendizaje ``Ingeniería de Sofware'' tiene como único criterio de evaluación el desarrollo de un proyecto cuyo porcentaje equivale al 100\% de la calificación del alumno.
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR30}{Información de los usuarios.}
     \BRitem[Tipo:] Regla de integridad.
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
@@ -334,11 +379,13 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \end{itemize}
  \end{BussinesRule}
 
+
+
 %\begin{BussinesRule}{}{}
-%	\BRitem[Tipo:]
-%	\BRitem[Clase:]
-%	\BRitem[Nivel:]
-%	\BRitem[Descripción:]
-%	\BRitem[Motivación:]
-	%\BRitem[Ejemplo positivo:]
+%   \BRitem[Tipo:]
+%   \BRitem[Clase:]
+%   \BRitem[Nivel:]
+%   \BRitem[Descripción:]
+%   \BRitem[Motivación:]
+    %\BRitem[Ejemplo positivo:]
 %\end{BussinesRule}

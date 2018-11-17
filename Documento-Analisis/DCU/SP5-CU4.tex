@@ -46,7 +46,7 @@
 	\UCpaso  El sistema verifica la existencia de registros en los catálogos cargos  y  lugares de trabajo de la \BRref{BR14}{Existen los catálogos} . [Trayectoria B] 
 	\UCpaso El sistema carga la información del catalogo de empleado  según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria H]
 	\UCpaso El sistema carga la pantalla  \IUref{IU8}{Registrar empleados}. [Trayectoria I]
-	\UCpaso[\UCactor] Captura la información necesaria del empleado según la \BRref{BR26}{Información de los usuarios} .[Trayectoria C] [Trayectoria D] 
+	\UCpaso[\UCactor] Captura la información necesaria del empleado según la \BRref{BR30}{Información de los usuarios} .[Trayectoria C] [Trayectoria D] 
 	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Registrar}.
 	\UCpaso El sistema verifica la consistencia de la información. [Trayectoria E] [Trayectoria F]
 	\UCpaso El sistema registra al empleado. [Trayectoria H]
@@ -77,7 +77,7 @@
 	\UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP5-CU4}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{F}{Se incumple la \BRref{BR3}{Gestión de Usuarios} o la  \BRref{BR26}{Información de los usuarios} o la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo.}  .}
+\begin{UCtrayectoriaA}{F}{Se incumple la \BRref{BR3}{Gestión de Usuarios} o la  \BRref{BR30}{Información de los usuarios} o la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo.}  .}
 	\UCpaso El sistema muestra el \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
