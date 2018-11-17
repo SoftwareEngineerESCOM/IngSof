@@ -300,17 +300,38 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
     \BRitem[Descripción:]Se debe de contar con la siguiente información para registrar un usuario:
- \begin{itemize}
+    \begin{itemize}
         \item Nombre
         \item Apellido Paterno
         \item Apellido Materno
-        \item Titulo
-        \item Cargo
-        \item Lugar de trabajo
-        \item Contraseña
+
+        Estos tres datos comparten la misma expresión regular:
+        \^{}[A-Za-z]*\textbackslash{}s()[A-Za-z]*\$
+
+        \item Titulo. Se obtiene por medio de un select.
+        \item Cargo. Se obtiene por medio de un select.
+        \item Lugar de trabajo. Se obtiene por medio de un select.
+        \item Contraseña. Expresión regular: \^{}[A-Za-z0-9]+
+
         \item Correo electrónico    
-        \end{itemize} 
+    \end{itemize} 
     \BRitem[Motivación:] Contar con la información necesaria de los usarios para el desarrollo de las actividades.
+    \BRitem[Ejemplo positivo:] Información del usuario 
+    \begin{itemize}
+        \item Nombre: Juan Manuel
+        \item Apellido Paterno: Perez de
+        \item Apellido Materno: los Santos
+        \item Contraseña: juanit8banan4
+        \item Correo electrónico: juanito@gmail.com
+    \end{itemize}
+    \BRitem[Ejemplo negativo:] Información del usuario 
+    \begin{itemize}
+        \item Nombre: Juan Manuel Fernando
+        \item Apellido Paterno: Perez de los Santos
+        \item Apellido Materno: del Carmen
+        \item Contraseña: 132:\_147\%\$
+        \item Correo electrónico: juanito\&@gmail.com-mx/
+    \end{itemize}
  \end{BussinesRule}
 
 %\begin{BussinesRule}{}{}
