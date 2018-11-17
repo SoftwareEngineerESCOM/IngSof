@@ -1,83 +1,86 @@
+
 \begin{UseCase}{SP5-CU3}{Consultar usuarios}{El \hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA} y  \hyperlink{JIE}{JIE}  podrá visualizar la información de los empleados.}
-        \UCitem{Versión}{\color{Gray}3.0}
-        \UCitem{Autor}{\color{Gray}Hernández Ruiz Rafael}
-        \UCitem{Supervisa}{\color{Gray}Abigail Nicolás Sayago}
-        \UCitem{Actor}{\hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA}, \hyperlink{JIE}{JIE}.}
-        \UCitem{Propósito}{Ver los empleados que cada actor posee, así como realizar trabajos de gestión: editar y eliminar usuarios.}
-        \UCitem{Entradas}{
-          \begin{itemize}
-            \item Selección del cargo de los empleados a buscar.
-            \item Clic en botón buscar.
-            \item Clic en botón x.
-            \item Clic en botón Cancelar.
-            \item Clic en botón Aceptar.
-        \end{itemize}}
-        \UCitem{Origen}{Mouse.}
-        \UCitem{Salidas}{
-            \begin{itemize}
-                \item Lista de empleados de un cargo en específico con sus datos (cargo, nombre, matricula, titulo unidad académica). 
-                \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
-                \item \MSGref{MSG21}{No hay usuarios registrados con ese cargo.}
-                \item \MSGref{MSG22}{¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?}
-            \end{itemize}
-        }
-        \UCitem{Destino}{Pantalla.}
-        \UCitem{Precondiciones}{ 1.- Debe existir por lo menos un registro en el catálogo de la BRR1.}
-        \UCitem{Postcondiciones}{1.- Habilita la llamada a los casos de uso  SP5-CU10, SP5-CU11.}
-        \UCitem{Errores}{ \begin{itemize}
-        \item El catálogo de cargos no se cargo correctamente.
-        \item Hubo un problema al conectarse con el servidor.
-        \item Hubo un problema al conectarse con la base de datos. \end{itemize}}
-        \UCitem{Estado}{Gestión.}
-        \UCitem{Observaciones}{}
-        \UCitem{Puntos de extensión}{Casos de uso  \UCref{SP5-CU5}}
+	\UCitem{Versión}{\color{Gray}3.0}
+	\UCitem{Autor}{\color{Gray}Hernández Ruiz Rafael}
+	\UCitem{Supervisa}{\color{Gray}Abigail Nicolás Sayago}
+	\UCitem{Actor}{\hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA}, \hyperlink{JIE}{JIE}.}
+	\UCitem{Propósito}{Ver los empleados que cada actor posee, así como realizar trabajos de gestión: editar y eliminar usuarios.}
+	\UCitem{Entradas}{
+		\begin{itemize}
+			\item Selección del cargo de los empleados a buscar.
+			\item Clic en botón buscar.
+			\item Clic en botón x.
+			\item Clic en botón Cancelar.
+			\item Clic en botón Aceptar.
+	\end{itemize}}
+	\UCitem{Origen}{Mouse.}
+	\UCitem{Salidas}{
+		\begin{itemize}
+			\item Lista de empleados de un cargo en específico con sus datos (cargo, nombre, apellido paterno, apellido materno correo, zona de trabajo). 
+			\item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+			\item \MSGref{MSG21}{No hay usuarios registrados con ese cargo.}
+			\item \MSGref{MSG22}{¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?}
+		\end{itemize}
+	}
+	\UCitem{Destino}{Pantalla.}
+	\UCitem{Precondiciones}{ 1.- Debe existir por lo menos un registro en el catálogo de la cargos y lugares de trabajo de la \BRref{BR14}{Existen los catálogos} .}
+	\UCitem{Postcondiciones}{1.- Habilita la llamada a los casos de uso  SP5-CU10, SP5-CU11.}
+	\UCitem{Errores}{ \begin{itemize}
+			\item El catálogo de cargos no se cargo correctamente.
+			\item Hubo un problema al conectarse con el servidor.
+			\item Hubo un problema al conectarse con la base de datos. \end{itemize}}
+	\UCitem{Estado}{Gestión.}
+	\UCitem{Observaciones}{}
+	\UCitem{Puntos de extensión}{Casos de uso  \UCref{SP5-CU5}}
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-    
-    \UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU1}{Menú} la opción de gestionar usuarios. 
-    \UCpaso  El sistema verifica la existencia de registros del catalogo. [Trayectoria B] 
-    \UCpaso El sistema carga la pantalla  \IUref{IU2}{Gestionar empleados}. [Trayectoria G] 
-    \UCpaso[\UCactor] Selecciona el cargo de los empleados a buscar. 
-    \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Buscar}.  [Trayectoria C] 
-    
-    \UCpaso El sistema despliega la información de los empleados permitidos para el actor correspondiente de acuerdo a la regla de negocio BR3 (cargo, nombre, matricula, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria Principal punto 2] [Trayectoria D] [Trayectoria F] 
+	
+	\UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU1}{Menú} la opción de gestionar usuarios. 
+	\UCpaso  El sistema verifica la existencia de registros del catalogo de la \BRref{BR14}{Existen los catálogos} para cargos  y carga los indicados para el actor según la \BRref{BR3}{Gestión de Usuarios} . [Trayectoria B] 
+	\UCpaso El sistema carga la pantalla  \IUref{IU2}{Gestionar empleados}. [Trayectoria G] 
+	\UCpaso[\UCactor] Selecciona el cargo de los empleados a buscar. 
+	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Buscar}.  [Trayectoria C] 
+	
+	\UCpaso El sistema despliega la información de los empleados (cargo, nombre, correo, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria Principal punto 4] [Trayectoria D] [Trayectoria F] 
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{B}{No existen registros en el catálogo de cargos.}
-    \UCpaso     El sistema muestra el \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU1}{Menú}.
+	\UCpaso     El sistema muestra el \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU1}{Menú}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{No existen  empleados con el cargo seleccionado.}
-    \UCpaso     El sistema muestra el \MSGref{MSG21}{No hay usuarios registrados con ese cargo}.
+	\UCpaso     El sistema muestra el \MSGref{MSG21}{No hay usuarios registrados con ese cargo}.
 \end{UCtrayectoriaA}
 
 
 \begin{UCtrayectoriaA}{D}{El actor presiona el botón \IUbutton{X}.}
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG22}{¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?} solicitando confirmación. [Trayectoria E]
-    \UCpaso[\UCactor] El actor presiona el botón \IUbutton{Cancelar}.
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG22}{¿Seguro de eliminar al empleado ''Nombre'' con matrícula: ''Matrícula'' del sistema?} solicitando confirmación. [Trayectoria E]
+	\UCpaso[\UCactor] El actor presiona el botón \IUbutton{Cancelar}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{E}{El actor presiona el botón \IUbutton{Aceptar}.}
-    \UCpaso     El sistema elimina al empleado. [Trayectoria F]   
+	\UCpaso     El sistema elimina al empleado. [Trayectoria F]   
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 
 \begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU1}.
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
 
 \begin{UCtrayectoriaA}{G}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
-    \UCpaso No se puede mostrar la página solicitada.
-    \UCpaso El sistema muestra el \MSGref{MSG24}{Por el momento la página solicitada no esta disponible}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
+	\UCpaso No se puede mostrar la página solicitada.
+	\UCpaso El sistema muestra el \MSGref{MSG24}{Por el momento la página solicitada no esta disponible}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
+
+
 
