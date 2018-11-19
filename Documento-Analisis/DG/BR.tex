@@ -392,6 +392,38 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \end{itemize}
  \end{BussinesRule}
 
+\begin{BussinesRule}{BR31}{Información de Programa Académico.}
+    \BRitem[Tipo:] Regla de integridad.
+    \BRitem[Clase:] Habilitadora.
+    \BRitem[Nivel:] Control.
+    \BRitem[Descripción:]Se debe de contar con la siguiente información para registrar un Programa Académico:
+    \begin{itemize}
+        \item Nombre 
+        Este dato tiene la expresión regular:
+        [\wéíóúüñÁÉÍÓÚÜÑ]+( [\wáéíóúüñÁÉÍÓÚÜÑ]+)*
+
+    \end{itemize} 
+    \BRitem[Motivación:] Contar con la información necesaria para la gestión de un Programa Académico.
+    \BRitem[Ejemplo positivo:] Información del Programa Académico
+    \begin{itemize}
+        \item Nombre: Ingeniería en Sistemas Computacionales
+    \end{itemize}
+    \BRitem[Ejemplo negativo:] Información del Programa Académico
+    \begin{itemize}
+    \item Nombre: Ingeniería\% \_en\ Sistemas\ Computacionales\
+    \end{itemize}
+ \end{BussinesRule}
+
+ \begin{BussinesRule}{BR32}{ Longitud máxima de nombre de Programa Académico.}
+    \BRitem[Tipo: ]Regla de inferencia de un hecho.
+    \BRitem[Clase: ]Habilitadora.
+    \BRitem[Nivel: ]Control.
+    \BRitem[Descripción: ]El nombre del Programa Acádémico tiene una longitud máxima de 150 basada en el modelo de datos.
+    \BRitem[Sentencia:]
+    \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
+    \BRitem[Ejemplo Positivo:] . Ingeniería en Sistemas Computacionales 
+    \BRitem[Ejemplo Negativo: ]. Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales 
+\end{BussinesRule}
 
 
 %\begin{BussinesRule}{}{}
