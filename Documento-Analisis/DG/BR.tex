@@ -351,7 +351,7 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
         \item Apellido Materno
 
         Estos tres datos comparten la misma expresión regular:
-        [A-Za-z]+(\textbackslash{}s[A-Za-z]+)*
+        [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+([A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*
 
         \item Titulo. Se obtiene por medio de un select.
         \item Cargo. Se obtiene por medio de un select.
@@ -378,6 +378,7 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
         \item Correo electrónico: juanito\&@gmail.com-mx/
     \end{itemize}
  \end{BussinesRule}
+
 \begin{BussinesRule}{BR31}{Información de Programa Académico.}
     \BRitem[Tipo:] Regla de integridad.
     \BRitem[Clase:] Habilitadora.
@@ -386,7 +387,7 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \begin{itemize}
         \item Nombre 
         Este dato tiene la expresión regular:
-        [\wéíóúüñÁÉÍÓÚÜÑ]+( [\wáéíóúüñÁÉÍÓÚÜÑ]+)*
+        [\textbackslash{}wéíóúüñÁÉÍÓÚÜÑ]+( [\textbackslash{}wáéíóúüñÁÉÍÓÚÜÑ]+)*
 
     \end{itemize} 
     \BRitem[Motivación:] Contar con la información necesaria para la gestión de un Programa Académico.
