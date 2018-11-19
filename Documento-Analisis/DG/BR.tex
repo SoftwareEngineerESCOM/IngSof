@@ -385,9 +385,10 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Nivel:] Control.
     \BRitem[Descripción:]Se debe de contar con la siguiente información para registrar un Programa Académico:
     \begin{itemize}
-        \item Nombre (150)
+        \item Nombre 
         Este dato tiene la expresión regular:
-        [A-Za-z]+(\textbackslash{}s[A-Za-z]+)*
+        [\wéíóúüñÁÉÍÓÚÜÑ]+( [\wáéíóúüñÁÉÍÓÚÜÑ]+)*
+
     \end{itemize} 
     \BRitem[Motivación:] Contar con la información necesaria para la gestión de un Programa Académico.
     \BRitem[Ejemplo positivo:] Información del Programa Académico
@@ -396,7 +397,7 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \end{itemize}
     \BRitem[Ejemplo negativo:] Información del Programa Académico
     \begin{itemize}
-        \item Nombre: '32143$#"!!3443534' $#"!"
+    \item Nombre: Ingeniería\% \_en\ Sistemas\ Computacionales\
     \end{itemize}
  \end{BussinesRule}
 
