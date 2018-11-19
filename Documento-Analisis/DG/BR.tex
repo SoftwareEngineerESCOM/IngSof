@@ -356,7 +356,7 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
         \item Titulo. Se obtiene por medio de un select.
         \item Cargo. Se obtiene por medio de un select.
         \item Lugar de trabajo. Se obtiene por medio de un select.
-        \item Contraseña. Expresión regular: [A-Za-z0-9]+
+        \item Contraseña. Expresión regular: [\^{}áéíóúüñÁÉÍÓÚÜÑ\textbackslash{}s]+
 
         \item Correo electrónico    
     \end{itemize} 
@@ -387,7 +387,7 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \begin{itemize}
         \item Nombre 
         Este dato tiene la expresión regular:
-        [\textbackslash{}wéíóúüñÁÉÍÓÚÜÑ]+( [\textbackslash{}wáéíóúüñÁÉÍÓÚÜÑ]+)*
+        [\textbackslash{}wéíóúüñÁÉÍÓÚÜÑ]+([\textbackslash{}wáéíóúüñÁÉÍÓÚÜÑ]+)*
 
     \end{itemize} 
     \BRitem[Motivación:] Contar con la información necesaria para la gestión de un Programa Académico.
