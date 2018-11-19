@@ -15,7 +15,7 @@
 
                 \item \MSGref{MSG5}{Registro finalizado exitosamente.}
                 \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
-                \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+                \item \MSGref{MSG6}{¿Está seguro que desea cancelar el registro?}
                	\item \MSGref{MSG32}{Todos los campos son obligatorios}
                 \item \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
                 \item \MSGref{MSG37}{Ha ocurrido un error al guardar los datos.}
@@ -62,13 +62,13 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El actor presiona el botón \IUbutton{Cancelar}.}
-    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG6}{¿Está seguro que desea cancelar el registro?}.
     \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.2-J}{Gestionar Programas Académicos}
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 \begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
-    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG6}{¿Está seguro que desea cancelar el registro?}.
     \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
     \UCpaso Cierra el mensaje.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU1}.
