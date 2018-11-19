@@ -15,7 +15,7 @@
             \item Lugar de trabajo.
             \item Contraseña.
             \item Correo electrónico.
-            \item Clic en botón finalzar.
+            \item Clic en botón finalizar.
         \end{itemize}}
         \UCitem{Origen}{Mouse.}
         \UCitem{Salidas}{
@@ -23,6 +23,9 @@
                 \item Información del empleado (nombre, apellido paterno, apellido materno, correo , titulo, cargo, lugar de trabajo y contraseña).
                 \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}
                 \item \MSGref{MSG27}{Empleado modificado.}
+                \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+                \item \MSGref{MSG35}{Escriba información valida.}
+                \item \MSGref{MSG3X}{El campo es requerido.}
            
             \end{itemize}
         }
@@ -49,7 +52,7 @@
     \UCpaso El sistema carga la pantalla  \IUref{IU7}{Editar empleados}. [Trayectoria G] 
     \UCpaso[\UCactor] Edita la información de los empleados.[Trayectoria C] [Trayectoria D]
     \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Finalizar}.
-    \UCpaso El sistema verifica la consistencia de la información. [Trayectoria E] 
+    \UCpaso El sistema verifica la consistencia de la información. [Trayectoria E] [Trayectoria I]
     \UCpaso El sistema realiza la modificación de la información del empleado. [Trayectoria F] 
     \UCpaso  El sistema muestra el \MSGref{MSG27}{Empleado modificado}.    
     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}
@@ -66,14 +69,17 @@
     \UCpaso     Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
 \end{UCtrayectoriaA}
 
+
 \begin{UCtrayectoriaA}{D}{El actor presiono el botón \IUbutton{Cancelar}.}
- \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el boton \IUbutton{Aceptar} . [Trayectoria H]
+	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{E}{Se incumple la \BRref{BR3}{Gestión de Usuarios} o la  \BRref{BR30}{Información de los usuarios} o la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo.}  .}
-	\UCpaso El sistema muestra el \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
+\begin{UCtrayectoriaA}{E}{Se incumple la \BRref{BR3}{Gestión de Usuarios} o la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo}  o la  \BRref{BR30}{Información de los usuarios} en la definición de cada campo   .}
+	\UCpaso El sistema muestra el \MSGref{MSG35}{Escriba información valida.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
+	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
 \end{UCtrayectoriaA}
 
 
@@ -91,4 +97,11 @@
     \UCpaso El sistema muestra el \MSGref{MSG24}{Por el momento la página solicitada no esta disponible}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
+\end{UCtrayectoriaA}
+\begin{UCtrayectoriaA}{H}{El actor presiono el botón \IUbutton{Cancelar}.}
+	\UCpaso Cierra el mensaje y continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.	
+\end{UCtrayectoriaA}
+\begin{UCtrayectoriaA}{I}{Uno o mas campos de la {BR30}{Información de los usuarios}  están vacíos }
+	\UCpaso El sistema muestra el {MSG3X}{El campo es requerido} debajo de cada campo que no fue llenado. 
+	\UCpaso	Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
 \end{UCtrayectoriaA}
