@@ -31,8 +31,8 @@
 		\UCitem{Postcondiciones}{El Plan de Estudios queda registrado en el sistema.}
 		\UCitem{Errores}{
 			  \begin{itemize}
-				\item El catálogo de modalidad no se cargaron correctamente.
-				\item Hubo un problema al conectarse con la base de datos.
+				\item E1. El catálogo de modalidad no se cargaron correctamente.
+				\item E2. Hubo un problema al conectarse con la base de datos.
 			\end{itemize}
 		}
 		\UCitem{Estado}{Revisión.}
@@ -47,7 +47,7 @@
 	\UCpaso  El sistema verifica la existencia de registros en el catálogo modalidad de la \BRref{BR14}{Existen los catálogos} . [Trayectoria A] 
     \UCpaso El sistema carga el catálogo de modalidad.[Trayectoria B]
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1.1-D}{Registrar Plan de Estudios}.
-    \UCpaso[\UCactor] Captura la información necesaria del empleado según la \BRref{BR33}{Información del Plan de Estudios}.
+    \UCpaso[\UCactor] Captura la información necesaria del Plan de Estudios según la \BRref{BR33}{Información del Plan de Estudios}.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria C] [Trayectoria D]
     \UCpaso Verifica la consistencia de la información [Trayectoria E]
     \UCpaso Guarda la información del Plan de Estudios. [Trayectoria B]
