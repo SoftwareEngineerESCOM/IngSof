@@ -7,65 +7,76 @@
 		\UCitem{Propósito}{Cambiar el nombre del Programa Académico en el sistema.}
 		\UCitem{Entradas}{Las entradas para Editar Programa Académico:
           \begin{itemize}
-          	\item Nombre (Tipo Alfanumérico)
+          	\item Nombre (Tipo Alfanumérico y espacio.)
           \end{itemize}
         }
 		\UCitem{Origen}{Teclado.}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item \MSGref{MSG32}{Todos los campos son obligatorios}
                 \item \MSGref{MSG5}{Registro finalizado exitosamente.}
-                \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-                \item \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
                 \item \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde.}
+                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
+                \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+                \item \MSGref{MSG32}{Todos los campos son obligatorios}
+                \item \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
-		\UCitem{Precondiciones}{}
+		\UCitem{Precondiciones}{Ninguna.}
 		\UCitem{Postcondiciones}{El Programa Académico quedó actualizado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo o quedó sin modificarse.}
-		\UCitem{Errores}{E1. El nombre del Programa Académico contiene uno o más caracteres no alfanuméricos.}
+		\UCitem{Errores}{
+		E1. El nombre del Programa Académico contiene uno o más caracteres no alfanuméricos(exceptuando espacio).
+		E2. El nombre del Programa Académico se repite.}
 		\UCitem{Estado}{Revisión.}
-		\UCitem{Observaciones}{El nombre de un Programa Académico puede ser igual a otro.}
+		\UCitem{Observaciones}{}
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{IU2.2-J}{Consultar Programas Académicos}
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.2.1-J}{Registrar/Editar Programa Académico}.
-    \UCpaso Cargar el nombre del Programa Académico. [Trayectoria E]
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{IU2.2-J}{Consultar Programas Académicos} el cual tiene forma de lápiz. Existen las trayectorias alternativas [Trayectoria F] al presionar el boton Editar.       
+    \UCpaso Muestra la interfaz de usuario \IUref{IU2.2.1-J}{Editar Programa Académico}.
+    \UCpaso Cargar el nombre del Programa Académico. 
     \UCpaso[\UCactor] Ingresa el nuevo nombre del Programa Académico.
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria A] [Trayectoria B]
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados. [Trayectoria C][Trayectoria D]
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}.Existen las trayectorias alternativas [Trayectoria C], [Trayectoria D] y [Trayectoria E] al presionar el boton  Editar.
     \UCpaso Guarda la información del Programa Académico correspondiente.
     \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.2-J}{Consultar Programas Académicos}.
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\begin{UCtrayectoriaA}{A}{El actor presiona el botón \IUbutton{Cancelar}}
-    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
+\begin{UCtrayectoriaA}{A}{El actor presiona el botón \IUbutton{Cancelar}.}
+    \UCpaso Muestra el mensaje \MSGref{MSG3}{¿Seguro que desea cancelar el registro?}.
+    \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.2-J}{Consultar Programas Académicos}
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-\begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente botón \IUbutton{Cancelar}}
-    \UCpaso Muestra el mensaje\MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
+\begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
+    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
+    \UCpaso Cierra el mensaje.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 \begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar.}
-    \UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}
+    \UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-\begin{UCtrayectoriaA}{D}{El Sistema detecta caracteres no alfanuméricos en el Nombre de Programa Académico}
-    \UCpaso Muestra el mensaje \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
-    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU1}.
+\begin{UCtrayectoriaA}{D}{El Sistema detecta caracteres no alfanuméricos(exceptuando espacio) en el Nombre de Programa Académico}
+    \UCpaso Muestra el mensaje \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
+    \UCpaso Continúa en el paso 1 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
     %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
-\begin{UCtrayectoriaA}{E}{No cargan los catálogos de Programas Académicos.}
-    \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde.}
+
+\begin{UCtrayectoriaA}{E}{El nombre del Programa Académico ya está registrado.Regla de negocio BR19 y error E2.}
+    \UCpaso Muestra el mensaje \MSGref{MSG43}{El nombre del Programa Académico ya está registrado porfavor cámbielo.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-\UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa(Pantalla de Abi).
+\UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa.
+\end{UCtrayectoriaA}
+    %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+
+\begin{UCtrayectoriaA}{F}{Problemas con la Conexión}
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{ Servicios no disponibles por el momento.}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+\UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa.
 \end{UCtrayectoriaA}
