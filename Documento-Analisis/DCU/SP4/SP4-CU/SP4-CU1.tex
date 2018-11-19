@@ -42,15 +42,17 @@
 
     \UCpaso[\UCactor] Ingresa el nombre del Programa Académico.
 
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. Existen las trayectorias alternativas [Trayectoria A] y [Trayectoria B] al presionar el boton Registrar.
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. Existen las trayectorias alternativas [Trayectoria A] y [Trayectoria B] al presionar el boton Cancelar.
 
     \UCpaso Verifica que se cumpla la \BRref{BR13}{Todos los campos son obligatorios}. [Trayectoria C]
 
-    \UCpaso Verifica que se cumpla la \BRref{BR13}{Todos los campos deben ester bien escritos}. [Trayectoria D]
-
     \UCpaso Verifica que se cumpla la \BRref{BR19}{El nombre del Programa Académico es único.}. [Trayectoria E]
 
-    \UCpaso Persiste los datos ingresados. [Trayectoria G]
+    \UCpaso Verifica que se cumpla la \BRref{BR31}{Información de Programa Académico.}. [Trayectoria D]    
+
+    \UCpaso Verifica que se cumpla la \BRref{BR32}{Longitud máxima de nombre de Programa Académico.}. [Trayectoria H]    
+
+    \UCpaso Persiste los datos ingresados.Accionado por el boton \IUbutton{Registrar} [Trayectoria G].
 
     \UCpaso Muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
 
@@ -78,7 +80,7 @@
     \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-\begin{UCtrayectoriaA}{D}{El Sistema detecta caracteres no alfanuméricos(exceptuando espacio) en el Nombre de Programa Académico}
+\begin{UCtrayectoriaA}{D}{El Sistema detecta que el Nombre de Programa Académico no cumple con la expresión regular}
     \UCpaso Muestra el mensaje \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
     \UCpaso Continúa en el paso 1 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
@@ -102,4 +104,9 @@
     \UCpaso Muestra el mensaje \MSGref{MSG37}{Ha ocurrido un error al guardar los datos.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.2-J}{Gestionar Programas Académicos}.
+\end{UCtrayectoriaA}
+%------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
+\begin{UCtrayectoriaA}{H}{El Sistema detecta que el Nombre de Programa Académico excede la longitud máxima}
+    \UCpaso Muestra el mensaje \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
+    \UCpaso Continúa en el paso 1 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
