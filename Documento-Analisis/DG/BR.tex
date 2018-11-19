@@ -24,7 +24,7 @@
     \begin{itemize}
         \item Jefe de División de Innovación Académica: Jefe de Departamento de Desarrollo e Innovación curricular, jefe de Innovación Educativa y analista de la DES.
         \item Jefe de Departamento de Desarrollo e Innovación curricular: ]efe de Innovación Educativa y analista de la DES.
-        \item Jefe de Innovación Educativa: Docente y analista de su unidad académica. 
+        \item Jefe de Innovación Educativa: Docente y analista de su unidad académica.
     \end{itemize}
     \BRitem[Motivación:] Permitir a los Jefes tener un control sobre el acceso al sistema.
     \BRitem[Ejemplo Positivo:] El Jefe de División de Innovación Académica  actualiza el título de un analista.
@@ -147,19 +147,32 @@
     \BRitem[Nivel: ]Control.
     \BRitem[Descripción: ]Existen catálogos de:
     \begin{itemize}
-        \item Modalidades
+        \item Modalidades\\
             Escolarizada\\
             Mixta\\
             No Escolarizada
-        \item Tipo de Usuario
+        \item Tipo de Usuario\\
             Docente\\
             Analista\\
             Jefe de División de Innovación Académica\\
             Jefe de Departamento de Desarrollo e Innovación Curricular\\
             Jefe de Innovación Educativa
-        \item Tareas
-            Registrar Mapa Curricular\\
-            Registrar Unidad de Aprendizaje]
+        \item Tareas\\
+            Revisar Mapa Curricular\\
+            Aprobar Mapa Curricular\\
+            Registrar Unidad de Aprendizaje\\
+            Revisar Unidad de Aprendizaje\\
+            Aprobar Unidad de Aprendizaje
+        \item Cargo\\
+            Subdirector académico\\
+            Director
+        \item Titulo\\
+            Abogado/a\\
+            Arquitecto/a\\
+            Contador público titulado\\
+            Doctor/a\\
+            Ingeniero/a\\
+            Licenciado/a\\
     \end{itemize}
     \BRitem[Motivación: ]Mantener los datos en un estado consistente.
 \end{BussinesRule}
@@ -351,17 +364,17 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
         \item Apellido Materno
 
         Estos tres datos comparten la misma expresión regular:
-        [A-Za-z]+(\textbackslash{}s[A-Za-z]+)*
+        \^{}[A-Za-z]*\textbackslash{}s()[A-Za-z]*\$
 
         \item Titulo. Se obtiene por medio de un select.
         \item Cargo. Se obtiene por medio de un select.
         \item Lugar de trabajo. Se obtiene por medio de un select.
-        \item Contraseña. Expresión regular: [A-Za-z0-9]+
+        \item Contraseña. Expresión regular: \^{}[A-Za-z0-9]+
 
-        \item Correo electrónico    
-    \end{itemize} 
+        \item Correo electrónico
+    \end{itemize}
     \BRitem[Motivación:] Contar con la información necesaria de los usarios para el desarrollo de las actividades.
-    \BRitem[Ejemplo positivo:] Información del usuario 
+    \BRitem[Ejemplo positivo:] Información del usuario
     \begin{itemize}
         \item Nombre: Juan Manuel
         \item Apellido Paterno: Perez de
@@ -369,7 +382,7 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
         \item Contraseña: juanit8banan4
         \item Correo electrónico: juanito@gmail.com
     \end{itemize}
-    \BRitem[Ejemplo negativo:] Información del usuario 
+    \BRitem[Ejemplo negativo:] Información del usuario
     \begin{itemize}
         \item Nombre: Juan Manuel Fernando
         \item Apellido Paterno: Perez de los Santos
