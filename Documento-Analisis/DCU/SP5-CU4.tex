@@ -20,6 +20,7 @@
 	\UCitem{Salidas}{
 		\begin{itemize}
 			\item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+			\item \MSGref{MSG24}{Por el momento la página solicitada no esta disponible.}
 			\item \MSGref{MSG25}{Servicios no disponibles por el momento.}
 			\item \MSGref{MSG5}{Registro finalizado exitosamente.}
 			\item \MSGref{MSG35}{Escriba información valida.}
@@ -59,7 +60,7 @@
 
 
 \begin{UCtrayectoriaA}{B}{No existen registros en los catálogos.}
-	\UCpaso El sistema muestra el mensaje \hyperref[MSG7]{MSG7. Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}.
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
@@ -102,8 +103,8 @@
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
-\begin{UCtrayectoriaA}{J}{Uno o mas campos de la {BR30}{Información personal de los usuarios} o la \BRref{BR34}{Información laboral de los usuarios} están vacíos.}
-	\UCpaso El sistema muestra el {MSG44}{El campo es requerido} debajo de cada campo que no fue llenado. 
+\begin{UCtrayectoriaA}{J}{Uno o mas campos de la \BRref{BR30}{Información personal de los usuarios} o la \BRref{BR34}{Información laboral de los usuarios} están vacíos.}
+	\UCpaso El sistema muestra el \MSGref{MSG44}{El campo es requerido} debajo de cada campo que no fue llenado. 
 	\UCpaso	Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
 \end{UCtrayectoriaA}
 \begin{UCtrayectoriaA}{K}{El actor presiono el botón \IUbutton{Cancelar}.}
