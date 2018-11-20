@@ -40,15 +40,15 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
     \UCpaso[\UCactor] Presiona la opción de Gestionar Recursos Humanos del menú del la Interfaz de Inicio (abi).
-    \UCpaso Carga el catálogo de Cargo. [Trayectoria A]
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Gestionar Recursos Humanos}.
+    \UCpaso Carga el catálogo de Cargo definido en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
+    \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
     \UCpaso[\UCactor] Selecciona el Cargo que desea como filtro. [Trayectoria B]
     \UCpaso[\UCactor] Aplica el filtro presionando el botón \IUbutton{Buscar}.
     \UCpaso Muestra tabla con los datos de los Recursos Humanos que cumplan con el filtro.
     \UCpaso Repite la trayectoria principal del \UCref{SP4-CU7} desde el paso 3. [Trayectoria C] [Trayectoria C.1]
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\begin{UCtrayectoriaA}{A}{Los catálogos no se pudieron cargar.}
+\begin{UCtrayectoriaA}{A}{Los catálogos de la \BRref{BR14}{Catálogos existentes} necesarios no se pudieron cargar.}
     \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de Inicio (abi) .

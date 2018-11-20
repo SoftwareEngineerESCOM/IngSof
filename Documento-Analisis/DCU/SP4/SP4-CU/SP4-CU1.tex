@@ -1,38 +1,38 @@
 \begin{UseCase}{SP4-CU1}{Registrar Programa Académico}{El usuario Jefe de Innovación Educativa ingresa los datos de un Programa Académico.}
-        \UCitem{Versión}{\color{Gray}1.0}
-        \UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
-        \UCitem{Supervisa}{\color{Gray}Evelyn Reyes}
-        \UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa}}
-        \UCitem{Propósito}{Registrar el nombre del Programa Académico en el sistema.}
-        \UCitem{Entradas}{Las entradas para el registro de Programa Académico:
+		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
+		\UCitem{Supervisa}{\color{Gray}Evelyn Reyes}
+		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa}}
+		\UCitem{Propósito}{Registrar el nombre del Programa Académico en el sistema.}
+		\UCitem{Entradas}{Las entradas para el registro de Programa Académico:
           \begin{itemize}
-            \item Nombre
+          	\item Nombre
           \end{itemize}
         }
-        \UCitem{Origen}{Teclado.}
-        \UCitem{Salidas}{
-            \begin{itemize}
+		\UCitem{Origen}{Teclado.}
+		\UCitem{Salidas}{
+        	\begin{itemize}
 
                 \item \MSGref{MSG5}{Registro finalizado exitosamente.}
                 \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-                \item \MSGref{MSG32}{Todos los campos son obligatorios}
+               	\item \MSGref{MSG32}{Todos los campos son obligatorios}
                 \item \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
                 \item \MSGref{MSG37}{Ha ocurrido un error al guardar los datos.}
                 \item \MSGref{MSG43}{El nombre del Programa Académico ya está registrado porfavor cámbielo.}
 
-            \end{itemize}
+        	\end{itemize}
         }
-        \UCitem{Destino}{Pantalla}
-        \UCitem{Precondiciones}{ \begin{itemize}
+		\UCitem{Destino}{Pantalla}
+		\UCitem{Precondiciones}{ \begin{itemize}
                 \item El nombre del Programa Académico a registrar, no debe existir previamente en el sistema.
             \end{itemize}}
-        \UCitem{Postcondiciones}{El Programa Académico quedó registrado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo.}
-        \UCitem{Errores}{
+		\UCitem{Postcondiciones}{El Programa Académico quedó registrado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo.}
+		\UCitem{Errores}{
             Ninguno
         }
-        \UCitem{Estado}{Revisión.}
-        \UCitem{Observaciones}{Ninguna}
+		\UCitem{Estado}{Revisión.}
+		\UCitem{Observaciones}{Ninguna}
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
@@ -44,13 +44,7 @@
 
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. Existen las trayectorias alternativas [Trayectoria A] y [Trayectoria B] al presionar el boton Cancelar.
 
-    \UCpaso Verifica que se cumpla la \BRref{BR13}{Todos los campos son obligatorios}. [Trayectoria C]
-
-    \UCpaso Verifica que se cumpla la \BRref{BR19}{El nombre del Programa Académico es único.}. [Trayectoria E]
-
-    \UCpaso Verifica que se cumpla la \BRref{BR31}{Información de Programa Académico.}. [Trayectoria D]
-
-    \UCpaso Verifica que se cumpla la \BRref{BR32}{Longitud máxima de nombre de Programa Académico.}. [Trayectoria H]
+    \UCpaso Verifica que se cumpla la \BRref{BR13}{Todos los campos son obligatorios}, \BRref{BR19}{El nombre del Programa Académico es único.}, \BRref{BR31}{Información de Programa Académico.} y la \BRref{BR32}{Longitud máxima de nombre de Programa Académico.}. [Trayectoria C][Trayectoria D][Trayectoria E][Trayectoria H]
 
     \UCpaso Persiste los datos ingresados.Accionado por el boton \IUbutton{Registrar} [Trayectoria G] activada al presionar el boton.
 

@@ -1,3 +1,4 @@
+
 \begin{UseCase}{SP4-CU5}{Consultar Programas Académicos}{El usuario visualiza la información de los Programas Académicos regsitrados.}
         \UCitem{Versión}{\color{Gray}1.0}
         \UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
@@ -34,9 +35,9 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Gestionar Programa Académico} de la interfaz de usuario menú para Jefe de Innovación Educativa.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Gestionar Programa Académico} del menú de la interfaz de usuario del Jefe de Innovación Educativa.
     \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programa Académico}.
-    \UCpaso Carga el catálogo de Unidad Académica definido en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A] y [Trayectoria C] Trayectorias lanzadas por el boton Gestionar Programa Académico.
+    \UCpaso Carga el catálogo de Unidad Académica definido en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A] y [Trayectoria C]
     \UCpaso[\UCactor] Selecciona la Unidad Académica que desea como filtro. [Trayectoria B] Trayectoria Lanzada por el botón filtro.
     \UCpaso[\UCactor] Aplica el filtro presionando el botón \IUbutton{Buscar}.
     \UCpaso Muestra tabla con los datos de los Programas Académicos que cumplan con el filtro..
@@ -53,6 +54,6 @@
     \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU7}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C-------------------------
-\begin{UCtrayectoriaA}{B}{El actor es el Jefe de Innovación Educativa}
+\begin{UCtrayectoriaA}{C}{El actor es el Jefe de Innovación Educativa}
     \UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU5} con filtro predeterminado de su Unidad Académica.
 \end{UCtrayectoriaA}

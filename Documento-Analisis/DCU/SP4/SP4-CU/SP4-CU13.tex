@@ -26,7 +26,9 @@
 		}
 	 \UCitem{Puntos de Exteción}{
 		\begin{itemize}
+			\item \UCref{SP4-CU2}: Registrar Plan de Estudios.
 			\item \UCref{SP4-CU6}: Consultar Mapa Curricular.
+			\item \UCref{SP4-CU9}: Editar Plan de Estudios.
 		\end{itemize}
 	}
 		\UCitem{Estado}{Revisión.}
@@ -34,20 +36,7 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    %Usuario
-    \UCpaso[\UCactor] Presiona sobre un Programa Académico en la Interfaz de usuario  \IUref{IU2.2-J}{Consultar Programa Académico}.
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.2.2-J}{Consultar Planes de Estudios}.
-    \UCpaso Muestra los Planes de Estudios de la Unidad Académica seleccionada anteriormente que están registrados en el sistema. [Trayectoria A][Trayectoria A.1]
+    \UCpaso[\UCactor] Presiona sobre un Programa Académico en la Interfaz de usuario  \IUref{CPA-J}{Consultar Programa Académico}.
+    \UCpaso Muestra la interfaz de usuario \IUref{CPE-J}{Consultar Planes de Estudios}.
+    \UCpaso Muestra los Planes de Estudios del Programa Académico seleccionado registrados en el sistema.
 \end{UCtrayectoria}
-%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\begin{UCtrayectoriaA}{A}{El actor presiona el botón \IUbutton{+}.}
-	\UCpaso Muestra el mensaje \MSGref{MSG40}{¿Está seguro que desea generar una tarea para el registro de un nuevo Plan de Estudios?}
-	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
-	 \UCpaso Muestra la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}
-\end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA A.1 -------------------------
-\begin{UCtrayectoriaA}{A.1}{El actor presiona accidentalmente el botón \IUbutton{+}.}
-	\UCpaso Muestra el mensaje \MSGref{MSG40}{¿Está seguro que desea generar una tarea para el registro de un nuevo Plan de Estudios?}
-	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
-	\UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU13}.
-\end{UCtrayectoriaA}
