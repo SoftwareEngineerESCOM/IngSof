@@ -6,12 +6,12 @@
 		\UCitem{Propósito}{Cambiar los datos de un Recurso Humano.}
 		\UCitem{Entradas}{Las entradas para Editar Recurso Humano:
             \begin{itemize}
-                \item Nombre 
-                \item Primer Apellido 
+                \item Nombre
+                \item Primer Apellido
                 \item Segundo Apellido
-                \item Título 
-                \item Cargo 
-                \item Lugar de Trabajo 
+                \item Título
+                \item Cargo
+                \item Lugar de Trabajo
             \end{itemize}
         }
 		\UCitem{Origen}{Teclado.}
@@ -35,8 +35,8 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{IU2.4-J}{Consultar Recurso Humano}
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.4.1-J}{Editar Recurso Humano}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{GRH-J}{Consultar Recurso Humano}
+    \UCpaso Muestra la interfaz de usuario \IUref{RRH-J}{Editar Recurso Humano}.
     \UCpaso Cargar datos del Recurso Humano correspondiente. [Trayectoria A]
     \UCpaso[\UCactor] Modifica los campos deseados.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B] [Trayectoria B.1]
@@ -44,7 +44,7 @@
     \UCpaso Guarda la información del Recurso Humano correspondiente.
     \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{ Los cambios se guardaron exitosamente.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Consultar Recurso Humano}
+    \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Consultar Recurso Humano}
 \end{UCtrayectoria}
     %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{No cargan los catálogos de Recurso Humano.}
@@ -56,7 +56,7 @@
 \begin{UCtrayectoriaA}{B}{El actor presionael botón \IUbutton{Cancelar}.}
     \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.4-J}{Consultar Recurso Humano}
+    \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Consultar Recurso Humano}
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 \begin{UCtrayectoriaA}{B.1}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}

@@ -42,10 +42,10 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
     %Usuario
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Lápiz} de una Unidad de Aprendizaje en la Interfaz de usuario  \IUref{IU2.1-D}{Consultar Mapa Curricular}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Lápiz} de una Unidad de Aprendizaje en la Interfaz de usuario  \IUref{CMC-J}{Consultar Mapa Curricular}.
     \UCpaso El sistema carga el catálogo de Areas de Formación.[Trayectoria A]
     \UCpaso El sistema carga el catálogo de Semestres.[Trayectoria A]
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.1.2-D}{Editar Unidad de Aprendizaje}.
+    \UCpaso Muestra la interfaz de usuario \IUref{RUA-J}{Editar Unidad de Aprendizaje}.
     \UCpaso Carga los datos almacenados en el sistema.
     \UCpaso[\UCactor] Modifica los campos qeu desea.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B] [Trayectoria B.1]
@@ -53,19 +53,19 @@
     \UCpaso Persiste los datos.
     \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
+    \UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo de la Unidad de Aprendizaje}
 	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	 \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
+	 \UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 \begin{UCtrayectoriaA}{C}{El actor presiona el botón \IUbutton{Cancelar}}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
-	\UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
+	\UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
 \begin{UCtrayectoriaA}{D}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}}

@@ -42,17 +42,17 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
     %Usuario
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{icono de lapiz}de la Interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{icono de lapiz}de la Interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
 	%Sistema
     \UCpaso El sistema carga el catálogo del modalidades segun la \BRref{BR14}{Existen los catálogos}.[Trayectoria A]
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.1.1-D}{Registrar Plan de Estudios}.
+    \UCpaso Muestra la interfaz de usuario \IUref{RPE-J}{Registrar Plan de Estudios}.
     \UCpaso[\UCactor] Camptura la información necesaria  que desea modificar empleando la \BRref{BR33}{Información del Plan de Estudios}.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria B] [Trayectoria C]
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados segun la \BRref{BR13}{Todos los datos solicitados son obligatorios}. [Trayectoria D]
     \UCpaso Guarda la información de del Plan de Estudios.  [Trayectoria E]
     \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
+    \UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo del Plan de Estudios}
@@ -60,13 +60,13 @@
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar}
 	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
-	 \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
+	 \UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 \begin{UCtrayectoriaA}{B}{El actor presiona el botón \IUbutton{Cancelar}}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
-	\UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
+	\UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 \begin{UCtrayectoriaA}{C}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}}
