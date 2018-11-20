@@ -55,7 +55,7 @@
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0k4xgd8">
-      <bpmndi:BPMNShape id="Participant_1yiv3gn_di" bpmnElement="Participant_1yiv3gn" bioc:stroke="#1E88E5" bioc:fill="#BBDEFB">
+      <bpmndi:BPMNShape id="Participant_1yiv3gn_di" bpmnElement="Participant_1yiv3gn">
         <dc:Bounds x="106" y="-162" width="1208" height="579" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1" bioc:stroke="#43A047" bioc:fill="#C8E6C9">
