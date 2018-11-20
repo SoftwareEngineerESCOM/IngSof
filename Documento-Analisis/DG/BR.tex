@@ -173,6 +173,10 @@
             Doctor/a\\
             Ingeniero/a\\
             Licenciado/a\\
+            Máster || Magíster\\
+            Maestro || Ministro\\
+            Maestra || Ministra\\
+            Técnico
     \end{itemize}
     \BRitem[Motivación: ]Mantener los datos en un estado consistente.
 \end{BussinesRule}
@@ -364,12 +368,12 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
         \item Apellido Materno
 
         Estos tres datos comparten la misma expresión regular:
-        \^{}[A-Za-z]*\textbackslash{}s()[A-Za-z]*\$
+        /[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*/
 
         \item Titulo. Se obtiene por medio de un select.
         \item Cargo. Se obtiene por medio de un select.
         \item Lugar de trabajo. Se obtiene por medio de un select.
-        \item Contraseña. Expresión regular: \^{}[A-Za-z0-9]+
+        \item Contraseña. Expresión regular: /[^áéíóúüñÁÉÍÓÚÜÑ\s]+/
 
         \item Correo electrónico
     \end{itemize}
@@ -398,11 +402,11 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Nivel:] Control.
     \BRitem[Descripción:]Se debe de contar con la siguiente información para registrar un Programa Académico:
     \begin{itemize}
-        \item Nombre 
+        \item Nombre
         Este dato tiene la expresión regular:
         [\wéíóúüñÁÉÍÓÚÜÑ]+( [\wáéíóúüñÁÉÍÓÚÜÑ]+)*
 
-    \end{itemize} 
+    \end{itemize}
     \BRitem[Motivación:] Contar con la información necesaria para la gestión de un Programa Académico.
     \BRitem[Ejemplo positivo:] Información del Programa Académico
     \begin{itemize}
@@ -421,8 +425,8 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Descripción: ]El nombre del Programa Acádémico tiene una longitud máxima de 150 basada en el modelo de datos.
     \BRitem[Sentencia:]
     \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
-    \BRitem[Ejemplo Positivo:] . Ingeniería en Sistemas Computacionales 
-    \BRitem[Ejemplo Negativo: ]. Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales 
+    \BRitem[Ejemplo Positivo:] . Ingeniería en Sistemas Computacionales
+    \BRitem[Ejemplo Negativo: ]. Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales
 \end{BussinesRule}
 
 
