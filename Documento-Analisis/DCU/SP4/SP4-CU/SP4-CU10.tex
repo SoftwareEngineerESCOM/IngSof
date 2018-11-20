@@ -1,5 +1,5 @@
 % EDITAR PLAN DE ESTUDIOS.
-\begin{UseCase}{SP4-CU10}{Editar Plan de Estudios}{El usuario Docente modifica los datos del Plan de Estudios registrado en el sistema.}
+\begin{UseCase}{SP4-CU10}{Editar Plan de Estudios}{El usuario Jefe de Innovación modifica los datos del Plan de Estudios registrado en el sistema.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Cervantes Moreno Christian Andres}
 		\UCitem{Supervisa}{\color{Gray} Evelyn Reyes}
@@ -44,12 +44,13 @@
     %Usuario
     \UCpaso[\UCactor] Presiona el botón \IUbutton{icono de lapiz}de la Interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
 	%Sistema
-    \UCpaso El sistema carga el catálogo del modalidades segun la \BRref{BR14}{Existen los catálogos}.[Trayectoria A]
-    \UCpaso Muestra la interfaz de usuario \IUref{RPE-J}{Registrar Plan de Estudios}.
-    \UCpaso[\UCactor] Camptura la información necesaria  que desea modificar empleando la \BRref{BR33}{Información del Plan de Estudios}.
+    \UCpaso El sistema carga los catálogos: modalidad y programa académico segun la \BRref{BR14}{Existen los catálogos}. [Trayectoria A]
+    \UCpaso Muestra la interfaz de usuario \IUref{EPE-J}{Editar Plan de Estudios}.
+    \UCpaso[\UCactor] Captura la información necesaria  que desea modificar empleando la \BRref{BR33}{Información del Plan de Estudios}.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria B] [Trayectoria C]
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados segun la \BRref{BR13}{Todos los datos solicitados son obligatorios}. [Trayectoria D]
-    \UCpaso Guarda la información de del Plan de Estudios.  [Trayectoria E]
+    \UCpaso Verifica la consistencia de la información [Trayectoria F]
+    \UCpaso Guarda la información modificada del Plan de Estudios.  [Trayectoria E]
     \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
@@ -72,13 +73,13 @@
 \begin{UCtrayectoriaA}{C}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
-	\UCpaso Continúa en el paso 9 de la trayectoria principal del \UCref{SP4-CU3}.
+	\UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-C10}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 \begin{UCtrayectoriaA}{D}{El sistema detecta uno o más campos sin contestar.}
 	\UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU2}.
+	\UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU10}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
@@ -86,4 +87,10 @@
 	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{CPE-J}{Gestionar Planes de Estudio}
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+\begin{UCtrayectoriaA}{F}{El Sistema detecta que algun campo no cumple con la expresión regular.}
+	\UCpaso Muestra el mensaje \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
+	\UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU10}.
 \end{UCtrayectoriaA}

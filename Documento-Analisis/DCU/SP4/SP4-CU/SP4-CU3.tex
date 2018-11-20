@@ -1,5 +1,5 @@
 % REGISTRAR UNIDAD DE APRENDIZAJE.
-\begin{UseCase}{SP4-CU3}{Registrar Unidad de Aprendizaje}{El usuario Docente registra los datos de las Unidades de Aprendizaje del Modelo de Datos, que contiene el Mapa Curricular.}
+\begin{UseCase}{SP4-CU3}{Registrar Unidad de Aprendizaje}{El usuario Jefe de Innovación registra los datos de las Unidades de Aprendizaje del Modelo de Datos, que contiene el Mapa Curricular.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Cervantes Moreno Christian Andres}
 		\UCitem{Supervisa}{\color{Gray} Evelyn Reyes}
@@ -8,8 +8,8 @@
 		\UCitem{Entradas}{Las entradas para el registro de la Unidad de Aprendizaje serán:
           \begin{itemize}
           	\item Nombre.
-          	\item Créditos Totales TEPIC.
-            \item Créditos Totales SATCA.
+          	\item Créditos TEPIC.
+            \item Créditos SATCA.
             \item  Horas Teoría/Semana
             \item  Horas Práctica/Semana
             \item Área de Formación.
@@ -42,13 +42,14 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
     \UCpaso[\UCactor] Presiona el botón \IUbutton{+} de la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
-    \UCpaso El sistema verifica la existencia de registros en el catálogo tipo de usuario de la \BRref{BR14}{Existen los catálogos} .
-    \UCpaso El sistema carga el catálogo de tipo de usuario.[Trayectoria A]
+    \UCpaso El sistema verifica la existencia de registros en los catálogos: Área de formación y semestre segun la \BRref{BR14}{Existen los catálogos} .
+    \UCpaso El sistema carga los catálogos: Área de formación y Semestre.[Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{RUA-J}{Registrar Unidad de Aprendizaje}.
-    \UCpaso[\UCactor] Ingresa el nombre de la Unidad de Aprendizaje según la \BRref{BR17}{EL nombre de la Unidad Académica es único} y la \BRref{BR18}{Longitud Maxima de Unidad de Aprendizaje}.
+    \UCpaso[\UCactor] Ingresa el nombre de la Unidad de Aprendizaje según la \BRref{BR17}{El nombre de la Unidad Académica es único} y la \BRref{BR18}{Longitud Maxima de Unidad de Aprendizaje}.
     \UCpaso[\UCactor] Captura la información necesaria de la Unidad de Aprendizaje según la \BRref{BR34}{Información de la Unidad de Aprendizaje}.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria B] [Trayectoria C]
-    \UCpaso Verifica la consistencia de la información [Trayectoria D]
+    \UCpaso Verifica que se cumpla la \BRref{BR13}{Todos los campos son obligatorios}. [Trayectoria D]
+    \UCpaso Verifica la consistencia de la información [Trayectoria F]
     \UCpaso Guarda la información de la Unidad de Aprendizaje. [Trayectoria E]
     \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
@@ -56,7 +57,7 @@
 \end{UCtrayectoria}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo de tipo de usuario}
+\begin{UCtrayectoriaA}{A}{El sistema no carga los catálogos: Área de formación y Semestre}
 	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]r}
 	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
@@ -73,13 +74,13 @@
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
 	\UCpaso Cierra el mensaje.
-	\UCpaso Continúa en el paso 10 de la trayectoria principal del \UCref{SP4-CU3}.
+	\UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU3}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 \begin{UCtrayectoriaA}{D}{El sistema detecta uno o más campos sin contestar.}
 	\UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios.}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU3}.
+	\UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU3}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
@@ -87,4 +88,10 @@
 	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
 	\UCpaso El sistema regresa a la interfaz de usuario\IUref{RUA-J}{Registrar Unidad de Aprendizaje}
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+\begin{UCtrayectoriaA}{F}{El Sistema detecta que algun campo no cumple con la expresión regular.}
+	\UCpaso Muestra el mensaje \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
+	\UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU3}.
 \end{UCtrayectoriaA}
