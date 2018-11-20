@@ -1,8 +1,9 @@
-\begin{UseCase}{SP4-CU5}{Consultar Programas Académicos}{El usuario Jefe de Innovación Educativa visualiza la información de los Programas Académicos regsitrados.}
+\begin{UseCase}{SP4-CU5}{Consultar Programas Académicos}{El usuario visualiza la información de los Programas Académicos regsitrados.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
 		\UCitem{Supervisa}{\color{Gray}Evelyn Reyes}
-		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa}}
+		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa,Jefe de División de Innovación Académica,Jefe de Departamento de Desarrollo e Innovación Curricular
+    }}
 		\UCitem{Propósito}{El Usuario Jefe de Innovación Educativa puede visualizar una lista  de  los Programas Académicos almacenados en el Sistema asociados a su Unidad Académica.}
 		\UCitem{Entradas}{Las entradas para la consulta del Programa Académico:
           \begin{itemize}
@@ -10,10 +11,14 @@
           \end{itemize}
         }
 		\UCitem{Origen}{Ninguno}
-		\UCitem{Salidas}{Ninguna}
+		\UCitem{Salidas}{
+        \begin{itemize}
+                \item \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde.}
+        \end{itemize}
+        }
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{\begin{itemize}
-                \item El catálogo de tipo Programa Académico debe de estar cargado en el sistema.
+                \item El catálogo de tipo Unidad Académica debe de estar cargado en el sistema.
                    \end{itemize}}
 		\UCitem{Postcondiciones}{Ninguna}
 		\UCitem{Errores}{Ningún}
@@ -30,6 +35,21 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Gestionar Programa Académico} de la interfaz de usuario menú para Jefe de Innovación Educativa.
-    \UCpaso Muestra la interfaz de usuario \IUref{CPA-J}{Gestionar Programa Académico}.
-    \UCpaso[\UCactor] El sistema muestra la lista de Programas Académicos registrados.
+
+    \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programa Académico}.
+
+    \UCpaso Carga el catálogo de Unidad Académica definido en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
+
+    \UCpaso[\UCactor] Selecciona la Unidad Académica que desea como filtro. [Trayectoria B]
+
+    \UCpaso[\UCactor] Aplica el filtro presionando el botón \IUbutton{Buscar}.
+
+    \UCpaso Muestra tabla con los datos de los Programas Académicos que cumplan con el filtro..
 \end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
+\begin{UCtrayectoriaA}{A}{Los catálogos no se pudieron cargar.}
+    \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra la interfaz de Inicio (abi) .
+\end{UCtrayectoriaA}

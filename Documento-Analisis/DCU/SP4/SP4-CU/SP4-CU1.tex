@@ -36,7 +36,7 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{(+)Registrar Programa Académico}de la interfaz de usuario \IUref{CPA-J}{Gestionar Programas Académicos}Existen las trayectorias alternativas [Trayectoria F] al presionar el boton Registrar.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{(+)Registrar Programa Académico}de la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}Existen las trayectorias alternativas [Trayectoria F] al presionar el boton Registrar.
 
     \UCpaso Muestra la interfaz de usuario \IUref{RPA-J}{Registrar Programa Académico}.
 
@@ -52,19 +52,19 @@
 
     \UCpaso Verifica que se cumpla la \BRref{BR32}{Longitud máxima de nombre de Programa Académico.}. [Trayectoria H]
 
-    \UCpaso Persiste los datos ingresados.Accionado por el boton \IUbutton{Registrar} [Trayectoria G].
+    \UCpaso Persiste los datos ingresados.Accionado por el boton \IUbutton{Registrar} [Trayectoria G] activada al presionar el boton.
 
     \UCpaso Muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
 
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Muestra la interfaz de usuario \IUref{CPA-J}{Gestionar Programas Académicos}.
+    \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}.
 \end{UCtrayectoria}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El actor presiona el botón \IUbutton{Cancelar}.}
     \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
     \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
-    \UCpaso Muestra la interfaz de usuario \IUref{CPA-J}{Gestionar Programas Académicos}
+    \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 \begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
@@ -103,7 +103,7 @@
 \begin{UCtrayectoriaA}{G}{Ocurre un error al momento de persistir los datos.}
     \UCpaso Muestra el mensaje \MSGref{MSG37}{Ha ocurrido un error al guardar los datos.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Muestra la interfaz de usuario \IUref{CPA-J}{Gestionar Programas Académicos}.
+    \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
 \begin{UCtrayectoriaA}{H}{El Sistema detecta que el Nombre de Programa Académico excede la longitud máxima}
