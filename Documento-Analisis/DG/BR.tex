@@ -368,12 +368,12 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
         \item Apellido Materno
 
         Estos tres datos comparten la misma expresión regular:
-        /[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*/
+        \verb|/[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*/|
 
         \item Titulo. Se obtiene por medio de un select.
         \item Cargo. Se obtiene por medio de un select.
         \item Lugar de trabajo. Se obtiene por medio de un select.
-        \item Contraseña. Expresión regular: /[^áéíóúüñÁÉÍÓÚÜÑ\s]+/
+        \item Contraseña. Expresión regular: \verb|/[^áéíóúüñÁÉÍÓÚÜÑ\s]+/|
 
         \item Correo electrónico
     \end{itemize}
@@ -404,8 +404,7 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \begin{itemize}
         \item Nombre
         Este dato tiene la expresión regular:
-        [\wéíóúüñÁÉÍÓÚÜÑ]+( [\wáéíóúüñÁÉÍÓÚÜÑ]+)*
-
+     \verb|[\wéíóúüñÁÉÍÓÚÜÑ]+( [\wáéíóúüñÁÉÍÓÚÜÑ+])*|
     \end{itemize}
     \BRitem[Motivación:] Contar con la información necesaria para la gestión de un Programa Académico.
     \BRitem[Ejemplo positivo:] Información del Programa Académico
@@ -436,16 +435,16 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 	\BRitem[Descripción:]Se debe de contar con la siguiente información para registrar el Plan de Estudios:
 	\begin{itemize}
 		\item Programa Académico. Se obtiene por medio de un select.
-		\item Año. Expresión regular:[0-9]\{4\}
+		\item Año. Expresión regular:[0-9]\{4\}  
 		\item Modalidad. Se obtiene por medio de un select.
 		\item Creditos totales TEPIC. Expresión Regular: \textbackslash d+(\textbackslash.\textbackslash d+)?
 		\item Creditos totales SATCA. Expresión Regular: \textbackslash d+(\textbackslash.\textbackslash d+)?
 		\item Total Horas/ Teoría. Expresión Regular: [1-9]\{2\}
-		\item Total Horas/ Práctica. Expresión Regular: [1-9]\{2\}
-	\end{itemize}
+		\item Total Horas/ Práctica. Expresión Regular: [1-9]\{2\}  
+	\end{itemize} 
 
 	\BRitem[Motivación:] Contar con la información necesaria del Plan de Estudio para el desarrollo de las actividades.
-	\BRitem[Ejemplo positivo:] Información del Plan de Estudios
+	\BRitem[Ejemplo positivo:] Información del Plan de Estudios 
 	\begin{itemize}
 		\item Año: 2008
 		\item Creditos totales TEPIC: 2.3
@@ -453,7 +452,7 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 		\item Total Horas/ Teoría: 16
 		\item Total Horas/ Práctica: 9
 	\end{itemize}
-	\BRitem[Ejemplo negativo:] Información del Plan de Estudios
+	\BRitem[Ejemplo negativo:] Información del Plan de Estudios 
 	\begin{itemize}
 		\item Año: 18
 		\item Creditos totales TEPIC: 302.5 6
