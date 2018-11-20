@@ -368,12 +368,12 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
         \item Apellido Materno
 
         Estos tres datos comparten la misma expresión regular:
-        /[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*/
+        \verb|/[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*/|
 
         \item Titulo. Se obtiene por medio de un select.
         \item Cargo. Se obtiene por medio de un select.
         \item Lugar de trabajo. Se obtiene por medio de un select.
-        \item Contraseña. Expresión regular: /[^áéíóúüñÁÉÍÓÚÜÑ\s]+/
+        \item Contraseña. Expresión regular: \verb|/[^áéíóúüñÁÉÍÓÚÜÑ\s]+/|
 
         \item Correo electrónico
     \end{itemize}
@@ -404,8 +404,7 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \begin{itemize}
         \item Nombre
         Este dato tiene la expresión regular:
-     %   [\wéíóúüñÁÉÍÓÚÜÑ]+( [\wáéíóúüñÁÉÍÓÚÜÑ]+)*
-
+     \verb|[\wéíóúüñÁÉÍÓÚÜÑ]+( [\wáéíóúüñÁÉÍÓÚÜÑ+])*|
     \end{itemize}
     \BRitem[Motivación:] Contar con la información necesaria para la gestión de un Programa Académico.
     \BRitem[Ejemplo positivo:] Información del Programa Académico
