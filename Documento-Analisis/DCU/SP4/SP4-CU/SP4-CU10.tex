@@ -7,12 +7,13 @@
 		\UCitem{Propósito}{Editar el año, modalidad, créditos totales TEPIC, créditos totales SATCA, Total Horas/Teoría, Total Horas/Práctica, del plan de estudio registrado en el sistema.}
 		\UCitem{Entradas}{Las entradas para la modificación de la Unidad de Aprendizaje serán:
           \begin{itemize}
-          	\item Año (Entero).
+          	\item Programa Académico.
+          	\item Año.
           	\item Modalidad.
-          	\item Créditos Totales TEPIC (Tipo double).
-            \item Créditos Totales SATCA (Tipo double).
-            \item Total horas / Teoría (Tipo entero).
-            \item Total horas / Práctica (Tipo entero).
+          	\item Créditos Totales TEPIC.
+            \item Créditos Totales SATCA.
+            \item Total horas / Teoría.
+            \item Total horas / Práctica.
           \end{itemize}
         }
 		\UCitem{Origen}{Teclado, Mouse}
@@ -23,6 +24,7 @@
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
 				\item \MSGref{MSG9}{Por el momento no se puede realizar el registro.}
+				\item \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -30,8 +32,8 @@
 		\UCitem{Postcondiciones}{El plan de Estudios queda modificado en el sistema.}
 		\UCitem{Errores}{
 			  \begin{itemize}
-				\item E1. Entrada invalida de un caracter no entero.
-				\item E2. Entrada invalida de un caracter no double.
+				\item E1. El catálogo de modalidad no se cargaron correctamente.
+				\item E2. Hubo un problema al conectarse con la base de datos.
 			\end{itemize}
 		}
 		\UCitem{Estado}{Revisión.}
@@ -40,14 +42,14 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
     %Usuario
-    \UCpaso[\UCactor] Presiona el botón Editar de la Interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{icono de lapiz}de la Interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
 	%Sistema
-    \UCpaso El sistema carga el catálogo del Plan de Estudios.[Trayectoria A]
+    \UCpaso El sistema carga el catálogo del modalidades segun la \BRref{BR14}{Existen los catálogos}.[Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1.1-D}{Registrar Plan de Estudios}.
-    \UCpaso[\UCactor] Elige los campos que desea modificar.[Trayectoria B].
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B] [Trayectoria C]
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
-    \UCpaso Guarda la información de la Unidad de Aprendizaje en la base de datos.
+    \UCpaso[\UCactor] Camptura la información necesaria  que desea modificar empleando la \BRref{BR33}{Información del Plan de Estudios}.
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria B] [Trayectoria C]
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados segun la \BRref{BR13}{Todos los datos solicitados son obligatorios}. [Trayectoria D]
+    \UCpaso Guarda la información de del Plan de Estudios.  [Trayectoria E]
     \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
@@ -60,21 +62,28 @@
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
 	 \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-\begin{UCtrayectoriaA}{C}{El actor presiona el botón \IUbutton{Cancelar}}
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+\begin{UCtrayectoriaA}{B}{El actor presiona el botón \IUbutton{Cancelar}}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
 	\UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-\begin{UCtrayectoriaA}{D}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}}
+%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
+\begin{UCtrayectoriaA}{C}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
 	\UCpaso Continúa en el paso 9 de la trayectoria principal del \UCref{SP4-CU3}.
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
-\begin{UCtrayectoriaA}{E}{El sistema detecta uno o más campos sin contestar.}
+%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
+\begin{UCtrayectoriaA}{D}{El sistema detecta uno o más campos sin contestar.}
 	\UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU2}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
+\begin{UCtrayectoriaA}{E}{La base de datos no está disponible, o hubo un error de conexión.}
+	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
+	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2.n-D}{Consultar Planes de Estudio}
 \end{UCtrayectoriaA}

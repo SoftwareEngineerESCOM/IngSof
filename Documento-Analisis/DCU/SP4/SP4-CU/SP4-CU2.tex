@@ -7,11 +7,12 @@
 		\UCitem{Propósito}{Registrar el año, modalidad, total de créditos (TEPIC / SATCA) y horas totales (Prácticas / Teóricas) a un Plan de Estudios.}
 		\UCitem{Entradas}{Las entradas para el registro del Plan de Estudios serán:
           \begin{itemize}
-          	\item Año (Tipo entero).
-          	\item Créditos Totales TEPIC (Tipo double).
-            \item Créditos Totales SATCA (Tipo double).
-            \item Total horas / Teoría (Tipo entero).
-            \item Total horas / Práctica (Tipo entero).
+          	\item Programa Academico.
+          	\item Año.
+          	\item Créditos Totales TEPIC.
+            \item Créditos Totales SATCA.
+            \item Total horas / Teoría.
+            \item Total horas / Práctica.
             \item Modalidad.
           \end{itemize}
         }
@@ -22,6 +23,7 @@
                 \item \MSGref{MSG5}{Registro finalizado exitosamente.}
                 \item \MSGref{MSG29}{ ¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+                \item \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -29,55 +31,64 @@
 		\UCitem{Postcondiciones}{El Plan de Estudios queda registrado en el sistema.}
 		\UCitem{Errores}{
 			  \begin{itemize}
-				\item E1. Entrada inválida de un caracter no entero.
-				\item E2. Entrada inválida de un caracter no double.
+				\item E1. El catálogo de modalidad no se cargaron correctamente.
+				\item E2. Hubo un problema al conectarse con la base de datos.
 			\end{itemize}
 		}
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
 \end{UseCase}
+
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
     %Usuario
-    \UCpaso[\UCactor] Presiona el checkbox que se encuentra en la columna consultar de la interfaz de usuario \IUref{IU2-D}{Consultar Tareas}
+    \UCpaso[\UCactor] Presiona el boton \IUbutton{+} que se encuentra de la interfaz de usuario \IUref{IU2.n-D}{Consultar Planes de Estudio}
 	%Sistema
-    \UCpaso El sistema carga el catálogo de modalidad.[Trayectoria A]
+	\UCpaso  El sistema verifica la existencia de registros en el catálogo modalidad de la \BRref{BR14}{Existen los catálogos} . [Trayectoria A] 
+    \UCpaso El sistema carga el catálogo de modalidad.[Trayectoria B]
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1.1-D}{Registrar Plan de Estudios}.
-    \UCpaso[\UCactor] Ingresa el año del Plan de Estudios que desea registrar.
-    \UCpaso[\UCactor] Selecciona la modalidad del Plan de Estudios.
-    \UCpaso[\UCactor] Ingresa los créditos totales TEPIC del Plan de Estudios.
-    \UCpaso[\UCactor] Ingresa los créditos totales SATCA del Plan de Estudios.
-    \UCpaso[\UCactor] Ingresa el total de Horas/Teorías del Plan de Estudios.
-    \UCpaso[\UCactor] Ingresa el total de Horas/Prácticas del Plan de Estudios.
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B] [Trayectoria C]
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
-    \UCpaso Guarda la información del Plan de Estudios en la base de datos.
+    \UCpaso[\UCactor] Captura la información necesaria del Plan de Estudios según la \BRref{BR33}{Información del Plan de Estudios}.
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria C] [Trayectoria D]
+    \UCpaso Verifica la consistencia de la información [Trayectoria E]
+    \UCpaso Guarda la información del Plan de Estudios. [Trayectoria B]
     \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}.
 \end{UCtrayectoria}
+
+
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo de modalidad}
+\begin{UCtrayectoriaA}{A}{No existen registros en los catálogos.}
 	\UCpaso Muestra el mensaje \MSGref{MSG7}{ Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
-	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
-	 \UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
+	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2.n-D}{Consultar Planes de Estudio}
 \end{UCtrayectoriaA}
+
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-\begin{UCtrayectoriaA}{B}{El actor presiona el botón \IUbutton{Cancelar}.}
+\begin{UCtrayectoriaA}{B}{La base de datos no está disponible, o hubo un error de conexión.}
+	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
+    \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2.n-D}{Consultar Planes de Estudio}
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
+\begin{UCtrayectoriaA}{C}{El actor presiona el botón \IUbutton{Cancelar}.}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar}.
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
 	\UCpaso Muestra la interfaz de usuario \IUref{IU2.1-D}{Consultar Mapa Curricular}
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-\begin{UCtrayectoriaA}{C}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
+\begin{UCtrayectoriaA}{D}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar}.
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
 	\UCpaso Cierra el mensaje.
 	\UCpaso Continúa en el paso 8 de la trayectoria principal del \UCref{SP4-CU2}.
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-\begin{UCtrayectoriaA}{D}{El sistema detecta uno o más campos sin contestar.}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
+\begin{UCtrayectoriaA}{E}{El sistema detecta uno o más campos sin contestar.}
 	\UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU2}.
