@@ -462,6 +462,43 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 	\end{itemize}
 \end{BussinesRule}
 
+
+\begin{BussinesRule}{BR34}{Información de Unidad de Aprendizaje.}
+	\BRitem[Tipo:] Regla de integridad.
+	\BRitem[Clase:] Habilitadora.
+	\BRitem[Nivel:] Control.
+	\BRitem[Descripción:]Se debe de contar con la siguiente información para registrar una Unidad de Aprendizaje:
+	\begin{itemize} 
+		\item Nombre. Expresión Regular: /[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*/
+		\item Creditos TEPIC. Expresión Regular: \textbackslash d+(\textbackslash.\textbackslash d+)?
+		\item Creditos SATCA. Expresión Regular: \textbackslash d+(\textbackslash.\textbackslash d+)?
+		\item Horas Teoría/Semana. Expresión Regular: [1-9]\{2\}
+		\item Horas Práctica/Semana. Expresión Regular: [1-9]\{2\} 
+		\item Área de Formación. Se obtiene por medio de un select.
+		\item Semestre. Se obtiene por medio de un select.
+	\end{itemize} 
+	
+	\BRitem[Motivación:] Contar con la información necesaria dede la Unidad de aprendizaje para el desarrollo de las actividades.
+	\BRitem[Ejemplo positivo:] Información de la Unidad de Aprenndizaje
+	\begin{itemize}
+		\item Nombre: Ingenería de software.
+		\item Creditos TEPIC: 3.6
+		\item Creditos SATCA. 1.6
+		\item Total Horas/ Teoría. Expresión Regular: 16
+		\item Total Horas/ Práctica. Expresión Regular: 9
+	\end{itemize}
+	\BRitem[Ejemplo negativo:] Información del Plan de Estudios 
+	\begin{itemize}
+		\item Nombre: Ingeñeria de software 23 4.
+		\item Creditos TEPIC: 455 . 5
+		\item Creditos SATCA. 243-ñ 
+		\item Total Horas/ Teoría. Expresión Regular: dos
+		\item Total Horas/ Práctica. Expresión Regular: cuatro
+	\end{itemize}
+\end{BussinesRule}
+
+
+
 %\begin{BussinesRule}{}{}
 %   \BRitem[Tipo:]
 %   \BRitem[Clase:]
