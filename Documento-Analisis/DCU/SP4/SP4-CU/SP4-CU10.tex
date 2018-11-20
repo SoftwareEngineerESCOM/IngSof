@@ -42,13 +42,13 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
     %Usuario
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{icono de lapiz}de la Interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{lapiz}de la Interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
 	%Sistema
     \UCpaso El sistema carga los catálogos: modalidad y programa académico segun la \BRref{BR14}{Existen los catálogos}. [Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{EPE-J}{Editar Plan de Estudios}.
     \UCpaso[\UCactor] Captura la información necesaria  que desea modificar empleando la \BRref{BR33}{Información del Plan de Estudios}.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria B] [Trayectoria C]
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados según la \BRref{BR13}{Todos los datos solicitados son obligatorios} y la \BRref{BR34}{Información de Unidad de Aprendizaje}. [Trayectoria D][Trayectoria F]
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados según la \BRref{BR13}{Todos los datos solicitados son obligatorios} y la \BRref{BR33}{Información de Plan de Estudios}. [Trayectoria D][Trayectoria F]
     \UCpaso Guarda la información modificada del Plan de Estudios.  [Trayectoria E]
     \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
@@ -56,7 +56,6 @@
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo del Plan de Estudios}
-	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar}
 	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
