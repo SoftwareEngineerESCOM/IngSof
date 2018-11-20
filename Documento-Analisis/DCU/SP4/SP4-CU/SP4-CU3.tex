@@ -48,13 +48,12 @@
     \UCpaso[\UCactor] Ingresa el nombre de la Unidad de Aprendizaje según la \BRref{BR17}{EL nombre de la Unidad Académica es único} y la \BRref{BR18}{Longitud Maxima de Unidad de Aprendizaje}.
     \UCpaso[\UCactor] Captura la información necesaria de la Unidad de Aprendizaje según la \BRref{BR34}{Información de la Unidad de Aprendizaje}.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria B] [Trayectoria C]
-    \UCpaso Verifica la consistencia de la información [Trayectoria D]
+    \UCpaso Verifica la consistencia de la información conforme a la \BRref{BR13}{Todos los datos solicitados son obligatorios}. [Trayectoria D]
     \UCpaso Guarda la información de la Unidad de Aprendizaje. [Trayectoria E]
     \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
 \end{UCtrayectoria}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo de tipo de usuario}
 	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]r}
@@ -81,7 +80,6 @@
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 2 de la trayectoria principal del \UCref{SP4-CU3}.
 \end{UCtrayectoriaA}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 \begin{UCtrayectoriaA}{E}{La base de datos no está disponible, o hubo un error de conexión.}
 	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}

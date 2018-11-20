@@ -1,5 +1,4 @@
 \chapter{Especificación de Reglas del Negocio}
-
 \begin{BussinesRule}{BR1}{Jefe de División de Innovación Académica y Jefe de Departamento e Innovación curricular.}
     \BRitem[Tipo:] Estructural.
     \BRitem[Clase:] Habilitadora.
@@ -7,7 +6,6 @@
     \BRitem[Descripción:] Solo pueden existir un Jefe de División de Innovación Académica y un Jefe de Departamento e Innovación curricular.
     \BRitem[Motivación:] Restringir el numero de Usuarios capaces de Gestionar Usuarios.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR2}{Jefes de Innovación Educativa.}
     \BRitem[Tipo:] Estructura.
     \BRitem[Clase:] Habilitadora.
@@ -15,7 +13,6 @@
     \BRitem[Descripción:] Solo puede existir un único Jefe de Innovación Educativa por Unidad Académica.
     \BRitem[Motivación:] Tener un único responsable por Unidad Académica.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR3}{Gestión de Usuarios}
     \BRitem[Tipo:] Autorización.
     \BRitem[Clase:] Ejecutiva.
@@ -30,7 +27,6 @@
     \BRitem[Ejemplo Positivo:] El Jefe de División de Innovación Académica  actualiza el título de un analista.
     \BRitem[Ejemplo Negativo:] Un analista modifica  el nombre de otro analista.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo.}
     \BRitem[Tipo:] Integradora.
     \BRitem[Clase:] Habilitadora.
@@ -47,7 +43,6 @@
     \BRitem[Ejemplo Positivo:] La zona de trabajo de un Docente creado por el Jefe de Innovación Educativa de la ESCOM es la ESCOM.
     \BRitem[Ejemplo Negativo:] La zona de trabajo del Jefe de Innovación Educativa de la ESCOM es la DES.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR5}{Máquina de Estados de una Tarea.}
     \BRitem[Tipo:] Flujo.
     \BRitem[Clase:] Habilitadora.
@@ -57,7 +52,6 @@
     \BRitem[Ejemplo Positivo:] La Tarea de registrar Mapa Curricular se aprobó después de que el analista y el jefe la revisaran.
     \BRitem[Ejemplo Negativo:] La Tarea de registrar Unidad de Aprendizaje se empezó a revisar antes de que terminara su registro.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR6}{Tareas de Registro.}
     \BRitem[Tipo:] Flujo.
     \BRitem[Clase:] Habilitadora.
@@ -67,7 +61,6 @@
     \BRitem[Ejemplo Positivo:] El usuario Docente registra un Mapa Curricular o una Unidad de Aprendizaje.
     \BRitem[Ejemplo Negativo:] El usuario Analista registra un Mapa Curricular o una Unidad de Aprendizaje.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR7}{Revisión de Tareas.}
     \BRitem[Tipo:] Flujo.
     \BRitem[Clase:] Habilitadora.
@@ -77,7 +70,6 @@
     \BRitem[Ejemplo Positivo:] El Analista revisa un Mapa Curricular y sus respectivas Unidades de Aprendizaje.
     \BRitem[Ejemplo Negativo:] El Docente revisa un Mapa Curricular y Unidades de Aprendizaje.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR8}{Aprobación de Tareas.}
     \BRitem[Tipo:] Flujo.
     \BRitem[Clase:] Habilitadora.
@@ -87,7 +79,6 @@
     \BRitem[Ejemplo Positivo:] El Jefe de Innovación Educativa no agrego comentarios por lo que se aprueba.
     \BRitem[Ejemplo Negativo:] El Jefe de Innovación Educativa agrega comentario y aun así se aprueba el documento.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR9}{Aprobación de Tareas Seccionada.}
     \BRitem[Tipo:] Condición.
     \BRitem[Clase:] Habilitadora.
@@ -98,7 +89,6 @@
     \BRitem[Ejemplo Positivo:] Una sección ya ha sido aprobada y no se hacen modificaciones.
     \BRitem[Ejemplo Negativo:] Una sección es aprobada y fue modificada.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR10}{Rechazo de Tareas.}
     \BRitem[Tipo:] Flujo.
     \BRitem[Clase:] Habilitadora.
@@ -108,7 +98,6 @@
     \BRitem[Ejemplo Positivo:] El Jefe de Innovación Educativa agrego comentarios por lo que se rechaza.
     \BRitem[Ejemplo Negativo:] Ni el Jefe de Innovación Educativa ni el Analista agregaron comentarios y aun así se aprobó.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR11}{Asignar tareas.}
     \BRitem[Tipo:] Autorización.
     \BRitem[Clase:] Ejecutiva.
@@ -119,7 +108,6 @@
     \BRitem[Ejemplo Positivo:] El Jefe de Departamento e Innovación curricular le asigna una tarea a un analista.
     \BRitem[Ejemplo Negativo:] El analista le asigna una tarea al Jefe de Departamento e Innovación curricular.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR12}{Tiempos de entregas.}
     \BRitem[Tipo:] Integridad.
     \BRitem[Clase:] Cronometrado.
@@ -129,7 +117,6 @@
     \BRitem[Ejemplo Positivo:] Una propuesta de unidad de aprendizaje puede ser revisada por un analista solo en el tiempo establecido.
     \BRitem[Ejemplo Negativo:] Una propuesta de unidad de aprendizaje puede ser revisada por un analista en cualquier momento.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR13}{Todos los datos solicitados son obligatorios.}
     \BRitem[Tipo:] Regla de Operación.
     \BRitem[Clase:] Habilitadora.
@@ -140,7 +127,6 @@
     \BRitem[Ejemplo Positivo:] El usuario ingresa todos los datos solicitados y prosigue con su operación.
     \BRitem[Ejemplo Negativo: ]El usuario deja campos vacios y el sistema le permite continuar.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR14}{Existen los catálogos.}
     \BRitem[Tipo: ]Regla de inferencia de un hecho.
     \BRitem[Clase: ]Habilitadora.
@@ -180,7 +166,6 @@
     \end{itemize}
     \BRitem[Motivación: ]Mantener los datos en un estado consistente.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR15}{Planes de Estudios en re diseño por Programa Académico.}
     \BRitem[Tipo:] Relación.
     \BRitem[Clase:] Habilitadora.
@@ -190,7 +175,6 @@
     \BRitem[Ejemplo Positivo:] Ingeniería en Sistemas Computacionales: ]Plan 2019.
     \BRitem[Ejemplo Negativo:] Licenciatura en Economía: ]Plan 2000, Plan 2009, Plan 2014, Plan 2018.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR16}{La matrícula del empleado es única.}
     \BRitem[Tipo: ]Relación.
     \BRitem[Clase: ]Habilitadora.
@@ -200,7 +184,6 @@
     \BRitem[Ejemplo Positivo:] El Empleado Juan Perez tiene una matricula 2014000990  y El Empleado Armando López Doriga  tiene una matricula 2014000991.
     \BRitem[Ejemplo Negativo: ]El Empleado Juan Perez tiene una matricula 2014000990 y El Empleado Armando López Doriga  tiene una matricula 2014000990.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR17} {El nombre de la Unidad de Aprendizaje es único.}
     \BRitem[Tipo: ]Relación.
     \BRitem[Clase: ]Habilitadora.
@@ -210,7 +193,6 @@
     \BRitem[Ejemplo Positivo:] En un Programa Académico  tenemos la materia Ingeniería de Software y Administración de Proyectos.
     \BRitem[Ejemplo Negativo: ]En un Programa Académico  tenemos la materia Ingeniería de Software y  Ingeniería de Software.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR18}{ Longitud máxima de Unidad de aprendizaje.}
     \BRitem[Tipo: ]Regla de inferencia de un hecho.
     \BRitem[Clase: ]Habilitadora.
@@ -221,7 +203,6 @@
     \BRitem[Ejemplo Positivo:] El usuario llena los datos marcados con (*) y prosigue con su operación.
     \BRitem[Ejemplo Negativo: ]El usuario deja campos obligatorios y el sistema le permite continuar.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR19} {El nombre del Programa Académico es único.}
     \BRitem[Tipo: ]Relación.
     \BRitem[Clase: ]Habilitadora.
@@ -231,7 +212,6 @@
     \BRitem[Ejemplo Positivo:] En una Unidad Académica existen los Programas Académicos Ingeniería en Sistemas Computacionales y Ingeniería en Comunicaciones y Electrónica.
     \BRitem[Ejemplo Negativo: ]En una Unidad Académica existen los Programas Académicos Ingeniería en Sistemas Computacionales y Ingeniería en Sistemas Computacionales.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR20}{Las horas totales deben de estar entre 350 y 450 horas.}
     \BRitem[Tipo: ]Regla de operación.
     \BRitem[Clase: ]Habilitadora.
@@ -241,7 +221,6 @@
     \BRitem[Ejemplo Positivo:] El usuario llena los dato de total de horas con 400 horas.
     \BRitem[Ejemplo Negativo: ] El usuario llena los dato de total de horas con 40000 horas.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR21}{Un libro tiene un ISBN único.}
     \BRitem[Tipo:] Regla de integridad referencial.
     \BRitem[Clase:] Habilitadora.
@@ -251,7 +230,6 @@
     \BRitem[Ejemplo Positivo:] Un libro cuyo nombre es ``Ingeniería de Software'' conlleva un ISBN que es 978-92-95055-02-5, y existe otro libro con el mismo nombre ``Ingeniería de Software'' sin embargo su ISBN es 969-83-59550-10-3. Entonces se cumple la regla
     \BRitem[Ejemplo Negativo:] Para el planteamiento anterior no cumple la regla que el ISBN sea el mismo para ambos libros, puesto que uno es escrito por un autor, y el otro es escrito por otro autor.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR22}{Longitud del ISBN.}
     \BRitem[Tipo:] Regla de integridad estructural.
     \BRitem[Clase:] Habilitadora.
@@ -270,7 +248,6 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Ejemplo Positivo:]
     \BRitem[Ejemplo Negativo:]
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR23}{Un libro con más de 3 autores es sólo citado por los primeros 3.}
     \BRitem[Tipo:] Regla de integridad estructural.
     \BRitem[Clase:] Habilitadora.
@@ -278,16 +255,11 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Descripción:] Se tomará en cuenta solamente los tres primeros autores que son referenciados en el libro.
     \BRitem[Motivación:] Seguir las normas de referencia de acuerdo al formato APA.
     \BRitem[Ejemplo Positivo:] Un libro cuyo número de autores es 5, se referencia a los autores de la siguiente manera:
-
     Apellido autor 1, iniciales del autor 1, Apellido autor 2, iniciales del autor 2 y Apellido de autor 3, iniciales del autor 3 (año de publicación)
-
     Ejemplo: Escartín, MªJ., Palomar, M. y Súarez, E. (1997)
-
     \BRitem[Ejemplo Negativo:] Un libro cuyo número de autores es 5, se referencia a los autores de la siguiente manera:
-
     Ejemplo: Escartín, MªJ., Palomar, M., Chavez, C., Salinas, L.A. y Súarez, E. (1997)
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR24}{Debe existir al menos un criterio de evaluación para una Unidad de Aprendizaje.}
     \BRitem[Tipo:] Regla de integridad estructural.
     \BRitem[Clase:] Habilitadora.
@@ -296,7 +268,6 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Motivación:] Que el docente que imparta dicha Unidad de Aprendizaje tenga al menos un referente para evaluar a sus alumnos.
     \BRitem[Ejemplo positivo:] La Unidad de Aprendizaje ``Ingeniería de Sofware'' tiene como único criterio de evaluación el desarrollo de un proyecto cuyo porcentaje equivale al 100\% de la calificación del alumno.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR25}{La suma de los porcentajes de cada evaluación debe ser igual a 100\%.}
     \BRitem[Tipo:] Regla de operación.
     \BRitem[Clase:] Habilitadora.
@@ -311,7 +282,6 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
         \end{itemize}
         En total, los porcentajes suman el 100\% de la calificación del alumno.
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR26}{Vigencia de una Unidad de Aprendizaje}
     \BRitem[Tipo:] Regla de integridad referencial.
     \BRitem[Clase:] Cronometrada.
@@ -324,7 +294,6 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
             \item 2023.
         \end{itemize}
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR27}{ Longitud máxima de matricula.}
     \BRitem[Tipo: ]Regla de inferencia de un hecho.
     \BRitem[Clase: ]Habilitadora.
@@ -335,7 +304,6 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Ejemplo Positivo:] . 2014171285
     \BRitem[Ejemplo Negativo: ]. 20111111111
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR28}{ Longitud máxima de contraseña.}
     \BRitem[Tipo: ]Regla de inferencia de un hecho.
     \BRitem[Clase: ]Habilitadora.
@@ -346,8 +314,6 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Ejemplo Positivo:] . abc123
     \BRitem[Ejemplo Negativo: ]. abé123333
 \end{BussinesRule}
-
-
 \begin{BussinesRule}{BR29}{Debe existir al menos un criterio de evaluación para la Relación de Prácticas.}
     \BRitem[Tipo:] Regla de integridad estructural.
     \BRitem[Clase:] Habilitadora.
@@ -356,8 +322,7 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Motivación:] Que cada práctica tenga al menos un referente para evaluar a sus alumnos.
     \BRitem[Ejemplo positivo:] La Práctica 1 de la Unidad de Aprendizaje ``Ingeniería de Sofware'' tiene como único criterio de evaluación el desarrollo de un proyecto cuyo porcentaje equivale al 100\% de la calificación del alumno.
 \end{BussinesRule}
-
-\begin{BussinesRule}{BR30}{Información de los usuarios.}
+\begin{BussinesRule}{BR30}{Información de los Usuarios y Recursos Humanos.}
     \BRitem[Tipo:] Regla de integridad.
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
@@ -366,15 +331,12 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
         \item Nombre
         \item Apellido Paterno
         \item Apellido Materno
-
         Estos tres datos comparten la misma expresión regular:
         \verb|/[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*/|
-
         \item Titulo. Se obtiene por medio de un select.
         \item Cargo. Se obtiene por medio de un select.
         \item Lugar de trabajo. Se obtiene por medio de un select.
         \item Contraseña. Expresión regular: \verb|/[^áéíóúüñÁÉÍÓÚÜÑ\s]+/|
-
         \item Correo electrónico
     \end{itemize}
     \BRitem[Motivación:] Contar con la información necesaria de los usarios para el desarrollo de las actividades.
@@ -395,7 +357,6 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
         \item Correo electrónico: juanito\&@gmail.com-mx/
     \end{itemize}
  \end{BussinesRule}
-
 \begin{BussinesRule}{BR31}{Información de Programa Académico.}
     \BRitem[Tipo:] Regla de integridad.
     \BRitem[Clase:] Habilitadora.
@@ -416,7 +377,6 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \item Nombre: Ingeniería\% \_en\ Sistemas\ Computacionales\
     \end{itemize}
  \end{BussinesRule}
-
  \begin{BussinesRule}{BR32}{ Longitud máxima de nombre de Programa Académico.}
     \BRitem[Tipo: ]Regla de inferencia de un hecho.
     \BRitem[Clase: ]Habilitadora.
@@ -427,7 +387,6 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Ejemplo Positivo:] . Ingeniería en Sistemas Computacionales
     \BRitem[Ejemplo Negativo: ]. Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales
 \end{BussinesRule}
-
 \begin{BussinesRule}{BR33}{Información del Plan de Estudio.}
 	\BRitem[Tipo:] Regla de integridad.
 	\BRitem[Clase:] Habilitadora.
@@ -435,16 +394,15 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 	\BRitem[Descripción:]Se debe de contar con la siguiente información para registrar el Plan de Estudios:
 	\begin{itemize}
 		\item Programa Académico. Se obtiene por medio de un select.
-		\item Año. Expresión regular:[0-9]\{4\}  
+		\item Año. Expresión regular:[0-9]\{4\}
 		\item Modalidad. Se obtiene por medio de un select.
 		\item Creditos totales TEPIC. Expresión Regular: \textbackslash d+(\textbackslash.\textbackslash d+)?
 		\item Creditos totales SATCA. Expresión Regular: \textbackslash d+(\textbackslash.\textbackslash d+)?
 		\item Total Horas/ Teoría. Expresión Regular: [1-9]\{2\}
-		\item Total Horas/ Práctica. Expresión Regular: [1-9]\{2\}  
-	\end{itemize} 
-
+		\item Total Horas/ Práctica. Expresión Regular: [1-9]\{2\}
+	\end{itemize}
 	\BRitem[Motivación:] Contar con la información necesaria del Plan de Estudio para el desarrollo de las actividades.
-	\BRitem[Ejemplo positivo:] Información del Plan de Estudios 
+	\BRitem[Ejemplo positivo:] Información del Plan de Estudios
 	\begin{itemize}
 		\item Año: 2008
 		\item Creditos totales TEPIC: 2.3
@@ -452,7 +410,7 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 		\item Total Horas/ Teoría: 16
 		\item Total Horas/ Práctica: 9
 	\end{itemize}
-	\BRitem[Ejemplo negativo:] Información del Plan de Estudios 
+	\BRitem[Ejemplo negativo:] Información del Plan de Estudios
 	\begin{itemize}
 		\item Año: 18
 		\item Creditos totales TEPIC: 302.5 6
@@ -461,23 +419,20 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 		\item Total Horas/ Práctica: 568
 	\end{itemize}
 \end{BussinesRule}
-
-
 \begin{BussinesRule}{BR34}{Información de Unidad de Aprendizaje.}
 	\BRitem[Tipo:] Regla de integridad.
 	\BRitem[Clase:] Habilitadora.
 	\BRitem[Nivel:] Control.
 	\BRitem[Descripción:]Se debe de contar con la siguiente información para registrar una Unidad de Aprendizaje:
-	\begin{itemize} 
+	\begin{itemize}
 		\item Nombre. Expresión Regular: /[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*/
 		\item Creditos TEPIC. Expresión Regular: \textbackslash d+(\textbackslash.\textbackslash d+)?
 		\item Creditos SATCA. Expresión Regular: \textbackslash d+(\textbackslash.\textbackslash d+)?
 		\item Horas Teoría/Semana. Expresión Regular: [1-9]\{2\}
-		\item Horas Práctica/Semana. Expresión Regular: [1-9]\{2\} 
+		\item Horas Práctica/Semana. Expresión Regular: [1-9]\{2\}
 		\item Área de Formación. Se obtiene por medio de un select.
 		\item Semestre. Se obtiene por medio de un select.
-	\end{itemize} 
-	
+	\end{itemize}
 	\BRitem[Motivación:] Contar con la información necesaria dede la Unidad de aprendizaje para el desarrollo de las actividades.
 	\BRitem[Ejemplo positivo:] Información de la Unidad de Aprenndizaje
 	\begin{itemize}
@@ -487,18 +442,15 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 		\item Total Horas/ Teoría. Expresión Regular: 16
 		\item Total Horas/ Práctica. Expresión Regular: 9
 	\end{itemize}
-	\BRitem[Ejemplo negativo:] Información del Plan de Estudios 
+	\BRitem[Ejemplo negativo:] Información del Plan de Estudios
 	\begin{itemize}
 		\item Nombre: Ingeñeria de software 23 4.
 		\item Creditos TEPIC: 455 . 5
-		\item Creditos SATCA. 243-ñ 
+		\item Creditos SATCA. 243-ñ
 		\item Total Horas/ Teoría. Expresión Regular: dos
 		\item Total Horas/ Práctica. Expresión Regular: cuatro
 	\end{itemize}
 \end{BussinesRule}
-
-
-
 %\begin{BussinesRule}{}{}
 %   \BRitem[Tipo:]
 %   \BRitem[Clase:]
