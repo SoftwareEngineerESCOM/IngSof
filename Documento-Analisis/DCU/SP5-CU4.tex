@@ -48,7 +48,7 @@
 	\UCpaso  El sistema verifica la existencia de registros en los catálogos cargos  y  lugares de trabajo de la \BRref{BR14}{Existen los catálogos} . [Trayectoria B] 
 	\UCpaso El sistema carga la información del catalogo de empleado  según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria H]
 	\UCpaso El sistema carga la pantalla  \IUref{IU8}{Registrar empleados}. [Trayectoria I]
-	\UCpaso[\UCactor] Captura la información necesaria del empleado según la \BRref{BR30}{Información personal de los usuarios} y la \BRref{BR33}{Información laboral de los usuarios}.[Trayectoria C] [Trayectoria D] 
+	\UCpaso[\UCactor] Captura la información necesaria del empleado según la \BRref{BR30}{Información personal de los usuarios} y la \BRref{BR34}{Información laboral de los usuarios}.[Trayectoria C] [Trayectoria D] 
 	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Registrar}.
 	\UCpaso El sistema verifica la consistencia de la información. [Trayectoria E] [Trayectoria F][Trayectoria J]
 	\UCpaso El sistema registra al empleado. [Trayectoria H]
@@ -81,7 +81,7 @@
 	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{F}{Se incumple la \BRref{BR3}{Gestión de Usuarios} o la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo}  o la \BRref{BR30}{Información personal de los usuarios} o la \BRref{BR33}{Información laboral de los usuarios} en la definición de cada campo.}
+\begin{UCtrayectoriaA}{F}{Se incumple la \BRref{BR3}{Gestión de Usuarios} o la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo}  o la \BRref{BR30}{Información personal de los usuarios} o la \BRref{BR34}{Información laboral de los usuarios} en la definición de cada campo.}
 	\UCpaso El sistema muestra el \MSGref{MSG35}{Escriba información valida.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
@@ -102,7 +102,7 @@
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
-\begin{UCtrayectoriaA}{J}{Uno o mas campos de la {BR30}{Información personal de los usuarios} o la \BRref{BR33}{Información laboral de los usuarios} están vacíos.}
+\begin{UCtrayectoriaA}{J}{Uno o mas campos de la {BR30}{Información personal de los usuarios} o la \BRref{BR34}{Información laboral de los usuarios} están vacíos.}
 	\UCpaso El sistema muestra el {MSG44}{El campo es requerido} debajo de cada campo que no fue llenado. 
 	\UCpaso	Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
 \end{UCtrayectoriaA}

@@ -24,7 +24,7 @@
     \begin{itemize}
         \item Jefe de División de Innovación Académica: Jefe de Departamento de Desarrollo e Innovación curricular, jefe de Innovación Educativa y analista de la DES.
         \item Jefe de Departamento de Desarrollo e Innovación curricular: ]efe de Innovación Educativa y analista de la DES.
-        \item Jefe de Innovación Educativa: Docente y analista de su unidad académica. 
+        \item Jefe de Innovación Educativa: Docente y analista de su unidad académica.
     \end{itemize}
     \BRitem[Motivación:] Permitir a los Jefes tener un control sobre el acceso al sistema.
     \BRitem[Ejemplo Positivo:] El Jefe de División de Innovación Académica  actualiza el título de un analista.
@@ -147,19 +147,36 @@
     \BRitem[Nivel: ]Control.
     \BRitem[Descripción: ]Existen catálogos de:
     \begin{itemize}
-        \item Modalidades
+        \item Modalidades\\
             Escolarizada\\
             Mixta\\
             No Escolarizada
-        \item Tipo de Usuario
+        \item Tipo de Usuario\\
             Docente\\
             Analista\\
             Jefe de División de Innovación Académica\\
             Jefe de Departamento de Desarrollo e Innovación Curricular\\
             Jefe de Innovación Educativa
-        \item Tareas
-            Registrar Mapa Curricular\\
-            Registrar Unidad de Aprendizaje]
+        \item Tareas\\
+            Revisar Mapa Curricular\\
+            Aprobar Mapa Curricular\\
+            Registrar Unidad de Aprendizaje\\
+            Revisar Unidad de Aprendizaje\\
+            Aprobar Unidad de Aprendizaje
+        \item Cargo\\
+            Subdirector académico\\
+            Director
+        \item Titulo\\
+            Abogado/a\\
+            Arquitecto/a\\
+            Contador público titulado\\
+            Doctor/a\\
+            Ingeniero/a\\
+            Licenciado/a\\
+            Máster || Magíster\\
+            Maestro || Ministro\\
+            Maestra || Ministra\\
+            Técnico
     \end{itemize}
     \BRitem[Motivación: ]Mantener los datos en un estado consistente.
 \end{BussinesRule}
@@ -346,18 +363,18 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Nivel:] Control.
     \BRitem[Descripción:]Se debe de contar con la siguiente información para registrar un usuario:
     \begin{itemize}
-        \item Nombre.
+        \item Nombre
         \item Primer Apellido.
         \item Segundo Apellido.
 
         Estos tres datos comparten la misma expresión regular:
-        [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+([A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*
+        \verb|/[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*/|
+        \item Contraseña. Expresión regular: \verb|/[^áéíóúüñÁÉÍÓÚÜÑ\s]+/|
 
-        \item Contraseña. Expresión regular: [\^{}áéíóúüñÁÉÍÓÚÜÑ\textbackslash{}s]+
-        \item Correo electrónico.    
-    \end{itemize} 
+        \item Correo electrónico.
+    \end{itemize}
     \BRitem[Motivación:] Contar con la información necesaria de los usarios para el desarrollo de las actividades.
-    \BRitem[Ejemplo positivo:] Información personal del usuario 
+    \BRitem[Ejemplo positivo:] Información personal del usuario
     \begin{itemize}
         \item Nombre: Juan Manuel
         \item Primer Apellido: Perez de
@@ -381,11 +398,10 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Nivel:] Control.
     \BRitem[Descripción:]Se debe de contar con la siguiente información para registrar un Programa Académico:
     \begin{itemize}
-        \item Nombre 
+        \item Nombre
         Este dato tiene la expresión regular:
-        [\textbackslash{}wéíóúüñÁÉÍÓÚÜÑ]+([\textbackslash{}wáéíóúüñÁÉÍÓÚÜÑ]+)*
-
-    \end{itemize} 
+     \verb|[\wéíóúüñÁÉÍÓÚÜÑ]+( [\wáéíóúüñÁÉÍÓÚÜÑ+])*|
+    \end{itemize}
     \BRitem[Motivación:] Contar con la información necesaria para la gestión de un Programa Académico.
     \BRitem[Ejemplo positivo:] Información del Programa Académico
     \begin{itemize}
@@ -404,11 +420,45 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Descripción: ]El nombre del Programa Acádémico tiene una longitud máxima de 150 basada en el modelo de datos.
     \BRitem[Sentencia:]
     \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
-    \BRitem[Ejemplo Positivo:] . Ingeniería en Sistemas Computacionales 
-    \BRitem[Ejemplo Negativo: ]. Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales 
+    \BRitem[Ejemplo Positivo:] . Ingeniería en Sistemas Computacionales
+    \BRitem[Ejemplo Negativo: ]. Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR33}{Información laboral de los usuarios.}
+\begin{BussinesRule}{BR33}{Información del Plan de Estudio.}
+    \BRitem[Tipo:] Regla de integridad.
+    \BRitem[Clase:] Habilitadora.
+    \BRitem[Nivel:] Control.
+    \BRitem[Descripción:]Se debe de contar con la siguiente información para registrar el Plan de Estudios:
+    \begin{itemize}
+        \item Programa Académico. Se obtiene por medio de un select.
+        \item Año. Expresión regular:[0-9]\{4\}  
+        \item Modalidad. Se obtiene por medio de un select.
+        \item Creditos totales TEPIC. Expresión Regular: \textbackslash d+(\textbackslash.\textbackslash d+)?
+        \item Creditos totales SATCA. Expresión Regular: \textbackslash d+(\textbackslash.\textbackslash d+)?
+        \item Total Horas/ Teoría. Expresión Regular: [1-9]\{2\}
+        \item Total Horas/ Práctica. Expresión Regular: [1-9]\{2\}  
+    \end{itemize} 
+
+    \BRitem[Motivación:] Contar con la información necesaria del Plan de Estudio para el desarrollo de las actividades.
+    \BRitem[Ejemplo positivo:] Información del Plan de Estudios 
+    \begin{itemize}
+        \item Año: 2008
+        \item Creditos totales TEPIC: 2.3
+        \item Creditos totales SATCA: 1.8
+        \item Total Horas/ Teoría: 16
+        \item Total Horas/ Práctica: 9
+    \end{itemize}
+    \BRitem[Ejemplo negativo:] Información del Plan de Estudios 
+    \begin{itemize}
+        \item Año: 18
+        \item Creditos totales TEPIC: 302.5 6
+        \item Creditos totales SATCA: 1 . 5
+        \item Total Horas/ Teoría: 104
+        \item Total Horas/ Práctica: 568
+    \end{itemize}
+\end{BussinesRule}
+
+\begin{BussinesRule}{BR34}{Información laboral de los usuarios.}
     \BRitem[Tipo:] Regla de integridad.
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
@@ -426,7 +476,6 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
         \item Título: Doctor
         \item Lugar de trabajo: ESCOM
         \item Cargo(s): Director, docente.
-
     \end{itemize}
     \BRitem[Ejemplo negativo:] Información laboral del usuario 
     \begin{itemize}
@@ -435,7 +484,6 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
         \item Cargo(s): Sin cargo.
     \end{itemize}
  \end{BussinesRule}
-
 
 %\begin{BussinesRule}{}{}
 %   \BRitem[Tipo:]
