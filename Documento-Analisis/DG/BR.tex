@@ -174,14 +174,14 @@
     \BRitem[Ejemplo Negativo:] Licenciatura en Economía: ]Plan 2000, Plan 2009, Plan 2014, Plan 2018.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR16}{La matrícula del empleado es única.}
+\begin{BussinesRule}{BR16}{El correo electrónico del empleado es único.}
     \BRitem[Tipo: ]Relación.
     \BRitem[Clase: ]Habilitadora.
     \BRitem[Nivel: ]Control.
-    \BRitem[Descripción:] Cada una de las matrículas de los empleados registrados en el sistema cuentan con una matrícula única.
+    \BRitem[Descripción:] Cada una de las cuentas de los empleados registrados en el sistema cuentan con un correo electrónico único.
     \BRitem[Motivación: ]Poder identificar a los usuarios.
-    \BRitem[Ejemplo Positivo:] El Empleado Juan Perez tiene una matricula 2014000990  y El Empleado Armando López Doriga  tiene una matricula 2014000991.
-    \BRitem[Ejemplo Negativo: ]El Empleado Juan Perez tiene una matricula 2014000990 y El Empleado Armando López Doriga  tiene una matricula 2014000990.
+    \BRitem[Ejemplo Positivo:] El Empleado Juan Perez tiene una correo electrónico juanp@ipn.mx  y el empleado Armando López Doriga tiene un correo electrónico armlop@ipn.mx.
+    \BRitem[Ejemplo Negativo:] El Empleado Juan Perez tiene una correo electrónico juanp@ipn.mx  y el empleado Armando López Doriga tiene un correo electrónico juanp@ipn.mx.
 \end{BussinesRule}
 
 \begin{BussinesRule}{BR17} {El nombre de la Unidad de Aprendizaje es único.}
@@ -340,40 +340,36 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Ejemplo positivo:] La Práctica 1 de la Unidad de Aprendizaje ``Ingeniería de Sofware'' tiene como único criterio de evaluación el desarrollo de un proyecto cuyo porcentaje equivale al 100\% de la calificación del alumno.
 \end{BussinesRule}
 
-\begin{BussinesRule}{BR30}{Información de los usuarios.}
+\begin{BussinesRule}{BR30}{Información personal de los usuarios.}
     \BRitem[Tipo:] Regla de integridad.
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
     \BRitem[Descripción:]Se debe de contar con la siguiente información para registrar un usuario:
     \begin{itemize}
-        \item Nombre
-        \item Apellido Paterno
-        \item Apellido Materno
+        \item Nombre.
+        \item Primer Apellido.
+        \item Segundo Apellido.
 
         Estos tres datos comparten la misma expresión regular:
         [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+([A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*
 
-        \item Titulo. Se obtiene por medio de un select.
-        \item Cargo. Se obtiene por medio de un select.
-        \item Lugar de trabajo. Se obtiene por medio de un select.
         \item Contraseña. Expresión regular: [\^{}áéíóúüñÁÉÍÓÚÜÑ\textbackslash{}s]+
-
-        \item Correo electrónico    
+        \item Correo electrónico.    
     \end{itemize} 
     \BRitem[Motivación:] Contar con la información necesaria de los usarios para el desarrollo de las actividades.
-    \BRitem[Ejemplo positivo:] Información del usuario 
+    \BRitem[Ejemplo positivo:] Información personal del usuario 
     \begin{itemize}
         \item Nombre: Juan Manuel
-        \item Apellido Paterno: Perez de
-        \item Apellido Materno: los Santos
+        \item Primer Apellido: Perez de
+        \item Segundo Apellido: los Santos
         \item Contraseña: juanit8banan4
         \item Correo electrónico: juanito@gmail.com
     \end{itemize}
-    \BRitem[Ejemplo negativo:] Información del usuario 
+    \BRitem[Ejemplo negativo:] Información personal del usuario 
     \begin{itemize}
-        \item Nombre: Juan Manuel Fernando
-        \item Apellido Paterno: Perez de los Santos
-        \item Apellido Materno: del Carmen
+        \item Nombre: juan Ma. Fernando
+        \item Primer Apellido: Perez de los Santos
+        \item Segundo Apellido: del Carmen
         \item Contraseña: 132:\_147\%\$
         \item Correo electrónico: juanito\&@gmail.com-mx/
     \end{itemize}
@@ -412,6 +408,33 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Ejemplo Negativo: ]. Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales 
 \end{BussinesRule}
 
+\begin{BussinesRule}{BR33}{Información laboral de los usuarios.}
+    \BRitem[Tipo:] Regla de integridad.
+    \BRitem[Clase:] Habilitadora.
+    \BRitem[Nivel:] Control.
+    \BRitem[Descripción:] Cada usuario debe tener asignado:
+    \begin{itemize}
+        \item Un título profesional, se tomará aquel con mayor grado profesional.
+        \item Un lugar de trabajo en la institución.
+        \item Uno o varios cargos dentro de su lugar de trabajo.   
+    \end{itemize} 
+
+    Estos datos se cargarán desde un catálogo para cada campo.
+    \BRitem[Motivación:] Contar con la información laboral necesaria de los usarios para el desarrollo de las actividades.
+    \BRitem[Ejemplo positivo:] Información laboral del usuario 
+    \begin{itemize}
+        \item Título: Doctor
+        \item Lugar de trabajo: ESCOM
+        \item Cargo(s): Director, docente.
+
+    \end{itemize}
+    \BRitem[Ejemplo negativo:] Información laboral del usuario 
+    \begin{itemize}
+        \item Título: Licenciado y Maestro en Ciencias
+        \item Lugar de trabajo: ESCOM y CIDETEC.
+        \item Cargo(s): Sin cargo.
+    \end{itemize}
+ \end{BussinesRule}
 
 
 %\begin{BussinesRule}{}{}

@@ -8,7 +8,7 @@
         \UCitem{Propósito}{Contribuir a la gestión del proceso de creación de Unidades de Aprendizaje.}
         \UCitem{Entradas}{Las entradas para el inicio de sesión serán:
           \begin{itemize}
-            \item Matrícula.
+            \item Correo electrónico.
             \item Contraseña.
           \end{itemize}
         }
@@ -16,22 +16,22 @@
         \UCitem{Salidas}{
             \begin{itemize}
                 \item Página principal del sistema.
-                \item \MSGref{MSG0}{Matrícula y/o contraseña no válidas.}
+                \item \MSGref{MSG0}{Correo y/o contraseña no válidas.}
                 \item \MSGref{MSG24}{Por el momento la página solicitada no esta disponible.}
                 \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
-                \item \MSGref{MSG26}{La matrícula ingresada no se encuentra registrada en el sistema.}
+                \item \MSGref{MSG26}{El correo ingresado no se encuentra registrado en el sistema.}
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
-        \UCitem{Precondiciones}{1.- La matrícula ingresada tiene una cuenta de usuario en el sistema.
+        \UCitem{Precondiciones}{1.- El correo electrónico ingresado tiene una cuenta de usuario en el sistema.
         }
         \UCitem{Postcondiciones}{1. El usuario puede ver sus opciones en el sistema, dependiendo del caso.}
         \UCitem{Errores}{
             \begin{itemize}
-                \item La matrícula ingresada no se encuentra registrada en el sistema.
-                \item Matrícula incorrecta.
+                \item El correo ingresado no se encuentra registrado en el sistema.
+                \item Correo electrónico incorrecto.
                 \item Contraseña incorrecta.
-                \item Matrícula y contraseña incorrecta.
+                \item Correo electrónico y contraseña incorrecta.
                 \item Hubo un problema al conectarse con el servidor.
                 \item Hubo un problema al conectarse con la base de datos.
             \end{itemize}
@@ -45,7 +45,7 @@
     
     \UCpaso[\UCactor] Ingresa el url en el navegador establecido en la RN (por definir). [Trayectoria A] 
     \UCpaso Muestra la interfaz de usuario \IUref{IU3}{Inicio de sesion}.
-    \UCpaso[\UCactor] Ingresa su matrícula.
+    \UCpaso[\UCactor] Ingresa correo electrónico.
     \UCpaso[\UCactor] Ingresa su contraseña.
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Entrar} de la interfaz de usuario \IUref{IU3}{Inicio de sesión}  [Trayectoria A][Trayectoria C] [Trayectoria D] [Trayectoria E] [Trayectoria F] [Trayectoria G]
 \end{UCtrayectoria}
@@ -61,8 +61,8 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 
-\begin{UCtrayectoriaA}{B}{La matrícula y/o contraseña son incorrectas.}
-    \UCpaso El sistema muestra el  \MSGref{MSG20}{Matrícula y/o contraseña no válidas}.
+\begin{UCtrayectoriaA}{B}{El correo y/o contraseña son incorrectas.}
+    \UCpaso El sistema muestra el  \MSGref{MSG20}{Correo y/o contraseña no válidas}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}
@@ -96,8 +96,8 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
 
-\begin{UCtrayectoriaA}{G}{La matrícula ingresada no se encuentra registrada en el sistema.}
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG26}{La matrícula ingresada no se encuentra registrada en el sistema}.
+\begin{UCtrayectoriaA}{G}{El correo ingresado no se encuentra registrado en el sistema.}
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG26}{El correo ingresado no se encuentra registrado en el sistema.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}
