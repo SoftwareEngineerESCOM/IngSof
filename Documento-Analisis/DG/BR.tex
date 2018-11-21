@@ -45,7 +45,7 @@
         \item Docente: Unidad Académica de su Jefe de Innovación Educativa.
         \item Analista:  DES o Unidad Académica de su Jefe de Innovación Educativa.
     \end{itemize}
-    \BRitem[Motivación:] Identificar que usuarios pertenecen a cada área y así saber que permisos tienen y a que informació pueden acceder.
+    \BRitem[Motivación:] Identificar que usuarios pertenecen a cada área y así saber que permisos tienen y a que información pueden acceder.
     \BRitem[Ejemplo Positivo:] La zona de trabajo de un Docente creado por el Jefe de Innovación Educativa de la ESCOM es la ESCOM.
     \BRitem[Ejemplo Negativo:] La zona de trabajo del Jefe de Innovación Educativa de la ESCOM es la DES.
 \end{BussinesRule}
@@ -95,7 +95,7 @@
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
     \BRitem[Descripción:]
-    \BRitem[Sentencia:] Una tarea puede ser aprobada parcialmente y las secciones aprobadas no puden ser modificadas.
+    \BRitem[Sentencia:] Una tarea puede ser aprobada parcialmente y las secciones aprobadas no pueden ser modificadas.
     \BRitem[Motivación:] Evitar modificaciones en una sección ya aprobada.
     \BRitem[Ejemplo Positivo:] Una sección ya ha sido aprobada y no se hacen modificaciones.
     \BRitem[Ejemplo Negativo:] Una sección es aprobada y fue modificada.
@@ -143,7 +143,7 @@
     \BRitem[Ejemplo Negativo: ]El usuario deja campos vacios y el sistema le permite continuar.
 \end{BussinesRule}
 %----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR14}{Catalogos del Sistema.}
+\begin{BussinesRule}{BR14}{Catálogos del Sistema.}
     \BRitem[Tipo: ]Regla de inferencia de un hecho.
     \BRitem[Clase: ]Habilitadora.
     \BRitem[Nivel: ]Control.
@@ -214,7 +214,7 @@
             Escuela Superior de Economía (ESE) \\
             Escuela Superior de Turismo (EST) \\
             Centro de Lenguas Extranjeras
-        \item Areas de Formación\\
+        \item Áreas de Formación\\
             Institucional\\
             Científica Básica\\
             Profesional\\
@@ -228,7 +228,7 @@
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
     \BRitem[Descripción:] Un Programa Académico puede tener unicamente un Plan de Estudios en rediseño.
-    \BRitem[Motivación: ]Una Prograama Académico puede tener varios Planes de Estudios activos pero solo se rediseña el mas actual pues este fue el rediseño de los anterior.
+    \BRitem[Motivación: ]Una Programa Académico puede tener varios Planes de Estudios activos pero solo se rediseña el mas actual pues este fue el rediseño de los anterior.
     \BRitem[Ejemplo Positivo:] Ingeniería en Sistemas Computacionales: ]Plan 2019.
     \BRitem[Ejemplo Negativo:] Licenciatura en Economía: ]Plan 2000, Plan 2009, Plan 2014, Plan 2018.
 \end{BussinesRule}
@@ -468,27 +468,27 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 	\BRitem[Descripción:]Se debe de contar con la siguiente información para registrar el Plan de Estudios:
 	\begin{itemize}
 		\item Programa Académico. Se obtiene por medio de un select.
-		\item Año. Expresión regular: verb|\d{4}|
+		\item Año. Expresión regular: \verb|\d{4}|
 		\item Modalidad. Se obtiene por medio de un select.
-		\item Creditos totales TEPIC. Expresión Regular: verb|\d+(\.\d{1,2})?|
-		\item Creditos totales SATCA. Expresión Regular: verb|\d+(\.\d{1,2})?|
-		\item Total Horas/Teoría. Expresión Regular: verb|\d{1,2}|
-		\item Total Horas/Práctica. Expresión Regular: verb|\d{1,2}|
+		\item Créditos totales TEPIC. Expresión Regular: \verb|\d+(\.\d{1,2})?|
+		\item Créditos totales SATCA. Expresión Regular: \verb|\d+(\.\d{1,2})?|
+		\item Total Horas/Teoría. Expresión Regular: \verb|\d{1,2}|
+		\item Total Horas/Práctica. Expresión Regular: \verb|\d{1,2}|
 	\end{itemize}
 	\BRitem[Motivación:] Contar con la información necesaria del Plan de Estudio para el desarrollo de las actividades.
 	\BRitem[Ejemplo positivo:] Información del Plan de Estudios
 	\begin{itemize}
 		\item Año: 2008
-		\item Creditos totales TEPIC: 450
-		\item Creditos totales SATCA: 328.55
+		\item Créditos totales TEPIC: 450
+		\item Créditos totales SATCA: 328.55
 		\item Total Horas/ Teoría: 150
 		\item Total Horas/ Práctica: 150
 	\end{itemize}
 	\BRitem[Ejemplo negativo:] Información del Plan de Estudios
 	\begin{itemize}
 		\item Año: 18
-		\item Creditos totales TEPIC: 302.5 6
-		\item Creditos totales SATCA: 1 . 5
+		\item Créditos totales TEPIC: 302.5 6
+		\item Créditos totales SATCA: 1 . 5
 		\item Total Horas/ Teoría: 104
 		\item Total Horas/ Práctica: 568
 	\end{itemize}
@@ -501,27 +501,27 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 	\BRitem[Descripción:]Se debe de contar con la siguiente información para registrar una Unidad de Aprendizaje:
 	\begin{itemize}
 		\item Nombre. Expresión Regular: /[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*/
-		\item Creditos TEPIC. Expresión Regular: verb|\d+(\.\d{2})?|
-		\item Creditos SATCA. Expresión Regular: verb|\d+(\.\d{2})?|
-		\item Horas Teoría/Semana. Expresión Regular: verb|\d{2}|
-		\item Horas Práctica/Semana. Expresión Regular: verb|\d{2}|
+		\item Créditos TEPIC. Expresión Regular: \verb|\d+(\.\d{2})?|
+		\item Créditos SATCA. Expresión Regular: \verb|\d+(\.\d{2})?|
+		\item Horas Teoría/Semana. Expresión Regular: \verb|\d{2}|
+		\item Horas Práctica/Semana. Expresión Regular: \verb|\d{2}|
 		\item Área de Formación. Se obtiene por medio de un select.
 		\item Semestre. Se obtiene por medio de un select.
 	\end{itemize}
-	\BRitem[Motivación:] Contar con la información necesaria dede la Unidad de aprendizaje para el desarrollo de las actividades.
-	\BRitem[Ejemplo positivo:] Información de la Unidad de Aprenndizaje
+	\BRitem[Motivación:] Contar con la información necesaria de la Unidad de aprendizaje para el desarrollo de las actividades.
+	\BRitem[Ejemplo positivo:] Información de la Unidad de Aprendizaje
 	\begin{itemize}
-		\item Nombre: Ingenería de software.
-		\item Creditos TEPIC: 8
-		\item Creditos SATCA. 1.6
+		\item Nombre: Ingeniería de software.
+		\item Créditos TEPIC: 8
+		\item Créditos SATCA. 1.6
 		\item Total Horas Teoría/Semana: 3
 		\item Total Horas Práctica/Semana: 2
 	\end{itemize}
 	\BRitem[Ejemplo negativo:] Información del Plan de Estudios
 	\begin{itemize}
-		\item Nombre: Ingeñeria de software 23 4.
-		\item Creditos TEPIC: 455 . 5
-		\item Creditos SATCA. 243-ñ
+		\item Nombre: Ingeniera de software 23 4.
+		\item Créditos TEPIC: 455 . 5
+		\item Créditos SATCA. 243-ñ
 		\item Total Horas Teoría/Semana: tres
 		\item Total Horas Práctica/Semana: cuatro
 	\end{itemize}
@@ -575,11 +575,11 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
      \BRitem[Ejemplo positivo:] Información laboral
   \end{BussinesRule}
 %----------------------------------BR --------------------------------------%
- \begin{BussinesRule}{BR37}{Calculo de Creditos TEPIC.}
+ \begin{BussinesRule}{BR37}{Calculo de Créditos TEPIC.}
      \BRitem[Tipo:] Regla de integridad.
      \BRitem[Clase:] Habilitadora.
      \BRitem[Nivel:] Control.
-     \BRitem[Descripción:]Calcular los creditos TEPIC mediante las Horas/Semana.\\
+     \BRitem[Descripción:]Calcular los créditos TEPIC mediante las Horas/Semana.\\
      Formula: (Horas Teoría/Semana)*2 + Horas Práctica/Semana
      \BRitem[Motivación:] Validar la congruencia de los datos.
   \end{BussinesRule}
