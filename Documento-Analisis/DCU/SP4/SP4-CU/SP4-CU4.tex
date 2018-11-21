@@ -6,26 +6,29 @@
         \UCitem{Propósito}{Ingresar al sistema la información necesaria de los Recursos Humanos.}
         \UCitem{Entradas}{Las entradas para el registro de un Recurso Humano serán:
           \begin{itemize}
-            \item Nombre.
-            \item Primer Apellido.
-            \item Segundo Apellido.
+            \item Matrícula de Empleado.
             \item Cargo.
             \item Título.
+            \item Nombre.
+            \item Apellido Paterno.
+            \item Apellido Materno.
           \end{itemize}
         }
         \UCitem{Origen}{Teclado.}
         \UCitem{Salidas}{
             \begin{itemize}
+                \item \MSGref{MSG32}{Todos los campos son obligatorios.}
                 \item \MSGref{MSG5}{Registro finalizado exitosamente.}
-                \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+                \item \MSGref{MSG33}{El Recurso Humano con la Matrícula de Empleado [Número de Matrícula de Empleado] ya existe.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-                \item \MSGref{MSG44}{Este campo es requerido.}
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
+                \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+                \item \MSGref{MSG37}{Ha ocurrido un error al guardar los datos.}
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
         \UCitem{Precondiciones}{
             \begin{itemize}
+                \item El Recurso Humano a registrar, no debe existir previamente en el sistema.
                 \item El catálogo de Cargo debe de estar cargado en el sistema.
             \end{itemize}
         }
@@ -44,14 +47,14 @@
     \UCpaso Carga el catálogo de Cargo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga el catálogo de Título descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{RRH-J}{Registrar Recurso Humano}.
-    \UCpaso[\UCactor] Ingresa el Nombre.
-    \UCpaso[\UCactor] Ingresa el Primer Apellido.
-    \UCpaso[\UCactor] Ingresa el Segundo Apellido.
     \UCpaso[\UCactor] Ingresa la Matrícula de Empleado.
-    \UCpaso[\UCactor] Selecciona uno o multiples Cargos.
+    \UCpaso[\UCactor] Selecciona el Cargo.
     \UCpaso[\UCactor] Selecciona el Título.
+    \UCpaso[\UCactor] Ingresa el Nombre.
+    \UCpaso[\UCactor] Ingresa el Apellido Paterno.
+    \UCpaso[\UCactor] Ingresa el Apellido Materno.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B] [Trayectoria B.1]
-    \UCpaso Verifica que se cumpla la \BRref{BR16}{Matrícula de empleado única} y la \BRref{BR35}{Estructura de Recursos Humanos}. [Trayectoria C][Trayectoria E]
+    \UCpaso Verifica que se cumpla la \BRref{BR13}{Todos los campos son obligatorios}, la \BRref{BR16}{Matrícula de empleado única} y la \BRref{BR30}{Información de los Usuarios y Recursos Humanos.}. [Trayectoria C][Trayectoria D][Trayectoria E]
     \UCpaso Persiste los datos ingresados. [Trayectoria F]
     \UCpaso Muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
@@ -75,18 +78,25 @@
     \UCpaso Continúa en el paso 11 de la trayectoria principal del \UCref{SP4-CU4}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-\begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar incumpliendo con la \BRref{BR35}{Estructura de Recursos Humanos}.}
-    \UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido}  debajo de cada campo obligatorio sin contestar.
+\begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar incumpliendo con la \BRref{BR13}{Todos los campos son obligatorios}.}
+    \UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU4}.
+\end{UCtrayectoriaA}
+%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
+\begin{UCtrayectoriaA}{D}{La Matrícula de Empleado ingresada ya está registrada en el sistema incumpliendo la \BRref{BR16}{Matrícula de empleado única}.}
+    \UCpaso Muestra el mensaje \MSGref{MSG33}{El Recurso Humano con la Matrícula de Empleado [Número de Matrícula de Empleado] ya existe}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU4}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 \begin{UCtrayectoriaA}{E}{El Sistema detecta caracteres no alfanumérico.}
-    \UCpaso Muestra el mensaje \MSGref{MSG35}{ Escribe información valida} debajo del campo que incumplio con la \BRref{BR30}{Estructura de Recursos Humanos}.
+    \UCpaso Muestra el mensaje \MSGref{MSG35}{ Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 \begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
-    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
+    \UCpaso Muestra el mensaje \MSGref{MSG37}{Ha ocurrido un error al guardar los datos.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}

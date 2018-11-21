@@ -15,9 +15,9 @@
                 \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
-                \item \MSGref{MSG44}{Este campo es requerido}
-                \item \MSGref{MSG35}{Escribe información valida.}
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
+                \item \MSGref{MSG32}{Todos los campos son obligatorios}
+                \item \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
+                \item \MSGref{MSG37}{Ha ocurrido un error al guardar los datos.}
                 \item \MSGref{MSG43}{El nombre del Programa Académico ya está registrado porfavor cámbielo.}
         	\end{itemize}
         }
@@ -37,7 +37,7 @@
     \UCpaso Cargar el nombre del Programa Académico.
     \UCpaso[\UCactor] Ingresa el nuevo nombre del Programa Académico.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. Existen las trayectorias alternativas [Trayectoria A] y [Trayectoria B] al presionar el boton Cancelar.
-    \UCpaso Verifica que se cumplan la \BRref{BR13}{Todos los datos solicitados son obligatorios}, la \BRref{BR19}{El nombre del Programa Académico es único.}, la \BRref{BR31}{Información de Programa Académico} y la \BRref{BR32}{Longitud máxima de nombre de Programa Académico}. [Trayectoria C][Trayectoria D][Trayectoria E][Trayectoria H]
+    \UCpaso Verifica que se cumplan la \BRref{BR13}{Todos los datos solicitados son obligatorios}, la \BRref{BR19}{El nombre del Programa Académico es único.}, la \BRref{BR31}{Información de Programa Académico.} y la \BRref{BR32}{Longitud máxima de nombre de Programa Académico}. [Trayectoria C][Trayectoria D][Trayectoria E][Trayectoria H]
     \UCpaso Persiste los datos ingresados.Accionado por el boton \IUbutton{Finalizar} [Trayectoria G]activada al presionar el boton.
     \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
@@ -58,12 +58,13 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 \begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar.}
-    \UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido}.
+    \UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 \begin{UCtrayectoriaA}{D}{El Sistema detecta que el Nombre de Programa Académico no cumple con la expresión regular}
-    \UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información valida} debajo del campo que incumplió la expresión regular estipulada en la \BRref{BR31}{Información de Programa Académico}.
+    \UCpaso Muestra el mensaje \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU8}.
 \end{UCtrayectoriaA}
     %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
@@ -80,12 +81,12 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
 \begin{UCtrayectoriaA}{G}{Ocurre un error al momento de persistir los datos.}
-    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
+    \UCpaso Muestra el mensaje \MSGref{MSG37}{Ha ocurrido un error al guardar los datos.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
 \begin{UCtrayectoriaA}{H}{El Sistema detecta que el Nombre de Programa Académico excede la longitud máxima}
-    \UCpaso No permite que se escriba un longitud mayor que la expesificada en la \BRref{BR32}{Longitud máxima de nombre de Programa Académico}.
+    \UCpaso Muestra el mensaje \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU8}.
 \end{UCtrayectoriaA}

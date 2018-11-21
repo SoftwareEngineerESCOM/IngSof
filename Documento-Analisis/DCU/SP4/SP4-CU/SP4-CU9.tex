@@ -19,11 +19,11 @@
 		\UCitem{Origen}{Teclado, Mouse}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item \MSGref{MSG44}{Este campo es requerido.}
+        		\item \MSGref{MSG32}{Todos los campos son obligatorios.}
         		\item \MSGref{MSG5}{Registro finalizado exitosamente.}
         		\item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
         		\item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
-        		\item \MSGref{MSG35}{Escribe información valida.}
+        		\item \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
         		\item \MSGref{MSG25}{Servicios no disponibles por el momento.}
                 \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
         	\end{itemize}
@@ -73,7 +73,7 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C-------------------------
 \begin{UCtrayectoriaA}{D}{El sistema detecta uno o más campos sin contestar.}
-	\UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido.}
+	\UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU9}.
 \end{UCtrayectoriaA}
@@ -85,6 +85,6 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 \begin{UCtrayectoriaA}{F}{El Sistema detecta que algun campo no cumple con la expresión regular.}
-	\UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información valida} debajo del campo.
+	\UCpaso Muestra el mensaje \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
 	\UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU9}.
 \end{UCtrayectoriaA}

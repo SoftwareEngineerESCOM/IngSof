@@ -23,7 +23,7 @@
                 \item \MSGref{MSG5}{Registro finalizado exitosamente.}
                 \item \MSGref{MSG29}{ ¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
-                \item \MSGref{MSG35}{Escribe información valida.}
+                \item \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
                 \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
         	\end{itemize}
         }
@@ -83,11 +83,12 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 \begin{UCtrayectoriaA}{E}{El sistema detecta uno o más campos sin contestar.}
-	\UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido} debajo de cada campo obligatorio sin contestar.
+	\UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU2}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 \begin{UCtrayectoriaA}{F}{El Sistema detecta que algun campo no cumple con la expresión regular.}
-	\UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información valida} del campo que incumplió con la \BRref{BR33}{Información de Planes de Estudios}.
+	\UCpaso Muestra el mensaje \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
 	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU2}.
 \end{UCtrayectoriaA}
