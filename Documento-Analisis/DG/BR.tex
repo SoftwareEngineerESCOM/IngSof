@@ -461,13 +461,11 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 	\BRitem[Nivel:] Control.
 	\BRitem[Descripción:]Se debe de contar con la siguiente información para registrar el Plan de Estudios:
 	\begin{itemize}
-		\item Programa Académico. Se obtiene por medio de un select.
 		\item Año. Expresión regular:[0-9]\{4\}
-		\item Modalidad. Se obtiene por medio de un select.
 		\item Creditos totales TEPIC. Expresión Regular: \textbackslash d+(\textbackslash.\textbackslash d+)?
 		\item Creditos totales SATCA. Expresión Regular: \textbackslash d+(\textbackslash.\textbackslash d+)?
-		\item Total Horas/ Teoría. Expresión Regular: [1-9]\{2\}
-		\item Total Horas/ Práctica. Expresión Regular: [1-9]\{2\}
+		\item Total Horas/ Teoría. Expresión Regular: [1-9]\{3\}
+		\item Total Horas/ Práctica. Expresión Regular: [1-9]\{3\}
 	\end{itemize}
 	\BRitem[Motivación:] Contar con la información necesaria del Plan de Estudio para el desarrollo de las actividades.
 	\BRitem[Ejemplo positivo:] Información del Plan de Estudios
@@ -475,16 +473,16 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 		\item Año: 2008
 		\item Creditos totales TEPIC: 2.3
 		\item Creditos totales SATCA: 1.8
-		\item Total Horas/ Teoría: 16
-		\item Total Horas/ Práctica: 9
+		\item Total Horas/ Teoría: 160
+		\item Total Horas/ Práctica: 250
 	\end{itemize}
 	\BRitem[Ejemplo negativo:] Información del Plan de Estudios
 	\begin{itemize}
 		\item Año: 18
 		\item Creditos totales TEPIC: 302.5 6
 		\item Creditos totales SATCA: 1 . 5
-		\item Total Horas/ Teoría: 104
-		\item Total Horas/ Práctica: 568
+		\item Total Horas/ Teoría: 10.4
+		\item Total Horas/ Práctica: 56.8
 	\end{itemize}
 \end{BussinesRule}
 %----------------------------------BR --------------------------------------%
@@ -499,25 +497,23 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
 		\item Creditos SATCA. Expresión Regular: \textbackslash d+(\textbackslash.\textbackslash d+)?
 		\item Horas Teoría/Semana. Expresión Regular: [1-9]\{2\}
 		\item Horas Práctica/Semana. Expresión Regular: [1-9]\{2\}
-		\item Área de Formación. Se obtiene por medio de un select.
-		\item Semestre. Se obtiene por medio de un select.
 	\end{itemize}
 	\BRitem[Motivación:] Contar con la información necesaria dede la Unidad de aprendizaje para el desarrollo de las actividades.
 	\BRitem[Ejemplo positivo:] Información de la Unidad de Aprenndizaje
 	\begin{itemize}
 		\item Nombre: Ingenería de software.
 		\item Creditos TEPIC: 3.6
-		\item Creditos SATCA. 1.6
-		\item Total Horas/ Teoría. Expresión Regular: 16
-		\item Total Horas/ Práctica. Expresión Regular: 9
+		\item Creditos SATCA: 1.6
+		\item Horas Teoría/Semana: 20
+		\item Horas Práctica/Semana:10
 	\end{itemize}
 	\BRitem[Ejemplo negativo:] Información del Plan de Estudios
 	\begin{itemize}
 		\item Nombre: Ingeñeria de software 23 4.
 		\item Creditos TEPIC: 455 . 5
 		\item Creditos SATCA. 243-ñ
-		\item Total Horas/ Teoría. Expresión Regular: dos
-		\item Total Horas/ Práctica. Expresión Regular: cuatro
+		\item Horas Teoría/Semana: 20.34
+		\item Horas Práctica/Semana:10.56
 	\end{itemize}
 \end{BussinesRule}
 %----------------------------------BR --------------------------------------%

@@ -7,7 +7,7 @@
 		\UCitem{Propósito}{Registrar el año, modalidad, total de créditos (TEPIC / SATCA) y horas totales (Prácticas / Teóricas) a un Plan de Estudios.}
 		\UCitem{Entradas}{Las entradas para el registro del Plan de Estudios serán:
           \begin{itemize}
-          	\item Programa Academico.
+          	\item Programa Académico.
           	\item Año.
           	\item Créditos Totales TEPIC.
             \item Créditos Totales SATCA.
@@ -32,7 +32,7 @@
 		\UCitem{Postcondiciones}{El Plan de Estudios queda registrado en el sistema.}
 		\UCitem{Errores}{
 			  \begin{itemize}
-				\item E1. Los catálogos de modalidad y programa académico no se cargaron correctamente.
+				\item E1. El catálogos de modalidad no se cargaro correctamente.
 				\item E2. Hubo un problema al conectarse con la base de datos.
 			\end{itemize}
 		}
@@ -44,10 +44,16 @@
     %Usuario
     \UCpaso[\UCactor] Presiona el boton \IUbutton{+} que se encuentra de la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudio}
 	%Sistema
-	\UCpaso  El sistema verifica la existencia de registros en el catálogo modalidad de la \BRref{BR14}{Existen los catálogos} . [Trayectoria A]
-    \UCpaso El sistema carga el catálogo de modalidad descrito en la \BRref{BR14}.[Trayectoria B]
+	\UCpaso  El sistema verifica la existencia de registros en el catálogo de modalidad de la \BRref{BR14}{Existen los catálogos}. [Trayectoria A]
+    \UCpaso El sistema carga el catálogo de modalidad descritos en la \BRref{BR14}.[Trayectoria B]
     \UCpaso Muestra la interfaz de usuario \IUref{RPE-J}{Registrar Plan de Estudios}.
-    \UCpaso[\UCactor] Captura la información necesaria del Plan de Estudios según la \BRref{BR33}{Información del Plan de Estudios}.
+    \UCpaso[\UCactor] Selecciona un Programa Académico.
+    \UCpaso[\UCactor] Ingresa el año del Plan de Estudios.
+    \UCpaso[\UCactor] Ingresa los créditos totales TEPIC del Plan de Estudios.
+    \UCpaso[\UCactor] Ingresa los créditos totales SATCA del Plan de Estudios.
+    \UCpaso[\UCactor] Ingresa Total horas / Teoría del Plan de Estudios considerando \BRref{BR20}{Las horas totales deben de estar entre 350 y 450 horas}.
+    \UCpaso[\UCactor] Ingresa Total horas / Práctica del Plan de Estudios  considerando \BRref{BR20}{Las horas totales deben de estar entre 350 y 450 horas}.
+    \UCpaso[\UCactor] Selecciona la modalidad del Plan de Estudios.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria C] [Trayectoria D]
     \UCpaso Verifica la consistencia de la información conforme a la \BRref{BR13}{Todos los datos solicitados son obligatorios} y la \BRref{BR33}{Información de Planes de Estudios}. [Trayectoria E][Trayectoria F]
     \UCpaso Guarda la información del Plan de Estudios. [Trayectoria B]
