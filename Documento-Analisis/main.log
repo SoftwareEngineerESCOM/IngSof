@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  21 NOV 2018 09:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  21 NOV 2018 10:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7319,32 +7319,32 @@ Package pdftex.def Info: images/uc/iu.png  used on input line 69.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 72.
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 73.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 [87]
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
@@ -9626,7 +9626,7 @@ Package pdftex.def Info: images/uc/usecase.png  used on input line 41.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 )
 (./DCU/SP4/IU/pantallas.tex
-<images/SP4/JefeDeInnovacionEducativa/GestionarRH-J.jpeg, id=2335, 1156.32pt x 
+<images/SP4/JefeDeInnovacionEducativa/GestionarRH-J.jpeg, id=2334, 1156.32pt x 
 530.58224pt>
 File: images/SP4/JefeDeInnovacionEducativa/GestionarRH-J.jpeg Graphic file (typ
 e jpg)
@@ -9634,7 +9634,7 @@ e jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/GestionarRH-J.jpe
 g  used on input line 1.
 (pdftex.def)             Requested size: 375.36299pt x 172.23479pt.
-<images/SP4/JefeDeInnovacionEducativa/RegistrarRH-J.jpeg, id=2336, 1155.1155pt 
+<images/SP4/JefeDeInnovacionEducativa/RegistrarRH-J.jpeg, id=2335, 1155.1155pt 
 x 530.58224pt>
 File: images/SP4/JefeDeInnovacionEducativa/RegistrarRH-J.jpeg Graphic file (typ
 e jpg)
@@ -9642,7 +9642,7 @@ e jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/RegistrarRH-J.jpe
 g  used on input line 2.
 (pdftex.def)             Requested size: 375.36299pt x 172.41289pt.
-<images/SP4/JefeDeInnovacionEducativa/EditarRH-J.jpeg, id=2337, 916.92563pt x 4
+<images/SP4/JefeDeInnovacionEducativa/EditarRH-J.jpeg, id=2336, 916.92563pt x 4
 64.23438pt>
 File: images/SP4/JefeDeInnovacionEducativa/EditarRH-J.jpeg Graphic file (type j
 pg)
@@ -9651,7 +9651,7 @@ Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/EditarRH-J.jpeg
 used on input line 3.
 (pdftex.def)             Requested size: 375.36299pt x 190.04689pt.
 <images/SP4/JefeDeInnovacionEducativa/ConsultarProgramasAcademicos-J.jpeg, id=2
-338, 1156.32pt x 529.37775pt>
+337, 1156.32pt x 529.37775pt>
 File: images/SP4/JefeDeInnovacionEducativa/ConsultarProgramasAcademicos-J.jpeg 
 Graphic file (type jpg)
 <use images/SP4/JefeDeInnovacionEducativa/ConsultarProgramasAcademicos-J.jpeg>
@@ -9659,14 +9659,14 @@ Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/ConsultarPrograma
 sAcademicos-J.jpeg  used on input line 4.
 (pdftex.def)             Requested size: 375.36299pt x 171.84378pt.
 <images/SP4/JefeDeInnovacionEducativa/RegistrarProgramaAcademico-J.jpeg, id=233
-9, 1361.085pt x 637.38126pt>
+8, 1361.085pt x 637.38126pt>
 File: images/SP4/JefeDeInnovacionEducativa/RegistrarProgramaAcademico-J.jpeg Gr
 aphic file (type jpg)
 <use images/SP4/JefeDeInnovacionEducativa/RegistrarProgramaAcademico-J.jpeg>
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/RegistrarPrograma
 Academico-J.jpeg  used on input line 5.
 (pdftex.def)             Requested size: 375.36299pt x 175.77153pt.
-<images/SP4/JefeDeInnovacionEducativa/EditarProgramaAcademico-J.jpeg, id=2340, 
+<images/SP4/JefeDeInnovacionEducativa/EditarProgramaAcademico-J.jpeg, id=2339, 
 794.97pt x 372.1905pt>
 File: images/SP4/JefeDeInnovacionEducativa/EditarProgramaAcademico-J.jpeg Graph
 ic file (type jpg)
@@ -9674,7 +9674,7 @@ ic file (type jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/EditarProgramaAca
 demico-J.jpeg  used on input line 6.
 (pdftex.def)             Requested size: 375.36299pt x 175.74167pt.
-<images/SP4/JefeDeInnovacionEducativa/ConsultarPlanDeEstudios-J.jpeg, id=2341, 
+<images/SP4/JefeDeInnovacionEducativa/ConsultarPlanDeEstudios-J.jpeg, id=2340, 
 1156.32pt x 506.49225pt>
 File: images/SP4/JefeDeInnovacionEducativa/ConsultarPlanDeEstudios-J.jpeg Graph
 ic file (type jpg)
@@ -9682,7 +9682,7 @@ ic file (type jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/ConsultarPlanDeEs
 tudios-J.jpeg  used on input line 7.
 (pdftex.def)             Requested size: 375.36299pt x 164.41481pt.
-<images/SP4/JefeDeInnovacionEducativa/RegistrarPlanDeEstudios-J.jpeg, id=2342, 
+<images/SP4/JefeDeInnovacionEducativa/RegistrarPlanDeEstudios-J.jpeg, id=2341, 
 1363.0925pt x 638.385pt>
 File: images/SP4/JefeDeInnovacionEducativa/RegistrarPlanDeEstudios-J.jpeg Graph
 ic file (type jpg)
@@ -9690,7 +9690,7 @@ ic file (type jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/RegistrarPlanDeEs
 tudios-J.jpeg  used on input line 8.
 (pdftex.def)             Requested size: 375.36299pt x 175.79506pt.
-<images/SP4/JefeDeInnovacionEducativa/EditarPlanDeEstudios-J.jpeg, id=2343, 136
+<images/SP4/JefeDeInnovacionEducativa/EditarPlanDeEstudios-J.jpeg, id=2342, 136
 5.1pt x 639.38875pt>
 File: images/SP4/JefeDeInnovacionEducativa/EditarPlanDeEstudios-J.jpeg Graphic 
 file (type jpg)
@@ -9698,7 +9698,7 @@ file (type jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/EditarPlanDeEstud
 ios-J.jpeg  used on input line 9.
 (pdftex.def)             Requested size: 375.36299pt x 175.80804pt.
-<images/SP4/JefeDeInnovacionEducativa/ConsultarMapaCurricular-J.jpeg, id=2344, 
+<images/SP4/JefeDeInnovacionEducativa/ConsultarMapaCurricular-J.jpeg, id=2343, 
 1915.155pt x 977.6525pt>
 File: images/SP4/JefeDeInnovacionEducativa/ConsultarMapaCurricular-J.jpeg Graph
 ic file (type jpg)
@@ -9707,14 +9707,14 @@ Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/ConsultarMapaCurr
 icular-J.jpeg  used on input line 10.
 (pdftex.def)             Requested size: 375.36299pt x 191.61858pt.
 <images/SP4/JefeDeInnovacionEducativa/RegistrarUnidadDeAprendizaje-J.jpeg, id=2
-345, 1358.07375pt x 628.3475pt>
+344, 1358.07375pt x 628.3475pt>
 File: images/SP4/JefeDeInnovacionEducativa/RegistrarUnidadDeAprendizaje-J.jpeg 
 Graphic file (type jpg)
 <use images/SP4/JefeDeInnovacionEducativa/RegistrarUnidadDeAprendizaje-J.jpeg>
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/RegistrarUnidadDe
 Aprendizaje-J.jpeg  used on input line 11.
 (pdftex.def)             Requested size: 375.36299pt x 173.66379pt.
-<images/SP4/JefeDeInnovacionEducativa/EditarUnidadDeAprendizaje-J.jpeg, id=2346
+<images/SP4/JefeDeInnovacionEducativa/EditarUnidadDeAprendizaje-J.jpeg, id=2345
 , 1360.08125pt x 631.35875pt>
 File: images/SP4/JefeDeInnovacionEducativa/EditarUnidadDeAprendizaje-J.jpeg Gra
 phic file (type jpg)
@@ -9722,7 +9722,7 @@ phic file (type jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/EditarUnidadDeApr
 endizaje-J.jpeg  used on input line 12.
 (pdftex.def)             Requested size: 375.36299pt x 174.24556pt.
-<images/SP4/JefeDeInnovacionEducativa/ConsultarTareas-J.jpg, id=2347, 676.32675
+<images/SP4/JefeDeInnovacionEducativa/ConsultarTareas-J.jpg, id=2346, 676.32675
 pt x 326.4195pt>
 File: images/SP4/JefeDeInnovacionEducativa/ConsultarTareas-J.jpg Graphic file (
 type jpg)
@@ -9730,7 +9730,7 @@ type jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/ConsultarTareas-J
 .jpg  used on input line 13.
 (pdftex.def)             Requested size: 375.36299pt x 181.16495pt.
-<images/SP4/Analista/RevisarMapaCurricular-A.jpeg, id=2348, 722.7pt x 315.579pt
+<images/SP4/Analista/RevisarMapaCurricular-A.jpeg, id=2347, 722.7pt x 315.579pt
 >
 File: images/SP4/Analista/RevisarMapaCurricular-A.jpeg Graphic file (type jpg)
 <use images/SP4/Analista/RevisarMapaCurricular-A.jpeg>
@@ -9974,10 +9974,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 11615 strings out of 492649
- 168681 string characters out of 6118254
+ 11614 strings out of 492649
+ 168666 string characters out of 6118254
  340271 words of memory out of 5000000
- 14219 multiletter control sequences out of 15000+600000
+ 14218 multiletter control sequences out of 15000+600000
  18744 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,16n,48p,443b,681s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -10092,10 +10092,10 @@ t/fonts/type1/public/hfbright/hfbrsl8.pfb></usr/share/texmf-dist/fonts/type1/pu
 blic/hfbright/hfbrsy10.pfb></usr/share/texmf-dist/fonts/type1/public/hfbright/h
 ftl10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.
 pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on main.pdf (118 pages, 1508485 bytes).
+Output written on main.pdf (118 pages, 1508447 bytes).
 PDF statistics:
- 2631 PDF objects out of 2984 (max. 8388607)
- 2447 compressed objects within 25 object streams
+ 2630 PDF objects out of 2984 (max. 8388607)
+ 2446 compressed objects within 25 object streams
  933 named destinations out of 1000 (max. 500000)
  1382 words of extra memory for PDF output out of 10000 (max. 10000000)
 

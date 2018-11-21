@@ -1,49 +1,52 @@
 \begin{UseCase}{SP4-CU11}{Editar Recurso Humano}{El usuario Jefe de Innovación Educativa modifica la información general del Recurso Humano.}
-		\UCitem{Versión}{\color{Gray}1.0}
-		\UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
-		\UCitem{Supervisa}{\color{Gray}}
-		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa}}
-		\UCitem{Propósito}{Cambiar los datos de un Recurso Humano.}
-		\UCitem{Entradas}{Las entradas para Editar Recurso Humano:
+        \UCitem{Versión}{\color{Gray}1.0}
+        \UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
+        \UCitem{Supervisa}{\color{Gray}}
+        \UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa}}
+        \UCitem{Propósito}{Cambiar los datos de un Recurso Humano.}
+        \UCitem{Entradas}{Las entradas para Editar Recurso Humano:
             \begin{itemize}
-                \item Matrícula de Empleado.
+                \item Nombre.
+                \item Primer Apellido.
+                \item Segundo Apellido.
                 \item Cargo.
                 \item Título.
-                \item Nombre.
-                \item Apellido Paterno.
-                \item Apellido Materno.
+                \item Lugar de Trabajo
             \end{itemize}
         }
-		\UCitem{Origen}{Teclado.}
-		\UCitem{Salidas}{
+        \UCitem{Origen}{Teclado.}
+        \UCitem{Salidas}{
             \begin{itemize}
                 \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
-                \item \MSGref{MSG32}{Todos los campos son obligatorios.}
+                \item \MSGref{MSG44}{Este campo es requerido.}
                 \item \MSGref{MSG33}{El Recurso Humano con la Matrícula de Empleado [Número de Matrícula de Empleado] ya existe}
-			    \item \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
-                \item \MSGref{MSG37}{Ha ocurrido un error al guardar los datos.}
+			    \item \MSGref{MSG35}{Escribe información valida.}
+                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
         	\end{itemize}
         }
-		\UCitem{Destino}{Pantalla.}
-		\UCitem{Precondiciones}{}
-		\UCitem{Postcondiciones}{El Recurso Humano quedó actualizado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo o quedó sin modificarse.}
-		\UCitem{Errores}{Ninguno
-		}
-		\UCitem{Estado}{Revisión.}
-		\UCitem{Observaciones}{Ninguna}
+        \UCitem{Destino}{Pantalla.}
+        \UCitem{Precondiciones}{}
+        \UCitem{Postcondiciones}{El Recurso Humano quedó actualizado en el sistema, permitiendo consultarlo agregarlo al pdf final.}
+        \UCitem{Errores}{Ninguno}
+        \UCitem{Estado}{Revisión.}
+        \UCitem{Observaciones}{Ninguna}
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{GRH-J}{Gestionar Recurso Humano} el cual tiene forma de lápiz.
-
     \UCpaso Muestra la interfaz de usuario \IUref{ERH-J}{Editar Recurso Humano}.
-    \UCpaso Cargar datos del Recurso Humano correspondiente. [Trayectoria A]
+    \UCpaso Cargar datos del Recurso Humano correspondiente.
+
+    \UCpaso Carga el catálogo de Cargo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
+    \UCpaso Carga el catálogo de Título descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
+    \UCpaso Carga el catálogo de Lugar de Trabajo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
+
     \UCpaso[\UCactor] Modifica los campos deseados.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}.  Existen las trayectorias alternativas [Trayectoria B] y [Trayectoria B.1] al presionar el boton Cancelar.
 
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados conforme a la \BRref{BR13}{Todos los datos solicitados son obligatorios},  \BRref{BR30}{Información de los Usuarios y Recursos Humanos} y la \BRref{BR16}{Matrícula de empleado única} [Trayectoria C][Trayectoria D][Trayectoria F].
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados(Exceptuando los apellidos los cuales son opcionales) conforme a la \BRref{BR13}{Todos los datos solicitados son obligatorios},\BRref{BR36}{Estructura de Información Laboral.} y \BRref{BR35}{Estructura de Recursos Humanos.}[Trayectoria C][Trayectoria D].
 
     \UCpaso Persiste los datos ingresados. [Trayectoria E]
 
@@ -58,7 +61,7 @@
 \UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa(Pantalla de Abi).
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-\begin{UCtrayectoriaA}{B}{El actor presionael botón \IUbutton{Cancelar}.}
+\begin{UCtrayectoriaA}{B}{El actor presiona el botón \IUbutton{Cancelar}.}
     \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recurso Humano}
@@ -71,24 +74,17 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 \begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar.}
-    \UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido} debajo de los campos obligatorios sin contestar.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 \begin{UCtrayectoriaA}{D}{El Sistema detecta caracteres no alfanuméricos.}
-    \UCpaso Muestra el mensaje \MSGref{MSG35}{ Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG35}{ Escribe información valida} debajo del campo que incumplio con la \BRref{BR35}{Estructura de Recursos Humanos}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 \begin{UCtrayectoriaA}{E}{Ocurre un error al momento de persistir los datos.}
-    \UCpaso Muestra el mensaje \MSGref{MSG37}{Ha ocurrido un error al guardar los datos.}
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
-\end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
-\begin{UCtrayectoriaA}{F}{La Matrícula de Empleado ingresada ya está registrada en el sistema incumpliendo la \BRref{BR16}{Matrícula de empleado única}.}
-    \UCpaso Muestra el mensaje \MSGref{MSG33}{El Recurso Humano con la Matrícula de Empleado [Número de Matrícula de Empleado] ya existe}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
