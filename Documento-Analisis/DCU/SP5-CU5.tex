@@ -23,7 +23,7 @@
                 \item Información del empleado (nombre, primer apellido, segundo apellido, correo electrónico, titulo, cargo, lugar de trabajo y contraseña).
                 \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}
                 \item \MSGref{MSG24}{Por el momento la página solicitada no esta disponible.}
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
+                \item \MSGref{MSG25}{Servicios no disponibles por el momento. Error: ''Número de error''}
                 \item \MSGref{MSG27}{Empleado modificado.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG35}{Escriba información valida.}
@@ -89,7 +89,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
 
 \begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento. Error: ''Número de error''}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
