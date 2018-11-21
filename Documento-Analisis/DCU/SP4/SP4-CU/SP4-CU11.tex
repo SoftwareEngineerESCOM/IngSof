@@ -37,9 +37,9 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{GRH-J}{Gestionar Recurso Humano} el cual tiene forma de lápiz.
-
     \UCpaso Muestra la interfaz de usuario \IUref{ERH-J}{Editar Recurso Humano}.
     \UCpaso Cargar datos del Recurso Humano correspondiente.
+    
     \UCpaso Carga el catálogo de Cargo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga el catálogo de Título descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga el catálogo de Lugar de Trabajo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
@@ -47,7 +47,7 @@
     \UCpaso[\UCactor] Modifica los campos deseados.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}.  Existen las trayectorias alternativas [Trayectoria B] y [Trayectoria B.1] al presionar el boton Cancelar.
 
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados conforme a la \BRref{BR13}{Todos los datos solicitados son obligatorios} y  \BRref{BR30}{Información de los Usuarios y Recursos Humanos}[Trayectoria C][Trayectoria D].
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados(Exceptuando los apellidos los cuales son opcionales) conforme a la \BRref{BR13}{Todos los datos solicitados son obligatorios},\BRref{BR36}{Estructura de Información Laboral.} y \BRref{BR35}{Estructura de Recursos Humanos.}[Trayectoria C][Trayectoria D].
 
     \UCpaso Persiste los datos ingresados. [Trayectoria E]
 
@@ -62,7 +62,7 @@
 \UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa(Pantalla de Abi).
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-\begin{UCtrayectoriaA}{B}{El actor presionael botón \IUbutton{Cancelar}.}
+\begin{UCtrayectoriaA}{B}{El actor presiona el botón \IUbutton{Cancelar}.}
     \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recurso Humano}
@@ -80,8 +80,8 @@
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-\begin{UCtrayectoriaA}{D}{El Sistema detecta caracteres no alfanuméricos.}
-    \UCpaso Muestra el mensaje \MSGref{MSG35}{ Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
+\begin{UCtrayectoriaA}{D}{El Sistema detecta que algun campo no cumple con la expresión regular}
+    \UCpaso Muestra el mensaje \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
