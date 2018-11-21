@@ -6,12 +6,12 @@
 		\UCitem{Propósito}{Cambiar los datos de un Recurso Humano.}
 		\UCitem{Entradas}{Las entradas para Editar Recurso Humano:
             \begin{itemize}
-                \item Matrícula de Empleado.
+                \item Nombre.
+                \item Primer Apellido.
+                \item Segundo Apellido.
                 \item Cargo.
                 \item Título.
-                \item Nombre.
-                \item Apellido Paterno.
-                \item Apellido Materno.
+                \item Lugar de Trabajo
             \end{itemize}
         }
 		\UCitem{Origen}{Teclado.}
@@ -39,7 +39,11 @@
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{GRH-J}{Gestionar Recurso Humano} el cual tiene forma de lápiz.
 
     \UCpaso Muestra la interfaz de usuario \IUref{ERH-J}{Editar Recurso Humano}.
-    \UCpaso Cargar datos del Recurso Humano correspondiente. [Trayectoria A]
+    \UCpaso Cargar datos del Recurso Humano correspondiente.
+    \UCpaso Carga el catálogo de Cargo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
+    \UCpaso Carga el catálogo de Título descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
+    \UCpaso Carga el catálogo de Lugar de Trabajo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
+
     \UCpaso[\UCactor] Modifica los campos deseados.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}.  Existen las trayectorias alternativas [Trayectoria B] y [Trayectoria B.1] al presionar el boton Cancelar.
 
