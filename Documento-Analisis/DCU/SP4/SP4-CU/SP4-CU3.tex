@@ -19,11 +19,11 @@
 		\UCitem{Origen}{Teclado, Mouse}
 		\UCitem{Salidas}{
         	\begin{itemize}
-                \item \MSGref{MSG32}{Todos los campos son obligatorios.}
+                \item \MSGref{MSG44}{Este campo es requerido.}
                 \item \MSGref{MSG5}{Registro finalizado exitosamente.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
-                \item \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}
+                \item \MSGref{MSG35}{Escribe información valida.}
                 \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
         	\end{itemize}
         }
@@ -56,7 +56,6 @@
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El sistema no carga los catálogos: Área de formación y Semestre}
-	%\UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigoplus$} que se encuentra a un lado del campo ``Nombre'' del formulario \IUref{IU2}{Registro de bibliografía}  [Trayectoria A.1]r}
 	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Ok}.
 	 \UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}
@@ -76,8 +75,7 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 \begin{UCtrayectoriaA}{D}{El sistema detecta uno o más campos sin contestar.}
-	\UCpaso Muestra el mensaje \MSGref{MSG32}{Todos los campos son obligatorios.}.
-	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido} debajo de cada campo obligatorio sin contestar.
 	\UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU3}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
@@ -88,6 +86,6 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 \begin{UCtrayectoriaA}{F}{El Sistema detecta que algun campo no cumple con la expresión regular.}
-	\UCpaso Muestra el mensaje \MSGref{MSG35}{Inconsistencia en los datos. Verifique los campos e intente de nuevo.}.
+	\UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información valida} debajo del campo que incumplió la expresión regular de la \BRref{BR34}{Información de Unidad de Aprendizaje}.
 	\UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU3}.
 \end{UCtrayectoriaA}
