@@ -47,7 +47,7 @@
     \UCpaso[\UCactor] Modifica los campos deseados.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}.  Existen las trayectorias alternativas [Trayectoria B] y [Trayectoria B.1] al presionar el boton Cancelar.
 
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados conforme a la \BRref{BR13}{Todos los datos solicitados son obligatorios},  \BRref{BR30}{Información de los Usuarios y Recursos Humanos} y la \BRref{BR16}{Matrícula de empleado única} [Trayectoria C][Trayectoria D][Trayectoria F].
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados conforme a la \BRref{BR13}{Todos los datos solicitados son obligatorios} y  \BRref{BR30}{Información de los Usuarios y Recursos Humanos}[Trayectoria C][Trayectoria D].
 
     \UCpaso Persiste los datos ingresados. [Trayectoria E]
 
@@ -89,10 +89,4 @@
     \UCpaso Muestra el mensaje \MSGref{MSG37}{Ha ocurrido un error al guardar los datos.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
-\end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
-\begin{UCtrayectoriaA}{F}{La Matrícula de Empleado ingresada ya está registrada en el sistema incumpliendo la \BRref{BR16}{Matrícula de empleado única}.}
-    \UCpaso Muestra el mensaje \MSGref{MSG33}{El Recurso Humano con la Matrícula de Empleado [Número de Matrícula de Empleado] ya existe}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
