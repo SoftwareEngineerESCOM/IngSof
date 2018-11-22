@@ -19,7 +19,7 @@
 	\UCitem{Origen}{Mouse y teclado.}
 	\UCitem{Salidas}{
 		\begin{itemize}
-			\item \MSGref{MSG25}{Servicios no disponibles por el momento.}
+			\item \MSGref{MSG25}{Servicios no disponibles.}
 			\item \MSGref{MSG5}{Registro finalizado exitosamente.}
 			\item \MSGref{MSG35}{Escriba información valida.}
 			\item \MSGref{MSG44}{El campo es requerido.}
@@ -58,7 +58,7 @@
 
 
 \begin{UCtrayectoriaA}{B}{No existen registros en los catálogos.}
-	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso El sistema muestra la interfaz de usuario  \IUref{IU8}{Registrar empleados}.
 \end{UCtrayectoriaA}
@@ -90,14 +90,14 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
 
 \begin{UCtrayectoriaA}{H}{La base de datos no está disponible, o hubo un error de conexión.}
-	\UCpaso El sistema muestra el mensaje\MSGref{MSG25}{Servicios no disponibles por el momento.}
+	\UCpaso El sistema muestra el mensaje\MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{I}{El sistema no encuentra la interfaz a mostrar.}
 	\UCpaso No se puede mostrar la página solicitada.
-	\UCpaso El sistema muestra el \MSGref{MSG25}{Servicios no disponibles por el momento.}
+	\UCpaso El sistema muestra el \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}

@@ -17,8 +17,8 @@
             \begin{itemize}
                 \item Página principal del sistema.
                 \item \MSGref{MSG0}{Correo y/o contraseña no válidas.}
-                \item \MSGref{MSG24}{Por el momento la página solicitada no esta disponible.}
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento. Error: ''Número de error''}
+                
+                \item \MSGref{MSG25}{Servicios no disponibles}
                 \item \MSGref{MSG26}{El correo ingresado no se encuentra registrado en el sistema.}
             \end{itemize}
         }
@@ -54,7 +54,7 @@
 
 \begin{UCtrayectoriaA}{A}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
     \UCpaso No se puede mostrar la página solicitada.
-    \UCpaso El sistema muestra el \MSGref{MSG24}{Por el momento la página solicitada no esta disponible}.
+    \UCpaso El sistema muestra el   \MSGref{MSG25}{Servicios no disponibles}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}

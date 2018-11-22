@@ -21,7 +21,7 @@
         \UCitem{Salidas}{
             \begin{itemize}
                 \item Información del empleado (nombre, primer apellido, segundo apellido, correo electrónico, titulo, cargo, lugar de trabajo y contraseña).
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
+                \item \MSGref{MSG25}{Servicios no disponibles.}
                 \item \MSGref{MSG27}{Empleado modificado.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG35}{Escriba información valida.}
@@ -59,7 +59,7 @@
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{B}{No existen registros en los catálogos.}
-    \UCpaso     El sistema muestra el \MSGref{MSG25}{Servicios no disponibles por el momento.}
+    \UCpaso     El sistema muestra el \MSGref{MSG25}{Servicios no disponibles.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso El sistema muestra la interfaz de usuario \IUref{IU7}{Editar empleados}.
 \end{UCtrayectoriaA}
@@ -87,14 +87,14 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
 
 \begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
-    \UCpaso El sistema muestra el mensaje\MSGref{MSG25}{Servicios no disponibles por el momento.}
+    \UCpaso El sistema muestra el mensaje\MSGref{MSG25}{Servicios no disponibles.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso El sistema muestra  la interfaz de usuario  \IUref{IU7}{Editar empleados}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{G}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
     \UCpaso No se puede mostrar la página solicitada.
-    \UCpaso El sistema muestra el \MSGref{MSG25}{Servicios no disponibles por el momento.}
+    \UCpaso El sistema muestra el \MSGref{MSG25}{Servicios no disponibles.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}

@@ -20,8 +20,7 @@
 		
 			\item \MSGref{MSG21}{No hay usuarios registrados con ese cargo.}
 			\item \MSGref{MSG22}{¿Seguro de eliminar al usuario?}
-			\item \MSGref{MSG24}{Por el momento la página solicitada no esta disponible.}
-			\item \MSGref{MSG25}{Servicios no disponibles por el momento. Error: ''Número de error''}
+			\item \MSGref{MSG25}{Servicios no disponibles.}
 		\end{itemize}
 	}
 	\UCitem{Destino}{Pantalla.}
@@ -48,7 +47,7 @@
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{B}{No existen registros en el catálogo de cargos.}
-	\UCpaso     El sistema muestra el 	\MSGref{MSG25}{Servicios no disponibles por el momento.}
+	\UCpaso     El sistema muestra el 	\MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso  El sistema muestra la pantalla  \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
@@ -73,7 +72,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 
 \begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
-	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso  El sistema muestra la pantalla  \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
@@ -82,7 +81,7 @@
 
 \begin{UCtrayectoriaA}{G}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
 	\UCpaso No se puede mostrar la página solicitada.
-	\UCpaso El sistema muestra el \MSGref{MSG25}{Servicios no disponibles por el momento.}
+	\UCpaso El sistema muestra el \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU1}{Menú}.
 \end{UCtrayectoriaA}
