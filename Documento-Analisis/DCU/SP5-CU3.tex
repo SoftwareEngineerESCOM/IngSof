@@ -25,7 +25,7 @@
 		\end{itemize}
 	}
 	\UCitem{Destino}{Pantalla.}
-	\UCitem{Precondiciones}{ 1.- Debe existir por lo menos un registro en el catálogo de la cargos y lugares de trabajo de la \BRref{BR14}{Existen los catálogos} .}
+	\UCitem{Precondiciones}{ 1.- Debe existir por lo menos un registro en el catálogo de la cargos y lugares de trabajo de la \BRref{BR14}{Catálogos del Sistema} .}
 	\UCitem{Postcondiciones}{1.- Habilita la llamada a los casos de uso  SP5-CU10, SP5-CU11.}
 	\UCitem{Errores}{ \begin{itemize}
 			\item El catálogo de cargos no se cargo correctamente.
@@ -39,7 +39,7 @@
 \begin{UCtrayectoria}{Principal}
 	
 	\UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU1}{Menú} la opción de gestionar usuarios. 
-	\UCpaso  El sistema verifica la existencia de registros del catalogo de la \BRref{BR14}{Existen los catálogos} para cargos  y carga los indicados para el actor según la \BRref{BR3}{Gestión de Usuarios} . [Trayectoria B] 
+	\UCpaso  El sistema verifica la existencia de registros del catalogo de la \BRref{BR14}{Catálogos del Sistema} para cargos  y carga los indicados para el actor según la \BRref{BR3}{Gestión de Usuarios} . [Trayectoria B] 
 	\UCpaso El sistema carga la pantalla  \IUref{IU2}{Gestionar empleados}. [Trayectoria G] 
 	\UCpaso[\UCactor] Selecciona el cargo de los empleados a buscar. 
 	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Buscar}.  [Trayectoria C] 

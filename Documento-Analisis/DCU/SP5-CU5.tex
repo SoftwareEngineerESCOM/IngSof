@@ -27,7 +27,7 @@
                 \item \MSGref{MSG27}{Empleado modificado.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG35}{Escriba información valida.}
-                \item \MSGref{MSG44}{El campo es requerido.}
+                \item \MSGref{MSG44}{Este campo es requerido.}
            
             \end{itemize}
         }
@@ -78,7 +78,7 @@
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{E}{Se incumple la \BRref{BR3}{Gestión de Usuarios} o la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo}  o la  \BRref{BR30}{Información personal de los usuarios} o la \BRref{BR34}{Información laboral de los usuarios} en la definición de cada campo.}
+\begin{UCtrayectoriaA}{E}{Se incumple la \BRref{BR3}{Gestión de Usuarios} o la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo}  o la  \BRref{BR30}{Información personal de usuarios y/o recursos humanos} o la \BRref{BR35}{Información laboral de los usuarios y recursos humanos} en la definición de cada campo.}
 	\UCpaso El sistema muestra el \MSGref{MSG35}{Escriba información valida.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
@@ -103,7 +103,7 @@
 \begin{UCtrayectoriaA}{H}{El actor presiono el botón \IUbutton{Cancelar}.}
 	\UCpaso Cierra el mensaje y continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.	
 \end{UCtrayectoriaA}
-\begin{UCtrayectoriaA}{I}{Uno o mas campos de la \BRref{BR30}{Información personal de los usuarios} o la \BRref{BR34}{Información laboral de los usuarios} están vacíos.}
-	\UCpaso El sistema muestra el \MSGref{MSG44}{El campo es requerido} debajo de cada campo que no fue llenado. 
+\begin{UCtrayectoriaA}{I}{Uno o mas campos de la \BRref{BR30}{Información personal de usuarios y/o recursos humanos} o la \BRref{BR35}{Información laboral de los usuarios y recursos humanos} están vacíos.}
+	\UCpaso El sistema muestra el \MSGref{MSG44}{Este campo es requerido.} debajo de cada campo que no fue llenado. 
 	\UCpaso	Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
 \end{UCtrayectoriaA}
