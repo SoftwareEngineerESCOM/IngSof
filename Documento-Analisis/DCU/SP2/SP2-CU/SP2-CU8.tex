@@ -20,13 +20,14 @@
 		\UCitem{Origen}{Mouse.}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\hypertarget{MSG15}{\item MSG15. ¿Está seguro que desea Cancelar la revisión?
-				Se perderán las Anotaciones que no hayas guardado anteriormente.}
-                \hypertarget{MSG16}{\item MSG16. ¿Está seguro de Finalizar la Revisión?}
-                \hypertarget{MSG17}{\item MSG17 Sección Aprobada.}
+        		\item MSG15. ¿Está seguro que desea Cancelar la revisión?
+				Se perderán las Anotaciones que no hayas guardado anteriormente.
+               {\item MSG16. ¿Está seguro de Finalizar la Revisión?
+               \item MSG17 Sección Aprobada.
                 
-               \hypertarget{MSG18}{ \item MSG18 Revisión de Sección Finalizada.}
-                \hypertarget{MSG19}{\item MSG19 Anotaciones En Sección Guardadas Correctamente.}
+               \item MSG18 Revisión de Sección Finalizada.
+               \item MSG19 Anotaciones En Sección Guardadas Correctamente.
+
 
         	\end{itemize}
         }
@@ -47,14 +48,14 @@
     
     \UCpaso El sistema obtiene la bitácora de comentarios correspondientes a la sección Tiempos Asignados de la Unidad de Aprendizaje. 
     
-    \UCpaso El sistema verifica que la sección Tiempos Asignados de la Unidad de Aprendizaje no haya sido aprobada anteriormente. Regla de Negocio BR9. \hyperlink{SP2-CU8-A1}{Trayectoria A1}. 
+    \UCpaso El sistema verifica que la sección Tiempos Asignados de la Unidad de Aprendizaje no haya sido aprobada anteriormente. \BRref{BR9}{Aprobación de Tareas Seccionadas.} \hyperlink{SP2-CU8-A1}{Trayectoria A1}. 
     
     \UCpaso El sistema muestra la interfaz de usuario  \IUref{SP2-IU-TIEMPOS}{Sección Tiempos Asignados}.
     
     \UCpaso[\UCactor] presiona el botón \IUbutton{Finalizar Revisión}. \hyperlink{SP2-CU8-A2}{Trayectoria A2}.
     \UCpaso El sistema muestra el \MSGref{MSG16}{¿Está seguro de Finalizar la Revisión?}.
     
-    \UCpaso	El sistema verifica que no existan nuevos comentarios o subrayados para la sección de la Unidad de Aprendizaje. Regla de Negocio BR8 \hyperlink{SP2-CU8-A3}{Trayectoria A3}. 
+    \UCpaso	El sistema verifica que no existan nuevos comentarios o subrayados para la sección de la Unidad de Aprendizaje.\BRref{BR8}{Aprobación de Tareas.} \hyperlink{SP2-CU8-A3}{Trayectoria A3}. 
     
     \UCpaso El sistema pone el estado de la sección Tiempos Asignados  en “Aprobado”.
     

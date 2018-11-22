@@ -15,9 +15,9 @@
 		\UCitem{Origen}{Mouse y teclado.}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item \MSGref{MSG5}{Registro finalizado exitosamente.}
-            \item \MSGref{MSG10}{Error: debe agregar un texto al nuevo comentario.}
-            \item \MSGref{MSG12}{Ingrese su comentario en el nuevo campo de la bitácora.}
+        		\hypertarget{CU15-MSG1}{\item MSG1 La operación se ha realizado con éxito.}
+            \hypertarget{CU15-MSG3}{\item MSG3 Error: debe agregar un texto al nuevo comentario.}
+            \hypertarget{CU15-MSG4}{\item MSG4 Ingrese su comentario en el nuevo campo de la bitácora.}
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -42,7 +42,7 @@
     
     \UCpaso Obtiene la fecha actual. 
     
-    \UCpaso Muestra el mensaje \MSGref{MSG12}{Ingrese su comentario en el nuevo campo de la bitácora.}.
+    \UCpaso Muestra el mensaje \MSGref{CU15-MSG4}{Ingrese su comentario en el nuevo campo de la bitácora.}.
 
     \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
     
@@ -56,7 +56,7 @@
 
     \UCpaso Guarda la modificación del comentario en el sistema.
 
-    \UCpaso El sistema muestra el  \MSGref{MSG5}{{Registro finalizado exitosamente.}.
+    \UCpaso El sistema muestra el  \MSGref{CU15-MSG1}{La operación se ha realizado con éxito.}.
 
     \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
 
@@ -74,7 +74,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 \label{SP2-CU15-B}
 \begin{UCtrayectoriaA}{B}{El sistema detecta que el campo “comentario” se encuentra vacío.} 
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG10}{Error: debe agregar un texto al nuevo comentario.}.
+    \UCpaso El sistema muestra el mensaje \MSGref{CU15-MSG3}{Error: debe agregar un texto al nuevo comentario.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 6 de la trayectoria principal del SP2-CU15.
 \end{UCtrayectoriaA}
