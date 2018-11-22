@@ -17,8 +17,8 @@
 		\UCitem{Origen}{Teclado, mouse.}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        	   \item MSG. Revisión de paquete finalizada. Paquete enviado.
-                \item MSG2. Error al finalizar paquete.
+        	   \item MSG13. Revisión de paquete finalizada. Paquete enviado.
+                \item MSG25. Servicios no disponibles por el momento. Error: ''Código de error''
 
         	\end{itemize}
         }
@@ -37,8 +37,8 @@
     \UCpaso Muestra la interfaz de usuario \IUref{SP2-IU-GestionPaquetes}
     \UCpaso[\UCactor] Presiona el botón \IUbutton {Finalizar}
     \UCpaso Verifica en la base de datos que todas las unidades de aprendizaje tengan el estado de revisado\hyperref[SP2-CU5-A]{Trayectoria A}.
-    \UCpaso Envía notificación a la Unidad de Aprendizaje correspondiente de Paquete Aprobado. \hyperref[SP2-CU5-B]{Trayectoria B}.
-    \UCpaso Muestra el mensaje \MSGref {MSG1}
+    \UCpaso Envía notificación a la Unidad de Aprendizaje correspondiente de Paquete Aprobado. \hyperref[SP2-CU5-B]
+    \UCpaso Muestra el mensaje \MSGref {MSG13}{Revisión de paquete finalizada. Paquete enviado.}
     \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
     \UCpaso Cambia el estado del paquete a enviado.
     \UCpaso Remueve la tabla con la información del paquete aprobado de la lista de tareas.
@@ -48,19 +48,10 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \label{SP2-CU5-A}
-\begin{UCtrayectoriaA}{A}{No están todas las unidades de aprendizaje en estado de aprobado.}
-    \UCpaso Muestra el mensaje \MSGref {MSG6}
+\begin{UCtrayectoriaA}{A}{No se pudo enviar el paquete.}
+    \UCpaso Muestra el mensaje \MSGref {MSG25}{Servicios no disponibles por el momento. Error: ''Código de error''.}
     \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
 \end{UCtrayectoriaA}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-
-\label{SP2-CU5-B}
-\begin{UCtrayectoriaA}{B}{No están todas las unidades de aprendizaje en estado de aprobado.}
-    \UCpaso Muestra el mensaje \MSGref {MSG5}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
-\end{UCtrayectoriaA}
-
 
 %------------------------ Pantallas de este caso de uso -------------------------
 \chapter{Pantallas}
@@ -70,27 +61,3 @@
   \caption{SP2-IU-GestionPaquetes}
   \label{SP2-IU-GestionPaquetes}
 \end{figure}
-
-%------------------------ Mensajes de este caso de uso -------------------------
-\chapter{Mensajes}
- \begin{figure}
-  \centering
-    \includegraphics[width=0.7\textwidth]{DCU/SP2/mensajes/MSG1}
-   \caption{SP2-MSG1}
-  \label{SP2-MSG1}
-\end{figure}
-
- \begin{figure}
-  \centering
-    \includegraphics[width=0.7\textwidth]{DCU/SP2/mensajes/MSG5}
-  \caption{SP2-MSG5}
-  \label{SP2-MSG5}
-\end{figure}
-
- \begin{figure}
-  \centering
-    \includegraphics[width=0.7\textwidth]{DCU/SP2/mensajes/MSG6}
-  \caption{SP2-MSG6}
-  \label{SP2-MSG6}
-\end{figure}
-
