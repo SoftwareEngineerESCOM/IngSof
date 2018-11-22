@@ -3,15 +3,15 @@
 %	A - Alta
 %	M - Media
 %	B - Baja
-
-\textbf{Nota:} Se usa :
+\section{Aprobación de un mapa curricular}
+\textbf{Nota:} Se usa:
 	\begin{itemize}
 		\item \textbf{JDIC:} Jefe de departamento de Innovación curricular
 		\item \textbf{JDIA:} Jefe de división de innovación académica
 		\item \textbf{DES:} Directora de Educación Superior
 	\end{itemize}
 
-\begin{table}[h!]
+\begin{table}[htbp!]
 	\begin{requerimientos}
 		
 		\FRitem{SP5-F1}{Registrar empleados del JDIA}{El sistema permitirá al usuario JDIA registrar usuarios JDIC.}{A}{Sistema}
@@ -37,7 +37,12 @@
 		\FRitem{SP5-F11}{Editar correcciones del mapa curricular}{El sistema permitirá al JDIC editar las correcciones de los campos en un mapa curricular realizadas por el analista asignado.}{M}{Usuario}
 
 		\FRitem{SP5-F12}{Realizar modificaciones al mapa curricular}{El sistema permitirá a la JDIC realizar correcciones y ajustes a un mapa curricular, en conjunto con su analista asignado, para llegar a un acuerdo.}{A}{Usuario}
+	\end{requerimientos}
+    \label{tbl:}
+\end{table}
 
+\begin{table}[h!]
+	\begin{requerimientos}
 		\FRitem{SP5-F13}{Verificar nombre de unidades de aprendizaje en el mapa curricular}{El sistema permitirá a la JDIC y a la JDIA aprobar o rechazar el nombre que se le asignó a las unidades de aprendizaje en un mapa curricular.}{A}{Sistema}
 
 		\FRitem{SP5-NF14}{Iniciar revisión del mapa curricular}{Un mapa curricular enviado por la unidad académica debe tener todos sus campos completos y llenos para que se pueda iniciar el revisado por la DES en el sistema.}{A}{Sistema}
@@ -52,12 +57,13 @@
 		
 		\FRitem{SP5-NF19}{Enviar correcciones del mapa curricular}{ El sistema permitirá enviar un mapa curricular con observaciones hechas por la DES a la unidad académica, para su corrección en esta. Para los campos que estén correctos y sin correcciones, se bloqueará su edición.}{M}{Sistema}
 		
-		\FRitem{SP5-F20}{Ver tareas JDIA y JDCI}{ El sistema permitirá el JDIA y al JDCI consultar las tareas que tengan pendientes}{M}{Sistema}
+		\FRitem{SP5-F20}{Ver tareas JDIA y JDCI}{ El sistema permitirá el JDIA y al JDCI consultar las tareas que tengan pendientes.}{M}{Sistema}
 		
-		\FRitem{SP5-F21}{ Editar empleados JDIA y JDCI}{ El sistema permitirá el JDIA y al JDCI editar los respectivos empleados a su cargo}{M}{Sistema}
+		\FRitem{SP5-F21}{ Editar empleados JDIA y JDCI}{ El sistema permitirá el JDIA y al JDCI editar los respectivos empleados a su cargo.}{M}{Sistema}
 
+		\FRitem{SP5-NF22}{Verificación en tiempo real}{ El sistema podrá verificar y avisar al JDIA, al JDIC y al JIE si algún campo que esta ingresado en un formulario incumple con alguna regla de negocio en tiempo real.}{M}{Sistema}
 
 	\end{requerimientos}
-    \caption{Requerimientos funcionales del sistema.}
+    \caption{Requerimientos funcionales del sistema - SP5.}
     \label{tbl:}
 \end{table}
