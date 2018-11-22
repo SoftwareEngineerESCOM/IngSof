@@ -1,5 +1,5 @@
 % Consultar Mapa Curricular.
-\begin{UseCase}{SP4-CU6}{Consultar Mapa Curricular}{El usuario Docente visualiza la totalidad de los contenidos del Mapa Curricular registrados.}
+\begin{UseCase}{SP4-CU6}{Consultar Plan de Estudio}{El usuario Docente visualiza el resumen del Plan de Estudios (Mapa Curricular).}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Cervantes Moreno Christian Andres}
 		\UCitem{Supervisa}{\color{Gray} Evelyn Reyes}
@@ -16,7 +16,7 @@
         }
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{ Debe de existir al menos un Plan de Estudios registrado en el sistema.}
-		\UCitem{Postcondiciones}{El Plan de Estudios y las Unidades de Aprendizaje son visualizadas en el sistema.}
+		\UCitem{Postcondiciones}{Se puede acceder a Registrar y Editar Unidades de Aprendizaje}
 		\UCitem{Errores}{
 			  \begin{itemize}
 				\item Ningún
@@ -34,14 +34,14 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón Consulta de la Interfaz de usuario  \IUref{CT-J}{Consultar Tareas}.
+    \UCpaso[\UCactor] Presiona sobre un Plan de Estudios en la Interfaz de usuario  \IUref{GPE-J}{Gestionar Planes de Estudio}.
     \UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
     \UCpaso[\UCactor] Selecciona el semestre de la Unidades de Aprendizaje que desea consultar.[Trayectoria A][Trayectoria B][Trayectoria B.1]
     \UCpaso Despliega las Unidades de Aprendizaje asociadas al Semestre.[Trayectoria C][Trayectoria C.1]
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}.
     \UCpaso Muestra el mensaje \MSGref{MSG30}{Está seguro que desea finalizar? Ya no podrá realizar modificaciones}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}. [Trayectoria D]
-    \UCpaso Muestra la interfaz de usuario \IUref{CT-J}{Consultar Tareas}.
+    \UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudio}.
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El actor presiona el botón \IUbutton{+}.}
