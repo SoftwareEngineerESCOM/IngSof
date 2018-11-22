@@ -25,7 +25,7 @@
 	}
 	\UCitem{Destino}{Pantalla.}
 	\UCitem{Precondiciones}{ 1.- Debe existir por lo menos un registro en el catálogo de la cargos y lugares de trabajo de la \BRref{BR14}{Catálogos del Sistema} .}
-	\UCitem{Postcondiciones}{1.- Habilita la llamada a los casos de uso  SP5-CU10, SP5-CU11.}
+	\UCitem{Postcondiciones}{1.- Habilita la llamada a los casos de uso  SP5-CU4, SP5-CU5.}
 	\UCitem{Errores}{ \begin{itemize}
 			\item El catálogo de cargos no se cargo correctamente.
 			\item Hubo un problema al conectarse con el servidor.
@@ -74,7 +74,7 @@
 \begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso  El sistema continua en la pantalla  \IUref{IU2}{Gestionar empleados}.
+	\UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{SP5-CU3}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
@@ -83,7 +83,7 @@
 	\UCpaso No se puede mostrar la página solicitada.
 	\UCpaso El sistema muestra el \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso El sistema continua en la pantalla  \IUref{IU2}{Gestionar empleados}.
+	\UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU3}.
 \end{UCtrayectoriaA}
 
 
