@@ -16,7 +16,7 @@
 	\UCitem{Origen}{Mouse.}
 	\UCitem{Salidas}{
 		\begin{itemize}
-			\item Lista de empleados de un cargo en específico con sus datos (cargo, nombre, apellido paterno, apellido materno correo, zona de trabajo). 
+			\item Lista de empleados de un cargo en específico con sus datos (matricula,  nombre, primer apellido, segundo apellido, titulo, cargo, lugar de trabajo). 
 			\item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
 			\item \MSGref{MSG21}{No hay usuarios registrados con ese cargo.}
 			\item \MSGref{MSG22}{¿Seguro de eliminar al usuario?}
@@ -44,7 +44,7 @@
 	\UCpaso[\UCactor] Selecciona el cargo de los empleados a buscar. 
 	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Buscar}.  [Trayectoria C] 
 	
-	\UCpaso El sistema despliega la información de los empleados (cargo, nombre, correo, titulo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria Principal punto 4] [Trayectoria D] [Trayectoria F] 
+	\UCpaso El sistema despliega la información de los empleados (matricula,  nombre, primer apellido, segundo apellido, titulo, cargo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria Principal punto 4] [Trayectoria D] [Trayectoria F] 
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{B}{No existen registros en el catálogo de cargos.}
@@ -60,7 +60,7 @@
 
 
 \begin{UCtrayectoriaA}{D}{El actor presiona el botón \IUbutton{X}.}
-	\UCpaso El sistema muestra el mensaje \MSGref{MSG22}{¿Seguro de eliminar al usuario} solicitando confirmación. [Trayectoria E]
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG22}{¿Seguro de eliminar al usuario?} solicitando confirmación. [Trayectoria E]
 	\UCpaso[\UCactor] El actor presiona el botón \IUbutton{Cancelar}.
 \end{UCtrayectoriaA}
 
