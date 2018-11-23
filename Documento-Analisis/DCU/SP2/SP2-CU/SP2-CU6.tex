@@ -1,10 +1,9 @@
-\chapter{Sprint 2 Autorización de seccción de Unidad de Aprendizaje}
-\begin{UseCase}{SP2-CU5}{ Autorizar Sección Descripción de Unidad de Aprendizaje }{El usuario podrá registrar una o más referencias bibliográficas en el sistema.}
+\begin{UseCase}{SP2-CU6}{ Autorizar Sección Tiempos Asignados de Unidad de Aprendizaje}{El analista podrá visualizar la información de la sección de tiempos asignados de la unidad de aprendizaje para poder aprobarla.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Domínguez López Humberto}
 		\UCitem{Supervisa}{\color{Gray}Parra Garcilazo Cinthya Dolores}
 		\UCitem{Actor}{Analista}
-		\UCitem{Propósito}{Que el analista conozca la sección de la propuesta de Unidad de Aprendizaje para determinar si necesita correcciones.}
+		\UCitem{Propósito}{Que el analista conozca la sección de Tiempos Asignados de la propuesta de Unidad de Aprendizaje para determinar si necesita correcciones.}
 		\UCitem{Entradas}{Clic en botones:
           \begin{itemize}
           	\item Finalizar Revisión.
@@ -28,11 +27,12 @@
                \item MSG18 Revisión de Sección Finalizada.
                \item MSG19 Anotaciones En Sección Guardadas Correctamente.
 
+
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{ Se llamó el caso de uso SP2-CU1}
-		\UCitem{Postcondiciones}{Se habilita la llamada a los casos de uso SP2-CU11, SP2-CU14}
+		\UCitem{Postcondiciones}{Se habilita la llamada a los casos de uso SP2-CU11, SP2-CU14.}
 		\UCitem{Errores}{}
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
@@ -41,22 +41,22 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-    \UCpaso[\UCactor] presiona el botón  \IUbutton{Descripción} de la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
+    \UCpaso[\UCactor] presiona el botón  \IUbutton{Tiempos Asignados} de la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
 
-    \UCpaso El sistema obtiene la información correspondiente a la sección de descripción.
+    \UCpaso El sistema obtiene la información correspondiente a la sección de Tiempos Asignados.
     
-    \UCpaso El sistema obtiene la bitácora de comentarios correspondientes a la sección de la Unidad de Aprendizaje. 
+    \UCpaso El sistema obtiene la bitácora de comentarios correspondientes a la sección Tiempos Asignados de la Unidad de Aprendizaje. 
     
-    \UCpaso El sistema verifica que la sección de la Unidad de Aprendizaje no haya sido aprobada anteriormente. \BRref{BR9}{Aprobación de Tareas Seccionadas.} \hyperlink{SP2-CU5-A1}{Trayectoria A1}. 
+    \UCpaso El sistema verifica que la sección Tiempos Asignados de la Unidad de Aprendizaje no haya sido aprobada anteriormente. \BRref{BR9}{Aprobación de Tareas Seccionadas.} \hyperlink{SP2-CU6-A1}{Trayectoria A1}. 
     
-    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-DESCRIPCION}{Sección Descripción} .
+    \UCpaso El sistema muestra la interfaz de usuario  \IUref{SP2-IU-TIEMPOS}{Sección Tiempos Asignados}.
     
-    \UCpaso[\UCactor] presiona el botón \IUbutton{Finalizar Revisión}. \hyperlink{SP2-CU5-A2}{Trayectoria A2}.
+    \UCpaso[\UCactor] presiona el botón \IUbutton{Finalizar Revisión}. \hyperlink{SP2-CU6-A2}{Trayectoria A2}.
     \UCpaso El sistema muestra el \MSGref{MSG16}{¿Está seguro de Finalizar la Revisión?}.
     
-    \UCpaso	El sistema verifica que no existan nuevos comentarios o subrayados para la sección de la Unidad de Aprendizaje.\BRref{BR8}{Aprobación de Tareas.}\hyperlink{SP2-CU5-A3}{Trayectoria A3}. 
+    \UCpaso	El sistema verifica que no existan nuevos comentarios o subrayados para la sección de la Unidad de Aprendizaje.\BRref{BR8}{Aprobación de Tareas.} \hyperlink{SP2-CU6-A3}{Trayectoria A3}. 
     
-    \UCpaso El sistema pone el estado de la sección Descripción  en “Aprobado”.
+    \UCpaso El sistema pone el estado de la sección Tiempos Asignados  en “Aprobado”.
     
     \UCpaso El sistema muestra el mensaje \MSGref{MSG17}{Sección Aprobada}.
 
@@ -68,7 +68,7 @@
 
 \begin{UCtrayectoriaA}{A1}{La sección de la Unidad de Aprendizaje ya ha sido aprobada anteriormente.}
 
-	\hypertarget{SP2-CU5-A1}{\UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-DESCRIPCION}{Sección Descripción}}
+	\hypertarget{SP2-CU6-A1}{\UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-TIEMPOS}{Sección Tiempos Asignados}.}
     \UCpaso El sistema deshabilita los botones superiores: \IUbutton{Nuevo Comentario}, \IUbutton{Subrayar}, \IUbutton{Eliminar Subrayado}.
     \UCpaso El sistema deshabilita los botones inferiores: \IUbutton{Cancelar}, \IUbutton{Guardar}, \IUbutton{Finalizar Revisión}.
     \UCpaso El sistema deshabilita los botones laterales de: \IUbutton{Modificar Comentario}, \IUbutton{Eliminar Comentario}.
@@ -78,7 +78,7 @@
 	
 \begin{UCtrayectoriaA}{A2}{El analista no desea finalizar aun la revisión de la sección de la Unidad de Aprendizaje.}
 
-    \hypertarget{SP2-CU5-A2}{\UCpaso[\UCactor] presiona el botón \IUbutton{Guardar} \hyperlink{SP2-CU5-A2.1}{Trayectoria A2.1}}. 
+    \hypertarget{SP2-CU6-A2}{\UCpaso[\UCactor] presiona el botón \IUbutton{Guardar} \hyperlink{SP2-CU6-A2.1}{Trayectoria A2.1}}. 
     \UCpaso El sistema guarda los nuevos comentaros y subrayados hechos durante esa sesión.
     \UCpaso El sistema muestra el mensaje \MSGref{MSG19}{Anotaciones En Sección Guardadas Correctamente}.
     \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
@@ -87,9 +87,9 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA A2.1 -----------------------
 \begin{UCtrayectoriaA}{A2.1}{El analista desea cancelar todo lo que haya hecho en la sección de la Unidad de Aprendizaje durante esa sesión.}
 
-	\hypertarget{SP2-CU5-A2.1}{\UCpaso[\UCactor] presiona el botón \IUbutton{Cancelar}}. 
+	\hypertarget{SP2-CU6-A2.1}{\UCpaso[\UCactor] presiona el botón \IUbutton{Cancelar}}. 
     \UCpaso El sistema muestra el mensaje \MSGref{MSG15}{¿Está seguro que desea Cancelar la revisión? Se perderán las Anotaciones que no hayas guardado anteriormente.}
-Se perderán las Anotaciones que no hayas guardado anteriormente. .
+Se perderán las Anotaciones que no hayas guardado anteriormente. 
     \UCpaso El sistema elimina los nuevos comentaros y subrayados hechos durante esa sesión.
     \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
 \end{UCtrayectoriaA}
@@ -98,7 +98,7 @@ Se perderán las Anotaciones que no hayas guardado anteriormente. .
 	
 \begin{UCtrayectoriaA}{A3}{El analista realizo comentarios y subrayados para su posterior corrección en la sección de la Unidad de Aprendizaje.} 
 
-	\hypertarget{SP2-CU5-A3}{\UCpaso El sistema pone el estado de la sección Descripción de Unidad de Aprendizaje en “Revisado”.}
+	\hypertarget{SP2-CU6-A3}{\UCpaso El sistema pone el estado de la sección Tiempos Asignados de Unidad de Aprendizaje en “Revisado”.}
     \UCpaso El sistema muestra el mensaje \MSGref{MSG18}{Revisión de Sección Finalizada}.
     \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
 \end{UCtrayectoriaA}

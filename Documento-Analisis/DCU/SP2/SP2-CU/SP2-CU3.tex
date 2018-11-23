@@ -1,0 +1,43 @@
+﻿
+
+\begin{UseCase}{SP2-CU3}{Desasignar unidades de aprendizaje a un analista}{El usuario jefe de desarrollo e innovación curricular podrá modificar a los analistas encargados de una unidad de aprendizaje.}
+		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Autor}{\color{Gray}Parra Garcilazo Cinthya Dolores}
+		\UCitem{Supervisa}{\color{Gray}}
+		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Desarrollo e Innovación Curricular}}
+		\UCitem{Propósito}{Asignar el acceso a una unidad de aprendizaje a otro analista.}
+		\UCitem{Entradas}{Las entradas para modificar una unidad de aprendizaje a otro analista son:
+          \begin{itemize}
+          	\item Analista
+          \end{itemize}
+        }
+		\UCitem{Origen}{Teclado, mouse.}
+		\UCitem{Salidas}{
+        	\begin{itemize}
+        	   \item MSG31. Los cambios se guardaron exitosamente.
+        	\end{itemize}
+        }
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{ Debe haber una analista ya asignado a esa revisión.}
+		\UCitem{Postcondiciones}{El nuevo analista asignado puede acceder a la propuesta de unidad de aprendizaje y realizar los comentarios pertinentes. El analista previo no puede acceder a la información.}
+		\UCitem{Errores}{}
+		\UCitem{Estado}{Revisión.}
+		\UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+
+
+    \UCpaso Muestra la interfaz de usuario \IUref{GestionEncargado}
+    \UCpaso [\UCactor] Presiona el botón \IUbutton {Editar}
+    \UCpaso Activa los campos de fecha y analista.
+    \UCpaso [\UCactor] Selecciona el campo de analista.
+    \UCpaso Despliega la lista de analistas registrados en la base de datos.
+    \UCpaso[\UCactor] Selecciona una opcion.
+    \UCpaso [\UCactor] Presiona el botón \IUbutton {Confirmar}
+    \UCpaso Modifica en la base de datos al analista asignado para la revisión de la unidad de aprendizaje.
+    \UCpaso Muestra el mensaje \MSGref {MSG31}{Los cambios se guardaron exitosamente.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
+
+\end{UCtrayectoria}

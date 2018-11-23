@@ -1,27 +1,30 @@
-﻿
-
-\begin{UseCase}{SP2-CU4}{Desasignar unidades de aprendizaje a un analista}{El usuario jefe de desarrollo e innovación curricular podrá modificar a los analistas encargados de una unidad de aprendizaje.}
+﻿\begin{UseCase}{SP2-CU4}{Finalizar revisión de paquetes de propuestas de unidades de aprendizaje}{El usuario jefe de desarrollo e innovación curricular podrá aprobar un paquete de unidades de aprendizaje.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Parra Garcilazo Cinthya Dolores}
 		\UCitem{Supervisa}{\color{Gray}}
 		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Desarrollo e Innovación Curricular}}
-		\UCitem{Propósito}{Asignar el acceso a una unidad de aprendizaje a otro analista.}
-		\UCitem{Entradas}{Las entradas para modificar una unidad de aprendizaje a otro analista son:
+		\UCitem{Propósito}{Dar por concluida la revisón de un paquete de Unidades de Aprendizaje.}
+		\UCitem{Entradas}{Las entradas finalizar la revisión de paquetes serán:
           \begin{itemize}
-          	\item Analista
+          	\item Unidades de aprendizaje
+          	\item Unidad Académica
+            \item Semestre
+            \item Analistas
           \end{itemize}
         }
 		\UCitem{Origen}{Teclado, mouse.}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        	   \item MSG31. Los cambios se guardaron exitosamente.
+        	   \item MSG13. Revisión de paquete finalizada. Paquete enviado.
+                \item MSG25. Servicios no disponibles por el momento. Error: ''Código de error''
+
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
-		\UCitem{Precondiciones}{ Debe haber una analista ya asignado a esa revisión.}
-		\UCitem{Postcondiciones}{El nuevo analista asignado puede acceder a la propuesta de unidad de aprendizaje y realizar los comentarios pertinentes. El analista previo no puede acceder a la información.}
+		\UCitem{Precondiciones}{ Se sigue la SP2-BR10.}
+		\UCitem{Postcondiciones}{El paquete es enviado a la unidad de aprendizaje correspondiete como aprobado, no se hacen más modificaciones a ninguna unidad de aprendizaje.}
 		\UCitem{Errores}{}
-		\UCitem{Estado}{Revisión.}
+		\UCitem{Estado}{Aprobado.}
 		\UCitem{Observaciones}{}
 \end{UseCase}
 
@@ -29,15 +32,21 @@
 \begin{UCtrayectoria}{Principal}
 
 
-    \UCpaso Muestra la interfaz de usuario \IUref{GestionEncargado}
-    \UCpaso [\UCactor] Presiona el botón \IUbutton {Editar}
-    \UCpaso Activa los campos de fecha y analista.
-    \UCpaso [\UCactor] Selecciona el campo de analista.
-    \UCpaso Despliega la lista de analistas registrados en la base de datos.
-    \UCpaso[\UCactor] Selecciona una opcion.
-    \UCpaso [\UCactor] Presiona el botón \IUbutton {Confirmar}
-    \UCpaso Modifica en la base de datos al analista asignado para la revisión de la unidad de aprendizaje.
-    \UCpaso Muestra el mensaje \MSGref {MSG31}{Los cambios se guardaron exitosamente.}
+    \UCpaso Muestra la interfaz de usuario \IUref{SP2-IU-GestionPaquetes}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Finalizar}
+    \UCpaso Verifica en la base de datos que todas las unidades de aprendizaje tengan el estado de revisado\hyperref[SP2-CU4-A]{Trayectoria A}.
+    \UCpaso Envía notificación a la Unidad de Aprendizaje correspondiente de Paquete Aprobado. \hyperref[SP2-CU4-B]
+    \UCpaso Muestra el mensaje \MSGref {MSG13}{Revisión de paquete finalizada. Paquete enviado.}
     \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
+    \UCpaso Cambia el estado del paquete a enviado.
+    \UCpaso Remueve la tabla con la información del paquete aprobado de la lista de tareas.
 
 \end{UCtrayectoria}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
+\label{SP2-CU5-A}
+\begin{UCtrayectoriaA}{A}{No se pudo enviar el paquete.}
+    \UCpaso Muestra el mensaje \MSGref {MSG25}{Servicios no disponibles por el momento. Error: ''Código de error''.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
+\end{UCtrayectoriaA}

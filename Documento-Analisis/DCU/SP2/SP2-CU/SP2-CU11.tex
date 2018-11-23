@@ -1,37 +1,36 @@
-\begin{UseCase}{SP2-CU11}{ Autorizar Sección Perfil Docente de Unidad de Aprendizaje}{El analista podrá visualizar la información de la sección de Perfil Docente  de la unidad de aprendizaje para poder aprobarla.} 
+\chapter{sprint 3 Herramientas para verificar las secciones de propuesta de unidad de Aprendizaje}
+\begin{UseCase}{SP2-CU11}{ Agregar comentarios a propuesta de unidad de aprendizaje }{El usuario podrá agregar uno o más comentarios en la sección de propuesta de unidad de aprendizaje que está revisando.}
 		\UCitem{Versión}{\color{Gray}1.0}
-		\UCitem{Autor}{\color{Gray}Domínguez López Humberto}
+		\UCitem{Autor}{\color{Gray}Romero Ponce Mauricio Isaac}
 		\UCitem{Supervisa}{\color{Gray}Parra Garcilazo Cinthya Dolores}
 		\UCitem{Actor}{Analista}
-		\UCitem{Propósito}{Que el analista conozca la sección de Perfil Docente de la propuesta de Unidad de Aprendizaje para determinar si necesita correcciones.}
-		\UCitem{Entradas}{Clic en botones:
+		\UCitem{Propósito}{Asignar cuales son y donde están las correcciones que se deben realizar a la sección de la unidad de aprendizaje que se está revisando.}
+		\UCitem{Entradas}{Las dos entradas para agregar un comentario en una sección de la propuesta de unidad de aprendizaje son:
           \begin{itemize}
-          	\item Finalizar Revisión.
-          	\item Guardar.
-            \item Cancelar.
-            \item Nuevo Comentario.
-            \item Subrayar.
-            \item Eliminar subrayado.
-            \item Editar Comentario.
-            \item Eliminar Comentario.
+          	\item Posición en la que se agregará el comentario.
+          	\item Comentario.
+           % \item fecha en que se genera el nuevo comentario.
+            %\item Identificador unico del analista.
           \end{itemize}
         }
-		\UCitem{Origen}{Mouse.}
+		\UCitem{Origen}{Mouse y teclado.}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        			\item MSG15. ¿Está seguro que desea Cancelar la revisión?
-				Se perderán las Anotaciones que no hayas guardado anteriormente.
-               \item MSG16. ¿Está seguro de Finalizar la Revisión?
-               \item MSG17 Sección Aprobada.
-                
-               \item MSG18 Revisión de Sección Finalizada.
-               \item MSG19 Anotaciones En Sección Guardadas Correctamente.
-
+        		\item MSG1. La operación se ha realizado con éxito.
+                \item MSG2. Error: Primero se debe seleccionar el punto en donde se agregará el comentario.
+                \item MSG3 Error: debe agregar un texto al nuevo comentario.
+                \item MSG4 Ingrese su comentario en el nuevo campo de la bitácora.
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
-		\UCitem{Precondiciones}{ Se llamó el caso de uso SP2-CU1}
-		\UCitem{Postcondiciones}{Se habilita la llamada a los casos de uso SP2-CU14, SP2-CU15, SP2-CU16, SP2-CU17.}
+		\UCitem{Precondiciones}{ Se llamó el caso de uso SP2-CU5 o SP2-CU6 o SP2-CU7 o SP2-CU8 o  SP2-CU9 o o SP2-CU10}
+		\UCitem{Postcondiciones}{
+            \begin{itemize}
+                \item Se agregará al sistema el comentario.
+                \item Se mostrará en la bitácora el comentario
+                \item Se habilita la llamada a los casos de uso SP2-CU15 y SP2-CU16  
+             \end{itemize}  
+        }
 		\UCitem{Errores}{}
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
@@ -40,64 +39,74 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-    \UCpaso[\UCactor] presiona el botón  \IUbutton{Perfil Docente} de la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
+    \UCpaso[\UCactor] Selecciona con el mouse el texto donde pondrá un comentario.
 
-    \UCpaso El sistema obtiene la información correspondiente a la sección de Perfil Docente.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Nuevo comentario}. \hyperref[SP2-CU11-A]{Trayectoria A}. 
     
-    \UCpaso El sistema obtiene la bitácora de comentarios correspondientes a la sección Perfil Docente de la Unidad de Aprendizaje. 
+    \UCpaso Obtiene la fecha de la fecha actual. 
     
-    \UCpaso El sistema verifica que la sección Perfil Docente de la Unidad de Aprendizaje no haya sido aprobada anteriormente. \BRref{BR9}{Aprobación de Tareas Seccionadas.} \hyperlink{SP2-CU11-A1}{Trayectoria A1}. 
+    \UCpaso Obtiene la clave del usuario que desea agregar un comentario.
     
-    \UCpaso El sistema muestra la interfaz de usuario  \IUref{SP2-IU-Perfil-Docente}{Sección Perfil Docente}. 
+    \UCpaso Muestra el nuevo comentario en el costado derecho del documento a la altura en que se seleccionó el texto del paso 1. \hyperref[SP2-CU11-B]{Trayectoria B}.
     
-    \UCpaso[\UCactor] presiona el botón \IUbutton{Finalizar Revisión}. \hyperlink{SP2-CU11-A2}{Trayectoria A2}.
-    \UCpaso El sistema muestra el \MSGref{MSG16}{¿Está seguro de Finalizar la Revisión?}.
-    
-    \UCpaso	El sistema verifica que no existan nuevos comentarios o subrayados para la sección de la Unidad de Aprendizaje. \BRref{BR8}{Aprobación de Tareas.} \hyperlink{SP2-CU11-A3}{Trayectoria A3}. 
-    
-    \UCpaso El sistema pone el estado de la sección Perfil Docente en “Aprobado”.
-    
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG17}{Sección Aprobada}.
+    \UCpaso Muestra el mensaje \MSGref{MSG4}.
 
-    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
+    \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
+    
+    \UCpaso[\UCactor] Ingresa el nuevo comentario en el input text "comentario".
+    
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Aceptar}. \hyperref[SP2-CU11-C]{Trayectoria C}.
+    
+    \UCpaso Verifica que el campo comentario haya sido contestado. \hyperref[SP2-CU11-D]{Trayectoria D}.
+
+    \UCpaso Guarda la información del nuevo comentario en la base de datos.
+
+    \UCpaso El sistema muestra el  \MSGref{MSG1}.
+
+    \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
+
+    \UCpaso desaparecen los botones  \IUbutton{Aceptar} y  \IUbutton{Cancelar}.
+
+    \UCpaso Aparecen los botones  \IUbutton{Editar} y  \IUbutton{Eliminar}.
 
 \end{UCtrayectoria}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA A1 -------------------------
+%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
+\label{SP2-CU11-A}
+\begin{UCtrayectoriaA}{A}{El usuario no seleccionó alguna parte del texto.}
 
-\begin{UCtrayectoriaA}{A1}{La sección de la Unidad de Aprendizaje ya ha sido aprobada anteriormente.}
+	\UCpaso El sistema detecta que no hay referencia en el texto para el nuevo comentario.
 
-	\hypertarget{SP2-CU11-A1}{\UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-Perfil-Docente}{Sección Perfil Docente}.}
-    \UCpaso El sistema deshabilita los botones superiores: \IUbutton{Nuevo Comentario}, \IUbutton{Subrayar}, \IUbutton{Eliminar Subrayado}.
-    \UCpaso El sistema deshabilita los botones inferiores: \IUbutton{Cancelar}, \IUbutton{Guardar}, \IUbutton{Finalizar Revisión}.
-    \UCpaso El sistema deshabilita los botones laterales de: \IUbutton{Modificar Comentario}, \IUbutton{Eliminar Comentario}.
+  \UCpaso El sistema muestra el \MSGref{MSG2}.
+
+  \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
+
+  \UCpaso continúa en el paso 1 de la trayectoria principal del CU-V14.
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA A2 -------------------------
-	
-\begin{UCtrayectoriaA}{A2}{El analista no desea finalizar aun la revisión de la sección de la Unidad de Aprendizaje.}
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+\label{SP2-CU11-B}
+\begin{UCtrayectoriaA}{B}{El sistema detecta un comentario ya existente en el mismo renglón que el nuevo comentario.}
 
-    \hypertarget{SP2-CU11-A2}{\UCpaso[\UCactor] presiona el botón \IUbutton{Guardar} \hyperlink{SP2-CU11-A2.1}{Trayectoria A2.1}}. 
-    \UCpaso El sistema guarda los nuevos comentaros y subrayados hechos durante esa sesión.
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG19}{Anotaciones En Sección Guardadas Correctamente}.
-    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
+    \UCpaso Genera el comentario nuevo debajo del comentario ya existente. 
+    \UCpaso continúa en el paso 6 de la trayectoria principal del CU-V14.
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA A2.1 -----------------------
-\begin{UCtrayectoriaA}{A2.1}{El analista desea cancelar todo lo que haya hecho en la sección de la Unidad de Aprendizaje durante esa sesión.}
+%------------------------ CU TRAYECTORIA ALTERNARIVA C -----------------------
+\label{SP2-CU11-C}
+\begin{UCtrayectoriaA}{C}{El usuario presionó \IUbutton{Cancelar}}
 
-	\hypertarget{SP2-CU11-A2.1}{\UCpaso[\UCactor] presiona el botón \IUbutton{Cancelar}}. 
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG15}{¿Está seguro que desea Cancelar la revisión? Se perderán las Anotaciones que no hayas guardado anteriormente.}
-Se perderán las Anotaciones que no hayas guardado anteriormente. .
-    \UCpaso El sistema elimina los nuevos comentaros y subrayados hechos durante esa sesión.
-    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
+	\UCpaso Elimina el comentario generado previamente.
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA A3 -----------------------
-	
-\begin{UCtrayectoriaA}{A3}{El analista realizo comentarios y subrayados para su posterior corrección en la sección de la Unidad de Aprendizaje.} 
+%------------------------ CU TRAYECTORIA ALTERNARIVA D -----------------------
+\label{SP2-CU11-D}
+\begin{UCtrayectoriaA}{D}{El sistema detecta que el campo “comentario” se encuentra vacío.} 
 
-	\hypertarget{SP2-CU11-A3}{\UCpaso El sistema pone el estado de la sección Perfil Docente de Unidad de Aprendizaje en “Revisado”.}
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG18}{Revisión de Sección Finalizada}.
-    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
+	\UCpaso Muestra el \MSGref{MSG3}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
+    \UCpaso Continúa en el paso 8 de la trayectoria principal del CU-V14.
 \end{UCtrayectoriaA}
+
+\chapter{Pantallas}
+\IUfig[0.75]{SP2-Pantallas/Nuevo_comentario}{SP2-IU-Nuevo comentario}{Nuevo comentario}

@@ -46,7 +46,7 @@
 \BOOKMARK [2][-]{subsection.2.0.44}{MSG43 El nombre del Programa Acad\351mico ya est\341 registrado. Porfavor c\341mbielo.}{subsection.2.0.1}% 46
 \BOOKMARK [0][-]{chapter.3}{Identificaci\363n de Requerimientos}{}% 47
 \BOOKMARK [0][-]{chapter.4}{Sprint 1 Gesti\363n de paquetes y Unidad de Aprendizaje}{}% 48
-\BOOKMARK [1][-]{section.4.1}{SP2-CU2 \040Consultar contenido de propuesta de Unidad de Aprendizaje}{chapter.4}% 49
+\BOOKMARK [1][-]{section.4.1}{SP2-CU1 \040Consultar contenido de propuesta de Unidad de Aprendizaje}{chapter.4}% 49
 \BOOKMARK [2][-]{subsection.4.1.1}{Descripci\363n completa}{section.4.1}% 50
 \BOOKMARK [2][-]{subsection.4.1.2}{Atributos importantes}{section.4.1}% 51
 \BOOKMARK [2][-]{subsection.4.1.3}{Trayectorias del Caso de Uso}{section.4.1}% 52
@@ -54,58 +54,58 @@
 \BOOKMARK [2][-]{subsection.4.2.1}{Descripci\363n completa}{section.4.2}% 54
 \BOOKMARK [2][-]{subsection.4.2.2}{Atributos importantes}{section.4.2}% 55
 \BOOKMARK [2][-]{subsection.4.2.3}{Trayectorias del Caso de Uso}{section.4.2}% 56
-\BOOKMARK [1][-]{section.4.3}{SP2-CU4 Desasignar unidades de aprendizaje a un analista}{chapter.4}% 57
+\BOOKMARK [1][-]{section.4.3}{SP2-CU3 Desasignar unidades de aprendizaje a un analista}{chapter.4}% 57
 \BOOKMARK [2][-]{subsection.4.3.1}{Descripci\363n completa}{section.4.3}% 58
 \BOOKMARK [2][-]{subsection.4.3.2}{Atributos importantes}{section.4.3}% 59
 \BOOKMARK [2][-]{subsection.4.3.3}{Trayectorias del Caso de Uso}{section.4.3}% 60
-\BOOKMARK [1][-]{section.4.4}{SP2-CU5 Finalizar revisi\363n de paquetes de propuestas de unidades de aprendizaje}{chapter.4}% 61
+\BOOKMARK [1][-]{section.4.4}{SP2-CU4 Finalizar revisi\363n de paquetes de propuestas de unidades de aprendizaje}{chapter.4}% 61
 \BOOKMARK [2][-]{subsection.4.4.1}{Descripci\363n completa}{section.4.4}% 62
 \BOOKMARK [2][-]{subsection.4.4.2}{Atributos importantes}{section.4.4}% 63
 \BOOKMARK [2][-]{subsection.4.4.3}{Trayectorias del Caso de Uso}{section.4.4}% 64
 \BOOKMARK [0][-]{chapter.5}{Sprint 2 Autorizaci\363n de seccci\363n de Unidad de Aprendizaje}{}% 65
-\BOOKMARK [1][-]{section.5.1}{SP2-CU7 \040Autorizar Secci\363n Descripci\363n de Unidad de Aprendizaje }{chapter.5}% 66
+\BOOKMARK [1][-]{section.5.1}{SP2-CU5 \040Autorizar Secci\363n Descripci\363n de Unidad de Aprendizaje }{chapter.5}% 66
 \BOOKMARK [2][-]{subsection.5.1.1}{Descripci\363n completa}{section.5.1}% 67
 \BOOKMARK [2][-]{subsection.5.1.2}{Atributos importantes}{section.5.1}% 68
 \BOOKMARK [2][-]{subsection.5.1.3}{Trayectorias del Caso de Uso}{section.5.1}% 69
-\BOOKMARK [1][-]{section.5.2}{SP2-CU8 \040Autorizar Secci\363n Tiempos Asignados de Unidad de Aprendizaje}{chapter.5}% 70
+\BOOKMARK [1][-]{section.5.2}{SP2-CU6 \040Autorizar Secci\363n Tiempos Asignados de Unidad de Aprendizaje}{chapter.5}% 70
 \BOOKMARK [2][-]{subsection.5.2.1}{Descripci\363n completa}{section.5.2}% 71
 \BOOKMARK [2][-]{subsection.5.2.2}{Atributos importantes}{section.5.2}% 72
 \BOOKMARK [2][-]{subsection.5.2.3}{Trayectorias del Caso de Uso}{section.5.2}% 73
-\BOOKMARK [1][-]{section.5.3}{SP2-CU9 \040Autorizar Secci\363n Evaluaci\363n y Acreditaci\363n de Unidad de Aprendizaje}{chapter.5}% 74
+\BOOKMARK [1][-]{section.5.3}{SP2-CU7 \040Autorizar Secci\363n Evaluaci\363n y Acreditaci\363n de Unidad de Aprendizaje}{chapter.5}% 74
 \BOOKMARK [2][-]{subsection.5.3.1}{Descripci\363n completa}{section.5.3}% 75
 \BOOKMARK [2][-]{subsection.5.3.2}{Atributos importantes}{section.5.3}% 76
 \BOOKMARK [2][-]{subsection.5.3.3}{Trayectorias del Caso de Uso}{section.5.3}% 77
-\BOOKMARK [1][-]{section.5.4}{SP2-CU10 \040Autorizar Secci\363n Bibliograf\355a de Unidad de Aprendizaje}{chapter.5}% 78
+\BOOKMARK [1][-]{section.5.4}{SP2-CU8 \040Autorizar Secci\363n Bibliograf\355a de Unidad de Aprendizaje}{chapter.5}% 78
 \BOOKMARK [2][-]{subsection.5.4.1}{Descripci\363n completa}{section.5.4}% 79
 \BOOKMARK [2][-]{subsection.5.4.2}{Atributos importantes}{section.5.4}% 80
 \BOOKMARK [2][-]{subsection.5.4.3}{Trayectorias del Caso de Uso}{section.5.4}% 81
-\BOOKMARK [1][-]{section.5.5}{SP2-CU11 \040Autorizar Secci\363n Perfil Docente de Unidad de Aprendizaje}{chapter.5}% 82
+\BOOKMARK [1][-]{section.5.5}{SP2-CU9 \040Autorizar Secci\363n Perfil Docente de Unidad de Aprendizaje}{chapter.5}% 82
 \BOOKMARK [2][-]{subsection.5.5.1}{Descripci\363n completa}{section.5.5}% 83
 \BOOKMARK [2][-]{subsection.5.5.2}{Atributos importantes}{section.5.5}% 84
 \BOOKMARK [2][-]{subsection.5.5.3}{Trayectorias del Caso de Uso}{section.5.5}% 85
-\BOOKMARK [1][-]{section.5.6}{SP2-CU12 \040Autorizar Unidad Tem\341tica de Unidad de Aprendizaje}{chapter.5}% 86
+\BOOKMARK [1][-]{section.5.6}{SP2-CU10 \040Autorizar Unidad Tem\341tica de Unidad de Aprendizaje}{chapter.5}% 86
 \BOOKMARK [2][-]{subsection.5.6.1}{Descripci\363n completa}{section.5.6}% 87
 \BOOKMARK [2][-]{subsection.5.6.2}{Atributos importantes}{section.5.6}% 88
 \BOOKMARK [2][-]{subsection.5.6.3}{Trayectorias del Caso de Uso}{section.5.6}% 89
-\BOOKMARK [0][-]{chapter.6}{Herramientas para verificar las secciones de propuesta de unidad de Aprendizaje}{}% 90
-\BOOKMARK [1][-]{section.6.1}{SP2-CU14 \040Agregar comentarios a propuesta de unidad de aprendizaje }{chapter.6}% 91
+\BOOKMARK [0][-]{chapter.6}{sprint 3 Herramientas para verificar las secciones de propuesta de unidad de Aprendizaje}{}% 90
+\BOOKMARK [1][-]{section.6.1}{SP2-CU11 \040Agregar comentarios a propuesta de unidad de aprendizaje }{chapter.6}% 91
 \BOOKMARK [2][-]{subsection.6.1.1}{Descripci\363n completa}{section.6.1}% 92
 \BOOKMARK [2][-]{subsection.6.1.2}{Atributos importantes}{section.6.1}% 93
 \BOOKMARK [2][-]{subsection.6.1.3}{Trayectorias del Caso de Uso}{section.6.1}% 94
 \BOOKMARK [0][-]{chapter.7}{Pantallas}{}% 95
-\BOOKMARK [1][-]{section.7.1}{SP2-CU15 \040Modificar comentarios a propuesta de Unidad de Aprendizaje }{chapter.7}% 96
+\BOOKMARK [1][-]{section.7.1}{SP2-CU12 \040Modificar comentarios a propuesta de Unidad de Aprendizaje }{chapter.7}% 96
 \BOOKMARK [2][-]{subsection.7.1.1}{Descripci\363n completa}{section.7.1}% 97
 \BOOKMARK [2][-]{subsection.7.1.2}{Atributos importantes}{section.7.1}% 98
 \BOOKMARK [2][-]{subsection.7.1.3}{Trayectorias del Caso de Uso}{section.7.1}% 99
-\BOOKMARK [1][-]{section.7.2}{SP2-CU16 \040Eliminar comentarios en secci\363n de propuesta de Unidad de Aprendizaje }{chapter.7}% 100
+\BOOKMARK [1][-]{section.7.2}{SP2-CU13 \040Eliminar comentarios en secci\363n de propuesta de Unidad de Aprendizaje }{chapter.7}% 100
 \BOOKMARK [2][-]{subsection.7.2.1}{Descripci\363n completa}{section.7.2}% 101
 \BOOKMARK [2][-]{subsection.7.2.2}{Atributos importantes}{section.7.2}% 102
 \BOOKMARK [2][-]{subsection.7.2.3}{Trayectorias del Caso de Uso}{section.7.2}% 103
-\BOOKMARK [1][-]{section.7.3}{SP2-CU17 \040Agregar subrayado a propuesta de Unidad de Aprendizaje }{chapter.7}% 104
+\BOOKMARK [1][-]{section.7.3}{SP2-CU14 \040Agregar subrayado a propuesta de Unidad de Aprendizaje }{chapter.7}% 104
 \BOOKMARK [2][-]{subsection.7.3.1}{Descripci\363n completa}{section.7.3}% 105
 \BOOKMARK [2][-]{subsection.7.3.2}{Atributos importantes}{section.7.3}% 106
 \BOOKMARK [2][-]{subsection.7.3.3}{Trayectorias del Caso de Uso}{section.7.3}% 107
-\BOOKMARK [1][-]{section.7.4}{SP2-CU18 \040Eliminar subrayado en secci\363n de propuesta de Unidad de Aprendizaje }{chapter.7}% 108
+\BOOKMARK [1][-]{section.7.4}{SP2-CU15 \040Eliminar subrayado en secci\363n de propuesta de Unidad de Aprendizaje }{chapter.7}% 108
 \BOOKMARK [2][-]{subsection.7.4.1}{Descripci\363n completa}{section.7.4}% 109
 \BOOKMARK [2][-]{subsection.7.4.2}{Atributos importantes}{section.7.4}% 110
 \BOOKMARK [2][-]{subsection.7.4.3}{Trayectorias del Caso de Uso}{section.7.4}% 111

@@ -1,9 +1,9 @@
-\begin{UseCase}{SP2-CU10}{ Autorizar Sección Bibliografía de Unidad de Aprendizaje}{El analista podrá visualizar la información de la sección de Bibliografía de la unidad de aprendizaje para poder aprobarla.} 
+\begin{UseCase}{SP2-CU10}{ Autorizar Unidad Temática de Unidad de Aprendizaje}{El analista podrá visualizar la información de una Unidad Temática de la unidad de aprendizaje para poder aprobarla.} 
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Domínguez López Humberto}
 		\UCitem{Supervisa}{\color{Gray}Parra Garcilazo Cinthya Dolores}
 		\UCitem{Actor}{Analista}
-		\UCitem{Propósito}{Que el analista conozca la sección de Bibliografía de la propuesta de Unidad de Aprendizaje para determinar si necesita correcciones.}
+		\UCitem{Propósito}{Que el analista conozca una Unidad Temática de la propuesta de Unidad de Aprendizaje para determinar si necesita correcciones.}
 		\UCitem{Entradas}{Clic en botones:
           \begin{itemize}
           	\item Finalizar Revisión.
@@ -19,19 +19,18 @@
 		\UCitem{Origen}{Mouse.}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item MSG15. ¿Está seguro que desea Cancelar la revisión?
+        			\item MSG15. ¿Está seguro que desea Cancelar la revisión?
 				Se perderán las Anotaciones que no hayas guardado anteriormente.
                \item MSG16. ¿Está seguro de Finalizar la Revisión?
                \item MSG17 Sección Aprobada.
                 
                \item MSG18 Revisión de Sección Finalizada.
                \item MSG19 Anotaciones En Sección Guardadas Correctamente.
-
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{ Se llamó el caso de uso SP2-CU1}
-		\UCitem{Postcondiciones}{Se habilita la llamada a los casos de uso SP2-CU14, SP2-CU15, SP2-CU16, SP2-CU17.}
+		\UCitem{Postcondiciones}{Se habilita la llamada a los casos de uso SP2-CU11, SP2-CU14.}
 		\UCitem{Errores}{}
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
@@ -40,22 +39,26 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-    \UCpaso[\UCactor] presiona el botón  \IUbutton{Bibliografía} de la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
+    \UCpaso[\UCactor] presiona el botón  \IUbutton{Unidad Temática} de la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
+	\UCpaso El sistema obtiene el nombre de las unidades temáticas pertenecientes a la unidad de aprendizaje.
+	\UCpaso El sistema muestra el nombre de las unidades temáticas en el menú de la interfaz  de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
 
-    \UCpaso El sistema obtiene la información correspondiente a la sección de Bibliografía.
+    \UCpaso[\UCactor] selecciona la unidad temática que desee visualizar.
+     
+         \UCpaso El sistema obtiene la información correspondiente a la a la Unidad Temática seleccionada.
+         
+    \UCpaso El sistema obtiene la bitácora de comentarios correspondientes a la Unidad Temática. 
     
-    \UCpaso El sistema obtiene la bitácora de comentarios correspondientes a la sección Bibliografía de la Unidad de Aprendizaje. 
+    \UCpaso El sistema verifica que la Unidad Temática   no haya sido aprobada anteriormente. \BRref{BR9}{Aprobación de Tareas Seccionadas.} \hyperlink{SP2-CU10-A1}{Trayectoria A1}. 
     
-    \UCpaso El sistema verifica que la sección Bibliografía de la Unidad de Aprendizaje no haya sido aprobada anteriormente.\BRref{BR9}{Aprobación de Tareas Seccionadas.} \hyperlink{SP2-CU10-A1}{Trayectoria A1}. 
-    
-    \UCpaso El sistema muestra la interfaz de usuario  \IUref{SP2-IU-BIBLIOGRAFIA}{Sección Bibliografía}. 
+    \UCpaso El sistema muestra la interfaz de usuario  \IUref{SP2-IU-Unidad-Tematica}{Unidad Temática}. 
     
     \UCpaso[\UCactor] presiona el botón \IUbutton{Finalizar Revisión}. \hyperlink{SP2-CU10-A2}{Trayectoria A2}.
     \UCpaso El sistema muestra el \MSGref{MSG16}{¿Está seguro de Finalizar la Revisión?}.
     
-    \UCpaso	El sistema verifica que no existan nuevos comentarios o subrayados para la sección de la Unidad de Aprendizaje. \BRref{BR8}{Aprobación de Tareas.} \hyperlink{SP2-CU10-A3}{Trayectoria A3}. 
+    \UCpaso	El sistema verifica que no existan nuevos comentarios o subrayados para la Unidad Temática. \BRref{BR8}{Aprobación de Tareas.} \hyperlink{SP2-CU10-A3}{Trayectoria A3}. 
     
-    \UCpaso El sistema pone el estado de la sección Bibliografía en “Aprobado”.
+    \UCpaso El sistema pone el estado de la Unidad Temática en “Aprobado”.
     
     \UCpaso El sistema muestra el mensaje \MSGref{MSG17}{Sección Aprobada}.
 
@@ -67,7 +70,7 @@
 
 \begin{UCtrayectoriaA}{A1}{La sección de la Unidad de Aprendizaje ya ha sido aprobada anteriormente.}
 
-	\hypertarget{SP2-CU10-A1}{\UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-BIBLIOGRAFIA}{Sección Bibliografía}.}
+	\hypertarget{SP2-CU10-A1}{\UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-Unidad-Tematica}{Unidad Temática}.}
     \UCpaso El sistema deshabilita los botones superiores: \IUbutton{Nuevo Comentario}, \IUbutton{Subrayar}, \IUbutton{Eliminar Subrayado}.
     \UCpaso El sistema deshabilita los botones inferiores: \IUbutton{Cancelar}, \IUbutton{Guardar}, \IUbutton{Finalizar Revisión}.
     \UCpaso El sistema deshabilita los botones laterales de: \IUbutton{Modificar Comentario}, \IUbutton{Eliminar Comentario}.
@@ -97,7 +100,7 @@ Se perderán las Anotaciones que no hayas guardado anteriormente. .
 	
 \begin{UCtrayectoriaA}{A3}{El analista realizo comentarios y subrayados para su posterior corrección en la sección de la Unidad de Aprendizaje.} 
 
-	\hypertarget{SP2-CU10-A3}{\UCpaso El sistema pone el estado de la sección Bibliografía de Unidad de Aprendizaje en “Revisado”.}
+	\hypertarget{SP2-CU10-A3}{\UCpaso El sistema pone el estado Unidad Temática en “Revisado”.}
     \UCpaso El sistema muestra el mensaje \MSGref{MSG18}{Revisión de Sección Finalizada}.
     \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
 \end{UCtrayectoriaA}

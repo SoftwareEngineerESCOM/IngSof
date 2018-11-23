@@ -1,4 +1,4 @@
-\begin{UseCase}{SP2-CU16}{ Eliminar comentarios en sección de propuesta de Unidad de Aprendizaje }{El usuario podrá eliminar los comentarios previamente realizados en la sección de propuesta de Unidad de Aprendizaje que se está revisando.}
+\begin{UseCase}{SP2-CU13}{ Eliminar comentarios en sección de propuesta de Unidad de Aprendizaje }{El usuario podrá eliminar los comentarios previamente realizados en la sección de propuesta de Unidad de Aprendizaje que se está revisando.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Romero Ponce Mauricio Isaac}
 		\UCitem{Supervisa}{\color{Gray}Parra Garcilazo Cinthya Dolores}
@@ -8,13 +8,13 @@
 		\UCitem{Origen}{Mouse.}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\hypertarget{CU16-MSG1}{\item MSG1 La operación se ha realizado con éxito.}
-            \hypertarget{CU16-MSG13}{\item MSG13 Error interno: Intentelo más tarde.}
-            \hypertarget{CU16-MSG14}{\item MSG14 ¿Está seguro que desea eliminar el comentario?}
+        		\hypertarget{CU13-MSG1}{\item MSG1 La operación se ha realizado con éxito.}
+            \hypertarget{CU13-MSG13}{\item MSG13 Error interno: Intentelo más tarde.}
+            \hypertarget{CU13-MSG14}{\item MSG14 ¿Está seguro que desea eliminar el comentario?}
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
-		\UCitem{Precondiciones}{ Se llamó al caso de uso SP2-CU14}
+		\UCitem{Precondiciones}{ Se llamó al caso de uso SP2-CU11}
 		\UCitem{Postcondiciones}{
             \begin{itemize}
                 \item Se eliminará del sistema el comentario.
@@ -32,13 +32,13 @@
 
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Eliminar comentario}. 
     
-    \UCpaso Muestra el mensaje \MSGref{CU16-MSG14}{¿Está seguro que desea eliminar el comentario?}.
+    \UCpaso Muestra el mensaje \MSGref{CU13-MSG14}{¿Está seguro que desea eliminar el comentario?}.
 
-    \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}. \hyperref[SP2-CU16-A]{Trayectoria A}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}. \hyperref[SP2-CU13-A]{Trayectoria A}.
     
-    \UCpaso Elimina el comentario del sistema. \hyperref[SP2-CU16-B]{Trayectoria B}.
+    \UCpaso Elimina el comentario del sistema. \hyperref[SP2-CU13-B]{Trayectoria B}.
     
-    \UCpaso Muestra el \MSGref{CU16-MSG1}{La operación se ha realizado con éxito.}.
+    \UCpaso Muestra el \MSGref{CU13-MSG1}{La operación se ha realizado con éxito.}.
 
     \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
 
@@ -47,14 +47,14 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 
-\label{SP2-CU16-A}
+\label{SP2-CU13-A}
 \begin{UCtrayectoriaA}{A}{El usuario presionó \IUbutton{Cancelar}}
   \UCpaso No realiza ninguna modificación en el sistema o en la bitácora.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\label{SP2-CU16-B}
+\label{SP2-CU13-B}
 \begin{UCtrayectoriaA}{B}{No se pudo eliminar el comentario en el sistema}
-  \UCpaso Muestra el mensaje \MSGref{CU16-MSG13}{Error interno: Intentelo más tarde}.
+  \UCpaso Muestra el mensaje \MSGref{CU13-MSG13}{Error interno: Intentelo más tarde}.
   \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
 \end{UCtrayectoriaA}
