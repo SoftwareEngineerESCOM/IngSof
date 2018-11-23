@@ -35,7 +35,8 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Gestionar Programa Académico} del menú de la interfaz de usuario del Jefe de Innovación Educativa.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Gestionar Programa Académico} del menú de la interfaz de usuario del Jefe de Innovación Educativa.Existen las trayectorias alternativas [Trayectoria D] al presionar el boton Gestionar Programa Académico.
+    
     \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programa Académico}.
     \UCpaso Carga el catálogo de Unidad Académica definido en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A] y [Trayectoria C]
     \UCpaso[\UCactor] Selecciona la Unidad Académica que desea como filtro. [Trayectoria B] Trayectoria Lanzada por el botón filtro.
@@ -56,4 +57,11 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA C-------------------------
 \begin{UCtrayectoriaA}{C}{El actor es el Jefe de Innovación Educativa}
     \UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU5} con filtro predeterminado de su Unidad Académica.
+\end{UCtrayectoriaA}
+
+%-------------------- CU TRAYECTORIA ALTERNARIVA D-------------------------
+\begin{UCtrayectoriaA}{D}{Problemas con la Conexión}
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{ Servicios no disponibles por el momento.}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+\UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa.
 \end{UCtrayectoriaA}
