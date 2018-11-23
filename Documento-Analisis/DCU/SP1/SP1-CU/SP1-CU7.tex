@@ -1,45 +1,85 @@
-\begin{UseCase} {SP1-CU7} {Eliminar autores de la bibliografía} {El usuario podrá eliminar autores a la bibliografía.}
-        \UCitem{Versión}{\color{Gray}1.0}
-        \UCitem{Autor}{\color{Gray}López Rivera Aiko Dallane}
-        \UCitem{Supervisa}{\color{Gray}}
-        \UCitem{Actor}{\hyperlink{Usuario}{Usuario}}
-        \UCitem {Propósito} {Eliminar autores de la bibliografía.}
-        \UCitem {Entradas} {}
-        \UCitem {Origen} {Teclado.}
-        \UCitem {Salidas} {
-            \begin{itemize}
-                \item MSG1. ¿Seguro que deseas eliminar este autor?
-                \item MSG2. Registro eliminado exitosamente.
-            \end{itemize}
+\begin{UseCase}{SP1-CU7}{Registrar Temas de la Unidad de Aprendizaje}{El usuario podrá registrar temas a la Unidad de Aprendizaje.}
+    \UCitem{Versión}{\color{Gray}1.0}
+    \UCitem{Autor}{\color{Gray}López Rivera Aiko Dallane}
+    \UCitem{Supervisa}{\color{Gray}Ramírez Martínez Janet Naibi}
+    \UCitem{Actor}{\hyperlink{Usuario}{Usuario}}
+    \UCitem{Propósito}{Servir como marco de referencia para el registro de Temas de la Unidad de Aprendizaje.}
+    \UCitem{Entradas}{Las entradas para el registro del Perfil Docente serán:
+          \begin{itemize}
+            \item Número de tema. 
+            \item Nombre del Tema.
+            \item Horas con docente teoricas.
+            \item Horas con docente prácticas.
+            \item Horas de Aprendizaje Autonomo.
+            \item Subtemas.
+          \end{itemize}
         }
-        \UCitem{Destino}{Pantalla.}
-        \UCitem{Precondiciones}{Debe exister el autor previamente en el sistema.}
-        \UCitem{Postcondiciones}{El autor queda eliminado en el sistema.}
-        \UCitem{Errores}{}
-        \UCitem{Estado}{Revisión.}
-        \UCitem{Observaciones}{}
+    \UCitem{Origen}{Teclado y Mouse.}
+    \UCitem{Salidas}{
+    }
+    \UCitem{Destino}{Pantalla.}
+    \UCitem{Precondiciones}{
+    \item Se debe haber elaborado previamente el Programa Sintético.}
+    \UCitem{Postcondiciones}{Los temas de la Unidad de Aprendizaje quedan registrados.}
+    \UCitem{Errores}{}
+    \UCitem{Estado}{Revisión.}
+    \UCitem{Observaciones}{}
 \end{UseCase}
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar autor/autores} de la interfaz de usuario \IUref{IU6}{Página Principal}
 
-% \ UCpaso El sistema busca el formulario \ Formref {FM1} {Registrar autor/autores}.
-
-\UCpaso Muestra la interfaz de usuario \IUref{IU6}{Registro del autor/autores}.
-\UCpaso[\UCactor] Presiona el botón \IUbutton{Eliminar autor} de la interfaz de usuario \IUref{IU7}{Página Principal}
-\UCpaso El sistema muestra el mensaje \MSGref {MSG1} {¿Seguro que deseas eliminar este autor?}.
-\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Aceptar}. [Trayectoria A]
-\UCpaso El sistema muestra el mensaje \MSGref{MSG2}{Registro eliminado exitosamente}.
-\UCpaso[\UCactor] Cierra el MSG2 presionando el botón \IUbutton{Ok}.
-\UCpaso Muestra la interfaz de usuario \IUref{IU6}{Página principal}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Temas de la Unidad de Aprendizaje} de la interfaz de usuario. \IUref{IU.03}{Página Principal}
+    \UCpaso El sistema verifica que el programa sintectico haya sido registrado. [Trayectoria A]
+    \UCpaso Muestra la interfaz de usuario \IUref{MIU3.01}{Registro de Temas de la Unidad de Aprendizaje}.
+    \UCpaso[\UCactor] Ingresa el no. de tema.
+    \UCpaso[\UCactor] Ingresa el nombre del tema.
+    \UCpaso[\UCactor] Selecciona las horas con docente teoricas.
+    \UCpaso[\UCactor] Selecciona las horas con docente prácticas.
+    \UCpaso[\UCactor] Selecciona las horas con docente autónomas.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Temas} [Trayectoria B] 
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Subtemas} [Trayectoria C]
+    \UCpaso Abre un modal en el \UCref{SMIU3.01} [Trayectoria D]
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. 
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados.[Trayectoria E]
+    \UCpaso Guarda la información de los temas correspondientes a la Unidad de Aprendizaje.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU.03}{Página principal}.
 \end{UCtrayectoria}
 
-%------------------------ CU TRAYECTORIA ALTERNARTIVA A -------------------------
+%------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
 
-\begin{UCtrayectoriaA}{A}{El usuario desea cancelar la eliminación del autor de la bibliografía.}
+\begin{UCtrayectoriaA}{A}{No se ha realizado la elaboración del Programa Sintético}.
+	\UCpaso No muestra los datos provenientes del \UCref{SP1-CU1}.
+	\UCpaso Muestra el mensaje \MSGref{MSG41}{Debe llenar el Programa Sintético para realizar este registro}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{SP1-IU}{Principal}.
+\end{UCtrayectoriaA}
 
-\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}.
-\UCpaso Continua en el paso 7 de la trayectoria principal del \UCref{CU7}.
 
+%------------------------ CU TRAYECTORIA ALTERNATIVA B -------------------------
+
+\begin{UCtrayectoriaA}{B}{El usuario requiere registrar otr tema}.
+	\UCpaso El sistema genera los pasos 4-8 nuevamente de la trayectoria principal del \UCref{SP1-CU7}..
+    \UCpaso[\UCactor] El usuario ingresa los datos correspondientes a la tema.
+    \UCpaso{}[\UCactor] EL usuario continua con el paso 9 de la trayectoria principal del \UCref{SP1-CU7}.
+    \IUref{SP1-IU}{Principal}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
+
+\begin{UCtrayectoriaA}{D}{El docente quiere registrar Subtemas}.
+	\UCpaso[\UCactor] Presiona el botón \BtnModal que se encuentra a un lado del campo ``Subtemas'' de la \IUref{SMIU3.O1}{Registrar Subtemas}.
+	\UCpaso Muestra el modal \IUref{SMIU3.01}{Registrar Subtemas}.
+	\UCpaso Continua en el paso X de la trayectoria principal de \UCref{SP1-CUXX}
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA D -------------------------
+
+\begin{UCtrayectoriaA}{E}{Uno o más campos obligatorios no fueron contestados.}
+	\UCpaso Detecta uno o más campos sin contestar.
+    \UCpaso Muestra el mensaje \MSGref{MSG4.}{Los campos marcados con (*) son obligatorios.}
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 14 de la trayectoria principal del \UCref{SP1-CU7}.
 \end{UCtrayectoriaA}
