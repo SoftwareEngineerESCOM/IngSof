@@ -14,7 +14,7 @@
 			\item Lugar de trabajo.
 			\item Contraseña.
 			\item Correo electrónico.
- 			\item Clic en el botón registrar.
+			\item Clic en el botón registrar.
 	\end{itemize}}
 	\UCitem{Origen}{Mouse y teclado.}
 	\UCitem{Salidas}{
@@ -29,8 +29,9 @@
 	}
 	\UCitem{Destino}{Pantalla.}
 	\UCitem{Precondiciones}{ \begin{itemize}
-			\item Debe existir por lo menos un registro en el catálogo de cargos.
-			\item Debe existir por lo menos un registro en el catalogo de lugares de trabajo.
+			\item Debe existir por lo menos un registro en el catálogo de cargos \BRref{BR14}{Catálogos del Sistema}.
+			\item Debe existir por lo menos un registro en el catalogo de lugares de trabajo \BRref{BR14}{Catálogos del Sistema}.
+			\item Debe existir por lo menos un registro en el catalogo de titulo \BRref{BR14}{Catálogos del Sistema}.
 	\end{itemize} }
 	\UCitem{Postcondiciones}{La gestión del nuevo usuario.}
 	\UCitem{Errores}{ \begin{itemize}
@@ -44,12 +45,18 @@
 \begin{UCtrayectoria}{Principal.}
 	
 	\UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU2}{Gestionar empleados} el botón \IUbutton{+}.
-	\UCpaso  El sistema verifica la existencia de registros en los catálogos cargos  y  lugares de trabajo de la \BRref{BR14}{Catálogos del Sistema} . [Trayectoria B] 
-	\UCpaso El sistema carga la información del catalogo de empleado  según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria H]
-	\UCpaso El sistema carga la pantalla  \IUref{IU8}{Registrar empleados}. [Trayectoria I]
-	\UCpaso[\UCactor] Captura la información necesaria del empleado según la \BRref{BR30}{Información personal de usuarios y/o recursos humanos} y la \BRref{BR35}{Información laboral de los usuarios y recursos humanos}.[Trayectoria C] [Trayectoria D] 
-	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Registrar}.
-	\UCpaso El sistema verifica la consistencia de la información. [Trayectoria E] [Trayectoria F][Trayectoria J]
+	\UCpaso  El sistema verifica la existencia de registros en los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema}. [Trayectoria B] 
+	\UCpaso El sistema carga la información de los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema} según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria H]
+	\UCpaso El sistema carga la pantalla  \IUref{IU8}{Registrar empleados}. 
+	\UCpaso[\UCactor] Ingresa el nombre del usuario.  [Trayectoria D] 
+	\UCpaso[\UCactor] Ingresa el primer apellido del usuario.  [Trayectoria D]
+	\UCpaso[\UCactor] Ingresa el segundo apellido del usuario.  [Trayectoria D]  
+	\UCpaso[\UCactor] selecciona el titulo del usuario.  [Trayectoria D]
+	\UCpaso[\UCactor] selecciona los cargos del usuario. [Trayectoria C]  [Trayectoria D] 
+	\UCpaso[\UCactor] Ingresa el correo del usuario.  [Trayectoria D] 
+	\UCpaso[\UCactor] Ingresa la contraseña del usuario.  [Trayectoria D]
+	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Registrar}. 
+	\UCpaso El sistema verifica la consistencia de la información conforme al modelo de datos. [Trayectoria E] [Trayectoria F][Trayectoria J]
 	\UCpaso El sistema registra al empleado. [Trayectoria H]
 	\UCpaso  El sistema muestra el \MSGref{MSG5}{Registro finalizado exitosamente}.    
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
@@ -60,7 +67,7 @@
 \begin{UCtrayectoriaA}{B}{No existen registros en los catálogos.}
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU4}.
+	\UCpaso El sistema muestra la interfaz de usuario  \IUref{IU8}{Registrar empleados}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{El actor selecciona el cargo del empleado.}
@@ -75,36 +82,31 @@
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{E}{El usuario ya estaba registrado en el sistema.}
-	\UCpaso El sistema muestra el \MSGref{MSG36}{Error, el usuario ya existe en el sistema.} 
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG36}{Error, el usuario ya existe en el sistema.} 
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{F}{Se incumple la \BRref{BR3}{Gestión de Usuarios} o la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo}  o la \BRref{BR30}{Información personal de usuarios y/o recursos humanos} o la \BRref{BR35}{Información laboral de los usuarios y recursos humanos} en la definición de cada campo.}
-	\UCpaso El sistema muestra el \MSGref{MSG35}{Escriba información valida.}
-	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
-\end{UCtrayectoriaA}
-
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
-
-\begin{UCtrayectoriaA}{H}{La base de datos no está disponible, o hubo un error de conexión.}
-	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
-	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP5-CU4}.
-\end{UCtrayectoriaA}
-
-\begin{UCtrayectoriaA}{I}{El sistema no encuentra la interfaz a mostrar.}
-	\UCpaso No se puede mostrar la página solicitada.
-	\UCpaso El sistema muestra el \MSGref{MSG25}{Servicios no disponibles.}
-	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU4}.
-\end{UCtrayectoriaA}
-\begin{UCtrayectoriaA}{J}{Uno o mas campos de la \BRref{BR30}{Información personal de usuarios y/o recursos humanos} o la \BRref{BR35}{Información laboral de los usuarios y recursos humanos} están vacíos.}
-	\UCpaso El sistema muestra el \MSGref{MSG44}{Este campo es requerido} debajo de cada campo que no fue llenado. 
-	\UCpaso	Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
-\end{UCtrayectoriaA}
-\begin{UCtrayectoriaA}{K}{El actor presiono el botón \IUbutton{Cancelar}.}
-	\UCpaso Cierra el mensaje y continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.	
-\end{UCtrayectoriaA}
+\begin{UCtrayectoriaA}{F}{Se incumple la \BRref{BR3}{Gestión de Usuarios} o detecta inconsistencias con el modelo de datos.}
+		\UCpaso El sistema muestra el mensaje \MSGref{MSG35}{Escriba información valida} debajo de campo inconsistente.
+		\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+		\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
+	\end{UCtrayectoriaA}
+	
+	
+	%------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
+	
+	\begin{UCtrayectoriaA}{H}{La base de datos no está disponible, o hubo un error de conexión.}
+		\UCpaso El sistema muestra el mensaje\MSGref{MSG25}{Servicios no disponibles.}
+		\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+		\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
+	\end{UCtrayectoriaA}
+	
+	
+	\begin{UCtrayectoriaA}{J}{Uno o mas campos están vacíos.}
+		\UCpaso El sistema muestra el mensaje \MSGref{MSG44}{Este campo es requerido} debajo de cada campo que no fue llenado. 
+		\UCpaso	Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
+	\end{UCtrayectoriaA}
+	\begin{UCtrayectoriaA}{K}{El actor presiono el botón \IUbutton{Cancelar}.}
+		\UCpaso Cierra el mensaje y continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.	
+	\end{UCtrayectoriaA}

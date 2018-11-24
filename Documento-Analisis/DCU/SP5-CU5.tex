@@ -1,72 +1,74 @@
 \begin{UseCase}{SP5-CU5}{Editar usuario.}{Los jefes (\hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA}, \hyperlink{JIE}{JIE}) podrán realizar modificaciones a la información de los empleados a su cargo.}
-        \UCitem{Versión}{\color{Gray}2.0}
-        \UCitem{Autor}{\color{Gray}Hernández Ruiz Rafael}
-        \UCitem{Supervisa}{\color{Gray}Abigail Nicolás Sayago}
-        \UCitem{Actor}{\hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA}, \hyperlink{JIE}{JIE}.}
-        \UCitem{Propósito}{ Realizar modificaciones en la información de los empleados por motivos de actualización o errores. }
-        \UCitem{Entradas}{
-          \begin{itemize}
-            	
-            \item Nombre.
-            \item Primer Apellido.
-            \item Segundo Apellido.
-            \item Titulo.
-            \item Cargo.
-            \item Lugar de trabajo.
-            \item Contraseña.
-            \item Correo electrónico.
-            \item Clic en botón finalizar.
-        \end{itemize}}
-        \UCitem{Origen}{Mouse.}
-        \UCitem{Salidas}{
-            \begin{itemize}
-                \item Información del empleado (nombre, primer apellido, segundo apellido, correo electrónico, titulo, cargo, lugar de trabajo y contraseña).
-                \item \MSGref{MSG25}{Servicios no disponibles.}
-                \item \MSGref{MSG27}{Empleado modificado.}
-                \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-                \item \MSGref{MSG35}{Escriba información valida.}
-                \item \MSGref{MSG44}{Este campo es requerido.}
-           
-            \end{itemize}
-        }
-        \UCitem{Destino}{Pantalla.}
-        \UCitem{Precondiciones}{ \begin{itemize}
-            \item Debe existir por lo menos un registro en el catálogo de cargos.
-            \item Debe existir por lo menos un registro en el catalogo de lugares de trabajo.
-        \end{itemize} }
-        \UCitem{Postcondiciones}{}
-        \UCitem{Errores}{ \begin{itemize}
-        \item El catálogo de cargos no se cargo correctamente.
-        \item Hubo un problema al conectarse con el servidor.
-        \item Hubo un problema al conectarse con la base de datos. \end{itemize}}
-        \UCitem{Estado}{Gestión.}
-        \UCitem{Observaciones}{}
-
+	\UCitem{Versión}{\color{Gray}2.0}
+	\UCitem{Autor}{\color{Gray}Hernández Ruiz Rafael}
+	\UCitem{Supervisa}{\color{Gray}Abigail Nicolás Sayago}
+	\UCitem{Actor}{\hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA}, \hyperlink{JIE}{JIE}.}
+	\UCitem{Propósito}{ Realizar modificaciones en la información de los empleados por motivos de actualización o errores. }
+	\UCitem{Entradas}{
+		\begin{itemize}
+			
+			\item Nombre.
+			\item Primer Apellido.
+			\item Segundo Apellido.
+			\item Titulo.
+			\item Cargo.
+			\item Lugar de trabajo.
+			\item Contraseña.
+			\item Correo electrónico.
+			\item Clic en botón finalizar.
+	\end{itemize}}
+	\UCitem{Origen}{Mouse.}
+	\UCitem{Salidas}{
+		\begin{itemize}
+			\item Información del empleado (nombre, primer apellido, segundo apellido, correo electrónico, titulo, cargo, lugar de trabajo y contraseña).
+			\item \MSGref{MSG25}{Servicios no disponibles.}
+			\item \MSGref{MSG27}{Empleado modificado.}
+			\item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+			\item \MSGref{MSG35}{Escriba información valida.}
+			\item \MSGref{MSG44}{Este campo es requerido.}
+			
+		\end{itemize}
+	}
+	\UCitem{Destino}{Pantalla.}
+	\UCitem{Precondiciones}{ \begin{itemize}
+			\item Debe existir por lo menos un registro en el catálogo de cargos \BRref{BR14}{Catálogos del Sistema}.
+			\item Debe existir por lo menos un registro en el catálogo de lugares de trabajo \BRref{BR14}{Catálogos del Sistema}.
+			\item Debe existir por lo menos un registro en el catálogo de titulo \BRref{BR14}{Catálogos del Sistema}.
+	\end{itemize} }
+	\UCitem{Postcondiciones}{}
+	\UCitem{Errores}{ \begin{itemize}
+			\item El catálogo de cargos no se cargo correctamente.
+			\item Hubo un problema al conectarse con el servidor.
+			\item Hubo un problema al conectarse con la base de datos. \end{itemize}}
+	\UCitem{Estado}{Gestión.}
+	\UCitem{Observaciones}{}
+	
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-    
-    \UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU2}{Gestionar empleados} la opción de editar un usuario. 
-    \UCpaso  El sistema verifica la existencia de registros en los catálogos cargos  y  lugares de trabajo de la la \BRref{BR14}{Existen los catálogos} . [Trayectoria B] 
-    \UCpaso El sistema carga la información del catalogo de empleado  según la \BRref{BR3}{Gestión de Usuarios} para el actor.
-    \UCpaso El sistema carga la pantalla  \IUref{IU7}{Editar empleados}. [Trayectoria G] 
-    \UCpaso[\UCactor] Edita la información de los empleados.[Trayectoria C] [Trayectoria D]
-    \UCpaso[\UCactor]  Presiona el botón de \IUbutton{Finalizar}.
-    \UCpaso El sistema verifica la consistencia de la información. [Trayectoria E] [Trayectoria I]
-    \UCpaso El sistema realiza la modificación de la información del empleado. [Trayectoria F] 
-    \UCpaso  El sistema muestra el \MSGref{MSG27}{Empleado modificado}.    
-    \UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}
+	
+	\UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU2}{Gestionar empleados} la opción de editar un usuario. 
+	\UCpaso  El sistema verifica la existencia de registros en los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema} . [Trayectoria B] 
+	\UCpaso El sistema carga la información de los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema} según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria H]
+	\UCpaso El sistema carga la pantalla  \IUref{IU7}{Editar empleados}. 
+	\UCpaso El sistema carga los datos del usuario correspondiente. 
+	\UCpaso[\UCactor] Modifica la información deseada del usuario.[Trayectoria C] [Trayectoria D]
+	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Finalizar}.
+	\UCpaso El sistema verifica la consistencia de la información. [Trayectoria E] [Trayectoria I]
+	\UCpaso El sistema realiza la modificación de la información del empleado. [Trayectoria F] 
+	\UCpaso  El sistema muestra el \MSGref{MSG27}{Empleado modificado}.    
+	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{B}{No existen registros en los catálogos.}
-    \UCpaso     El sistema muestra el \MSGref{MSG25}{Servicios no disponibles.}
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU5}.
+	\UCpaso     El sistema muestra el \MSGref{MSG25}{Servicios no disponibles.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso El sistema muestra la interfaz de usuario \IUref{IU7}{Editar empleados}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{Cambio en el cargo de un usuario.}
-    \UCpaso     El sistema ajustara las opciones de zona de trabajo de acuerdo con el cargo y el actor según la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo.}
-    \UCpaso     Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
+	\UCpaso     El sistema ajustara las opciones de zona de trabajo de acuerdo con el cargo y el actor según la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo.}
+	\UCpaso     Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
 \end{UCtrayectoriaA}
 
 
@@ -87,17 +89,12 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
 
 \begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
-    \UCpaso El sistema muestra el mensaje\MSGref{MSG25}{Servicios no disponibles.}
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP5-CU5}.
+	\UCpaso El sistema muestra el mensaje\MSGref{MSG25}{Servicios no disponibles.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso El sistema muestra  la interfaz de usuario  \IUref{IU7}{Editar empleados}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{G}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
-    \UCpaso No se puede mostrar la página solicitada.
-    \UCpaso El sistema muestra el \MSGref{MSG25}{Servicios no disponibles.}
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP5-CU5}.
-\end{UCtrayectoriaA}
+
 
 \begin{UCtrayectoriaA}{H}{El actor presiono el botón \IUbutton{Cancelar}.}
 	\UCpaso Cierra el mensaje y continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.	

@@ -17,15 +17,15 @@
 	\UCitem{Salidas}{
 		\begin{itemize}
 			\item Lista de empleados de un cargo en específico con sus datos (matricula,  nombre, primer apellido, segundo apellido, titulo, cargo, lugar de trabajo). 
-		
+			
 			\item \MSGref{MSG21}{No hay usuarios registrados con ese cargo.}
 			\item \MSGref{MSG22}{¿Seguro de eliminar al usuario?}
 			\item \MSGref{MSG25}{Servicios no disponibles.}
 		\end{itemize}
 	}
 	\UCitem{Destino}{Pantalla.}
-	\UCitem{Precondiciones}{ 1.- Debe existir por lo menos un registro en el catálogo de la cargos y lugares de trabajo de la \BRref{BR14}{Catálogos del Sistema} .}
-	\UCitem{Postcondiciones}{1.- Habilita la llamada a los casos de uso  SP5-CU4, SP5-CU5.}
+	\UCitem{Precondiciones}{ 1.- Debe existir por lo menos un registro en el catálogo de la cargos \BRref{BR14}{Catálogos del Sistema}.}
+	\UCitem{Postcondiciones}{1.- Habilita la llamada a los casos de uso  SP5-CU10, SP5-CU11.}
 	\UCitem{Errores}{ \begin{itemize}
 			\item El catálogo de cargos no se cargo correctamente.
 			\item Hubo un problema al conectarse con el servidor.
@@ -49,7 +49,7 @@
 \begin{UCtrayectoriaA}{B}{No existen registros en el catálogo de cargos.}
 	\UCpaso     El sistema muestra el 	\MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso  Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU3}.  
+	\UCpaso  El sistema muestra la pantalla  \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{No existen  empleados con el cargo seleccionado.}
@@ -74,17 +74,12 @@
 \begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{SP5-CU3}.
+	\UCpaso  El sistema muestra la pantalla  \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
 
-\begin{UCtrayectoriaA}{G}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
-	\UCpaso No se puede mostrar la página solicitada.
-	\UCpaso El sistema muestra el \MSGref{MSG25}{Servicios no disponibles.}
-	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU3}.
-\end{UCtrayectoriaA}
+
+
 
 
 
