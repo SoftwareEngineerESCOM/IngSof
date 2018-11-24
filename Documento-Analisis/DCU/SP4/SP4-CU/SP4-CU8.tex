@@ -17,7 +17,6 @@
                 \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
                 \item \MSGref{MSG44}{Este campo es requerido}
                 \item \MSGref{MSG35}{Escribe información valida.}
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
                 \item \MSGref{MSG43}{El nombre del Programa Académico ya está registrado porfavor cámbielo.}
         	\end{itemize}
         }
@@ -35,10 +34,10 @@
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos} el cual tiene forma de lápiz. Existen las trayectorias alternativas [Trayectoria F] al presionar el boton Editar.
     \UCpaso Muestra la interfaz de usuario \IUref{EPA-J}{Editar Programa Académico}.
     \UCpaso Cargar el nombre del Programa Académico.
-    \UCpaso[\UCactor] Ingresa el nuevo nombre del Programa Académico.
+    \UCpaso[\UCactor] Ingresa el nuevo nombre del Programa Académico.Verifica que se cumpla la [Trayectoria D] (modelo de datos).
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. Existen las trayectorias alternativas [Trayectoria A] y [Trayectoria B] al presionar el boton Cancelar.
     \UCpaso Verifica que se cumplan la \BRref{BR13}{Todos los datos solicitados son obligatorios} y la \BRref{BR19}{El nombre del Programa Académico es único.} [Trayectoria C][Trayectoria D][Trayectoria E]
-    \UCpaso Persiste los datos ingresados.Accionado por el boton \IUbutton{Finalizar} [Trayectoria G]activada al presionar el boton.
+    \UCpaso Persiste los datos ingresados.Accionandoel boton \IUbutton{Finalizar} se activa la  [Trayectoria G].
     \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}.
@@ -54,12 +53,12 @@
     \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
     \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
     \UCpaso Cierra el mensaje.
-    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU1}.
+    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU8}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 \begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar.}
-    \UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido}.
-    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU1}.
+    \UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido} debajo de cada campo obligatorio sin contestar.
+    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU8}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 \begin{UCtrayectoriaA}{D}{El Sistema detecta que el Nombre de Programa Académico no cumple con el modelo de datos}

@@ -18,7 +18,6 @@
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                	\item \MSGref{MSG44}{Este campo es requerido}
                 \item \MSGref{MSG35}{Escribe información valida.}
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
                 \item \MSGref{MSG43}{El nombre del Programa Académico ya está registrado porfavor cámbielo.}
 
         	\end{itemize}
@@ -36,17 +35,17 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{(+)Registrar Programa Académico}de la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}Existen las trayectorias alternativas [Trayectoria F] al presionar el boton Registrar.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{(+)} que es Registrar Programa Académico de la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}Existen las trayectorias alternativas [Trayectoria F] al presionar el boton Registrar.
 
     \UCpaso Muestra la interfaz de usuario \IUref{RPA-J}{Registrar Programa Académico}.
 
-    \UCpaso[\UCactor] Ingresa el nombre del Programa Académico. [Trayectoria D]
+    \UCpaso[\UCactor] Ingresa el nombre del Programa Académico. Verifica que se cumpla la [Trayectoria D] (modelo de datos).
 
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. Existen las trayectorias alternativas [Trayectoria A] y [Trayectoria B] al presionar el boton Cancelar.
 
     \UCpaso Verifica que se cumpla la \BRref{BR13}{Todos los campos son obligatorios} y \BRref{BR19}{El nombre del Programa Académico es único.}. [Trayectoria C][Trayectoria D][Trayectoria E]
 
-    \UCpaso Persiste los datos ingresados.Accionado por el boton \IUbutton{Registrar} [Trayectoria G] activada al presionar el boton.
+    \UCpaso Persiste los datos ingresados.Accionando el boton \IUbutton{Registrar} se activa la  [Trayectoria G].
 
     \UCpaso Muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
 
