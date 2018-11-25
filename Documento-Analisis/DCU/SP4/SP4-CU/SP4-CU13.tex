@@ -11,19 +11,11 @@
         	\end{itemize}
 		}
 		\UCitem{Origen}{}
-		\UCitem{Salidas}{
-        	\begin{itemize}
-                \item \MSGref{MSG40}{¿Está seguro que desea generar una nueva tarea para el registro de un nuevo Plan de Estudios?}
-        	\end{itemize}
-        }
+		\UCitem{Salidas}{}
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{Debe de existir al menos un Programa Académico registrado en el sistema.}
 		\UCitem{Postcondiciones}{}
-		\UCitem{Errores}{
-			  \begin{itemize}
-				\item E1. El sistema no puede consultar los datos.
-			\end{itemize}
-		}
+		\UCitem{Errores}{}
 	 \UCitem{Puntos de Exteción}{
 		\begin{itemize}
 			\item \UCref{SP4-CU2}: Registrar Plan de Estudios.
@@ -36,7 +28,7 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona sobre un Programa Académico en la Interfaz de usuario  \IUref{CPA-J}{Consultar Programa Académico}.
-    \UCpaso Muestra la interfaz de usuario \IUref{CPE-J}{Consultar Planes de Estudios}.
-    \UCpaso Muestra los Planes de Estudios del Programa Académico seleccionado registrados en el sistema.
+    \UCpaso[\UCactor] Presiona sobre un Programa Académico en la Interfaz de usuario  \IUref{GPA-J}{Gestionar Programa Académico}.
+    \UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudios}.
+    \UCpaso Muestra los Planes de Estudios del Programa Académico seleccionado.
 \end{UCtrayectoria}

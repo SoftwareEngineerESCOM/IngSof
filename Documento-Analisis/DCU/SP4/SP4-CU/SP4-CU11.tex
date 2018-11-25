@@ -22,13 +22,13 @@
                 \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
                 \item \MSGref{MSG44}{Este campo es requerido.}
                 \item \MSGref{MSG33}{El Recurso Humano con la Matrícula de Empleado [Número de Matrícula de Empleado] ya existe}
-			    \item \MSGref{MSG35}{Escribe información valida.}
+			    \item \MSGref{MSG35}{Escribe información válida.}
                 \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
         	\end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
         \UCitem{Precondiciones}{}
-        \UCitem{Postcondiciones}{El Recurso Humano quedó actualizado en el sistema, permitiendo consultarlo agregarlo al pdf final.}
+        \UCitem{Postcondiciones}{El Recurso Humano quedó actualizado en el sistema, permitiendo consultarlo y agregarlo al documento pdf.}
         \UCitem{Errores}{Ninguno}
         \UCitem{Estado}{Revisión.}
         \UCitem{Observaciones}{Ninguna}
@@ -37,11 +37,10 @@
 \begin{UCtrayectoria}{Principal}
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{GRH-J}{Gestionar Recurso Humano} el cual tiene forma de lápiz.
     \UCpaso Muestra la interfaz de usuario \IUref{ERH-J}{Editar Recurso Humano}.
-    \UCpaso Cargar datos del Recurso Humano correspondiente.
-
     \UCpaso Carga el catálogo de Cargo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga el catálogo de Título descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga el catálogo de Lugar de Trabajo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
+    \UCpaso Carga los datos del Recurso Humano a editar.
 
     \UCpaso[\UCactor] Modifica los campos deseados.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}.  Existen las trayectorias alternativas [Trayectoria B] y [Trayectoria B.1] al presionar el boton Cancelar.
@@ -79,7 +78,7 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 \begin{UCtrayectoriaA}{D}{El Sistema detecta caracteres no alfanuméricos.}
-    \UCpaso Muestra el mensaje \MSGref{MSG35}{ Escribe información valida} debajo del campo que incumplio con la \BRref{BR35}{Estructura de Recursos Humanos}.
+    \UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida.} debajo del campo que incumplió con la \BRref{BR35}{Estructura de Recursos Humanos}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
