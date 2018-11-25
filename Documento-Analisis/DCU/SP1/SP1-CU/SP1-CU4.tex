@@ -1,4 +1,4 @@
-% REGISTRAR el Programa en Extenso.
+% REGISTRAR EL PROGRAMA EN EXTENSO: NAIBI.
 \begin{UseCase}{SP1-CU4}{Registrar el Programa en Extenso}{El usuario podrá registrar de manera más detallada las características fundamentales de la Unidad de Aprendizaje.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Ramírez Martínez Janet Naibi.}
@@ -34,6 +34,7 @@
 		\UCitem{Errores}{}
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
+\end{UseCase}
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
@@ -72,7 +73,7 @@
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
 
-\begin{UCtrayectoriaA}{A}{No se ha realizado la elaboración del Programa Sintético}.
+\begin{UCtrayectoriaA}{A}{No se ha realizado la elaboración del Programa Sintético.}
 	\UCpaso No muestra los datos provenientes del \UCref{SP1-CU1}.
 	\UCpaso Muestra el mensaje \MSGref{MSG41}{Debe llenar el Programa Sintético para realizar este registro}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
@@ -83,7 +84,7 @@
 
 
 
-\begin{UCtrayectoriaA}{B}{Uno o más catálogos están vacíos}.
+\begin{UCtrayectoriaA}{B}{Uno o más catálogos están vacíos.}
 	\UCpaso No encuentra información en los catálogos.
     \UCpaso Muestra el mensaje \MSGref{MSG9.}{Por el momento no se puede realizar el registro.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
@@ -92,7 +93,7 @@
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
 
-\begin{UCtrayectoriaA}{C}{La vigencia que seleccionó el docente es invalida}.
+\begin{UCtrayectoriaA}{C}{La vigencia que seleccionó el docente es invalida.}
 	\UCpaso[\UCactor] Selecciona una fecha distinta a la fecha en la que está siendo registrada la Unidad de Aprendizaje.
 	\UCpaso Muestra el mensaje \MSGref{MSG42}{Fecha invalida}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
@@ -101,7 +102,7 @@
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA D -------------------------
 
-\begin{UCtrayectoriaA}{D}{El docente quiere registrar los tiempos asignados de la Unidad de Aprendizaje}.
+\begin{UCtrayectoriaA}{D}{El docente quiere registrar los tiempos asignados de la Unidad de Aprendizaje.}
 	\UCpaso[\UCactor] Presiona el botón \BtnModal que se encuentra a un lado del campo ``Tiempos Asignados'' de la \IUref{IU.02}{Registrar el Programa en Extenso}.
 	\UCpaso Muestra el modal \IUref{MIU2.01}{Registrar Tiempos Asignados de la Unidad de Aprendizaje}.
 	\UCpaso Continua en el paso X de la trayectoria principal de \UCref{SP1-CU5}
@@ -115,6 +116,3 @@
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU4}.
 \end{UCtrayectoriaA}
-
-
-
