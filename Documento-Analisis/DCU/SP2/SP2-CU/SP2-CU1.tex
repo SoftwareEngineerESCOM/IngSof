@@ -9,7 +9,7 @@
 		\UCitem{Entradas}{Las entradas para consultar una propuesta de unidades de aprendizaje son:
           \begin{itemize}
           	\item Unidad Académica
-            \item Programa académico
+            	\item Programa académico
 		\item Semestre
 		\item Número de revisión
           \end{itemize}
@@ -17,7 +17,7 @@
 		\UCitem{Origen}{Teclado, mouse.}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        	  \item MSG24 Por el momento la página solicitada no está disponible
+        	  \item MSG24 Por el momento la página solicitada no está disponible.
 
         	\end{itemize}
         }
@@ -37,8 +37,8 @@
 \begin{UCtrayectoria}{Principal}
 
 
-    \UCpaso Muestra la interfaz de usuario Consulta tareas \IUref{xxxxx}. %no tengo la vista.
-    \UCpaso [\UCactor] Selecciona el botón \IUbutton {Ir A} de la unidad de aprendizaje que quiera consultar. \hyperref[SP2-CU1-A]{Trayectoria A}.
+    \UCpaso Muestra la interfaz de usuario Consulta tareas \IUref{SP2-IU-Consulta Tareas}{Consultar Tareas}. %no tengo la vista.
+    \UCpaso [\UCactor] Selecciona el botón \IUbutton {Consultar} de la unidad de aprendizaje que quiera consultar. \hyperref[SP2-CU1-A]{Trayectoria A}.
     \UCpaso  Muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
 
 \end{UCtrayectoria}
@@ -47,7 +47,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \label{SP2-CU1-A}
 \begin{UCtrayectoriaA}{A}{El usuario no tiene el permiso para acceder a la unidad de aprendizaje.}
-    \UCpaso Muestra el mensaje \MSGref{MSG24}{Por el momento la página solicitada no esta disponible}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
+    \UCpaso Muestra el mensaje \MSGref{MSG24}{Por el momento la página solicitada no esta disponible.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}.
 \end{UCtrayectoriaA} 
 
