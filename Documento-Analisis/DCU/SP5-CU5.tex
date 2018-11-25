@@ -68,20 +68,20 @@
 
 \begin{UCtrayectoriaA}{C}{Cambio en el cargo de un usuario.}
 	\UCpaso     El sistema ajustara las opciones de zona de trabajo de acuerdo con el cargo y el actor según la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo.}
-	\UCpaso     Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
+	\UCpaso     Continua en el paso 6 de la trayectoria principal del \UCref{SP5-CU5}.
 \end{UCtrayectoriaA}
 
 
 \begin{UCtrayectoriaA}{D}{El actor presiono el botón \IUbutton{Cancelar}.}
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-	\UCpaso[\UCactor] Cierra el mensaje presionando el boton \IUbutton{Aceptar} . [Trayectoria H]
+	\UCpaso[\UCactor] Cierra el mensaje presionando el boton \IUbutton{Aceptar} . [Trayectoria I]
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{E}{Se incumple la \BRref{BR3}{Gestión de Usuarios} o la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo}  o detecta inconsistencias con el modelo de datos.}
 	\UCpaso El sistema muestra el \MSGref{MSG35}{Escriba información valida.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
+	\UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP5-CU5}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
@@ -98,5 +98,8 @@
 
 \begin{UCtrayectoriaA}{G}{Uno o mas campos se dejaron vacíos.}
 	\UCpaso El sistema muestra el \MSGref{MSG44}{Este campo es requerido.} debajo de cada campo que no fue llenado. 
-	\UCpaso	Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
+	\UCpaso	Continúa en el paso 6 de la trayectoria principal del \UCref{SP5-CU5}.
+\end{UCtrayectoriaA}
+	\begin{UCtrayectoriaA}{I}{El actor presiono el botón \IUbutton{Cancelar}.}
+	\UCpaso Cierra el mensaje y continúa en el paso 6 de la trayectoria principal del \UCref{SP5-CU5}.	
 \end{UCtrayectoriaA}
