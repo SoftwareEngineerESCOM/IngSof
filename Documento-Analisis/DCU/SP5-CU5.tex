@@ -49,12 +49,12 @@
 	
 	\UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU2}{Gestionar empleados} la opción de editar un usuario. 
 	\UCpaso  El sistema verifica la existencia de registros en los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema} . [Trayectoria B] 
-	\UCpaso El sistema carga la información de los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema} según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria H]
+	\UCpaso El sistema carga la información de los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema} según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria F]
 	\UCpaso El sistema carga la pantalla  \IUref{IU7}{Editar empleados}. 
 	\UCpaso El sistema carga los datos del usuario correspondiente. 
 	\UCpaso[\UCactor] Modifica la información deseada del usuario.[Trayectoria C] [Trayectoria D]
 	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Finalizar}.
-	\UCpaso El sistema verifica la consistencia de la información. [Trayectoria E] [Trayectoria I]
+	\UCpaso El sistema verifica la consistencia de la información. [Trayectoria E] [Trayectoria G]
 	\UCpaso El sistema realiza la modificación de la información del empleado. [Trayectoria F] 
 	\UCpaso  El sistema muestra el \MSGref{MSG27}{Empleado modificado}.    
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}
@@ -63,7 +63,7 @@
 \begin{UCtrayectoriaA}{B}{No existen registros en los catálogos.}
 	\UCpaso     El sistema muestra el \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso El sistema muestra la interfaz de usuario \IUref{IU7}{Editar empleados}.
+	\UCpaso El sistema continua en la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{Cambio en el cargo de un usuario.}
@@ -78,28 +78,25 @@
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{E}{Se incumple la \BRref{BR3}{Gestión de Usuarios} o la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo}  o la  \BRref{BR30}{Información personal de usuarios y/o recursos humanos} o la \BRref{BR35}{Información laboral de los usuarios y recursos humanos} en la definición de cada campo.}
+\begin{UCtrayectoriaA}{E}{Se incumple la \BRref{BR3}{Gestión de Usuarios} o la \BRref{BR4}{Cada Usuario debe estar relacionado a una zona de trabajo}  o detecta inconsistencias con el modelo de datos.}
 	\UCpaso El sistema muestra el \MSGref{MSG35}{Escriba información valida.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
 \end{UCtrayectoriaA}
 
-
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 
 \begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
-	\UCpaso El sistema muestra el mensaje\MSGref{MSG25}{Servicios no disponibles.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso El sistema muestra  la interfaz de usuario  \IUref{IU7}{Editar empleados}.
+	\UCpaso El sistema muestra o regresa a la interfaz de usuario  \IUref{IU7}{Editar empleados}.
 \end{UCtrayectoriaA}
 
 
+%------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
 
-\begin{UCtrayectoriaA}{H}{El actor presiono el botón \IUbutton{Cancelar}.}
-	\UCpaso Cierra el mensaje y continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.	
-\end{UCtrayectoriaA}
-\begin{UCtrayectoriaA}{I}{Uno o mas campos de la \BRref{BR30}{Información personal de usuarios y/o recursos humanos} o la \BRref{BR35}{Información laboral de los usuarios y recursos humanos} están vacíos.}
+
+\begin{UCtrayectoriaA}{G}{Uno o mas campos se dejaron vacíos.}
 	\UCpaso El sistema muestra el \MSGref{MSG44}{Este campo es requerido.} debajo de cada campo que no fue llenado. 
 	\UCpaso	Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU5}.
 \end{UCtrayectoriaA}

@@ -1,5 +1,5 @@
 
-\begin{UseCase}{SP5-CU3}{Consultar usuarios}{El \hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA} y  \hyperlink{JIE}{JIE}  podrá visualizar la información de los empleados.}
+\begin{UseCase}{SP5-CU3}{Consultar usuarios.}{El \hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA} y  \hyperlink{JIE}{JIE}  podrá visualizar la información de los empleados.}
 	\UCitem{Versión}{\color{Gray}3.0}
 	\UCitem{Autor}{\color{Gray}Hernández Ruiz Rafael}
 	\UCitem{Supervisa}{\color{Gray}Abigail Nicolás Sayago}
@@ -25,21 +25,21 @@
 	}
 	\UCitem{Destino}{Pantalla.}
 	\UCitem{Precondiciones}{ 1.- Debe existir por lo menos un registro en el catálogo de la cargos \BRref{BR14}{Catálogos del Sistema}.}
-	\UCitem{Postcondiciones}{1.- Habilita la llamada a los casos de uso  SP5-CU10, SP5-CU11.}
+	\UCitem{Postcondiciones}{1.- Habilita la llamada a los casos de uso  SP5-CU4, SP5-CU5.}
 	\UCitem{Errores}{ \begin{itemize}
 			\item El catálogo de cargos no se cargo correctamente.
 			\item Hubo un problema al conectarse con el servidor.
 			\item Hubo un problema al conectarse con la base de datos. \end{itemize}}
 	\UCitem{Estado}{Gestión.}
 	\UCitem{Observaciones}{}
-	\UCitem{Puntos de extensión}{Casos de uso  \UCref{SP5-CU5}}
+	\UCitem{Puntos de extensión}{Casos de uso \UCref{SP5-CU5}, \UCref{SP5-CU4}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
 	
 	\UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU1}{Menú} la opción de gestionar usuarios. 
-	\UCpaso  El sistema verifica la existencia de registros del catalogo de la \BRref{BR14}{Catálogos del Sistema} para cargos  y carga los indicados para el actor según la \BRref{BR3}{Gestión de Usuarios} . [Trayectoria B] 
-	\UCpaso El sistema carga la pantalla  \IUref{IU2}{Gestionar empleados}. [Trayectoria G] 
+	\UCpaso  El sistema verifica la existencia de registros del catalogo de la \BRref{BR14}{Catálogos del Sistema} para cargos  y carga los indicados para el actor según la \BRref{BR3}{Gestión de Usuarios} . [Trayectoria B] [Trayectoria F] 
+	\UCpaso El sistema carga la pantalla  \IUref{IU2}{Gestionar empleados}.
 	\UCpaso[\UCactor] Selecciona el cargo de los empleados a buscar. 
 	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Buscar}.  [Trayectoria C] 
 	
@@ -49,7 +49,7 @@
 \begin{UCtrayectoriaA}{B}{No existen registros en el catálogo de cargos.}
 	\UCpaso     El sistema muestra el 	\MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso  El sistema muestra la pantalla  \IUref{IU2}{Gestionar empleados}.
+	\UCpaso  El sistema continua en la interfaz de usuario \IUref{IU1}{Menú}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{No existen  empleados con el cargo seleccionado.}
@@ -74,7 +74,7 @@
 \begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso  El sistema muestra la pantalla  \IUref{IU2}{Gestionar empleados}.
+	\UCpaso  El sistema continua en la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
 
 

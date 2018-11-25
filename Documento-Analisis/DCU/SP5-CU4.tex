@@ -46,18 +46,18 @@
 	
 	\UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU2}{Gestionar empleados} el botón \IUbutton{+}.
 	\UCpaso  El sistema verifica la existencia de registros en los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema}. [Trayectoria B] 
-	\UCpaso El sistema carga la información de los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema} según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria H]
+	\UCpaso El sistema carga la información de los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema} según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria G]
 	\UCpaso El sistema carga la pantalla  \IUref{IU8}{Registrar empleados}. 
 	\UCpaso[\UCactor] Ingresa el nombre del usuario.  [Trayectoria D] 
 	\UCpaso[\UCactor] Ingresa el primer apellido del usuario.  [Trayectoria D]
 	\UCpaso[\UCactor] Ingresa el segundo apellido del usuario.  [Trayectoria D]  
-	\UCpaso[\UCactor] selecciona el titulo del usuario.  [Trayectoria D]
-	\UCpaso[\UCactor] selecciona los cargos del usuario. [Trayectoria C]  [Trayectoria D] 
+	\UCpaso[\UCactor] Selecciona el titulo del usuario.  [Trayectoria D]
+	\UCpaso[\UCactor] Selecciona los cargos del usuario. [Trayectoria C]  [Trayectoria D] 
 	\UCpaso[\UCactor] Ingresa el correo del usuario.  [Trayectoria D] 
 	\UCpaso[\UCactor] Ingresa la contraseña del usuario.  [Trayectoria D]
 	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Registrar}. 
-	\UCpaso El sistema verifica la consistencia de la información conforme al modelo de datos. [Trayectoria E] [Trayectoria F][Trayectoria J]
-	\UCpaso El sistema registra al empleado. [Trayectoria H]
+	\UCpaso El sistema verifica la consistencia de la información conforme al modelo de datos. [Trayectoria E] [Trayectoria F][Trayectoria H]
+	\UCpaso El sistema registra al empleado. [Trayectoria G]
 	\UCpaso  El sistema muestra el \MSGref{MSG5}{Registro finalizado exitosamente}.    
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
@@ -67,7 +67,7 @@
 \begin{UCtrayectoriaA}{B}{No existen registros en los catálogos.}
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso El sistema muestra la interfaz de usuario  \IUref{IU8}{Registrar empleados}.
+	\UCpaso El sistema continua en la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{El actor selecciona el cargo del empleado.}
@@ -77,7 +77,7 @@
 
 \begin{UCtrayectoriaA}{D}{El actor presiono el botón \IUbutton{Cancelar}.}
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-	\UCpaso[\UCactor] Cierra el mensaje presionando el boton \IUbutton{Aceptar}. [Trayectoria K]
+	\UCpaso[\UCactor] Cierra el mensaje presionando el boton \IUbutton{Aceptar}. [Trayectoria I]
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 \end{UCtrayectoriaA}
 
@@ -94,19 +94,20 @@
 	\end{UCtrayectoriaA}
 	
 	
-	%------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
+	%------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
 	
-	\begin{UCtrayectoriaA}{H}{La base de datos no está disponible, o hubo un error de conexión.}
-		\UCpaso El sistema muestra el mensaje\MSGref{MSG25}{Servicios no disponibles.}
+	\begin{UCtrayectoriaA}{G}{La base de datos no está disponible, o hubo un error de conexión.}
+		\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
 		\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-		\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
+		\UCpaso El sistema continua o regresa en la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
 	\end{UCtrayectoriaA}
 	
 	
-	\begin{UCtrayectoriaA}{J}{Uno o mas campos están vacíos.}
+	\begin{UCtrayectoriaA}{H}{Uno o mas campos se dejaron vacíos.}
 		\UCpaso El sistema muestra el mensaje \MSGref{MSG44}{Este campo es requerido} debajo de cada campo que no fue llenado. 
 		\UCpaso	Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
 	\end{UCtrayectoriaA}
-	\begin{UCtrayectoriaA}{K}{El actor presiono el botón \IUbutton{Cancelar}.}
+
+	\begin{UCtrayectoriaA}{I}{El actor presiono el botón \IUbutton{Cancelar}.}
 		\UCpaso Cierra el mensaje y continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.	
 	\end{UCtrayectoriaA}
