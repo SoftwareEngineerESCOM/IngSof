@@ -1,9 +1,9 @@
-\begin{UseCase}{SP2-CU9}{ Autorizar Sección Perfil Docente de Unidad de Aprendizaje}{El analista podrá visualizar la información de la sección de Perfil Docente  de la unidad de aprendizaje para poder aprobarla.} 
+\begin{UseCase}{SP2-CU9}{ Autorizar Sección Sistema de Evaluación de Unidad de Aprendizaje}{El analista podrá visualizar la información de la sección de Sistema de Evaluación  de la unidad de aprendizaje para poder aprobarla.}  
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Domínguez López Humberto}
 		\UCitem{Supervisa}{\color{Gray}Parra Garcilazo Cinthya Dolores}
 		\UCitem{Actor}{Analista}
-		\UCitem{Propósito}{Que el analista conozca la sección de Perfil Docente de la propuesta de Unidad de Aprendizaje para determinar si necesita correcciones.}
+		\UCitem{Propósito}{Que el analista conozca la sección deSistema de Evaluación de la propuesta de Unidad de Aprendizaje para determinar si necesita correcciones.}
 		\UCitem{Entradas}{Clic en botones:
           \begin{itemize}
           	\item Finalizar Revisión.
@@ -11,7 +11,7 @@
             \item Cancelar.
             \item Nuevo Comentario.
             \item Subrayar.
-            \item Eliminar subrayado.
+            \item Eliminar Subrayado.
             \item Editar Comentario.
             \item Eliminar Comentario.
           \end{itemize}
@@ -33,6 +33,16 @@
 		\UCitem{Precondiciones}{ Se llamó el caso de uso SP2-CU1}
 		\UCitem{Postcondiciones}{Se habilita la llamada a los casos de uso SP2-CU11, SP2-CU14.}
 		\UCitem{Errores}{}
+		\UCitem{Puntos de Extensión}
+		{
+		\begin{itemize}
+			\item \UCref{SP2-CU11}: Agregar comentarios a propuesta de unidad de aprendizaje.
+			\item \UCref{SP2-CU12}: Modificar comentarios a propuesta de Unidad de Aprendizaje.
+			\item \UCref{SP2-CU13}: Eliminar comentarios en sección de propuesta de Unidad de Aprendizaje.
+			\item \UCref{SP2-CU14}: Agregar subrayado a propuesta de Unidad de Aprendizaje.
+			\item \UCref{SP2-CU15}: Eliminar subrayado en sección de propuesta de Unidad de Aprendizaje.
+		\end{itemize}
+		}
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
 \end{UseCase}
@@ -40,22 +50,22 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-    \UCpaso[\UCactor] presiona el botón  \IUbutton{Perfil Docente} de la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
+    \UCpaso[\UCactor] presiona el botón  \IUbutton{ Sistema de Evaluación} de la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
 
-    \UCpaso El sistema obtiene la información correspondiente a la sección de Perfil Docente.
+    \UCpaso El sistema obtiene la información correspondiente a la sección de Sistema de Evaluación con base en el modelo de datos.
     
-    \UCpaso El sistema obtiene la bitácora de comentarios correspondientes a la sección Perfil Docente de la Unidad de Aprendizaje. 
+    \UCpaso El sistema obtiene la bitácora de comentarios correspondientes a la sección Sistema de Evaluación de la Unidad de Aprendizaje. 
     
-    \UCpaso El sistema verifica que la sección Perfil Docente de la Unidad de Aprendizaje no haya sido aprobada anteriormente. \BRref{BR9}{Aprobación de Tareas Seccionadas.} \hyperlink{SP2-CU9-A1}{Trayectoria A1}. 
+    \UCpaso El sistema verifica que la sección Sistema de Evaluación de la Unidad de Aprendizaje no haya sido aprobada anteriormente. \BRref{BR9}{Aprobación de Tareas Seccionadas.} \hyperlink{SP2-CU9-A1}{Trayectoria A1}. 
     
-    \UCpaso El sistema muestra la interfaz de usuario  \IUref{SP2-IU-Perfil-Docente}{Sección Perfil Docente}. 
+    \UCpaso El sistema muestra la interfaz de usuario  \IUref{SP2-IU-SE}{Sección Sistema de Evaluación}. 
     
     \UCpaso[\UCactor] presiona el botón \IUbutton{Finalizar Revisión}. \hyperlink{SP2-CU9-A2}{Trayectoria A2}.
     \UCpaso El sistema muestra el \MSGref{MSG16}{¿Está seguro de Finalizar la Revisión?}.
     
     \UCpaso	El sistema verifica que no existan nuevos comentarios o subrayados para la sección de la Unidad de Aprendizaje. \BRref{BR8}{Aprobación de Tareas.} \hyperlink{SP2-CU9-A3}{Trayectoria A3}. 
     
-    \UCpaso El sistema pone el estado de la sección Perfil Docente en “Aprobado”.
+    \UCpaso El sistema pone el estado de la sección Sistema de Evaluación en “Aprobado”.
     
     \UCpaso El sistema muestra el mensaje \MSGref{MSG17}{Sección Aprobada}.
 
@@ -67,10 +77,13 @@
 
 \begin{UCtrayectoriaA}{A1}{La sección de la Unidad de Aprendizaje ya ha sido aprobada anteriormente.}
 
-	\hypertarget{SP2-CU9-A1}{\UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-Perfil-Docente}{Sección Perfil Docente}.}
+	\hypertarget{SP2-CU9-A1}{\UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-SE}{Sección Sistema de Evaluación}.}
     \UCpaso El sistema deshabilita los botones superiores: \IUbutton{Nuevo Comentario}, \IUbutton{Subrayar}, \IUbutton{Eliminar Subrayado}.
     \UCpaso El sistema deshabilita los botones inferiores: \IUbutton{Cancelar}, \IUbutton{Guardar}, \IUbutton{Finalizar Revisión}.
     \UCpaso El sistema deshabilita los botones laterales de: \IUbutton{Modificar Comentario}, \IUbutton{Eliminar Comentario}.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG45}{Sección Aprobada con Anterioridad}.
+    \UCpaso[\UCactor] presiona el botón \IUbutton{Finalizar Revisión}.
+    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A2 -------------------------
@@ -78,7 +91,7 @@
 \begin{UCtrayectoriaA}{A2}{El analista no desea finalizar aun la revisión de la sección de la Unidad de Aprendizaje.}
 
     \hypertarget{SP2-CU9-A2}{\UCpaso[\UCactor] presiona el botón \IUbutton{Guardar} \hyperlink{SP2-CU9-A2.1}{Trayectoria A2.1}}. 
-    \UCpaso El sistema guarda los nuevos comentaros y subrayados hechos durante esa sesión.
+    \UCpaso El sistema guarda los nuevos comentarios y subrayados hechos durante esa sesión.
     \UCpaso El sistema muestra el mensaje \MSGref{MSG19}{Anotaciones En Sección Guardadas Correctamente}.
     \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
 \end{UCtrayectoriaA}
@@ -97,7 +110,7 @@ Se perderán las Anotaciones que no hayas guardado anteriormente. .
 	
 \begin{UCtrayectoriaA}{A3}{El analista realizo comentarios y subrayados para su posterior corrección en la sección de la Unidad de Aprendizaje.} 
 
-	\hypertarget{SP2-CU9-A3}{\UCpaso El sistema pone el estado de la sección Perfil Docente de Unidad de Aprendizaje en “Revisado”.}
+	\hypertarget{SP2-CU9-A3}{\UCpaso El sistema pone el estado de la sección Sistema de Evaluación de Unidad de Aprendizaje en “Revisado”.}
     \UCpaso El sistema muestra el mensaje \MSGref{MSG18}{Revisión de Sección Finalizada}.
     \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
 \end{UCtrayectoriaA}

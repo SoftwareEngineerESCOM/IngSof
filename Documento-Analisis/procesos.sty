@@ -73,9 +73,8 @@
 	\hypersetup{linkcolor=refColor}%
 }
 
-\newcommand{\MSGdes}[3]{%
+\newcommand{\MSGdes}[2]{%
 	\hypertarget{#1}{\subsection{#1 #2}}%
-	Descripción: #3%
 	\begin{figure}[htbp!]%
 		\begin{center}%
 			\includegraphics[width=0.75\textwidth]{images/MSG/ancla}%
@@ -263,8 +262,7 @@
 
 \newenvironment{BussinesRule}[2]%linea original
 {%
-	\hypertarget{#1}{}%Linea original
-	\noindent{\large{\bf Regla de Negocio:} #1 #2}%line Original
+	\hypertarget{#1}{\section{#1 #2}}%Linea original
 	\begin{description}\addtolength{\itemsep}{-0.5\baselineskip}%
 }
 {%

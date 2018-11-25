@@ -1,5 +1,5 @@
 \chapter{Sprint 2 Autorización de seccción de Unidad de Aprendizaje}
-\begin{UseCase}{SP2-CU5}{ Autorizar Sección Descripción de Unidad de Aprendizaje }{El usuario podrá registrar una o más referencias bibliográficas en el sistema.}
+\begin{UseCase}{SP2-CU5}{ Autorizar Sección Programa Sintético de Unidad de Aprendizaje }{El analista podrá visualizar la información de la sección de Programa Sintético de la unidad de aprendizaje para poder aprobarla.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Domínguez López Humberto}
 		\UCitem{Supervisa}{\color{Gray}Parra Garcilazo Cinthya Dolores}
@@ -12,7 +12,7 @@
             \item Cancelar.
             \item Nuevo Comentario.
             \item Subrayar.
-            \item Eliminar subrayado.
+            \item Eliminar Subrayado.
             \item Editar Comentario.
             \item Eliminar Comentario.
           \end{itemize}
@@ -34,6 +34,16 @@
 		\UCitem{Precondiciones}{ Se llamó el caso de uso SP2-CU1}
 		\UCitem{Postcondiciones}{Se habilita la llamada a los casos de uso SP2-CU11, SP2-CU14}
 		\UCitem{Errores}{}
+		\UCitem{Puntos de Extensión}
+		{
+		\begin{itemize}
+			\item \UCref{SP2-CU11}: Agregar comentarios a propuesta de unidad de aprendizaje.
+			\item \UCref{SP2-CU12}: Modificar comentarios a propuesta de Unidad de Aprendizaje.
+			\item \UCref{SP2-CU13}: Eliminar comentarios en sección de propuesta de Unidad de Aprendizaje.
+			\item \UCref{SP2-CU14}: Agregar subrayado a propuesta de Unidad de Aprendizaje.
+			\item \UCref{SP2-CU15}: Eliminar subrayado en sección de propuesta de Unidad de Aprendizaje.
+		\end{itemize}
+		}
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
 \end{UseCase}
@@ -41,22 +51,22 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-    \UCpaso[\UCactor] presiona el botón  \IUbutton{Descripción} de la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
+    \UCpaso[\UCactor] presiona el botón  \IUbutton{Programa Sintético} de la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
 
-    \UCpaso El sistema obtiene la información correspondiente a la sección de descripción.
+    \UCpaso El sistema obtiene la información correspondiente a la sección de Programa Sintético con base en el Modelo de Datos.
     
-    \UCpaso El sistema obtiene la bitácora de comentarios correspondientes a la sección de la Unidad de Aprendizaje. 
+    \UCpaso El sistema obtiene la bitácora de comentarios correspondientes a la sección Programa Sintético de la Unidad de Aprendizaje. 
     
     \UCpaso El sistema verifica que la sección de la Unidad de Aprendizaje no haya sido aprobada anteriormente. \BRref{BR9}{Aprobación de Tareas Seccionadas.} \hyperlink{SP2-CU5-A1}{Trayectoria A1}. 
     
-    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-DESCRIPCION}{Sección Descripción} .
+    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-PS}{Sección Programa Sintético} .
     
     \UCpaso[\UCactor] presiona el botón \IUbutton{Finalizar Revisión}. \hyperlink{SP2-CU5-A2}{Trayectoria A2}.
     \UCpaso El sistema muestra el \MSGref{MSG16}{¿Está seguro de Finalizar la Revisión?}.
     
-    \UCpaso	El sistema verifica que no existan nuevos comentarios o subrayados para la sección de la Unidad de Aprendizaje.\BRref{BR8}{Aprobación de Tareas.}\hyperlink{SP2-CU5-A3}{Trayectoria A3}. 
+    \UCpaso	El sistema verifica que no existan nuevos comentarios o subrayados para la sección Programa Sintético de la Unidad de Aprendizaje.\BRref{BR8}{Aprobación de Tareas.}\hyperlink{SP2-CU5-A3}{Trayectoria A3}. 
     
-    \UCpaso El sistema pone el estado de la sección Descripción  en “Aprobado”.
+    \UCpaso El sistema pone el estado de la sección Programa Sintético en “Aprobado”.
     
     \UCpaso El sistema muestra el mensaje \MSGref{MSG17}{Sección Aprobada}.
 
@@ -68,10 +78,14 @@
 
 \begin{UCtrayectoriaA}{A1}{La sección de la Unidad de Aprendizaje ya ha sido aprobada anteriormente.}
 
-	\hypertarget{SP2-CU5-A1}{\UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-DESCRIPCION}{Sección Descripción}}
+	\hypertarget{SP2-CU5-A1}{\UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-PS}{Sección Programa Sintético}}
     \UCpaso El sistema deshabilita los botones superiores: \IUbutton{Nuevo Comentario}, \IUbutton{Subrayar}, \IUbutton{Eliminar Subrayado}.
     \UCpaso El sistema deshabilita los botones inferiores: \IUbutton{Cancelar}, \IUbutton{Guardar}, \IUbutton{Finalizar Revisión}.
     \UCpaso El sistema deshabilita los botones laterales de: \IUbutton{Modificar Comentario}, \IUbutton{Eliminar Comentario}.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG45}{Sección Aprobada con Anterioridad}.
+    \UCpaso[\UCactor] presiona el botón \IUbutton{Finalizar Revisión}.
+    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
+    
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A2 -------------------------
@@ -79,7 +93,7 @@
 \begin{UCtrayectoriaA}{A2}{El analista no desea finalizar aun la revisión de la sección de la Unidad de Aprendizaje.}
 
     \hypertarget{SP2-CU5-A2}{\UCpaso[\UCactor] presiona el botón \IUbutton{Guardar} \hyperlink{SP2-CU5-A2.1}{Trayectoria A2.1}}. 
-    \UCpaso El sistema guarda los nuevos comentaros y subrayados hechos durante esa sesión.
+    \UCpaso El sistema guarda los nuevos comentarios y subrayados hechos durante esa sesión.
     \UCpaso El sistema muestra el mensaje \MSGref{MSG19}{Anotaciones En Sección Guardadas Correctamente}.
     \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
 \end{UCtrayectoriaA}
@@ -98,7 +112,7 @@ Se perderán las Anotaciones que no hayas guardado anteriormente. .
 	
 \begin{UCtrayectoriaA}{A3}{El analista realizo comentarios y subrayados para su posterior corrección en la sección de la Unidad de Aprendizaje.} 
 
-	\hypertarget{SP2-CU5-A3}{\UCpaso El sistema pone el estado de la sección Descripción de Unidad de Aprendizaje en “Revisado”.}
+	\hypertarget{SP2-CU5-A3}{\UCpaso El sistema pone el estado de la sección Programa Sintético de Unidad de Aprendizaje en “Revisado”.}
     \UCpaso El sistema muestra el mensaje \MSGref{MSG18}{Revisión de Sección Finalizada}.
     \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
 \end{UCtrayectoriaA}

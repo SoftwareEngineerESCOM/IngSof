@@ -11,7 +11,7 @@
             \item Cancelar.
             \item Nuevo Comentario.
             \item Subrayar.
-            \item Eliminar subrayado.
+            \item Eliminar Subrayado.
             \item Editar Comentario.
             \item Eliminar Comentario.
           \end{itemize}
@@ -32,6 +32,16 @@
 		\UCitem{Precondiciones}{ Se llamó el caso de uso SP2-CU1}
 		\UCitem{Postcondiciones}{Se habilita la llamada a los casos de uso SP2-CU11, SP2-CU14.}
 		\UCitem{Errores}{}
+		\UCitem{Puntos de Extensión}
+		{
+		\begin{itemize}
+			\item \UCref{SP2-CU11}: Agregar comentarios a propuesta de unidad de aprendizaje.
+			\item \UCref{SP2-CU12}: Modificar comentarios a propuesta de Unidad de Aprendizaje.
+			\item \UCref{SP2-CU13}: Eliminar comentarios en sección de propuesta de Unidad de Aprendizaje.
+			\item \UCref{SP2-CU14}: Agregar subrayado a propuesta de Unidad de Aprendizaje.
+			\item \UCref{SP2-CU15}: Eliminar subrayado en sección de propuesta de Unidad de Aprendizaje.
+		\end{itemize}
+		}
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
 \end{UseCase}
@@ -41,11 +51,11 @@
 
     \UCpaso[\UCactor] presiona el botón  \IUbutton{Unidad Temática} de la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
 	\UCpaso El sistema obtiene el nombre de las unidades temáticas pertenecientes a la unidad de aprendizaje.
-	\UCpaso El sistema muestra el nombre de las unidades temáticas en el menú de la interfaz  de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
+	\UCpaso El sistema muestra el nombre de las unidades temáticas en el menú de la interfaz  de usuario \IUref{SP2-IU-UT}{Unidades Temáticas}.
 
     \UCpaso[\UCactor] selecciona la unidad temática que desee visualizar.
      
-         \UCpaso El sistema obtiene la información correspondiente a la a la Unidad Temática seleccionada.
+         \UCpaso El sistema obtiene la información correspondiente a la Unidad Temática seleccionada con base en el Modelo de Datos.
          
     \UCpaso El sistema obtiene la bitácora de comentarios correspondientes a la Unidad Temática. 
     
@@ -74,6 +84,9 @@
     \UCpaso El sistema deshabilita los botones superiores: \IUbutton{Nuevo Comentario}, \IUbutton{Subrayar}, \IUbutton{Eliminar Subrayado}.
     \UCpaso El sistema deshabilita los botones inferiores: \IUbutton{Cancelar}, \IUbutton{Guardar}, \IUbutton{Finalizar Revisión}.
     \UCpaso El sistema deshabilita los botones laterales de: \IUbutton{Modificar Comentario}, \IUbutton{Eliminar Comentario}.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG45}{Sección Aprobada con Anterioridad}.
+    \UCpaso[\UCactor] presiona el botón \IUbutton{Finalizar Revisión}.
+    \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A2 -------------------------
@@ -81,7 +94,7 @@
 \begin{UCtrayectoriaA}{A2}{El analista no desea finalizar aun la revisión de la sección de la Unidad de Aprendizaje.}
 
     \hypertarget{SP2-CU10-A2}{\UCpaso[\UCactor] presiona el botón \IUbutton{Guardar} \hyperlink{SP2-CU10-A2.1}{Trayectoria A2.1}}. 
-    \UCpaso El sistema guarda los nuevos comentaros y subrayados hechos durante esa sesión.
+    \UCpaso El sistema guarda los nuevos comentarios y subrayados hechos durante esa sesión.
     \UCpaso El sistema muestra el mensaje \MSGref{MSG19}{Anotaciones En Sección Guardadas Correctamente}.
     \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}
 \end{UCtrayectoriaA}

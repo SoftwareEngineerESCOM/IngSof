@@ -1,111 +1,149 @@
 \BOOKMARK [0][-]{chapter.1}{Especificaci\363n de Reglas del Negocio}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Mensajes}{}% 2
-\BOOKMARK [1][-]{subsection.2.0.1}{MSG0 Correo y/o contrase\361a no v\341lidas.}{chapter.2}% 3
-\BOOKMARK [2][-]{subsection.2.0.2}{MSG1 \277Est\341 seguro que desea editar el Programa Acad\351mico?}{subsection.2.0.1}% 4
-\BOOKMARK [2][-]{subsection.2.0.3}{MSG2 \277Est\341 seguro que desea cancelar la consulta de Programas Acad\351micos?}{subsection.2.0.1}% 5
-\BOOKMARK [2][-]{subsection.2.0.4}{MSG3 \277Est\341 seguro que desea registrar un Programa Acad\351mico?}{subsection.2.0.1}% 6
-\BOOKMARK [2][-]{subsection.2.0.5}{MSG4 Los campos marcados con \(*\) son obligatorios.}{subsection.2.0.1}% 7
-\BOOKMARK [2][-]{subsection.2.0.6}{MSG5 Registro finalizado exitosamente.}{subsection.2.0.1}% 8
-\BOOKMARK [2][-]{subsection.2.0.7}{MSG6 \277Est\341 seguro que desea cancelar el registro?}{subsection.2.0.1}% 9
-\BOOKMARK [2][-]{subsection.2.0.8}{MSG7 Los cat\341logos necesarios no se han cargado, favor de intentarlo m\341s tarde.}{subsection.2.0.1}% 10
-\BOOKMARK [2][-]{subsection.2.0.9}{MSG8 El libro con el ISBN "N\372mero de ISBN.45em1ex2a existe.}{subsection.2.0.1}% 11
-\BOOKMARK [2][-]{subsection.2.0.10}{MSG9 Por el momento no se puede realizar el registro.}{subsection.2.0.1}% 12
-\BOOKMARK [2][-]{subsection.2.0.11}{MSG10 Error: Primero debe seleccionar el punto en donde se agregar\341 el comentario.}{subsection.2.0.1}% 13
-\BOOKMARK [2][-]{subsection.2.0.12}{MSG11 Error: Debe agregar un texto al nuevo comentario.}{subsection.2.0.1}% 14
-\BOOKMARK [2][-]{subsection.2.0.13}{MSG12 Ingrese su comentario en el nuevo campo de la bit\341cora.}{subsection.2.0.1}% 15
-\BOOKMARK [2][-]{subsection.2.0.14}{MSG13 Revisi\363n de paquete finalizada. Paquete enviado.}{subsection.2.0.1}% 16
-\BOOKMARK [2][-]{subsection.2.0.15}{MSG14 Error al finalizar paquete.}{subsection.2.0.1}% 17
-\BOOKMARK [2][-]{subsection.2.0.16}{MSG15 \277Est\341 seguro que desea cancelar la revisi\363n? Se perder\341n las anotaciones que no hayas guardado anteriormente.}{subsection.2.0.1}% 18
-\BOOKMARK [2][-]{subsection.2.0.17}{MSG16 \277Est\341 seguro de finalizar la revisi\363n?}{subsection.2.0.1}% 19
-\BOOKMARK [2][-]{subsection.2.0.18}{MSG17 Secci\363n Aprobada.}{subsection.2.0.1}% 20
-\BOOKMARK [2][-]{subsection.2.0.19}{MSG18 Revisi\363n de Secci\363n Finalizada.}{subsection.2.0.1}% 21
-\BOOKMARK [2][-]{subsection.2.0.20}{MSG19 Anotaciones en secci\363n guardadas correctamente.}{subsection.2.0.1}% 22
-\BOOKMARK [2][-]{subsection.2.0.21}{MSG20 Los campos no fueron contestados correctamente.}{subsection.2.0.1}% 23
-\BOOKMARK [2][-]{subsection.2.0.22}{MSG21 No hay usuarios registrados con ese cargo.}{subsection.2.0.1}% 24
-\BOOKMARK [2][-]{subsection.2.0.23}{MSG22 \277Seguro de eliminar al empleado: ''Nombre'' con correo: ''Correo'' del sistema?}{subsection.2.0.1}% 25
-\BOOKMARK [2][-]{subsection.2.0.24}{MSG23 Los porcentajes de evaluaci\363n no cumplen con el porcentaje total.}{subsection.2.0.1}% 26
-\BOOKMARK [2][-]{subsection.2.0.25}{MSG24 Por el momento la p\341gina solicitada no esta disponible.}{subsection.2.0.1}% 27
-\BOOKMARK [2][-]{subsection.2.0.26}{MSG25 Servicios no disponibles por el momento. Error: ''C\363digo de error''.}{subsection.2.0.1}% 28
-\BOOKMARK [2][-]{subsection.2.0.27}{MSG26 El correo ingresado no se encuentra registrado en el sistema.}{subsection.2.0.1}% 29
-\BOOKMARK [2][-]{subsection.2.0.28}{MSG27 Empleado modificado.}{subsection.2.0.1}% 30
-\BOOKMARK [2][-]{subsection.2.0.29}{MSG28 El autor: "Nombre Primer Apellido Segundo Apellido.45em1ex2a existe.}{subsection.2.0.1}% 31
-\BOOKMARK [2][-]{subsection.2.0.30}{MSG29 \277Est\341 seguro que desea cancelar? Se perder\341n todos los avances sin guardar.}{subsection.2.0.1}% 32
-\BOOKMARK [2][-]{subsection.2.0.31}{MSG30 \277Est\341 seguro que desea finalizar? Ya no podr\341 realizar modificaciones.}{subsection.2.0.1}% 33
-\BOOKMARK [2][-]{subsection.2.0.32}{MSG31 Los cambios se guardaron exitosamente.}{subsection.2.0.1}% 34
-\BOOKMARK [2][-]{subsection.2.0.33}{MSG32 Todos los campos son obligatorios.}{subsection.2.0.1}% 35
-\BOOKMARK [2][-]{subsection.2.0.34}{MSG33 El Recurso Humano con el correo [Correo electr\363nico del Empleado] ya existe.}{subsection.2.0.1}% 36
-\BOOKMARK [2][-]{subsection.2.0.35}{MSG34 \277Est\341 seguro que desea Eliminar al Recurso Humano con correo [Correo electr\363nico del Empleado]?}{subsection.2.0.1}% 37
-\BOOKMARK [2][-]{subsection.2.0.36}{MSG35 Escriba informaci\363n valida.}{subsection.2.0.1}% 38
-\BOOKMARK [2][-]{subsection.2.0.37}{MSG36 Error, el usuario ya existe en el sistema.}{subsection.2.0.1}% 39
-\BOOKMARK [2][-]{subsection.2.0.38}{MSG37 Ha ocurrido un error: ''C\363digo de error''.}{subsection.2.0.1}% 40
-\BOOKMARK [2][-]{subsection.2.0.39}{MSG38 \277Est\341 seguro que desea eliminar la Unidad de Aprendizaje [Nombre de la Unidad de Aprendizaje]?}{subsection.2.0.1}% 41
-\BOOKMARK [2][-]{subsection.2.0.40}{MSG39 \277Est\341 seguro que desea eliminar el Semestre [N\372mero del Semestre]?}{subsection.2.0.1}% 42
-\BOOKMARK [2][-]{subsection.2.0.41}{MSG40 \277Est\341 seguro que desea generar una tarea para el registro de un nuevo Plan de Estudios?}{subsection.2.0.1}% 43
-\BOOKMARK [2][-]{subsection.2.0.42}{MSG41 Debe llenar el Programa Sint\351tico para realizar este registro.}{subsection.2.0.1}% 44
-\BOOKMARK [2][-]{subsection.2.0.43}{MSG42 Fecha invalida.}{subsection.2.0.1}% 45
-\BOOKMARK [2][-]{subsection.2.0.44}{MSG43 El nombre del Programa Acad\351mico ya est\341 registrado. Porfavor c\341mbielo.}{subsection.2.0.1}% 46
-\BOOKMARK [0][-]{chapter.3}{Identificaci\363n de Requerimientos}{}% 47
-\BOOKMARK [0][-]{chapter.4}{Sprint 1 Gesti\363n de paquetes y Unidad de Aprendizaje}{}% 48
-\BOOKMARK [1][-]{section.4.1}{SP2-CU1 \040Consultar contenido de propuesta de Unidad de Aprendizaje}{chapter.4}% 49
-\BOOKMARK [2][-]{subsection.4.1.1}{Descripci\363n completa}{section.4.1}% 50
-\BOOKMARK [2][-]{subsection.4.1.2}{Atributos importantes}{section.4.1}% 51
-\BOOKMARK [2][-]{subsection.4.1.3}{Trayectorias del Caso de Uso}{section.4.1}% 52
-\BOOKMARK [1][-]{section.4.2}{SP2-CU2 \040Consultar paquetes de Unidad de Aprendizaje del Jefe de Innovaci\363n}{chapter.4}% 53
-\BOOKMARK [2][-]{subsection.4.2.1}{Descripci\363n completa}{section.4.2}% 54
-\BOOKMARK [2][-]{subsection.4.2.2}{Atributos importantes}{section.4.2}% 55
-\BOOKMARK [2][-]{subsection.4.2.3}{Trayectorias del Caso de Uso}{section.4.2}% 56
-\BOOKMARK [1][-]{section.4.3}{SP2-CU3 Desasignar unidades de aprendizaje a un analista}{chapter.4}% 57
-\BOOKMARK [2][-]{subsection.4.3.1}{Descripci\363n completa}{section.4.3}% 58
-\BOOKMARK [2][-]{subsection.4.3.2}{Atributos importantes}{section.4.3}% 59
-\BOOKMARK [2][-]{subsection.4.3.3}{Trayectorias del Caso de Uso}{section.4.3}% 60
-\BOOKMARK [1][-]{section.4.4}{SP2-CU4 Finalizar revisi\363n de paquetes de propuestas de unidades de aprendizaje}{chapter.4}% 61
-\BOOKMARK [2][-]{subsection.4.4.1}{Descripci\363n completa}{section.4.4}% 62
-\BOOKMARK [2][-]{subsection.4.4.2}{Atributos importantes}{section.4.4}% 63
-\BOOKMARK [2][-]{subsection.4.4.3}{Trayectorias del Caso de Uso}{section.4.4}% 64
-\BOOKMARK [0][-]{chapter.5}{Sprint 2 Autorizaci\363n de seccci\363n de Unidad de Aprendizaje}{}% 65
-\BOOKMARK [1][-]{section.5.1}{SP2-CU5 \040Autorizar Secci\363n Descripci\363n de Unidad de Aprendizaje }{chapter.5}% 66
-\BOOKMARK [2][-]{subsection.5.1.1}{Descripci\363n completa}{section.5.1}% 67
-\BOOKMARK [2][-]{subsection.5.1.2}{Atributos importantes}{section.5.1}% 68
-\BOOKMARK [2][-]{subsection.5.1.3}{Trayectorias del Caso de Uso}{section.5.1}% 69
-\BOOKMARK [1][-]{section.5.2}{SP2-CU6 \040Autorizar Secci\363n Tiempos Asignados de Unidad de Aprendizaje}{chapter.5}% 70
-\BOOKMARK [2][-]{subsection.5.2.1}{Descripci\363n completa}{section.5.2}% 71
-\BOOKMARK [2][-]{subsection.5.2.2}{Atributos importantes}{section.5.2}% 72
-\BOOKMARK [2][-]{subsection.5.2.3}{Trayectorias del Caso de Uso}{section.5.2}% 73
-\BOOKMARK [1][-]{section.5.3}{SP2-CU7 \040Autorizar Secci\363n Evaluaci\363n y Acreditaci\363n de Unidad de Aprendizaje}{chapter.5}% 74
-\BOOKMARK [2][-]{subsection.5.3.1}{Descripci\363n completa}{section.5.3}% 75
-\BOOKMARK [2][-]{subsection.5.3.2}{Atributos importantes}{section.5.3}% 76
-\BOOKMARK [2][-]{subsection.5.3.3}{Trayectorias del Caso de Uso}{section.5.3}% 77
-\BOOKMARK [1][-]{section.5.4}{SP2-CU8 \040Autorizar Secci\363n Bibliograf\355a de Unidad de Aprendizaje}{chapter.5}% 78
-\BOOKMARK [2][-]{subsection.5.4.1}{Descripci\363n completa}{section.5.4}% 79
-\BOOKMARK [2][-]{subsection.5.4.2}{Atributos importantes}{section.5.4}% 80
-\BOOKMARK [2][-]{subsection.5.4.3}{Trayectorias del Caso de Uso}{section.5.4}% 81
-\BOOKMARK [1][-]{section.5.5}{SP2-CU9 \040Autorizar Secci\363n Perfil Docente de Unidad de Aprendizaje}{chapter.5}% 82
-\BOOKMARK [2][-]{subsection.5.5.1}{Descripci\363n completa}{section.5.5}% 83
-\BOOKMARK [2][-]{subsection.5.5.2}{Atributos importantes}{section.5.5}% 84
-\BOOKMARK [2][-]{subsection.5.5.3}{Trayectorias del Caso de Uso}{section.5.5}% 85
-\BOOKMARK [1][-]{section.5.6}{SP2-CU10 \040Autorizar Unidad Tem\341tica de Unidad de Aprendizaje}{chapter.5}% 86
-\BOOKMARK [2][-]{subsection.5.6.1}{Descripci\363n completa}{section.5.6}% 87
-\BOOKMARK [2][-]{subsection.5.6.2}{Atributos importantes}{section.5.6}% 88
-\BOOKMARK [2][-]{subsection.5.6.3}{Trayectorias del Caso de Uso}{section.5.6}% 89
-\BOOKMARK [0][-]{chapter.6}{sprint 3 Herramientas para verificar las secciones de propuesta de unidad de Aprendizaje}{}% 90
-\BOOKMARK [1][-]{section.6.1}{SP2-CU11 \040Agregar comentarios a propuesta de unidad de aprendizaje }{chapter.6}% 91
-\BOOKMARK [2][-]{subsection.6.1.1}{Descripci\363n completa}{section.6.1}% 92
-\BOOKMARK [2][-]{subsection.6.1.2}{Atributos importantes}{section.6.1}% 93
-\BOOKMARK [2][-]{subsection.6.1.3}{Trayectorias del Caso de Uso}{section.6.1}% 94
-\BOOKMARK [0][-]{chapter.7}{Pantallas}{}% 95
-\BOOKMARK [1][-]{section.7.1}{SP2-CU12 \040Modificar comentarios a propuesta de Unidad de Aprendizaje }{chapter.7}% 96
-\BOOKMARK [2][-]{subsection.7.1.1}{Descripci\363n completa}{section.7.1}% 97
-\BOOKMARK [2][-]{subsection.7.1.2}{Atributos importantes}{section.7.1}% 98
-\BOOKMARK [2][-]{subsection.7.1.3}{Trayectorias del Caso de Uso}{section.7.1}% 99
-\BOOKMARK [1][-]{section.7.2}{SP2-CU13 \040Eliminar comentarios en secci\363n de propuesta de Unidad de Aprendizaje }{chapter.7}% 100
-\BOOKMARK [2][-]{subsection.7.2.1}{Descripci\363n completa}{section.7.2}% 101
-\BOOKMARK [2][-]{subsection.7.2.2}{Atributos importantes}{section.7.2}% 102
-\BOOKMARK [2][-]{subsection.7.2.3}{Trayectorias del Caso de Uso}{section.7.2}% 103
-\BOOKMARK [1][-]{section.7.3}{SP2-CU14 \040Agregar subrayado a propuesta de Unidad de Aprendizaje }{chapter.7}% 104
-\BOOKMARK [2][-]{subsection.7.3.1}{Descripci\363n completa}{section.7.3}% 105
-\BOOKMARK [2][-]{subsection.7.3.2}{Atributos importantes}{section.7.3}% 106
-\BOOKMARK [2][-]{subsection.7.3.3}{Trayectorias del Caso de Uso}{section.7.3}% 107
-\BOOKMARK [1][-]{section.7.4}{SP2-CU15 \040Eliminar subrayado en secci\363n de propuesta de Unidad de Aprendizaje }{chapter.7}% 108
-\BOOKMARK [2][-]{subsection.7.4.1}{Descripci\363n completa}{section.7.4}% 109
-\BOOKMARK [2][-]{subsection.7.4.2}{Atributos importantes}{section.7.4}% 110
-\BOOKMARK [2][-]{subsection.7.4.3}{Trayectorias del Caso de Uso}{section.7.4}% 111
+\BOOKMARK [1][-]{section.1.1}{BR1 Jefe de Divisi\363n de Innovaci\363n Acad\351mica y Jefe de Departamento e Innovaci\363n curricular.}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{BR2 Jefes de Innovaci\363n Educativa.}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{BR3 Gesti\363n de Usuarios}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{BR4 Cada Usuario debe estar relacionado a una zona de trabajo.}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{BR5 M\341quina de Estados de una Tarea.}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{BR6 Tareas de Registro.}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.7}{BR7 Revisi\363n de Tareas.}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.8}{BR8 Aprobaci\363n de Tareas.}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.9}{BR9 Aprobaci\363n de Tareas Seccionada.}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.10}{BR10 Rechazo de Tareas.}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.11}{BR11 Asignar tareas.}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.12}{BR12 Tiempos de entregas.}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.13}{BR13 Todos los datos solicitados son obligatorios.}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.14}{BR14 Cat\341logos del Sistema.}{chapter.1}% 15
+\BOOKMARK [1][-]{section.1.15}{BR15 Planes de Estudios en re dise\361o por Programa Acad\351mico.}{chapter.1}% 16
+\BOOKMARK [1][-]{section.1.16}{BR16 El correo electr\363nico del empleado es \372nico.}{chapter.1}% 17
+\BOOKMARK [1][-]{section.1.17}{BR17 El nombre de la Unidad de Aprendizaje es \372nico.}{chapter.1}% 18
+\BOOKMARK [1][-]{section.1.18}{BR18 \040Longitud m\341xima de Unidad de aprendizaje.}{chapter.1}% 19
+\BOOKMARK [1][-]{section.1.19}{BR19 El nombre del Programa Acad\351mico es \372nico.}{chapter.1}% 20
+\BOOKMARK [1][-]{section.1.20}{BR20 Las horas totales deben de estar entre 350 y 450 horas.}{chapter.1}% 21
+\BOOKMARK [1][-]{section.1.21}{BR21 Un libro tiene un ISBN \372nico.}{chapter.1}% 22
+\BOOKMARK [1][-]{section.1.22}{BR22 Longitud del ISBN.}{chapter.1}% 23
+\BOOKMARK [1][-]{section.1.23}{BR23 Un libro con m\341s de 3 autores es s\363lo citado por los primeros 3.}{chapter.1}% 24
+\BOOKMARK [1][-]{section.1.24}{BR24 Debe existir al menos un criterio de evaluaci\363n para una Unidad de Aprendizaje.}{chapter.1}% 25
+\BOOKMARK [1][-]{section.1.25}{BR25 La suma de los porcentajes de cada evaluaci\363n debe ser igual a 100\045.}{chapter.1}% 26
+\BOOKMARK [1][-]{section.1.26}{BR26 Vigencia de una Unidad de Aprendizaje}{chapter.1}% 27
+\BOOKMARK [1][-]{section.1.27}{BR27 \040Longitud m\341xima de matricula.}{chapter.1}% 28
+\BOOKMARK [1][-]{section.1.28}{BR28 \040Longitud m\341xima de contrase\361a.}{chapter.1}% 29
+\BOOKMARK [1][-]{section.1.29}{BR29 Debe existir al menos un criterio de evaluaci\363n para la Relaci\363n de Pr\341cticas.}{chapter.1}% 30
+\BOOKMARK [1][-]{section.1.30}{BR30 Informaci\363n personal de usuarios y/o recursos humanos}{chapter.1}% 31
+\BOOKMARK [1][-]{section.1.31}{BR31 Informaci\363n de Programa Acad\351mico.}{chapter.1}% 32
+\BOOKMARK [1][-]{section.1.32}{BR32 \040Longitud m\341xima de nombre de Programa Acad\351mico.}{chapter.1}% 33
+\BOOKMARK [1][-]{section.1.33}{BR33 Informaci\363n del Plan de Estudio.}{chapter.1}% 34
+\BOOKMARK [1][-]{section.1.34}{BR34 Informaci\363n de Unidad de Aprendizaje.}{chapter.1}% 35
+\BOOKMARK [1][-]{section.1.35}{BR35 Informaci\363n laboral de los usuarios y recursos humanos.}{chapter.1}% 36
+\BOOKMARK [1][-]{section.1.36}{BR36 Calculo de Cr\351ditos TEPIC.}{chapter.1}% 37
+\BOOKMARK [0][-]{chapter.2}{Mensajes}{}% 38
+\BOOKMARK [1][-]{subsection.2.0.1}{MSG0 Correo y/o contrase\361a no v\341lidas.}{chapter.2}% 39
+\BOOKMARK [2][-]{subsection.2.0.2}{MSG1 \277Est\341 seguro que desea editar el Programa Acad\351mico?}{subsection.2.0.1}% 40
+\BOOKMARK [2][-]{subsection.2.0.3}{MSG2 \277Est\341 seguro que desea cancelar la consulta de Programas Acad\351micos?}{subsection.2.0.1}% 41
+\BOOKMARK [2][-]{subsection.2.0.4}{MSG3 \277Est\341 seguro que desea registrar un Programa Acad\351mico?}{subsection.2.0.1}% 42
+\BOOKMARK [2][-]{subsection.2.0.5}{MSG4 Los campos marcados con \(*\) son obligatorios.}{subsection.2.0.1}% 43
+\BOOKMARK [2][-]{subsection.2.0.6}{MSG5 Registro finalizado exitosamente.}{subsection.2.0.1}% 44
+\BOOKMARK [2][-]{subsection.2.0.7}{MSG6 \277Est\341 seguro que desea cancelar el registro?}{subsection.2.0.1}% 45
+\BOOKMARK [2][-]{subsection.2.0.8}{MSG7 Los cat\341logos necesarios no se han cargado, favor de intentarlo m\341s tarde.}{subsection.2.0.1}% 46
+\BOOKMARK [2][-]{subsection.2.0.9}{MSG8 El libro con el ISBN "N\372mero de ISBN.45em1ex2a existe.}{subsection.2.0.1}% 47
+\BOOKMARK [2][-]{subsection.2.0.10}{MSG9 Por el momento no se puede realizar el registro.}{subsection.2.0.1}% 48
+\BOOKMARK [2][-]{subsection.2.0.11}{MSG10 Error: Primero debe seleccionar el punto en donde se agregar\341 el comentario.}{subsection.2.0.1}% 49
+\BOOKMARK [2][-]{subsection.2.0.12}{MSG11 Error: Debe agregar un texto al nuevo comentario.}{subsection.2.0.1}% 50
+\BOOKMARK [2][-]{subsection.2.0.13}{MSG12 Ingrese su comentario en el nuevo campo de la bit\341cora.}{subsection.2.0.1}% 51
+\BOOKMARK [2][-]{subsection.2.0.14}{MSG13 Revisi\363n de paquete finalizada. Paquete enviado.}{subsection.2.0.1}% 52
+\BOOKMARK [2][-]{subsection.2.0.15}{MSG14 Error al finalizar paquete.}{subsection.2.0.1}% 53
+\BOOKMARK [2][-]{subsection.2.0.16}{MSG15 \277Est\341 seguro que desea cancelar la revisi\363n? Se perder\341n las anotaciones que no hayas guardado anteriormente.}{subsection.2.0.1}% 54
+\BOOKMARK [2][-]{subsection.2.0.17}{MSG16 \277Est\341 seguro de finalizar la revisi\363n?}{subsection.2.0.1}% 55
+\BOOKMARK [2][-]{subsection.2.0.18}{MSG17 Secci\363n Aprobada.}{subsection.2.0.1}% 56
+\BOOKMARK [2][-]{subsection.2.0.19}{MSG18 Revisi\363n de Secci\363n Finalizada.}{subsection.2.0.1}% 57
+\BOOKMARK [2][-]{subsection.2.0.20}{MSG19 Anotaciones en secci\363n guardadas correctamente.}{subsection.2.0.1}% 58
+\BOOKMARK [2][-]{subsection.2.0.21}{MSG20 Los campos no fueron contestados correctamente.}{subsection.2.0.1}% 59
+\BOOKMARK [2][-]{subsection.2.0.22}{MSG21 No hay usuarios registrados con ese cargo.}{subsection.2.0.1}% 60
+\BOOKMARK [2][-]{subsection.2.0.23}{MSG22 \277Seguro de eliminar al empleado: ''Nombre'' con correo: ''Correo'' del sistema?}{subsection.2.0.1}% 61
+\BOOKMARK [2][-]{subsection.2.0.24}{MSG23 Los porcentajes de evaluaci\363n no cumplen con el porcentaje total.}{subsection.2.0.1}% 62
+\BOOKMARK [2][-]{subsection.2.0.25}{MSG24 Por el momento la p\341gina solicitada no esta disponible.}{subsection.2.0.1}% 63
+\BOOKMARK [2][-]{subsection.2.0.26}{MSG25 Servicios no disponibles por el momento. Error: ''C\363digo de error''.}{subsection.2.0.1}% 64
+\BOOKMARK [2][-]{subsection.2.0.27}{MSG26 El correo ingresado no se encuentra registrado en el sistema.}{subsection.2.0.1}% 65
+\BOOKMARK [2][-]{subsection.2.0.28}{MSG27 Empleado modificado.}{subsection.2.0.1}% 66
+\BOOKMARK [2][-]{subsection.2.0.29}{MSG28 El autor: "Nombre Primer Apellido Segundo Apellido.45em1ex2a existe.}{subsection.2.0.1}% 67
+\BOOKMARK [2][-]{subsection.2.0.30}{MSG29 \277Est\341 seguro que desea cancelar? Se perder\341n todos los avances sin guardar.}{subsection.2.0.1}% 68
+\BOOKMARK [2][-]{subsection.2.0.31}{MSG30 \277Est\341 seguro que desea finalizar? Ya no podr\341 realizar modificaciones.}{subsection.2.0.1}% 69
+\BOOKMARK [2][-]{subsection.2.0.32}{MSG31 Los cambios se guardaron exitosamente.}{subsection.2.0.1}% 70
+\BOOKMARK [2][-]{subsection.2.0.33}{MSG32 Todos los campos son obligatorios.}{subsection.2.0.1}% 71
+\BOOKMARK [2][-]{subsection.2.0.34}{MSG33 El Recurso Humano con el correo [Correo electr\363nico del Empleado] ya existe.}{subsection.2.0.1}% 72
+\BOOKMARK [2][-]{subsection.2.0.35}{MSG34 \277Est\341 seguro que desea Eliminar al Recurso Humano con correo [Correo electr\363nico del Empleado]?}{subsection.2.0.1}% 73
+\BOOKMARK [2][-]{subsection.2.0.36}{MSG35 Escriba informaci\363n valida.}{subsection.2.0.1}% 74
+\BOOKMARK [2][-]{subsection.2.0.37}{MSG36 Error, el usuario ya existe en el sistema.}{subsection.2.0.1}% 75
+\BOOKMARK [2][-]{subsection.2.0.38}{MSG37 Ha ocurrido un error: ''C\363digo de error''.}{subsection.2.0.1}% 76
+\BOOKMARK [2][-]{subsection.2.0.39}{MSG38 \277Est\341 seguro que desea eliminar la Unidad de Aprendizaje [Nombre de la Unidad de Aprendizaje]?}{subsection.2.0.1}% 77
+\BOOKMARK [2][-]{subsection.2.0.40}{MSG39 \277Est\341 seguro que desea eliminar el Semestre [N\372mero del Semestre]?}{subsection.2.0.1}% 78
+\BOOKMARK [2][-]{subsection.2.0.41}{MSG40 \277Est\341 seguro que desea generar una tarea para el registro de un nuevo Plan de Estudios?}{subsection.2.0.1}% 79
+\BOOKMARK [2][-]{subsection.2.0.42}{MSG41 Debe llenar el Programa Sint\351tico para realizar este registro.}{subsection.2.0.1}% 80
+\BOOKMARK [2][-]{subsection.2.0.43}{MSG42 Fecha invalida.}{subsection.2.0.1}% 81
+\BOOKMARK [2][-]{subsection.2.0.44}{MSG43 El nombre del Programa Acad\351mico ya est\341 registrado. Porfavor c\341mbielo.}{subsection.2.0.1}% 82
+\BOOKMARK [2][-]{subsection.2.0.45}{MSG44 Este campo es requerido.}{subsection.2.0.1}% 83
+\BOOKMARK [2][-]{subsection.2.0.46}{MSG45 Secci\363n Aprobada con Anterioridad.}{subsection.2.0.1}% 84
+\BOOKMARK [0][-]{chapter.3}{Identificaci\363n de Requerimientos}{}% 85
+\BOOKMARK [0][-]{chapter.4}{Sprint 1 Gesti\363n de paquetes y Unidad de Aprendizaje}{}% 86
+\BOOKMARK [1][-]{section.4.1}{SP2-CU1 \040Consultar contenido de propuesta de Unidad de Aprendizaje}{chapter.4}% 87
+\BOOKMARK [2][-]{subsection.4.1.1}{Descripci\363n completa}{section.4.1}% 88
+\BOOKMARK [2][-]{subsection.4.1.2}{Atributos importantes}{section.4.1}% 89
+\BOOKMARK [2][-]{subsection.4.1.3}{Trayectorias del Caso de Uso}{section.4.1}% 90
+\BOOKMARK [1][-]{section.4.2}{SP2-CU2 \040Consultar paquetes de Unidad de Aprendizaje del Jefe de Innovaci\363n}{chapter.4}% 91
+\BOOKMARK [2][-]{subsection.4.2.1}{Descripci\363n completa}{section.4.2}% 92
+\BOOKMARK [2][-]{subsection.4.2.2}{Atributos importantes}{section.4.2}% 93
+\BOOKMARK [2][-]{subsection.4.2.3}{Trayectorias del Caso de Uso}{section.4.2}% 94
+\BOOKMARK [1][-]{section.4.3}{SP2-CU3 Desasignar unidades de aprendizaje a un analista}{chapter.4}% 95
+\BOOKMARK [2][-]{subsection.4.3.1}{Descripci\363n completa}{section.4.3}% 96
+\BOOKMARK [2][-]{subsection.4.3.2}{Atributos importantes}{section.4.3}% 97
+\BOOKMARK [2][-]{subsection.4.3.3}{Trayectorias del Caso de Uso}{section.4.3}% 98
+\BOOKMARK [1][-]{section.4.4}{SP2-CU4 Finalizar revisi\363n de paquetes de propuestas de unidades de aprendizaje}{chapter.4}% 99
+\BOOKMARK [2][-]{subsection.4.4.1}{Descripci\363n completa}{section.4.4}% 100
+\BOOKMARK [2][-]{subsection.4.4.2}{Atributos importantes}{section.4.4}% 101
+\BOOKMARK [2][-]{subsection.4.4.3}{Trayectorias del Caso de Uso}{section.4.4}% 102
+\BOOKMARK [0][-]{chapter.5}{Sprint 2 Autorizaci\363n de seccci\363n de Unidad de Aprendizaje}{}% 103
+\BOOKMARK [1][-]{section.5.1}{SP2-CU5 \040Autorizar Secci\363n Programa Sint\351tico de Unidad de Aprendizaje }{chapter.5}% 104
+\BOOKMARK [2][-]{subsection.5.1.1}{Descripci\363n completa}{section.5.1}% 105
+\BOOKMARK [2][-]{subsection.5.1.2}{Atributos importantes}{section.5.1}% 106
+\BOOKMARK [2][-]{subsection.5.1.3}{Trayectorias del Caso de Uso}{section.5.1}% 107
+\BOOKMARK [1][-]{section.5.2}{SP2-CU6 \040Autorizar Secci\363n Programa en Extenso de Unidad de Aprendizaje}{chapter.5}% 108
+\BOOKMARK [2][-]{subsection.5.2.1}{Descripci\363n completa}{section.5.2}% 109
+\BOOKMARK [2][-]{subsection.5.2.2}{Atributos importantes}{section.5.2}% 110
+\BOOKMARK [2][-]{subsection.5.2.3}{Trayectorias del Caso de Uso}{section.5.2}% 111
+\BOOKMARK [1][-]{section.5.3}{SP2-CU7 \040Autorizar Secci\363n Relaci\363n de Pr\341cticas de Unidad de Aprendizaje}{chapter.5}% 112
+\BOOKMARK [2][-]{subsection.5.3.1}{Descripci\363n completa}{section.5.3}% 113
+\BOOKMARK [2][-]{subsection.5.3.2}{Atributos importantes}{section.5.3}% 114
+\BOOKMARK [2][-]{subsection.5.3.3}{Trayectorias del Caso de Uso}{section.5.3}% 115
+\BOOKMARK [1][-]{section.5.4}{SP2-CU8 \040Autorizar Secci\363n Bibliograf\355a de Unidad de Aprendizaje}{chapter.5}% 116
+\BOOKMARK [2][-]{subsection.5.4.1}{Descripci\363n completa}{section.5.4}% 117
+\BOOKMARK [2][-]{subsection.5.4.2}{Atributos importantes}{section.5.4}% 118
+\BOOKMARK [2][-]{subsection.5.4.3}{Trayectorias del Caso de Uso}{section.5.4}% 119
+\BOOKMARK [1][-]{section.5.5}{SP2-CU9 \040Autorizar Secci\363n Sistema de Evaluaci\363n de Unidad de Aprendizaje}{chapter.5}% 120
+\BOOKMARK [2][-]{subsection.5.5.1}{Descripci\363n completa}{section.5.5}% 121
+\BOOKMARK [2][-]{subsection.5.5.2}{Atributos importantes}{section.5.5}% 122
+\BOOKMARK [2][-]{subsection.5.5.3}{Trayectorias del Caso de Uso}{section.5.5}% 123
+\BOOKMARK [1][-]{section.5.6}{SP2-CU10 \040Autorizar Unidad Tem\341tica de Unidad de Aprendizaje}{chapter.5}% 124
+\BOOKMARK [2][-]{subsection.5.6.1}{Descripci\363n completa}{section.5.6}% 125
+\BOOKMARK [2][-]{subsection.5.6.2}{Atributos importantes}{section.5.6}% 126
+\BOOKMARK [2][-]{subsection.5.6.3}{Trayectorias del Caso de Uso}{section.5.6}% 127
+\BOOKMARK [0][-]{chapter.6}{sprint 3 Herramientas para verificar las secciones de propuesta de unidad de Aprendizaje}{}% 128
+\BOOKMARK [1][-]{section.6.1}{SP2-CU11 \040Agregar comentarios a propuesta de unidad de aprendizaje }{chapter.6}% 129
+\BOOKMARK [2][-]{subsection.6.1.1}{Descripci\363n completa}{section.6.1}% 130
+\BOOKMARK [2][-]{subsection.6.1.2}{Atributos importantes}{section.6.1}% 131
+\BOOKMARK [2][-]{subsection.6.1.3}{Trayectorias del Caso de Uso}{section.6.1}% 132
+\BOOKMARK [0][-]{chapter.7}{Pantallas}{}% 133
+\BOOKMARK [1][-]{section.7.1}{SP2-CU12 \040Modificar comentarios a propuesta de Unidad de Aprendizaje }{chapter.7}% 134
+\BOOKMARK [2][-]{subsection.7.1.1}{Descripci\363n completa}{section.7.1}% 135
+\BOOKMARK [2][-]{subsection.7.1.2}{Atributos importantes}{section.7.1}% 136
+\BOOKMARK [2][-]{subsection.7.1.3}{Trayectorias del Caso de Uso}{section.7.1}% 137
+\BOOKMARK [1][-]{section.7.2}{SP2-CU13 \040Eliminar comentarios en secci\363n de propuesta de Unidad de Aprendizaje }{chapter.7}% 138
+\BOOKMARK [2][-]{subsection.7.2.1}{Descripci\363n completa}{section.7.2}% 139
+\BOOKMARK [2][-]{subsection.7.2.2}{Atributos importantes}{section.7.2}% 140
+\BOOKMARK [2][-]{subsection.7.2.3}{Trayectorias del Caso de Uso}{section.7.2}% 141
+\BOOKMARK [1][-]{section.7.3}{SP2-CU14 \040Agregar subrayado a propuesta de Unidad de Aprendizaje }{chapter.7}% 142
+\BOOKMARK [2][-]{subsection.7.3.1}{Descripci\363n completa}{section.7.3}% 143
+\BOOKMARK [2][-]{subsection.7.3.2}{Atributos importantes}{section.7.3}% 144
+\BOOKMARK [2][-]{subsection.7.3.3}{Trayectorias del Caso de Uso}{section.7.3}% 145
+\BOOKMARK [1][-]{section.7.4}{SP2-CU15 \040Eliminar subrayado en secci\363n de propuesta de Unidad de Aprendizaje }{chapter.7}% 146
+\BOOKMARK [2][-]{subsection.7.4.1}{Descripci\363n completa}{section.7.4}% 147
+\BOOKMARK [2][-]{subsection.7.4.2}{Atributos importantes}{section.7.4}% 148
+\BOOKMARK [2][-]{subsection.7.4.3}{Trayectorias del Caso de Uso}{section.7.4}% 149
