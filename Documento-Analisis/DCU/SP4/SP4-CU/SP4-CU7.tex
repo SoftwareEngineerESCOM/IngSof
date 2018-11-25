@@ -1,4 +1,4 @@
-\begin{UseCase}{SP4-CU7}{Consultar Recursos Humanos}{El usuario Jefe de Innovación Educativa visualiza los Recursos Humanos Registrados de su Unidad Académica.}
+\begin{UseCase}{SP4-CU7}{Consultar Recursos Humanos}{El usuario Jefe de Innovación Educativa visualiza los Recursos Humanos registrados de su Unidad Académica.}
         \UCitem{Versión}{\color{Gray}1.1}
         \UCitem{Autor}{\color{Gray}Rivas Rojas Arturo}
         \UCitem{Supervisa}{\color{Gray}}
@@ -28,7 +28,7 @@
                 \item E1. No existen o no pudieron cargarse los catálogo necesarios.
             \end{itemize}
         }
-        \UCitem{Puntos de Exteción}{
+        \UCitem{Puntos de Extensión}{
             \begin{itemize}
                 \item \UCref{SP4-CU4}: Registrar Recurso Humano.
                 \item \UCref{SP4-CU10}: Editar Recurso Humano.
@@ -51,7 +51,7 @@
 \begin{UCtrayectoriaA}{A}{Los catálogos de la \BRref{BR14}{Catálogos existentes} necesarios no se pudieron cargar.}
     \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Muestra la interfaz de Inicio (abi) .
+    \UCpaso Muestra la interfaz de usuario \IUref{B-J}{Bienvenida al Jefe de Innovación Educativa}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 \begin{UCtrayectoriaA}{B}{El actor no selecciona ningún Cargo}
