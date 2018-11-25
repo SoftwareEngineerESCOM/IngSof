@@ -5,7 +5,7 @@
 		\UCitem{Autor}{\color{Gray}Parra Garcilazo Cinthya Dolores}
 		\UCitem{Supervisa}{\color{Gray}}
 		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Desarrollo e Innovación Curricular, analista y Jefe de la División de Innovación Académica}}
-		\UCitem{Propósito}{Verificar que el contenido que fue llenado por el capital humano de la unidad académica correspondiente pueda ser aprobado o cuene con áreas de oportunidad.}
+		\UCitem{Propósito}{Verificar que el contenido que fue llenado por el capital humano de la unidad académica correspondiente pueda ser aprobado o cuente con áreas de oportunidad.}
 		\UCitem{Entradas}{Las entradas para consultar una propuesta de unidades de aprendizaje son:
           \begin{itemize}
           	\item Unidad Académica
@@ -25,8 +25,6 @@
 		\UCitem{Precondiciones}{ 
 			\begin{itemize}
         	   \item El usuario debe estar autorizado para acceder a dicha unidad de aprendizaje.
-		   \item 
-
         	\end{itemize}
 		}
 		\UCitem{Postcondiciones}{Se visualiza el paquete de unidades de aprendizaje de un semestre en particular, elegido por el usuario.}
@@ -39,9 +37,9 @@
 \begin{UCtrayectoria}{Principal}
 
 
-    \UCpaso Muestra la interfaz de usuario Consulta tareas \IUref{xxxxx} %no tengo la vista.
+    \UCpaso Muestra la interfaz de usuario Consulta tareas \IUref{xxxxx}. %no tengo la vista.
     \UCpaso [\UCactor] Selecciona el botón \IUbutton {Ir A} de la unidad de aprendizaje que quiera consultar. \hyperref[SP2-CU1-A]{Trayectoria A}.
-    \UCpaso  Muestra la interfaz de usuario \IUref{Inicio}.
+    \UCpaso  Muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
 
 \end{UCtrayectoria}
 
@@ -51,5 +49,5 @@
 \begin{UCtrayectoriaA}{A}{El usuario no tiene el permiso para acceder a la unidad de aprendizaje.}
     \UCpaso Muestra el mensaje \MSGref{MSG24}{Por el momento la página solicitada no esta disponible}
     \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
-\end{UCtrayectoriaA}
+\end{UCtrayectoriaA} 
 
