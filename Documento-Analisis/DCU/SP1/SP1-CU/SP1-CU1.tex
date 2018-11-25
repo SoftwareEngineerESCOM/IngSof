@@ -1,3 +1,7 @@
+%REGISTRAR PROGRAMA SINTÉTICO: JORGE
+
+\chapter{Especificación de Casos de Uso}
+
 \begin{UseCase}{SP1-CU1}{Registrar Programa Sintético}{El usuario podrá registrar el Programa Sintético correspondiente a una Unidad de Aprendizaje.}
     \UCitem{Versión}{\color{Gray}1.0}
     \UCitem{Autor}{\color{Gray}Maldonado Carpio Jorge Enrique}
@@ -35,8 +39,7 @@
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Programa Sintético} de la interfaz de usuario \IUref{}{Página Principal}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Programa Sintético} de la interfaz de usuario \IUref{SP1IU}{Principal} 
     \UCpaso Verifica que los catálogos Unidad Académica, Programa Académico, Unidad de Aprendizaje, Semestre no tengan información.
     \UCpaso Carga la información de los catálogos.
     \UCpaso Muestra la interfaz de usuario \IUref{SP1-U1}{Registro de Programa Sintético}.
@@ -53,12 +56,8 @@
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B]
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados.[Trayectoria C]
     \UCpaso Guarda la información del Programa Sintético.
-
     \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
-
-
-
     \UCpaso Muestra la interfaz de usuario \IUref{IU1}{Página principal}.
 \end{UCtrayectoria}
 
