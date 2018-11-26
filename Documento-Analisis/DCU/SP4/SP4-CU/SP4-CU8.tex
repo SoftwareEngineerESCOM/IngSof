@@ -2,7 +2,7 @@
         \UCitem{Versión}{\color{Gray}1.0}
         \UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
         \UCitem{Supervisa}{\color{Gray}Evelyn Reyes}
-        \UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa}}
+        \UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa,Jefe de División de Innovación Académica y Jefe de Departamento de Desarrollo e Innovación Curricular}}
         \UCitem{Propósito}{Cambiar el nombre del Programa Académico en el sistema.}
         \UCitem{Entradas}{Las entradas para Editar Programa Académico:
           \begin{itemize}
@@ -35,10 +35,10 @@
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos} el cual tiene forma de lápiz. Existen las trayectorias alternativas [Trayectoria E] al presionar el botón Editar.
     \UCpaso Muestra la interfaz de usuario \IUref{EPA-J}{Editar Programa Académico}.
     \UCpaso Cargar el nombre del Programa Académico.[Trayectoria G]
-    \UCpaso[\UCactor] Ingresa el nuevo nombre del Programa Académico.Verifica que se cumpla la [Trayectoria D] (modelo de datos).
+    \UCpaso[\UCactor] Ingresa el nuevo nombre del Programa Académico.Verifica que se cumpla la [Trayectoria C] .
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. Existen las trayectorias alternativas [Trayectoria A] y [Trayectoria A.1] al presionar el botón Cancelar.
-    \UCpaso Verifica que se cumplan la \BRref{BR13}{Todos los datos solicitados son obligatorios} y la \BRref{BR19}{El nombre del Programa Académico es único.} [Trayectoria B][Trayectoria C][Trayectoria D]
-    \UCpaso Persiste los datos ingresados.Accionandoel botón \IUbutton{Finalizar} se activa la  [Trayectoria F].
+    \UCpaso Verifica que se cumplan la \BRref{BR13}{Todos los datos solicitados son obligatorios} y la \BRref{BR19}{El nombre del Programa Académico es único.} [Trayectoria B][Trayectoria D]
+    \UCpaso Persiste los datos ingresados.Accionando el botón \IUbutton{Finalizar} se activa la  [Trayectoria F].
     \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}.
@@ -82,13 +82,11 @@
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU8}.
 \end{UCtrayectoriaA}
     %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
-
 \begin{UCtrayectoriaA}{E}{Problemas con la Conexión}
     \UCpaso Muestra el mensaje \MSGref{MSG25}{ Servicios no disponibles por el momento.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa \IUref{B-J}{Pantalla Bienvenida al Jefe de Innovación Educativa}.
+    \UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa \IUref{B-J}{Pantalla Bienvenida al Jefe de Innovación Educativa} o \IUref{IU4}{Pantalla de bienvenida para el JDIA ó el JDIC.} para Jefe de División de Innovación Académica y Jefe de Departamento de Desarrollo e Innovación Curricular.
 \end{UCtrayectoriaA}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 
 \begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
