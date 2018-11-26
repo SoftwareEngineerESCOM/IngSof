@@ -1,6 +1,6 @@
 ﻿
 
-\begin{UseCase}{SP2-CU3}{Desasignar unidades de aprendizaje a un analista}{El usuario jefe de desarrollo e innovación curricular podrá modificar a los analistas encargados de una unidad de aprendizaje.}
+\begin{UseCase}{SP2-CU3}{Modifica información de la gestión de unidades de aprendizaje}{El usuario jefe de desarrollo e innovación curricular podrá modificar a los analistas encargados de una unidad de aprendizaje o la fecha de entrega de las correcciones.}
 		\UCitem{Versión}{\color{Gray}1.0}
 		\UCitem{Autor}{\color{Gray}Parra Garcilazo Cinthya Dolores}
 		\UCitem{Supervisa}{\color{Gray}}
@@ -29,15 +29,26 @@
 \begin{UCtrayectoria}{Principal}
 
 
-    \UCpaso Muestra la interfaz de usuario \IUref{GestionEncargado}.
+    \UCpaso Muestra la interfaz de usuario \IUref{SP2-IU-Consulta Paquetes}.
     \UCpaso [\UCactor] Presiona el botón \IUbutton {Editar}.
     \UCpaso Activa los campos de fecha y analista.
     \UCpaso [\UCactor] Selecciona el campo de analista.
     \UCpaso Despliega la lista de analistas registrados en la base de datos.
     \UCpaso[\UCactor] Selecciona una opcion.
-    \UCpaso [\UCactor] Presiona el botón \IUbutton {Confirmar}
-    \UCpaso Modifica en la base de datos al analista asignado para la revisión de la unidad de aprendizaje.
+    \UCpaso [\UCactor] Selecciona el campo de fecha.
+    \UCpaso Despliega un calendario con los días del mes correspondiente.
+    \UCpaso[\UCactor] Selecciona una opcion.
+    \UCpaso [\UCactor] Presiona el botón \IUbutton {Confirmar} \hyperref[SP2-CU1-A]{Trayectoria A}.
+    \UCpaso Modifica en la base de datos al analista asignado para la revisión de la unidad de aprendizaje y la fecha.
     \UCpaso Muestra el mensaje \MSGref {MSG31}{Los cambios se guardaron exitosamente.}
     \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
-
+    \UCpaso Modifica el estado del autor con el nombre del nuevo analista seleccionado y la fecha.
 \end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
+\label{SP2-CU2-A}
+\begin{UCtrayectoriaA}{A}{No hay conexión con la base de datos.}
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento. Error: ''Código de error''.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}.
+    \UCpaso Muestra intefaz de usuario \IUref{SP2-IU-Consulta Paquetes} sin las modificaciones solicitadas.
+\end{UCtrayectoriaA}
