@@ -18,10 +18,9 @@
         \UCitem{Salidas}{
             \begin{itemize}
                 \item \MSGref{MSG5}{Registro finalizado exitosamente.}
-                \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG44}{Este campo es requerido.}
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -41,7 +40,7 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{(+)Registrar Recurso Humano} de la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{(+)} de la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}
     \UCpaso Carga el catálogo de Cargo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga el catálogo de Título descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{RRH-J}{Registrar Recurso Humano}.
@@ -60,7 +59,7 @@
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{Los catálogos de la \BRref{BR14}{Catálogos existentes} necesarios no se pudieron cargar.}
-    \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}.
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}

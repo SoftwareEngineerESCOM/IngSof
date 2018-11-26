@@ -17,13 +17,12 @@
         \UCitem{Origen}{Teclado.}
         \UCitem{Salidas}{
             \begin{itemize}
-                \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
                 \item \MSGref{MSG44}{Este campo es requerido.}
                 \item \MSGref{MSG33}{El Recurso Humano con la Matrícula de Empleado [Número de Matrícula de Empleado] ya existe}
 			    \item \MSGref{MSG35}{Escribe información válida.}
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
         	\end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -35,19 +34,19 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Editar} de la interfaz de usuario \IUref{GRH-J}{Gestionar Recurso Humano} el cual tiene forma de lápiz.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Lapiz} de la interfaz de usuario \IUref{GRH-J}{Gestionar Recurso Humano}.
     \UCpaso Muestra la interfaz de usuario \IUref{ERH-J}{Editar Recurso Humano}.
     \UCpaso Carga el catálogo de Cargo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga el catálogo de Título descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga el catálogo de Lugar de Trabajo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
-    \UCpaso Carga los datos del Recurso Humano a editar.
+    \UCpaso Carga los datos del Recurso Humano a editar. [Trayectoria B]
 
     \UCpaso[\UCactor] Modifica los campos deseados.
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}.  Existen las trayectorias alternativas [Trayectoria B] y [Trayectoria B.1] al presionar el boton Cancelar.
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}.  Existen las trayectorias alternativas [Trayectoria C] y [Trayectoria C.1] al presionar el boton Cancelar.
 
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados(Exceptuando los apellidos los cuales son opcionales) conforme a la \BRref{BR13}{Todos los datos solicitados son obligatorios},\BRref{BR36}{Estructura de Información Laboral.} y \BRref{BR35}{Estructura de Recursos Humanos.}[Trayectoria C][Trayectoria D].
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados(Exceptuando los apellidos los cuales son opcionales) conforme a la \BRref{BR13}{Todos los datos solicitados son obligatorios},\BRref{BR36}{Estructura de Información Laboral.} y \BRref{BR35}{Estructura de Recursos Humanos.}[Trayectoria D][Trayectoria E].
 
-    \UCpaso Persiste los datos ingresados. [Trayectoria E]
+    \UCpaso Persiste los datos ingresados. [Trayectoria F]
 
     \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{ Los cambios se guardaron exitosamente.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
@@ -55,34 +54,40 @@
 \end{UCtrayectoria}
     %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{No cargan los catálogos de Recurso Humano.}
-    \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-\UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa(Pantalla de Abi).
+    \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-\begin{UCtrayectoriaA}{B}{El actor presiona el botón \IUbutton{Cancelar}.}
+    %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+\begin{UCtrayectoriaA}{B}{No se pudieron obtener los datos del Recurso Humano.}
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
+\end{UCtrayectoriaA}
+%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
+\begin{UCtrayectoriaA}{C}{El actor presiona el botón \IUbutton{Cancelar}.}
     \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recurso Humano}
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-\begin{UCtrayectoriaA}{B.1}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
+%------------------------ CU TRAYECTORIA ALTERNARIVA C.1 -------------------------
+\begin{UCtrayectoriaA}{C.1}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
     \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-\begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar.}
+%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
+\begin{UCtrayectoriaA}{D}{El sistema detecta uno o más campos sin contestar.}
     \UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido} debajo de los campos obligatorios sin contestar.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-\begin{UCtrayectoriaA}{D}{El Sistema detecta caracteres no alfanuméricos.}
+%------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
+\begin{UCtrayectoriaA}{E}{El Sistema detecta caracteres no alfanuméricos.}
     \UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida.} debajo del campo que incumplió con la \BRref{BR35}{Estructura de Recursos Humanos}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
-\begin{UCtrayectoriaA}{E}{Ocurre un error al momento de persistir los datos.}
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+\begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
     \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.

@@ -22,9 +22,8 @@
         		\item \MSGref{MSG44}{Este campo es requerido}
                 \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-                \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
 				\item \MSGref{MSG35}{Escribe información válida.}
-				\item \MSGref{MSG25}{Servicios no disponibles por el momento.}
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -57,7 +56,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El sistema no carga el catálogo del Plan de Estudios}
 	\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar}
-	\UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
+	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento. }
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
 	 \UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}
 \end{UCtrayectoriaA}
