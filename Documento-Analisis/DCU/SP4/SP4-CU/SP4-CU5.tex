@@ -1,11 +1,9 @@
-
-\begin{UseCase}{SP4-CU5}{Consultar Programas Académicos}{El usuario visualiza la información de los Programas Académicos regsitrados.}
+\begin{UseCase}{SP4-CU5}{Consultar Programas Académicos}{El usuario visualiza la información de los Programas Académicos registrados.}
         \UCitem{Versión}{\color{Gray}1.0}
         \UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
         \UCitem{Supervisa}{\color{Gray}Evelyn Reyes}
-        \UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa,Jefe de División de Innovación Académica,Jefe de Departamento de Desarrollo e Innovación Curricular
-    }}
-        \UCitem{Propósito}{El Usuario Jefe de Innovación Educativa puede visualizar una lista  de  los Programas Académicos almacenados en el Sistema asociados a su Unidad Académica.}
+        \UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa,Jefe de División de Innovación Académica,Jefe de Departamento de Desarrollo e Innovación Curricular}}
+        \UCitem{Propósito}{El Usuario puede visualizar una lista  de  los Programas Académicos almacenados en el Sistema asociados a su Unidad Académica.}
         \UCitem{Entradas}{Las entradas para la consulta del Programa Académico:
           \begin{itemize}
             \item Ninguna
@@ -14,13 +12,14 @@
         \UCitem{Origen}{Ninguno}
         \UCitem{Salidas}{
         \begin{itemize}
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
+                \item \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde.}
         \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
-        \UCitem{Precondiciones}{\begin{itemize}
+        \UCitem{Precondiciones}{
+                \begin{itemize}
                 \item El catálogo de tipo Unidad Académica debe de estar cargado en el sistema.
-                   \end{itemize}}
+                \end{itemize}}
         \UCitem{Postcondiciones}{Ninguna}
         \UCitem{Errores}{Ningún}
         \UCitem{Puntos de Exteción}{
@@ -35,25 +34,35 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Gestionar Programa Académico} del menú de la interfaz de usuario del Jefe de Innovación Educativa.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Gestionar Programa Académico} del menú de la interfaz de usuario del Jefe de Innovación Educativa  \IUref{B-J}{Pantalla Bienvenida al Jefe de Innovación Educativa}. Existen las trayectorias alternativas [Trayectoria D] al presionar el boton  \IUbutton{Gestionar Programa Académico}.
     \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programa Académico}.
-    \UCpaso Carga el catálogo de Unidad Académica definido en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A] y [Trayectoria C]
+    \UCpaso Carga el catálogo de Unidad Académica. [Trayectoria A] y [Trayectoria C]
     \UCpaso[\UCactor] Selecciona la Unidad Académica que desea como filtro. [Trayectoria B] Trayectoria Lanzada por el botón filtro.
     \UCpaso[\UCactor] Aplica el filtro presionando el botón \IUbutton{Buscar}.
-    \UCpaso Muestra tabla con los datos de los Programas Académicos que cumplan con el filtro..
+    \UCpaso Muestra tabla con los datos de los Programas Académicos que cumplan con el filtro.
 \end{UCtrayectoria}
+
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\begin{UCtrayectoriaA}{A}{Los catálogos no se pudieron cargar.}
-    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento}.
+\begin{UCtrayectoriaA}{G}{No se pudieron obtener los nombres de las Unidades Académicas.}
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Muestra la interfaz de Inicio (abi) .
+    \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+
 \begin{UCtrayectoriaA}{B}{El actor no selecciona ningúna Unidad Académica}
     \UCpaso Muestra una tabla con los datos de todos los Recursos Humanos.
     \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU7}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C-------------------------
+
 \begin{UCtrayectoriaA}{C}{El actor es el Jefe de Innovación Educativa}
     \UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU5} con filtro predeterminado de su Unidad Académica.
+\end{UCtrayectoriaA}
+
+%-------------------- CU TRAYECTORIA ALTERNARIVA D------------------------
+\begin{UCtrayectoriaA}{D}{Problemas con la Conexión}
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{ Servicios no disponibles por el momento.}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa \IUref{B-J}{Pantalla Bienvenida al Jefe de Innovación Educativa}.
 \end{UCtrayectoriaA}
