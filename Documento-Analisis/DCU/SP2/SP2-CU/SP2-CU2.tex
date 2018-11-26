@@ -38,15 +38,15 @@
 \begin{UCtrayectoria}{Principal}
 
 
-    \UCpaso Muestra la interfaz de usuario \IUref{SP2-IU-ConsultaPaquete}
-    \UCpaso [\UCactor] Selecciona el select de unidad académica
-    \UCpaso Consulta la base de datos\hyperref[SP2-CU5-A]{Trayectoria A}.
+    \UCpaso Muestra la interfaz de usuario \IUref{SP2-IU-ConsultaPaquete}.
+    \UCpaso [\UCactor] Selecciona select de unidad académica.
+    \UCpaso Consulta la base de datos\hyperref[SP2-CU2-A]{Trayectoria A}.
     \UCpaso Despliega las unidades académicas que se encuentran en revisión.
     \UCpaso [\UCactor] Selecciona una opción de unidades académicas.
-    \UCpaso Consulta los programas académicos que se encuentren en estado de revisión de esa unidad académica en la base de datos. \hyperref[SP2-CU5-A]{Trayectoria A}.
+    \UCpaso Consulta los programas académicos que se encuentren en estado de revisión de esa unidad académica en la base de datos. \hyperref[SP2-CU2-A]{Trayectoria A}.
     \UCpaso Despliega los resultados de la consulta de programas académicos.
     \UCpaso [\UCactor] Selecciona un programa académico.
-    \UCpaso Consulta los semestres que se encuentren en estado de revisión de esa unidad académica en la base de datos. \hyperref[SP2-CU5-A]{Trayectoria A}.
+    \UCpaso Consulta los semestres que se encuentren en estado de revisión de esa unidad académica en la base de datos. \hyperref[SP2-CU2-A]{Trayectoria A}.
     \UCpaso Despliega los resultados de los números de revisión.
     \UCpaso [\UCactor] Selecciona un número de revisión.
     \UCpaso [\UCactor] Presiona el botón. \IUbutton {Buscar}
@@ -57,10 +57,11 @@
 
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\label{SP2-CU5-A}
+\label{SP2-CU2-A}
 \begin{UCtrayectoriaA}{A}{No hay conexión con la base de datos.}
     \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento. Error: ''Código de error''.}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}.
+    \UCpaso Muestra intefaz de usuario \IUref{SP2-IU-ConsultaPaquete}.
 \end{UCtrayectoriaA}
 
 
