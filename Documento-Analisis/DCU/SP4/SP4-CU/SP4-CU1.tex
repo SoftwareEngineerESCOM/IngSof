@@ -1,105 +1,94 @@
 \begin{UseCase}{SP4-CU1}{Registrar Programa Académico}{El usuario Jefe de Innovación Educativa ingresa los datos de un Programa Académico.}
-		\UCitem{Versión}{\color{Gray}1.0}
-		\UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
-		\UCitem{Supervisa}{\color{Gray}Evelyn Reyes}
-		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa}}
-		\UCitem{Propósito}{Registrar el nombre del Programa Académico en el sistema.}
-		\UCitem{Entradas}{Las entradas para el registro de Programa Académico:
+        \UCitem{Versión}{\color{Gray}1.0}
+        \UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
+        \UCitem{Supervisa}{\color{Gray}Evelyn Reyes}
+        \UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa,Jefe de División de Innovación Académica y Jefe de Departamento de Desarrollo e Innovación Curricular}}
+        \UCitem{Propósito}{Registrar el nombre del Programa Académico en el sistema.}
+        \UCitem{Entradas}{Las entradas para el registro de Programa Académico:
           \begin{itemize}
-          	\item Nombre
+            \item Nombre
           \end{itemize}
         }
-		\UCitem{Origen}{Teclado.}
-		\UCitem{Salidas}{
-        	\begin{itemize}
-
+        \UCitem{Origen}{Teclado.}
+        \UCitem{Salidas}{
+            \begin{itemize}
                 \item \MSGref{MSG5}{Registro finalizado exitosamente.}
                 \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-               	\item \MSGref{MSG44}{Este campo es requerido}
+                \item \MSGref{MSG44}{Este campo es requerido}
                 \item \MSGref{MSG35}{Escribe información válida.}
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
                 \item \MSGref{MSG43}{El nombre del Programa Académico ya está registrado porfavor cámbielo.}
-
-        	\end{itemize}
+            \end{itemize}
         }
-		\UCitem{Destino}{Pantalla}
-		\UCitem{Precondiciones}{ \begin{itemize}
+        \UCitem{Destino}{Pantalla}
+        \UCitem{Precondiciones}{ \begin{itemize}
                 \item El nombre del Programa Académico a registrar, no debe existir previamente en el sistema.
             \end{itemize}}
-		\UCitem{Postcondiciones}{El Programa Académico quedó registrado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo.}
-		\UCitem{Errores}{
+        \UCitem{Postcondiciones}{El Programa Académico quedó registrado en el sistema, permitiendo consultarlo y generar tareas de registro del mismo.}
+        \UCitem{Errores}{
             Ninguno
         }
-		\UCitem{Estado}{Revisión.}
-		\UCitem{Observaciones}{Ninguna}
+        \UCitem{Estado}{Revisión.}
+        \UCitem{Observaciones}{Ninguna}
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{(+)Registrar Programa Académico}de la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}Existen las trayectorias alternativas [Trayectoria F] al presionar el boton Registrar.
-
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{(+)} que es Registrar Programa Académico de la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}Existen las trayectorias alternativas [Trayectoria E] al presionar el botón Registrar.
     \UCpaso Muestra la interfaz de usuario \IUref{RPA-J}{Registrar Programa Académico}.
-
-    \UCpaso[\UCactor] Ingresa el nombre del Programa Académico.
-
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. Existen las trayectorias alternativas [Trayectoria A] y [Trayectoria B] al presionar el boton Cancelar.
-
-    \UCpaso Verifica que se cumpla la \BRref{BR13}{Todos los campos son obligatorios}, \BRref{BR19}{El nombre del Programa Académico es único.}, \BRref{BR31}{Información de Programa Académico.} y la \BRref{BR32}{Longitud máxima de nombre de Programa Académico.}. [Trayectoria C][Trayectoria D][Trayectoria E][Trayectoria H]
-
-    \UCpaso Persiste los datos ingresados.Accionado por el boton \IUbutton{Registrar} [Trayectoria G] activada al presionar el boton.
-
+    \UCpaso[\UCactor] Ingresa el nombre del Programa Académico. Verifica que se cumpla la [Trayectoria C].
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. Existen las trayectorias alternativas [Trayectoria A] y [Trayectoria A.1] al presionar el botón Cancelar.
+    \UCpaso Verifica que se cumpla la \BRref{BR13}{Todos los campos son obligatorios} y \BRref{BR19}{El nombre del Programa Académico es único.}. [Trayectoria B][[Trayectoria D]
+    \UCpaso Persiste los datos ingresados.Accionando el botón \IUbutton{Registrar} se activa la  [Trayectoria F].
     \UCpaso Muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
-
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}.
 \end{UCtrayectoria}
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El actor presiona el botón \IUbutton{Cancelar}.}
     \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
     \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
     \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-\begin{UCtrayectoriaA}{B}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A.1 -------------------------
+\begin{UCtrayectoriaA}{A.1}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
     \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
     \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
     \UCpaso Cierra el mensaje.
     \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-\begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar.}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+
+\begin{UCtrayectoriaA}{B}{El sistema detecta uno o más campos sin contestar.}
     \UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido} debajo de cada campo obligatorio sin contestar.
     \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-\begin{UCtrayectoriaA}{D}{El Sistema detecta que el Nombre de Programa Académico no cumple con la expresión regular}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
+
+\begin{UCtrayectoriaA}{C}{El Sistema detecta que el Nombre de Programa Académico no cumple con el diccionario de datos}
     \UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida} debajo del campo.
     \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
-    %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 
-\begin{UCtrayectoriaA}{E}{El nombre del Programa Académico ya está registrado.}
-    \UCpaso Muestra el mensaje \MSGref{MSG43}{El nombre del Programa Académico ya está registrado porfavor cámbielo.}.
+    %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
+\begin{UCtrayectoriaA}{D}{El nombre del Programa Académico ya está registrado.}
+    \UCpaso Muestra el mensaje \MSGref{MSG43}{El nombre del Programa Académico ya está registrado.Por favor cámbielo.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-\UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa.
+    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
-    %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 
-\begin{UCtrayectoriaA}{F}{Problemas con la Conexión}
+    %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
+\begin{UCtrayectoriaA}{E}{Problemas con la Conexión}
     \UCpaso Muestra el mensaje \MSGref{MSG25}{ Servicios no disponibles por el momento.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-\UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa.
+    \UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa \IUref{B-J}{Pantalla Bienvenida al Jefe de Innovación Educativa} o \IUref{IU4}{Pantalla de bienvenida para el JDIA ó el JDIC.} para Jefe de División de Innovación Académica y Jefe de Departamento de Desarrollo e Innovación Curricular.
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
-\begin{UCtrayectoriaA}{G}{Ocurre un error al momento de persistir los datos.}
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+\begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
     \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}.
-\end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
-\begin{UCtrayectoriaA}{H}{El Sistema detecta que el Nombre de Programa Académico excede la longitud máxima}
-    \UCpaso No permite al usuario superar la longitud establecida en la \BRref{Longitud máxima de nombre de Programa Académico}.
-    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
