@@ -1,0 +1,70 @@
+%REGISTRAR PERFIL DOCENTE: AIKO.
+\begin{UseCase}{SP1-CU15}{Registrar Perfil Docente}{El usuario podrá registrar el Perfil Docente correspondiente a una Unidad de Aprendizaje.}
+    \UCitem{Versión}{\color{Gray}1.0}
+    \UCitem{Autor}{\color{Gray}López Rivera Aiko Dallane}
+    \UCitem{Supervisa}{\color{Gray}Ramírez Martínez Janet Naibi}
+    \UCitem{Actor}{\hyperlink{Usuario}{Usuario}}
+    \UCitem{Propósito}{Servir como marco de referencia para el registro del Perfil Docente.}
+    \UCitem{Entradas}{Las entradas para el registro del Perfil Docente serán:
+          \begin{itemize}
+            \item Nivel Acádemico. 
+            \item Especialidad.
+            \item Conocimiento.
+            \item Experiencia Profesional.
+            \item Habilidad.
+            \item Actitud.
+          \end{itemize}
+        }
+    \UCitem{Origen}{Teclado y Mouse.}
+    \UCitem{Salidas}{}
+    \UCitem{Destino}{Pantalla.}
+    \UCitem{Precondiciones}{El Programa Sintético deberá estar registrado.}
+    \UCitem{Postcondiciones}{El Programa Sintético queda registrado en el sistema.}
+    \UCitem{Errores}{}
+    \UCitem{Estado}{Revisión.}
+    \UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Perfil Docente} de la interfaz de usuario \IUref{UI-14}{Página Principal}
+    \UCpaso Carga la información del catálogo de Nivel Académico.
+    \UCpaso Muestra la interfaz de usuario \IUref{SP1-U14}{Registro de Perfil Docente}.
+    \UCpaso[\UCactor] Selecciona el Nivel Académico.
+    \UCpaso[\UCactor] Ingresa la Especialidad.
+    \UCpaso[\UCactor] Ingresa los Conocimientos.
+    \UCpaso[\UCactor] Ingresa la Experiencia Laboral.
+    \UCpaso[\UCactor] Ingresa las Habilidades.
+    \UCpaso[\UCactor] Ingresa las Actitudes.
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria A]
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados.[Trayectoria B]
+    \UCpaso Guarda la información del Perfil Docente.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU1}{Página principal}.
+\end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNARTIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{El usuario desea cancelar el registro del Perfil Docente.}
+
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
+    \UCpaso Muestra el \MSGref{MSG6}{¿Seguro que desea cancelar el registro?}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Si} [Trayectoria B.1]
+    \UCpaso Continua en el paso 9 de la trayectoria principal del \UCref{SP1-CU14}.
+
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{A.1}{El usuario no desea cancelar el registro del Perfil Docente.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{No}
+    \UCpaso Continua en el paso 10 de la trayectoria principal del \UCref{SP1-CU14}.
+
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{B}{Uno o más campos obligatorios no fueron contestados.}
+  \UCpaso Detecta uno o más campos sin contestar.
+    \UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 9 de la trayectoria principal del \UCref{SP1-CU14}.
+\end{UCtrayectoriaA}
