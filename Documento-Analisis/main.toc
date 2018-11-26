@@ -96,47 +96,47 @@
 \contentsline {subsection}{\numberline {4.3.1}Descripci\IeC {\'o}n completa}{63}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Atributos importantes}{63}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Trayectorias del Caso de Uso}{64}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}SP4-CU3 Registrar Unidad de Aprendizaje}{66}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Descripci\IeC {\'o}n completa}{66}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Atributos importantes}{66}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Trayectorias del Caso de Uso}{67}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}SP4-CU4 Registrar Recurso Humano}{69}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Descripci\IeC {\'o}n completa}{69}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Atributos importantes}{69}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Trayectorias del Caso de Uso}{70}{subsection.4.5.3}
-\contentsline {section}{\numberline {4.6}SP4-CU5 Consultar Programas Acad\IeC {\'e}micos}{72}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Descripci\IeC {\'o}n completa}{72}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Atributos importantes}{72}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Trayectorias del Caso de Uso}{73}{subsection.4.6.3}
-\contentsline {section}{\numberline {4.7}SP4-CU6 Consultar Plan de Estudio}{74}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Descripci\IeC {\'o}n completa}{74}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Atributos importantes}{74}{subsection.4.7.2}
-\contentsline {subsection}{\numberline {4.7.3}Trayectorias del Caso de Uso}{75}{subsection.4.7.3}
-\contentsline {section}{\numberline {4.8}SP4-CU7 Consultar Recursos Humanos}{77}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Descripci\IeC {\'o}n completa}{77}{subsection.4.8.1}
-\contentsline {subsection}{\numberline {4.8.2}Atributos importantes}{77}{subsection.4.8.2}
-\contentsline {subsection}{\numberline {4.8.3}Trayectorias del Caso de Uso}{78}{subsection.4.8.3}
-\contentsline {section}{\numberline {4.9}SP4-CU8 Editar Programa Acad\IeC {\'e}mico}{79}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}Descripci\IeC {\'o}n completa}{79}{subsection.4.9.1}
-\contentsline {subsection}{\numberline {4.9.2}Atributos importantes}{79}{subsection.4.9.2}
-\contentsline {subsection}{\numberline {4.9.3}Trayectorias del Caso de Uso}{80}{subsection.4.9.3}
-\contentsline {section}{\numberline {4.10}SP4-CU9 Editar Unidad de Aprendizaje}{82}{section.4.10}
-\contentsline {subsection}{\numberline {4.10.1}Descripci\IeC {\'o}n completa}{82}{subsection.4.10.1}
-\contentsline {subsection}{\numberline {4.10.2}Atributos importantes}{82}{subsection.4.10.2}
-\contentsline {subsection}{\numberline {4.10.3}Trayectorias del Caso de Uso}{83}{subsection.4.10.3}
-\contentsline {section}{\numberline {4.11}SP4-CU10 Editar Plan de Estudios}{85}{section.4.11}
-\contentsline {subsection}{\numberline {4.11.1}Descripci\IeC {\'o}n completa}{85}{subsection.4.11.1}
-\contentsline {subsection}{\numberline {4.11.2}Atributos importantes}{85}{subsection.4.11.2}
-\contentsline {subsection}{\numberline {4.11.3}Trayectorias del Caso de Uso}{86}{subsection.4.11.3}
-\contentsline {section}{\numberline {4.12}SP4-CU11 Editar Recurso Humano}{88}{section.4.12}
-\contentsline {subsection}{\numberline {4.12.1}Descripci\IeC {\'o}n completa}{88}{subsection.4.12.1}
-\contentsline {subsection}{\numberline {4.12.2}Atributos importantes}{88}{subsection.4.12.2}
-\contentsline {subsection}{\numberline {4.12.3}Trayectorias del Caso de Uso}{89}{subsection.4.12.3}
-\contentsline {section}{\numberline {4.13}SP4-CU12 Revisar Mapa Curricular}{91}{section.4.13}
-\contentsline {subsection}{\numberline {4.13.1}Descripci\IeC {\'o}n completa}{91}{subsection.4.13.1}
-\contentsline {subsection}{\numberline {4.13.2}Atributos importantes}{91}{subsection.4.13.2}
-\contentsline {subsection}{\numberline {4.13.3}Trayectorias del Caso de Uso}{92}{subsection.4.13.3}
-\contentsline {section}{\numberline {4.14}SP4-CU13 Consultar Planes de Estudios}{94}{section.4.14}
-\contentsline {subsection}{\numberline {4.14.1}Descripci\IeC {\'o}n completa}{94}{subsection.4.14.1}
-\contentsline {subsection}{\numberline {4.14.2}Atributos importantes}{94}{subsection.4.14.2}
-\contentsline {subsection}{\numberline {4.14.3}Trayectorias del Caso de Uso}{94}{subsection.4.14.3}
+\contentsline {section}{\numberline {4.4}SP4-CU3 Registrar Unidad de Aprendizaje}{67}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Descripci\IeC {\'o}n completa}{67}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Atributos importantes}{67}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Trayectorias del Caso de Uso}{68}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}SP4-CU4 Registrar Recurso Humano}{70}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Descripci\IeC {\'o}n completa}{70}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Atributos importantes}{70}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Trayectorias del Caso de Uso}{71}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}SP4-CU5 Consultar Programas Acad\IeC {\'e}micos}{73}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Descripci\IeC {\'o}n completa}{73}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Atributos importantes}{73}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Trayectorias del Caso de Uso}{74}{subsection.4.6.3}
+\contentsline {section}{\numberline {4.7}SP4-CU6 Consultar Plan de Estudio}{75}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Descripci\IeC {\'o}n completa}{75}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Atributos importantes}{75}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Trayectorias del Caso de Uso}{76}{subsection.4.7.3}
+\contentsline {section}{\numberline {4.8}SP4-CU7 Consultar Recursos Humanos}{78}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Descripci\IeC {\'o}n completa}{78}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Atributos importantes}{78}{subsection.4.8.2}
+\contentsline {subsection}{\numberline {4.8.3}Trayectorias del Caso de Uso}{79}{subsection.4.8.3}
+\contentsline {section}{\numberline {4.9}SP4-CU8 Editar Programa Acad\IeC {\'e}mico}{80}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Descripci\IeC {\'o}n completa}{80}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Atributos importantes}{80}{subsection.4.9.2}
+\contentsline {subsection}{\numberline {4.9.3}Trayectorias del Caso de Uso}{81}{subsection.4.9.3}
+\contentsline {section}{\numberline {4.10}SP4-CU9 Editar Unidad de Aprendizaje}{83}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Descripci\IeC {\'o}n completa}{83}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Atributos importantes}{83}{subsection.4.10.2}
+\contentsline {subsection}{\numberline {4.10.3}Trayectorias del Caso de Uso}{84}{subsection.4.10.3}
+\contentsline {section}{\numberline {4.11}SP4-CU10 Editar Plan de Estudios}{86}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Descripci\IeC {\'o}n completa}{86}{subsection.4.11.1}
+\contentsline {subsection}{\numberline {4.11.2}Atributos importantes}{86}{subsection.4.11.2}
+\contentsline {subsection}{\numberline {4.11.3}Trayectorias del Caso de Uso}{87}{subsection.4.11.3}
+\contentsline {section}{\numberline {4.12}SP4-CU11 Editar Recurso Humano}{89}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}Descripci\IeC {\'o}n completa}{89}{subsection.4.12.1}
+\contentsline {subsection}{\numberline {4.12.2}Atributos importantes}{89}{subsection.4.12.2}
+\contentsline {subsection}{\numberline {4.12.3}Trayectorias del Caso de Uso}{90}{subsection.4.12.3}
+\contentsline {section}{\numberline {4.13}SP4-CU12 Revisar Mapa Curricular}{92}{section.4.13}
+\contentsline {subsection}{\numberline {4.13.1}Descripci\IeC {\'o}n completa}{92}{subsection.4.13.1}
+\contentsline {subsection}{\numberline {4.13.2}Atributos importantes}{92}{subsection.4.13.2}
+\contentsline {subsection}{\numberline {4.13.3}Trayectorias del Caso de Uso}{93}{subsection.4.13.3}
+\contentsline {section}{\numberline {4.14}SP4-CU13 Consultar Planes de Estudios}{95}{section.4.14}
+\contentsline {subsection}{\numberline {4.14.1}Descripci\IeC {\'o}n completa}{95}{subsection.4.14.1}
+\contentsline {subsection}{\numberline {4.14.2}Atributos importantes}{95}{subsection.4.14.2}
+\contentsline {subsection}{\numberline {4.14.3}Trayectorias del Caso de Uso}{95}{subsection.4.14.3}
