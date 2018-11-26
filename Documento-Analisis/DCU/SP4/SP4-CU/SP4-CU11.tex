@@ -44,7 +44,7 @@
     \UCpaso[\UCactor] Modifica los campos deseados.
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}.  Existen las trayectorias alternativas [Trayectoria C] y [Trayectoria C.1] al presionar el boton Cancelar.
 
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados(Exceptuando los apellidos los cuales son opcionales) conforme a la \BRref{BR13}{Todos los datos solicitados son obligatorios},\BRref{BR36}{Estructura de Información Laboral.} y \BRref{BR35}{Estructura de Recursos Humanos.}[Trayectoria D][Trayectoria E].
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados(Exceptuando los dos apellidos los cuales son opcionales) conforme a la \BRref{BR13}{Todos los datos solicitados son obligatorios},\BRref{BR36}{Estructura de Información Laboral.} y \BRref{BR35}{Estructura de Recursos Humanos.}[Trayectoria D][Trayectoria E].
 
     \UCpaso Persiste los datos ingresados. [Trayectoria F]
 
@@ -82,7 +82,7 @@
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
-\begin{UCtrayectoriaA}{E}{El Sistema detecta caracteres no alfanuméricos.}
+\begin{UCtrayectoriaA}{E}{El Sistema detecta que los campos un cumplen con el diccionario de datos.}
     \UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida.} debajo del campo que incumplió con la \BRref{BR35}{Estructura de Recursos Humanos}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
