@@ -1,37 +1,46 @@
 \chapter{sprint 3 Herramientas para verificar las secciones de propuesta de unidad de Aprendizaje}
 \begin{UseCase}{SP2-CU11}{ Agregar comentarios a propuesta de unidad de aprendizaje }{El usuario podrá agregar uno o más comentarios en la sección de propuesta de unidad de aprendizaje que está revisando.}
-		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Versión}{\color{Gray}1.1}
 		\UCitem{Autor}{\color{Gray}Romero Ponce Mauricio Isaac}
 		\UCitem{Supervisa}{\color{Gray}Parra Garcilazo Cinthya Dolores}
 		\UCitem{Actor}{Analista}
 		\UCitem{Propósito}{Asignar cuales son y donde están las correcciones que se deben realizar a la sección de la unidad de aprendizaje que se está revisando.}
-		\UCitem{Entradas}{Las dos entradas para agregar un comentario en una sección de la propuesta de unidad de aprendizaje son:
+		\UCitem{Entradas}{
           \begin{itemize}
-          	\item Posición en la que se agregará el comentario.
-          	\item Comentario.
-           % \item fecha en que se genera el nuevo comentario.
-            %\item Identificador unico del analista.
+          	\item Descripcion del comentario.
           \end{itemize}
         }
-		\UCitem{Origen}{Mouse y teclado.}
+		\UCitem{Origen}{teclado.}
 		\UCitem{Salidas}{
         	\begin{itemize}
-        		\item MSG1. La operación se ha realizado con éxito.
-                \item MSG2. Error: Primero se debe seleccionar el punto en donde se agregará el comentario.
-                \item MSG3 Error: debe agregar un texto al nuevo comentario.
-                \item MSG4 Ingrese su comentario en el nuevo campo de la bitácora.
+        		\item \MSGref{MSG5}{Registro finalizado exitosamente.}
+                \item \MSGref{MSG11}{Error: Debe agregar un texto al nuevo comentario.}
+                \item \MSGref{MSG12}{Ingrese su descripción mensaje a modificar en la bitácora.}
+                \item \MSGref{MSG25}{Servicios no disponibles.}
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{ Se llamó el caso de uso SP2-CU5 o SP2-CU6 o SP2-CU7 o SP2-CU8 o  SP2-CU9 o o SP2-CU10}
 		\UCitem{Postcondiciones}{
             \begin{itemize}
-                \item Se agregará al sistema el comentario.
-                \item Se mostrará en la bitácora el comentario
-                \item Se habilita la llamada a los casos de uso SP2-CU15 y SP2-CU16  
+                \item Se agregará al sistema en la sección de comentario la fecha, la descipción y la sección.
+                \item Se mostrará en la bitácora el nuevo comentario.
+                \item Se habilita la llamada a los casos de uso SP2-CU12 y SP2-CU13.  
              \end{itemize}  
         }
 		\UCitem{Errores}{}
+    \UCitem{Puntos de Extensión}
+    {
+      \begin{itemize}
+            \item \UCref{SP2-CU5}: Autorizar Sección Programa Sintético de Unidad de Aprendizaje.
+            \item \UCref{SP4-CU6}: Autorizar Sección Programa en Extenso de Unidad de Aprendizaje.
+            \item \UCref{SP4-CU7}: Autorizar Sección Relación de Prácticas de Unidad de Aprendizaje.
+            \item \UCref{SP4-CU8}: Autorizar Sección Bibliografía de Unidad de Aprendizaje.
+            \item \UCref{SP4-CU9}: Autorizar Sección Sistema de Evaluación de Unidad de Aprendizaje.
+            \item \UCref{SP4-CU10}: Autorizar Unidad Temática de Unidad de Aprendizaje
+
+        \end{itemize}
+    }
 		\UCitem{Estado}{Revisión.}
 		\UCitem{Observaciones}{}
 \end{UseCase}
@@ -39,74 +48,57 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-    \UCpaso[\UCactor] Selecciona con el mouse el texto donde pondrá un comentario.
-
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Nuevo comentario}. \hyperref[SP2-CU11-A]{Trayectoria A}. 
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Nuevo comentario}. 
     
     \UCpaso Obtiene la fecha de la fecha actual. 
     
-    \UCpaso Obtiene la clave del usuario que desea agregar un comentario.
+    \UCpaso Obtiene el nombre de la sección en la que se está trabajando actualmente.
     
-    \UCpaso Muestra el nuevo comentario en el costado derecho del documento a la altura en que se seleccionó el texto del paso 1. \hyperref[SP2-CU11-B]{Trayectoria B}.
+    \UCpaso Muestra el nuevo comentario en la bitácora de comentarios debajo del ultimo comentario generado.
     
-    \UCpaso Muestra el mensaje \MSGref{MSG4}.
+    \UCpaso Muestra el mensaje \MSGref{MSG12}.
 
     \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
     
     \UCpaso[\UCactor] Ingresa el nuevo comentario en el input text "comentario".
     
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Aceptar}. \hyperref[SP2-CU11-C]{Trayectoria C}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Aceptar}. \hyperlink{SP2-CU11-A}{Trayectoria A}.
     
-    \UCpaso Verifica que el campo comentario haya sido contestado. \hyperref[SP2-CU11-D]{Trayectoria D}.
+    \UCpaso Verifica que el campo comentario haya sido contestado. \hyperlink{SP2-CU11-B}{Trayectoria B}.
 
-    \UCpaso Guarda la información del nuevo comentario en la base de datos.
+    \UCpaso Guarda la información del nuevo comentario en el sistema. \hyperlink{SP2-CU11-C}{Trayectoria C}.
 
-    \UCpaso El sistema muestra el  \MSGref{MSG1}.
+    \UCpaso Muestra el  \MSGref{MSG5}.
 
     \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
 
-    \UCpaso desaparecen los botones  \IUbutton{Aceptar} y  \IUbutton{Cancelar}.
+    \UCpaso Desaparecen los botones  \IUbutton{Aceptar} y  \IUbutton{Cancelar} sobre el nuevo comentario generado.
 
-    \UCpaso Aparecen los botones  \IUbutton{Editar} y  \IUbutton{Eliminar}.
+    \UCpaso Aparecen los botones  \IUbutton{Editar} y  \IUbutton{Eliminar} sobre el nuevo comentario generado.
+
+    \UCpaso Se muestra la pantalla que invocó al SP2-CU11 con el nuevo comentario en la bitácora de comentarios. 
 
 \end{UCtrayectoria}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\label{SP2-CU11-A}
-\begin{UCtrayectoriaA}{A}{El usuario no seleccionó alguna parte del texto.}
 
-	\UCpaso El sistema detecta que no hay referencia en el texto para el nuevo comentario.
-
-  \UCpaso El sistema muestra el \MSGref{MSG2}.
-
-  \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
-
-  \UCpaso continúa en el paso 1 de la trayectoria principal del CU-V14.
+%------------------------ CU TRAYECTORIA ALTERNARIVA A -----------------------
+\begin{UCtrayectoriaA}{A}{El usuario presionó \IUbutton{Cancelar}}
+  \hypertarget{SP2-CU11-A}{}
+	\UCpaso Elimina el comentario generado previamente.
+  \UCpaso Se muestra la pantalla actual sin modificaciones en la bitacora de comentarios.
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-\label{SP2-CU11-B}
-\begin{UCtrayectoriaA}{B}{El sistema detecta un comentario ya existente en el mismo renglón que el nuevo comentario.}
-
-    \UCpaso Genera el comentario nuevo debajo del comentario ya existente. 
-    \UCpaso continúa en el paso 6 de la trayectoria principal del CU-V14.
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -----------------------
+\begin{UCtrayectoriaA}{B}{El sistema detecta que el campo “comentario” se encuentra vacío.} 
+  \hypertarget{SP2-CU11-B}{}
+	\UCpaso Muestra el \MSGref{MSG11}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
+    \UCpaso Continúa en el paso 7 de la trayectoria principal del CU-V11.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -----------------------
-\label{SP2-CU11-C}
-\begin{UCtrayectoriaA}{C}{El usuario presionó \IUbutton{Cancelar}}
-
-	\UCpaso Elimina el comentario generado previamente.
+\begin{UCtrayectoriaA}{C}{No se puede subir al sistema el nuevo comentario} 
+  \hypertarget{SP2-CU11-C}{}
+  \UCpaso Muestra el \MSGref{MSG25}.
+  \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
 \end{UCtrayectoriaA}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA D -----------------------
-\label{SP2-CU11-D}
-\begin{UCtrayectoriaA}{D}{El sistema detecta que el campo “comentario” se encuentra vacío.} 
-
-	\UCpaso Muestra el \MSGref{MSG3}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando \IUbutton{Aceptar}.
-    \UCpaso Continúa en el paso 8 de la trayectoria principal del CU-V14.
-\end{UCtrayectoriaA}
-
-\chapter{Pantallas}
-\IUfig[0.75]{SP2-Pantallas/Nuevo_comentario}{SP2-IU-Nuevo comentario}{Nuevo comentario}

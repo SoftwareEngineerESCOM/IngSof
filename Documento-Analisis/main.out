@@ -48,7 +48,7 @@
 \BOOKMARK [2][-]{subsection.2.0.10}{MSG9 Por el momento no se puede realizar el registro.}{subsection.2.0.1}% 48
 \BOOKMARK [2][-]{subsection.2.0.11}{MSG10 Error: Primero debe seleccionar el punto en donde se agregar\341 el comentario.}{subsection.2.0.1}% 49
 \BOOKMARK [2][-]{subsection.2.0.12}{MSG11 Error: Debe agregar un texto al nuevo comentario.}{subsection.2.0.1}% 50
-\BOOKMARK [2][-]{subsection.2.0.13}{MSG12 Ingrese su comentario en el nuevo campo de la bit\341cora.}{subsection.2.0.1}% 51
+\BOOKMARK [2][-]{subsection.2.0.13}{MSG12 Ingrese su descripci\363n mensaje a modificar en la bit\341cora.}{subsection.2.0.1}% 51
 \BOOKMARK [2][-]{subsection.2.0.14}{MSG13 Revisi\363n de paquete finalizada. Paquete enviado.}{subsection.2.0.1}% 52
 \BOOKMARK [2][-]{subsection.2.0.15}{MSG14 Error al finalizar paquete.}{subsection.2.0.1}% 53
 \BOOKMARK [2][-]{subsection.2.0.16}{MSG15 \277Est\341 seguro que desea cancelar la revisi\363n? Se perder\341n las anotaciones que no hayas guardado anteriormente.}{subsection.2.0.1}% 54
@@ -61,7 +61,7 @@
 \BOOKMARK [2][-]{subsection.2.0.23}{MSG22 \277Seguro de eliminar al empleado: ''Nombre'' con correo: ''Correo'' del sistema?}{subsection.2.0.1}% 61
 \BOOKMARK [2][-]{subsection.2.0.24}{MSG23 Los porcentajes de evaluaci\363n no cumplen con el porcentaje total.}{subsection.2.0.1}% 62
 \BOOKMARK [2][-]{subsection.2.0.25}{MSG24 Por el momento la p\341gina solicitada no esta disponible.}{subsection.2.0.1}% 63
-\BOOKMARK [2][-]{subsection.2.0.26}{MSG25 Servicios no disponibles por el momento. Error: ''C\363digo de error''.}{subsection.2.0.1}% 64
+\BOOKMARK [2][-]{subsection.2.0.26}{MSG25 Servicios no disponibles.}{subsection.2.0.1}% 64
 \BOOKMARK [2][-]{subsection.2.0.27}{MSG26 El correo ingresado no se encuentra registrado en el sistema.}{subsection.2.0.1}% 65
 \BOOKMARK [2][-]{subsection.2.0.28}{MSG27 Empleado modificado.}{subsection.2.0.1}% 66
 \BOOKMARK [2][-]{subsection.2.0.29}{MSG28 El autor: "Nombre Primer Apellido Segundo Apellido.45em1ex2a existe.}{subsection.2.0.1}% 67
@@ -71,79 +71,79 @@
 \BOOKMARK [2][-]{subsection.2.0.33}{MSG32 Todos los campos son obligatorios.}{subsection.2.0.1}% 71
 \BOOKMARK [2][-]{subsection.2.0.34}{MSG33 El Recurso Humano con el correo [Correo electr\363nico del Empleado] ya existe.}{subsection.2.0.1}% 72
 \BOOKMARK [2][-]{subsection.2.0.35}{MSG34 \277Est\341 seguro que desea Eliminar al Recurso Humano con correo [Correo electr\363nico del Empleado]?}{subsection.2.0.1}% 73
-\BOOKMARK [2][-]{subsection.2.0.36}{MSG35 Escriba informaci\363n valida.}{subsection.2.0.1}% 74
+\BOOKMARK [2][-]{subsection.2.0.36}{MSG35 Escriba informaci\363n v\341lida.}{subsection.2.0.1}% 74
 \BOOKMARK [2][-]{subsection.2.0.37}{MSG36 Error, el usuario ya existe en el sistema.}{subsection.2.0.1}% 75
 \BOOKMARK [2][-]{subsection.2.0.38}{MSG37 Ha ocurrido un error: ''C\363digo de error''.}{subsection.2.0.1}% 76
 \BOOKMARK [2][-]{subsection.2.0.39}{MSG38 \277Est\341 seguro que desea eliminar la Unidad de Aprendizaje [Nombre de la Unidad de Aprendizaje]?}{subsection.2.0.1}% 77
 \BOOKMARK [2][-]{subsection.2.0.40}{MSG39 \277Est\341 seguro que desea eliminar el Semestre [N\372mero del Semestre]?}{subsection.2.0.1}% 78
 \BOOKMARK [2][-]{subsection.2.0.41}{MSG40 \277Est\341 seguro que desea generar una tarea para el registro de un nuevo Plan de Estudios?}{subsection.2.0.1}% 79
 \BOOKMARK [2][-]{subsection.2.0.42}{MSG41 Debe llenar el Programa Sint\351tico para realizar este registro.}{subsection.2.0.1}% 80
-\BOOKMARK [2][-]{subsection.2.0.43}{MSG42 Fecha invalida.}{subsection.2.0.1}% 81
-\BOOKMARK [2][-]{subsection.2.0.44}{MSG43 El nombre del Programa Acad\351mico ya est\341 registrado. Porfavor c\341mbielo.}{subsection.2.0.1}% 82
+\BOOKMARK [2][-]{subsection.2.0.43}{MSG42 Fecha inv\341lida.}{subsection.2.0.1}% 81
+\BOOKMARK [2][-]{subsection.2.0.44}{MSG43 El nombre del Programa Acad\351mico ya est\341 registrado. Por favor c\341mbielo.}{subsection.2.0.1}% 82
 \BOOKMARK [2][-]{subsection.2.0.45}{MSG44 Este campo es requerido.}{subsection.2.0.1}% 83
 \BOOKMARK [2][-]{subsection.2.0.46}{MSG45 Secci\363n Aprobada con Anterioridad.}{subsection.2.0.1}% 84
-\BOOKMARK [0][-]{chapter.3}{Identificaci\363n de Requerimientos}{}% 85
-\BOOKMARK [0][-]{chapter.4}{Sprint 1 Gesti\363n de paquetes y Unidad de Aprendizaje}{}% 86
-\BOOKMARK [1][-]{section.4.1}{SP2-CU1 \040Consultar contenido de propuesta de Unidad de Aprendizaje}{chapter.4}% 87
-\BOOKMARK [2][-]{subsection.4.1.1}{Descripci\363n completa}{section.4.1}% 88
-\BOOKMARK [2][-]{subsection.4.1.2}{Atributos importantes}{section.4.1}% 89
-\BOOKMARK [2][-]{subsection.4.1.3}{Trayectorias del Caso de Uso}{section.4.1}% 90
-\BOOKMARK [1][-]{section.4.2}{SP2-CU2 \040Consultar paquetes de Unidad de Aprendizaje del Jefe de Innovaci\363n}{chapter.4}% 91
-\BOOKMARK [2][-]{subsection.4.2.1}{Descripci\363n completa}{section.4.2}% 92
-\BOOKMARK [2][-]{subsection.4.2.2}{Atributos importantes}{section.4.2}% 93
-\BOOKMARK [2][-]{subsection.4.2.3}{Trayectorias del Caso de Uso}{section.4.2}% 94
-\BOOKMARK [1][-]{section.4.3}{SP2-CU3 Desasignar unidades de aprendizaje a un analista}{chapter.4}% 95
-\BOOKMARK [2][-]{subsection.4.3.1}{Descripci\363n completa}{section.4.3}% 96
-\BOOKMARK [2][-]{subsection.4.3.2}{Atributos importantes}{section.4.3}% 97
-\BOOKMARK [2][-]{subsection.4.3.3}{Trayectorias del Caso de Uso}{section.4.3}% 98
-\BOOKMARK [1][-]{section.4.4}{SP2-CU4 Finalizar revisi\363n de paquetes de propuestas de unidades de aprendizaje}{chapter.4}% 99
-\BOOKMARK [2][-]{subsection.4.4.1}{Descripci\363n completa}{section.4.4}% 100
-\BOOKMARK [2][-]{subsection.4.4.2}{Atributos importantes}{section.4.4}% 101
-\BOOKMARK [2][-]{subsection.4.4.3}{Trayectorias del Caso de Uso}{section.4.4}% 102
-\BOOKMARK [0][-]{chapter.5}{Sprint 2 Autorizaci\363n de seccci\363n de Unidad de Aprendizaje}{}% 103
-\BOOKMARK [1][-]{section.5.1}{SP2-CU5 \040Autorizar Secci\363n Programa Sint\351tico de Unidad de Aprendizaje }{chapter.5}% 104
-\BOOKMARK [2][-]{subsection.5.1.1}{Descripci\363n completa}{section.5.1}% 105
-\BOOKMARK [2][-]{subsection.5.1.2}{Atributos importantes}{section.5.1}% 106
-\BOOKMARK [2][-]{subsection.5.1.3}{Trayectorias del Caso de Uso}{section.5.1}% 107
-\BOOKMARK [1][-]{section.5.2}{SP2-CU6 \040Autorizar Secci\363n Programa en Extenso de Unidad de Aprendizaje}{chapter.5}% 108
-\BOOKMARK [2][-]{subsection.5.2.1}{Descripci\363n completa}{section.5.2}% 109
-\BOOKMARK [2][-]{subsection.5.2.2}{Atributos importantes}{section.5.2}% 110
-\BOOKMARK [2][-]{subsection.5.2.3}{Trayectorias del Caso de Uso}{section.5.2}% 111
-\BOOKMARK [1][-]{section.5.3}{SP2-CU7 \040Autorizar Secci\363n Relaci\363n de Pr\341cticas de Unidad de Aprendizaje}{chapter.5}% 112
-\BOOKMARK [2][-]{subsection.5.3.1}{Descripci\363n completa}{section.5.3}% 113
-\BOOKMARK [2][-]{subsection.5.3.2}{Atributos importantes}{section.5.3}% 114
-\BOOKMARK [2][-]{subsection.5.3.3}{Trayectorias del Caso de Uso}{section.5.3}% 115
-\BOOKMARK [1][-]{section.5.4}{SP2-CU8 \040Autorizar Secci\363n Bibliograf\355a de Unidad de Aprendizaje}{chapter.5}% 116
-\BOOKMARK [2][-]{subsection.5.4.1}{Descripci\363n completa}{section.5.4}% 117
-\BOOKMARK [2][-]{subsection.5.4.2}{Atributos importantes}{section.5.4}% 118
-\BOOKMARK [2][-]{subsection.5.4.3}{Trayectorias del Caso de Uso}{section.5.4}% 119
-\BOOKMARK [1][-]{section.5.5}{SP2-CU9 \040Autorizar Secci\363n Sistema de Evaluaci\363n de Unidad de Aprendizaje}{chapter.5}% 120
-\BOOKMARK [2][-]{subsection.5.5.1}{Descripci\363n completa}{section.5.5}% 121
-\BOOKMARK [2][-]{subsection.5.5.2}{Atributos importantes}{section.5.5}% 122
-\BOOKMARK [2][-]{subsection.5.5.3}{Trayectorias del Caso de Uso}{section.5.5}% 123
-\BOOKMARK [1][-]{section.5.6}{SP2-CU10 \040Autorizar Unidad Tem\341tica de Unidad de Aprendizaje}{chapter.5}% 124
-\BOOKMARK [2][-]{subsection.5.6.1}{Descripci\363n completa}{section.5.6}% 125
-\BOOKMARK [2][-]{subsection.5.6.2}{Atributos importantes}{section.5.6}% 126
-\BOOKMARK [2][-]{subsection.5.6.3}{Trayectorias del Caso de Uso}{section.5.6}% 127
-\BOOKMARK [0][-]{chapter.6}{sprint 3 Herramientas para verificar las secciones de propuesta de unidad de Aprendizaje}{}% 128
-\BOOKMARK [1][-]{section.6.1}{SP2-CU11 \040Agregar comentarios a propuesta de unidad de aprendizaje }{chapter.6}% 129
-\BOOKMARK [2][-]{subsection.6.1.1}{Descripci\363n completa}{section.6.1}% 130
-\BOOKMARK [2][-]{subsection.6.1.2}{Atributos importantes}{section.6.1}% 131
-\BOOKMARK [2][-]{subsection.6.1.3}{Trayectorias del Caso de Uso}{section.6.1}% 132
-\BOOKMARK [0][-]{chapter.7}{Pantallas}{}% 133
-\BOOKMARK [1][-]{section.7.1}{SP2-CU12 \040Modificar comentarios a propuesta de Unidad de Aprendizaje }{chapter.7}% 134
-\BOOKMARK [2][-]{subsection.7.1.1}{Descripci\363n completa}{section.7.1}% 135
-\BOOKMARK [2][-]{subsection.7.1.2}{Atributos importantes}{section.7.1}% 136
-\BOOKMARK [2][-]{subsection.7.1.3}{Trayectorias del Caso de Uso}{section.7.1}% 137
-\BOOKMARK [1][-]{section.7.2}{SP2-CU13 \040Eliminar comentarios en secci\363n de propuesta de Unidad de Aprendizaje }{chapter.7}% 138
-\BOOKMARK [2][-]{subsection.7.2.1}{Descripci\363n completa}{section.7.2}% 139
-\BOOKMARK [2][-]{subsection.7.2.2}{Atributos importantes}{section.7.2}% 140
-\BOOKMARK [2][-]{subsection.7.2.3}{Trayectorias del Caso de Uso}{section.7.2}% 141
-\BOOKMARK [1][-]{section.7.3}{SP2-CU14 \040Agregar subrayado a propuesta de Unidad de Aprendizaje }{chapter.7}% 142
-\BOOKMARK [2][-]{subsection.7.3.1}{Descripci\363n completa}{section.7.3}% 143
-\BOOKMARK [2][-]{subsection.7.3.2}{Atributos importantes}{section.7.3}% 144
-\BOOKMARK [2][-]{subsection.7.3.3}{Trayectorias del Caso de Uso}{section.7.3}% 145
-\BOOKMARK [1][-]{section.7.4}{SP2-CU15 \040Eliminar subrayado en secci\363n de propuesta de Unidad de Aprendizaje }{chapter.7}% 146
-\BOOKMARK [2][-]{subsection.7.4.1}{Descripci\363n completa}{section.7.4}% 147
-\BOOKMARK [2][-]{subsection.7.4.2}{Atributos importantes}{section.7.4}% 148
-\BOOKMARK [2][-]{subsection.7.4.3}{Trayectorias del Caso de Uso}{section.7.4}% 149
+\BOOKMARK [2][-]{subsection.2.0.47}{MSG46 Las horas totales de teor\355a y pr\341ctica deben de estar en el rango 350 y 450.}{subsection.2.0.1}% 85
+\BOOKMARK [2][-]{subsection.2.0.48}{MSG47 El nombre de la Unidad de Aprendizaje ya est\341 registrado. Por favor c\341mbielo.}{subsection.2.0.1}% 86
+\BOOKMARK [2][-]{subsection.2.0.49}{MSG48 \277Est\341 seguro que desea eliminar el comentario?}{subsection.2.0.1}% 87
+\BOOKMARK [2][-]{subsection.2.0.50}{MSG49 Se ha eliminado el comentario.}{subsection.2.0.1}% 88
+\BOOKMARK [2][-]{subsection.2.0.51}{MSG50 Error: Primero se debe seleccionar el punto en donde se gestionar\341 el subrayado.}{subsection.2.0.1}% 89
+\BOOKMARK [0][-]{chapter.3}{Identificaci\363n de Requerimientos}{}% 90
+\BOOKMARK [0][-]{chapter.4}{Sprint 1 Gesti\363n de paquetes y Unidad de Aprendizaje}{}% 91
+\BOOKMARK [1][-]{section.4.1}{SP2-CU1 \040Consultar contenido de propuesta de Unidad de Aprendizaje}{chapter.4}% 92
+\BOOKMARK [2][-]{subsection.4.1.1}{Descripci\363n completa}{section.4.1}% 93
+\BOOKMARK [2][-]{subsection.4.1.2}{Atributos importantes}{section.4.1}% 94
+\BOOKMARK [2][-]{subsection.4.1.3}{Trayectorias del Caso de Uso}{section.4.1}% 95
+\BOOKMARK [1][-]{section.4.2}{SP2-CU2 \040Consultar paquetes de Unidad de Aprendizaje del Jefe de Innovaci\363n}{chapter.4}% 96
+\BOOKMARK [2][-]{subsection.4.2.1}{Descripci\363n completa}{section.4.2}% 97
+\BOOKMARK [2][-]{subsection.4.2.2}{Atributos importantes}{section.4.2}% 98
+\BOOKMARK [2][-]{subsection.4.2.3}{Trayectorias del Caso de Uso}{section.4.2}% 99
+\BOOKMARK [1][-]{section.4.3}{SP2-CU3 Desasignar unidades de aprendizaje a un analista}{chapter.4}% 100
+\BOOKMARK [2][-]{subsection.4.3.1}{Descripci\363n completa}{section.4.3}% 101
+\BOOKMARK [2][-]{subsection.4.3.2}{Atributos importantes}{section.4.3}% 102
+\BOOKMARK [2][-]{subsection.4.3.3}{Trayectorias del Caso de Uso}{section.4.3}% 103
+\BOOKMARK [1][-]{section.4.4}{SP2-CU4 Finalizar revisi\363n de paquetes de propuestas de unidades de aprendizaje}{chapter.4}% 104
+\BOOKMARK [2][-]{subsection.4.4.1}{Descripci\363n completa}{section.4.4}% 105
+\BOOKMARK [2][-]{subsection.4.4.2}{Atributos importantes}{section.4.4}% 106
+\BOOKMARK [2][-]{subsection.4.4.3}{Trayectorias del Caso de Uso}{section.4.4}% 107
+\BOOKMARK [0][-]{chapter.5}{Sprint 2 Autorizaci\363n de seccci\363n de Unidad de Aprendizaje}{}% 108
+\BOOKMARK [1][-]{section.5.1}{SP2-CU5 \040Autorizar Secci\363n Programa Sint\351tico de Unidad de Aprendizaje }{chapter.5}% 109
+\BOOKMARK [2][-]{subsection.5.1.1}{Descripci\363n completa}{section.5.1}% 110
+\BOOKMARK [2][-]{subsection.5.1.2}{Atributos importantes}{section.5.1}% 111
+\BOOKMARK [2][-]{subsection.5.1.3}{Trayectorias del Caso de Uso}{section.5.1}% 112
+\BOOKMARK [1][-]{section.5.2}{SP2-CU6 \040Autorizar Secci\363n Programa en Extenso de Unidad de Aprendizaje}{chapter.5}% 113
+\BOOKMARK [2][-]{subsection.5.2.1}{Descripci\363n completa}{section.5.2}% 114
+\BOOKMARK [2][-]{subsection.5.2.2}{Atributos importantes}{section.5.2}% 115
+\BOOKMARK [2][-]{subsection.5.2.3}{Trayectorias del Caso de Uso}{section.5.2}% 116
+\BOOKMARK [1][-]{section.5.3}{SP2-CU7 \040Autorizar Secci\363n Relaci\363n de Pr\341cticas de Unidad de Aprendizaje}{chapter.5}% 117
+\BOOKMARK [2][-]{subsection.5.3.1}{Descripci\363n completa}{section.5.3}% 118
+\BOOKMARK [2][-]{subsection.5.3.2}{Atributos importantes}{section.5.3}% 119
+\BOOKMARK [2][-]{subsection.5.3.3}{Trayectorias del Caso de Uso}{section.5.3}% 120
+\BOOKMARK [1][-]{section.5.4}{SP2-CU8 \040Autorizar Secci\363n Bibliograf\355a de Unidad de Aprendizaje}{chapter.5}% 121
+\BOOKMARK [2][-]{subsection.5.4.1}{Descripci\363n completa}{section.5.4}% 122
+\BOOKMARK [2][-]{subsection.5.4.2}{Atributos importantes}{section.5.4}% 123
+\BOOKMARK [2][-]{subsection.5.4.3}{Trayectorias del Caso de Uso}{section.5.4}% 124
+\BOOKMARK [1][-]{section.5.5}{SP2-CU9 \040Autorizar Secci\363n Sistema de Evaluaci\363n de Unidad de Aprendizaje}{chapter.5}% 125
+\BOOKMARK [2][-]{subsection.5.5.1}{Descripci\363n completa}{section.5.5}% 126
+\BOOKMARK [2][-]{subsection.5.5.2}{Atributos importantes}{section.5.5}% 127
+\BOOKMARK [2][-]{subsection.5.5.3}{Trayectorias del Caso de Uso}{section.5.5}% 128
+\BOOKMARK [1][-]{section.5.6}{SP2-CU10 \040Autorizar Unidad Tem\341tica de Unidad de Aprendizaje}{chapter.5}% 129
+\BOOKMARK [2][-]{subsection.5.6.1}{Descripci\363n completa}{section.5.6}% 130
+\BOOKMARK [2][-]{subsection.5.6.2}{Atributos importantes}{section.5.6}% 131
+\BOOKMARK [2][-]{subsection.5.6.3}{Trayectorias del Caso de Uso}{section.5.6}% 132
+\BOOKMARK [0][-]{chapter.6}{sprint 3 Herramientas para verificar las secciones de propuesta de unidad de Aprendizaje}{}% 133
+\BOOKMARK [1][-]{section.6.1}{SP2-CU11 \040Agregar comentarios a propuesta de unidad de aprendizaje }{chapter.6}% 134
+\BOOKMARK [2][-]{subsection.6.1.1}{Descripci\363n completa}{section.6.1}% 135
+\BOOKMARK [2][-]{subsection.6.1.2}{Atributos importantes}{section.6.1}% 136
+\BOOKMARK [2][-]{subsection.6.1.3}{Trayectorias del Caso de Uso}{section.6.1}% 137
+\BOOKMARK [1][-]{section.6.2}{SP2-CU12 \040Modificar comentarios a propuesta de Unidad de Aprendizaje }{chapter.6}% 138
+\BOOKMARK [2][-]{subsection.6.2.1}{Descripci\363n completa}{section.6.2}% 139
+\BOOKMARK [2][-]{subsection.6.2.2}{Atributos importantes}{section.6.2}% 140
+\BOOKMARK [2][-]{subsection.6.2.3}{Trayectorias del Caso de Uso}{section.6.2}% 141
+\BOOKMARK [1][-]{section.6.3}{SP2-CU13 \040Eliminar comentarios en secci\363n de propuesta de Unidad de Aprendizaje }{chapter.6}% 142
+\BOOKMARK [2][-]{subsection.6.3.1}{Descripci\363n completa}{section.6.3}% 143
+\BOOKMARK [2][-]{subsection.6.3.2}{Atributos importantes}{section.6.3}% 144
+\BOOKMARK [2][-]{subsection.6.3.3}{Trayectorias del Caso de Uso}{section.6.3}% 145
+\BOOKMARK [1][-]{section.6.4}{SP2-CU14 \040Gesti\363n de subrayados en revisi\363n de propuesta de Unidad de Aprendizaje }{chapter.6}% 146
+\BOOKMARK [2][-]{subsection.6.4.1}{Descripci\363n completa}{section.6.4}% 147
+\BOOKMARK [2][-]{subsection.6.4.2}{Atributos importantes}{section.6.4}% 148
+\BOOKMARK [2][-]{subsection.6.4.3}{Trayectorias del Caso de Uso}{section.6.4}% 149
