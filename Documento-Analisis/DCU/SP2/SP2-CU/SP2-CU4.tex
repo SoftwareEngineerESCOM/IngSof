@@ -3,8 +3,8 @@
 		\UCitem{Autor}{\color{Gray}Parra Garcilazo Cinthya Dolores}
 		\UCitem{Supervisa}{\color{Gray}}
 		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Desarrollo e Innovación Curricular}}
-		\UCitem{Propósito}{Dar por concluida la revisón de un paquete de Unidades de Aprendizaje.}
-		\UCitem{Entradas}{Las entradas finalizar la revisión de paquetes serán:
+		\UCitem{Propósito}{Dar por concluida la revisión de un paquete de Unidades de Aprendizaje.}
+		\UCitem{Entradas}{Las entradas para finalizar la revisión de paquetes serán:
           \begin{itemize}
           	\item Unidades de aprendizaje
           	\item Unidad Académica
@@ -16,7 +16,7 @@
 		\UCitem{Salidas}{
         	\begin{itemize}
         	   \item MSG13. Revisión de paquete finalizada. Paquete enviado.
-                \item MSG25. Servicios no disponibles por el momento. Error: ''Código de error''
+                \item MSG25. Servicios no disponibles por el momento. Error: ''Código de error''.
 
         	\end{itemize}
         }
@@ -32,12 +32,12 @@
 \begin{UCtrayectoria}{Principal}
 
 
-    \UCpaso Muestra la interfaz de usuario \IUref{SP2-IU-GestionPaquetes}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton {Finalizar}
-    \UCpaso Verifica en la base de datos que todas las unidades de aprendizaje tengan el estado de revisado\hyperref[SP2-CU4-A]{Trayectoria A}.
+    \UCpaso Muestra la interfaz de usuario \IUref{SP2-IU-GestionPaquetes}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Finalizar}.
+    \UCpaso Verifica en la base de datos que todas las unidades de aprendizaje tengan el estado de revisado.\hyperref[SP2-CU4-A]{Trayectoria A}.
     \UCpaso Envía notificación a la Unidad de Aprendizaje correspondiente de Paquete Aprobado. \hyperref[SP2-CU4-B]
     \UCpaso Muestra el mensaje \MSGref {MSG13}{Revisión de paquete finalizada. Paquete enviado.}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}.
     \UCpaso Cambia el estado del paquete a enviado.
     \UCpaso Remueve la tabla con la información del paquete aprobado de la lista de tareas.
 
@@ -48,5 +48,6 @@
 \label{SP2-CU5-A}
 \begin{UCtrayectoriaA}{A}{No se pudo enviar el paquete.}
     \UCpaso Muestra el mensaje \MSGref {MSG25}{Servicios no disponibles por el momento. Error: ''Código de error''.}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}.
+    \UCpaso Muestra la interfaz de usuario \IUref{SP2-IU-GestionPaquetes}.
 \end{UCtrayectoriaA}
