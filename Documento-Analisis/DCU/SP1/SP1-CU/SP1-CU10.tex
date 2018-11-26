@@ -1,80 +1,102 @@
-\begin{UseCase}{SP1-CU10}{Registrar Evaluación y Acreditación de la Relación de Prácticas}{El usuario podrá registrar la Evaluación y Acreditación de la Relación de Prácticas correspondiente a una Unidad de Aprendizaje}
-
-        \UCitem{Versión}{\color{Gray}1.0}
-		\UCitem{Autor}{\color{Gray}Maldonado Carpio Jorge Enrique}
-		\UCitem{Supervisa}{\color{Gray}Ramírez Martínez Janet Naibi}
-		\UCitem{Actor}{\hyperlink{Usuario}{Usuario}}
-		\UCitem{Propósito}{Poblar de Unidades Temáticas  a una Unidad de Aprendizaje.}
-		\UCitem{Entradas}{Las entradas para el registro de tiempos de la Unidad de Aprendizaje serán:
+%REGISTRAR RELACIÓN DE PRÁCTICAS: AIKO.
+\begin{UseCase}{SP1-CU10}{Registrar Relación de Prácticas}{El usuario podrá registrar la relación de prácticas correspondientes a la Unidad de Aprendizaje.}
+    \UCitem{Versión}{\color{Gray}1.0}
+    \UCitem{Autor}{\color{Gray}López Rivera Aiko Dallane}
+    \UCitem{Supervisa}{\color{Gray}Ramírez Martínez Janet Naibi}
+    \UCitem{Actor}{\hyperlink{Usuario}{Usuario}}
+    \UCitem{Propósito}{Servir como marco de referencia para el registro de la relación de prácticas de la Unidad de Aprendizaje.}
+    \UCitem{Entradas}{Las entradas para el registro del Perfil Docente serán:
           \begin{itemize}
-          	\item Acreditación.
-          	\item Evaluación.
-          	\item Porcentaje.
+            \item Unidad de Aprendizaje. 
+            \item No. de Pŕactica.
+            \item Nombre de la Práctica.
+            \item Unidad Temática.
+            \item Duración.
+            \item Lugar de realización.
+            \item Total de Horas.
+            \item Evaluación y acreditación
           \end{itemize}
         }
-		\UCitem{Origen}{Teclado y Mouse.}
-		\UCitem{Salidas}{}
-		\UCitem{Destino}{Pantalla.}
-		\UCitem{Precondiciones}{}
-		\UCitem{Postcondiciones}{La Evaluación y Acreditación de la Relación de Prácticas correspondiente a una Unidad de Aprendizaje queda registrada en el sistema.}
-		\UCitem{Errores}{}
-		\UCitem{Estado}{Revisión.}
-		\UCitem{Observaciones}{}
+    \UCitem{Origen}{Teclado y Mouse.}
+    \UCitem{Salidas}{
+    }
+    \UCitem{Destino}{Pantalla.}
+    \UCitem{Precondiciones}{
+        \begin{itemize}
+            \item Se debe haber elaborado previamente el Programa Sintético.
+            \item Los catalogos que deben estar registrados preaviamente son: Unidad de Aprendizaje, Unidad Temática y Lugar de realización.
+        \end{itemize}}
+    \UCitem{Postcondiciones}{La relación de Prácticas queda registrada en el Sistema.}
+    \UCitem{Errores}{}
+    \UCitem{Estado}{Revisión.}
+    \UCitem{Observaciones}{}
 \end{UseCase}
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    
-    \UCpaso[\UCactor] Presiona el botón \BtnModal que se encuentra a un lado del campo ``Evaluación y Acreditación'' \IUref{SP1-U4}{Registrar Relación de Prácticas}
-    \UCpaso Muestra la interfaz de usuario \IUref{SP1-MIU4-1}{Registrar Evaluación y Acreditación}.
-    \UCpaso[\UCactor] Ingresa la Acreditación de la Relación de Prácticas.
-    \UCpaso[\UCactor] Ingresa la Evaluación de la Relación de Prácticas con base en la regla \BRref{BR29}{Debe existir al menos un criterio de evaluación para la Relación de Prácticas.}.
-    \UCpaso[\UCactor] Ingresa el Porcentaje de la Evaluación de la Relación de Prácticas con base en la regla \BRref{BR25}{La suma de los porcentajes de cada evaluación debe ser igual a 100\%}.
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria A][Trayectoria B]
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados.[Trayectoria C]
-    \UCpaso Valida que la suma de los porcentajes sea igual a 100\%.[Trayectoria D]
-    \UCpaso Guarda la información de la Evaluación y Acreditación de la Relación de Prácticas.
+
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Relación de Prácticas} de la interfaz de usuario. \IUref{SP1-UI}{Página Principal}
+    \UCpaso El sistema verifica que el programa sintectico haya sido registrado. [Trayectoria A]
+    \UCpaso Extrae la información del catalogo de Unidades de Aprendizaje perteneciente al \UCref{SP1-CU1}. 
+    \UCpaso Verifica que el catálogo contenga la información de las Unidades de Aprendizaje. [Trayectoria B]
+    \UCpaso Muestra la interfaz de usuario \IUref{UI.04}{Registro de Relación de Prácticas}.
+    \UCpaso[\UCactor] Selecciona la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Ingresa el no. de práctica.
+    \UCpaso[\UCactor] Ingresa el nombre de la práctica.
+    \UCpaso[\UCactor] Ingresa la duración.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Práctica} [Trayectoria C]
+    \UCpaso[\UCactor] Selecciona el lugar de realización.
+    \UCpaso EL sistema calcula el Total de horas %Se hace sumando la duración de todas las praćticas registradad%
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Evaluación y Acreditación}
+    \UCpaso Abre un modal en el \UCref{MIU4.01} [Trayectoria D]
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. 
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados.[Trayectoria E]
+    \UCpaso Guarda la información de la Relación de Prácticas.
     \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{OK}. 
-    \UCpaso Muestra la interfaz de usuario  \IUref{SP1-U4}{Registrar Relación de Prácticas}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
+    \UCpaso Muestra la interfaz de usuario \IUref{SP1-UI}{Página principal}.
 \end{UCtrayectoria}
 
-%------------------------ CU TRAYECTORIA ALTERNARTIVA A -------------------------
-\begin{UCtrayectoriaA}{A}{El usuario desea agregar más de una Evaluación de la Relación de Prácticas.}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Evaluación}
-    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU10}.
-    
+%------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{No se ha realizado la elaboración del Programa Sintético.}
+	\UCpaso No muestra los datos provenientes del \UCref{SP1-CU1}.
+	\UCpaso Muestra el mensaje \MSGref{MSG41}{Debe llenar el Programa Sintético para realizar este registro}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{SP1-IU}{Principal}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{El usuario desea cancelar el registro Evaluación y Acreditación de la Relación de Prácticas.}
+%------------------------ CU TRAYECTORIA ALTERNATIVA B -------------------------
 
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Cerrar}
-    \UCpaso Muestra el \MSGref{MSG6}{¿Seguro que desea cancelar el registro?}.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Si} [Trayectoria B.1]
-    \UCpaso Continua en el paso 13 de la trayectoria principal del \UCref{SP1-CU10}.
-    
+\begin{UCtrayectoriaA}{B}{Uno o más catálogos están vacíos.}
+	\UCpaso No encuentra información en los catálogos.
+    \UCpaso Muestra el mensaje \MSGref{MSG9.}{Por el momento no se puede realizar el registro.}
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{SP1-IU}{Principal}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B.1}{El usuario no desea cancelar el registro Evaluación y Acreditación de la Relación de Prácticas.}
-    
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{No}
-    \UCpaso Continua en el paso 15 de la trayectoria principal del \UCref{SP1-CU10}.
-    
+%------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
+
+\begin{UCtrayectoriaA}{B}{El usuario requiere registrar otra práctica.}
+    \UCpaso El sistema genera los pasos 6-9 nuevamente de la trayectoria principal del \UCref{SP1-CU9}..
+    \UCpaso[\UCactor] El usuario ingresa los datos correspondientes a la práctica.
+    \UCpaso{}[\UCactor] EL usuario continua con el paso 10 de la trayectoria principal del \UCref{SP1-CU9}.
+    \IUref{SP1-IU}{Principal}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados.}
+%------------------------ CU TRAYECTORIA ALTERNATIVA D -------------------------
+
+\begin{UCtrayectoriaA}{D}{El docente quiere registrar la Evaluación y Acreditación.}
+	\UCpaso[\UCactor] Presiona el botón \BtnModal que se encuentra a un lado del campo ``Evaluación y Acreditación'' de la \IUref{IU.04}{Registrar el Programa en Extenso}.
+	\UCpaso Muestra el modal \IUref{MIU4.01}{Registrar Evaluación y Acreditación}.
+	\UCpaso Continua en el paso X de la trayectoria principal de \UCref{SP1-CU10}
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA E -------------------------
+
+\begin{UCtrayectoriaA}{E}{Uno o más campos obligatorios no fueron contestados.}
 	\UCpaso Detecta uno o más campos sin contestar.
-    \UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios}.
+    \UCpaso Muestra el mensaje \MSGref{MSG4.}{Los campos marcados con (*) son obligatorios.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU10}.
+    \UCpaso Continua en el paso 17 de la trayectoria principal del \UCref{SP1-CU4}.
 \end{UCtrayectoriaA}
-
-\begin{UCtrayectoriaA}{D}{La suma de los porcentajes es distinta a 100\%}
-    \UCpaso Detecta que la suma de los porcentajes dados por el usuario no cumplen con el 100\% requerido.
-    \UCpaso Muestra el mensaje \MSGref{MSG23.}{Los porcentajes de evaluación no cumplen con el porcentaje total obligatorio.}
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU10}.
-\end{UCtrayectoriaA}
-
-
-
