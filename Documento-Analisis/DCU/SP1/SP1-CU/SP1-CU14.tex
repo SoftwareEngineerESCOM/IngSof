@@ -9,7 +9,7 @@
           \begin{itemize}
             \item Nombre.
             \item Primer Apellido.
-            \item Segundo Apellido.
+            \item Segundo Apellido (Opcional). 
           \end{itemize}
         }
         \UCitem{Origen}{Teclado y Mouse}
@@ -22,11 +22,11 @@
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
-        \UCitem{Precondiciones}{El autor que se quiere registrar no debe existir previamente en el catálogo de autores que se le muestra al usuario en la \IUref{IU7}{Registrar bibliografía}.}
+        \UCitem{Precondiciones}{El autor que se quiere registrar no debe existir previamente en el catálogo de autores que se le muestra al usuario en la \IUref{IU6}{Registrar bibliografía}.}
         \UCitem{Postcondiciones}{
             \begin{itemize}
                 \item El autor queda registrado en la base de datos.
-                \item El autor aparece en el catálogo que se le muestra al usuario en la \IUref{IU7}{Registrar bibliografía}.
+                \item El autor aparece en el catálogo que se le muestra al usuario en la \IUref{IU6}{Registrar bibliografía}.
             \end{itemize}}
         \UCitem{Errores}{}
         \UCitem{Estado}{Revisión.}
@@ -44,7 +44,7 @@
 
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria A]
 
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria B]
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados con base en la regla de negocio \BRref{BR13}{Todos los datos solicitados son obligatorios}. [Trayectoria B]
 
     \UCpaso Valida que no exista un autor registrado con el mismo nombre, primer apellido y segundo apellido. [Trayectoria C]
 
@@ -60,9 +60,9 @@
 %------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
 
 \begin{UCtrayectoriaA}{A}{El usuario ya no requiere un nuevo autor.}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{$\bigotimes$} del modal \IUref{IU7.1}{Registrar autor de la bibliografía}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar} del modal \IUref{IU7}{Registrar autor de la bibliografía}.
     \UCpaso Cierra el modal.
-    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU1}.
+    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU14}.
 \end{UCtrayectoriaA}
 
 
@@ -72,14 +72,14 @@
     \UCpaso Detecta uno o más campos sin contestar.
     \UCpaso Muestra el mensaje \MSGref{MSG4.}{Los campos marcados con (*) son obligatorios.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU1}.
+    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU14}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 
 \begin{UCtrayectoriaA}{D}{El autor que se intenta registrar ya existe en el sistema.}
     \UCpaso Encuentra un autor registrado con el mismo nombre, primer apellido y segundo apellido que el autor que se está registrando.
-    \UCpaso Muestra el mensaje \MSGref{MSG28.}{El autor: "Nombre Primer Apellido Segundo Apellido" ya existe.}
+    \UCpaso Muestra el mensaje \MSGref{MSG28.}{El autor ya existe.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP1-CU6}.
+    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP1-CU14}.
 \end{UCtrayectoriaA}
