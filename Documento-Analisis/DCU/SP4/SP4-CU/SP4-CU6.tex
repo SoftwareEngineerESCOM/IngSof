@@ -1,6 +1,6 @@
 % Consultar Mapa Curricular.
 \begin{UseCase}{SP4-CU6}{Consultar Plan de Estudio}{El usuario Docente visualiza el resumen del Plan de Estudios (Mapa Curricular).}
-		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Versión}{\color{Gray}3.0}
 		\UCitem{Autor}{\color{Gray}Cervantes Moreno Christian Andres}
 		\UCitem{Supervisa}{\color{Gray} Evelyn Reyes}
 		\UCitem{Actor}{\hyperlink{Usuario}{Docente}}
@@ -11,7 +11,8 @@
         	\begin{itemize}
         		\item \MSGref{MSG38}{¿Está seguro que desea eliminar la Unidad de Aprendizaje [Nombre de la UNidad de Aprendizaje]?}.
         		\item \MSGref{MSG39}{¿Está seguro que desea eliminar el Semestre [Número del Semestre]?}.
-        		\item \MSGref{MSG30}{Está seguro que desea finalizar? Ya no podrá realizar modificaciones}.
+        		\item \MSGref{MSG52}{El semestre no se puede eliminar debido a que contiene unidades de aprendizaje}.
+        		\item \MSGref{MSG53}{¿Está seguro que desea rediseñar el plan de estudios? (Se hara una copia de este)}.
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -25,8 +26,7 @@
 	 \UCitem{Puntos de Exteción}{
 		\begin{itemize}
 			\item \UCref{SP4-CU3}: Registrar Unidad de Aprendizaje.
-			\item \UCref{SP4-CU9}: Editar Plan de Estudios.
-			\item \UCref{SP4-CU10}: Editar Unidad de Aprendizaje.
+			\item \UCref{SP4-CU9}: Editar Unidad de Aprendizaje.
 		\end{itemize}
 	}
 		\UCitem{Estado}{Revisión.}
@@ -36,12 +36,9 @@
 \begin{UCtrayectoria}{Principal}
     \UCpaso[\UCactor] Presiona sobre un Plan de Estudios en la Interfaz de usuario  \IUref{GPE-J}{Gestionar Planes de Estudio}.
     \UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
-    \UCpaso[\UCactor] Selecciona el semestre de la Unidades de Aprendizaje que desea consultar.[Trayectoria A][Trayectoria B][Trayectoria B.1]
+    \UCpaso[\UCactor] Selecciona el semestre de la Unidades de Aprendizaje que desea consultar.[Trayectoria A][Trayectoria B][Trayectoria B.1][Trayectoria F]
     \UCpaso Despliega las Unidades de Aprendizaje asociadas al Semestre.[Trayectoria C][Trayectoria C.1]
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}.
-    \UCpaso Muestra el mensaje \MSGref{MSG30}{Está seguro que desea finalizar? Ya no podrá realizar modificaciones}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}. [Trayectoria D]
-    \UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudio}.
+  
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El actor presiona el botón \IUbutton{+}.}
@@ -51,7 +48,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 \begin{UCtrayectoriaA}{B}{El usuario presiona el botón \IUbutton{X} de un Semestre}
 	\UCpaso  Muestra el mensaje \MSGref{MSG39}{¿Está seguro que desea eliminar el Semestre [Número del Semestre]?}.
-	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.[Trayectoria E]
 	\UCpaso Elimina el Semestre.
     \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU6}.
 \end{UCtrayectoriaA}
@@ -74,8 +71,26 @@
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU6}.
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA D-------------------------
-\begin{UCtrayectoriaA}{D}{El actor presiona accidentalmente el botón \IUbutton{Finalizar}}
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
-    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU6}.
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA  -------------------------
+\begin{UCtrayectoriaA}{E}{El usuario desea eliminar un semestre con unidades de Aprendizaje}
+	\UCpaso Verifica que el semestre contenga unidades de aprendizaje.
+	\UCpaso Muestra el mensaje \MSGref{MSG32}{El semestre no se puede eliminar debido a que contiene unidades de aprendizaje.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU6}.
 \end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+\begin{UCtrayectoriaA}{F}{El usuario presiona accidentalmente el botón \IUbutton{Lápiz} de Rediseñar}
+	\UCpaso  Muestra el mensaje \MSGref{MSG53}{¿Está seguro que desea rediseñar el plan de estudios? (Se hara una copia de este)}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
+	\UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudio} de la copia de Plan de Estudio generada.
+\end{UCtrayectoriaA}
+%------------------------ CU TRAYECTORIA ALTERNARIVA F.1 -------------------------
+\begin{UCtrayectoriaA}{F.1}{El usuario presiona el botón \IUbutton{Lápiz} de Rediseñar}
+	\UCpaso  Muestra el mensaje \MSGref{MSG53}{¿Está seguro que desea rediseñar el plan de estudios? (Se hara una copia de este)}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
+	\UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU6}.
+\end{UCtrayectoriaA}
+

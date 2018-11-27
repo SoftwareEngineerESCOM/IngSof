@@ -1,5 +1,5 @@
 % EDITAR PLAN DE ESTUDIOS.
-\begin{UseCase}{SP4-CU10}{Editar Plan de Estudios}{El usuario Jefe de Innovación modifica los datos del Plan de Estudios registrado en el sistema.}
+\begin{UseCase}{SP4-CU10}{Editar Plan de Estudio}{El usuario Jefe de Innovación modifica los datos del Plan de Estudios registrado en el sistema.}
 	\UCitem{Versión}{\color{Gray}3.0}
 	\UCitem{Autor}{\color{Gray}Cervantes Moreno Christian Andres}
 	\UCitem{Supervisa}{\color{Gray} Evelyn Reyes}
@@ -23,7 +23,6 @@
             \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
             \item \MSGref{MSG35}{Escribe información válida.}
             \item \MSGref{MSG44}{Este campo es requerido}
-			\item \MSGref{MSG46}{Las horas totales de teoría y práctica deben de estar en el rango 350 y 450.}
 		\end{itemize}
 	}
 	\UCitem{Destino}{Pantalla.}
@@ -45,8 +44,8 @@
 	\UCpaso Carga el catálogo de modalidad descrito en la \BRref{BR14}{Existen los catálogos}.[Trayectoria A]
 	\UCpaso Muestra la interfaz de usuario \IUref{EPE-J}{Editar Plan de Estudios}.
 	\UCpaso[\UCactor] Modifica los campos deseados.
-	\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B] [Trayectoria B.1]
-	\UCpaso Verifica que se cumpla la \BRref{BR33}{Información de Planes de Estudios}. [Trayectoria C] [Trayectoria D] [Trayectoria F]
+	\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria B] [Trayectoria B.1]
+	\UCpaso Verifica que se cumpla la \BRref{BR33}{Información de Planes de Estudios}. [Trayectoria C] [Trayectoria D]
 	\UCpaso Persiste los datos ingresados. [Trayectoria E]
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
@@ -94,8 +93,4 @@
 	\UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Plan de Estudios}.
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
-\begin{UCtrayectoriaA}{F}{El sistema detecta incumplimiento de la \BRref{BR20}{Las horas totales deben de estar entre 350 y 450 horas}.}
-	\UCpaso Muestra el mensaje \MSGref{MSG46}{Las horas totales de teoría y práctica deben de estar en el rango 350 y 450.} debajo del campo que incumplió la \BRref{BR20}{Las horas totales deben de estar entre 350 y 450 horas}.
-	\UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU10}.
-\end{UCtrayectoriaA}
+
