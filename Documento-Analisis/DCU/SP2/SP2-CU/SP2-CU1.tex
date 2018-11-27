@@ -25,6 +25,7 @@
 		\UCitem{Precondiciones}{ 
 			\begin{itemize}
         	   \item El usuario debe estar autorizado para acceder a dicha unidad de aprendizaje.
+		   \item Todas las secciones de la unidad de aprendizaje deben haber sido revisadas: Descripción, Tiempos Asignados, Evaluación y Acreditación, Bibliografía, Perfil Docente y Unidades Temáticas.
         	\end{itemize}
 		}
 		\UCitem{Postcondiciones}{Se visualiza el paquete de unidades de aprendizaje de un semestre en particular, elegido por el usuario.}
@@ -37,9 +38,12 @@
 \begin{UCtrayectoria}{Principal}
 
 
-    \UCpaso Muestra la interfaz de usuario Consulta tareas \IUref{SP2-IU-Consulta Tareas}{Consultar Tareas}. %no tengo la vista.
+    \UCpaso Muestra la interfaz de usuario Consulta tareas \IUref{SP2-IU-Consulta Tareas}{Consultar Tareas}.
     \UCpaso [\UCactor] Selecciona el botón \IUbutton {Consultar} de la unidad de aprendizaje que quiera consultar. \hyperref[SP2-CU1-A]{Trayectoria A}.
     \UCpaso  Muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
+    \UCpaso [\UCactor] Selecciona el botón \IUbutton {Finalizar Revisión}.
+    \UCpaso  Verifica que todas las secciones estén hayan finalizado su revisión de acuerdo a la regla  \BRref{BR8}{Aprobación de Tareas.} \hyperref[SP2-CU1-B]{Trayectoria B}.
+    \UCpaso  Modifica el estado de la propuesta de unidad de aprendizaje de "Revisión por DES" a "Aprobado". \hyperref[SP2-CU1-C]{Trayectoria C}.
 
 \end{UCtrayectoria}
 
@@ -49,5 +53,20 @@
 \begin{UCtrayectoriaA}{A}{El usuario no tiene el permiso para acceder a la unidad de aprendizaje.}
     \UCpaso Muestra el mensaje \MSGref{MSG24}{Por el momento la página solicitada no esta disponible.}
     \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}.
+    \UCpaso  Muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
+\end{UCtrayectoriaA} 
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
+\label{SP2-CU1-B}
+\begin{UCtrayectoriaA}{B}{No todas las secciones han sido finalizadas en su revisión.}
+    \UCpaso Muestra el mensaje \MSGref{MSG51}{Error: Todas las secciones deben haber terminado su revisión.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton {Aceptar}.
+    \UCpaso  Muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
+\end{UCtrayectoriaA} 
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
+\label{SP2-CU1-C}
+\begin{UCtrayectoriaA}{C}{Existen comentarios en alguna de las secciones.}
+ \UCpaso Modifica el estado de la propuesta de unidad de aprendizaje de "Revisión por DES" a "Asignando por Unidad Aca.".
 \end{UCtrayectoriaA} 
 
