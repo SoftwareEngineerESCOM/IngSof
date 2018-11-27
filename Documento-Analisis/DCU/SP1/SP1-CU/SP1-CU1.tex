@@ -1,36 +1,43 @@
 %REGISTRAR PROGRAMA SINTÉTICO: JORGE
 
-\chapter{Especificación de Casos de Uso}
-
-\begin{UseCase}{SP1-CU1}{Registrar Programa Sintético}{El usuario podrá registrar el Programa Sintético correspondiente a una Unidad de Aprendizaje.}
+\begin{UseCase}{SP1-CU1}{Registrar Programa Sintético}{El usuario podrá registrar el Programa Sintético correspondiente a un Plan de Estudios.}
     \UCitem{Versión}{\color{Gray}1.0}
-    \UCitem{Autor}{\color{Gray}Maldonado Carpio Jorge Enrique}
-    \UCitem{Supervisa}{\color{Gray}Ramírez Martínez Janet Naibi}
-    \UCitem{Actor}{\hyperlink{Usuario}{Usuario}}
+    \UCitem{Autor}{\color{Gray}Maldonado Carpio Jorge Enrique.}
+    \UCitem{Supervisa}{\color{Gray}Cervantes Delgadillo Mauricio.}
+    \UCitem{Actor}{\hyperlink{Usuario}{Docente}}
     \UCitem{Propósito}{Servir como marco de referencia para el registro de los demás atributos de la Unidad de Aprendizaje.}
     \UCitem{Entradas}{Las entradas para el registro de tiempos de la Unidad de Aprendizaje serán:
-          \begin{itemize}
-            \item Unidad Académica.
-            \item Programa Académico.
-            \item Unidad de Aprendizaje.
-            \item Semestre
-            \item Propósito de la Unidad de Aprendizaje.
-            \item Contenidos.
-            \item Orientación Didáctica.
-            \item Evaluación y Acreditación.
-          \end{itemize}
-        }
+      \begin{itemize}
+          \item Unidad Académica.
+          \item Programa Académico.
+          \item Unidad de Aprendizaje.
+          \item Semestre.
+          \item Propósito de la Unidad de Aprendizaje.
+          \item Contenidos.
+          \item Orientación Didáctica.
+          \item Evaluación y Acreditación.
+      \end{itemize}
+    }
     \UCitem{Origen}{Teclado y Mouse.}
-    \UCitem{Salidas}{}
+    \UCitem{Salidas}{
+    \begin{itemize}
+          \item \MSGref{MSG4}{Los campos marcados con (*) son obligatorios}.
+          \item \MSGref{MSG5}{Registro finalizado exitosamente}.
+          \item \MSGref{MSG6}{¿Está seguro que desea cancelar el registro?}.
+
+      \end{itemize}
+    
+    
+    }
     \UCitem{Destino}{Pantalla.}
     \UCitem{Precondiciones}{Los siguientes catálogos no deben de estar vacios:
-          \begin{itemize}
-            \item Unidad Académica.
-            \item Programa Académico.
-            \item Unidad de Aprendizaje.
-            \item Semestre
-          \end{itemize}
-          }
+      \begin{itemize}
+          \item Unidad Académica.
+          \item Programa Académico.
+          \item Unidad de Aprendizaje.
+          \item Semestre
+      \end{itemize}
+      }
     \UCitem{Postcondiciones}{El Programa Sintético queda registrado en el sistema.}
     \UCitem{Errores}{}
     \UCitem{Estado}{Revisión.}
@@ -39,56 +46,61 @@
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Programa Sintético} de la interfaz de usuario \IUref{SP1IU}{Principal} 
-    \UCpaso Verifica que los catálogos Unidad Académica, Programa Académico, Unidad de Aprendizaje, Semestre no tengan información.
-    \UCpaso Carga la información de los catálogos.
-    \UCpaso Muestra la interfaz de usuario \IUref{SP1-U1}{Registro de Programa Sintético}.
-    \UCpaso[\UCactor] Selecciona la Unidad Académica.
-    \UCpaso[\UCactor] Selecciona el Programa Académico.
-    \UCpaso[\UCactor] Selecciona la Unidad de Aprendizaje.
-    \UCpaso[\UCactor] Selecciona el Semestre.
-    \UCpaso[\UCactor] Ingresa el Propósito de la Unidad de Aprendizaje.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Contenidos}
-    \UCpaso Abre un modal en el \UCref{SP1-CU2} [Trayectoria A]
-    \UCpaso[\UCactor] Ingresa la Orientación Didáctica.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Evaluación y Acreditación}
-    \UCpaso Abre un modal en el \UCref{SP1-CU3}
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B]
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados.[Trayectoria C]
-    \UCpaso Guarda la información del Programa Sintético.
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
-    \UCpaso Muestra la interfaz de usuario \IUref{IU1}{Página principal}.
+
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Programa Sintético} de la interfaz de usuario \IUref{}{Página Principal}
+\UCpaso Verifica que los catálogos Unidad Académica, Programa Académico, Unidad de Aprendizaje, Semestre tengan al menos un registro.
+\UCpaso Carga la información de los catálogos.
+\UCpaso Muestra la interfaz de usuario \IUref{IU.01}{Registrar el Programa Sintético}.
+\UCpaso[\UCactor] Selecciona la Unidad Académica.
+\UCpaso[\UCactor] Selecciona el Programa Académico.
+\UCpaso[\UCactor] Selecciona la Unidad de Aprendizaje.
+\UCpaso[\UCactor] Selecciona el Semestre.
+\UCpaso[\UCactor] Ingresa el Propósito de la Unidad de Aprendizaje conforme al modelo de Negocios.
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Contenidos}
+\UCpaso Abre un modal en el \UCref{SP1-CU2} [Trayectoria A]
+\UCpaso[\UCactor] Ingresa la Orientación Didáctica conforme al modelo de Negocios.
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Evaluación y Acreditación}
+\UCpaso Abre un modal en el \UCref{SP1-CU3}
+\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria B]
+\UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados.[Trayectoria C]
+\UCpaso Guarda la información del Programa Sintético.
+
+\UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
+\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}. 
+
+
+
+\UCpaso Muestra la interfaz de usuario \IUref{IU1}{Página principal}.
 \end{UCtrayectoria}
 
 %------------------------ CU TRAYECTORIA ALTERNARTIVA A -------------------------
 
 \begin{UCtrayectoriaA}{A}{El usuario desea agregar más de un contenido.}
 
-    \UCpaso Continua en el paso 8 de la trayectoria principal del \UCref{SP1-CU1}.
+\UCpaso Continua en el paso 8 de la trayectoria principal del \UCref{SP1-CU1}.
 
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{B}{El usuario desea cancelar el registro del Programa Sintético.}
 
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
-    \UCpaso Muestra el \MSGref{MSG6}{¿Seguro que desea cancelar el registro?}.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Si} [Trayectoria B.1]
-    \UCpaso Continua en el paso 20 de la trayectoria principal del \UCref{SP1-CU1}.
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
+\UCpaso Muestra el \MSGref{MSG6}{¿Está seguro que desea cancelar el registro?}.
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Si} [Trayectoria C.1]
+\UCpaso Continua en el paso 20 de la trayectoria principal del \UCref{SP1-CU1}.
 
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{B.1}{El usuario no desea cancelar el registro del Programa Sintético.}
 
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{No}
-    \UCpaso Continua en el paso 15 de la trayectoria principal del \UCref{SP1-CU1}.
+\UCpaso[\UCactor] Presiona el botón \IUbutton{No}
+\UCpaso Continua en el paso 15 de la trayectoria principal del \UCref{SP1-CU1}.
 
 \end{UCtrayectoriaA}
 
 
 \begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados.}
-  \UCpaso Detecta uno o más campos sin contestar.
-    \UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU1}.
+\UCpaso Detecta uno o más campos sin contestar.
+\UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios}.
+\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+\UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU1}.
 \end{UCtrayectoriaA}
