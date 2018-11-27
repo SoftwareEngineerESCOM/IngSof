@@ -27,7 +27,11 @@
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
-        \UCitem{Precondiciones}{La bibliografía que se desea registrar, no debe existir previamente en el sistema.}
+        \UCitem{Precondiciones}{
+            \begin{itemize}
+                \item La bibliografía que se desea registrar, no debe existir previamente en el sistema.
+                \item Los catálogos ``Tipo\_Bibliografía'' y ``Lugar\_Publicacion'' no deben estar vacios.
+            \end{itemize}}
         \UCitem{Postcondiciones}{La bibliografía queda registrada en el sistema.}
         \UCitem{Errores}{}
         \UCitem{Estado}{Revisión.}
@@ -37,13 +41,13 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar bibliografía} que se encuentra en el menú de navegación.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar bibliografía}.
 
-    \UCpaso Busca en la base de datos la información de los catálogos. [Trayectoria A]
+    \UCpaso Busca en la base de datos la información de los catálogos ``Tipo\_Bibliografía'' y ``Lugar\_Publicacion''. [Trayectoria A]
 
-    \UCpaso Muestra la interfaz de usuario \IUref{IU7}{Registrar bibliografía}.
+    \UCpaso Muestra la interfaz de usuario \IUref{IU6}{Registrar bibliografía}.
 
-    \UCpaso[\UCactor] Selecciona el(los) autor(es) de la lista de autores disponibles. [Trayectoria B]
+    \UCpaso[\UCactor] Selecciona el(los) autor(es) de la lista de autores disponibles con base en la regla de negocio \BRref{BR23}{Un libro con más de 3 autores es sólo citado por los primeros 3.}. [Trayectoria B]
 
     \UCpaso[\UCactor] Selecciona el año de publicación del libro que se está registrando.
 
@@ -53,13 +57,13 @@
 
     \UCpaso[\UCactor] Selecciona la editorial del libro que está siendo registrado.
 
-    \UCpaso[\UCactor] Ingresa el ISBN asociado al libro que está registrando.
+    \UCpaso[\UCactor] Ingresa el ISBN asociado al libro que está registrando con base en las reglas de negocio \BRref{BR21}{Un libro tiene un ISBN único.} y \BRref{BR22}{Longitud del ISBN}.
 
     \UCpaso[\UCactor] Selecciona el tipo de la bibliografía.
 
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Continuar}.
 
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria C]
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados con base en la regla de negocio \BRref{BR13}{Todos los datos solicitados son obligatorios}. [Trayectoria C]
 
     \UCpaso Valida que no exista un libro con el mismo ISBN. [Trayectoria D]
 
@@ -75,7 +79,7 @@
 %------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
 
 \begin{UCtrayectoriaA}{A}{Los catálogos están vacios.}
-    \UCpaso No encuentra información en los catálogos.
+    \UCpaso No encuentra información en los catálogos ``Tipo\_Bibliografía'' y ``Lugar\_Publicacion''.
     \UCpaso El sistema muestra el mensaje \MSGref{MSG9.}{Por el momento no se puede realizar el registro.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     %\UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{CU1}.
@@ -85,9 +89,9 @@
 
 \begin{UCtrayectoriaA}{B}{No existe el(los) autor(es) requerido(s) en la lista de autores disponibles.}
     \UCpaso[\UCactor] No encuentra al autor requerido.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Autor} de la \IUref{IU7}{Registrar bibliografía.}
-    \UCpaso Muestra el modal \IUref{IU7.1}{Registrar Autor de la bibliografía}.
-    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP1-CU6}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Autor} de la \IUref{IU6}{Registrar bibliografía.}
+    \UCpaso Muestra el modal \IUref{IU6.1}{Registrar Autor}.
+    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP1-CU14}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
