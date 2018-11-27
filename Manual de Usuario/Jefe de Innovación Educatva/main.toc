@@ -22,8 +22,11 @@
 \contentsline {subsection}{\numberline {4.1.1}Buscar Planes de Estudio seg\IeC {\'u}n su cargo}{22}{subsection.4.1.1}
 \contentsline {section}{\numberline {4.2}Editar Planes de Estudios}{23}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Posibles errores}{27}{subsection.4.2.1}
-\contentsline {chapter}{\numberline {5}Gesti\IeC {\'o}n de Unidades de Aprendizaje}{28}{chapter.5}
-\contentsline {section}{\numberline {5.1}Consultar de Unidades de Aprendizaje}{28}{section.5.1}
-\contentsline {section}{\numberline {5.2}Registrar Unidades de Aprendizaje}{29}{section.5.2}
-\contentsline {section}{\numberline {5.3}Editar Unidades de Aprendizaje}{32}{section.5.3}
-\contentsline {section}{\numberline {5.4}Eliminar Unidades de Aprendizaje}{33}{section.5.4}
+\contentsline {section}{\numberline {4.3}Registrar Planes de Estudios}{28}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Registro de Plan de Estudio}{29}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Posibles errores}{32}{subsection.4.3.2}
+\contentsline {chapter}{\numberline {5}Gesti\IeC {\'o}n de Unidades de Aprendizaje}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Consultar de Unidades de Aprendizaje}{33}{section.5.1}
+\contentsline {section}{\numberline {5.2}Registrar Unidades de Aprendizaje}{34}{section.5.2}
+\contentsline {section}{\numberline {5.3}Editar Unidades de Aprendizaje}{37}{section.5.3}
+\contentsline {section}{\numberline {5.4}Eliminar Unidades de Aprendizaje}{38}{section.5.4}
