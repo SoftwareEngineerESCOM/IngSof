@@ -103,7 +103,7 @@
 \contentsline {section}{\numberline {3.5}SP4-CU5 Consultar Programas Acad\IeC {\'e}micos}{70}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Descripci\IeC {\'o}n completa}{70}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Atributos importantes}{70}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Trayectorias del Caso de Uso}{71}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.3}Trayectorias del Caso de Uso}{70}{subsection.3.5.3}
 \contentsline {section}{\numberline {3.6}SP4-CU6 Consultar Plan de Estudio}{72}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Descripci\IeC {\'o}n completa}{72}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}Atributos importantes}{72}{subsection.3.6.2}
