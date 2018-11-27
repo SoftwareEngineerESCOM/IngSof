@@ -3,7 +3,7 @@
         \UCitem{Autor}{\color{Gray}Plata García Josué Eliasaf}
         \UCitem{Supervisa}{\color{Gray}Evelyn Reyes}
         \UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa,Jefe de División de Innovación Académica y Jefe de Departamento de Desarrollo e Innovación Curricular}}
-        \UCitem{Propósito}{El Usuario puede visualizar una lista  de  los Programas Académicos almacenados en el Sistema asociados a su Unidad Académica.}
+        \UCitem{Propósito}{El Usuario puede visualizar una lista  de  los Programas Académicos almacenados en el Sistema.}
         \UCitem{Entradas}{Las entradas para la consulta del Programa Académico:
           \begin{itemize}
             \item Ninguna
@@ -31,10 +31,10 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Gestionar Programa Académico} de la pantalla  \IUref{B-J}{Pantalla Bienvenida al Jefe de Innovación Educativa} o la pantalla \IUref{IU4}{Pantalla de bienvenida para el JDIA ó el JDIC.} . Existen las trayectorias alternativas [Trayectoria D] al presionar el boton  \IUbutton{Gestionar Programa Académico}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Gestionar Programa Académico} de la pantalla  \IUref{B-J}{Pantalla Bienvenida al Jefe de Innovación Educativa} o la pantalla \IUref{IU4}{Pantalla de bienvenida para el JDIA ó el JDIC.} . Existen las trayectorias alternativas [Trayectoria D] al presionar el boton  \IUbutton{Gestionar Programa Académico}.gestiona Programas Académicos de su Unidad Académica.}.
     \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programa Académico}.
-    \UCpaso Carga el catálogo de Lugar de Trabajo descrito en la \BRref{BR14}{Catálogos existentes} [Trayectoria A] [Trayectoria C]
-    \UCpaso[\UCactor] Selecciona la Unidad Académica que desea como filtro. [Trayectoria B] Trayectoria Lanzada por el botón filtro.
+    \UCpaso Carga el catálogo de Lugar de Trabajo descrito en la \BRref{BR14}{Catálogos existentes} [Trayectoria A].
+    \UCpaso[\UCactor] Selecciona la Unidad Académica que desee como filtro. [Trayectoria B] Trayectoria Lanzada por el botón filtro, [Trayectoria C] al varificar la \BRref{BR40}{El Jefe de Innovación Educativa solo gestiona Programas Académicos de su Unidad Académica.}.
     \UCpaso[\UCactor] Aplica el filtro presionando el botón \IUbutton{Buscar}.
     \UCpaso Muestra tabla con los datos de los Programas Académicos que cumplan con el filtro.
 \end{UCtrayectoria}
@@ -53,8 +53,8 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C-------------------------
 
-\begin{UCtrayectoriaA}{C}{El actor es el Jefe de Innovación Educativa}
-    \UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU5} con filtro predeterminado de su Unidad Académica.
+\begin{UCtrayectoriaA}{C}{El actor es el Jefe de Innovación Educativa.}
+    \UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU5} con filtro predeterminado de su Unidad Académica.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 \begin{UCtrayectoriaA}{D}{Problemas con la Conexión}
