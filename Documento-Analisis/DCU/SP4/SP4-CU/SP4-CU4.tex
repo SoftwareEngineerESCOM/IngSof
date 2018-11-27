@@ -27,6 +27,8 @@
         \UCitem{Precondiciones}{
             \begin{itemize}
                 \item El catálogo de Cargo debe de estar cargado en el sistema.
+                \item El catálogo de Titulo debe de estar cargado en el sistema.
+                \item El catálogo de Lugar de Trabajo debe de estar cargado en el sistema.
             \end{itemize}
         }
         \UCitem{Postcondiciones}{El Recurso Humano quedará registrado en el sitema, permitiendo consultarlo y relacionarlo a una Unidad de Aprendizaje.}
@@ -43,15 +45,16 @@
     \UCpaso[\UCactor] Presiona el botón \IUbutton{(+)} de la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}
     \UCpaso Carga el catálogo de Cargo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga el catálogo de Título descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
+    \UCpaso Carga el catálogo de Lugar de Trabajo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{RRH-J}{Registrar Recurso Humano}.
-    \UCpaso[\UCactor] Ingresa el Nombre.
-    \UCpaso[\UCactor] Ingresa el Primer Apellido.
-    \UCpaso[\UCactor] Ingresa el Segundo Apellido.
+    \UCpaso[\UCactor] Ingresa el Nombre, el sistema verifica conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR13}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria B][Trayectoria C]
+    \UCpaso[\UCactor] Ingresa el Nombre, el sistema verifica conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR13}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria B][Trayectoria C]
+    \UCpaso[\UCactor] Ingresa el Nombre, el sistema verifica conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR13}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria B][Trayectoria C]
     \UCpaso[\UCactor] Selecciona uno o múltiples Cargos.
     \UCpaso[\UCactor] Selecciona el Título.
-    \UCpaso[\UCactor] Selecciona uno o múltiples Lugar de Trabajo.
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria B] [Trayectoria B.1]
-    \UCpaso Valida los datos conforme al Modelo de datos. [Trayectoria C][Trayectoria D]
+    \UCpaso[\UCactor] Selecciona el Lugar de Trabajo.
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria D] [Trayectoria D.1]
+    \UCpaso Verifica que se cumpla la \BRref{BR13}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria C]
     \UCpaso Persiste los datos ingresados. [Trayectoria E]
     \UCpaso Muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
@@ -64,16 +67,9 @@
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-\begin{UCtrayectoriaA}{B}{El actor presiona el botón \IUbutton{Cancelar}}
-    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
-    \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
-\end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
-\begin{UCtrayectoriaA}{B.1}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}}
-    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Está seguro que desea cancelar el registro?}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
-    \UCpaso Continúa en el paso 11 de la trayectoria principal del \UCref{SP4-CU4}.
+\begin{UCtrayectoriaA}{B}{El Sistema detecta campos que incumplen con el diccionario de datos.}
+    \UCpaso Muestra el mensaje \MSGref{MSG35}{ Escribe información válida} debajo del campo inconsistente.
+    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 \begin{UCtrayectoriaA}{C}{El Sistema detecta uno o más campos obligatorios sin contestar.}
@@ -81,9 +77,16 @@
     \UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU4}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-\begin{UCtrayectoriaA}{D}{El Sistema detecta inconsistencia en los datos}
-    \UCpaso Muestra el mensaje \MSGref{MSG35}{ Escribe información válida} debajo del campo inconsistente.
-    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
+\begin{UCtrayectoriaA}{D}{El actor presiona el botón \IUbutton{Cancelar}}
+    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
+    \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
+\end{UCtrayectoriaA}
+%------------------------ CU TRAYECTORIA ALTERNARIVA D.1 -------------------------
+\begin{UCtrayectoriaA}{D.1}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}}
+    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Está seguro que desea cancelar el registro?}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
+    \UCpaso Continúa en el paso 11 de la trayectoria principal del \UCref{SP4-CU4}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 \begin{UCtrayectoriaA}{E}{Ocurre un error al momento de persistir los datos.}

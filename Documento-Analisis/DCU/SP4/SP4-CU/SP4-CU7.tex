@@ -23,11 +23,7 @@
             \end{itemize}
         }
         \UCitem{Postcondiciones}{Los Recursos Humanos desplegados en pantalla podrán ser editados o eliminados.}
-        \UCitem{Errores}{
-            \begin{itemize}
-                \item E1. No existen o no pudieron cargarse los catálogo necesarios.
-            \end{itemize}
-        }
+        \UCitem{Errores}{}
         \UCitem{Puntos de Extensión}{
             \begin{itemize}
                 \item \UCref{SP4-CU4}: Registrar Recurso Humano.
@@ -42,7 +38,7 @@
     \UCpaso[\UCactor] Presiona la opción de Gestionar Recursos Humanos del menú en la interfaz de usuario \IUref{B-J}{Bienvenida al Jefe de Innovación Educativa}..
     \UCpaso Carga el catálogo de Cargo definido en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
-    \UCpaso Muestra tabla con los datos de los Recursos Humanos que cumplan con el filtro seleccionado.[Trayectoria B][Trayectoria B.1][Trayectoria C][Trayectoria C.1]
+    \UCpaso[\UCactor] Selecciona el filtro.[Trayectoria B][Trayectoria B.1]
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{Los catálogos de la \BRref{BR14}{Catálogos existentes} necesarios no se pudieron cargar.}
@@ -52,13 +48,13 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 \begin{UCtrayectoriaA}{B}{El actor no selecciona ningún filtro}
-    \UCpaso Muestra una tabla con los datos de todos los Recursos Humanos.
+    \UCpaso Muestra una tabla con los datos de todos los Recursos Humanos.[Trayectoria C][Trayectoria C.1]
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU7}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
 \begin{UCtrayectoriaA}{B.1}{El actor desea filtrar los Recursos Humanos}
     \UCpaso[\UCactor] Selecciona el Cargo que desea como filtro.
-    \UCpaso Muestra una tabla con los datos de los Recursos Humanos con ese cargo.
+    \UCpaso Muestra una tabla con los datos de los Recursos Humanos con ese cargo.[Trayectoria C][Trayectoria C.1]
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU7}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------

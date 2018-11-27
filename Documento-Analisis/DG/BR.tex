@@ -132,7 +132,7 @@
     \BRitem[Ejemplo Negativo:] Una propuesta de unidad de aprendizaje puede ser revisada por un analista en cualquier momento.
 \end{BussinesRule}
 %----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR13}{Todos los datos solicitados son obligatorios.}
+\begin{BussinesRule}{BR13}{Todos los campos marcados con (*) son obligatorios.}
     \BRitem[Tipo:] Regla de Operación.
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
@@ -223,7 +223,7 @@
     \BRitem[Motivación: ]Mantener los datos en un estado consistente.
 \end{BussinesRule}
 %----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR15}{Planes de Estudios en re diseño por Programa Académico.}
+\begin{BussinesRule}{BR15}{Planes de Estudios en rediseño por Programa Académico.}
     \BRitem[Tipo:] Relación.
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
@@ -252,17 +252,17 @@
     \BRitem[Ejemplo Positivo:] En un Programa Académico  tenemos la materia Ingeniería de Software y Administración de Proyectos.
     \BRitem[Ejemplo Negativo: ]En un Programa Académico  tenemos la materia Ingeniería de Software y  Ingeniería de Software.
 \end{BussinesRule}
-%----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR18}{ Longitud máxima de Unidad de aprendizaje.}
-    \BRitem[Tipo: ]Regla de inferencia de un hecho.
-    \BRitem[Clase: ]Habilitadora.
-    \BRitem[Nivel: ]Control.
-    \BRitem[Descripción: ]El nombre de la Unidad de Aprendizaje tiene un tamaño máximo de 80 caracteres.
-    \BRitem[Sentencia:]
-    \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
-    \BRitem[Ejemplo Positivo:] El usuario llena los datos marcados con (*) y prosigue con su operación.
-    \BRitem[Ejemplo Negativo: ]El usuario deja campos obligatorios y el sistema le permite continuar.
-\end{BussinesRule}
+% %----------------------------------BR --------------------------------------%
+% \begin{BussinesRule}{BR18}{ Longitud máxima de Unidad de aprendizaje.}
+%     \BRitem[Tipo: ]Regla de inferencia de un hecho.
+%     \BRitem[Clase: ]Habilitadora.
+%     \BRitem[Nivel: ]Control.
+%     \BRitem[Descripción: ]El nombre de la Unidad de Aprendizaje tiene un tamaño máximo de 80 caracteres.
+%     \BRitem[Sentencia:]
+%     \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
+%     \BRitem[Ejemplo Positivo:] El usuario llena los datos marcados con (*) y prosigue con su operación.
+%     \BRitem[Ejemplo Negativo: ]El usuario deja campos obligatorios y el sistema le permite continuar.
+% \end{BussinesRule}
 %----------------------------------BR --------------------------------------%
 \begin{BussinesRule}{BR19} {El nombre del Programa Académico es único.}
     \BRitem[Tipo: ]Relación.
@@ -273,16 +273,16 @@
     \BRitem[Ejemplo Positivo:] En una Unidad Académica existen los Programas Académicos Ingeniería en Sistemas Computacionales y Ingeniería en Comunicaciones y Electrónica.
     \BRitem[Ejemplo Negativo: ]En una Unidad Académica existen los Programas Académicos Ingeniería en Sistemas Computacionales y Ingeniería en Sistemas Computacionales.
 \end{BussinesRule}
-%----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR20}{Las horas totales deben de estar entre 350 y 450 horas.}
-    \BRitem[Tipo: ]Regla de operación.
-    \BRitem[Clase: ]Habilitadora.
-    \BRitem[Nivel: ]Control.
-    \BRitem[Descripción: ]Un Plan de Estudios debe tener entre 350 y 450 horas.
-    \BRitem[Motivación:] Distribuir las horas entre las unidades de aprendizaje.
-    \BRitem[Ejemplo Positivo:] El usuario llena los dato de total de horas con 400 horas.
-    \BRitem[Ejemplo Negativo: ] El usuario llena los dato de total de horas con 40000 horas.
-\end{BussinesRule}
+% %----------------------------------BR --------------------------------------%
+% \begin{BussinesRule}{BR20}{Las horas totales deben de estar entre 350 y 450 horas.}
+%     \BRitem[Tipo: ]Regla de operación.
+%     \BRitem[Clase: ]Habilitadora.
+%     \BRitem[Nivel: ]Control.
+%     \BRitem[Descripción: ]Un Plan de Estudios debe tener entre 350 y 450 horas.
+%     \BRitem[Motivación:] Distribuir las horas entre las unidades de aprendizaje.
+%     \BRitem[Ejemplo Positivo:] El usuario llena los dato de total de horas con 400 horas.
+%     \BRitem[Ejemplo Negativo: ] El usuario llena los dato de total de horas con 40000 horas.
+% \end{BussinesRule}
 %----------------------------------BR --------------------------------------%
 \begin{BussinesRule}{BR21}{Un libro tiene un ISBN único.}
     \BRitem[Tipo:] Regla de integridad referencial.
@@ -293,25 +293,25 @@
     \BRitem[Ejemplo Positivo:] Un libro cuyo nombre es ``Ingeniería de Software'' conlleva un ISBN que es 978-92-95055-02-5, y existe otro libro con el mismo nombre ``Ingeniería de Software'' sin embargo su ISBN es 969-83-59550-10-3. Entonces se cumple la regla
     \BRitem[Ejemplo Negativo:] Para el planteamiento anterior no cumple la regla que el ISBN sea el mismo para ambos libros, puesto que uno es escrito por un autor, y el otro es escrito por otro autor.
 \end{BussinesRule}
-%----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR22}{Longitud del ISBN.}
-    \BRitem[Tipo:] Regla de integridad estructural.
-    \BRitem[Clase:] Habilitadora.
-    \BRitem[Nivel:] Control.
-    \BRitem[Descripción:] El ISBN se compone actualmente de trece dígitos agrupados en cinco elementos, mismos que deben estar separados por guiones de la siguiente manera:
-    \begin{itemize}
-        \item Prefijo Internacional (978)
-        \item Identificador de grupo o Grupo de registro (607)
-        \item Prefijo de editor o de Agente editor (0000)
-        \item Identificador de título o publicación (00)
-        \item Dígito de control o de comprobación (0)
-    \end{itemize}
-El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
-    \BRitem[Sentencia:]
-    \BRitem[Motivación:] Apegarnos a las normas de la \emph{Secretaría de Cultura} y el \emph{Instituto Nacional del Derecho de Autor} para así evitar sanciones y/o incongruencias en el sistema.
-    \BRitem[Ejemplo Positivo:]
-    \BRitem[Ejemplo Negativo:]
-\end{BussinesRule}
+% %----------------------------------BR --------------------------------------%
+% \begin{BussinesRule}{BR22}{Longitud del ISBN.}
+%     \BRitem[Tipo:] Regla de integridad estructural.
+%     \BRitem[Clase:] Habilitadora.
+%     \BRitem[Nivel:] Control.
+%     \BRitem[Descripción:] El ISBN se compone actualmente de trece dígitos agrupados en cinco elementos, mismos que deben estar separados por guiones de la siguiente manera:
+%     \begin{itemize}
+%         \item Prefijo Internacional (978)
+%         \item Identificador de grupo o Grupo de registro (607)
+%         \item Prefijo de editor o de Agente editor (0000)
+%         \item Identificador de título o publicación (00)
+%         \item Dígito de control o de comprobación (0)
+%     \end{itemize}
+% El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
+%     \BRitem[Sentencia:]
+%     \BRitem[Motivación:] Apegarnos a las normas de la \emph{Secretaría de Cultura} y el \emph{Instituto Nacional del Derecho de Autor} para así evitar sanciones y/o incongruencias en el sistema.
+%     \BRitem[Ejemplo Positivo:]
+%     \BRitem[Ejemplo Negativo:]
+% \end{BussinesRule}
 %----------------------------------BR --------------------------------------%
 \begin{BussinesRule}{BR23}{Un libro con más de 3 autores es sólo citado por los primeros 3.}
     \BRitem[Tipo:] Regla de integridad estructural.
@@ -362,28 +362,28 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
             \item 2023.
         \end{itemize}
 \end{BussinesRule}
-%----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR27}{ Longitud máxima de matricula.}
-    \BRitem[Tipo: ]Regla de inferencia de un hecho.
-    \BRitem[Clase: ]Habilitadora.
-    \BRitem[Nivel: ]Control.
-    \BRitem[Descripción: ]La matricula tiene un tamaño máximo de 10 caracteres y es la matricula que tiene cada trabajador del IPN.
-    \BRitem[Sentencia:]
-    \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
-    \BRitem[Ejemplo Positivo:] . 2014171285
-    \BRitem[Ejemplo Negativo: ]. 20111111111
-\end{BussinesRule}
-%----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR28}{ Longitud máxima de contraseña.}
-    \BRitem[Tipo: ]Regla de inferencia de un hecho.
-    \BRitem[Clase: ]Habilitadora.
-    \BRitem[Nivel: ]Control.
-    \BRitem[Descripción: ]La contraseña tiene un tamaño máximo de 6 caracteres y no debe llevar acentos.
-    \BRitem[Sentencia:]
-    \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
-    \BRitem[Ejemplo Positivo:] . abc123
-    \BRitem[Ejemplo Negativo: ]. abé123333
-\end{BussinesRule}
+% %----------------------------------BR --------------------------------------%
+% \begin{BussinesRule}{BR27}{ Longitud máxima de matricula.}
+%     \BRitem[Tipo: ]Regla de inferencia de un hecho.
+%     \BRitem[Clase: ]Habilitadora.
+%     \BRitem[Nivel: ]Control.
+%     \BRitem[Descripción: ]La matricula tiene un tamaño máximo de 10 caracteres y es la matricula que tiene cada trabajador del IPN.
+%     \BRitem[Sentencia:]
+%     \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
+%     \BRitem[Ejemplo Positivo:] . 2014171285
+%     \BRitem[Ejemplo Negativo: ]. 20111111111
+% \end{BussinesRule}
+% %----------------------------------BR --------------------------------------%
+% \begin{BussinesRule}{BR28}{ Longitud máxima de contraseña.}
+%     \BRitem[Tipo: ]Regla de inferencia de un hecho.
+%     \BRitem[Clase: ]Habilitadora.
+%     \BRitem[Nivel: ]Control.
+%     \BRitem[Descripción: ]La contraseña tiene un tamaño máximo de 6 caracteres y no debe llevar acentos.
+%     \BRitem[Sentencia:]
+%     \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
+%     \BRitem[Ejemplo Positivo:] . abc123
+%     \BRitem[Ejemplo Negativo: ]. abé123333
+% \end{BussinesRule}
 %----------------------------------BR --------------------------------------%
 \begin{BussinesRule}{BR29}{Debe existir al menos un criterio de evaluación para la Relación de Prácticas.}
     \BRitem[Tipo:] Regla de integridad estructural.
@@ -393,168 +393,168 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
     \BRitem[Motivación:] Que cada práctica tenga al menos un referente para evaluar a sus alumnos.
     \BRitem[Ejemplo positivo:] La Práctica 1 de la Unidad de Aprendizaje ``Ingeniería de Sofware'' tiene como único criterio de evaluación el desarrollo de un proyecto cuyo porcentaje equivale al 100\% de la calificación del alumno.
 \end{BussinesRule}
-%----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR30}{Información personal de usuarios y/o recursos humanos}
-        \BRitem[Tipo:] Regla de integridad.
-    \BRitem[Clase:] Habilitadora.
-    \BRitem[Nivel:] Control.
-    \BRitem[Descripción:]Se debe de contar con la siguiente información para registrar un usuario y/o recurso humano:
-    \begin{itemize}
-        \item Nombre
-        \item Primer Apellido.
-        \item Segundo Apellido.
+% %----------------------------------BR --------------------------------------%
+% \begin{BussinesRule}{BR30}{Información personal de usuarios y/o recursos humanos}
+%         \BRitem[Tipo:] Regla de integridad.
+%     \BRitem[Clase:] Habilitadora.
+%     \BRitem[Nivel:] Control.
+%     \BRitem[Descripción:]Se debe de contar con la siguiente información para registrar un usuario y/o recurso humano:
+%     \begin{itemize}
+%         \item Nombre
+%         \item Primer Apellido.
+%         \item Segundo Apellido.
 
-        Estos tres datos comparten la misma expresión regular:
-        \verb|/^[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+(((-|')[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)|.)?( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+(((-|')[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)|.)?)*/|
-        \item ***Contraseña. Expresión regular: \verb|/[^áéíóúüñÁÉÍÓÚÜÑ\s]+/|
+%         Estos tres datos comparten la misma expresión regular:
+%         \verb|/[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*/|
+%         \item ***Contraseña. Expresión regular: \verb|/[^áéíóúüñÁÉÍÓÚÜÑ\s]+/|
 
-        \item Correo electrónico.
-    \end{itemize}
-    ***La diferencia entre un usuario del sistema y un recurso humano registrado es que el primero posee contraseña, mientras que el segundo no. Un recurso humano se convierte en un usuario cuando se le asigna una contraseña.
+%         \item Correo electrónico.
+%     \end{itemize}
+%     ***La diferencia entre un usuario del sistema y un recurso humano registrado es que el primero posee contraseña, mientras que el segundo no. Un recurso humano se convierte en un usuario cuando se le asigna una contraseña.
 
-    \BRitem[Motivación:] Contar con la información necesaria de los usuarios y recursos humanos para el desarrollo de las actividades.
-    \BRitem[Ejemplo positivo:] Información personal del usuario o recurso humano
-    \begin{itemize}
-        \item Nombre: Juan Manuel
-        \item Primer Apellido: Perez de
-        \item Segundo Apellido: los Santos
-        \item ***Contraseña: juanit8banan4 (Si se trata de un usuario)
-        \item Correo electrónico: juanito@gmail.com
-    \end{itemize}
-    \BRitem[Ejemplo negativo:] Información personal del usuario o recurso humano
-    \begin{itemize}
-        \item Nombre: juan Ma. Fernando
-        \item Primer Apellido: Perez de los Santos
-        \item Segundo Apellido: del Carmen
-        \item ***Contraseña: 132:\_147\%\$ (Si se trata de un usuario)
-        \item Correo electrónico: juanito\&@gmail.com-mx/
-    \end{itemize}
- \end{BussinesRule}
-%----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR31}{Información de Programa Académico.}
-    \BRitem[Tipo:] Regla de integridad.
-    \BRitem[Clase:] Habilitadora.
-    \BRitem[Nivel:] Control.
-    \BRitem[Descripción:]Se debe de contar con la siguiente información para registrar un Programa Académico:
-    \begin{itemize}
-        \item Nombre
-        Este dato tiene la expresión regular:
-     \verb|[\wéíóúüñÁÉÍÓÚÜÑ]+( [\wáéíóúüñÁÉÍÓÚÜÑ+])*|
-    \end{itemize}
-    \BRitem[Motivación:] Contar con la información necesaria para la gestión de un Programa Académico.
-    \BRitem[Ejemplo positivo:] Información del Programa Académico
-    \begin{itemize}
-        \item Nombre: Ingeniería en Sistemas Computacionales
-    \end{itemize}
-    \BRitem[Ejemplo negativo:] Información del Programa Académico
-    \begin{itemize}
-    \item Nombre: Ingeniería\% \_en\ Sistemas\ Computacionales\
-    \end{itemize}
- \end{BussinesRule}
-%----------------------------------BR --------------------------------------%
- \begin{BussinesRule}{BR32}{ Longitud máxima de nombre de Programa Académico.}
-    \BRitem[Tipo: ]Regla de inferencia de un hecho.
-    \BRitem[Clase: ]Habilitadora.
-    \BRitem[Nivel: ]Control.
-    \BRitem[Descripción: ]El nombre del Programa Acádémico tiene una longitud máxima de 150 basada en el modelo de datos.
-    \BRitem[Sentencia:]
-    \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
-    \BRitem[Ejemplo Positivo:] . Ingeniería en Sistemas Computacionales
-    \BRitem[Ejemplo Negativo: ]. Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales
-\end{BussinesRule}
-%----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR33}{Información del Plan de Estudio.}
-	\BRitem[Tipo:] Regla de integridad.
-	\BRitem[Clase:] Habilitadora.
-	\BRitem[Nivel:] Control.
-	\BRitem[Descripción:]Se debe de contar con la siguiente información para registrar el Plan de Estudios:
-	\begin{itemize}
-		\item Programa Académico. Se obtiene por medio de un select.
-		\item Año. Expresión regular: \verb|\d{4}|
-		\item Modalidad. Se obtiene por medio de un select.
-		\item Créditos totales TEPIC. Expresión Regular: \verb|\d+(\.\d{1,2})?|
-		\item Créditos totales SATCA. Expresión Regular: \verb|\d+(\.\d{1,2})?|
-		\item Total Horas/Teoría. Expresión Regular: \verb|\d{3,}|
-		\item Total Horas/Práctica. Expresión Regular: \verb|\d{3,}|
-	\end{itemize}
-	\BRitem[Motivación:] Contar con la información necesaria del Plan de Estudio para el desarrollo de las actividades.
-	\BRitem[Ejemplo positivo:] Información del Plan de Estudios
-	\begin{itemize}
-		\item Año: 2008
-		\item Créditos totales TEPIC: 450
-		\item Créditos totales SATCA: 328.55
-		\item Total Horas/ Teoría: 150
-		\item Total Horas/ Práctica: 150
-	\end{itemize}
-	\BRitem[Ejemplo negativo:] Información del Plan de Estudios
-	\begin{itemize}
-		\item Año: 18
-		\item Créditos totales TEPIC: 302.5 6
-		\item Créditos totales SATCA: 1 . 5
-		\item Total Horas/ Teoría: 104
-		\item Total Horas/ Práctica: 568
-	\end{itemize}
-\end{BussinesRule}
-%----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR34}{Información de Unidad de Aprendizaje.}
-	\BRitem[Tipo:] Regla de integridad.
-	\BRitem[Clase:] Habilitadora.
-	\BRitem[Nivel:] Control.
-	\BRitem[Descripción:]Se debe de contar con la siguiente información para registrar una Unidad de Aprendizaje:
-	\begin{itemize}
-		\item Nombre. Expresión Regular: /[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*/
-		\item Créditos TEPIC. Expresión Regular: \verb|\d+(\.\d{2})?|
-		\item Créditos SATCA. Expresión Regular: \verb|\d+(\.\d{2})?|
-		\item Horas Teoría/Semana. Expresión Regular: \verb|\d{2}|
-		\item Horas Práctica/Semana. Expresión Regular: \verb|\d{2}|
-		\item Área de Formación. Se obtiene por medio de un select.
-		\item Semestre. Se obtiene por medio de un select.
-	\end{itemize}
-	\BRitem[Motivación:] Contar con la información necesaria de la Unidad de aprendizaje para el desarrollo de las actividades.
-	\BRitem[Ejemplo positivo:] Información de la Unidad de Aprendizaje
-	\begin{itemize}
-		\item Nombre: Ingeniería de software.
-		\item Créditos TEPIC: 8
-		\item Créditos SATCA. 1.6
-		\item Total Horas Teoría/Semana: 3
-		\item Total Horas Práctica/Semana: 2
-	\end{itemize}
-	\BRitem[Ejemplo negativo:] Información del Plan de Estudios
-	\begin{itemize}
-		\item Nombre: Ingeniera de software 23 4.
-		\item Créditos TEPIC: 455 . 5
-		\item Créditos SATCA. 243-ñ
-		\item Total Horas Teoría/Semana: tres
-		\item Total Horas Práctica/Semana: cuatro
-	\end{itemize}
-\end{BussinesRule}
-%----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR35}{Información laboral de los usuarios y recursos humanos.}
-    \BRitem[Tipo:] Regla de integridad.
-    \BRitem[Clase:] Habilitadora.
-    \BRitem[Nivel:] Control.
-    \BRitem[Descripción:] Cada usuario y recurso humano debe tener asignado:
-    \begin{itemize}
-        \item Un título profesional, se tomará aquel con mayor grado profesional.
-        \item Un lugar de trabajo en la institución.
-        \item Uno o varios cargos dentro de su lugar de trabajo.
-    \end{itemize}
+%     \BRitem[Motivación:] Contar con la información necesaria de los usuarios y recursos humanos para el desarrollo de las actividades.
+%     \BRitem[Ejemplo positivo:] Información personal del usuario o recurso humano
+%     \begin{itemize}
+%         \item Nombre: Juan Manuel
+%         \item Primer Apellido: Perez de
+%         \item Segundo Apellido: los Santos
+%         \item ***Contraseña: juanit8banan4 (Si se trata de un usuario)
+%         \item Correo electrónico: juanito@gmail.com
+%     \end{itemize}
+%     \BRitem[Ejemplo negativo:] Información personal del usuario o recurso humano
+%     \begin{itemize}
+%         \item Nombre: juan Ma. Fernando
+%         \item Primer Apellido: Perez de los Santos
+%         \item Segundo Apellido: del Carmen
+%         \item ***Contraseña: 132:\_147\%\$ (Si se trata de un usuario)
+%         \item Correo electrónico: juanito\&@gmail.com-mx/
+%     \end{itemize}
+%  \end{BussinesRule}
+% %----------------------------------BR --------------------------------------%
+% \begin{BussinesRule}{BR31}{Información de Programa Académico.}
+%     \BRitem[Tipo:] Regla de integridad.
+%     \BRitem[Clase:] Habilitadora.
+%     \BRitem[Nivel:] Control.
+%     \BRitem[Descripción:]Se debe de contar con la siguiente información para registrar un Programa Académico:
+%     \begin{itemize}
+%         \item Nombre
+%         Este dato tiene la expresión regular:
+%      \verb|[\wéíóúüñÁÉÍÓÚÜÑ]+( [\wáéíóúüñÁÉÍÓÚÜÑ+])*|
+%     \end{itemize}
+%     \BRitem[Motivación:] Contar con la información necesaria para la gestión de un Programa Académico.
+%     \BRitem[Ejemplo positivo:] Información del Programa Académico
+%     \begin{itemize}
+%         \item Nombre: Ingeniería en Sistemas Computacionales
+%     \end{itemize}
+%     \BRitem[Ejemplo negativo:] Información del Programa Académico
+%     \begin{itemize}
+%     \item Nombre: Ingeniería\% \_en\ Sistemas\ Computacionales\
+%     \end{itemize}
+%  \end{BussinesRule}
+% %----------------------------------BR --------------------------------------%
+%  \begin{BussinesRule}{BR32}{ Longitud máxima de nombre de Programa Académico.}
+%     \BRitem[Tipo: ]Regla de inferencia de un hecho.
+%     \BRitem[Clase: ]Habilitadora.
+%     \BRitem[Nivel: ]Control.
+%     \BRitem[Descripción: ]El nombre del Programa Acádémico tiene una longitud máxima de 150 basada en el modelo de datos.
+%     \BRitem[Sentencia:]
+%     \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
+%     \BRitem[Ejemplo Positivo:] . Ingeniería en Sistemas Computacionales
+%     \BRitem[Ejemplo Negativo: ]. Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales Ingeniería en Sistemas Computacionales
+% \end{BussinesRule}
+% %----------------------------------BR --------------------------------------%
+% \begin{BussinesRule}{BR33}{Información del Plan de Estudio.}
+% 	\BRitem[Tipo:] Regla de integridad.
+% 	\BRitem[Clase:] Habilitadora.
+% 	\BRitem[Nivel:] Control.
+% 	\BRitem[Descripción:]Se debe de contar con la siguiente información para registrar el Plan de Estudios:
+% 	\begin{itemize}
+% 		\item Programa Académico. Se obtiene por medio de un select.
+% 		\item Año. Expresión regular: \verb|\d{4}|
+% 		\item Modalidad. Se obtiene por medio de un select.
+% 		\item Créditos totales TEPIC. Expresión Regular: \verb|\d+(\.\d{1,2})?|
+% 		\item Créditos totales SATCA. Expresión Regular: \verb|\d+(\.\d{1,2})?|
+% 		\item Total Horas/Teoría. Expresión Regular: \verb|\d{3,}|
+% 		\item Total Horas/Práctica. Expresión Regular: \verb|\d{3,}|
+% 	\end{itemize}
+% 	\BRitem[Motivación:] Contar con la información necesaria del Plan de Estudio para el desarrollo de las actividades.
+% 	\BRitem[Ejemplo positivo:] Información del Plan de Estudios
+% 	\begin{itemize}
+% 		\item Año: 2008
+% 		\item Créditos totales TEPIC: 450
+% 		\item Créditos totales SATCA: 328.55
+% 		\item Total Horas/ Teoría: 150
+% 		\item Total Horas/ Práctica: 150
+% 	\end{itemize}
+% 	\BRitem[Ejemplo negativo:] Información del Plan de Estudios
+% 	\begin{itemize}
+% 		\item Año: 18
+% 		\item Créditos totales TEPIC: 302.5 6
+% 		\item Créditos totales SATCA: 1 . 5
+% 		\item Total Horas/ Teoría: 104
+% 		\item Total Horas/ Práctica: 568
+% 	\end{itemize}
+% \end{BussinesRule}
+% %----------------------------------BR --------------------------------------%
+% \begin{BussinesRule}{BR34}{Información de Unidad de Aprendizaje.}
+% 	\BRitem[Tipo:] Regla de integridad.
+% 	\BRitem[Clase:] Habilitadora.
+% 	\BRitem[Nivel:] Control.
+% 	\BRitem[Descripción:]Se debe de contar con la siguiente información para registrar una Unidad de Aprendizaje:
+% 	\begin{itemize}
+% 		\item Nombre. Expresión Regular: /[A-Za-záéíóúüñÁÉÍÓÚÜÑ]+( [A-Za-záéíóúüñÁÉÍÓÚÜÑ]+)*/
+% 		\item Créditos TEPIC. Expresión Regular: \verb|\d+(\.\d{2})?|
+% 		\item Créditos SATCA. Expresión Regular: \verb|\d+(\.\d{2})?|
+% 		\item Horas Teoría/Semana. Expresión Regular: \verb|\d{2}|
+% 		\item Horas Práctica/Semana. Expresión Regular: \verb|\d{2}|
+% 		\item Área de Formación. Se obtiene por medio de un select.
+% 		\item Semestre. Se obtiene por medio de un select.
+% 	\end{itemize}
+% 	\BRitem[Motivación:] Contar con la información necesaria de la Unidad de aprendizaje para el desarrollo de las actividades.
+% 	\BRitem[Ejemplo positivo:] Información de la Unidad de Aprendizaje
+% 	\begin{itemize}
+% 		\item Nombre: Ingeniería de software.
+% 		\item Créditos TEPIC: 8
+% 		\item Créditos SATCA. 1.6
+% 		\item Total Horas Teoría/Semana: 3
+% 		\item Total Horas Práctica/Semana: 2
+% 	\end{itemize}
+% 	\BRitem[Ejemplo negativo:] Información del Plan de Estudios
+% 	\begin{itemize}
+% 		\item Nombre: Ingeniera de software 23 4.
+% 		\item Créditos TEPIC: 455 . 5
+% 		\item Créditos SATCA. 243-ñ
+% 		\item Total Horas Teoría/Semana: tres
+% 		\item Total Horas Práctica/Semana: cuatro
+% 	\end{itemize}
+% \end{BussinesRule}
+% %----------------------------------BR --------------------------------------%
+% \begin{BussinesRule}{BR35}{Información laboral de los usuarios y recursos humanos.}
+%     \BRitem[Tipo:] Regla de integridad.
+%     \BRitem[Clase:] Habilitadora.
+%     \BRitem[Nivel:] Control.
+%     \BRitem[Descripción:] Cada usuario y recurso humano debe tener asignado:
+%     \begin{itemize}
+%         \item Un título profesional, se tomará aquel con mayor grado profesional.
+%         \item Un lugar de trabajo en la institución.
+%         \item Uno o varios cargos dentro de su lugar de trabajo.
+%     \end{itemize}
 
-    Estos datos se cargarán desde un catálogo para cada campo.
-    \BRitem[Motivación:] Contar con la información laboral necesaria de los usuarios y recursos humanos para el desarrollo de las actividades.
-    \BRitem[Ejemplo positivo:] Información laboral del usuario o recurso humano
-    \begin{itemize}
-        \item Título: Doctor
-        \item Lugar de trabajo: ESCOM
-        \item Cargo(s): Director, docente.
-    \end{itemize}
-    \BRitem[Ejemplo negativo:] Información laboral del usuario o recurso humano
-    \begin{itemize}
-        \item Título: Licenciado y Maestro en Ciencias
-        \item Lugar de trabajo: ESCOM y CIDETEC.
-        \item Cargo(s): Sin cargo.
-    \end{itemize}
- \end{BussinesRule}
+%     Estos datos se cargarán desde un catálogo para cada campo.
+%     \BRitem[Motivación:] Contar con la información laboral necesaria de los usuarios y recursos humanos para el desarrollo de las actividades.
+%     \BRitem[Ejemplo positivo:] Información laboral del usuario o recurso humano
+%     \begin{itemize}
+%         \item Título: Doctor
+%         \item Lugar de trabajo: ESCOM
+%         \item Cargo(s): Director, docente.
+%     \end{itemize}
+%     \BRitem[Ejemplo negativo:] Información laboral del usuario o recurso humano
+%     \begin{itemize}
+%         \item Título: Licenciado y Maestro en Ciencias
+%         \item Lugar de trabajo: ESCOM y CIDETEC.
+%         \item Cargo(s): Sin cargo.
+%     \end{itemize}
+%  \end{BussinesRule}
  %----------------------------------BR --------------------------------------%
  \begin{BussinesRule}{BR36}{Calculo de Créditos TEPIC.}
      \BRitem[Tipo:] Regla de integridad.
@@ -564,7 +564,22 @@ El resultado finalmente será: ] ISBN: ]978 - 607 - 0000 - 00 - 0
      Formula: (Horas Teoría/Semana)*2 + Horas Práctica/Semana
      \BRitem[Motivación:] Validar la congruencia de los datos.
   \end{BussinesRule}
-
+ %----------------------------------BR --------------------------------------%
+   \begin{BussinesRule}{BR37}{Dirección web del sistema.}
+     \BRitem[Tipo:] Flujo.
+     \BRitem[Clase:] Habilitadora.
+     \BRitem[Nivel:] Control.
+     \BRitem[Descripción:] La dirección web a la cual tendrán que ingresar los usuarios en su navegador para acceder al sistema es la siguiente: \url{https://apms-ipn.herokuapp.com/}
+     \BRitem[Motivación:] Informar a los usuarios cómo acceder al sistema una vez puesto en línea.
+  \end{BussinesRule}
+  %----------------------------------BR --------------------------------------%
+    \begin{BussinesRule}{BR38}{Verificación de formularios al momento.}
+      \BRitem[Tipo:]  Estímulo y respuesta.
+      \BRitem[Clase:] Habilitadora.
+      \BRitem[Nivel:] Control.
+      \BRitem[Descripción:] El sistema realiza las verificaciones conforme al Modelo de Datos mientras el Usuario ingresa los datos.
+      \BRitem[Motivación:] Evitar inconcistencias en los datos.
+   \end{BussinesRule}
 %\begin{BussinesRule}{}{}
 %   \BRitem[Tipo:]
 %   \BRitem[Clase:]

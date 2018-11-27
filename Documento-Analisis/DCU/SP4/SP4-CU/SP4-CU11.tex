@@ -26,7 +26,13 @@
         	\end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
-        \UCitem{Precondiciones}{}
+        \UCitem{Precondiciones}{
+            \begin{itemize}
+                \item El catálogo de Cargo debe de estar cargado en el sistema.
+                \item El catálogo de Titulo debe de estar cargado en el sistema.
+                \item El catálogo de Lugar de Trabajo debe de estar cargado en el sistema.
+            \end{itemize}
+        }
         \UCitem{Postcondiciones}{El Recurso Humano quedó actualizado en el sistema, permitiendo consultarlo y agregarlo al documento pdf.}
         \UCitem{Errores}{Ninguno}
         \UCitem{Estado}{Revisión.}
@@ -40,11 +46,10 @@
     \UCpaso Carga el catálogo de Título descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga el catálogo de Lugar de Trabajo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga los datos del Recurso Humano a editar. [Trayectoria B]
+    \UCpaso[\UCactor] Modifica los campos deseados, el sistema verifica conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR13}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria C][Trayectoria D]
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}.  Existen las trayectorias alternativas [Trayectoria E] y [Trayectoria E.1] al presionar el boton Cancelar.
 
-    \UCpaso[\UCactor] Modifica los campos deseados.
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}.  Existen las trayectorias alternativas [Trayectoria C] y [Trayectoria C.1] al presionar el boton Cancelar.
-
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido contestados(Exceptuando los dos apellidos los cuales son opcionales) conforme a la \BRref{BR13}{Todos los datos solicitados son obligatorios},\BRref{BR36}{Estructura de Información Laboral.} y \BRref{BR35}{Estructura de Recursos Humanos.}[Trayectoria D][Trayectoria E].
+    \UCpaso Verifica que se cumpla la \BRref{BR13}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria D]
 
     \UCpaso Persiste los datos ingresados. [Trayectoria F]
 
@@ -64,16 +69,9 @@
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-\begin{UCtrayectoriaA}{C}{El actor presiona el botón \IUbutton{Cancelar}.}
-    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
-    \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recurso Humano}
-\end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNARIVA C.1 -------------------------
-\begin{UCtrayectoriaA}{C.1}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
-    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
+%------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
+\begin{UCtrayectoriaA}{C}{El Sistema detecta campos que incumplen con el diccionario de datos.}
+    \UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida.} debajo del campo que incumplió con la \BRref{BR35}{Estructura de Recursos Humanos}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
@@ -82,8 +80,15 @@
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
-\begin{UCtrayectoriaA}{E}{El Sistema detecta que los campos un cumplen con el diccionario de datos.}
-    \UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida.} debajo del campo que incumplió con la \BRref{BR35}{Estructura de Recursos Humanos}.
+\begin{UCtrayectoriaA}{E}{El actor presiona el botón \IUbutton{Cancelar}.}
+    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
+    \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recurso Humano}
+\end{UCtrayectoriaA}
+%------------------------ CU TRAYECTORIA ALTERNARIVA E.1 -------------------------
+\begin{UCtrayectoriaA}{E.1}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
+    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU11}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
