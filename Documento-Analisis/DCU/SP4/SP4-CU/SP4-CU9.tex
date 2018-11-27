@@ -19,13 +19,13 @@
 	\UCitem{Origen}{Teclado, Mouse}
 	\UCitem{Salidas}{
 		\begin{itemize}
-			\item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}                
+			\item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
 			\item \MSGref{MSG47}{El nombre de la Unidad de Aprendizaje ya está registrado. Por favor cámbielo}.
 			\item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
 			\item \MSGref{MSG35}{Escribe información válida}
 			\item \MSGref{MSG44}{Este campo es requerido}
 			\item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
-			\item \MSGref{MSG25}{Servicios no disponibles por el momento.}
+			\item \MSGref{MSG25}{Servicios no disponibles.}
 		\end{itemize}
 	}
 	\UCitem{Destino}{Pantalla.}
@@ -44,7 +44,7 @@
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-	
+
 	 %Usuario
 	\UCpaso[\UCactor] Elige el semestre que pertecene la Unidad de Aprendizaje a modificar, que se encuentra en la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
 	\UCpaso[\UCactor] Presiona el boton \IUbutton{Lápiz} de la Unidad de Aprendizaje que desea modificar.
@@ -55,11 +55,11 @@
 	\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria B] [Trayectoria B.1]
 	\UCpaso Verifica que se cumpla la \BRref{BR34}{Información de Unidad de Aprendizaje}. [Trayectoria C] [Trayectoria D] [Trayectoria F]
 	\UCpaso Persiste los datos ingresados. [Trayectoria E]
-	\UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}  
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Muestra la interfaz de usuario  \IUref{CMC-J}{Consultar Mapa Curricular}.
 \end{UCtrayectoria}
-  
+
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{ Los catálogos de la \BRref{BR14}{Existen los catálogos} necesarios no se pudieron cargar.}
 	\UCpaso Muestra el mensaje \MSGref{MSG7}{ Los catálogos necesarios no se han cargado, favor de intentarlo más tarde. }
@@ -97,7 +97,7 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 \begin{UCtrayectoriaA}{E}{Ocurre un error al momento de persistir los datos.}
-	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento}.
+	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
 \end{UCtrayectoriaA}

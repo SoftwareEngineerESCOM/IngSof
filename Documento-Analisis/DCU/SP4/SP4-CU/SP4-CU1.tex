@@ -13,7 +13,7 @@
         \UCitem{Salidas}{
             \begin{itemize}
                 \item \MSGref{MSG5}{Registro finalizado exitosamente.}
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
+                \item \MSGref{MSG25}{Servicios no disponibles.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG44}{Este campo es requerido}
                 \item \MSGref{MSG35}{Escribe información válida.}
@@ -81,14 +81,14 @@
 
     %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 \begin{UCtrayectoriaA}{E}{Problemas con la Conexión}
-    \UCpaso Muestra el mensaje \MSGref{MSG25}{ Servicios no disponibles por el momento.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{ Servicios no disponibles.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa \IUref{B-J}{Pantalla Bienvenida al Jefe de Innovación Educativa} o \IUref{IU4}{Pantalla de bienvenida para el JDIA ó el JDIC.} para Jefe de División de Innovación Académica y Jefe de Departamento de Desarrollo e Innovación Curricular.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 \begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
-    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}.
 \end{UCtrayectoriaA}

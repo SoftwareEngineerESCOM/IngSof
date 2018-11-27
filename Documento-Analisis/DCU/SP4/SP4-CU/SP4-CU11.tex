@@ -17,7 +17,7 @@
         \UCitem{Origen}{Teclado.}
         \UCitem{Salidas}{
             \begin{itemize}
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
+                \item \MSGref{MSG25}{Servicios no disponibles.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
                 \item \MSGref{MSG44}{Este campo es requerido.}
@@ -54,13 +54,13 @@
 \end{UCtrayectoria}
     %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{No cargan los catálogos de Recurso Humano.}
-    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}
     %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 \begin{UCtrayectoriaA}{B}{No se pudieron obtener los datos del Recurso Humano.}
-    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}
@@ -88,7 +88,7 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 \begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
-    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}
