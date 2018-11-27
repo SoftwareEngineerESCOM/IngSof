@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" id="Definitions_1dzstao" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="2.0.1">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" id="Definitions_1dzstao" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="2.0.3">
   <bpmn:collaboration id="Collaboration_1u9iwul">
     <bpmn:participant id="Participant_1u4t795" name="Unidad Academica" processRef="Process_1r1vvk6" />
     <bpmn:participant id="Participant_1ff0fd1" name="Consejo General Consultivo" processRef="Process_19anwqh" />
@@ -646,7 +646,7 @@
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1u9iwul">
-      <bpmndi:BPMNShape id="SubProcess_083xv8h_di" bpmnElement="Task_156szzk">
+      <bpmndi:BPMNShape id="SubProcess_083xv8h_di" bpmnElement="Task_156szzk" bioc:stroke="#43A047" bioc:fill="#C8E6C9">
         <dc:Bounds x="1572" y="223" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_0xw8tkn_di" bpmnElement="Task_0xw8tkn">
@@ -681,7 +681,7 @@
           <dc:Bounds x="492" y="220" width="64" height="53" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="SendTask_0s69po4_di" bpmnElement="Task_0l44zgy">
+      <bpmndi:BPMNShape id="SendTask_0s69po4_di" bpmnElement="Task_0l44zgy" bioc:stroke="#43A047" bioc:fill="#C8E6C9">
         <dc:Bounds x="1538" y="22" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="IntermediateCatchEvent_02527fr_di" bpmnElement="IntermediateThrowEvent_0zh1o26">
@@ -715,10 +715,10 @@
         <di:waypoint x="1497" y="263" />
         <di:waypoint x="1572" y="263" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="SubProcess_1bp7x61_di" bpmnElement="Task_1l5baph">
+      <bpmndi:BPMNShape id="SubProcess_1bp7x61_di" bpmnElement="Task_1l5baph" bioc:stroke="#FB8C00" bioc:fill="#FFE0B2">
         <dc:Bounds x="581" y="298" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="ReceiveTask_0k9nv2h_di" bpmnElement="Task_0n1gsfx">
+      <bpmndi:BPMNShape id="ReceiveTask_0k9nv2h_di" bpmnElement="Task_0n1gsfx" bioc:stroke="#FB8C00" bioc:fill="#FFE0B2">
         <dc:Bounds x="1397" y="223" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_1gfvioe_di" bpmnElement="SequenceFlow_1gfvioe">
@@ -877,7 +877,7 @@
           <dc:Bounds x="1193" y="404" width="89" height="66" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="SendTask_1rf8gz5_di" bpmnElement="Task_0howhqs">
+      <bpmndi:BPMNShape id="SendTask_1rf8gz5_di" bpmnElement="Task_0howhqs" bioc:stroke="#FB8C00" bioc:fill="#FFE0B2">
         <dc:Bounds x="1427" y="-169" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="MessageFlow_0odoav2_di" bpmnElement="MessageFlow_0odoav2">
@@ -907,10 +907,10 @@
           <dc:Bounds x="425" y="-179" width="61" height="53" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="Task_0y5l5jl_di" bpmnElement="Task_0y5l5jl">
+      <bpmndi:BPMNShape id="Task_0y5l5jl_di" bpmnElement="Task_0y5l5jl" bioc:stroke="#FB8C00" bioc:fill="#FFE0B2">
         <dc:Bounds x="579" y="-424" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="SendTask_040t7tp_di" bpmnElement="Task_1h9teqg">
+      <bpmndi:BPMNShape id="SendTask_040t7tp_di" bpmnElement="Task_1h9teqg" bioc:stroke="#FB8C00" bioc:fill="#FFE0B2">
         <dc:Bounds x="712" y="-192" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="MessageFlow_1ddcf3r_di" bpmnElement="MessageFlow_1ddcf3r">
@@ -934,7 +934,7 @@
         <di:waypoint x="894" y="-103" />
         <di:waypoint x="894" y="10" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="SendTask_1nnsko2_di" bpmnElement="Task_163auas">
+      <bpmndi:BPMNShape id="SendTask_1nnsko2_di" bpmnElement="Task_163auas" bioc:stroke="#43A047" bioc:fill="#C8E6C9">
         <dc:Bounds x="1946" y="-205" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="MessageFlow_1b9vgir_di" bpmnElement="MessageFlow_1b9vgir">
@@ -1445,7 +1445,7 @@
         <di:waypoint x="1652" y="-297" />
         <di:waypoint x="1693" y="-297" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="SubProcess_0zhwt7m_di" bpmnElement="Task_1ms7u0z">
+      <bpmndi:BPMNShape id="SubProcess_0zhwt7m_di" bpmnElement="Task_1ms7u0z" bioc:stroke="#43A047" bioc:fill="#C8E6C9">
         <dc:Bounds x="1587" y="-161" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="MessageFlow_0hts222_di" bpmnElement="MessageFlow_0hts222">
@@ -1507,7 +1507,7 @@
         <di:waypoint x="492" y="-208" />
         <di:waypoint x="492" y="-272" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="SubProcess_0498sik_di" bpmnElement="Task_00082if">
+      <bpmndi:BPMNShape id="SubProcess_0498sik_di" bpmnElement="Task_00082if" bioc:stroke="#FB8C00" bioc:fill="#FFE0B2">
         <dc:Bounds x="547" y="-230" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_1v9bku8_di" bpmnElement="SequenceFlow_1v9bku8">
@@ -1790,7 +1790,7 @@
         <di:waypoint x="597" y="22" />
         <di:waypoint x="597" y="-150" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="SendTask_0qi9tb8_di" bpmnElement="Task_0ohkrhw">
+      <bpmndi:BPMNShape id="SendTask_0qi9tb8_di" bpmnElement="Task_0ohkrhw" bioc:stroke="#FB8C00" bioc:fill="#FFE0B2">
         <dc:Bounds x="547" y="22" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_00ghw1u_di" bpmnElement="SequenceFlow_00ghw1u">
@@ -1811,7 +1811,7 @@
           <dc:Bounds x="689" y="75" width="82" height="40" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Task_1ane666_di" bpmnElement="Task_1ane666">
+      <bpmndi:BPMNShape id="Task_1ane666_di" bpmnElement="Task_1ane666" bioc:stroke="#43A047" bioc:fill="#C8E6C9">
         <dc:Bounds x="1736" y="-161" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ExclusiveGateway_1c95evr_di" bpmnElement="ExclusiveGateway_1c95evr" isMarkerVisible="true">
