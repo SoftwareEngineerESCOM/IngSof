@@ -39,11 +39,11 @@
 	
 	\UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU1}{Menú} la opción de gestionar usuarios. 
 	\UCpaso  El sistema verifica la existencia de registros del catalogo de la \BRref{BR14}{Catálogos del Sistema} para cargos  y carga los indicados para el actor según la \BRref{BR3}{Gestión de Usuarios} . [Trayectoria B] [Trayectoria F] 
-	\UCpaso El sistema carga la pantalla  \IUref{IU2}{Gestionar empleados}.
+	\UCpaso El sistema carga la pantalla  \IUref{IU2}{Gestionar usuarios}.
 	\UCpaso[\UCactor] Selecciona el cargo de los empleados a buscar. 
 	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Buscar}.  [Trayectoria C] 
 	
-	\UCpaso El sistema despliega la información de los empleados (matricula,  nombre, primer apellido, segundo apellido, titulo, cargo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar empleados}. [Trayectoria Principal punto 4] [Trayectoria D] [Trayectoria F] 
+	\UCpaso El sistema despliega la información de los empleados (matricula,  nombre, primer apellido, segundo apellido, titulo, cargo, lugar de trabajo) en la parte inferior de la pantalla \IUref{IU2}{Gestionar usuarios}. [Trayectoria Principal punto 4] [Trayectoria D] [Trayectoria F] 
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{B}{No existen registros en el catálogo de cargos.}
@@ -54,17 +54,17 @@
 
 \begin{UCtrayectoriaA}{C}{No existen  empleados con el cargo seleccionado.}
 	\UCpaso     El sistema muestra el \MSGref{MSG21}{No hay usuarios registrados con ese cargo}.
-	\UCpaso[\UCactor] El usuario presiona aceptar y regresa a la pantalla  \IUref{IU2}{Gestionar empleados} 
+	\UCpaso[\UCactor] El usuario presiona aceptar y regresa a la pantalla  \IUref{IU2}{Gestionar usuarios} 
 \end{UCtrayectoriaA}
 
 
 \begin{UCtrayectoriaA}{D}{El actor presiona el botón \IUbutton{X}.}
-	\UCpaso El sistema muestra el mensaje \MSGref{MSG22}{¿Seguro de eliminar al usuario?} solicitando confirmación. [Trayectoria E]
-	\UCpaso[\UCactor] El actor presiona el botón \IUbutton{Cancelar}.
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG22}{¿Seguro de eliminar al usuario?} solicitando confirmación. [Trayectoria D1]
+	\UCpaso[\UCactor] El actor presiona el botón \IUbutton{No}.
 	\UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP5-CU3}.  	
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{E}{El actor presiona el botón \IUbutton{Aceptar}.}
+\begin{UCtrayectoriaA}{D1}{El actor presiona el botón \IUbutton{Si}.}
 	\UCpaso     El sistema elimina al empleado. [Trayectoria F] 
 	\UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP5-CU3}.  
 \end{UCtrayectoriaA}
@@ -74,7 +74,7 @@
 \begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso  El sistema continua en la interfaz de usuario \IUref{IU2}{Gestionar empleados}.
+	\UCpaso  El sistema continua en la interfaz de usuario \IUref{IU2}{Gestionar usuarios}.
 \end{UCtrayectoriaA}
 
 
