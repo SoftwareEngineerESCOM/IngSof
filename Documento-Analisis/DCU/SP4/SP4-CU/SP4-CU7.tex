@@ -12,8 +12,8 @@
         \UCitem{Origen}{Teclado.}
         \UCitem{Salidas}{
             \begin{itemize}
-                \item \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde.}
-                \item \MSGref{MSG34}{¿Está seguro que desea Eliminar al Recurso Humano con Matricula [no.matricula].}
+                \item \MSGref{MSG25}{Servicios no disponibles.}
+                \item \MSGref{MSG34}{¿Está seguro que desea Eliminar el Recurso Humano?}
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -39,34 +39,37 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona la opción de Gestionar Recursos Humanos del menú del la Interfaz de Inicio (abi).
+    \UCpaso[\UCactor] Presiona la opción de Gestionar Recursos Humanos del menú en la interfaz de usuario \IUref{B-J}{Bienvenida al Jefe de Innovación Educativa}..
     \UCpaso Carga el catálogo de Cargo definido en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
-    \UCpaso[\UCactor] Selecciona el Cargo que desea como filtro. [Trayectoria B]
-    \UCpaso[\UCactor] Aplica el filtro presionando el botón \IUbutton{Buscar}.
-    \UCpaso Muestra tabla con los datos de los Recursos Humanos que cumplan con el filtro.
-    \UCpaso Repite la trayectoria principal del \UCref{SP4-CU7} desde el paso 3. [Trayectoria C] [Trayectoria C.1]
+    \UCpaso Muestra tabla con los datos de los Recursos Humanos que cumplan con el filtro seleccionado.[Trayectoria B][Trayectoria B.1][Trayectoria C][Trayectoria C.1]
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{Los catálogos de la \BRref{BR14}{Catálogos existentes} necesarios no se pudieron cargar.}
-    \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no están disponibles por el momento, favor de intentarlo más tarde}.
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{B-J}{Bienvenida al Jefe de Innovación Educativa}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
-\begin{UCtrayectoriaA}{B}{El actor no selecciona ningún Cargo}
+\begin{UCtrayectoriaA}{B}{El actor no selecciona ningún filtro}
     \UCpaso Muestra una tabla con los datos de todos los Recursos Humanos.
-    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU7}.
+    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU7}.
+\end{UCtrayectoriaA}
+%------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
+\begin{UCtrayectoriaA}{B.1}{El actor desea filtrar los Recursos Humanos}
+    \UCpaso[\UCactor] Selecciona el Cargo que desea como filtro.
+    \UCpaso Muestra una tabla con los datos de los Recursos Humanos con ese cargo.
+    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU7}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 \begin{UCtrayectoriaA}{C}{El actor presiona el botón \IUbutton{X} de un Recurso Humano}
-    \UCpaso Muestra el mensaje \MSGref{MSG34}{¿Está seguro que desea Eliminar al Recurso Humano con Matricula [no.matricula]}.
+    \UCpaso Muestra el mensaje \MSGref{MSG34}{¿Está seguro que desea Eliminar al Recurso Humano?}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
-    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU7}.
+    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU7}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C.1 -------------------------
 \begin{UCtrayectoriaA}{C.1}{El actor presiona accidentalmente el botón \IUbutton{X} de un Recurso Humano}
-    \UCpaso Muestra el mensaje \MSGref{MSG34}{¿Está seguro que desea Eliminar al Recurso Humano con Matricula [no.matricula]}.
+    \UCpaso Muestra el mensaje \MSGref{MSG34}{¿Está seguro que desea Eliminar al Recurso Humano?}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
-    \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU7}.
+    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU7}.
 \end{UCtrayectoriaA}
