@@ -5,23 +5,22 @@
         \UCitem{Actor}{\hyperlink{JDIE}{Jefe de Innovación Educativa}}
         \UCitem{Propósito}{Ingresar al sistema la información necesaria de los Recursos Humanos.}
         \UCitem{Entradas}{Las entradas para el registro de un Recurso Humano serán:
-          \begin{itemize}
-            \item Nombre.
-            \item Primer Apellido.
-            \item Segundo Apellido.
-            \item Cargo.
-            \item Título.
-            \item Lugar de Trabajo
-          \end{itemize}
+          |\begin{itemize}
+                \item Nombre.
+                \item Primer Apellido.
+                \item Segundo Apellido.
+                \item Cargo.
+                \item Título.
+                \item Lugar de Trabajo
+            \end{itemize}
         }
         \UCitem{Origen}{Teclado.}
         \UCitem{Salidas}{
             \begin{itemize}
                 \item \MSGref{MSG5}{Registro finalizado exitosamente.}
-                \item \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde.}
+                \item \MSGref{MSG25}{Servicios no disponibles.}
                 \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
                 \item \MSGref{MSG44}{Este campo es requerido.}
-                \item \MSGref{MSG25}{Servicios no disponibles por el momento.}
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -41,7 +40,7 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{(+)Registrar Recurso Humano} de la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{(+)} de la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}
     \UCpaso Carga el catálogo de Cargo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga el catálogo de Título descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{RRH-J}{Registrar Recurso Humano}.
@@ -60,7 +59,7 @@
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{Los catálogos de la \BRref{BR14}{Catálogos existentes} necesarios no se pudieron cargar.}
-    \UCpaso Muestra el mensaje \MSGref{MSG7}{Los catálogos necesarios no se han cargado, favor de intentarlo más tarde}.
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}
@@ -88,7 +87,7 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 \begin{UCtrayectoriaA}{E}{Ocurre un error al momento de persistir los datos.}
-    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento.}
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}

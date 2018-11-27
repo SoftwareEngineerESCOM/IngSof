@@ -1,10 +1,10 @@
 % Consultar Planes de Estudio.
 \begin{UseCase}{SP4-CU13}{Consultar Planes de Estudios}{El usuario Jefe de Innovación Educativa visualiza los Planes de Estudios asociados a un mismo Programa Académico.}
-		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Versión}{\color{Gray}3.0}
 		\UCitem{Autor}{\color{Gray}Cervantes Moreno Christian Andres}
 		\UCitem{Supervisa}{\color{Gray} Evelyn Reyes}
 		\UCitem{Actor}{\hyperlink{Usuario}{Jefe de Innovación Educativa}}
-		\UCitem{Propósito}{Visualizar los Planes de Estudios asociados a un mismo Programa Académico y su informacion .}
+		\UCitem{Propósito}{Visualizar los Planes de Estudios asociados a un mismo Programa Académico y su información.}
 		\UCitem{Entradas}{
 			\begin{itemize}
 				\item Ninguna
@@ -28,7 +28,7 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona sobre un Programa Académico en la Interfaz de usuario  \IUref{GPA-J}{Gestionar Programa Académico}.
+    \UCpaso[\UCactor]Selecciona un Programa Académico en la Interfaz de usuario  \IUref{GPA-J}{Gestionar Programa Académico}.
     \UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudios}.
-    \UCpaso Muestra los Planes de Estudios del Programa Académico seleccionado.
+    \UCpaso Muestra un listado de los  Planes de Estudios registrados en el Programa Académico seleccionado.
 \end{UCtrayectoria}
