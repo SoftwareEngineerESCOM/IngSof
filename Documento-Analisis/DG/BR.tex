@@ -132,7 +132,7 @@
     \BRitem[Ejemplo Negativo:] Una propuesta de unidad de aprendizaje puede ser revisada por un analista en cualquier momento.
 \end{BussinesRule}
 %----------------------------------BR --------------------------------------%
-\begin{BussinesRule}{BR13}{Todos los campos marcados con (*) son obligatorios.}
+\begin{BussinesRule}{BR13}{Todos los datos solicitados son obligatorios.}
     \BRitem[Tipo:] Regla de Operación.
     \BRitem[Clase:] Habilitadora.
     \BRitem[Nivel:] Control.
@@ -274,15 +274,15 @@
     \BRitem[Ejemplo Negativo: ]En una Unidad Académica existen los Programas Académicos Ingeniería en Sistemas Computacionales y Ingeniería en Sistemas Computacionales.
 \end{BussinesRule}
 % %----------------------------------BR --------------------------------------%
-% \begin{BussinesRule}{BR20}{Las horas totales deben de estar entre 350 y 450 horas.}
-%     \BRitem[Tipo: ]Regla de operación.
-%     \BRitem[Clase: ]Habilitadora.
-%     \BRitem[Nivel: ]Control.
-%     \BRitem[Descripción: ]Un Plan de Estudios debe tener entre 350 y 450 horas.
-%     \BRitem[Motivación:] Distribuir las horas entre las unidades de aprendizaje.
-%     \BRitem[Ejemplo Positivo:] El usuario llena los dato de total de horas con 400 horas.
-%     \BRitem[Ejemplo Negativo: ] El usuario llena los dato de total de horas con 40000 horas.
-% \end{BussinesRule}
+ \begin{BussinesRule}{BR20}{Los créditos totales TEPIC deben de estar entre 350 y 450 créditos.}
+     \BRitem[Tipo: ]Regla de operación.
+     \BRitem[Clase: ]Habilitadora.
+     \BRitem[Nivel: ]Control.
+     \BRitem[Descripción: ]Un Plan de Estudios debe tener entre 350 y 450 créditos totatles TEPIC.
+     \BRitem[Motivación:] Distribuir los creditos entre las unidades de aprendizaje.
+    % \BRitem[Ejemplo Positivo:] El usuario llena los dato de total de horas con 400 horas.
+     %\BRitem[Ejemplo Negativo: ] El usuario llena los dato de total de horas con 40000 horas.
+ \end{BussinesRule}
 %----------------------------------BR --------------------------------------%
 \begin{BussinesRule}{BR21}{Un libro tiene un ISBN único.}
     \BRitem[Tipo:] Regla de integridad referencial.
@@ -572,14 +572,25 @@
      \BRitem[Descripción:] La dirección web a la cual tendrán que ingresar los usuarios en su navegador para acceder al sistema es la siguiente: \url{https://apms-ipn.herokuapp.com/}
      \BRitem[Motivación:] Informar a los usuarios cómo acceder al sistema una vez puesto en línea.
   \end{BussinesRule}
+ %----------------------------------BR --------------------------------------%
+   \begin{BussinesRule}{BR38}{Verificación de formularios al momento.}
+     \BRitem[Tipo:]  Estímulo y respuesta.
+     \BRitem[Clase:] Habilitadora.
+     \BRitem[Nivel:] Control.
+     \BRitem[Descripción:] El sistema realiza las verificaciones conforme al Modelo de Datos mientras el Usuario ingresa los datos.
+     \BRitem[Motivación:] Evitar inconcistencias en los datos.
+  \end{BussinesRule}
   %----------------------------------BR --------------------------------------%
-    \begin{BussinesRule}{BR38}{Verificación de formularios al momento.}
-      \BRitem[Tipo:]  Estímulo y respuesta.
-      \BRitem[Clase:] Habilitadora.
-      \BRitem[Nivel:] Control.
-      \BRitem[Descripción:] El sistema realiza las verificaciones conforme al Modelo de Datos mientras el Usuario ingresa los datos.
-      \BRitem[Motivación:] Evitar inconcistencias en los datos.
-   \end{BussinesRule}
+\begin{BussinesRule}{BR39}{Todos los campos marcados con (*) son obligatorios.}
+    \BRitem[Tipo:] Regla de Operación.
+    \BRitem[Clase:] Habilitadora.
+    \BRitem[Nivel:] Control.
+    \BRitem[Descripción:] Los campos marcados con un (*), no se pueden ser dejados en blanco.
+    \BRitem[Sentencia:]
+    \BRitem[Motivación: ]Que la base de datos esté siempre en un estado consistente.
+    \BRitem[Ejemplo Positivo:] El usuario ingresa los campos obligatorios y prosigue con su operación.
+    \BRitem[Ejemplo Negativo: ]El usuario deja campos obligatorios vacios y el sistema le permite continuar.
+\end{BussinesRule}
 %\begin{BussinesRule}{}{}
 %   \BRitem[Tipo:]
 %   \BRitem[Clase:]
