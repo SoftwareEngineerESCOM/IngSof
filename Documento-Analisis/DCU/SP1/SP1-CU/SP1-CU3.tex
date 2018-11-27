@@ -16,6 +16,7 @@
             \begin{itemize}
                 \item MSG4. Los campos marcados con (*) son obligatorios.
                 \item MSG5. Registro finalizado exitosamente.
+                \item MSG6. ¿Está seguro que desea cancelar el registro?
                 \item MSG23. Los porcentajes de evaluación no cumplen con el porcentaje total obligatorio.
                 \item MSG9. Por el momento no se puede realizar el registro.
             \end{itemize}
@@ -79,12 +80,31 @@
     \UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Acreditación} del modal \IUref{MIU1.02}{Registrar Evaluación y Acreditación.}
     \UCpaso Muestra el modal \IUref{SMIU1.01}{Registrar Acreditación}.
     \UCpaso[\UCactor] Ingresa la forma de acreditación requerida.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar}. [Trayectoria B.1]
     \UCpaso Guarda la nueva forma de acreditación en la base de datos.
     \UCpaso Cierra el modal \IUref{SMIU1.01}{Registrar Acreditación}.
     \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU3}.
 \end{UCtrayectoriaA}
 
+%------------------------ CU TRAYECTORIA ALTERNATIVA B.1 -------------------------
+
+\begin{UCtrayectoriaA}{B.1}{El usuario presiona el botón ``Cerrar''.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Cerrar}.
+    \UCpaso Muestra el mensaje \MSGref{MSG6}{¿Está seguro que desea cancelar el registro?}
+    \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}. [Trayectoria B.1.1]
+    \UCpaso Cierra el modal.
+    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU3}
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA B.1.1 -------------------------
+
+\begin{UCtrayectoriaA}{B.1.1}{El usuario presiona el botón ``Cerrar''.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Cerrar}.
+    \UCpaso Muestra el mensaje \MSGref{MSG6}{¿Está seguro que desea cancelar el registro?}
+    \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{No}.
+    \UCpaso Cierra el mensaje.
+    \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU3}
+\end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
 
