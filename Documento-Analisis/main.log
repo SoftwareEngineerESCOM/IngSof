@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.25)  27 NOV 2018 00:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.25)  27 NOV 2018 01:27
 entering extended mode
 **./main.tex
 (main.tex
@@ -690,21 +690,21 @@ File: omscmbrs.fd 2005/04/13 v8.1 (WaS)
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [3]
-<IG-GRAL/headerPar.jpg, id=650, 432.11438pt x 45.16875pt>
+<IG-GRAL/headerPar.jpg, id=640, 432.11438pt x 45.16875pt>
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 78.
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 76.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
 LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <5> not available
-(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 78.
-LaTeX Font Info:    Try loading font information for U+mvs on input line 78.
+(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 76.
+LaTeX Font Info:    Try loading font information for U+mvs on input line 76.
 
 ("C:\Users\Andrez\AppData\Local\Programs\MiKTeX 2.9\tex\latex\marvosym\umvs.fd"
 ) [4 <./IG-GRAL/headerPar.jpg>]
-<IG-GRAL/headerInp.jpg, id=706, 437.38406pt x 45.92157pt>
+<IG-GRAL/headerInp.jpg, id=697, 437.38406pt x 45.92157pt>
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 124.
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 123.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [5 <./IG-GRAL/headerInp.jpg>])
 \tf@toc=\write5
@@ -759,83 +759,40 @@ Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 238.
  [12]
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 275.
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 294.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [13]
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 306.
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 341.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
  [14]
-LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 311.
-
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 336.
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 561.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [15]
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 374.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [16]
-LaTeX Font Info:    Try loading font information for OT1+cmtl on input line 408
+LaTeX Font Info:    Try loading font information for OT1+cmtl on input line 572
 .
 
 ("C:\Users\Andrez\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmbright\ot1cmtl.
 fd"
 File: ot1cmtl.fd 2005/04/13 v8.1 (WaS)
-)
-Overfull \hbox (86.85278pt too wide) in paragraph at lines 407--409
-[]\OT1/cmbr/m/n/10 Estos tres da-tos com-par-ten la mis-ma ex-pre-sion re-gu-l
-ar: [][]\OT1/cmtl/m/n/10 /^[A-Za-zaeouu~n[]A[]E[]I[]O[]U[]U[]N]+(((-[]\O
-T1/cmbr/m/n/10 ')[A-Za-zaeouu~n[]A[]E[]I[]O[]U[]U[]N]+)|.)?(
- []
-
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 409.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-[17]
+))
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 452.
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 17.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [18]
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 495.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [19]
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 541.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [20])
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 17.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [21]
+ [16]
 \openout2 = `DG/MSG.aux'.
 
  (DG/MSG.tex
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 1.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [22
-
-
-
-]
 Cap\'{\i }tulo 2.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 4.
 
-<images/MSG/ancla.jpeg, id=839, 9.03375pt x 3.01125pt>
+<images/MSG/ancla.jpeg, id=794, 9.03375pt x 3.01125pt>
 File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 4.
@@ -868,17 +825,21 @@ File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 25.
 (pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
-[23 <./images/MSG/ancla.jpeg>]
+[17
+
+
+
+ <./images/MSG/ancla.jpeg>]
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 25.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [24]
+ [18]
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 25.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [25]
+ [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 28.
@@ -927,17 +888,17 @@ File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 49.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-[26]
+[20]
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 49.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [27]
+ [21]
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 49.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [28]
+ [22]
 File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 52.
@@ -966,25 +927,25 @@ File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 70.
 (pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 70.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [29]
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 70.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [30]
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 70.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [31]
 File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 73.
 (pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 73.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+ [23]
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 73.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+ [24]
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 73.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+ [25]
 File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 76.
@@ -1026,25 +987,25 @@ File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 94.
 (pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 94.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-[32]
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 94.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [33]
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 94.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [34]
 File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 97.
 (pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 97.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+[26]
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 97.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+ [27]
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 97.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+ [28]
 File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 100.
@@ -1073,25 +1034,25 @@ File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 118.
 (pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 118.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [35]
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 118.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [36]
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 118.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [37]
 File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 121.
 (pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 121.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+ [29]
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 121.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+ [30]
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 121.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+ [31]
 File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
 Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 124.
@@ -1110,41 +1071,79 @@ Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 131.
 (pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
 File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
-Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 134.
+Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 133.
 (pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
 File: images/MSG/ancla.jpeg Graphic file (type jpg)
 <use images/MSG/ancla.jpeg>
-Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 137.
+Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 136.
+(pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
+File: images/MSG/ancla.jpeg Graphic file (type jpg)
+<use images/MSG/ancla.jpeg>
+Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 139.
 (pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 137.
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 139.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [38]
+ [32]
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 137.
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 139.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [39]
+ [33]
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 137.
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 139.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [40])
+ [34]
+File: images/MSG/ancla.jpeg Graphic file (type jpg)
+<use images/MSG/ancla.jpeg>
+Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 142.
+(pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
+File: images/MSG/ancla.jpeg Graphic file (type jpg)
+<use images/MSG/ancla.jpeg>
+Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 145.
+(pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
+File: images/MSG/ancla.jpeg Graphic file (type jpg)
+<use images/MSG/ancla.jpeg>
+Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 148.
+(pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
+File: images/MSG/ancla.jpeg Graphic file (type jpg)
+<use images/MSG/ancla.jpeg>
+Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 151.
+(pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
+File: images/MSG/ancla.jpeg Graphic file (type jpg)
+<use images/MSG/ancla.jpeg>
+Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 154.
+(pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
+File: images/MSG/ancla.jpeg Graphic file (type jpg)
+<use images/MSG/ancla.jpeg>
+Package pdftex.def Info: images/MSG/ancla.jpeg  used on input line 157.
+(pdftex.def)             Requested size: 375.36299pt x 125.15482pt.
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 157.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+ [35]
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 157.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+ [36])
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 18.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [41]
+ [37]
 \openout2 = `DR/MP/RequerimientosMP.aux'.
 
- (DR/MP/RequerimientosMP.tex
+
+(DR/MP/RequerimientosMP.tex
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 1.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-
-[42
+ [38
 
 
 
@@ -1360,17 +1359,17 @@ Overfull \hbox (12.35611pt too wide) in alignment at lines 48--72
  [] [] [] [] [] 
  []
 
-[43]
+[39]
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 72.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [44])
+ [40])
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 20.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [45]
+ [41]
 \openout2 = `DR/SP1/RequerimientosUA.aux'.
 
  (DR/SP1/RequerimientosUA.tex
@@ -1712,7 +1711,7 @@ File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 123.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-[46
+[42
 
 
 ]
@@ -1720,12 +1719,12 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 123.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [47])
+ [43])
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 21.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [48]
+ [44]
 \openout2 = `DR/SP2/RequerimientosVC.aux'.
 
  (DR/SP2/RequerimientosVC.tex
@@ -1897,7 +1896,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 34.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-[49
+[45
 
 
 ])
@@ -1905,7 +1904,7 @@ File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 22.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [50]
+ [46]
 \openout2 = `DR/SP4/RequerimientosMC.aux'.
 
  (DR/SP4/RequerimientosMC.tex
@@ -1929,7 +1928,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--13
  []
 
 
-LaTeX Warning: Hyper reference `MDD' on page 51 undefined on input line 13.
+LaTeX Warning: Hyper reference `MDD' on page 47 undefined on input line 13.
 
 
 Overfull \hbox (3.51569pt too wide) in paragraph at lines 13--13
@@ -1937,7 +1936,7 @@ Overfull \hbox (3.51569pt too wide) in paragraph at lines 13--13
  []
 
 
-LaTeX Warning: Hyper reference `MDD' on page 51 undefined on input line 16.
+LaTeX Warning: Hyper reference `MDD' on page 47 undefined on input line 16.
 
 
 Overfull \hbox (3.51569pt too wide) in paragraph at lines 16--16
@@ -1950,7 +1949,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--19
  []
 
 
-LaTeX Warning: Hyper reference `MDD' on page 51 undefined on input line 19.
+LaTeX Warning: Hyper reference `MDD' on page 47 undefined on input line 19.
 
 
 Overfull \hbox (3.51569pt too wide) in paragraph at lines 19--19
@@ -2118,7 +2117,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--88
  []
 
 
-LaTeX Warning: Hyper reference `MDD' on page 51 undefined on input line 88.
+LaTeX Warning: Hyper reference `MDD' on page 47 undefined on input line 88.
 
 
 Overfull \hbox (3.51569pt too wide) in paragraph at lines 88--88
@@ -2126,7 +2125,7 @@ Overfull \hbox (3.51569pt too wide) in paragraph at lines 88--88
  []
 
 
-LaTeX Warning: Hyper reference `MDD' on page 51 undefined on input line 91.
+LaTeX Warning: Hyper reference `MDD' on page 47 undefined on input line 91.
 
 
 Overfull \hbox (3.51569pt too wide) in paragraph at lines 91--91
@@ -2139,7 +2138,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--94
  []
 
 
-LaTeX Warning: Hyper reference `MDD' on page 51 undefined on input line 94.
+LaTeX Warning: Hyper reference `MDD' on page 47 undefined on input line 94.
 
 
 Overfull \hbox (3.51569pt too wide) in paragraph at lines 94--94
@@ -2315,7 +2314,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 168.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-[51
+[47
 
 
 ]
@@ -2323,14 +2322,14 @@ File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 168.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [52])
+ [48])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 23.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [53]
+ [49]
 \openout2 = `DR/SP5/RequerimientosAB.aux'.
 
 
@@ -2483,7 +2482,7 @@ File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 60.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-[54
+[50
 
 
 ])
@@ -2491,11 +2490,11 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 24.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [55]
+ [51]
 \openout2 = `DCU/SP4/SP4-CU.aux'.
 
  (DCU/SP4/SP4-CU.tex (DCU/SP4/SP4-CU/SP4-CU1.tex
-<images/uc/default.png, id=1077, 926.46124pt x 57.21375pt>
+<images/uc/default.png, id=1054, 926.46124pt x 57.21375pt>
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 1.
@@ -2513,7 +2512,7 @@ File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 33.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
 
-[56
+[52
 
 
  <./images/uc/default.png>]
@@ -2521,17 +2520,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--35
 
  []
 
-<images/uc/actor.png, id=1096, 96.36pt x 74.2775pt>
+<images/uc/actor.png, id=1072, 96.36pt x 74.2775pt>
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 36.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-<images/uc/iu.png, id=1097, 61.22874pt x 55.20625pt>
+<images/uc/iu.png, id=1073, 61.22874pt x 55.20625pt>
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
 Package pdftex.def Info: images/uc/iu.png  used on input line 36.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
-<images/uc/usecase.png, id=1099, 91.34125pt x 61.22874pt>
+<images/uc/usecase.png, id=1075, 91.34125pt x 61.22874pt>
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 37.
@@ -2572,6 +2571,8 @@ File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
 Package pdftex.def Info: images/uc/iu.png  used on input line 44.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
+LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <10> not available
+(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 45.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 48.
@@ -2624,7 +2625,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 73.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-[57 <./images/uc/actor.png> <./images/uc/iu.png> <./images/uc/usecase.png>]
+[53 <./images/uc/actor.png> <./images/uc/iu.png> <./images/uc/usecase.png>]
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 77.
@@ -2679,7 +2680,7 @@ File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 2.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [58]
+ [54]
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 2.
@@ -2693,7 +2694,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 41.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-[59]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 43--43
 
  []
@@ -2778,6 +2779,11 @@ File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 65.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 66.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+[56]
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 66.
@@ -2794,11 +2800,6 @@ File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 72.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 73.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-[60]
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 73.
@@ -2868,7 +2869,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 2.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [61]
+ [57]
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 2.
@@ -2882,7 +2883,7 @@ File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 42.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-[62]
+[58]
 Underfull \hbox (badness 10000) in paragraph at lines 45--45
 
  []
@@ -2955,7 +2956,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 63.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-[63]
+[59]
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 63.
@@ -3040,7 +3041,7 @@ File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 104.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [64]
+ [60]
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 105.
@@ -3074,7 +3075,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 1.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [65]
+ [61]
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 1.
@@ -3086,49 +3087,41 @@ Overfull \hbox (50.05145pt too wide) in paragraph at lines 1--1
 
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 40.
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 42.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-[66]
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
 
  []
 
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 43.
+Package pdftex.def Info: images/uc/actor.png  used on input line 45.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 43.
+Package pdftex.def Info: images/uc/iu.png  used on input line 45.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 44.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 45.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 46.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 47.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 48.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 49.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 46.
+Package pdftex.def Info: images/uc/iu.png  used on input line 49.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
-File: images/uc/actor.png Graphic file (type png)
-<use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 47.
-(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: images/uc/actor.png Graphic file (type png)
-<use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 48.
-(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: images/uc/actor.png Graphic file (type png)
-<use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 49.
-(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 50.
@@ -3145,117 +3138,129 @@ File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 53.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 54.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 55.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 56.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 57.
+Package pdftex.def Info: images/uc/actor.png  used on input line 54.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/actor.png Graphic file (type png)
+<use images/uc/actor.png>
+Package pdftex.def Info: images/uc/actor.png  used on input line 55.
+(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/actor.png Graphic file (type png)
+<use images/uc/actor.png>
+Package pdftex.def Info: images/uc/actor.png  used on input line 56.
+(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 57.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 58.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/iu.png Graphic file (type png)
-<use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 58.
-(pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 62.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 59.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 63.
+Package pdftex.def Info: images/uc/actor.png  used on input line 60.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 64.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 61.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 64.
-(pdftex.def)             Requested size: 11.09076pt x 10.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 68.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/actor.png Graphic file (type png)
-<use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 69.
-(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 70.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/iu.png Graphic file (type png)
-<use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 70.
+Package pdftex.def Info: images/uc/iu.png  used on input line 61.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 73.
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 65.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-[67]
+[63]
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 74.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 65.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 75.
+Package pdftex.def Info: images/uc/actor.png  used on input line 66.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 67.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/iu.png Graphic file (type png)
+<use images/uc/iu.png>
+Package pdftex.def Info: images/uc/iu.png  used on input line 67.
+(pdftex.def)             Requested size: 11.09076pt x 10.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 71.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 72.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 76.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 80.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 77.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 81.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 85.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 86.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 90.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 91.
+Package pdftex.def Info: images/uc/actor.png  used on input line 82.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 92.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 83.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 92.
+Package pdftex.def Info: images/uc/iu.png  used on input line 83.
+(pdftex.def)             Requested size: 11.09076pt x 10.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 87.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/actor.png Graphic file (type png)
+<use images/uc/actor.png>
+Package pdftex.def Info: images/uc/actor.png  used on input line 88.
+(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 89.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 93.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/actor.png Graphic file (type png)
+<use images/uc/actor.png>
+Package pdftex.def Info: images/uc/actor.png  used on input line 94.
+(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 95.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/iu.png Graphic file (type png)
+<use images/uc/iu.png>
+Package pdftex.def Info: images/uc/iu.png  used on input line 95.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 ) (DCU/SP4/SP4-CU/SP4-CU5.tex
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 1.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [68]
+ [64]
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 1.
@@ -3279,7 +3284,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 34.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-[69]
+[65]
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 34.
@@ -3373,7 +3378,7 @@ File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 2.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [70]
+ [66]
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 2.
@@ -3395,7 +3400,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 34.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [71]
+ [67]
 Underfull \hbox (badness 10000) in paragraph at lines 36--36
 
  []
@@ -3484,7 +3489,7 @@ File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 71.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-[72]
+[68]
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 71.
@@ -3542,7 +3547,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 1.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [73]
+ [69]
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 1.
@@ -3553,109 +3558,105 @@ Overfull \hbox (50.05145pt too wide) in paragraph at lines 1--1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 
  []
 
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 41.
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 38.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-[74]
+[70]
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 42.
+Package pdftex.def Info: images/uc/actor.png  used on input line 38.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 42.
+Package pdftex.def Info: images/uc/iu.png  used on input line 38.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 43.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 39.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 44.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 40.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 44.
+Package pdftex.def Info: images/uc/iu.png  used on input line 40.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
+File: images/uc/actor.png Graphic file (type png)
+<use images/uc/actor.png>
+Package pdftex.def Info: images/uc/actor.png  used on input line 41.
+(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 45.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 49.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 50.
+Package pdftex.def Info: images/uc/actor.png  used on input line 46.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 47.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/iu.png Graphic file (type png)
+<use images/uc/iu.png>
+Package pdftex.def Info: images/uc/iu.png  used on input line 47.
+(pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 51.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/iu.png Graphic file (type png)
-<use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 51.
-(pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 55.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 56.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 52.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 60.
+Package pdftex.def Info: images/uc/actor.png  used on input line 56.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 61.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 57.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 58.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 62.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 66.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 67.
+Package pdftex.def Info: images/uc/actor.png  used on input line 63.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 64.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 68.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 72.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 73.
+Package pdftex.def Info: images/uc/actor.png  used on input line 69.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 74.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 70.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+) (DCU/SP4/SP4-CU/SP4-CU8.tex
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 75.
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 1.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [75]) (DCU/SP4/SP4-CU/SP4-CU8.tex
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 1.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [76]
+ [71]
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 1.
@@ -3673,11 +3674,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--34
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 34.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [77]
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 34.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+ [72]
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 35.
@@ -3778,12 +3779,12 @@ File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 75.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 76.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 76.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
 
-[78]
+[73]
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 80.
@@ -3849,11 +3850,11 @@ File: images/uc/iu.png Graphic file (type png)
 Package pdftex.def Info: images/uc/iu.png  used on input line 102.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 ) (DCU/SP4/SP4-CU/SP4-CU9.tex
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 2.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [79]
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 2.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+ [74]
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 2.
@@ -3863,11 +3864,11 @@ Overfull \hbox (50.05145pt too wide) in paragraph at lines 2--2
 [][] 
  []
 
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 42.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-[80]
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 42.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+[75]
 Underfull \hbox (badness 10000) in paragraph at lines 46--46
 
  []
@@ -3928,11 +3929,11 @@ File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
 Package pdftex.def Info: images/uc/iu.png  used on input line 60.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 61.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-[81]
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 61.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+[76]
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 65.
@@ -4017,11 +4018,11 @@ File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
 Package pdftex.def Info: images/uc/iu.png  used on input line 102.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 103.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [82]
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 103.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+ [77]
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 108.
@@ -4035,11 +4036,11 @@ File: images/uc/usecase.png Graphic file (type png)
 Package pdftex.def Info: images/uc/usecase.png  used on input line 110.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 ) (DCU/SP4/SP4-CU/SP4-CU10.tex
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 2.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [83]
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 2.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+ [78]
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 2.
@@ -4049,11 +4050,11 @@ Overfull \hbox (50.05145pt too wide) in paragraph at lines 2--2
 [][] 
  []
 
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 40.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-[84]
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 40.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+[79]
 Underfull \hbox (badness 10000) in paragraph at lines 42--42
 
  []
@@ -4146,15 +4147,15 @@ File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 71.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 72.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-[85]
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 72.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 73.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+[80]
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 73.
@@ -4199,20 +4200,12 @@ File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
 Package pdftex.def Info: images/uc/iu.png  used on input line 94.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 99.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 100.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 ) (DCU/SP4/SP4-CU/SP4-CU11.tex
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 1.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [86]
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 1.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+ [81]
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 1.
@@ -4222,182 +4215,182 @@ Overfull \hbox (50.05145pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 34.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-[87]
-Underfull \hbox (badness 10000) in paragraph at lines 36--36
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 40.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
 
  []
 
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 37.
+Package pdftex.def Info: images/uc/actor.png  used on input line 43.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 37.
+Package pdftex.def Info: images/uc/iu.png  used on input line 43.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 38.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 44.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 38.
+Package pdftex.def Info: images/uc/iu.png  used on input line 44.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 39.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 45.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 40.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 46.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 41.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 42.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/actor.png Graphic file (type png)
-<use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 44.
-(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: images/uc/actor.png Graphic file (type png)
-<use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 45.
-(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 47.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 49.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 51.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 48.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 52.
+Package pdftex.def Info: images/uc/actor.png  used on input line 49.
+(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/actor.png Graphic file (type png)
+<use images/uc/actor.png>
+Package pdftex.def Info: images/uc/actor.png  used on input line 50.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 53.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 52.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/iu.png Graphic file (type png)
-<use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 53.
-(pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 57.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 54.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 56.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 58.
+Package pdftex.def Info: images/uc/actor.png  used on input line 57.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 59.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 58.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 59.
+Package pdftex.def Info: images/uc/iu.png  used on input line 58.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 63.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 62.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 64.
+Package pdftex.def Info: images/uc/actor.png  used on input line 63.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 65.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 64.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 65.
+Package pdftex.def Info: images/uc/iu.png  used on input line 64.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 69.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-[88]
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 69.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 68.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 69.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+[83]
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 70.
+Package pdftex.def Info: images/uc/actor.png  used on input line 69.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 71.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 70.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 71.
+Package pdftex.def Info: images/uc/iu.png  used on input line 70.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 74.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 75.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 79.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 80.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 84.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 76.
+Package pdftex.def Info: images/uc/actor.png  used on input line 85.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 77.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 81.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 82.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 86.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/iu.png Graphic file (type png)
+<use images/uc/iu.png>
+Package pdftex.def Info: images/uc/iu.png  used on input line 86.
+(pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 87.
-(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: images/uc/usecase.png Graphic file (type png)
-<use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 91.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 90.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
-Package pdftex.def Info: images/uc/actor.png  used on input line 92.
+Package pdftex.def Info: images/uc/actor.png  used on input line 91.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
-Package pdftex.def Info: images/uc/usecase.png  used on input line 93.
+Package pdftex.def Info: images/uc/usecase.png  used on input line 92.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 96.
+(pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+File: images/uc/actor.png Graphic file (type png)
+<use images/uc/actor.png>
+Package pdftex.def Info: images/uc/actor.png  used on input line 97.
+(pdftex.def)             Requested size: 14.26958pt x 11.0pt.
+File: images/uc/usecase.png Graphic file (type png)
+<use images/uc/usecase.png>
+Package pdftex.def Info: images/uc/usecase.png  used on input line 98.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
-Package pdftex.def Info: images/uc/iu.png  used on input line 93.
+Package pdftex.def Info: images/uc/iu.png  used on input line 98.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 ) (DCU/SP4/SP4-CU/SP4-CU12.tex
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 1.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [89]
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 1.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+ [84]
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 1.
@@ -4407,11 +4400,11 @@ Overfull \hbox (50.05145pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 37.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
-[90]
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 37.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+[85]
 Underfull \hbox (badness 10000) in paragraph at lines 39--39
 
  []
@@ -4500,11 +4493,11 @@ File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 66.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 69.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-[91]
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 69.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+[86]
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 70.
@@ -4542,11 +4535,11 @@ File: images/uc/iu.png Graphic file (type png)
 Package pdftex.def Info: images/uc/iu.png  used on input line 79.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 ) (DCU/SP4/SP4-CU/SP4-CU13.tex
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 2.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [92]
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 2.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+ [87]
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 2.
@@ -4586,12 +4579,12 @@ File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 33.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 34.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-[93]) (DCU/SP4/IU/pantallas.tex
-<images/SP4/JefeDeInnovacionEducativa/Bienvenida-J.jpeg, id=1995, 849.1725pt x 
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 34.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+[88]) (DCU/SP4/IU/pantallas.tex
+<images/SP4/JefeDeInnovacionEducativa/Bienvenida-J.jpeg, id=1991, 849.1725pt x 
 397.485pt>
 File: images/SP4/JefeDeInnovacionEducativa/Bienvenida-J.jpeg Graphic file (type
  jpg)
@@ -4599,7 +4592,7 @@ File: images/SP4/JefeDeInnovacionEducativa/Bienvenida-J.jpeg Graphic file (type
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/Bienvenida-J.jpeg
   used on input line 1.
 (pdftex.def)             Requested size: 375.36299pt x 175.70059pt.
-<images/SP4/JefeDeInnovacionEducativa/GestionarRH-J.jpeg, id=1996, 1156.32pt x 
+<images/SP4/JefeDeInnovacionEducativa/GestionarRH-J.jpeg, id=1992, 1156.32pt x 
 530.58224pt>
 File: images/SP4/JefeDeInnovacionEducativa/GestionarRH-J.jpeg Graphic file (typ
 e jpg)
@@ -4607,7 +4600,7 @@ e jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/GestionarRH-J.jpe
 g  used on input line 2.
 (pdftex.def)             Requested size: 375.36299pt x 172.23479pt.
-<images/SP4/JefeDeInnovacionEducativa/RegistrarRH-J.jpeg, id=1997, 1155.1155pt 
+<images/SP4/JefeDeInnovacionEducativa/RegistrarRH-J.jpeg, id=1993, 1155.1155pt 
 x 530.58224pt>
 File: images/SP4/JefeDeInnovacionEducativa/RegistrarRH-J.jpeg Graphic file (typ
 e jpg)
@@ -4615,7 +4608,7 @@ e jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/RegistrarRH-J.jpe
 g  used on input line 3.
 (pdftex.def)             Requested size: 375.36299pt x 172.41289pt.
-<images/SP4/JefeDeInnovacionEducativa/EditarRH-J.jpeg, id=1998, 916.92563pt x 4
+<images/SP4/JefeDeInnovacionEducativa/EditarRH-J.jpeg, id=1994, 916.92563pt x 4
 64.23438pt>
 File: images/SP4/JefeDeInnovacionEducativa/EditarRH-J.jpeg Graphic file (type j
 pg)
@@ -4624,22 +4617,22 @@ Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/EditarRH-J.jpeg
 used on input line 4.
 (pdftex.def)             Requested size: 375.36299pt x 190.04689pt.
 <images/SP4/JefeDeInnovacionEducativa/ConsultarProgramasAcademicos-J.jpeg, id=1
-999, 1156.32pt x 529.37775pt>
+995, 1156.32pt x 529.37775pt>
 File: images/SP4/JefeDeInnovacionEducativa/ConsultarProgramasAcademicos-J.jpeg 
 Graphic file (type jpg)
 <use images/SP4/JefeDeInnovacionEducativa/ConsultarProgramasAcademicos-J.jpeg>
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/ConsultarPrograma
 sAcademicos-J.jpeg  used on input line 5.
 (pdftex.def)             Requested size: 375.36299pt x 171.84378pt.
-<images/SP4/JefeDeInnovacionEducativa/RegistrarProgramaAcademico-J.jpeg, id=200
-0, 1361.085pt x 637.38126pt>
+<images/SP4/JefeDeInnovacionEducativa/RegistrarProgramaAcademico-J.jpeg, id=199
+6, 1361.085pt x 637.38126pt>
 File: images/SP4/JefeDeInnovacionEducativa/RegistrarProgramaAcademico-J.jpeg Gr
 aphic file (type jpg)
 <use images/SP4/JefeDeInnovacionEducativa/RegistrarProgramaAcademico-J.jpeg>
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/RegistrarPrograma
 Academico-J.jpeg  used on input line 6.
 (pdftex.def)             Requested size: 375.36299pt x 175.77153pt.
-<images/SP4/JefeDeInnovacionEducativa/EditarProgramaAcademico-J.jpeg, id=2001, 
+<images/SP4/JefeDeInnovacionEducativa/EditarProgramaAcademico-J.jpeg, id=1997, 
 794.97pt x 372.1905pt>
 File: images/SP4/JefeDeInnovacionEducativa/EditarProgramaAcademico-J.jpeg Graph
 ic file (type jpg)
@@ -4647,7 +4640,7 @@ ic file (type jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/EditarProgramaAca
 demico-J.jpeg  used on input line 7.
 (pdftex.def)             Requested size: 375.36299pt x 175.74167pt.
-<images/SP4/JefeDeInnovacionEducativa/ConsultarPlanDeEstudios-J.jpeg, id=2002, 
+<images/SP4/JefeDeInnovacionEducativa/ConsultarPlanDeEstudios-J.jpeg, id=1998, 
 1156.32pt x 506.49225pt>
 File: images/SP4/JefeDeInnovacionEducativa/ConsultarPlanDeEstudios-J.jpeg Graph
 ic file (type jpg)
@@ -4655,7 +4648,7 @@ ic file (type jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/ConsultarPlanDeEs
 tudios-J.jpeg  used on input line 8.
 (pdftex.def)             Requested size: 375.36299pt x 164.41481pt.
-<images/SP4/JefeDeInnovacionEducativa/RegistrarPlanDeEstudios-J.jpeg, id=2003, 
+<images/SP4/JefeDeInnovacionEducativa/RegistrarPlanDeEstudios-J.jpeg, id=1999, 
 1363.0925pt x 638.385pt>
 File: images/SP4/JefeDeInnovacionEducativa/RegistrarPlanDeEstudios-J.jpeg Graph
 ic file (type jpg)
@@ -4663,7 +4656,7 @@ ic file (type jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/RegistrarPlanDeEs
 tudios-J.jpeg  used on input line 9.
 (pdftex.def)             Requested size: 375.36299pt x 175.79506pt.
-<images/SP4/JefeDeInnovacionEducativa/EditarPlanDeEstudios-J.jpeg, id=2004, 136
+<images/SP4/JefeDeInnovacionEducativa/EditarPlanDeEstudios-J.jpeg, id=2000, 136
 5.1pt x 639.38875pt>
 File: images/SP4/JefeDeInnovacionEducativa/EditarPlanDeEstudios-J.jpeg Graphic 
 file (type jpg)
@@ -4671,7 +4664,7 @@ file (type jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/EditarPlanDeEstud
 ios-J.jpeg  used on input line 10.
 (pdftex.def)             Requested size: 375.36299pt x 175.80804pt.
-<images/SP4/JefeDeInnovacionEducativa/ConsultarMapaCurricular-J.jpeg, id=2005, 
+<images/SP4/JefeDeInnovacionEducativa/ConsultarMapaCurricular-J.jpeg, id=2001, 
 1915.155pt x 977.6525pt>
 File: images/SP4/JefeDeInnovacionEducativa/ConsultarMapaCurricular-J.jpeg Graph
 ic file (type jpg)
@@ -4680,14 +4673,14 @@ Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/ConsultarMapaCurr
 icular-J.jpeg  used on input line 11.
 (pdftex.def)             Requested size: 375.36299pt x 191.61858pt.
 <images/SP4/JefeDeInnovacionEducativa/RegistrarUnidadDeAprendizaje-J.jpeg, id=2
-006, 1358.07375pt x 628.3475pt>
+002, 1358.07375pt x 628.3475pt>
 File: images/SP4/JefeDeInnovacionEducativa/RegistrarUnidadDeAprendizaje-J.jpeg 
 Graphic file (type jpg)
 <use images/SP4/JefeDeInnovacionEducativa/RegistrarUnidadDeAprendizaje-J.jpeg>
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/RegistrarUnidadDe
 Aprendizaje-J.jpeg  used on input line 12.
 (pdftex.def)             Requested size: 375.36299pt x 173.66379pt.
-<images/SP4/JefeDeInnovacionEducativa/EditarUnidadDeAprendizaje-J.jpeg, id=2007
+<images/SP4/JefeDeInnovacionEducativa/EditarUnidadDeAprendizaje-J.jpeg, id=2003
 , 1360.08125pt x 631.35875pt>
 File: images/SP4/JefeDeInnovacionEducativa/EditarUnidadDeAprendizaje-J.jpeg Gra
 phic file (type jpg)
@@ -4695,7 +4688,7 @@ phic file (type jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/EditarUnidadDeApr
 endizaje-J.jpeg  used on input line 13.
 (pdftex.def)             Requested size: 375.36299pt x 174.24556pt.
-<images/SP4/JefeDeInnovacionEducativa/ConsultarTareas-J.jpg, id=2008, 676.32675
+<images/SP4/JefeDeInnovacionEducativa/ConsultarTareas-J.jpg, id=2004, 676.32675
 pt x 326.4195pt>
 File: images/SP4/JefeDeInnovacionEducativa/ConsultarTareas-J.jpg Graphic file (
 type jpg)
@@ -4703,7 +4696,7 @@ type jpg)
 Package pdftex.def Info: images/SP4/JefeDeInnovacionEducativa/ConsultarTareas-J
 .jpg  used on input line 14.
 (pdftex.def)             Requested size: 375.36299pt x 181.16495pt.
-<images/SP4/Analista/RevisarMapaCurricular-A.jpeg, id=2009, 722.7pt x 315.579pt
+<images/SP4/Analista/RevisarMapaCurricular-A.jpeg, id=2005, 722.7pt x 315.579pt
 >
 File: images/SP4/Analista/RevisarMapaCurricular-A.jpeg Graphic file (type jpg)
 <use images/SP4/Analista/RevisarMapaCurricular-A.jpeg>
@@ -4711,59 +4704,59 @@ Package pdftex.def Info: images/SP4/Analista/RevisarMapaCurricular-A.jpeg  used
  on input line 15.
 (pdftex.def)             Requested size: 375.36299pt x 163.9094pt.
 ))
-File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
-<use IG-GRAL/headerPar.jpg>
-Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 30.
-(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [94 <./images/SP4/JefeDeInnovacionEducativa/Bienvenida-J.jpeg> <./images/SP4/J
-efeDeInnovacionEducativa/GestionarRH-J.jpeg>]
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 30.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-
-[95 <./images/SP4/JefeDeInnovacionEducativa/RegistrarRH-J.jpeg> <./images/SP4/J
-efeDeInnovacionEducativa/EditarRH-J.jpeg>]
+ [89 <./images/SP4/JefeDeInnovacionEducativa/Bienvenida-J.jpeg> <./images/SP4/J
+efeDeInnovacionEducativa/GestionarRH-J.jpeg>]
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 30.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [96 <./images/SP4/JefeDeInnovacionEducativa/ConsultarProgramasAcademicos-J.jpe
+
+[90 <./images/SP4/JefeDeInnovacionEducativa/RegistrarRH-J.jpeg> <./images/SP4/J
+efeDeInnovacionEducativa/EditarRH-J.jpeg>]
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 30.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+ [91 <./images/SP4/JefeDeInnovacionEducativa/ConsultarProgramasAcademicos-J.jpe
 g> <./images/SP4/JefeDeInnovacionEducativa/RegistrarProgramaAcademico-J.jpeg (P
 NG copy)>]
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 30.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [97 <./images/SP4/JefeDeInnovacionEducativa/EditarProgramaAcademico-J.jpeg> <.
-/images/SP4/JefeDeInnovacionEducativa/ConsultarPlanDeEstudios-J.jpeg>]
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 30.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [98 <./images/SP4/JefeDeInnovacionEducativa/RegistrarPlanDeEstudios-J.jpeg (PN
+ [92 <./images/SP4/JefeDeInnovacionEducativa/EditarProgramaAcademico-J.jpeg> <.
+/images/SP4/JefeDeInnovacionEducativa/ConsultarPlanDeEstudios-J.jpeg>]
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 30.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+ [93 <./images/SP4/JefeDeInnovacionEducativa/RegistrarPlanDeEstudios-J.jpeg (PN
 G copy)> <./images/SP4/JefeDeInnovacionEducativa/EditarPlanDeEstudios-J.jpeg (P
 NG copy)>]
+File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
+<use IG-GRAL/headerPar.jpg>
+Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 30.
+(pdftex.def)             Requested size: 334.83243pt x 35.0pt.
+ [94 <./images/SP4/JefeDeInnovacionEducativa/ConsultarMapaCurricular-J.jpeg (PN
+G copy)> <./images/SP4/JefeDeInnovacionEducativa/RegistrarUnidadDeAprendizaje-J
+.jpeg (PNG copy)>]
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 30.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [99 <./images/SP4/JefeDeInnovacionEducativa/ConsultarMapaCurricular-J.jpeg (PN
-G copy)> <./images/SP4/JefeDeInnovacionEducativa/RegistrarUnidadDeAprendizaje-J
-.jpeg (PNG copy)>]
+
+[95 <./images/SP4/JefeDeInnovacionEducativa/EditarUnidadDeAprendizaje-J.jpeg (P
+NG copy)> <./images/SP4/JefeDeInnovacionEducativa/ConsultarTareas-J.jpg>]
 File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 30.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
 
-[100 <./images/SP4/JefeDeInnovacionEducativa/EditarUnidadDeAprendizaje-J.jpeg (
-PNG copy)> <./images/SP4/JefeDeInnovacionEducativa/ConsultarTareas-J.jpg>]
-File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
-<use IG-GRAL/headerInp.jpg>
-Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 30.
-(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
-
-[101 <./images/SP4/Analista/RevisarMapaCurricular-A.jpeg>]
+[96 <./images/SP4/Analista/RevisarMapaCurricular-A.jpeg>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
  (main.aux
@@ -4776,7 +4769,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A8D2DD4F55C3D304E0A1BCF3A0C88BBD;13701.
+(rerunfilecheck)             Checksum: CFA3FC0D7A6B8A31BFE8A218F9C49FD0;13522.
 
 
 LaTeX Warning: There were undefined references.
@@ -4784,10 +4777,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 11457 strings out of 492970
- 176414 string characters out of 3126149
- 342021 words of memory out of 3000000
- 14214 multiletter control sequences out of 15000+200000
+ 11458 strings out of 492970
+ 176487 string characters out of 3126149
+ 341379 words of memory out of 3000000
+ 14215 multiletter control sequences out of 15000+200000
  17510 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,16n,45p,458b,681s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4800,20 +4793,29 @@ aced by a fixed one
 pdfTeX warning (dest): name{JDIA} has been referenced but does not exist, repla
 ced by a fixed one
 
-pdfTeX warning (dest): name{MSG53} has been referenced but does not exist, repl
-aced by a fixed one
+pdfTeX warning (dest): name{BR35} has been referenced but does not exist, repla
+ced by a fixed one
 
-pdfTeX warning (dest): name{MSG52} has been referenced but does not exist, repl
+pdfTeX warning (dest): name{MSG53} has been referenced but does not exist, repl
 aced by a fixed one
 
 pdfTeX warning (dest): name{JDIE} has been referenced but does not exist, repla
 ced by a fixed one
 
+pdfTeX warning (dest): name{BR33} has been referenced but does not exist, repla
+ced by a fixed one
+
+pdfTeX warning (dest): name{BR34} has been referenced but does not exist, repla
+ced by a fixed one
+
+pdfTeX warning (dest): name{BR18} has been referenced but does not exist, repla
+ced by a fixed one
+
+pdfTeX warning (dest): name{BR20} has been referenced but does not exist, repla
+ced by a fixed one
+
 pdfTeX warning (dest): name{IU4} has been referenced but does not exist, replac
 ed by a fixed one
-
-pdfTeX warning (dest): name{MSG44} has been referenced but does not exist, repl
-aced by a fixed one
 
 pdfTeX warning (dest): name{Usuario} has been referenced but does not exist, re
 placed by a fixed one
@@ -4821,12 +4823,12 @@ placed by a fixed one
  <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi6
 00\cmbr9.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\c
 mbright\dpi540\cmbrbx10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\public\cmbright\dpi375\cmbr8.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\public\cmbright\dpi720\cmbrbx10.pk> <C:\Users\Andrez\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmtl10.pk> <C:\Users\A
-ndrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi525\cmbr8.pk>
- <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi6
-00\cmbrsl10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\publi
+ljfour\public\cmbright\dpi600\cmbrsl10.pk> <C:\Users\Andrez\AppData\Local\MiKTe
+X\2.9\fonts\pk\ljfour\public\cmbright\dpi375\cmbr8.pk> <C:\Users\Andrez\AppData
+\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi720\cmbrbx10.pk> <C:\Users
+\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmtl10.
+pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\d
+pi525\cmbr8.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\publi
 c\cmbright\dpi600\cmbrsy10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\
 pk\ljfour\public\cmbright\dpi864\cmbrbx10.pk> <C:\Users\Andrez\AppData\Local\Mi
 KTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi375\cmbrsl8.pk> <C:\Users\Andrez\Ap
@@ -4841,9 +4843,9 @@ pData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\cmbr17.pk><C:/Use
 rs/Andrez/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfon
 t/lcirclew.pfb><C:/Users/Andrez/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/marvosym/marvosym.pfb>
-Output written on main.pdf (101 pages, 1771942 bytes).
+Output written on main.pdf (96 pages, 1753302 bytes).
 PDF statistics:
- 2834 PDF objects out of 2984 (max. 8388607)
+ 2795 PDF objects out of 2984 (max. 8388607)
  788 named destinations out of 1000 (max. 500000)
- 1222 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
