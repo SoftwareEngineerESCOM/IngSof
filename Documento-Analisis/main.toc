@@ -90,7 +90,7 @@
 \contentsline {subsection}{\numberline {2.0.51}MSG50 Error: Primero se debe seleccionar el punto en donde se gestionar\IeC {\'a} el subrayado.}{50}{subsection.2.0.51}
 \contentsline {chapter}{\numberline {3}Identificaci\IeC {\'o}n de Requerimientos}{53}{chapter.3}
 \contentsline {chapter}{\numberline {4}Sprint 1 Gesti\IeC {\'o}n de paquetes y Unidad de Aprendizaje}{67}{chapter.4}
-\contentsline {section}{\numberline {4.1}SP2-CU1 Consultar contenido de propuesta de Unidad de Aprendizaje}{68}{section.4.1}
+\contentsline {section}{\numberline {4.1}SP2-CU1 Aprobar contenido de propuesta de Unidad de Aprendizaje}{68}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Descripci\IeC {\'o}n completa}{68}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Atributos importantes}{68}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Trayectorias del Caso de Uso}{69}{subsection.4.1.3}
@@ -98,7 +98,7 @@
 \contentsline {subsection}{\numberline {4.2.1}Descripci\IeC {\'o}n completa}{70}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Atributos importantes}{70}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Trayectorias del Caso de Uso}{71}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}SP2-CU3 Desasignar unidades de aprendizaje a un analista}{72}{section.4.3}
+\contentsline {section}{\numberline {4.3}SP2-CU3 Modifica informaci\IeC {\'o}n de la gesti\IeC {\'o}n de unidades de aprendizaje}{72}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Descripci\IeC {\'o}n completa}{72}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Atributos importantes}{72}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Trayectorias del Caso de Uso}{72}{subsection.4.3.3}
@@ -111,40 +111,40 @@
 \contentsline {subsection}{\numberline {5.1.1}Descripci\IeC {\'o}n completa}{78}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Atributos importantes}{78}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Trayectorias del Caso de Uso}{79}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}SP2-CU6 Autorizar Secci\IeC {\'o}n Programa en Extenso de Unidad de Aprendizaje}{81}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Descripci\IeC {\'o}n completa}{81}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Atributos importantes}{81}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Trayectorias del Caso de Uso}{82}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}SP2-CU7 Autorizar Secci\IeC {\'o}n Relaci\IeC {\'o}n de Pr\IeC {\'a}cticas de Unidad de Aprendizaje}{84}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Descripci\IeC {\'o}n completa}{84}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Atributos importantes}{84}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Trayectorias del Caso de Uso}{85}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}SP2-CU8 Autorizar Secci\IeC {\'o}n Bibliograf\IeC {\'\i }a de Unidad de Aprendizaje}{87}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Descripci\IeC {\'o}n completa}{87}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Atributos importantes}{87}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Trayectorias del Caso de Uso}{88}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}SP2-CU9 Autorizar Secci\IeC {\'o}n Sistema de Evaluaci\IeC {\'o}n de Unidad de Aprendizaje}{90}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Descripci\IeC {\'o}n completa}{90}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Atributos importantes}{90}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Trayectorias del Caso de Uso}{91}{subsection.5.5.3}
-\contentsline {section}{\numberline {5.6}SP2-CU10 Autorizar Unidad Tem\IeC {\'a}tica de Unidad de Aprendizaje}{93}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Descripci\IeC {\'o}n completa}{93}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}Atributos importantes}{93}{subsection.5.6.2}
-\contentsline {subsection}{\numberline {5.6.3}Trayectorias del Caso de Uso}{94}{subsection.5.6.3}
-\contentsline {chapter}{\numberline {6}sprint 3 Herramientas para verificar las secciones de propuesta de unidad de Aprendizaje}{97}{chapter.6}
-\contentsline {section}{\numberline {6.1}SP2-CU11 Agregar comentarios a propuesta de unidad de aprendizaje }{98}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Descripci\IeC {\'o}n completa}{98}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Atributos importantes}{98}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Trayectorias del Caso de Uso}{99}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}SP2-CU12 Modificar comentarios a propuesta de Unidad de Aprendizaje }{101}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Descripci\IeC {\'o}n completa}{101}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Atributos importantes}{101}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Trayectorias del Caso de Uso}{102}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}SP2-CU13 Eliminar comentarios en secci\IeC {\'o}n de propuesta de Unidad de Aprendizaje }{104}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Descripci\IeC {\'o}n completa}{104}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Atributos importantes}{104}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Trayectorias del Caso de Uso}{105}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}SP2-CU14 Gesti\IeC {\'o}n de subrayados en revisi\IeC {\'o}n de propuesta de Unidad de Aprendizaje }{106}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Descripci\IeC {\'o}n completa}{106}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Atributos importantes}{106}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Trayectorias del Caso de Uso}{107}{subsection.6.4.3}
+\contentsline {section}{\numberline {5.2}SP2-CU6 Autorizar Secci\IeC {\'o}n Programa en Extenso de Unidad de Aprendizaje}{82}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Descripci\IeC {\'o}n completa}{82}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Atributos importantes}{82}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Trayectorias del Caso de Uso}{83}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}SP2-CU7 Autorizar Secci\IeC {\'o}n Relaci\IeC {\'o}n de Pr\IeC {\'a}cticas de Unidad de Aprendizaje}{86}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Descripci\IeC {\'o}n completa}{86}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Atributos importantes}{86}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Trayectorias del Caso de Uso}{87}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}SP2-CU8 Autorizar Secci\IeC {\'o}n Bibliograf\IeC {\'\i }a de Unidad de Aprendizaje}{90}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Descripci\IeC {\'o}n completa}{90}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Atributos importantes}{90}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Trayectorias del Caso de Uso}{91}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}SP2-CU9 Autorizar Secci\IeC {\'o}n Sistema de Evaluaci\IeC {\'o}n de Unidad de Aprendizaje}{94}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Descripci\IeC {\'o}n completa}{94}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Atributos importantes}{94}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Trayectorias del Caso de Uso}{95}{subsection.5.5.3}
+\contentsline {section}{\numberline {5.6}SP2-CU10 Autorizar Unidad Tem\IeC {\'a}tica de Unidad de Aprendizaje}{98}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Descripci\IeC {\'o}n completa}{98}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Atributos importantes}{98}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Trayectorias del Caso de Uso}{99}{subsection.5.6.3}
+\contentsline {chapter}{\numberline {6}sprint 3 Herramientas para verificar las secciones de propuesta de unidad de Aprendizaje}{103}{chapter.6}
+\contentsline {section}{\numberline {6.1}SP2-CU11 Agregar comentarios a propuesta de unidad de aprendizaje }{104}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Descripci\IeC {\'o}n completa}{104}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Atributos importantes}{104}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Trayectorias del Caso de Uso}{105}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}SP2-CU12 Modificar comentarios a propuesta de Unidad de Aprendizaje }{107}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Descripci\IeC {\'o}n completa}{107}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Atributos importantes}{107}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Trayectorias del Caso de Uso}{108}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}SP2-CU13 Eliminar comentarios en secci\IeC {\'o}n de propuesta de Unidad de Aprendizaje }{110}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Descripci\IeC {\'o}n completa}{110}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Atributos importantes}{110}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Trayectorias del Caso de Uso}{111}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}SP2-CU14 Gesti\IeC {\'o}n de subrayados en revisi\IeC {\'o}n de propuesta de Unidad de Aprendizaje }{112}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Descripci\IeC {\'o}n completa}{112}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Atributos importantes}{112}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Trayectorias del Caso de Uso}{113}{subsection.6.4.3}

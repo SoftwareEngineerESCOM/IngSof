@@ -39,8 +39,7 @@
 			\item \UCref{SP2-CU11}: Agregar comentarios a propuesta de unidad de aprendizaje.
 			\item \UCref{SP2-CU12}: Modificar comentarios a propuesta de Unidad de Aprendizaje.
 			\item \UCref{SP2-CU13}: Eliminar comentarios en sección de propuesta de Unidad de Aprendizaje.
-			\item \UCref{SP2-CU14}: Agregar subrayado a propuesta de Unidad de Aprendizaje.
-			\item \UCref{SP2-CU15}: Eliminar subrayado en sección de propuesta de Unidad de Aprendizaje.
+			\item \UCref{SP2-CU14}: Gestión de subrayados en revisión de propuesta de Unidad de Aprendizaje.
 		\end{itemize}
 		}
 		\UCitem{Estado}{Revisión.}
@@ -60,8 +59,12 @@
     
     \UCpaso El sistema muestra la interfaz de usuario  \IUref{SP2-IU-RP}{Sección Relación de Prácticas}.
     
+    \UCpaso[\UCactor] Revisa la información correspondiente a la sección de la Unidad de Aprendizaje.[\UCref{SP2-CU11}][\UCref{SP2-CU12}][\UCref{SP2-CU13}][\UCref{SP2-CU14}].
+    
     \UCpaso[\UCactor] presiona el botón \IUbutton{Finalizar Revisión}. \hyperlink{SP2-CU7-A2}{Trayectoria A2}.
     \UCpaso El sistema muestra el \MSGref{MSG16}{¿Está seguro de Finalizar la Revisión?}.
+    
+    \UCpaso [\UCactor] presiona el botón \IUbutton{Aceptar}. \hyperlink{SP2-CU7-A4}{Trayectoria A4}.
     
     \UCpaso	El sistema verifica que no existan nuevos comentarios o subrayados para la sección de la Unidad de Aprendizaje. Regla de Negocio BR8. \hyperlink{SP2-CU7-A3}{Trayectoria A3}. 
     
@@ -101,9 +104,18 @@
 
 	\hypertarget{SP2-CU7-A2.1}{\UCpaso[\UCactor] presiona el botón \IUbutton{Cancelar}}. 
     \UCpaso El sistema muestra el mensaje \MSGref{MSG15}{¿Está seguro que desea Cancelar la revisión? Se perderán las Anotaciones que no hayas guardado anteriormente.}
-Se perderán las Anotaciones que no hayas guardado anteriormente. .
+	\UCpaso [\UCactor] presiona el botón \IUbutton{Aceptar}. \hyperlink{SP2-CU7-A2.1.1}{Trayectoria A2.1.1}.
     \UCpaso El sistema elimina los nuevos comentaros y subrayados hechos durante esa sesión.
     \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
+\end{UCtrayectoriaA}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A2.1.1 -----------------------
+	
+\begin{UCtrayectoriaA}{A2.1.1}{El analista no desea cancelar la revisión de la Unidad de Aprendizaje.} 
+
+	\hypertarget{SP2-CU7-A2.1.1}{\UCpaso[\UCactor] presiona el botón \IUbutton{Cancelar} del mensaje \MSGref{MSG15}{¿Está seguro que desea Cancelar la revisión? Se perderán las Anotaciones que no hayas guardado anteriormente.}}
+    \UCpaso Regresa al paso 6 de la trayectoria principal. 
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A3 -----------------------
@@ -113,4 +125,12 @@ Se perderán las Anotaciones que no hayas guardado anteriormente. .
 	\hypertarget{SP2-CU7-A3}{\UCpaso El sistema pone el estado de la sección Relación de Prácticas de Unidad de Aprendizaje en “Revisado”.}
     \UCpaso El sistema muestra el mensaje \MSGref{MSG18}{Revisión de Sección Finalizada}.
     \UCpaso El sistema muestra la interfaz de usuario \IUref{SP2-IU-INICIO}{Sección Inicio}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A4 -----------------------
+	
+\begin{UCtrayectoriaA}{A4}{El analista aun no desea finalizar la revisión de la Unidad de Aprendizaje.} 
+
+	\hypertarget{SP2-CU7-A4}{\UCpaso[\UCactor] presiona el botón \IUbutton{Cancelar} del mensaje \MSGref{MSG16}{¿Está seguro de Finalizar la Revisión?}}
+    \UCpaso Regresa al paso 6 de la trayectoria principal. 
 \end{UCtrayectoriaA}
