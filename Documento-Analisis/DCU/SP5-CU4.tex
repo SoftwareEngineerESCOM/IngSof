@@ -49,9 +49,9 @@
 	\UCpaso Carga la información de los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema} según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria G]
 	\UCpaso Muestra la interfaz de usuario  \IUref{IU8}{Registrar empleados}. 
 	\UCpaso[\UCactor] Ingresa el nombre del usuario, el sistema verifica la consistencia de la información conforme al diccionario de datos, la  \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.  [Trayectoria D] [Trayectoria F]  [Trayectoria H] 
-	\UCpaso[\UCactor] Ingresa el primer apellido del usuario, el sistema verifica la consistencia de la información conforme al diccionario de datos, la  \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.  [Trayectoria D] [Trayectoria F]  [Trayectoria H] 
-	\UCpaso[\UCactor] Ingresa el segundo apellido del usuario, el sistema verifica la consistencia de la información conforme al diccionario de datos, la  \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.  [Trayectoria D] [Trayectoria F]  [Trayectoria H] 
-	\UCpaso[\UCactor] Selecciona el titulo del usuario.  [Trayectoria D]
+	\UCpaso[\UCactor] Ingresa el primer apellido del usuario, el sistema verifica la consistencia de la información conforme al diccionario de datos, la  \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.  [Trayectoria D] [Trayectoria F]  
+	\UCpaso[\UCactor] Ingresa el segundo apellido del usuario, el sistema verifica la consistencia de la información conforme al diccionario de datos, la  \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.  [Trayectoria D] [Trayectoria F]  
+	\UCpaso[\UCactor] Selecciona el titulo del usuario.  [Trayectoria D] [Trayectoria H]
 	\UCpaso[\UCactor] Selecciona la zona de trabajo del usuario. [Trayectoria D]
 	\UCpaso[\UCactor] Selecciona los cargos del usuario. [Trayectoria D]    
 	\UCpaso[\UCactor] Ingresa el correo electrónico del usuario, el sistema verifica la consistencia de la información conforme al diccionario de datos, la  \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.  [Trayectoria D] [Trayectoria F]  [Trayectoria H] 
@@ -71,13 +71,13 @@
 	\UCpaso El sistema continua en la interfaz de usuario \IUref{IU2}{Gestionar usuarios}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{D}{El actor presiono el botón \IUbutton{Cancelar}.}
+\begin{UCtrayectoriaA}{D}{El actor presionó el botón \IUbutton{Cancelar}.}
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el boton \IUbutton{Sí}. [Trayectoria D.1]
 	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar usuarios}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{D.1}{El actor presiono el botón \IUbutton{No}.}
+\begin{UCtrayectoriaA}{D.1}{El actor presionó el botón \IUbutton{No}.}
 	\UCpaso Cierra el mensaje y continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.	
 \end{UCtrayectoriaA}
 
@@ -99,7 +99,7 @@
 	\begin{UCtrayectoriaA}{G}{Ocurre un error al momento de persistir los datos.}
 		\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
 		\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-		\UCpaso El sistema continua o regresa en la interfaz de usuario \IUref{IU2}{Gestionar usuarios}.
+		\UCpaso El sistema continua  en la interfaz de usuario \IUref{IU2}{Gestionar usuarios}.
 	\end{UCtrayectoriaA}
 	
 	

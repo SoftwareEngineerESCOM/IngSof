@@ -51,7 +51,7 @@
 	\UCpaso Verifica la existencia de registros en los catálogos cargos, lugares de trabajo y titulo descritos en la \BRref{BR14}{Catálogos del Sistema}. [Trayectoria B]
 	\UCpaso El sistema carga la información de los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema} según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria F]
 	\UCpaso Muestra la interfaz de usuario  \IUref{IU7}{Editar empleados}. 
-	\UCpaso El sistema carga los datos del usuario correspondiente. 
+	\UCpaso El sistema carga los datos del usuario seleccionado. 
 	\UCpaso[\UCactor] Modifica la información deseada del usuario el sistema verifica la consistencia de la información conforme al diccionario de datos, la  \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.  [Trayectoria D] [Trayectoria E]  [Trayectoria G] 
 	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Finalizar}.
 	\UCpaso Verifica la consistencia de la información conforme al diccionario de datos. [Trayectoria E] [Trayectoria G]
@@ -86,7 +86,7 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 
-\begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
+\begin{UCtrayectoriaA}{F}{{Ocurre un error al persistir datos.}
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso El sistema muestra o regresa a la interfaz de usuario  \IUref{IU7}{Editar empleados}.
