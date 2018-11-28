@@ -46,7 +46,7 @@
     \UCpaso Carga el catálogo de Título descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga el catálogo de Lugar de Trabajo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
     \UCpaso Carga los datos del Recurso Humano a editar. [Trayectoria B]
-    \UCpaso[\UCactor] Modifica los campos deseados, el sistema verifica conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria C][Trayectoria D]
+    \UCpaso[\UCactor] Modifica los campos deseados, el sistema verifica conforme al diccionario de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria C][Trayectoria D]
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}.  Existen las trayectorias alternativas [Trayectoria E] y [Trayectoria E.1] al presionar el boton Cancelar.
 
     \UCpaso Verifica que se cumpla la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria D]
@@ -61,13 +61,11 @@
 \begin{UCtrayectoriaA}{A}{No cargan los catálogos de Recurso Humano.}
     \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}
     %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 \begin{UCtrayectoriaA}{B}{No se pudieron obtener los datos del Recurso Humano.}
     \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 \begin{UCtrayectoriaA}{C}{El Sistema detecta campos que incumplen con el diccionario de datos.}
@@ -83,7 +81,6 @@
 \begin{UCtrayectoriaA}{E}{El actor presiona el botón \IUbutton{Cancelar}.}
     \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
-    \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recurso Humano}
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA E.1 -------------------------
 \begin{UCtrayectoriaA}{E.1}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}.}
@@ -95,5 +92,4 @@
 \begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
     \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoriaA}
