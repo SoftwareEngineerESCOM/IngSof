@@ -15,9 +15,9 @@
         \UCitem{Origen}{Teclado.}
         \UCitem{Salidas}{
             \begin{itemize}
-                \item Página principal del sistema.
+                \item Página principal del sistema según la \BRref{BR37}{Dirección web del sistema}.
                 \item \MSGref{MSG0}{Correo y/o contraseña no válidas.}
-                
+                \item \MSGref{MSG35}{Escriba información válida}.
                 \item \MSGref{MSG25}{Servicios no disponibles}.
                 \item \MSGref{MSG26}{El correo ingresado no se encuentra registrado en el sistema.}
             \end{itemize}
@@ -45,16 +45,15 @@
     
     \UCpaso[\UCactor] Ingresa el url en el navegador establecido en la \BRref{BR37}{Dirección web del sistema}. [Trayectoria A] 
     \UCpaso Muestra la interfaz de usuario \IUref{IU3}{Inicio de sesion}.
-    \UCpaso[\UCactor] Ingresa correo electrónico.
-    \UCpaso[\UCactor] Ingresa su contraseña.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Entrar} de la interfaz de usuario \IUref{IU3}{Inicio de sesión}  [Trayectoria A][Trayectoria C].
-    \UCpaso Muestra la interfaz de la pantalla principal.[Trayectoria D] [Trayectoria E] [Trayectoria F] [Trayectoria G]
+    \UCpaso[\UCactor] Ingresa su correo electrónico, el sistema verifica la consistencia de la información conforme al diccionario de datos, y la \BRref{BR38}{Verificación de formularios al momento}. [Trayectoria G]
+    \UCpaso[\UCactor] Ingresa su contraseña, el sistema verifica la consistencia de la información conforme al diccionario de datos, y la \BRref{BR38}{Verificación de formularios al momento}. [Trayectoria G]
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Entrar} de la interfaz de usuario \IUref{IU3}{Inicio de sesión}[Trayectoria A] [Trayectoria B] [Trayectoria C] [Trayectoria D] [Trayectoria E] [Trayectoria F].
+    \UCpaso Muestra la interfaz de usuario \IUref{IU4}{Bienvenida para el JDIA ó JDIC}.
 \end{UCtrayectoria}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 
 \begin{UCtrayectoriaA}{A}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
-    \UCpaso No se puede mostrar la página solicitada.
     \UCpaso El sistema muestra el   \MSGref{MSG25}{Servicios no disponibles}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU1}.
@@ -68,39 +67,40 @@
     \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}
 
-
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 
-\begin{UCtrayectoriaA}{C}{El usuario es un JDIA ó JDIC.}
-    \UCpaso Muestra la interfaz de usuario \IUref{IU4}{Bienvenida para el JDIA ó JDIC}.
+\begin{UCtrayectoriaA}{C}{El usuario es un JIE.}
+    \UCpaso Muestra la interfaz de usuario \IUref{IU6}{Bienvenida para el JIE}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 
-\begin{UCtrayectoriaA}{D}{El usuario es un JIE.}
-    \UCpaso Muestra la interfaz de usuario \IUref{IU6}{Bienvenida para el JIE}.
+\begin{UCtrayectoriaA}{D}{El usuario es un analista de la DES, analista de la UA o docente.}
+    \UCpaso Muestra la interfaz de usuario \IUref{IU5}{Bienvenida para analistas}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 
-\begin{UCtrayectoriaA}{E}{El usuario es un analista de la DES, analista de la UA o docente.}
-    \UCpaso Muestra la interfaz de usuario \IUref{IU5}{Bienvenida para analistas}.
-\end{UCtrayectoriaA}
-
-%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
-
-\begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
+\begin{UCtrayectoriaA}{E}{La base de datos no está disponible, o hubo un error de conexión.}
     \UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 
-\begin{UCtrayectoriaA}{G}{El correo ingresado no se encuentra registrado en el sistema.}
+\begin{UCtrayectoriaA}{F}{El correo ingresado no se encuentra registrado en el sistema.}
     \UCpaso El sistema muestra el mensaje \MSGref{MSG26}{El correo ingresado no se encuentra registrado en el sistema.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
+
+\begin{UCtrayectoriaA}{G}{Inconsistencias con el diccionario de datos.}
+        \UCpaso El sistema muestra el mensaje \MSGref{MSG35}{Escriba información válida} debajo de campo que incumplió con el diccionario de datos.
+        \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+        \UCpaso Continúa en la interfaz de usuario \IUref{IU3}{Inicio de sesion}.
+    \end{UCtrayectoriaA}
 
 
