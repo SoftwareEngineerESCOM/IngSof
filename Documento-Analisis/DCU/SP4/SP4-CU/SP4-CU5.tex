@@ -35,7 +35,7 @@
     \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programa Académico}.
     \UCpaso Carga el catálogo de Lugar de Trabajo descrito en la \BRref{BR14}{Catálogos existentes} [Trayectoria A].
     \UCpaso[\UCactor] Selecciona la Unidad Académica que desee como filtro. [Trayectoria B] lanzada al no seleccionar, [Trayectoria C] al verificar la \BRref{BR40}{El Jefe de Innovación Educativa solo hace operaciones dentro del Sistema que sean parte de su Unidad Académica.}
-    \UCpaso[\UCactor] Aplica el filtro presionando el botón \IUbutton{Buscar}.
+    \UCpaso[\UCactor] Aplica el filtro a los datos de Programas Académicos de la Unidad Académica seleccionada.
     \UCpaso Muestra tabla con los datos de los Programas Académicos que cumplan con el filtro.
 \end{UCtrayectoria}
 
@@ -43,13 +43,11 @@
 \begin{UCtrayectoriaA}{A}{No cargan los catálogos de Lugar de Trabajo.}
     \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-     \UCpaso Muestra la interfaz de usuario Menú para Jefe de Innovación Educativa \IUref{B-J}{Pantalla Bienvenida al Jefe de Innovación Educativa} o \IUref{IU4}{Pantalla de bienvenida para el JDIA ó el JDIC.} para Jefe de División de Innovación Académica y Jefe de Departamento de Desarrollo e Innovación Curricular.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 
 \begin{UCtrayectoriaA}{B}{El actor no selecciona ningúna Unidad Académica}
-    \UCpaso Muestra una tabla con los datos de todos los Programas Académicos.
-    \UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP4-CU5}.
+    \UCpaso Muestra una tabla con los datos de todos los Programas Académicos.    
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C-------------------------
 

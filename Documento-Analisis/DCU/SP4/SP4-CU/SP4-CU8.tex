@@ -17,7 +17,7 @@
                 \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
                 \item \MSGref{MSG44}{Este campo es requerido}
                 \item \MSGref{MSG35}{Escribe información válida.}
-                \item \MSGref{MSG43}{El nombre del Programa Académico ya está registrado porfavor cámbielo.}
+                \item \MSGref{MSG43}{El nombre del Programa Académico ya está registrado. Por favor cámbielo.}
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -33,11 +33,11 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
     \UCpaso[\UCactor] Presiona el botón \IUbutton{lápiz} de la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}.IUbutton{lápiz}.
-    \UCpaso Muestra la interfaz de usuario \IUref{EPA-J}{Editar Programa Académico}.
     \UCpaso Cargar el nombre del Programa Académico.[Trayectoria F]
-    \UCpaso[\UCactor] Ingresa el nombre del Programa Académico. Verifica que se cumpla la [Trayectoria C] el sistema verifica conforme al modelo de datos la \BRref{BR38}{Verificación de formularios al momento}.
+    \UCpaso Muestra la interfaz de usuario \IUref{EPA-J}{Editar Programa Académico}.
+    \UCpaso[\UCactor] Cambia el nombre del Programa Académico, el sistema verifica conforme al modelo de datos la \BRref{BR38}{Verificación de formularios al momento}[Trayectoria C].
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. Existen las trayectorias alternativas [Trayectoria A] y [Trayectoria A.1] al presionar el botón Cancelar.
-    \UCpaso Verifica que se cumplan la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios.} y la \BRref{BR19}{El nombre del Programa Académico es único.} [Trayectoria B][Trayectoria D]
+    \UCpaso Verifica que se cumplan la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios.} y la \BRref{BR19}{El nombre del Programa Académico es único.} [Trayectoria B][Trayectoria D].
     \UCpaso Persiste los datos ingresados.Accionando el botón \IUbutton{Finalizar} se activa la  [Trayectoria E].
     \UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
@@ -70,14 +70,14 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 
-\begin{UCtrayectoriaA}{C}{El Sistema detecta que el Nombre de Programa Académico no cumple con el diccionario de datos}
+\begin{UCtrayectoriaA}{C}{El Sistema detecta que el Nombre de Programa Académico no cumple con el diccionario de datos.}
     \UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida} debajo del campo.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU8}.
 \end{UCtrayectoriaA}
     %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 
 \begin{UCtrayectoriaA}{D}{El nombre del Programa Académico ya está registrado.}
-    \UCpaso Muestra el mensaje \MSGref{MSG43}{El nombre del Programa Académico ya está registrado.Por favor cámbielo.}.
+    \UCpaso Muestra el mensaje \MSGref{MSG43}{El nombre del Programa Académico ya está registrado. Por favor cámbielo.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU8}.
 \end{UCtrayectoriaA}
