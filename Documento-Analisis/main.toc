@@ -1,0 +1,138 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Especificaci\IeC {\'o}n de Reglas del Negocio}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}BR1 Jefe de Divisi\IeC {\'o}n de Innovaci\IeC {\'o}n Acad\IeC {\'e}mica y Jefe de Departamento e Innovaci\IeC {\'o}n curricular.}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}BR2 Jefes de Innovaci\IeC {\'o}n Educativa.}{5}{section.1.2}
+\contentsline {section}{\numberline {1.3}BR3 Gesti\IeC {\'o}n de Usuarios}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}BR4 Cada Usuario debe estar relacionado a una zona de trabajo.}{6}{section.1.4}
+\contentsline {section}{\numberline {1.5}BR5 M\IeC {\'a}quina de Estados de una Tarea.}{6}{section.1.5}
+\contentsline {section}{\numberline {1.6}BR6 Tareas de Registro.}{7}{section.1.6}
+\contentsline {section}{\numberline {1.7}BR7 Revisi\IeC {\'o}n de Tareas.}{7}{section.1.7}
+\contentsline {section}{\numberline {1.8}BR8 Aprobaci\IeC {\'o}n de Tareas.}{7}{section.1.8}
+\contentsline {section}{\numberline {1.9}BR9 Aprobaci\IeC {\'o}n de Tareas Seccionada.}{7}{section.1.9}
+\contentsline {section}{\numberline {1.10}BR10 Rechazo de Tareas.}{8}{section.1.10}
+\contentsline {section}{\numberline {1.11}BR11 Asignar tareas.}{8}{section.1.11}
+\contentsline {section}{\numberline {1.12}BR12 Tiempos de entregas.}{8}{section.1.12}
+\contentsline {section}{\numberline {1.13}BR13 Todos los datos solicitados son obligatorios.}{8}{section.1.13}
+\contentsline {section}{\numberline {1.14}BR14 Cat\IeC {\'a}logos del Sistema.}{9}{section.1.14}
+\contentsline {section}{\numberline {1.15}BR15 Planes de Estudios en redise\IeC {\~n}o por Programa Acad\IeC {\'e}mico.}{10}{section.1.15}
+\contentsline {section}{\numberline {1.16}BR16 El correo electr\IeC {\'o}nico del empleado es \IeC {\'u}nico.}{11}{section.1.16}
+\contentsline {section}{\numberline {1.17}BR17 El nombre de la Unidad de Aprendizaje es \IeC {\'u}nico.}{11}{section.1.17}
+\contentsline {section}{\numberline {1.18}BR19 El nombre del Programa Acad\IeC {\'e}mico es \IeC {\'u}nico.}{11}{section.1.18}
+\contentsline {section}{\numberline {1.19}BR20 Los cr\IeC {\'e}ditos totales TEPIC deben de estar entre 350 y 450 cr\IeC {\'e}ditos.}{11}{section.1.19}
+\contentsline {section}{\numberline {1.20}BR21 Un libro tiene un ISBN \IeC {\'u}nico.}{12}{section.1.20}
+\contentsline {section}{\numberline {1.21}BR23 Un libro con m\IeC {\'a}s de 3 autores es s\IeC {\'o}lo citado por los primeros 3.}{12}{section.1.21}
+\contentsline {section}{\numberline {1.22}BR24 Debe existir al menos un criterio de evaluaci\IeC {\'o}n para una Unidad de Aprendizaje.}{12}{section.1.22}
+\contentsline {section}{\numberline {1.23}BR25 La suma de los porcentajes de cada evaluaci\IeC {\'o}n debe ser igual a 100\%.}{13}{section.1.23}
+\contentsline {section}{\numberline {1.24}BR26 Vigencia de una Unidad de Aprendizaje}{13}{section.1.24}
+\contentsline {section}{\numberline {1.25}BR29 Debe existir al menos un criterio de evaluaci\IeC {\'o}n para la Relaci\IeC {\'o}n de Pr\IeC {\'a}cticas.}{13}{section.1.25}
+\contentsline {section}{\numberline {1.26}BR36 Calculo de Cr\IeC {\'e}ditos TEPIC.}{14}{section.1.26}
+\contentsline {section}{\numberline {1.27}BR37 Direcci\IeC {\'o}n web del sistema.}{14}{section.1.27}
+\contentsline {section}{\numberline {1.28}BR38 Verificaci\IeC {\'o}n de formularios al momento.}{14}{section.1.28}
+\contentsline {section}{\numberline {1.29}BR39 Todos los campos marcados con (*) son obligatorios.}{14}{section.1.29}
+\contentsline {section}{\numberline {1.30}BR40 El Jefe de Innovaci\IeC {\'o}n Educativa solo hace operaciones dentro del Sistema que sean parte de su Unidad Acad\IeC {\'e}mica.}{15}{section.1.30}
+\contentsline {chapter}{\numberline {2}Mensajes}{17}{chapter.2}
+\contentsline {subsection}{\numberline {2.0.1}MSG0 Correo y/o contrase\IeC {\~n}a no v\IeC {\'a}lidas.}{17}{subsection.2.0.1}
+\contentsline {subsection}{\numberline {2.0.2}MSG1 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea editar el Programa Acad\IeC {\'e}mico?}{17}{subsection.2.0.2}
+\contentsline {subsection}{\numberline {2.0.3}MSG2 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea cancelar la consulta de Programas Acad\IeC {\'e}micos?}{17}{subsection.2.0.3}
+\contentsline {subsection}{\numberline {2.0.4}MSG3 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea registrar un Programa Acad\IeC {\'e}mico?}{17}{subsection.2.0.4}
+\contentsline {subsection}{\numberline {2.0.5}MSG4 Los campos marcados con (*) son obligatorios.}{17}{subsection.2.0.5}
+\contentsline {subsection}{\numberline {2.0.6}MSG5 Registro finalizado exitosamente.}{17}{subsection.2.0.6}
+\contentsline {subsection}{\numberline {2.0.7}MSG6 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea cancelar el registro?}{17}{subsection.2.0.7}
+\contentsline {subsection}{\numberline {2.0.8}MSG25 Servicios no disponibles.}{20}{subsection.2.0.8}
+\contentsline {subsection}{\numberline {2.0.9}MSG8 El libro con el ISBN "N\IeC {\'u}mero de ISBN" ya existe.}{20}{subsection.2.0.9}
+\contentsline {subsection}{\numberline {2.0.10}MSG9 Por el momento no se puede realizar el registro.}{20}{subsection.2.0.10}
+\contentsline {subsection}{\numberline {2.0.11}MSG10 Error: Primero debe seleccionar el punto en donde se agregar\IeC {\'a} el comentario.}{20}{subsection.2.0.11}
+\contentsline {subsection}{\numberline {2.0.12}MSG11 Error: Debe agregar un texto al nuevo comentario.}{20}{subsection.2.0.12}
+\contentsline {subsection}{\numberline {2.0.13}MSG12 Ingrese su descripci\IeC {\'o}n mensaje a modificar en la bit\IeC {\'a}cora.}{20}{subsection.2.0.13}
+\contentsline {subsection}{\numberline {2.0.14}MSG13 Revisi\IeC {\'o}n de paquete finalizada. Paquete enviado.}{20}{subsection.2.0.14}
+\contentsline {subsection}{\numberline {2.0.15}MSG14 Error al finalizar paquete.}{20}{subsection.2.0.15}
+\contentsline {subsection}{\numberline {2.0.16}MSG15 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea cancelar la revisi\IeC {\'o}n? Se perder\IeC {\'a}n las anotaciones que no hayas guardado anteriormente.}{23}{subsection.2.0.16}
+\contentsline {subsection}{\numberline {2.0.17}MSG16 \IeC {\textquestiondown }Est\IeC {\'a} seguro de finalizar la revisi\IeC {\'o}n?}{23}{subsection.2.0.17}
+\contentsline {subsection}{\numberline {2.0.18}MSG17 Secci\IeC {\'o}n Aprobada.}{23}{subsection.2.0.18}
+\contentsline {subsection}{\numberline {2.0.19}MSG18 Revisi\IeC {\'o}n de Secci\IeC {\'o}n Finalizada.}{23}{subsection.2.0.19}
+\contentsline {subsection}{\numberline {2.0.20}MSG19 Anotaciones en secci\IeC {\'o}n guardadas correctamente.}{23}{subsection.2.0.20}
+\contentsline {subsection}{\numberline {2.0.21}MSG20 Los campos no fueron contestados correctamente.}{23}{subsection.2.0.21}
+\contentsline {subsection}{\numberline {2.0.22}MSG21 No hay usuarios registrados con ese cargo.}{23}{subsection.2.0.22}
+\contentsline {subsection}{\numberline {2.0.23}MSG22 \IeC {\textquestiondown }Seguro de eliminar al usuario?}{23}{subsection.2.0.23}
+\contentsline {subsection}{\numberline {2.0.24}MSG23 Los porcentajes de evaluaci\IeC {\'o}n no cumplen con el porcentaje total.}{26}{subsection.2.0.24}
+\contentsline {subsection}{\numberline {2.0.25}MSG24 Por el momento la p\IeC {\'a}gina solicitada no esta disponible.}{26}{subsection.2.0.25}
+\contentsline {subsection}{\numberline {2.0.26}MSG25 Servicios no disponibles.}{26}{subsection.2.0.26}
+\contentsline {subsection}{\numberline {2.0.27}MSG26 El correo ingresado no se encuentra registrado en el sistema.}{26}{subsection.2.0.27}
+\contentsline {subsection}{\numberline {2.0.28}MSG27 Empleado modificado.}{26}{subsection.2.0.28}
+\contentsline {subsection}{\numberline {2.0.29}MSG28 El autor: "Nombre Primer Apellido Segundo Apellido" ya existe.}{26}{subsection.2.0.29}
+\contentsline {subsection}{\numberline {2.0.30}MSG29 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea cancelar? Se perder\IeC {\'a}n todos los avances sin guardar.}{26}{subsection.2.0.30}
+\contentsline {subsection}{\numberline {2.0.31}MSG30 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea finalizar? Ya no podr\IeC {\'a} realizar modificaciones.}{26}{subsection.2.0.31}
+\contentsline {subsection}{\numberline {2.0.32}MSG31 Los cambios se guardaron exitosamente.}{29}{subsection.2.0.32}
+\contentsline {subsection}{\numberline {2.0.33}MSG32 Todos los campos son obligatorios.}{29}{subsection.2.0.33}
+\contentsline {subsection}{\numberline {2.0.34}MSG33 El Recurso Humano con el correo [Correo electr\IeC {\'o}nico del Empleado] ya existe.}{29}{subsection.2.0.34}
+\contentsline {subsection}{\numberline {2.0.35}MSG34 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea Eliminar este Recurso Humano?}{29}{subsection.2.0.35}
+\contentsline {subsection}{\numberline {2.0.36}MSG35 Escriba informaci\IeC {\'o}n v\IeC {\'a}lida.}{29}{subsection.2.0.36}
+\contentsline {subsection}{\numberline {2.0.37}MSG36 Error, el usuario ya existe en el sistema.}{29}{subsection.2.0.37}
+\contentsline {subsection}{\numberline {2.0.38}MSG37 Ha ocurrido un error: ''C\IeC {\'o}digo de error''.}{29}{subsection.2.0.38}
+\contentsline {subsection}{\numberline {2.0.39}MSG38 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea eliminar la Unidad de Aprendizaje [Nombre de la Unidad de Aprendizaje]?}{29}{subsection.2.0.39}
+\contentsline {subsection}{\numberline {2.0.40}MSG39 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea eliminar el Semestre [N\IeC {\'u}mero del Semestre]?}{32}{subsection.2.0.40}
+\contentsline {subsection}{\numberline {2.0.41}MSG40 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea generar una tarea para el registro de un nuevo Plan de Estudios?}{32}{subsection.2.0.41}
+\contentsline {subsection}{\numberline {2.0.42}MSG41 Debe llenar el Programa Sint\IeC {\'e}tico para realizar este registro.}{32}{subsection.2.0.42}
+\contentsline {subsection}{\numberline {2.0.43}MSG42 Fecha inv\IeC {\'a}lida.}{32}{subsection.2.0.43}
+\contentsline {subsection}{\numberline {2.0.44}MSG43 El nombre del Programa Acad\IeC {\'e}mico ya est\IeC {\'a} registrado. Por favor c\IeC {\'a}mbielo.}{32}{subsection.2.0.44}
+\contentsline {subsection}{\numberline {2.0.45}MSG44 Este campo es requerido.}{32}{subsection.2.0.45}
+\contentsline {subsection}{\numberline {2.0.46}MSG45 Secci\IeC {\'o}n Aprobada con Anterioridad.}{32}{subsection.2.0.46}
+\contentsline {subsection}{\numberline {2.0.47}MSG46 Las horas totales de teor\IeC {\'\i }a y pr\IeC {\'a}ctica deben de estar en el rango 350 y 450.}{35}{subsection.2.0.47}
+\contentsline {subsection}{\numberline {2.0.48}MSG47 El nombre de la Unidad de Aprendizaje ya est\IeC {\'a} registrado. Por favor c\IeC {\'a}mbielo.}{35}{subsection.2.0.48}
+\contentsline {subsection}{\numberline {2.0.49}MSG48 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea eliminar el comentario?}{35}{subsection.2.0.49}
+\contentsline {subsection}{\numberline {2.0.50}MSG49 Se ha eliminado el comentario.}{35}{subsection.2.0.50}
+\contentsline {subsection}{\numberline {2.0.51}MSG50 Error: Primero se debe seleccionar el punto en donde se gestionar\IeC {\'a} el subrayado.}{35}{subsection.2.0.51}
+\contentsline {subsection}{\numberline {2.0.52}MSG51 Error: Todas las secciones deben haber terminado su revisi\IeC {\'o}n.}{35}{subsection.2.0.52}
+\contentsline {subsection}{\numberline {2.0.53}MSG52 El semestre no se puede eliminar debido a que contiene unidades de aprendizaje.}{37}{subsection.2.0.53}
+\contentsline {section}{\numberline {2.1}SP4-CU1 Registrar Programa Acad\IeC {\'e}mico}{38}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Descripci\IeC {\'o}n completa}{38}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Atributos importantes}{38}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Trayectorias del Caso de Uso}{39}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}SP4-CU2 Registrar Plan de Estudios}{41}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Descripci\IeC {\'o}n completa}{41}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Atributos importantes}{41}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Trayectorias del Caso de Uso}{42}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}SP4-CU3 Registrar Unidad de Aprendizaje}{45}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Descripci\IeC {\'o}n completa}{45}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Atributos importantes}{45}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Trayectorias del Caso de Uso}{46}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}SP4-CU4 Registrar Recurso Humano}{49}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Descripci\IeC {\'o}n completa}{49}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Atributos importantes}{49}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Trayectorias del Caso de Uso}{50}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}SP4-CU5 Consultar Programas Acad\IeC {\'e}micos}{52}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Descripci\IeC {\'o}n completa}{52}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Atributos importantes}{52}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Trayectorias del Caso de Uso}{52}{subsection.2.5.3}
+\contentsline {section}{\numberline {2.6}SP4-CU6 Consultar Plan de Estudio}{54}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Descripci\IeC {\'o}n completa}{54}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Atributos importantes}{54}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Trayectorias del Caso de Uso}{55}{subsection.2.6.3}
+\contentsline {section}{\numberline {2.7}SP4-CU7 Consultar Recursos Humanos}{57}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Descripci\IeC {\'o}n completa}{57}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Atributos importantes}{57}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Trayectorias del Caso de Uso}{57}{subsection.2.7.3}
+\contentsline {section}{\numberline {2.8}SP4-CU8 Editar Programa Acad\IeC {\'e}mico}{59}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Descripci\IeC {\'o}n completa}{59}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Atributos importantes}{59}{subsection.2.8.2}
+\contentsline {subsection}{\numberline {2.8.3}Trayectorias del Caso de Uso}{60}{subsection.2.8.3}
+\contentsline {section}{\numberline {2.9}SP4-CU9 Editar Unidad de Aprendizaje}{62}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Descripci\IeC {\'o}n completa}{62}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Atributos importantes}{62}{subsection.2.9.2}
+\contentsline {subsection}{\numberline {2.9.3}Trayectorias del Caso de Uso}{63}{subsection.2.9.3}
+\contentsline {section}{\numberline {2.10}SP4-CU10 Editar Plan de Estudio}{66}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Descripci\IeC {\'o}n completa}{66}{subsection.2.10.1}
+\contentsline {subsection}{\numberline {2.10.2}Atributos importantes}{66}{subsection.2.10.2}
+\contentsline {subsection}{\numberline {2.10.3}Trayectorias del Caso de Uso}{67}{subsection.2.10.3}
+\contentsline {section}{\numberline {2.11}SP4-CU11 Editar Recurso Humano}{69}{section.2.11}
+\contentsline {subsection}{\numberline {2.11.1}Descripci\IeC {\'o}n completa}{69}{subsection.2.11.1}
+\contentsline {subsection}{\numberline {2.11.2}Atributos importantes}{69}{subsection.2.11.2}
+\contentsline {subsection}{\numberline {2.11.3}Trayectorias del Caso de Uso}{70}{subsection.2.11.3}
+\contentsline {section}{\numberline {2.12}SP4-CU12 Revisar Plan de Estudios}{72}{section.2.12}
+\contentsline {subsection}{\numberline {2.12.1}Descripci\IeC {\'o}n completa}{72}{subsection.2.12.1}
+\contentsline {subsection}{\numberline {2.12.2}Atributos importantes}{72}{subsection.2.12.2}
+\contentsline {subsection}{\numberline {2.12.3}Trayectorias del Caso de Uso}{73}{subsection.2.12.3}
+\contentsline {section}{\numberline {2.13}SP4-CU13 Consultar Planes de Estudios}{75}{section.2.13}
+\contentsline {subsection}{\numberline {2.13.1}Descripci\IeC {\'o}n completa}{75}{subsection.2.13.1}
+\contentsline {subsection}{\numberline {2.13.2}Atributos importantes}{75}{subsection.2.13.2}
+\contentsline {subsection}{\numberline {2.13.3}Trayectorias del Caso de Uso}{75}{subsection.2.13.3}
