@@ -120,19 +120,19 @@
 \contentsline {subsection}{\numberline {2.9.1}Descripci\IeC {\'o}n completa}{64}{subsection.2.9.1}
 \contentsline {subsection}{\numberline {2.9.2}Atributos importantes}{64}{subsection.2.9.2}
 \contentsline {subsection}{\numberline {2.9.3}Trayectorias del Caso de Uso}{65}{subsection.2.9.3}
-\contentsline {section}{\numberline {2.10}SP4-CU10 Editar Plan de Estudio}{68}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}Descripci\IeC {\'o}n completa}{68}{subsection.2.10.1}
-\contentsline {subsection}{\numberline {2.10.2}Atributos importantes}{68}{subsection.2.10.2}
-\contentsline {subsection}{\numberline {2.10.3}Trayectorias del Caso de Uso}{69}{subsection.2.10.3}
-\contentsline {section}{\numberline {2.11}SP4-CU11 Editar Recurso Humano}{71}{section.2.11}
-\contentsline {subsection}{\numberline {2.11.1}Descripci\IeC {\'o}n completa}{71}{subsection.2.11.1}
-\contentsline {subsection}{\numberline {2.11.2}Atributos importantes}{71}{subsection.2.11.2}
-\contentsline {subsection}{\numberline {2.11.3}Trayectorias del Caso de Uso}{72}{subsection.2.11.3}
-\contentsline {section}{\numberline {2.12}SP4-CU12 Revisar Plan de Estudios}{74}{section.2.12}
-\contentsline {subsection}{\numberline {2.12.1}Descripci\IeC {\'o}n completa}{74}{subsection.2.12.1}
-\contentsline {subsection}{\numberline {2.12.2}Atributos importantes}{74}{subsection.2.12.2}
-\contentsline {subsection}{\numberline {2.12.3}Trayectorias del Caso de Uso}{75}{subsection.2.12.3}
-\contentsline {section}{\numberline {2.13}SP4-CU13 Consultar Planes de Estudios}{77}{section.2.13}
-\contentsline {subsection}{\numberline {2.13.1}Descripci\IeC {\'o}n completa}{77}{subsection.2.13.1}
-\contentsline {subsection}{\numberline {2.13.2}Atributos importantes}{77}{subsection.2.13.2}
-\contentsline {subsection}{\numberline {2.13.3}Trayectorias del Caso de Uso}{77}{subsection.2.13.3}
+\contentsline {section}{\numberline {2.10}SP4-CU10 Editar Plan de Estudio}{67}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Descripci\IeC {\'o}n completa}{67}{subsection.2.10.1}
+\contentsline {subsection}{\numberline {2.10.2}Atributos importantes}{67}{subsection.2.10.2}
+\contentsline {subsection}{\numberline {2.10.3}Trayectorias del Caso de Uso}{68}{subsection.2.10.3}
+\contentsline {section}{\numberline {2.11}SP4-CU11 Editar Recurso Humano}{70}{section.2.11}
+\contentsline {subsection}{\numberline {2.11.1}Descripci\IeC {\'o}n completa}{70}{subsection.2.11.1}
+\contentsline {subsection}{\numberline {2.11.2}Atributos importantes}{70}{subsection.2.11.2}
+\contentsline {subsection}{\numberline {2.11.3}Trayectorias del Caso de Uso}{71}{subsection.2.11.3}
+\contentsline {section}{\numberline {2.12}SP4-CU12 Revisar Plan de Estudios}{73}{section.2.12}
+\contentsline {subsection}{\numberline {2.12.1}Descripci\IeC {\'o}n completa}{73}{subsection.2.12.1}
+\contentsline {subsection}{\numberline {2.12.2}Atributos importantes}{73}{subsection.2.12.2}
+\contentsline {subsection}{\numberline {2.12.3}Trayectorias del Caso de Uso}{74}{subsection.2.12.3}
+\contentsline {section}{\numberline {2.13}SP4-CU13 Consultar Planes de Estudios}{76}{section.2.13}
+\contentsline {subsection}{\numberline {2.13.1}Descripci\IeC {\'o}n completa}{76}{subsection.2.13.1}
+\contentsline {subsection}{\numberline {2.13.2}Atributos importantes}{76}{subsection.2.13.2}
+\contentsline {subsection}{\numberline {2.13.3}Trayectorias del Caso de Uso}{76}{subsection.2.13.3}

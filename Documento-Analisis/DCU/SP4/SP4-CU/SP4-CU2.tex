@@ -26,6 +26,7 @@
 			\item \MSGref{MSG35}{Escribe información válida}
 			\item \MSGref{MSG44}{Este campo es requerido}
 			\item \MSGref{MSG54}{Créditos TEPIC fuera de rango}
+			\item \MSGref{MSG57}{Ya se encuentra un Plan de Estudio en proceso}
 		\end{itemize}
 	}
 	\UCitem{Destino}{Pantalla.}
@@ -45,7 +46,7 @@
 	%Usuario
 	\UCpaso[\UCactor] Presiona el boton \IUbutton{+} que se encuentra de la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudio}
 	%Sistema
-	\UCpaso Carga el catálogo de modalidades descrito en la \BRref{BR14}{Existen los catálogos}.[Trayectoria A]
+	\UCpaso Carga el catálogo de modalidades descrito en la \BRref{BR14}{Catálogos del Sistema }.[Trayectoria A]
 	\UCpaso Muestra la interfaz de usuario \IUref{RPE-J}{Registrar Plan de Estudios}.
 	\UCpaso[\UCactor] Selecciona el Programa Académico.
 	\UCpaso[\UCactor] Ingresa el año del Plan de Estudios, el sistema verifica conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria C][Trayectoria D]
@@ -54,7 +55,7 @@
 	\UCpaso[\UCactor] Ingresa Total horas / Teoría del Plan de Estudios, el sistema verifica conforme al diccionario de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria C][Trayectoria D]
 	\UCpaso[\UCactor] Ingresa Total horas / Práctica del Plan de Estudios, el sistema verifica conforme al diccionario de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria C][Trayectoria D]
 	\UCpaso[\UCactor] Ingresa los créditos totales SATCA del Plan de Estudios, el sistema verifica conforme al diccionario de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria C][Trayectoria D]
-	\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria B] [Trayectoria B.1]
+	\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria B] [Trayectoria B.1][Trayectoria G]
     \UCpaso Verifica que se cumpla la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria D]
 	\UCpaso Persiste los datos ingresados. [Trayectoria F]
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
@@ -62,7 +63,7 @@
 	\UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudios}.
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\begin{UCtrayectoriaA}{A}{ Los catálogos de la \BRref{BR14}{Existen los catálogos} necesarios no se pudieron cargar.}
+\begin{UCtrayectoriaA}{A}{ Los catálogos de la \BRref{BR14}{Catálogos del Sistema} necesarios no se pudieron cargar.}
 	\UCpaso Muestra el mensaje \MSGref{MSG25}{ Servicios no disponibles. }
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Muestra la interfaz de usuario \IUref{RPE-J}{Registrar Plan de Estudios}.
@@ -72,7 +73,7 @@
 \begin{UCtrayectoriaA}{B}{El actor presiona el botón \IUbutton{Cancelar}.}
 	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar}.
 	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
-	\UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudio}
+	\UCpaso Muestra la interfaz de usuario anterior.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
@@ -105,6 +106,14 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 \begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
 	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{RPE-J}{Registrar Plan de Estudios}.
+\end{UCtrayectoriaA}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
+\begin{UCtrayectoriaA}{G}{El sistema detecta incumplimiento con la \BRref{BR41}{Solo puede haber un plan de estudios en estado de creación, rediseño y aprobado.} }
+	\UCpaso Muestra el mensaje \MSGref{MSG57}{Ya se encuentra un Plan de Estudio en proceso}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Muestra la interfaz de usuario \IUref{RPE-J}{Registrar Plan de Estudios}.
 \end{UCtrayectoriaA}

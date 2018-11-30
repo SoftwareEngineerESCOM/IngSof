@@ -76,7 +76,7 @@
     \begin{UCtrayectoriaA}{B}{El actor presiona el botón \IUbutton{Cancelar}.}
     	\UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar}.
     	\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}.
-    	\UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
+    	\UCpaso Muestra la interfaz de usuario anterior.
     \end{UCtrayectoriaA}
 
     %------------------------ CU TRAYECTORIA ALTERNARIVA B.1 -------------------------
@@ -89,13 +89,13 @@
     \end{UCtrayectoriaA}
 
     %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-    \begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar incumpliendo con la \BRref{BR33}{Información de Unidad de Aprendizaje}.}
+    \begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar..}
     	\UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido} debajo de cada campo obligatorio sin contestar.
     	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU3}.
     \end{UCtrayectoriaA}
 
     %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-    \begin{UCtrayectoriaA}{D}{El sistema detecta incumpliendo con el diccionario de datos.}
+    \begin{UCtrayectoriaA}{D}{El sistema detecta incumplimiento con el diccionario de datos.}
     	\UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida} debajo del campo que incumplio con el modelo de datos.
     	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU3}.
     \end{UCtrayectoriaA}

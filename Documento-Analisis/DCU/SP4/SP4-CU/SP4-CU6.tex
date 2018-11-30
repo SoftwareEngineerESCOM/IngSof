@@ -84,7 +84,7 @@
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 \begin{UCtrayectoriaA}{F}{El usuario presiona accidentalmente el botón \BtnLapiz de Rediseñar}
 	\UCpaso  Muestra el mensaje \MSGref{MSG53}{¿Está seguro que desea rediseñar el plan de estudios? (Se hara una copia de este)}.
-	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.[Trayectoria G]
 	\UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudio} de la copia de Plan de Estudio generada.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA F.1 -------------------------
@@ -92,5 +92,12 @@
 	\UCpaso  Muestra el mensaje \MSGref{MSG53}{¿Está seguro que desea rediseñar el plan de estudios? (Se hara una copia de este)}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
 	\UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU6}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
+\begin{UCtrayectoriaA}{G}{El sistema detecta incumplimiento con la \BRref{BR41}{Solo puede haber un plan de estudios en estado de creación, rediseño y aprobado.} }
+	\UCpaso Muestra el mensaje \MSGref{MSG57}{Ya se encuentra un Plan de Estudio en proceso}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
 \end{UCtrayectoriaA}
 
