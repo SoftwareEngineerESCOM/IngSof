@@ -21,8 +21,9 @@
 			\item \MSGref{MSG25}{Servicios no disponibles.}
             \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
             \item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
-            \item \MSGref{MSG35}{Escribe información válida.}
-            \item \MSGref{MSG44}{Este campo es requerido}
+            \item \MSGref{MSG35}{Escriba información válida.}
+            \item \MSGref{MSG44}{Este campo es requerido.}
+            \item \MSGref{MSG54}{Créditos TEPIC fuera de rango}.
 		\end{itemize}
 	}
 	\UCitem{Destino}{Pantalla.}
@@ -30,7 +31,7 @@
 	\UCitem{Postcondiciones}{El plan de Estudios queda modificado en el sistema.}
 	\UCitem{Errores}{
 		\begin{itemize}
-			\item E1. El catálogo de modalidad no se cargo correctamente.
+			\item E1. El catálogo de modalidad no se cargó correctamente.
 			\item E2. Hubo un problema al conectarse con la base de datos.
 		\end{itemize}
 	}
@@ -40,10 +41,10 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 	%Usuario
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{lápiz}de la Interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudios} considerando la \BRref{BR15}{Planes de Estudios en re diseño por Porgrama Académico} .
-	\UCpaso Carga el catálogo de modalidad descrito en la \BRref{BR14}{Existen los catálogos}.[Trayectoria A]
+	\UCpaso[\UCactor] Presiona el botón \BtnLapiz de la Interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudios} considerando la \BRref{BR15}{Planes de Estudios en re diseño por Porgrama Académico} .
+	\UCpaso Carga el catálogo de modalidad descrito en la \BRref{BR14}{Catálogos del sistema}.[Trayectoria A]
 	\UCpaso Muestra la interfaz de usuario \IUref{EPE-J}{Editar Plan de Estudios}.
-	\UCpaso[\UCactor] Modifica los campos deseados.
+	\UCpaso[\UCactor] Modifica los campos deseados.[Trayectoria F] [Trayectoria C] [Trayectoria D]
 	\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria B] [Trayectoria B.1]
 	\UCpaso Verifica que se cumpla con el diccionario de datos. [Trayectoria C] [Trayectoria D]
 	\UCpaso Persiste los datos ingresados. [Trayectoria E]
@@ -52,10 +53,10 @@
 	\UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudios}.
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\begin{UCtrayectoriaA}{A}{ Los catálogos de la \BRref{BR14}{Existen los catálogos} necesarios no se pudieron cargar.}
+\begin{UCtrayectoriaA}{A}{ Los catálogos de la \BRref{BR14}{Catálogos del sistema} necesarios no se pudieron cargar.}
     \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles. }
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Ok}.
-    \UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudio}
+    \UCpaso Muestra la interfaz de usuario \IUref{EPE-J}{Editar Plan de Estudios}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
@@ -75,14 +76,14 @@
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-\begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar incumpliendo con la \BRref{BR33}{Información de Planes de Estudios}.}
-	\UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido} debajo de cada campo obligatorio sin contestar.
+\begin{UCtrayectoriaA}{C}{El sistema detecta caracteres no numéricos.}
+	\UCpaso Muestra el mensaje \MSGref{MSG35}{Escriba información válida} debajo del campo que incumplió con el diccionario de datos.
 	\UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU10}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-\begin{UCtrayectoriaA}{D}{El sistema detecta caracteres no numéricos.}
-	\UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información valida} debajo del campo que incumplio con el diccionario de datos.
+\begin{UCtrayectoriaA}{D}{El sistema detecta uno o más campos sin contestar.}
+	\UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido} debajo de cada campo obligatorio sin contestar.
 	\UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU10}.
 \end{UCtrayectoriaA}
 
@@ -90,13 +91,13 @@
 \begin{UCtrayectoriaA}{E}{Ocurre un error al momento de persistir los datos.}
 	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Plan de Estudios}.
+	\UCpaso Muestra la interfaz de usuario \IUref{EPE-J}{Editar Plan de Estudios}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 \begin{UCtrayectoriaA}{F}{El sistema detecta incumplimiento de la \BRref{BR20}{Los créditos totales TEPIC deben de estar entre 350 y 450 créditos} .}
 	\UCpaso Muestra el mensaje \MSGref{MSG54}{Créditos TEPIC fuera de rango}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Muestra la interfaz de usuario \IUref{RPE-J}{Registrar Plan de Estudios}.
+	\UCpaso Muestra la interfaz de usuario \IUref{EPE-J}{Editar Plan de Estudios}.
 \end{UCtrayectoriaA}
 
 
