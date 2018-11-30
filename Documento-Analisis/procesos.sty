@@ -60,7 +60,7 @@
 %use \UCBussinesRule{Id}{nombre}
 \newcommand{\BRref}[2]{%
 	\hypersetup{linkcolor=UCBussinesRuleColor}%
-	\hyperlink{#1}{#1 #2}%
+	\hyperlink{#1}{#1~#2}%
 	\hypersetup{linkcolor=refColor}%
 }
 
@@ -77,7 +77,7 @@
 	\hypertarget{#1}{\subsection{#1 #2}}%
 	\begin{figure}[htbp!]%
 		\begin{center}%
-			\includegraphics[width=0.01\textwidth]{images/MSG/ancla}%
+			\includegraphics[width=0.75\textwidth]{images/MSG/ancla}%
 			\caption{#1 #2}%
 			\label{#1}%
 		\end{center}%
@@ -252,6 +252,7 @@
 \newcommand\UCactor{\includegraphics[height=11pt]{images/uc/actor}}
 \newcommand\UCsist{\includegraphics[height=11pt]{images/uc/usecase}}
 \newcommand\BtnModal{\includegraphics[height=11pt]{images/uc/launch}}
+\newcommand\BtnLapiz{\includegraphics[height=11pt]{images/uc/lapiz}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Comandos para agregar un paso a una trayectoria, el paso puede ser
