@@ -31,14 +31,14 @@
 \contentsline {section}{\numberline {1.29}BR39 Todos los campos marcados con (*) son obligatorios.}{21}{section.1.29}
 \contentsline {section}{\numberline {1.30}BR40 El Jefe de Innovaci\IeC {\'o}n Educativa solo hace operaciones dentro del Sistema que sean parte de su Unidad Acad\IeC {\'e}mica.}{21}{section.1.30}
 \contentsline {chapter}{\numberline {2}Mensajes}{22}{chapter.2}
-\contentsline {subsection}{\numberline {2.0.1}MSG0 Correo y/o contrase\IeC {\~n}a no v\IeC {\'a}lidas.}{22}{subsection.2.0.1}
+\contentsline {subsection}{\numberline {2.0.1}MSG0 Correo y/o contrase\IeC {\~n}a incorrectas.}{22}{subsection.2.0.1}
 \contentsline {subsection}{\numberline {2.0.2}MSG1 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea editar el Programa Acad\IeC {\'e}mico?}{22}{subsection.2.0.2}
 \contentsline {subsection}{\numberline {2.0.3}MSG2 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea cancelar la consulta de Programas Acad\IeC {\'e}micos?}{22}{subsection.2.0.3}
 \contentsline {subsection}{\numberline {2.0.4}MSG3 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea registrar un Programa Acad\IeC {\'e}mico?}{22}{subsection.2.0.4}
 \contentsline {subsection}{\numberline {2.0.5}MSG4 Los campos marcados con (*) son obligatorios.}{24}{subsection.2.0.5}
 \contentsline {subsection}{\numberline {2.0.6}MSG5 Registro finalizado exitosamente.}{24}{subsection.2.0.6}
 \contentsline {subsection}{\numberline {2.0.7}MSG6 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea cancelar el registro?}{24}{subsection.2.0.7}
-\contentsline {subsection}{\numberline {2.0.8}MSG25 Servicios no disponibles.}{24}{subsection.2.0.8}
+\contentsline {subsection}{\numberline {2.0.8}MSG7 Los cat\IeC {\'a}logos necesarios no se han cargado, favor de intentarlo m\IeC {\'a}s tarde.}{24}{subsection.2.0.8}
 \contentsline {subsection}{\numberline {2.0.9}MSG8 El libro con el ISBN "N\IeC {\'u}mero de ISBN" ya existe.}{24}{subsection.2.0.9}
 \contentsline {subsection}{\numberline {2.0.10}MSG9 Por el momento no se puede realizar el registro.}{24}{subsection.2.0.10}
 \contentsline {subsection}{\numberline {2.0.11}MSG10 Error: Primero debe seleccionar el punto en donde se agregar\IeC {\'a} el comentario.}{26}{subsection.2.0.11}
@@ -53,7 +53,7 @@
 \contentsline {subsection}{\numberline {2.0.20}MSG19 Anotaciones en secci\IeC {\'o}n guardadas correctamente.}{29}{subsection.2.0.20}
 \contentsline {subsection}{\numberline {2.0.21}MSG20 Los campos no fueron contestados correctamente.}{29}{subsection.2.0.21}
 \contentsline {subsection}{\numberline {2.0.22}MSG21 No hay usuarios registrados con ese cargo.}{29}{subsection.2.0.22}
-\contentsline {subsection}{\numberline {2.0.23}MSG22 \IeC {\textquestiondown }Seguro de eliminar al usuario?}{32}{subsection.2.0.23}
+\contentsline {subsection}{\numberline {2.0.23}MSG22 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea eliminar al usuario?}{32}{subsection.2.0.23}
 \contentsline {subsection}{\numberline {2.0.24}MSG23 Los porcentajes de evaluaci\IeC {\'o}n no cumplen con el porcentaje total.}{32}{subsection.2.0.24}
 \contentsline {subsection}{\numberline {2.0.25}MSG24 Por el momento la p\IeC {\'a}gina solicitada no esta disponible.}{32}{subsection.2.0.25}
 \contentsline {subsection}{\numberline {2.0.26}MSG25 Servicios no disponibles.}{32}{subsection.2.0.26}
@@ -65,7 +65,7 @@
 \contentsline {subsection}{\numberline {2.0.32}MSG31 Los cambios se guardaron exitosamente.}{34}{subsection.2.0.32}
 \contentsline {subsection}{\numberline {2.0.33}MSG32 Todos los campos son obligatorios.}{36}{subsection.2.0.33}
 \contentsline {subsection}{\numberline {2.0.34}MSG33 El Recurso Humano con el correo [Correo electr\IeC {\'o}nico del Empleado] ya existe.}{36}{subsection.2.0.34}
-\contentsline {subsection}{\numberline {2.0.35}MSG34 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea Eliminar este Recurso Humano?}{36}{subsection.2.0.35}
+\contentsline {subsection}{\numberline {2.0.35}MSG34 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea Eliminar al Recurso Humano?}{36}{subsection.2.0.35}
 \contentsline {subsection}{\numberline {2.0.36}MSG35 Escriba informaci\IeC {\'o}n v\IeC {\'a}lida.}{36}{subsection.2.0.36}
 \contentsline {subsection}{\numberline {2.0.37}MSG36 Error, el usuario ya existe en el sistema.}{36}{subsection.2.0.37}
 \contentsline {subsection}{\numberline {2.0.38}MSG37 Ha ocurrido un error: ''C\IeC {\'o}digo de error''.}{36}{subsection.2.0.38}
@@ -78,65 +78,69 @@
 \contentsline {subsection}{\numberline {2.0.45}MSG44 Este campo es requerido.}{40}{subsection.2.0.45}
 \contentsline {subsection}{\numberline {2.0.46}MSG45 Secci\IeC {\'o}n Aprobada con Anterioridad.}{40}{subsection.2.0.46}
 \contentsline {subsection}{\numberline {2.0.47}MSG46 Las horas totales de teor\IeC {\'\i }a y pr\IeC {\'a}ctica deben de estar en el rango 350 y 450.}{40}{subsection.2.0.47}
-\contentsline {subsection}{\numberline {2.0.48}MSG47 El nombre de la Unidad de Aprendizaje ya est\IeC {\'a} registrado. Por favor c\IeC {\'a}mbielo.}{42}{subsection.2.0.48}
+\contentsline {subsection}{\numberline {2.0.48}MSG47 Unidad de Aprendizaje ya existe en el sistema.}{42}{subsection.2.0.48}
 \contentsline {subsection}{\numberline {2.0.49}MSG48 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea eliminar el comentario?}{42}{subsection.2.0.49}
 \contentsline {subsection}{\numberline {2.0.50}MSG49 Se ha eliminado el comentario.}{42}{subsection.2.0.50}
 \contentsline {subsection}{\numberline {2.0.51}MSG50 Error: Primero se debe seleccionar el punto en donde se gestionar\IeC {\'a} el subrayado.}{42}{subsection.2.0.51}
 \contentsline {subsection}{\numberline {2.0.52}MSG51 Error: Todas las secciones deben haber terminado su revisi\IeC {\'o}n.}{42}{subsection.2.0.52}
 \contentsline {subsection}{\numberline {2.0.53}MSG52 El semestre no se puede eliminar debido a que contiene unidades de aprendizaje.}{44}{subsection.2.0.53}
-\contentsline {chapter}{\numberline {3}Programas Acad\IeC {\'e}micos}{45}{chapter.3}
-\contentsline {section}{\numberline {3.1}SP4-CU1 Registrar Programa Acad\IeC {\'e}mico}{46}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Descripci\IeC {\'o}n completa}{46}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Atributos importantes}{46}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Trayectorias del Caso de Uso}{47}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}SP4-CU5 Consultar Programas Acad\IeC {\'e}micos}{50}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Descripci\IeC {\'o}n completa}{50}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Atributos importantes}{50}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Trayectorias del Caso de Uso}{51}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}SP4-CU8 Editar Programa Acad\IeC {\'e}mico}{53}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Descripci\IeC {\'o}n completa}{53}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Atributos importantes}{53}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Trayectorias del Caso de Uso}{54}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}Planes de Estudio}{57}{chapter.4}
-\contentsline {section}{\numberline {4.1}SP4-CU2 Registrar Plan de Estudios}{58}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Descripci\IeC {\'o}n completa}{58}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Atributos importantes}{58}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Trayectorias del Caso de Uso}{59}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}SP4-CU6 Consultar Plan de Estudio}{63}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Descripci\IeC {\'o}n completa}{63}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Atributos importantes}{63}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Trayectorias del Caso de Uso}{64}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}SP4-CU10 Editar Plan de Estudio}{67}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Descripci\IeC {\'o}n completa}{67}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Atributos importantes}{67}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Trayectorias del Caso de Uso}{68}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}SP4-CU12 Revisar Plan de Estudios}{71}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Descripci\IeC {\'o}n completa}{71}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Atributos importantes}{71}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Trayectorias del Caso de Uso}{72}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}SP4-CU13 Consultar Planes de Estudios}{74}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Descripci\IeC {\'o}n completa}{74}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Atributos importantes}{74}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Trayectorias del Caso de Uso}{75}{subsection.4.5.3}
-\contentsline {chapter}{\numberline {5}Unidades de Aprendizaje}{76}{chapter.5}
-\contentsline {section}{\numberline {5.1}SP4-CU3 Registrar Unidad de Aprendizaje}{77}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Descripci\IeC {\'o}n completa}{77}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Atributos importantes}{77}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Trayectorias del Caso de Uso}{78}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}SP4-CU9 Editar Unidad de Aprendizaje}{82}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Descripci\IeC {\'o}n completa}{82}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Atributos importantes}{82}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Trayectorias del Caso de Uso}{83}{subsection.5.2.3}
-\contentsline {chapter}{\numberline {6}Recursos Humanos}{86}{chapter.6}
-\contentsline {section}{\numberline {6.1}SP4-CU4 Registrar Recurso Humano}{87}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Descripci\IeC {\'o}n completa}{87}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Atributos importantes}{87}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Trayectorias del Caso de Uso}{88}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}SP4-CU7 Consultar Recursos Humanos}{91}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Descripci\IeC {\'o}n completa}{91}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Atributos importantes}{91}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Trayectorias del Caso de Uso}{92}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}SP4-CU11 Editar Recurso Humano}{94}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Descripci\IeC {\'o}n completa}{94}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Atributos importantes}{94}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Trayectorias del Caso de Uso}{95}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {2.0.54}MSG53 \IeC {\textquestiondown }Est\IeC {\'a} seguro que desea redise\IeC {\~n}ar el plan de estudios? (Se hara una copia de este).}{44}{subsection.2.0.54}
+\contentsline {subsection}{\numberline {2.0.55}MSG54 Cr\IeC {\'e}ditos TEPIC fuera de rango}{44}{subsection.2.0.55}
+\contentsline {subsection}{\numberline {2.0.56}MSG55 No se encuentran planes de estudios registrados}{44}{subsection.2.0.56}
+\contentsline {subsection}{\numberline {2.0.57}MSG56 Este Recurso Humano esta asociado a un Usuario por lo que no puede ser eliminado}{46}{subsection.2.0.57}
+\contentsline {chapter}{\numberline {3}Programas Acad\IeC {\'e}micos}{47}{chapter.3}
+\contentsline {section}{\numberline {3.1}SP4-CU1 Registrar Programa Acad\IeC {\'e}mico}{48}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Descripci\IeC {\'o}n completa}{48}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Atributos importantes}{48}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Trayectorias del Caso de Uso}{49}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}SP4-CU5 Consultar Programas Acad\IeC {\'e}micos}{52}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Descripci\IeC {\'o}n completa}{52}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Atributos importantes}{52}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Trayectorias del Caso de Uso}{53}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}SP4-CU8 Editar Programa Acad\IeC {\'e}mico}{55}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Descripci\IeC {\'o}n completa}{55}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Atributos importantes}{55}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Trayectorias del Caso de Uso}{56}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Planes de Estudio}{59}{chapter.4}
+\contentsline {section}{\numberline {4.1}SP4-CU2 Registrar Plan de Estudios}{60}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Descripci\IeC {\'o}n completa}{60}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Atributos importantes}{60}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Trayectorias del Caso de Uso}{61}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}SP4-CU6 Consultar Plan de Estudio}{65}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Descripci\IeC {\'o}n completa}{65}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Atributos importantes}{65}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Trayectorias del Caso de Uso}{66}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}SP4-CU10 Editar Plan de Estudio}{69}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Descripci\IeC {\'o}n completa}{69}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Atributos importantes}{69}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Trayectorias del Caso de Uso}{70}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}SP4-CU12 Revisar Plan de Estudios}{73}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Descripci\IeC {\'o}n completa}{73}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Atributos importantes}{73}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Trayectorias del Caso de Uso}{74}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}SP4-CU13 Consultar Planes de Estudios}{76}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Descripci\IeC {\'o}n completa}{76}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Atributos importantes}{76}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Trayectorias del Caso de Uso}{77}{subsection.4.5.3}
+\contentsline {chapter}{\numberline {5}Unidades de Aprendizaje}{78}{chapter.5}
+\contentsline {section}{\numberline {5.1}SP4-CU3 Registrar Unidad de Aprendizaje}{79}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Descripci\IeC {\'o}n completa}{79}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Atributos importantes}{79}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Trayectorias del Caso de Uso}{80}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}SP4-CU9 Editar Unidad de Aprendizaje}{84}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Descripci\IeC {\'o}n completa}{84}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Atributos importantes}{84}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Trayectorias del Caso de Uso}{85}{subsection.5.2.3}
+\contentsline {chapter}{\numberline {6}Recursos Humanos}{88}{chapter.6}
+\contentsline {section}{\numberline {6.1}SP4-CU4 Registrar Recurso Humano}{89}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Descripci\IeC {\'o}n completa}{89}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Atributos importantes}{89}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Trayectorias del Caso de Uso}{90}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}SP4-CU7 Consultar Recursos Humanos}{93}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Descripci\IeC {\'o}n completa}{93}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Atributos importantes}{93}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Trayectorias del Caso de Uso}{94}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}SP4-CU11 Editar Recurso Humano}{96}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Descripci\IeC {\'o}n completa}{96}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Atributos importantes}{96}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Trayectorias del Caso de Uso}{97}{subsection.6.3.3}
