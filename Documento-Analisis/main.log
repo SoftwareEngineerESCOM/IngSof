@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.25)  29 NOV 2018 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.25)  29 NOV 2018 22:48
 entering extended mode
 **./main.tex
 (main.tex
@@ -2121,6 +2121,11 @@ File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 81.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+<images/uc/lapiz.png, id=1480, 1204.5pt x 1204.5pt>
+File: images/uc/lapiz.png Graphic file (type png)
+<use images/uc/lapiz.png>
+Package pdftex.def Info: images/uc/lapiz.png  used on input line 85.
+(pdftex.def)             Requested size: 10.99074pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 86.
@@ -2137,6 +2142,10 @@ File: images/uc/iu.png Graphic file (type png)
 <use images/uc/iu.png>
 Package pdftex.def Info: images/uc/iu.png  used on input line 88.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
+File: images/uc/lapiz.png Graphic file (type png)
+<use images/uc/lapiz.png>
+Package pdftex.def Info: images/uc/lapiz.png  used on input line 91.
+(pdftex.def)             Requested size: 10.99074pt x 11.0pt.
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 92.
@@ -2154,7 +2163,7 @@ File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 <use IG-GRAL/headerPar.jpg>
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 1.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
- [58]
+ [58 <./images/uc/lapiz.png>]
 File: images/uc/default.png Graphic file (type png)
 <use images/uc/default.png>
 Package pdftex.def Info: images/uc/default.png  used on input line 1.
@@ -2278,7 +2287,6 @@ File: images/uc/actor.png Graphic file (type png)
 <use images/uc/actor.png>
 Package pdftex.def Info: images/uc/actor.png  used on input line 35.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-<images/uc/lapiz.png, id=1562, 1204.5pt x 1204.5pt>
 File: images/uc/lapiz.png Graphic file (type png)
 <use images/uc/lapiz.png>
 Package pdftex.def Info: images/uc/lapiz.png  used on input line 35.
@@ -2384,7 +2392,7 @@ File: IG-GRAL/headerPar.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerPar.jpg  used on input line 76.
 (pdftex.def)             Requested size: 334.83243pt x 35.0pt.
 
-[62 <./images/uc/lapiz.png>]
+[62]
 File: images/uc/usecase.png Graphic file (type png)
 <use images/uc/usecase.png>
 Package pdftex.def Info: images/uc/usecase.png  used on input line 80.
@@ -3417,9 +3425,9 @@ MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\cmbr17.pk><C:/Users/Andrez/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lcirclew.p
 fb><C:/Users/Andrez/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/marvos
 ym/marvosym.pfb>
-Output written on main.pdf (85 pages, 1821397 bytes).
+Output written on main.pdf (85 pages, 1821067 bytes).
 PDF statistics:
- 2725 PDF objects out of 2984 (max. 8388607)
+ 2724 PDF objects out of 2984 (max. 8388607)
  765 named destinations out of 1000 (max. 500000)
  1227 words of extra memory for PDF output out of 10000 (max. 10000000)
 
