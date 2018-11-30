@@ -43,9 +43,9 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
     \UCpaso[\UCactor] Presiona el botón \IUbutton{(+)} de la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}
-    \UCpaso Carga el catálogo de Cargo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
-    \UCpaso Carga el catálogo de Título descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
-    \UCpaso Carga el catálogo de Lugar de Trabajo descrito en la \BRref{BR14}{Catálogos existentes}. [Trayectoria A]
+    \UCpaso Carga el catálogo de Cargo descrito en la \BRref{BR14}{Catálogos del Sistema}. [Trayectoria A]
+    \UCpaso Carga el catálogo de Título descrito en la \BRref{BR14}{Catálogos del Sistema}. [Trayectoria A]
+    \UCpaso Carga el catálogo de Lugar de Trabajo descrito en la \BRref{BR14}{Catálogos del Sistema}. [Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{RRH-J}{Registrar Recurso Humano}.
     \UCpaso[\UCactor] Ingresa el Nombre, el sistema verifica conforme al modelo de datos y la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.[Trayectoria B][Trayectoria C]
     \UCpaso[\UCactor] Ingresa el Primer Apellido, el sistema verifica conforme al modelo de datos y la \BRref{BR38}{Verificación de formularios al momento}.[Trayectoria B]
@@ -61,7 +61,7 @@
     \UCpaso Muestra la interfaz de usuario \IUref{GRH-J}{Gestionar Recursos Humanos}.
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\begin{UCtrayectoriaA}{A}{Los catálogos de la \BRref{BR14}{Catálogos existentes} necesarios no se pudieron cargar.}
+\begin{UCtrayectoriaA}{A}{Los catálogos de la \BRref{BR14}{Catálogos del Sistema} necesarios no se pudieron cargar.}
     \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 \end{UCtrayectoriaA}
@@ -83,7 +83,7 @@
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA D.1 -------------------------
 \begin{UCtrayectoriaA}{D.1}{El actor presiona accidentalmente el botón \IUbutton{Cancelar}}
-    \UCpaso Muestra el mensaje \MSGref{MSG5}{¿Está seguro que desea cancelar el registro?}.
+    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar el registro?}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
     \UCpaso Continúa en el paso 12 de la trayectoria principal del \UCref{SP4-CU4}.
 \end{UCtrayectoriaA}
