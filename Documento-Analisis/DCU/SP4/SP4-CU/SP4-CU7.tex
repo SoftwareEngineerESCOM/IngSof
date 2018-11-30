@@ -54,7 +54,7 @@
 \begin{UCtrayectoriaA}{C}{El actor presiona el botón \IUbutton{X} de un Recurso Humano}
     \UCpaso[\UCactor] presiona el botón \IUbutton{X} de un Recurso Humano.
     \UCpaso Muestra el mensaje \MSGref{MSG34}{¿Está seguro que desea Eliminar este Recurso Humano?}.
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.[Trayectoria D]
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU7}.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA C.1 -------------------------
@@ -62,5 +62,11 @@
     \UCpaso[\UCactor] presiona el botón \IUbutton{X} de un Recurso Humano.
     \UCpaso Muestra el mensaje \MSGref{MSG34}{¿Está seguro que desea Eliminar este Recurso Humano?}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.
+    \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU7}.
+\end{UCtrayectoriaA}
+%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
+\begin{UCtrayectoriaA}{D}{El Recurso Humano que se desea eliminar esta asociado a un Usuario}
+    \UCpaso Muestra el mensaje \MSGref{MSG56}{Este Recurso Humano esta asociado a un Usuario por lo que no puede ser eliminado}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU7}.
 \end{UCtrayectoriaA}
