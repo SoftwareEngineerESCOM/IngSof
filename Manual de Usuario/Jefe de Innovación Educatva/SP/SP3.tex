@@ -1,10 +1,9 @@
 % -------------------------------------------------------------------------------------------------------
 %-----------------------------CONSULTA DE PROGRAMAS ACADÉMICOS---------------------------------
 % -------------------------------------------------------------------------------------------------------
-
 \chapter{Gestión de Programas Académicos}
     \section{Consulta de Programas Académicos}
-        Cuando el usuario da clic en la sección de \textbf{Gestionar Programas Académicos} aparecerá la siguiente pantalla:
+        Cuando el usuario da clic en la sección de \textbf{Gestionar Programas Académicos} aparecerá en la pantalla:
 
         % Imagen menu
 
@@ -19,7 +18,7 @@
 
 	    \section{Editar Programa Académico}
 
-        	Para ello, el Jefe de Innovación Educativa tendrá que dar clic en el botón con el icono de un lapiz amarillo que esta al lado del Programa Académico que desea modificar. Al hacer esto, el sistema redireccionará al usuario a la pantalla de \hyperlink{editarpa}{\textit{Editar Programa Académico}}.
+        	Para ello, el usuario tendrá que dar clic en el botón con el icono de un lapiz amarillo que esta al lado del Programa Académico que desea modificar. Al hacer esto, el sistema redireccionará al usuario a la pantalla de \hyperlink{editarpa}{\textit{Editar Programa Académico}}.
 
         	\begin{figure}[!hbtp]
         		\centering
@@ -56,6 +55,12 @@
 
         El sistema mostrará el siguiente mensaje:
         %Imagen MSG29
+        \begin{figure}[!hbtp]
+            \centering
+            \hypertarget{confirmar}{\includegraphics[width=0.7\linewidth]{images/SP3/Confirmacion}}
+            \caption{Confirmación}
+            \label{confirmar}
+        \end{figure}
 
         Para confirmar, el usuario debe dar clic en el botón ''Sí'', y el Programa Académico no será modificado.\\
 
@@ -70,43 +75,63 @@
         \end{figure}
 
         Si no hubieron errores, el sistema muestra el siguiente mensaje:
-        %Imagen MSG5
+        
+        \begin{figure}[!hbtp]
+            \centering
+            \hypertarget{cambio}{\includegraphics[width=0.7\linewidth]{images/SP3/Cambio}}
+            \caption{Cambio exitoso.}
+            \label{cambio}
+        \end{figure}
 
         Al dar clic en en botón ''Aceptar'', el sistema redireccionará al usuario a la pantalla de \hyperlink{consultarpa}{\textit{Gestionar Programas Académicos}}, en donde podrá ver las modificaciones del Programa Académico.\\
 
         \subsection{Posibles errores}
 
             \begin{itemize}
-            	\item Problemas con la conexión o el sistema
-
-                	Si al momento de acceder a la pantalla de \hyperlink{editarpa}{\textit{Editar Programa Académico}} o al intentar modificar un Programa Académico, aparece alguno de los siguientes mensajes:
-
-            	    % Imagen MSG7 Y MSG25
-
-                	Significa que existió un error de conexión o del sistema. Al dar clic en en botón ''Aceptar'', el sistema redireccionará al usuario a la pantalla de \hyperlink{consultarpa}{\textit{Consultar Programas Académicos}}. Debe esperar a que la página este disponible o intentar acceder nuevamente.
-
             	\item Campos vacíos al momento de modificar el Programa Académico
 
-                	Si el usuario dejo en blanco algún campo del formulario, y posteriormente dio clic en el botón ''Finalizar'', el sistema mostrará el siguiente mensaje:
+                	Si el usuario dejo en blanco algún campo del formulario, el sistema mostrará el siguiente mensaje:
 
-            	    % Imagen MSG32
-
-            	    Al dar clic en botón ''Aceptar'', el mensaje se cerrará y regresaremos al formulario, en donde el usuario deberá llenar el o los campos que dejo vacío. Si se continúan dejando campos en blanco y dando clic en el botón ''Finalizar'', aparecerá nuevamente el mensaje, hasta que todos los campos sean llenados.
-
+                    \begin{figure}[!hbtp]
+                    \centering
+                    \hypertarget{vacio}{\includegraphics[width=0.7\linewidth]{images/SP3/Vacio}}
+                    \caption{Campo Vacío}
+                    \label{vacio}
+                    \end{figure}
+            	    
             	\item Los campos ingresados no son válidos
 
-                	Si al momento de dar clic en el botón ''Finalizar'' aparece el siguiente mensaje:
-            	    %Imagen MSG35
+                	Si al momento de ingresar los datos aparece el siguiente mensaje:
+            	    
+                     \begin{figure}[!hbtp]
+                    \centering
+                    \hypertarget{invalido}{\includegraphics[width=0.7\linewidth]{images/SP3/Invalida}}
+                    \caption{Campo Invalido}
+                    \label{invalido}
+                    \end{figure}
+                    
 
                 	Significa que la composición de los datos ingresados en el formulario no es la correcta. Tenga en cuenta lo siguiente:
 
                 	\begin{itemize}
-                		\item El nombre se compone de únicamente de carácteres Alfanuméricos y espacios.
+                		\item El nombre se compone de únicamente de letras y espacios.
 
                         \item El nombre tiene una longitud máxima de 150 carácteres.
-
-                        \item El nombre del Programa Académico ya está registrado.
                 	\end{itemize}
+
+                \item El nombre del Programa Académico ya está registrado.
+                    Si al momento de Finalizar la Edición muestra este mensaje.
+
+                     \begin{figure}[!hbtp]
+                    \centering
+                    \hypertarget{vacio}{\includegraphics[width=0.7\linewidth]{images/SP3/Yareg}}
+                    \caption{Campo Vacío}
+                    \label{vacio}
+                    \end{figure}
+                    
+                    Significa que el Programa Académico ya ha sido registrado previamente dentro de la Unidad Académica.
+
+
 
             \end{itemize}
         \section{Registrar Programa Académico}
@@ -138,7 +163,7 @@
             \label{ejreg}
         \end{figure}
 
-        Si el Jefe de Innovación Educativa da clic en el botón ''Cancelar'' sin haber concluido el registro del Programa Académico:
+        Si el usuario da clic en el botón ''Cancelar'' sin haber concluido el registro del Programa Académico:
 
         \begin{figure}[!hbtp]
             \centering
@@ -147,12 +172,18 @@
             \label{cancel1}
         \end{figure}
 
-        El sistema mostrará el siguiente mensaje:
-        %Imagen MSG29
+         El sistema mostrará el siguiente mensaje:
+        
+        \begin{figure}[!hbtp]
+            \centering
+            \hypertarget{confirmar}{\includegraphics[width=0.7\linewidth]{images/SP3/Confirmacion}}
+            \caption{Confirmación}
+            \label{confirmar}
+        \end{figure}
 
         Para confirmar, el usuario debe dar clic en el botón ''Sí'', y el Programa Académico no será registrado.\\
 
-        Para cancelar, el usuario debe dar clic en botón ''No'', el mensaje se cerrará y continuaremos en el formulario. Aqui el Jefe de Innovación Educativa puede terminar el registro.\\
+        Para cancelar, el usuario debe dar clic en botón ''No'', el mensaje se cerrará y continuaremos en el formulario. Aqui el usuario puede terminar el registro.\\
 
         A continuación, una vez verificados los datos, deberá de dar clic en el botón ''Registrar''.
         \begin{figure}[!hbtp]
@@ -163,41 +194,60 @@
         \end{figure}
 
         Si no hubieron errores, el sistema muestra el siguiente mensaje:
-        % Imagen MSG5
+        
+        \begin{figure}[!hbtp]
+            \centering
+            \hypertarget{exito}{\includegraphics[width=0.7\linewidth]{images/SP3/Exitoso}}
+            \caption{Registo exitoso.}
+            \label{exito}
+        \end{figure}
 
         Al dar clic en en botón ''Aceptar'', el sistema redireccionará al usuario a la pantalla de \hyperlink{consultarpa}{\textit{Gestionar Programas Académicos}}, en donde podrá ver el nuevo Programa Académico agregado.\\
 
+    
         \subsection{Posibles errores}
+
             \begin{itemize}
+                \item Campos vacíos al momento de modificar el Programa Académico
 
-                \item Problemas con la conexión o el sistema
+                    Si el usuario dejo en blanco algún campo del formulario, el sistema mostrará el siguiente mensaje:
 
-                    Si al momento de acceder a la pantalla de \hyperlink{registrarpa}{\textit{Registrar Programa Académico}} o al intentar registrar un Programa Académico, aparece alguno de los siguientes mensajes:
-                    %Imagen MSG7 Y MSG25
-
-                    Significa que existió un error de conexión o del sistema. Al dar clic en en botón ''Aceptar'', el sistema redireccionará al usuario a la pantalla de \hyperlink{consultarpa}{\textit{Consultar Programas Académicos}}. Debe esperar a que la página este disponible o intentar acceder nuevamente.
-
-                \item Campos vacíos al momento de agregar un nuevo Programa Académico
-
-                    Si el usuario dejo en blanco algún campo del formulario, y posteriormente dio clic en el botón ''Registrar'', el sistema mostrará el siguiente mensaje:
-                    %Imagen MSG32
-
-                    Al dar clic en botón ''Aceptar'', el mensaje se cerrará y regresaremos al formulario, en donde el usuario deberá llenar el o los campos que dejo vacío. Si se continúan dejando campos en blanco y dando clic en el botón ''Registrar'', aparecerá nuevamente el mensaje, hasta que todos los campos sean llenados.\\
-
-
+                    \begin{figure}[!hbtp]
+                    \centering
+                    \hypertarget{vacio}{\includegraphics[width=0.7\linewidth]{images/SP3/Vacio}}
+                    \caption{Campo Vacío}
+                    \label{vacio}
+                    \end{figure}
+                    
                 \item Los campos ingresados no son válidos
 
-                    Si al momento de dar clic en el botón ''Registrar'' aparece el siguiente mensaje:
-                    %Imagen MSG35
+                    Si al momento de ingresar los datos aparece el siguiente mensaje:
+                    
+                     \begin{figure}[!hbtp]
+                    \centering
+                    \hypertarget{invalido}{\includegraphics[width=0.7\linewidth]{images/SP3/Invalida}}
+                    \caption{Campo Invalido}
+                    \label{invalido}
+                    \end{figure}
+                    
 
                     Significa que la composición de los datos ingresados en el formulario no es la correcta. Tenga en cuenta lo siguiente:
 
                     \begin{itemize}
-                        \item El nombre se compone de únicamente de carácteres Alfanuméricos y espacios.
+                        \item El nombre se compone de únicamente de letras y espacios.
 
                         \item El nombre tiene una longitud máxima de 150 carácteres.
-                        
-                        \item El nombre del Programa Académico ya está registrado.
                     \end{itemize}
 
+                \item El nombre del Programa Académico ya está registrado.
+                    Si al momento de Finalizar la Edición muestra este mensaje.
+
+                     \begin{figure}[!hbtp]
+                    \centering
+                    \hypertarget{vacio}{\includegraphics[width=0.7\linewidth]{images/SP3/Yareg}}
+                    \caption{Campo Vacío}
+                    \label{vacio}
+                    \end{figure}
+                    
+                    Significa que el Programa Académico ya ha sido registrado previamente dentro de la Unidad Académica.
             \end{itemize}
