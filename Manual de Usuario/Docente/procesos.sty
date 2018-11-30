@@ -4,6 +4,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{listings}
 \usepackage{keystroke}
+\usepackage{fancybox}
 \RequirePackage{pgfkeys}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -68,8 +69,19 @@
 %use \UCMessage{Id}{nombre}
 \newcommand{\MSGref}[2]{%
 	\hypersetup{linkcolor=UCBussinesRuleColor}%
-	\hyperlink{#1}{#1 #2}%
+	\hyperlink{#1}{#1~#2}%
 	\hypersetup{linkcolor=refColor}%
+}
+
+\newcommand{\MSGdes}[2]{%
+	\hypertarget{#1}{\subsection{#1 #2}}%
+	\begin{figure}[htbp!]%
+		\begin{center}%
+			\includegraphics[width=0.75\textwidth]{images/MSG/ancla}%
+			\caption{#1 #2}%
+			\label{#1}%
+		\end{center}%
+	\end{figure}%
 }
 
 \newcommand{\Trayref}[1]{$[$Trayectoria #1$]$}
@@ -239,7 +251,8 @@
 % de una trayectoria actor o sistema
 \newcommand\UCactor{\includegraphics[height=11pt]{images/uc/actor}}
 \newcommand\UCsist{\includegraphics[height=11pt]{images/uc/usecase}}
-
+\newcommand\BtnModal{\includegraphics[height=11pt]{images/uc/launch} }
+\newcommand\BtnLapiz{\includegraphics[height=11pt]{images/uc/lapiz} }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Comandos para agregar un paso a una trayectoria, el paso puede ser
@@ -250,8 +263,7 @@
 
 \newenvironment{BussinesRule}[2]%linea original
 {%
-	\hypertarget{#1}{}%Linea original
-	\noindent{\large{\bf Regla de Negocio:} #1 #2}%line Original
+	\hypertarget{#1}{\section{#1 #2}}%Linea original
 	\begin{description}\addtolength{\itemsep}{-0.5\baselineskip}%
 }
 {%
@@ -261,7 +273,8 @@
 \newcommand{\BRitem}[1][]{\item[#1]}
 
 %\newcommand{\IUbutton}[1]{\framebox[1.1\width][c]{#1}}
-\newcommand{\IUbutton}[1]{\keystroke{#1}}
+\cornersize{.2}
+\newcommand{\IUbutton}[1]{\Ovalbox{\bf #1}}
 
 \newenvironment{Citemize}%
 {%
