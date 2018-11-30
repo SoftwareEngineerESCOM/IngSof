@@ -38,7 +38,7 @@
     \UCpaso[\UCactor] Ingresa el nombre del Programa Académico, el sistema verifica conforme al modelo de datos la \BRref{BR38}{Verificación de formularios al momento}[Trayectoria B].
     \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. Existen las trayectorias alternativas [Trayectoria C] y [Trayectoria C.1] al presionar el botón Cancelar.
     \UCpaso Verifica que se cumpla la \BRref{BR13}{Todos los campos son obligatorios} y \BRref{BR19}{El nombre del Programa Académico es único.}. [Trayectoria A][Trayectoria D]
-    \UCpaso Persiste los datos ingresados.Accionando el botón \IUbutton{Registrar} se activa la  [Trayectoria E].
+    \UCpaso Persiste los datos ingresados.[Trayectoria E]
     \UCpaso Muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Muestra la interfaz de usuario \IUref{GPA-J}{Gestionar Programas Académicos}.
@@ -71,11 +71,9 @@
     \UCpaso Cierra el mensaje.
     \UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
-
-
     %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 \begin{UCtrayectoriaA}{D}{El nombre del Programa Académico ya está registrado.}
-    \UCpaso Muestra el mensaje \MSGref{MSG43}{El nombre del Programa Académico ya está registrado}
+    \UCpaso Muestra el mensaje \MSGref{MSG43}{El nombre del Programa Académico ya está registrado.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continúa en el paso 3 de la trayectoria principal del \UCref{SP4-CU1}.
 \end{UCtrayectoriaA}
