@@ -7,6 +7,7 @@
 	\UCitem{Propósito}{Registrar el año, modalidad, total de créditos (TEPIC / SATCA) y horas totales (Prácticas / Teóricas) a un Plan de Estudios.}
 	\UCitem{Entradas}{Las entradas para el registro del Plan de Estudios serán:
 		\begin{itemize}
+			\item Programa Acádemico.
 			\item Año.
 			\item Créditos Totales TEPIC.
 			\item Créditos Totales SATCA.
@@ -24,6 +25,7 @@
 			\item \MSGref{MSG29}{ ¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
 			\item \MSGref{MSG35}{Escribe información válida}
 			\item \MSGref{MSG44}{Este campo es requerido}
+			\item \MSGref{MSG54}{Créditos TEPIC fuera de rango}
 		\end{itemize}
 	}
 	\UCitem{Destino}{Pantalla.}
@@ -35,7 +37,7 @@
 			\item E2. Hubo un problema al conectarse con la base de datos.
 		\end{itemize}
 	}
-	\UCitem{Estado}{Revisión.}
+	\UCitem{Estado}{Aprobado.}
 	\UCitem{Observaciones}{}
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
@@ -63,7 +65,7 @@
 \begin{UCtrayectoriaA}{A}{ Los catálogos de la \BRref{BR14}{Existen los catálogos} necesarios no se pudieron cargar.}
 	\UCpaso Muestra el mensaje \MSGref{MSG25}{ Servicios no disponibles. }
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudio}
+	\UCpaso Muestra la interfaz de usuario \IUref{RPE-J}{Registrar Plan de Estudios}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
