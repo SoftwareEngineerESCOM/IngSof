@@ -25,6 +25,7 @@
 			\item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
 			\item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
 			\item \MSGref{MSG35}{Escriba información válida.}
+			\item \MSGref{MSG36}{El usuario ya existe en el sistema.}
 			\item \MSGref{MSG44}{Este campo es requerido.}
 			
 		\end{itemize}
@@ -80,7 +81,6 @@
 
 \begin{UCtrayectoriaA}{E}{Inconsistencias con el diccionario de datos.}
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG35}{Escriba información válida} debajo de campo que incumplió con el diccionario de datos.
-	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
 \end{UCtrayectoriaA}
 
@@ -102,7 +102,7 @@
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{H}{El usuario ya estaba registrado en el sistema.}
-	\UCpaso El sistema muestra el mensaje \MSGref{MSG36}{Error, el usuario ya existe en el sistema.} 
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG36}{El usuario ya existe en el sistema.} 
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
 \end{UCtrayectoriaA}

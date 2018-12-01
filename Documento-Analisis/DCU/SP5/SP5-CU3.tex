@@ -40,7 +40,7 @@
 	\UCpaso  El sistema verifica la existencia de registros del catalogo de la \BRref{BR14}{Catálogos del Sistema} para cargos  y carga los indicados para el actor según la \BRref{BR3}{Gestión de Usuarios} . [Trayectoria B] [Trayectoria F] 
 	\UCpaso El sistema carga la interfaz de usuario  \IUref{IU2}{Gestionar usuarios}.
 	\UCpaso El sistema despliega la información (matricula,  nombre, primer apellido, segundo apellido, titulo, cargo, lugar de trabajo) de todos los usuarios disponibles para el actor según la  \BRref{BR3}{Gestión de Usuarios} en la parte inferior de la pantalla \IUref{IU2}{Gestionar usuarios}.
-	\UCpaso [\UCactor] Visualiza la información de los usuarios.  [Trayectoria C] [Trayectoria E] [Trayectoria G][Trayectoria D]
+	\UCpaso [\UCactor] Visualiza la información de los usuarios.   [Trayectoria E] [Trayectoria G][Trayectoria D]
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{B}{No existen registros en el catálogo de cargos.}
@@ -49,7 +49,7 @@
 	\UCpaso  El sistema continua en la interfaz de usuario \IUref{IU1}{Menú}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{C}{No existen  empleados con el cargo seleccionado.}
+\begin{UCtrayectoriaA}{G.1}{No existen  empleados con el cargo seleccionado.}
 	\UCpaso     El sistema muestra el \MSGref{MSG21}{No hay usuarios registrados con ese cargo}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU3}.
@@ -84,7 +84,7 @@
 
 \begin{UCtrayectoriaA}{G}{El actor consulta a los usuarios por un cargo.}
 	\UCpaso[\UCactor] Selecciona el cargo de los empleados a buscar.
-	\UCpaso El sistema despliega la información (matricula,  nombre, primer apellido, segundo apellido, titulo, cargo, lugar de trabajo) de los usuarios con ese cargo.
+	\UCpaso El sistema despliega la información (matricula,  nombre, primer apellido, segundo apellido, titulo, cargo, lugar de trabajo) de los usuarios con ese cargo. [Trayectoria G.1]
 	\UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU3}. 
 \end{UCtrayectoriaA}
 
