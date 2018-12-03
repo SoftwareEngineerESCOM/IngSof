@@ -21,6 +21,9 @@
           \item \MSGref{MSG5}{Registro finalizado exitosamente}.
           \item \MSGref{MSG6}{¿Está seguro que desea cancelar el registro?}.
           \item \MSGref{MSG23.}{Los porcentajes de evaluación no cumplen con el porcentaje total obligatorio.}
+          \item \MSGref{MSG25}{Servicios no disponibles por el momento}.
+          \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+          \item \MSGref{MSG35}{Escribe información válida.}
 
       \end{itemize}
     }
@@ -37,13 +40,13 @@
 
 \UCpaso[\UCactor] Presiona el botón \BtnModal que se encuentra a un lado del campo ``Evaluación y Acreditación'' \IUref{IU.04}{Registrar Relación de Prácticas}.
 \UCpaso Muestra la interfaz de usuario \IUref{MIU4.01}{Registrar Evaluación y Acreditación}.
-\UCpaso[\UCactor] Ingresa la Acreditación de la Relación de Prácticas.
-\UCpaso[\UCactor] Ingresa la Evaluación de la Relación de Prácticas con base en la regla \BRref{BR29}{Debe existir al menos un criterio de evaluación para la Relación de Prácticas.}
-\UCpaso[\UCactor] Ingresa el Porcentaje de la Evaluación de la Relación de Prácticas con base en la regla \BRref{BR25}{La suma de los porcentajes de cada evaluación debe ser igual a 100\%}.
+\UCpaso[\UCactor] Ingresa la Acreditación de la Relación de Prácticas conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} [Trayectoria C] [Trayectoria E].
+\UCpaso[\UCactor] Ingresa la Evaluación de la Relación de Prácticas conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento}, la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} y la regla \BRref{BR29}{Debe existir al menos un criterio de evaluación para la Relación de Prácticas} [Trayectoria C] [Trayectoria E].
+\UCpaso[\UCactor] Ingresa el Porcentaje de la Evaluación de la Relación de Prácticas conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento}, \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} y la regla \BRref{BR25}{La suma de los porcentajes de cada evaluación debe ser igual a 100\%} [Trayectoria C] [Trayectoria E].
 \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar} [Trayectoria A][Trayectoria B].
 \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados[Trayectoria C].
 \UCpaso Valida que la suma de los porcentajes sea igual a 100\%.[Trayectoria D]
-\UCpaso Guarda la información de la Evaluación y Acreditación de la Relación de Prácticas.
+\UCpaso Guarda la información de la Evaluación y Acreditación de la Relación de Prácticas [Trayectoria F].
 \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
 \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{OK}. 
 \UCpaso Muestra la interfaz de usuario  \IUref{SP1-U4}{Registrar Relación de Prácticas}.
@@ -86,3 +89,15 @@
 \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU11}.
 \end{UCtrayectoriaA}
 
+
+
+\begin{UCtrayectoriaA}{E}{El sistema detecta caracteres no válidos conforme al Modelo de Datos.}
+\UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida} debajo del campo que incumplio con el diccionario de datos.
+\UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP1-CU1}.
+\end{UCtrayectoriaA}
+    
+\begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
+\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento}.
+\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+\UCpaso Continúa en el paso 17 de la trayectoria principal del \UCref{SP1-CU1}.
+\end{UCtrayectoriaA}

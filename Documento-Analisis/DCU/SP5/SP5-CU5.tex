@@ -1,0 +1,108 @@
+\begin{UseCase}{SP5-CU5}{Editar usuario.}{Los jefes (JDIC, JDIA, JIE) podrán realizar modificaciones a la información de los empleados a su cargo.}
+	\UCitem{Versión}{\color{Gray}2.0}
+	\UCitem{Autor}{\color{Gray}Hernández Ruiz Rafael}
+	\UCitem{Supervisa}{\color{Gray}Abigail Nicolás Sayago}
+	\UCitem{Actor}{JDIC, JDIA, JIE.}
+	\UCitem{Propósito}{ Realizar modificaciones en la información de los empleados por motivos de actualización o errores. }
+	\UCitem{Entradas}{
+		\begin{itemize}
+			
+			\item Nombre.
+			\item Primer Apellido.
+			\item Segundo Apellido.
+			\item Titulo.
+			\item Cargo.
+			\item Lugar de trabajo.
+			\item Contraseña.
+			\item Correo electrónico.
+			\item Clic en botón finalizar.
+	\end{itemize}}
+	\UCitem{Origen}{Mouse.}
+	\UCitem{Salidas}{
+		\begin{itemize}
+			\item Información del empleado (nombre, primer apellido, segundo apellido, correo electrónico, titulo, cargo, lugar de trabajo y contraseña).
+			\item \MSGref{MSG25}{Servicios no disponibles.}
+			\item \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
+			\item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+			\item \MSGref{MSG35}{Escriba información válida.}
+			\item \MSGref{MSG36}{El usuario ya existe en el sistema.}
+			\item \MSGref{MSG44}{Este campo es requerido.}
+			
+		\end{itemize}
+	}
+	\UCitem{Destino}{Pantalla.}
+	\UCitem{Precondiciones}{ \begin{itemize}
+			\item Debe existir por lo menos un registro en el catálogo de cargos \BRref{BR14}{Catálogos del Sistema}.
+			\item Debe existir por lo menos un registro en el catálogo de lugares de trabajo \BRref{BR14}{Catálogos del Sistema}.
+			\item Debe existir por lo menos un registro en el catálogo de titulo \BRref{BR14}{Catálogos del Sistema}.
+	\end{itemize} }
+	\UCitem{Postcondiciones}{}
+	\UCitem{Errores}{ \begin{itemize}
+			\item El catálogo de cargos no se cargo correctamente.
+			\item Hubo un problema al conectarse con el servidor.
+			\item Hubo un problema al conectarse con la base de datos. \end{itemize}}
+	\UCitem{Estado}{Gestión.}
+	\UCitem{Observaciones}{}
+	
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+	
+	\UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU2}{Gestionar usuarios} el botón \BtnLapiz .
+	\UCpaso Verifica la existencia de registros en los catálogos cargos, lugares de trabajo y titulo descritos en la \BRref{BR14}{Catálogos del Sistema}. [Trayectoria B]
+	\UCpaso El sistema carga la información de los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema} según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria F]
+	\UCpaso Muestra la interfaz de usuario  \IUref{IU7}{Editar empleados}. 
+	\UCpaso El sistema carga los datos del usuario seleccionado. 
+	\UCpaso[\UCactor] Modifica la información deseada del usuario el sistema verifica la consistencia de la información conforme al diccionario de datos, la  \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.  [Trayectoria D] [Trayectoria E]  [Trayectoria G] 
+	\UCpaso[\UCactor]  Presiona el botón de \IUbutton{Finalizar}.
+	\UCpaso Verifica la consistencia de la información conforme al diccionario de datos, la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} y la \BRref{BR16}{El correo electrónico del empleado es único}.[Trayectoria E] [Trayectoria G][Trayectoria H]
+	\UCpaso El sistema realiza la modificación de la información del empleado. [Trayectoria F] 
+	\UCpaso  El sistema muestra el \MSGref{MSG31}{Los cambios se guardaron exitosamente.}  
+	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar usuarios}
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{B}{Los catálogos de la \BRref{BR14}{Catálogos del Sistema} necesarios no se pudieron cargar.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso El sistema continua en la interfaz de usuario \IUref{IU2}{Gestionar usuarios}.
+\end{UCtrayectoriaA}
+
+
+
+\begin{UCtrayectoriaA}{D}{El actor presiono el botón \IUbutton{Cancelar}.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el boton \IUbutton{Si}. [Trayectoria D1]
+	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar usuarios}.
+\end{UCtrayectoriaA}
+
+	\begin{UCtrayectoriaA}{D1}{El actor presiono el botón \IUbutton{No}.}
+	\UCpaso Cierra el mensaje y continúa en el paso 6 de la trayectoria principal del \UCref{SP5-CU5}.	
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{E}{Inconsistencias con el diccionario de datos.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG35}{Escriba información válida} debajo de campo que incumplió con el diccionario de datos.
+	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+
+\begin{UCtrayectoriaA}{F}{Ocurre un error al persistir datos.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso El sistema muestra o regresa a la interfaz de usuario  \IUref{IU7}{Editar empleados}.
+\end{UCtrayectoriaA}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
+
+
+\begin{UCtrayectoriaA}{G}{Uno o mas campos se dejaron vacíos.}
+	\UCpaso El sistema muestra el \MSGref{MSG44}{Este campo es requerido.} debajo de cada campo que no fue llenado. 
+	\UCpaso	Continúa en el paso 6 de la trayectoria principal del \UCref{SP5-CU5}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{H}{El usuario ya estaba registrado en el sistema.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG36}{El usuario ya existe en el sistema.} 
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
+\end{UCtrayectoriaA}

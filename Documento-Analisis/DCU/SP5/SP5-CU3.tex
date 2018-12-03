@@ -1,0 +1,94 @@
+
+\begin{UseCase}{SP5-CU3}{Consultar usuarios.}{El JDIC, JDIA y JIE podrá visualizar la información de los empleados.}
+	\UCitem{Versión}{\color{Gray}3.0}
+	\UCitem{Autor}{\color{Gray}Hernández Ruiz Rafael}
+	\UCitem{Supervisa}{\color{Gray}Abigail Nicolás Sayago}
+	\UCitem{Actor}{JDIC, JDIA, JIE.}
+	\UCitem{Propósito}{Ver los empleados que cada actor posee, así como realizar trabajos de gestión: editar y eliminar usuarios.}
+	\UCitem{Entradas}{
+		\begin{itemize}
+			\item Selección del cargo de los empleados a buscar.
+			\item Clic en botón x.
+			\item Clic en botón Cancelar.
+			\item Clic en botón Aceptar.
+	\end{itemize}}
+	\UCitem{Origen}{Mouse.}
+	\UCitem{Salidas}{
+		\begin{itemize}
+			\item Lista de empleados de un cargo en específico con sus datos (matricula,  nombre, primer apellido, segundo apellido, titulo, cargo, lugar de trabajo). 
+			
+			\item \MSGref{MSG21}{No hay usuarios registrados con ese cargo.}
+			\item \MSGref{MSG22}{¿Está seguro que desea eliminar al usuario?}
+			\item \MSGref{MSG25}{Servicios no disponibles.}
+		\end{itemize}
+	}
+	\UCitem{Destino}{Pantalla.}
+	\UCitem{Precondiciones}{ 1.- Debe existir por lo menos un registro en el catálogo de cargos de la  \BRref{BR14}{Catálogos del Sistema}.}
+	\UCitem{Postcondiciones}{1.- Habilita la llamada a los casos de uso  SP5-CU4, SP5-CU5.}
+	\UCitem{Errores}{ \begin{itemize}
+			\item El catálogo de cargos no se cargo correctamente.
+			\item Hubo un problema al conectarse con el servidor.
+			\item Hubo un problema al conectarse con la base de datos. \end{itemize}}
+	\UCitem{Estado}{Gestión.}
+	\UCitem{Observaciones}{}
+	\UCitem{Puntos de extensión}{Casos de uso \UCref{SP5-CU5}, \UCref{SP5-CU4}.}
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+	
+	\UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU1}{Menú} la opción de gestionar usuarios. 
+	\UCpaso  El sistema verifica la existencia de registros del catalogo de la \BRref{BR14}{Catálogos del Sistema} para cargos  y carga los indicados para el actor según la \BRref{BR3}{Gestión de Usuarios} . [Trayectoria B] [Trayectoria F] 
+	\UCpaso El sistema carga la interfaz de usuario  \IUref{IU2}{Gestionar usuarios}.
+	\UCpaso El sistema despliega la información (matricula,  nombre, primer apellido, segundo apellido, titulo, cargo, lugar de trabajo) de todos los usuarios disponibles para el actor según la  \BRref{BR3}{Gestión de Usuarios} en la parte inferior de la pantalla \IUref{IU2}{Gestionar usuarios}.
+	\UCpaso [\UCactor] Visualiza la información de los usuarios.   [Trayectoria E] [Trayectoria G][Trayectoria D]
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{B}{No existen registros en el catálogo de cargos.}
+	\UCpaso     El sistema muestra el 	\MSGref{MSG25}{Servicios no disponibles.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso  El sistema continua en la interfaz de usuario \IUref{IU1}{Menú}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{G.1}{No existen  empleados con el cargo seleccionado.}
+	\UCpaso     El sistema muestra el \MSGref{MSG21}{No hay usuarios registrados con ese cargo}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU3}.
+\end{UCtrayectoriaA}
+
+
+\begin{UCtrayectoriaA}{D}{El actor presiona el botón \IUbutton{X}.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG22}{¿Está seguro que desea eliminar al usuario?} solicitando confirmación. [Trayectoria D1]
+	\UCpaso[\UCactor] El actor presiona el botón \IUbutton{No}.
+	\UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU3}.  	
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{D1}{El actor presiona el botón \IUbutton{Sí}.}
+	\UCpaso     El sistema elimina al empleado. [Trayectoria F] 
+	\UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU3}.  
+\end{UCtrayectoriaA}
+
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+
+\begin{UCtrayectoriaA}{E}{El actor selecciono sin filtro.}
+	\UCpaso[\UCactor] Selecciona la opción sin filtro.
+	\UCpaso El sistema despliega la información (matricula,  nombre, primer apellido, segundo apellido, titulo, cargo, lugar de trabajo) de todos los usuarios disponibles para el actor según la  \BRref{BR3}{Gestión de Usuarios} en la parte inferior de la pantalla \IUref{IU2}{Gestionar usuarios}.
+	\UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU3}. 
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{F}{La base de datos no está disponible, o hubo un error de conexión.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso  El sistema continua en la interfaz de usuario \IUref{IU2}{Gestionar usuarios}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{G}{El actor consulta a los usuarios por un cargo.}
+	\UCpaso[\UCactor] Selecciona el cargo de los empleados a buscar.
+	\UCpaso El sistema despliega la información (matricula,  nombre, primer apellido, segundo apellido, titulo, cargo, lugar de trabajo) de los usuarios con ese cargo. [Trayectoria G.1]
+	\UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP5-CU3}. 
+\end{UCtrayectoriaA}
+
+
+
+
+

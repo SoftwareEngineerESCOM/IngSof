@@ -25,7 +25,6 @@
 			\item \MSGref{MSG35}{Escribe información válida.}
 			\item \MSGref{MSG44}{Este campo es requerido.}
 			\item \MSGref{MSG25}{Servicios no disponibles. }
-			\item \MSGref{MSG25}{Servicios no disponibles.}
 		\end{itemize}
 	}
 	\UCitem{Destino}{Pantalla.}
@@ -47,12 +46,12 @@
 
 	 %Usuario
 	\UCpaso[\UCactor] Elige el semestre que pertecene la Unidad de Aprendizaje a modificar, que se encuentra en la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
-	\UCpaso[\UCactor] Presiona el boton \IUbutton{Lápiz} de la Unidad de Aprendizaje que desea modificar.
+	\UCpaso[\UCactor] Presiona el boton \BtnLapiz de la Unidad de Aprendizaje que desea modificar.
 	%Sistema
-	\UCpaso Carga los catálogos: Área de formación y Semestre descrito en la \BRref{BR14}{Existen los catálogos}.[Trayectoria A]
-	\UCpaso Muestra la interfaz de usuario \IUref{RUA-J}{Registrar Unidad de Aprendizaje}.
+	\UCpaso Carga los catálogos: Área de formación y Semestre descrito en la \BRref{BR14}{Catálogos del Sistema}.[Trayectoria A]
+	\UCpaso Muestra la interfaz de usuario \IUref{EUA-J}{Editar Unidad de Aprendizaje}.
 	\UCpaso[\UCactor] Modifica los campos deseados.
-	\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Registrar}. [Trayectoria B] [Trayectoria B.1]
+	\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria B] [Trayectoria B.1]
 	\UCpaso Verifica que se cumpla con el modelos de datos. [Trayectoria C] [Trayectoria D] [Trayectoria F]
 	\UCpaso Persiste los datos ingresados. [Trayectoria E]
 	\UCpaso El sistema muestra el mensaje \MSGref{MSG31}{Los cambios se guardaron exitosamente.}
@@ -61,7 +60,7 @@
 \end{UCtrayectoria}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
-\begin{UCtrayectoriaA}{A}{ Los catálogos de la \BRref{BR14}{Existen los catálogos} necesarios no se pudieron cargar.}
+\begin{UCtrayectoriaA}{A}{ Los catálogos de la \BRref{BR14}{Catálogos del Sistema} necesarios no se pudieron cargar.}
 	\UCpaso Muestra el mensaje \MSGref{MSG2}{Servicios no disponibles. }
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
@@ -84,14 +83,14 @@
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
-\begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar incumpliendo con la \BRref{BR33}{Información de Unidad de Aprendizaje}.}
+\begin{UCtrayectoriaA}{C}{El sistema detecta uno o más campos sin contestar incumpliendo con el modelo de datos.}
 	\UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido}debajo de cada campo obligatorio sin contestar.
 	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU9}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
-\begin{UCtrayectoriaA}{D}{El sistema detecta incumpliendo con la \BRref{BR34}{Información de Unidad de Aprendizaje}.}
-	\UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida} debajo del campo que incumplio la \BRref{BR34}{Información de Unidad de Aprendizaje}.
+\begin{UCtrayectoriaA}{D}{El sistema detecta incumplimiento con el diccionario de datos.}
+	\UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida} debajo del campo que incumplio con el modelo de datos.
 	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU9}.
 \end{UCtrayectoriaA}
 
@@ -105,7 +104,7 @@
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 \begin{UCtrayectoriaA}{F}{El nombre de la Unidad de Aprendizaje ya se encuentra registrado}
-	\UCpaso Muestra el mensaje \MSGref{MSG47}{El nombre de la Unidad de Aprendizaje ya está registrado. Por favor cámbielo}.
+	\UCpaso Muestra el mensaje \MSGref{MSG47}{Unidad de Aprendizaje ya existe en el sistema}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP4-CU9}.
 \end{UCtrayectoriaA}

@@ -28,7 +28,14 @@
 \end{UseCase}
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor]Selecciona un Programa Académico en la Interfaz de usuario  \IUref{GPA-J}{Gestionar Programa Académico}.
+    \UCpaso[\UCactor]Selecciona un Programa Académico en la Interfaz de usuario  \IUref{GPA-J}{Gestionar Programa Académico}. [Trayectoria A]
     \UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudios}.
     \UCpaso Muestra un listado de los  Planes de Estudios registrados en el Programa Académico seleccionado.
 \end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
+\begin{UCtrayectoriaA}{A}{El sistema detecta que no hay ningun Plan de Estudio registrado.}
+	\UCpaso Muestra el mensaje \MSGref{MSG55}{No se encuentran planes de estudios registrados}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{GPE-J}{Gestionar Planes de Estudios}.
+\end{UCtrayectoriaA}

@@ -1,0 +1,109 @@
+\begin{UseCase}{SP5-CU4}{Registrar Usuario.}{El JDIC, JDIA y JIE podrán crear las cuentas de los empleados que están a su cargo.}
+	\UCitem{Versión}{\color{Gray}1.0}
+	\UCitem{Autor}{\color{Gray}Hernández Ruiz Rafael}
+	\UCitem{Supervisa}{\color{Gray}Ramos Diaz Enrique}
+	\UCitem{Actor}{JDIC, JDIA, JIE.}
+	\UCitem{Propósito}{Contar con los usuarios involucrados en el proceso para que interactúen en el sistema. }
+	\UCitem{Entradas}{
+		\begin{itemize}
+			\item Nombre.
+			\item Primer Apellido.
+			\item Segundo Apellido.
+			\item Titulo.
+			\item Cargo.
+			\item Lugar de trabajo.
+			\item Contraseña.
+			\item Correo electrónico.
+			\item Clic en el botón registrar.
+	\end{itemize}}
+	\UCitem{Origen}{Mouse y teclado.}
+	\UCitem{Salidas}{
+		\begin{itemize}
+			\item \MSGref{MSG25}{Servicios no disponibles.}
+			\item \MSGref{MSG5}{Registro finalizado exitosamente.}
+			\item \MSGref{MSG35}{Escriba información válida.}
+			\item \MSGref{MSG44}{El campo es requerido.}
+			\item \MSGref{MSG36}{El usuario ya existe en el sistema.}
+			\item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+		\end{itemize}
+	}
+	\UCitem{Destino}{Pantalla.}
+	\UCitem{Precondiciones}{ \begin{itemize}
+			\item Debe existir por lo menos un registro en el catálogo de cargos \BRref{BR14}{Catálogos del Sistema}.
+			\item Debe existir por lo menos un registro en el catalogo de lugares de trabajo \BRref{BR14}{Catálogos del Sistema}.
+			\item Debe existir por lo menos un registro en el catalogo de titulo \BRref{BR14}{Catálogos del Sistema}.
+	\end{itemize} }
+	\UCitem{Postcondiciones}{La gestión del nuevo usuario.}
+	\UCitem{Errores}{ \begin{itemize}
+			\item El catálogo de cargos no se cargo correctamente.
+			\item Hubo un problema al conectarse con la base de datos. \end{itemize}}
+	\UCitem{Estado}{Gestión y registro.}
+	\UCitem{Observaciones}{}
+	
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal.}
+	
+	\UCpaso[\UCactor] Presiona en la interfaz de usuario \IUref{IU2}{Gestionar usuarios} el botón \IUbutton{+}.
+	\UCpaso  Verifica la existencia de registros en los catálogos cargos, lugares de trabajo y titulo descritos en la \BRref{BR14}{Catálogos del Sistema}. [Trayectoria B] 
+	\UCpaso Carga la información de los catálogos cargos, lugares de trabajo y titulo de la \BRref{BR14}{Catálogos del Sistema} según la \BRref{BR3}{Gestión de Usuarios} para el actor. [Trayectoria G]
+	\UCpaso Muestra la interfaz de usuario  \IUref{IU8}{Registrar empleados}. 
+	\UCpaso[\UCactor] Ingresa el nombre del usuario, el sistema verifica la consistencia de la información conforme al diccionario de datos, la  \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.  [Trayectoria D] [Trayectoria F]  [Trayectoria H] 
+	\UCpaso[\UCactor] Ingresa el primer apellido del usuario, el sistema verifica la consistencia de la información conforme al diccionario de datos, la  \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.  [Trayectoria D] [Trayectoria F]  
+	\UCpaso[\UCactor] Ingresa el segundo apellido del usuario, el sistema verifica la consistencia de la información conforme al diccionario de datos, la  \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.  [Trayectoria D] [Trayectoria F]  
+	\UCpaso[\UCactor] Selecciona el titulo del usuario.  [Trayectoria D] [Trayectoria H]
+	\UCpaso[\UCactor] Selecciona la zona de trabajo del usuario. [Trayectoria D]
+	\UCpaso[\UCactor] Selecciona los cargos del usuario. [Trayectoria D] [Trayectoria H]
+	\UCpaso[\UCactor] Ingresa el correo electrónico del usuario, el sistema verifica la consistencia de la información conforme al diccionario de datos, la  \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.  [Trayectoria D] [Trayectoria F]  [Trayectoria H] 
+	\UCpaso[\UCactor] Ingresa la contraseña del usuario, el sistema verifica la consistencia de la información conforme al diccionario de datos, la  \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}.  [Trayectoria D] [Trayectoria F]  [Trayectoria H] 
+	\UCpaso[\UCactor]  Termina la operación presionando el botón de \IUbutton{Registrar}. 
+	\UCpaso Verifica la consistencia de la información conforme al diccionario de datos, la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} y la \BRref{BR16}{El correo electrónico del empleado es único}.  [Trayectoria F][Trayectoria H] [Trayectoria E]
+	\UCpaso El sistema registra al empleado. [Trayectoria G]
+	\UCpaso  El sistema muestra el \MSGref{MSG5}{Registro finalizado exitosamente}.    
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar usuarios}.
+\end{UCtrayectoria}
+
+
+\begin{UCtrayectoriaA}{B}{Los catálogos de la \BRref{BR14}{Catálogos del Sistema} necesarios no se pudieron cargar.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso El sistema continua en la interfaz de usuario \IUref{IU2}{Gestionar usuarios}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{D}{El actor presionó el botón \IUbutton{Cancelar}.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el boton \IUbutton{Sí}. [Trayectoria D.1]
+	\UCpaso El sistema regresa a la interfaz de usuario \IUref{IU2}{Gestionar usuarios}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{D.1}{El actor presionó el botón \IUbutton{No}.}
+	\UCpaso Cierra el mensaje y continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.	
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{E}{El usuario ya estaba registrado en el sistema.}
+	\UCpaso El sistema muestra el mensaje \MSGref{MSG36}{El usuario ya existe en el sistema.} 
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{F}{Inconsistencias con el diccionario de datos.}
+		\UCpaso El sistema muestra el mensaje \MSGref{MSG35}{Escriba información válida} debajo de campo que incumplió con el diccionario de datos.
+		\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+		\UCpaso Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
+	\end{UCtrayectoriaA}
+	
+	
+	%------------------------ CU TRAYECTORIA ALTERNARIVA G -------------------------
+	
+	\begin{UCtrayectoriaA}{G}{Ocurre un error al momento de persistir los datos.}
+		\UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
+		\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+		\UCpaso El sistema continua  en la interfaz de usuario \IUref{IU2}{Gestionar usuarios}.
+	\end{UCtrayectoriaA}
+	
+	
+	\begin{UCtrayectoriaA}{H}{Uno o mas campos se dejaron vacíos.}
+		\UCpaso El sistema muestra el mensaje \MSGref{MSG44}{Este campo es requerido} debajo de cada campo que no fue llenado. 
+		\UCpaso	Continúa en el paso 5 de la trayectoria principal del \UCref{SP5-CU4}.
+	\end{UCtrayectoriaA}

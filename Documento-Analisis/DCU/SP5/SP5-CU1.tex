@@ -1,87 +1,91 @@
-\chapter{Especificación de Casos de Uso}
-
 % INICIAR SESION
-\begin{UseCase}{M-CU1}{Iniciar sesion}{El usuario podrá ingresar al sistema.}
-		\UCitem{Versión}{\color{Gray}1.0}
-		\UCitem{Autor}{\color{Gray}Nicolás Sayago Abigail}
-	 
-		\UCitem{Supervisa}{\color{Gray}Ramos Díaz Enrique}
-		\UCitem{Actor}{\hyperlink{JDIC}{JDIC}, \hyperlink{JDIA}{JDIA}, \hyperlink{Analista de la DES}{Analista de la DES},\hyperlink{JUA}{JUA}, \hyperlink{Analista de la UA}{Analista de la UA}, \hyperlink{Docente}{Docente} }
-		\UCitem{Propósito}{Que cada usuario pueda contribuir a la gestión del proceso de creación de Unidades de Aprendizaje.}
-		\UCitem{Entradas}{Las entradas para el inicio de sesión serán:
+\begin{UseCase}{SP5-CU1}{Iniciar sesión}{Los diversos usuarios podrán ingresar al sistema.}
+        \UCitem{Versión}{\color{Gray}2.0}
+        \UCitem{Autor}{\color{Gray}Nicolás Sayago Abigail}
+     
+        \UCitem{Supervisa}{\color{Gray}Ramos Díaz Enrique}
+        \UCitem{Actor}{JDIC, JDIA, Analista de la DES, JIE, Analista de la UA, Docente.}
+        \UCitem{Propósito}{Contribuir a la gestión del proceso de creación de Unidades de Aprendizaje.}
+        \UCitem{Entradas}{Las entradas para el inicio de sesión serán:
           \begin{itemize}
-          	\item Matrícula.
-          	\item Contraseña.
+            \item Correo electrónico.
+            \item Contraseña.
           \end{itemize}
         }
-		\UCitem{Origen}{Teclado.}
-		\UCitem{Salidas}{
-        	\begin{itemize}
-        	    \item Página principal del sistema.
-                \item MSG1 Matrícula y/o contraseña no validas.
-        	\end{itemize}
+        \UCitem{Origen}{Teclado.}
+        \UCitem{Salidas}{
+            \begin{itemize}
+                \item Página principal del sistema según la \BRref{BR37}{Dirección web del sistema}.
+                \item \MSGref{MSG0}{Correo y/o contraseña incorrectas.}
+                \item \MSGref{MSG25}{Servicios no disponibles}.
+            \end{itemize}
         }
-		\UCitem{Destino}{Pantalla.}
-		\UCitem{Precondiciones}{
-		    \begin{itemize}
-		        \item La matrícula ingresada tiene una cuenta de usuario en el sistema.
-		    \end{itemize}
-		}
-		\UCitem{Postcondiciones}{1. El usuario puede ver sus opciones en el sistema, dependiendo del caso .}
-		\UCitem{Errores}{
-		    \begin{itemize}
-		        \item Matrícula incorrecta.
-		        \item Contraseña incorrecta.
-		        \item Matrícula y contraseña incorrecta.
-		        \item Hubo un problema al conectarse con el servidor.
-		        \item Hubo un problema al conectarse con la base de datos.
-		    \end{itemize}
-		}
-		\UCitem{Estado}{Consulta}
-		\UCitem{Observaciones}{}
+        \UCitem{Destino}{Pantalla.}
+        \UCitem{Precondiciones}{1. El correo electrónico ingresado tiene una cuenta de usuario en el sistema.
+        }
+        \UCitem{Postcondiciones}{1. El usuario puede ver sus opciones en el sistema, dependiendo del caso.}
+        \UCitem{Errores}{
+            \begin{itemize}
+                \item El correo ingresado no se encuentra registrado en el sistema.
+                \item Correo electrónico incorrecto.
+                \item Contraseña incorrecta.
+                \item Correo electrónico y contraseña incorrecta.
+                \item Hubo un problema al conectarse con el servidor.
+                \item Hubo un problema al conectarse con la base de datos.
+            \end{itemize}
+        }
+        \UCitem{Estado}{Acceso.}
+        \UCitem{Observaciones}{}
 \end{UseCase}
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
     
-    \UCpaso[\UCactor] Ingresa el url en el navegador establecido en la RNF. [Trayectoria A] 
-    \UCpaso Muestra la interfaz de usuario \IUref{IU}{Inicio de sesión}.
-    \UCpaso[\UCactor] Ingresa su matrícula con base en la regla \BRref{BR27}{Longitud máxima de matricula} y \BRref{BR16}{Matricula unica} 
-    \UCpaso[\UCactor] Ingresa su contraseña con base en la regla \BRref{BR28}{Longitud máxima de contraseña}.
-    \UCpaso[\UCactor] Inicia sesión presionando el botón.[Trayectoria B]
-    \IUbutton{Entrar} de la interfaz de usuario \IUref{IU}{Inicio de sesión}
-    \UCpaso[\UCactor] Muestra la interfaz de usuario. [Trayectoria A][Trayectoria C] [Trayectoria D] [Trayectoria E]
+    \UCpaso[\UCactor] Ingresa el url en el navegador establecido en la \BRref{BR37}{Dirección web del sistema}. [Trayectoria A] 
+    \UCpaso Muestra la interfaz de usuario \IUref{IU3}{Inicio de sesion}.
+    \UCpaso[\UCactor] Ingresa su correo electrónico.
+    \UCpaso[\UCactor] Ingresa su contraseña.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Entrar} de la interfaz de usuario \IUref{IU3}{Inicio de sesión}[Trayectoria A] [Trayectoria B] [Trayectoria C] [Trayectoria D] [Trayectoria E].
+    \UCpaso Muestra la interfaz de usuario \IUref{IU4}{Bienvenida para el JDIA ó JDIC}.
 \end{UCtrayectoria}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 
-\begin{UCtrayectoriaA}{A}{La página no se encuentra disponible.}
-	\UCpaso No se puede mostrar la página solicitada.
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG41}{Por el momento no esta disponible}.
+\begin{UCtrayectoriaA}{A}{El sistema no encuentra la interfaz a mostrar o existe un problema con el servidor.}
+    \UCpaso El sistema muestra el \MSGref{MSG25}{Servicios no disponibles}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
 
-\begin{UCtrayectoriaA}{B}{La matrícula y/o contraseña son incorrectas.}
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG0}{Matrícula y/o contraseña no validas.}
-    \UCpaso Continúa en el paso 3 de la trayectoria principal.
+\begin{UCtrayectoriaA}{B}{El correo y/o contraseña son incorrectas o se dejó algún campo vacío.}
+    \UCpaso El sistema muestra el \MSGref{MSG0}{Correo y/o contraseña incorrectas} junto a los campos.
+    \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}
-
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA C -------------------------
 
-\begin{UCtrayectoriaA}{C}{El usuario es un JDIA ó JDIC}
-    \UCpaso Muestra la interfaz de usuario \IUref{IU}{Bienvenida}.[Trayectoria A]
+\begin{UCtrayectoriaA}{C}{El usuario es un JIE.}
+    \UCpaso Muestra la interfaz de usuario \IUref{IU6}{Bienvenida para el JIE}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
 
-\begin{UCtrayectoriaA}{D}{El usuario es un JUA}
-    \UCpaso Muestra la interfaz de usuario \IUref{IU}{Bienvenida}.[Trayectoria A]
+\begin{UCtrayectoriaA}{D}{El usuario es un analista de la DES, analista de la UA o docente.}
+    \UCpaso Muestra la interfaz de usuario \IUref{IU5}{Bienvenida para analistas}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARIVA E -------------------------
 
-\begin{UCtrayectoriaA}{E}{El usuario es un analista de la DES, analista de la UA o docente}
-    \UCpaso Muestra la interfaz de usuario \IUref{IU}{Bienvenida}.[Trayectoria A]
+\begin{UCtrayectoriaA}{E}{La base de datos no está disponible, o hubo un error de conexión.}
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP5-CU1}.
 \end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+
+
+
+
