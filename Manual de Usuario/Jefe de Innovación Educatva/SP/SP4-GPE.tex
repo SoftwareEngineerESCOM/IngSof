@@ -17,7 +17,7 @@ Cuando el Jefe de Innovación Educativa da clic a un programa académico en la s
 
 En donde aparecerá, de forma predeterminada, un listado de todos los Planes de Estudios a su cargo registrados en el sistema al momento. Tendrá a su disposición tres funciones:
 
-\subsection{Buscar Planes de Estudio según su cargo}
+\subsection{Buscar Planes de Estudio según el programa académico}
 
 Para ello, el Jefe de Innovación Educativa tendrá que seleccionar el Programa Académico que desea consultar en el siguiente componente:
 
@@ -38,7 +38,7 @@ Para ello, el Jefe de Innovación Educativa tendrá que seleccionar el Programa 
 A continuación el sistema mostrará todos los Planes de Estudios que tengan el Programa Acádemico seleccionado.
 \begin{figure}[!hbtp]
 	\centering
-	\hypertarget{planes}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/planes}}
+	\hypertarget{planes}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/consultar}}
 	\caption{Planes de Estudios Encontrados}
 	\label{planes}
 \end{figure}
@@ -53,7 +53,7 @@ Para ello, el Jefe de Innovación Educativa tendrá que dar clic en el boton \IU
 	\caption{Botón Editar Plan de Estudio}
 	\label{editar}
 \end{figure}
-\newpage
+
 \begin{figure}[!hbtp]
 	\centering
 	\hypertarget{editarPE}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/editarPE}}
@@ -79,26 +79,39 @@ A continuación, el usuario puede modificar todos los campos del Plan de Estudio
 	\caption{Botón ''Cancelar''}
 	\label{cancel2}
 \end{figure}
+\newpage
 
 El sistema mostrará el siguiente mensaje:
-%Imagen MSG30
+\begin{figure}[!hbtp]
+	\centering
+	\hypertarget{ms1}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/m1}}
+	\caption{Mensaje de cancelar}
+	\label{ms1}
+\end{figure}
 
 Para confirmar, el usuario debe dar clic en el botón  \IUbutton{Si}, y el Plan de Estudio no será modificado.\\
 
 Para cancelar, el usuario debe dar clic en botón  \IUbutton{No}, el mensaje se cerrará y continuaremos en el formulario. Aqui el Jefe de Innovación Educativa puede terminar la edición del Plan de Estudio.\\
-\newpage
-Una vez modificados los datos, deberá de dar clic en el botón  \IUbutton{Registrar}.
+
+Una vez modificados los datos, deberá de dar clic en el botón  \IUbutton{Finalizar}.
 \begin{figure}[!hbtp]
 	\centering
 	\hypertarget{btnfin}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/editarPER}}
-	\caption{Botón ''Registrar''}
+	\caption{Botón ''Finalizar''}
 	\label{btnfin}
 \end{figure}
 
 Si no hubieron errores, el sistema muestra el siguiente mensaje:
 %Imagen MSG27
+\begin{figure}[!hbtp]
+	\centering
+	\hypertarget{ms2}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/m2}}
+	\caption{Mensaje de modificar datos}
+	\label{ms2}
+\end{figure}
 
-Al dar clic en en botón  \IUbutton{Aceptar}, el sistema redireccionará al usuario a la pantalla de \hyperlink{consultarPE}{\textit{Consultar Planes de Estudis}}, en donde podrá ver las modificaciones del Plan de Estudios.\\
+
+Al dar clic en en el botón  \IUbutton{Aceptar}, el sistema redireccionará al usuario a la pantalla de \hyperlink{consultarPE}{\textit{Consultar Planes de Estudios}}, en donde podrá ver las modificaciones del Plan de Estudios.\\
 \newpage
 \subsection{Posibles errores}
 
@@ -108,21 +121,48 @@ Al dar clic en en botón  \IUbutton{Aceptar}, el sistema redireccionará al usua
 	Si al momento de acceder a la pantalla de \hyperlink{editarPE}{\textit{Editar Plan de Estudio}} o al intentar modificar un Plan de Estudio, aparece alguno de los siguientes mensajes:
 
 	% Imagen MSG7 Y MSG25
+	\begin{figure}[!hbtp]
+		\centering
+		\hypertarget{ms3}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/m3}}
+		\caption{Mensaje de ningun plan de estudios registrado}
+		\label{ms3}
+	\end{figure}
+	\begin{figure}[!hbtp]
+		\centering
+		\hypertarget{error}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/error}}
+		\caption{Servicios no disponibles}
+		\label{error}
+	\end{figure}
 
-	Significa que existió un error de conexión o del sistema. Al dar clic en en botón  \IUbutton{Aeptar}, el sistema redireccionará al usuario a la pantalla de \hyperlink{consultarPE}{\textit{Consultar Planes de Estudios}}. Debe esperar a que la página este disponible o intentar acceder nuevamente.
+
+	Significa que hubo un error de conexión. Al dar clic en en botón  \IUbutton{Aeptar}, el sistema redireccionará al usuario a la pantalla de \hyperlink{consultarPE}{\textit{Consultar Planes de Estudios}}. 
+	\newpage
 
 	\item Campos vacíos al momento de modificar el Plan de Estudio
 
 	Si el Jefe de Innovación Educativa dejo en blanco algún campo del formulario, y posteriormente dio clic en el botón  \IUbutton{Registrar}, el sistema mostrará el siguiente mensaje:
 
 	% Imagen MSG32
+		\begin{figure}[!hbtp]
+		\centering
+		\hypertarget{ms4}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/m4}}
+		\caption{Campo Obligatorio}
+		\label{ms4}
+	\end{figure}
 
 	Al dar clic en botón  \IUbutton{Aceptar}, el mensaje se cerrará y regresaremos al formulario, en donde el usuario deberá llenar el o los campos que dejo vacío. Si se continúan dejando campos en blanco y dando clic en el botón  \IUbutton{Registrar}, aparecerá nuevamente el mensaje, hasta que todos los campos sean llenados.
+
 
 	\item Los campos ingresados no son válidos
 
 	Si al momento de dar clic en el \IUbutton{Registrar} aparece el siguiente mensaje:
 	% Imagen MSG20
+	\begin{figure}[!hbtp]
+		\centering
+		\hypertarget{ms5}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/m5}}
+		\caption{Datos no válidos}
+		\label{ms5}
+	\end{figure}
 
 	Significa que la composición de los datos ingresados en el formulario no es la correcta, verifíquelos e intente de nuevo.
 
@@ -132,7 +172,7 @@ Al dar clic en en botón  \IUbutton{Aceptar}, el sistema redireccionará al usua
 \newpage
 \section{Registrar Planes de Estudios}
 
-Para ello, el Docente deberá dar clic en el botón \IUbutton{+} en la parte inferior de la pantalla.
+Para ello, el Jefe de Innovación Educativa deberá dar clic en el botón \IUbutton{+} en la parte inferior de la pantalla.
 
 \begin{figure}[!hbtp]
 	\centering
@@ -146,11 +186,17 @@ Al hacerlo, el sistema redireccionará al usuario a la pantalla de \hyperlink{re
 
 \textbf{NOTA:} En caso de que exista un error de conexión, aparecerá el siguiente mensaje:
 %Imagen del MSG7
+	\begin{figure}[!hbtp]
+	\centering
+	\hypertarget{error}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/error}}
+	\caption{Servicios no disponibles}
+	\label{error}
+\end{figure}
 
-Al dar clic en en botón \IUbutton{Aceptar}, el sistema redireccionará al usuario a la pantalla de inicio. Debe esperar a que la página este disponible o intentar acceder nuevamente.
+Al dar clic en en botón \IUbutton{Aceptar}, el sistema redireccionará al usuario a la pantalla de \hyperlink{registrarPE}{\textit{Registrar Plan de Estudio}}. 
 \newpage
 \subsection{Registro de Plan de Estudio}
-Si el Docente en la pantalla de \hyperlink{consultarPE}{\textit{Consultar Planes de Estudios}} dio clic en el botón \IUbutton{+}, aparece la siguiente pantalla:
+Si el Jefe de Innovación Educativa en la pantalla de \hyperlink{consultarPE}{\textit{Consultar Planes de Estudios}} dio clic en el botón \IUbutton{+}, aparece la siguiente pantalla:
 
 \begin{figure}[!hbtp]
 	\centering
@@ -167,8 +213,8 @@ En donde tendrá que ingresar los campos del nuevo Plan de Estudio o en el formu
 	\caption{Ejemplo de llenado para agregar un nuevo Plan de Estudios}
 	\label{ejreg}
 \end{figure}
-\newpage
-Si el Docente  da clic en el botón \IUbutton{Cancelar} sin haber concluido el registro del Plan de Estudio:
+%\newpage
+Si el Jefe de Inovación Educativa da clic en el botón \IUbutton{Cancelar} sin haber concluido el registro del Plan de Estudio:
 
 \begin{figure}[!hbtp]
 	\centering
@@ -176,9 +222,16 @@ Si el Docente  da clic en el botón \IUbutton{Cancelar} sin haber concluido el r
 	\caption{Botón Cancelar}
 	\label{cancel2}
 \end{figure}
+\newpage
 
 El sistema mostrará el siguiente mensaje:
 %Imagen MSG30
+\begin{figure}[!hbtp]
+	\centering
+	\hypertarget{ms1}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/m1}}
+	\caption{Mensaje de cancelar}
+	\label{ms1}
+\end{figure}
 
 Para confirmar, el usuario debe dar clic en el botón  \IUbutton{Si}, y el Plan de Estudio no será registrado.\\
 
@@ -194,6 +247,12 @@ A continuación, una vez verificados los datos, deberá de dar clic en el botón
 
 Si no hubieron errores, el sistema muestra el siguiente mensaje:
 % Imagen MSG5
+	\begin{figure}[!hbtp]
+	\centering
+	\hypertarget{exito}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/exito}}
+	\caption{Registro exitoso}
+	\label{exito}
+\end{figure}
 
 Al dar clic en en botón \IUbutton{Aceptar}, el sistema redireccionará al usuario a la pantalla de \hyperlink{consultarPE}{\textit{Consultar Planes de Estudios}}, en donde podrá ver el nuevo Plan de Estudios agregado.\\
 \newpage
@@ -202,25 +261,57 @@ Al dar clic en en botón \IUbutton{Aceptar}, el sistema redireccionará al usuar
 	
 	\item Problemas con la conexión o el sistema
 	
-	Si al momento de acceder a la pantalla de \hyperlink{registrarPE}{\textit{Registrar Plan de Estudios}} o al intentar registrar un Plan de Estuido, aparece alguno de los siguientes mensajes:
+	Si al momento de acceder a la pantalla de \hyperlink{registrarPE}{\textit{Registrar Plan de Estudios}}, aparece alguno de los siguientes mensajes:
 	%Imagen MSG7 Y MSG25
+		\begin{figure}[!hbtp]
+		\centering
+		\hypertarget{error}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/error}}
+		\caption{Servicios no disponibles}
+		\label{error}
+		\end{figure}
+	
 	
 	Significa que existió un error de conexión o del sistema. Al dar clic en en botón \IUbutton{Aceptar}, el sistema redireccionará al usuario a la pantalla de \hyperlink{consultarPE}{\textit{Consultar Planes de Estudios}}. Debe esperar a que la página este disponible o intentar acceder nuevamente.
+	\newpage
+	\item Plan de Estudios en proceso
+	
+	Si al momento de registrar un nuevo Plan de Estudio, aparece alguno de los siguientes mensajes:
+	%Imagen MSG7 Y MSG25
+	\begin{figure}[!hbtp]
+		\centering
+		\hypertarget{error1}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/error1}}
+		\caption{Plan de Estudio en proceso}
+		\label{error1}
+	\end{figure}
+	
+	
+	Significa que ya hay un Plan de Estudio en proceoso. Al dar clic en en botón \IUbutton{Aceptar}, el sistema redireccionará al usuario a la pantalla de \hyperlink{registrarPE}{\textit{Registrar Planes de Estudios}}. 
 	
 	\item Campos vacíos al momento de agregar un nuevo Plan de Estudio
 	
 	Si el Docente dejo en blanco algún campo del formulario, y posteriormente dio clic en el botón \IUbutton{Registrar}, el sistema mostrará el siguiente mensaje:
 	%Imagen MSG32
-	
+		\begin{figure}[!hbtp]
+		\centering
+		\hypertarget{ms4}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/m4}}
+		\caption{Campos obligatorios}
+		\label{ms4}
+	    \end{figure}
+    
 	Al dar clic en botón \IUbutton{Aceptar}, el mensaje se cerrará y regresaremos al formulario, en donde el usuario deberá llenar el o los campos que dejo vacío. Si se continúan dejando campos en blanco y dando clic en el botón \IUbutton{Registrar}, aparecerá nuevamente el mensaje, hasta que todos los campos sean llenados.\\
 	
-	
+	\newpage
 	
 	\item Los campos ingresados no son válidos
 	
 	Si al momento de dar clic en el botón \IUbutton{Registrar} aparece el siguiente mensaje:
 	%Imagen MSG20
-	
+	\begin{figure}[!hbtp]
+		\centering
+		\hypertarget{ms5}{\includegraphics[width=0.7\linewidth]{images/SP4-GPE/m5}}
+		\caption{Datos no válidos}
+		\label{ms5}
+	\end{figure}
 	
 \end{itemize}
 
