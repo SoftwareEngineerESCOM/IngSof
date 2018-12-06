@@ -1,5 +1,7 @@
 \babel@toc {spanish}{}
-\contentsline {section}{\numberline {0.1}PROC-02 Creación de una Unidad de Aprendizaje}{4}{section.0.1}
-\contentsline {subsection}{\numberline {0.1.1}Resumen}{4}{subsection.0.1.1}
-\contentsline {subsection}{\numberline {0.1.2}Elementos del proceso}{4}{subsection.0.1.2}
-\contentsline {subsection}{\numberline {0.1.3}Descripción de Tareas}{4}{subsection.0.1.3}
+\contentsline {chapter}{\numberline {1}Procesos}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}PROC-01 Creaci\IeC {\'o}n de un Programa Acad\IeC {\'e}mico}{5}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Resumen}{5}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Elementos del proceso}{5}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Descripci\IeC {\'o}n de Tareas}{6}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}Descripci\IeC {\'o}n}{6}{section.1.2}
