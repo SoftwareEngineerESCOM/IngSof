@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.25)  3 DEC 2018 23:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.25)  5 DEC 2018 19:40
 entering extended mode
 **./main.tex
 (main.tex
@@ -1327,7 +1327,6 @@ Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 17.
 \openout2 = `SP/SP4-GPE.aux'.
 
  (SP/SP4-GPE.tex
-Cap\'{\i }tulo 4.
 <images/SP4-GPE/consultar.png, id=408, 779.91376pt x 387.94937pt>
 File: images/SP4-GPE/consultar.png Graphic file (type png)
 <use images/SP4-GPE/consultar.png>
@@ -1347,28 +1346,30 @@ File: images/SP4-GPE/consultar.png Graphic file (type png)
 <use images/SP4-GPE/consultar.png>
 Package pdftex.def Info: images/SP4-GPE/consultar.png  used on input line 41.
 (pdftex.def)             Requested size: 350.33727pt x 174.26778pt.
-[24
-
-
-
- <./images/SP4-GPE/consultar.png>]
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 45.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [25 <./images/SP4-GPE/programa.png> <./images/SP4-GPE/programaD.png>]pdfTeX wa
-rning (ext4): destination with the same identifier (name{editar}) has been alre
-ady used, duplicate ignored
+ [24
+
+
+ <./images/SP4-GPE/consultar.png> <./images/SP4-GPE/programa.png>]
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 45.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+ [25 <./images/SP4-GPE/programaD.png>]pdfTeX warning (ext4): destination with t
+he same identifier (name{editar}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.52 ...th=0.7\linewidth]{images/SP4-GPE/editarC}}
                                                   
-<images/SP4-GPE/editarC.png, id=430, 1169.87062pt x 581.92406pt>
+<images/SP4-GPE/editarC.png, id=433, 1169.87062pt x 581.92406pt>
 File: images/SP4-GPE/editarC.png Graphic file (type png)
 <use images/SP4-GPE/editarC.png>
 Package pdftex.def Info: images/SP4-GPE/editarC.png  used on input line 52.
 (pdftex.def)             Requested size: 350.33727pt x 174.26778pt.
-<images/SP4-GPE/editarPE.png, id=431, 783.42688pt x 456.20438pt>
+<images/SP4-GPE/editarPE.png, id=434, 783.42688pt x 456.20438pt>
 File: images/SP4-GPE/editarPE.png Graphic file (type png)
 <use images/SP4-GPE/editarPE.png>
 Package pdftex.def Info: images/SP4-GPE/editarPE.png  used on input line 59.
@@ -1384,7 +1385,7 @@ ing (ext4): destination with the same identifier (name{modif}) has been already
                    \relax 
 l.69 ...=0.7\linewidth]{images/SP4-GPE/editarPE1}}
                                                   
-<images/SP4-GPE/editarPE1.png, id=441, 523.45563pt x 456.70625pt>
+<images/SP4-GPE/editarPE1.png, id=445, 523.45563pt x 456.70625pt>
 File: images/SP4-GPE/editarPE1.png Graphic file (type png)
 <use images/SP4-GPE/editarPE1.png>
 Package pdftex.def Info: images/SP4-GPE/editarPE1.png  used on input line 69.
@@ -1395,7 +1396,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cancel2}) has
                    \relax 
 l.78 ...0.7\linewidth]{images/SP4-GPE/cancelarPE}}
                                                   
-<images/SP4-GPE/cancelarPE.png, id=442, 678.28406pt x 66.2475pt>
+<images/SP4-GPE/cancelarPE.png, id=446, 678.28406pt x 66.2475pt>
 File: images/SP4-GPE/cancelarPE.png Graphic file (type png)
 <use images/SP4-GPE/cancelarPE.png>
 Package pdftex.def Info: images/SP4-GPE/cancelarPE.png  used on input line 78.
@@ -1405,7 +1406,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 82.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [27 <./images/SP4-GPE/editarPE1.png> <./images/SP4-GPE/cancelarPE.png>]
-<images/SP4-GPE/m1.png, id=451, 506.89375pt x 170.6375pt>
+<images/SP4-GPE/m1.png, id=455, 506.89375pt x 170.6375pt>
 File: images/SP4-GPE/m1.png Graphic file (type png)
 <use images/SP4-GPE/m1.png>
 Package pdftex.def Info: images/SP4-GPE/m1.png  used on input line 87.
@@ -1426,12 +1427,12 @@ been already used, duplicate ignored
                    \relax 
 l.99 ...=0.7\linewidth]{images/SP4-GPE/editarPER}}
                                                   
-<images/SP4-GPE/editarPER.png, id=452, 647.41875pt x 78.2925pt>
+<images/SP4-GPE/editarPER.png, id=456, 647.41875pt x 78.2925pt>
 File: images/SP4-GPE/editarPER.png Graphic file (type png)
 <use images/SP4-GPE/editarPER.png>
 Package pdftex.def Info: images/SP4-GPE/editarPER.png  used on input line 99.
 (pdftex.def)             Requested size: 350.33727pt x 42.36691pt.
-<images/SP4-GPE/m2.png, id=453, 368.37625pt x 173.14688pt>
+<images/SP4-GPE/m2.png, id=457, 368.37625pt x 173.14688pt>
 File: images/SP4-GPE/m2.png Graphic file (type png)
 <use images/SP4-GPE/m2.png>
 Package pdftex.def Info: images/SP4-GPE/m2.png  used on input line 108.
@@ -1447,12 +1448,12 @@ Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 115.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
 [28 <./images/SP4-GPE/m1.png> <./images/SP4-GPE/editarPER.png> <./images/SP4-GP
 E/m2.png>]
-<images/SP4-GPE/m3.png, id=469, 383.93437pt x 170.6375pt>
+<images/SP4-GPE/m3.png, id=473, 383.93437pt x 170.6375pt>
 File: images/SP4-GPE/m3.png Graphic file (type png)
 <use images/SP4-GPE/m3.png>
 Package pdftex.def Info: images/SP4-GPE/m3.png  used on input line 126.
 (pdftex.def)             Requested size: 350.33727pt x 155.71516pt.
-<images/SP4-GPE/error.png, id=470, 245.718pt x 145.7445pt>
+<images/SP4-GPE/error.png, id=474, 245.718pt x 145.7445pt>
 File: images/SP4-GPE/error.png Graphic file (type png)
 <use images/SP4-GPE/error.png>
 Package pdftex.def Info: images/SP4-GPE/error.png  used on input line 132.
@@ -1462,12 +1463,12 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 139.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [29 <./images/SP4-GPE/m3.png> <./images/SP4-GPE/error.png>]
-<images/SP4-GPE/m4.png, id=482, 489.32813pt x 101.37875pt>
+<images/SP4-GPE/m4.png, id=487, 489.32813pt x 101.37875pt>
 File: images/SP4-GPE/m4.png Graphic file (type png)
 <use images/SP4-GPE/m4.png>
 Package pdftex.def Info: images/SP4-GPE/m4.png  used on input line 148.
 (pdftex.def)             Requested size: 350.33727pt x 72.58424pt.
-<images/SP4-GPE/m5.png, id=483, 436.63126pt x 106.89937pt>
+<images/SP4-GPE/m5.png, id=488, 436.63126pt x 106.89937pt>
 File: images/SP4-GPE/m5.png Graphic file (type png)
 <use images/SP4-GPE/m5.png>
 Package pdftex.def Info: images/SP4-GPE/m5.png  used on input line 162.
@@ -1483,7 +1484,7 @@ ate ignored
                    \relax 
 l.179 ...width=0.7\linewidth]{images/SP4-GPE/mas}}
                                                   
-<images/SP4-GPE/mas.png, id=495, 1169.87062pt x 581.92406pt>
+<images/SP4-GPE/mas.png, id=500, 1169.87062pt x 581.92406pt>
 File: images/SP4-GPE/mas.png Graphic file (type png)
 <use images/SP4-GPE/mas.png>
 Package pdftex.def Info: images/SP4-GPE/mas.png  used on input line 179.
@@ -1503,7 +1504,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 197.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [31 <./images/SP4-GPE/mas.png>]
-<images/SP4-GPE/registrarPE.png, id=506, 627.34375pt x 456.70625pt>
+<images/SP4-GPE/registrarPE.png, id=512, 627.34375pt x 456.70625pt>
 File: images/SP4-GPE/registrarPE.png Graphic file (type png)
 <use images/SP4-GPE/registrarPE.png>
 Package pdftex.def Info: images/SP4-GPE/registrarPE.png  used on input line 203
@@ -1519,7 +1520,7 @@ Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 207.
                    \relax 
 l.212 ...linewidth]{images/SP4-GPE/registrarEjem}}
                                                   
-<images/SP4-GPE/registrarEjem.png, id=513, 584.1825pt x 458.21187pt>
+<images/SP4-GPE/registrarEjem.png, id=520, 584.1825pt x 458.21187pt>
 File: images/SP4-GPE/registrarEjem.png Graphic file (type png)
 <use images/SP4-GPE/registrarEjem.png>
 Package pdftex.def Info: images/SP4-GPE/registrarEjem.png  used on input line 2
@@ -1561,7 +1562,7 @@ been already used, duplicate ignored
                    \relax 
 l.243 ....7\linewidth]{images/SP4-GPE/registrarB}}
                                                   
-<images/SP4-GPE/registrarB.png, id=521, 644.4075pt x 76.78688pt>
+<images/SP4-GPE/registrarB.png, id=528, 644.4075pt x 76.78688pt>
 File: images/SP4-GPE/registrarB.png Graphic file (type png)
 <use images/SP4-GPE/registrarB.png>
 Package pdftex.def Info: images/SP4-GPE/registrarB.png  used on input line 243.
@@ -1573,7 +1574,7 @@ een already used, duplicate ignored
                    \relax 
 l.252 ...dth=0.7\linewidth]{images/SP4-GPE/exito}}
                                                   
-<images/SP4-GPE/exito.png, id=522, 328.22626pt x 144.54pt>
+<images/SP4-GPE/exito.png, id=529, 328.22626pt x 144.54pt>
 File: images/SP4-GPE/exito.png Graphic file (type png)
 <use images/SP4-GPE/exito.png>
 Package pdftex.def Info: images/SP4-GPE/exito.png  used on input line 252.
@@ -1603,7 +1604,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 275.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [35]
-<images/SP4-GPE/error1.png, id=539, 394.47375pt x 188.20313pt>
+<images/SP4-GPE/error1.png, id=547, 394.47375pt x 188.20313pt>
 File: images/SP4-GPE/error1.png Graphic file (type png)
 <use images/SP4-GPE/error1.png>
 Package pdftex.def Info: images/SP4-GPE/error1.png  used on input line 282.
@@ -1646,8 +1647,8 @@ Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 18.
 \openout2 = `SP/SP4-GUA.aux'.
 
  (SP/SP4-GUA.tex
-Cap\'{\i }tulo 5.
-<images/GUA/consultarS.png, id=556, 1156.32pt x 504.08325pt>
+Cap\'{\i }tulo 4.
+<images/GUA/consultarS.png, id=564, 1156.32pt x 504.08325pt>
 File: images/GUA/consultarS.png Graphic file (type png)
 <use images/GUA/consultarS.png>
 Package pdftex.def Info: images/GUA/consultarS.png  used on input line 6.
@@ -1657,7 +1658,7 @@ Package pdftex.def Info: images/GUA/consultarS.png  used on input line 6.
 
 
  <./images/GUA/consultarS.png (PNG copy)>]
-<images/GUA/consultarUA.png, id=564, 1156.32pt x 504.6855pt>
+<images/GUA/consultarUA.png, id=572, 1156.32pt x 504.6855pt>
 File: images/GUA/consultarUA.png Graphic file (type png)
 <use images/GUA/consultarUA.png>
 Package pdftex.def Info: images/GUA/consultarUA.png  used on input line 14.
@@ -1669,7 +1670,7 @@ Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 19.
  [39
 
  <./images/GUA/consultarUA.png>]
-<images/GUA/registrarUA.png, id=574, 510.10574pt x 451.08525pt>
+<images/GUA/registrarUA.png, id=582, 510.10574pt x 451.08525pt>
 File: images/GUA/registrarUA.png Graphic file (type png)
 <use images/GUA/registrarUA.png>
 Package pdftex.def Info: images/GUA/registrarUA.png  used on input line 24.
@@ -1681,17 +1682,17 @@ Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 28.
  [40
 
  <./images/GUA/registrarUA.png>]
-<images/GUA/invalido.png, id=583, 456.5055pt x 47.57774pt>
+<images/GUA/invalido.png, id=591, 456.5055pt x 47.57774pt>
 File: images/GUA/invalido.png Graphic file (type png)
 <use images/GUA/invalido.png>
 Package pdftex.def Info: images/GUA/invalido.png  used on input line 33.
 (pdftex.def)             Requested size: 350.33727pt x 36.51299pt.
-<images/GUA/requerido.png, id=584, 461.92575pt x 48.18pt>
+<images/GUA/requerido.png, id=592, 461.92575pt x 48.18pt>
 File: images/GUA/requerido.png Graphic file (type png)
 <use images/GUA/requerido.png>
 Package pdftex.def Info: images/GUA/requerido.png  used on input line 40.
 (pdftex.def)             Requested size: 350.33727pt x 36.54216pt.
-<images/GUA/registrarBtn.png, id=585, 483.0045pt x 39.7485pt>
+<images/GUA/registrarBtn.png, id=593, 483.0045pt x 39.7485pt>
 File: images/GUA/registrarBtn.png Graphic file (type png)
 <use images/GUA/registrarBtn.png>
 Package pdftex.def Info: images/GUA/registrarBtn.png  used on input line 47.
@@ -1702,17 +1703,17 @@ een already used, duplicate ignored
                    \relax 
 l.54 ...cs[width=0.7\linewidth]{images/GUA/exito}}
                                                   
-<images/GUA/exito.png, id=586, 328.22626pt x 144.54pt>
+<images/GUA/exito.png, id=594, 328.22626pt x 144.54pt>
 File: images/GUA/exito.png Graphic file (type png)
 <use images/GUA/exito.png>
 Package pdftex.def Info: images/GUA/exito.png  used on input line 54.
 (pdftex.def)             Requested size: 350.33727pt x 154.2791pt.
-<images/GUA/error.png, id=587, 245.718pt x 145.7445pt>
+<images/GUA/error.png, id=595, 245.718pt x 145.7445pt>
 File: images/GUA/error.png Graphic file (type png)
 <use images/GUA/error.png>
 Package pdftex.def Info: images/GUA/error.png  used on input line 61.
 (pdftex.def)             Requested size: 350.33727pt x 207.82149pt.
-<images/GUA/cancelar.png, id=588, 717.27975pt x 182.48175pt>
+<images/GUA/cancelar.png, id=596, 717.27975pt x 182.48175pt>
 File: images/GUA/cancelar.png Graphic file (type png)
 <use images/GUA/cancelar.png>
 Package pdftex.def Info: images/GUA/cancelar.png  used on input line 68.
@@ -1728,12 +1729,12 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 72.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [42 <./images/GUA/error.png> <./images/GUA/cancelar.png (PNG copy)>]
-<images/uc/lapiz.png, id=611, 1204.5pt x 1204.5pt>
+<images/uc/lapiz.png, id=619, 1204.5pt x 1204.5pt>
 File: images/uc/lapiz.png Graphic file (type png)
 <use images/uc/lapiz.png>
 Package pdftex.def Info: images/uc/lapiz.png  used on input line 74.
 (pdftex.def)             Requested size: 10.99074pt x 11.0pt.
-<images/GUA/editarUA.png, id=613, 1156.32pt x 504.08325pt>
+<images/GUA/editarUA.png, id=621, 1156.32pt x 504.08325pt>
 File: images/GUA/editarUA.png Graphic file (type png)
 <use images/GUA/editarUA.png>
 Package pdftex.def Info: images/GUA/editarUA.png  used on input line 77.
@@ -1746,12 +1747,12 @@ File: images/GUA/requerido.png Graphic file (type png)
 <use images/GUA/requerido.png>
 Package pdftex.def Info: images/GUA/requerido.png  used on input line 93.
 (pdftex.def)             Requested size: 350.33727pt x 36.54216pt.
-<images/GUA/finalizarBtn.png, id=615, 475.7775pt x 39.14626pt>
+<images/GUA/finalizarBtn.png, id=623, 475.7775pt x 39.14626pt>
 File: images/GUA/finalizarBtn.png Graphic file (type png)
 <use images/GUA/finalizarBtn.png>
 Package pdftex.def Info: images/GUA/finalizarBtn.png  used on input line 100.
 (pdftex.def)             Requested size: 350.33727pt x 28.8268pt.
-<images/GUA/modificacion.png, id=616, 392.667pt x 142.73325pt>
+<images/GUA/modificacion.png, id=624, 392.667pt x 142.73325pt>
 File: images/GUA/modificacion.png Graphic file (type png)
 <use images/GUA/modificacion.png>
 Package pdftex.def Info: images/GUA/modificacion.png  used on input line 107.
@@ -1775,7 +1776,7 @@ Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 125.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [44 <./images/GUA/finalizarBtn.png> <./images/GUA/modificacion.png (PNG copy)>
 ]
-<images/GUA/EliminarUA.png, id=643, 554.07pt x 205.9695pt>
+<images/GUA/EliminarUA.png, id=651, 554.07pt x 205.9695pt>
 File: images/GUA/EliminarUA.png Graphic file (type png)
 <use images/GUA/EliminarUA.png>
 Package pdftex.def Info: images/GUA/EliminarUA.png  used on input line 130.
@@ -1796,42 +1797,75 @@ LaTeX Info: Redefining \% on input line 23.
 (SP/SP4-GUA.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 20.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 20.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8AC37CE064073429F51EA4023E5A5633;2338.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 8AC37CE064073429F51EA4023E5A5633;2338
+(rerunfilecheck)             After:  7FCDCA43EDFB8FC4BE0D29751828EEB3;2033.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 20.
  ) 
 Here is how much of TeX's memory you used:
- 10786 strings out of 492970
- 168131 string characters out of 3126149
+ 10795 strings out of 492970
+ 168250 string characters out of 3126149
  270381 words of memory out of 3000000
  14161 multiletter control sequences out of 15000+200000
  15520 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,16n,46p,591b,675s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dp
-i600\cmbrsl10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\pub
-lic\cmbright\dpi600\cmbrsy10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\public\cmbright\dpi720\cmbrbx10.pk> <C:\Users\Andrez\AppData\Local\
-MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\cmbrbx10.pk> <C:\Users\Andrez
-\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbr8.pk> <C:\
-Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi375\cm
-brsl8.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbr
-ight\dpi600\cmbr10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\public\cmbright\dpi600\cmbrbx10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9
-\fonts\pk\ljfour\public\cmbright\dpi864\cmbr10.pk> <C:\Users\Andrez\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi720\cmbr10.pk> <C:\Users\Andre
-z\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbr17.pk> <C
-:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\
-cmbr17.pk><C:/Users/Andrez/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/latxfont/lcirclew.pfb><C:/Users/Andrez/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on main.pdf (46 pages, 2459423 bytes).
+pdfTeX warning (dest): name{section.5.4} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+ <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi6
+00\cmbrsl10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\publi
+c\cmbright\dpi600\cmbrsy10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\
+pk\ljfour\public\cmbright\dpi720\cmbrbx10.pk> <C:\Users\Andrez\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\cmbrbx10.pk> <C:\Users\Andrez\A
+ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbr8.pk> <C:\Us
+ers\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi375\cmbr
+sl8.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbrig
+ht\dpi600\cmbr10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+public\cmbright\dpi600\cmbrbx10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\public\cmbright\dpi864\cmbr10.pk> <C:\Users\Andrez\AppData\Local
+\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi720\cmbr10.pk> <C:\Users\Andrez\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbr17.pk> <C:\
+Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\cm
+br17.pk><C:/Users/Andrez/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/latxfont/lcirclew.pfb><C:/Users/Andrez/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/marvosym/marvosym.pfb>
+Output written on main.pdf (46 pages, 2460612 bytes).
 PDF statistics:
- 1092 PDF objects out of 1200 (max. 8388607)
- 212 named destinations out of 1000 (max. 500000)
+ 1105 PDF objects out of 1200 (max. 8388607)
+ 221 named destinations out of 1000 (max. 500000)
  604 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -9,11 +9,11 @@
 \contentsline {section}{\numberline {3.1}Registro de Usuarios}{5}{section.3.1}
 \contentsline {section}{\numberline {3.2}Consulta de Usuarios}{5}{section.3.2}
 \contentsline {section}{\numberline {3.3}Edici\IeC {\'o}n de Usuarios}{6}{section.3.3}
-\contentsline {chapter}{\numberline {4}Gesti\IeC {\'o}n de Plan de Estudios}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}Consulta de Planes de Estudios}{7}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Buscar Planes de Estudio seg\IeC {\'u}n el programa acad\IeC {\'e}mico}{7}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Editar Planes de Estudios}{9}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Posibles errores}{12}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Registrar Planes de Estudios}{14}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Registro de Plan de Estudio}{15}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Posibles errores}{18}{subsection.4.3.2}
+\contentsline {section}{\numberline {3.4}Gesti\IeC {\'o}n de Plan de Estudios}{7}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Consulta de Planes de Estudios}{7}{subsection.3.4.1}
+\contentsline {subsubsection}{Buscar Planes de Estudio seg\IeC {\'u}n el programa acad\IeC {\'e}mico}{7}{section*.2}
+\contentsline {subsection}{\numberline {3.4.2}Editar Planes de Estudios}{9}{subsection.3.4.2}
+\contentsline {subsubsection}{Posibles errores}{12}{section*.3}
+\contentsline {subsection}{\numberline {3.4.3}Registrar Planes de Estudios}{14}{subsection.3.4.3}
+\contentsline {subsubsection}{Registro de Plan de Estudio}{15}{section*.4}
+\contentsline {subsubsection}{Posibles errores}{18}{section*.5}

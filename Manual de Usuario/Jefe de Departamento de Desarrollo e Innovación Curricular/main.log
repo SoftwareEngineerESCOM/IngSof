@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.25)  3 DEC 2018 23:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.25)  5 DEC 2018 19:47
 entering extended mode
 **./main.tex
 (main.tex
@@ -821,7 +821,6 @@ Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 16.
 \openout2 = `SP/SP4-GPE.aux'.
 
  (SP/SP4-GPE.tex
-Cap\'{\i }tulo 4.
 <images/SP4-GPE/consultar.png, id=145, 779.91376pt x 387.94937pt>
 File: images/SP4-GPE/consultar.png Graphic file (type png)
 <use images/SP4-GPE/consultar.png>
@@ -841,24 +840,27 @@ File: images/SP4-GPE/consultar.png Graphic file (type png)
 <use images/SP4-GPE/consultar.png>
 Package pdftex.def Info: images/SP4-GPE/consultar.png  used on input line 41.
 (pdftex.def)             Requested size: 350.33727pt x 174.26778pt.
-[7
-
-
-
- <./images/SP4-GPE/consultar.png>]
 File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 <use IG-GRAL/headerInp.jpg>
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 45.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
- [8 <./images/SP4-GPE/programa.png> <./images/SP4-GPE/programaD.png>]
+ [7
+
+
+ <./images/SP4-GPE/consultar.png> <./images/SP4-GPE/programa.png>]
+File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
+<use IG-GRAL/headerInp.jpg>
+Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 45.
+(pdftex.def)             Requested size: 333.38306pt x 35.0pt.
+ [8 <./images/SP4-GPE/programaD.png>]
 LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <10> not available
 (Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 48.
-<images/SP4-GPE/editarC.png, id=167, 1169.87062pt x 581.92406pt>
+<images/SP4-GPE/editarC.png, id=170, 1169.87062pt x 581.92406pt>
 File: images/SP4-GPE/editarC.png Graphic file (type png)
 <use images/SP4-GPE/editarC.png>
 Package pdftex.def Info: images/SP4-GPE/editarC.png  used on input line 52.
 (pdftex.def)             Requested size: 350.33727pt x 174.26778pt.
-<images/SP4-GPE/editarPE.png, id=168, 783.42688pt x 456.20438pt>
+<images/SP4-GPE/editarPE.png, id=171, 783.42688pt x 456.20438pt>
 File: images/SP4-GPE/editarPE.png Graphic file (type png)
 <use images/SP4-GPE/editarPE.png>
 Package pdftex.def Info: images/SP4-GPE/editarPE.png  used on input line 59.
@@ -868,12 +870,12 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 65.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [9 <./images/SP4-GPE/editarC.png> <./images/SP4-GPE/editarPE.png>]
-<images/SP4-GPE/editarPE1.png, id=181, 523.45563pt x 456.70625pt>
+<images/SP4-GPE/editarPE1.png, id=185, 523.45563pt x 456.70625pt>
 File: images/SP4-GPE/editarPE1.png Graphic file (type png)
 <use images/SP4-GPE/editarPE1.png>
 Package pdftex.def Info: images/SP4-GPE/editarPE1.png  used on input line 69.
 (pdftex.def)             Requested size: 350.33727pt x 305.67102pt.
-<images/SP4-GPE/cancelarPE.png, id=182, 678.28406pt x 66.2475pt>
+<images/SP4-GPE/cancelarPE.png, id=186, 678.28406pt x 66.2475pt>
 File: images/SP4-GPE/cancelarPE.png Graphic file (type png)
 <use images/SP4-GPE/cancelarPE.png>
 Package pdftex.def Info: images/SP4-GPE/cancelarPE.png  used on input line 78.
@@ -883,7 +885,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 82.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [10 <./images/SP4-GPE/editarPE1.png> <./images/SP4-GPE/cancelarPE.png>]
-<images/SP4-GPE/m1.png, id=193, 506.89375pt x 170.6375pt>
+<images/SP4-GPE/m1.png, id=197, 506.89375pt x 170.6375pt>
 File: images/SP4-GPE/m1.png Graphic file (type png)
 <use images/SP4-GPE/m1.png>
 Package pdftex.def Info: images/SP4-GPE/m1.png  used on input line 87.
@@ -898,12 +900,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
-<images/SP4-GPE/editarPER.png, id=194, 647.41875pt x 78.2925pt>
+<images/SP4-GPE/editarPER.png, id=198, 647.41875pt x 78.2925pt>
 File: images/SP4-GPE/editarPER.png Graphic file (type png)
 <use images/SP4-GPE/editarPER.png>
 Package pdftex.def Info: images/SP4-GPE/editarPER.png  used on input line 99.
 (pdftex.def)             Requested size: 350.33727pt x 42.36691pt.
-<images/SP4-GPE/m2.png, id=195, 368.37625pt x 173.14688pt>
+<images/SP4-GPE/m2.png, id=199, 368.37625pt x 173.14688pt>
 File: images/SP4-GPE/m2.png Graphic file (type png)
 <use images/SP4-GPE/m2.png>
 Package pdftex.def Info: images/SP4-GPE/m2.png  used on input line 108.
@@ -919,12 +921,12 @@ Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 115.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
 [11 <./images/SP4-GPE/m1.png> <./images/SP4-GPE/editarPER.png> <./images/SP4-GP
 E/m2.png>]
-<images/SP4-GPE/m3.png, id=212, 383.93437pt x 170.6375pt>
+<images/SP4-GPE/m3.png, id=216, 383.93437pt x 170.6375pt>
 File: images/SP4-GPE/m3.png Graphic file (type png)
 <use images/SP4-GPE/m3.png>
 Package pdftex.def Info: images/SP4-GPE/m3.png  used on input line 126.
 (pdftex.def)             Requested size: 350.33727pt x 155.71516pt.
-<images/SP4-GPE/error.png, id=213, 245.718pt x 145.7445pt>
+<images/SP4-GPE/error.png, id=217, 245.718pt x 145.7445pt>
 File: images/SP4-GPE/error.png Graphic file (type png)
 <use images/SP4-GPE/error.png>
 Package pdftex.def Info: images/SP4-GPE/error.png  used on input line 132.
@@ -934,12 +936,12 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 139.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [12 <./images/SP4-GPE/m3.png> <./images/SP4-GPE/error.png>]
-<images/SP4-GPE/m4.png, id=226, 489.32813pt x 101.37875pt>
+<images/SP4-GPE/m4.png, id=231, 489.32813pt x 101.37875pt>
 File: images/SP4-GPE/m4.png Graphic file (type png)
 <use images/SP4-GPE/m4.png>
 Package pdftex.def Info: images/SP4-GPE/m4.png  used on input line 148.
 (pdftex.def)             Requested size: 350.33727pt x 72.58424pt.
-<images/SP4-GPE/m5.png, id=227, 436.63126pt x 106.89937pt>
+<images/SP4-GPE/m5.png, id=232, 436.63126pt x 106.89937pt>
 File: images/SP4-GPE/m5.png Graphic file (type png)
 <use images/SP4-GPE/m5.png>
 Package pdftex.def Info: images/SP4-GPE/m5.png  used on input line 162.
@@ -949,7 +951,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 172.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [13 <./images/SP4-GPE/m4.png> <./images/SP4-GPE/m5.png>]
-<images/SP4-GPE/mas.png, id=238, 1169.87062pt x 581.92406pt>
+<images/SP4-GPE/mas.png, id=243, 1169.87062pt x 581.92406pt>
 File: images/SP4-GPE/mas.png Graphic file (type png)
 <use images/SP4-GPE/mas.png>
 Package pdftex.def Info: images/SP4-GPE/mas.png  used on input line 179.
@@ -969,7 +971,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 197.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [14 <./images/SP4-GPE/mas.png>]
-<images/SP4-GPE/registrarPE.png, id=250, 627.34375pt x 456.70625pt>
+<images/SP4-GPE/registrarPE.png, id=256, 627.34375pt x 456.70625pt>
 File: images/SP4-GPE/registrarPE.png Graphic file (type png)
 <use images/SP4-GPE/registrarPE.png>
 Package pdftex.def Info: images/SP4-GPE/registrarPE.png  used on input line 203
@@ -980,7 +982,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 207.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [15 <./images/SP4-GPE/registrarPE.png>]
-<images/SP4-GPE/registrarEjem.png, id=257, 584.1825pt x 458.21187pt>
+<images/SP4-GPE/registrarEjem.png, id=264, 584.1825pt x 458.21187pt>
 File: images/SP4-GPE/registrarEjem.png Graphic file (type png)
 <use images/SP4-GPE/registrarEjem.png>
 Package pdftex.def Info: images/SP4-GPE/registrarEjem.png  used on input line 2
@@ -1016,13 +1018,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
 
-<images/SP4-GPE/registrarB.png, id=266, 644.4075pt x 76.78688pt>
+<images/SP4-GPE/registrarB.png, id=273, 644.4075pt x 76.78688pt>
 File: images/SP4-GPE/registrarB.png Graphic file (type png)
 <use images/SP4-GPE/registrarB.png>
 Package pdftex.def Info: images/SP4-GPE/registrarB.png  used on input line 243.
 
 (pdftex.def)             Requested size: 350.33727pt x 41.74666pt.
-<images/SP4-GPE/exito.png, id=267, 328.22626pt x 144.54pt>
+<images/SP4-GPE/exito.png, id=274, 328.22626pt x 144.54pt>
 File: images/SP4-GPE/exito.png Graphic file (type png)
 <use images/SP4-GPE/exito.png>
 Package pdftex.def Info: images/SP4-GPE/exito.png  used on input line 252.
@@ -1052,7 +1054,7 @@ File: IG-GRAL/headerInp.jpg Graphic file (type jpg)
 Package pdftex.def Info: IG-GRAL/headerInp.jpg  used on input line 275.
 (pdftex.def)             Requested size: 333.38306pt x 35.0pt.
  [18]
-<images/SP4-GPE/error1.png, id=287, 394.47375pt x 188.20313pt>
+<images/SP4-GPE/error1.png, id=295, 394.47375pt x 188.20313pt>
 File: images/SP4-GPE/error1.png Graphic file (type png)
 <use images/SP4-GPE/error1.png>
 Package pdftex.def Info: images/SP4-GPE/error1.png  used on input line 282.
@@ -1101,42 +1103,72 @@ LaTeX Info: Redefining \% on input line 23.
 (SP/Introduccion.aux) (SP/ProcesoGeneral.aux) (SP/SP1.aux) (SP/SP4-GPE.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F20EF2B525FA1826857A52642FE77C6F;1292.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: F20EF2B525FA1826857A52642FE77C6F;1292
+(rerunfilecheck)             After:  577CDA272A5C29250790A707C6D742D9;987.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18.
  ) 
 Here is how much of TeX's memory you used:
- 10400 strings out of 492970
- 161238 string characters out of 3126149
+ 10408 strings out of 492970
+ 161340 string characters out of 3126149
  265794 words of memory out of 3000000
  13942 multiletter control sequences out of 15000+200000
  15520 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,15n,45p,587b,439s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dp
-i600\cmbrsl10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\pub
-lic\cmbright\dpi600\cmbr8.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\p
-k\ljfour\public\cmbright\dpi375\cmbrsl8.pk> <C:\Users\Andrez\AppData\Local\MiKT
-eX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbrsy10.pk> <C:\Users\Andrez\App
-Data\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi720\cmbrbx10.pk> <C:\U
-sers\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\cmb
-rbx10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbr
-ight\dpi600\cmbr10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\public\cmbright\dpi600\cmbrbx10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9
-\fonts\pk\ljfour\public\cmbright\dpi864\cmbr10.pk> <C:\Users\Andrez\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi720\cmbr10.pk> <C:\Users\Andre
-z\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbr17.pk> <C
-:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\
-cmbr17.pk><C:/Users/Andrez/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/latxfont/lcirclew.pfb><C:/Users/Andrez/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on main.pdf (21 pages, 972493 bytes).
+ 48i,15n,45p,587b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{subsection.4.3.2} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+ <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi6
+00\cmbrsl10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\publi
+c\cmbright\dpi600\cmbr8.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\public\cmbright\dpi375\cmbrsl8.pk> <C:\Users\Andrez\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbrsy10.pk> <C:\Users\Andrez\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi720\cmbrbx10.pk> <C:\Use
+rs\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\cmbrb
+x10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbrig
+ht\dpi600\cmbr10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+public\cmbright\dpi600\cmbrbx10.pk> <C:\Users\Andrez\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\public\cmbright\dpi864\cmbr10.pk> <C:\Users\Andrez\AppData\Local
+\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi720\cmbr10.pk> <C:\Users\Andrez\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbr17.pk> <C:\
+Users\Andrez\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\cm
+br17.pk><C:/Users/Andrez/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/latxfont/lcirclew.pfb><C:/Users/Andrez/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/marvosym/marvosym.pfb>
+Output written on main.pdf (21 pages, 973004 bytes).
 PDF statistics:
- 688 PDF objects out of 1000 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
+ 696 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
  280 words of extra memory for PDF output out of 10000 (max. 10000000)
 
