@@ -24,6 +24,7 @@
         	\begin{itemize}
         		\item MSG4. Los campos marcados con (*) son obligatorios.
                 \item MSG5. Registro finalizado exitosamente.
+                \item MSG9. Por el momento no se puede realizar el registro.
                 \item MSG25. Servicios no disponibles.
                 \item MSG58. Avances guardados exitosamente.
         	\end{itemize}
@@ -107,9 +108,18 @@
 %------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
 
 \begin{UCtrayectoriaA}{C}{El actor desea guardar el progreso de su registro.}
-\UCpaso[\UCactor] Presiona el botón \IUbutton{Guardar}
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Guardar}. [Trayectoria C.1]
 \UCpaso Almacena la información.
 \UCpaso Muestra el \MSGref{MSG58}{Avances guardados exitosamente.}
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Aceptar} 
+\UCpaso Muestra la \IUref{RPE}{Registrar Programa en Extenso}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA C.1 -------------------------
+
+\begin{UCtrayectoriaA}{C.1}{Hay un error al momento de guardar los avances.}
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Guardar}.
+\UCpaso Muestra el \MSGref{MSG9}{Por el momento no se puede realizar el registro}.
 \UCpaso[\UCactor] Presiona el botón \IUbutton{Aceptar} 
 \UCpaso Muestra la \IUref{RPE}{Registrar Programa en Extenso}.
 \end{UCtrayectoriaA}
