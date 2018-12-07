@@ -1,23 +1,47 @@
 \chapter{Procesos}
-\begin{BPMN}{PROC-01}{Creación de un Programa Académico}{}
-    \PCitem{Participantes}{}
-    \PCitem{Objetivo}{}
-    \PCitem{Interrelación con otros procesos}{}
-    \PCitem{Proveedores}{}
-    \PCitem{Entradas}{}
-    \PCitem{Consumidores}{}
-    \PCitem{Salidas}{}
-    \PCitem{Precondiciones}{}
-    \PCitem{Postcondiciones}{}
-    \PCitem{Frecuencia}{}
-    \PCitem{Tipo}{}
-    \PCitem{Áreas de oportunidad}{}
+\begin{BPMN}{PROC-01}{Creación o rediseño de un Programa Académico}{Surge la iniciativa de crear o rediseñar un programa académico, la unidad académica notifica a la DES que existe una propuesta, a su vez la DES se encarga de supervisar a la unidad académica  durante este proceso, lo que incluye la revisión del plan de estudios, mapa curricular, unidades de aprendizaje y la gestión de los documentos correspondientes para su aprobación. }
+    \PCitem{Participantes}{ \begin{itemize}
+    		\item Unidad Académica	
+    		\item DES
+    		\item Consejo General Consultivo
+    		\item Dirección General 
+    \end{itemize}}
+    \PCitem{Objetivo}{La elaboración o rediseño  de los Programas Académicos  del IPN, partiendo desde el análisis de la propuesta, la elaboración del plan de estudios hasta la conformación del mapa curricular y las unidades de aprendizaje, siendo revisado en cada etapa por las autoridades correspondientes}
+    \PCitem{Interrelación con otros procesos}{
+    \begin{itemize}
+    \item Crear de unidad de aprendizaje 	
+    \item Revisar de unidad de aprendizaje
+    \item Crear de plan de estudios y mapa curricular
+    \item Revisar de plan de estudios y mapa curricular 	
+    \end{itemize}	
+       }
+    \PCitem{Proveedores}{Agentes internos o externos del IPN}
+    \PCitem{Entradas}{Propuesta de creación o renovación de programa académico}
+    \PCitem{Consumidores}{Unidad Académica}
+    \PCitem{Salidas}{Programa académico}
+    \PCitem{Precondiciones}{Solicitud de nuevo programa académico}
+    \PCitem{Postcondiciones}{Aplicación del nuevo programa académico}
+    \PCitem{Frecuencia}{Cuando se genera  un propuesta de creación o rediseño}
+    \PCitem{Tipo}{Operativo}
+    \PCitem{Áreas de oportunidad}{Registro y revisión de planes de estudio, mapas curriculares y unidades de aprendizaje en línea }
 \end{BPMN}
-En la figura \hyperref[]{}
-\begin{figure}[htbp]
+
+\hypertarget{MP-I}{\begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=.95\textwidth]{C1-DP/MP/MacroProceso}
+		\includegraphics[width=.95\textwidth]{C1-DP/MP/bpmnMacro.png}
 		\caption{}
 		\label{fig:}
 	\end{center}
-\end{figure}
+\end{figure}}
+\begin{itemize}
+	\item \textbf{Elaborar plan de estudios y mapa curricular:} En la unidad académica en el Jefe de Innovación Educativa asigna un docente para que elabore el plan de estudios y mapa curricular de programa académico llenado las plantillas o realice las correcciones de los documentos con notas recibidos de la DES.  
+	\item \textbf{Enviar plan de estudios y mapa curricular:} Al terminar la elaboración de plan de estudios y el mapa curricular la unidad académica envía por correo electrónico los documentos de los respectivos archivos a la DES en especifico a la División de Innovación Académica.  
+	\item \textbf{Revisar plan de estudios y mapa curricular:} El Jefe del Departamento de Desarrollo e Innovación Curricular recibe los documentos y asigna al personal (analistas) encargados de revisar los documentos o puede hacerlo el mismo. 
+	\item \textbf{Generar notas:} El encargado de la revisión leerá el documento e ira subrayando y agregando notas en todas las secciones que considere necesario debido a que presentan errores de estructura, coherencia u ortografía.   
+	\item \textbf{Enviar correcciones plan de estudios y mapa curricular:}Al terminar la revisión el Jefe del Departamento de Desarrollo e innovación curricular envía los documentos con las respectivas notas de regreso a la unidad de académica por correo electrónico, todo este caso de que se hayan generado notas. 
+	\item \textbf{Elaborar unidad de aprendizaje:} En la unidad académica el Jefe de Innovación Educativa, asigna el docente encargado de llenar la plantilla de la información de un unidad de aprendizaje, esto lo debe hacer con un conjunto de unidades de aprendizaje con el propósito de juntar un semestre como mínimo o realice las correcciones de los documentos con notas recibidos de la DES .     
+	\item \textbf{Enviar paquete de  unidades de aprendizaje:} El Jefe de Innovacion Educativa  envía por correo electrónico los documentos que comprenden el paquete de unidades de aprendizaje  
+	\item \textbf{Revisar paquete de  unidades de aprendizaje:}El Jefe del Departamento de Desarrollo e Innovación Curricular recibe los documentos y asigna al personal (analistas) encargados de revisar los documentos repartiéndolos por unidad de aprendizaje, el se puede asignar uno también . 
+	\item \textbf{Generar notas de  unidades de aprendizaje:} El encargado de la revisión leerá el documento e ira subrayando y agregando notas en todas las secciones que considere necesario debido a que presentan errores de estructura, coherencia u ortografía.  
+	\item \textbf{Enviar correcciones unidades de aprendizaje:} Al terminar la revisión el Jefe del Departamento de Desarrollo e Innovación Curricular envía los documentos con las respectivas notas de regreso a la unidad de académica por correo electrónico, todo este caso de que se hayan generado notas. 
+\end{itemize}
