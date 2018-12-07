@@ -15,7 +15,7 @@
       <bpmn:outgoing>SequenceFlow_06l7a80</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="SequenceFlow_1nba26w" sourceRef="ExclusiveGateway_0uc5hcq" targetRef="Task_12cvd0n" />
-    <bpmn:userTask id="Task_0bhpdar" name="Consultar&#10;Planes de Estudio">
+    <bpmn:userTask id="Task_0bhtbpdar" name="Consultar&#10;Planes de Estudio">
       <bpmn:incoming>SequenceFlow_1gmumzm</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0meb7cw</bpmn:outgoing>
     </bpmn:userTask>
@@ -23,8 +23,8 @@
     <bpmn:sequenceFlow id="SequenceFlow_1wdhqwz" sourceRef="ExclusiveGateway_0uc5hcq" targetRef="ExclusiveGateway_17b5acv" />
     <bpmn:sequenceFlow id="SequenceFlow_0e8fip8" sourceRef="Task_041uem3" targetRef="ExclusiveGateway_17b5acv" />
     <bpmn:sequenceFlow id="SequenceFlow_1tu9bvw" sourceRef="ExclusiveGateway_17b5acv" targetRef="ExclusiveGateway_0icn8al" />
-    <bpmn:sequenceFlow id="SequenceFlow_0meb7cw" sourceRef="Task_0bhpdar" targetRef="ExclusiveGateway_0uc5hcq" />
-    <bpmn:sequenceFlow id="SequenceFlow_1gmumzm" sourceRef="ExclusiveGateway_0pp6m9d" targetRef="Task_0bhpdar" />
+    <bpmn:sequenceFlow id="SequenceFlow_0meb7cw" sourceRef="Task_0bhtbpdar" targetRef="ExclusiveGateway_0uc5hcq" />
+    <bpmn:sequenceFlow id="SequenceFlow_1gmumzm" sourceRef="ExclusiveGateway_0pp6m9d" targetRef="Task_0bhtbpdar" />
     <bpmn:exclusiveGateway id="ExclusiveGateway_0uc5hcq">
       <bpmn:incoming>SequenceFlow_0meb7cw</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1nba26w</bpmn:outgoing>
@@ -80,7 +80,7 @@
         <di:waypoint x="603" y="4" />
         <di:waypoint x="675" y="4" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="UserTask_1a315aq_di" bpmnElement="Task_0bhpdar">
+      <bpmndi:BPMNShape id="UserTask_1a315aq_di" bpmnElement="Task_0bhtbpdar">
         <dc:Bounds x="453" y="79" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="UserTask_0ur3yv6_di" bpmnElement="Task_041uem3">
