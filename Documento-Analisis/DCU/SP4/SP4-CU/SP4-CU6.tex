@@ -13,6 +13,7 @@
         		\item \MSGref{MSG39}{¿Está seguro que desea eliminar el Semestre [Número del Semestre]?}.
         		\item \MSGref{MSG52}{El semestre no se puede eliminar debido a que contiene unidades de aprendizaje}.
         		\item \MSGref{MSG53}{¿Está seguro que desea rediseñar el plan de estudios? (Se hara una copia de este)}.
+        		\item \MSGref{MSG60}{Error: Se alcanzó el número máximo de semestres.}
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -27,6 +28,7 @@
 		\begin{itemize}
 			\item \UCref{SP4-CU3}: Registrar Unidad de Aprendizaje.
 			\item \UCref{SP4-CU9}: Editar Unidad de Aprendizaje.
+			\item \UCref{SP1-CU17}: Asignar Tareas.
 		\end{itemize}
 	}
 		\UCitem{Estado}{Revisión.}
@@ -42,7 +44,7 @@
 \end{UCtrayectoria}
 %------------------------ CU TRAYECTORIA ALTERNARIVA A -------------------------
 \begin{UCtrayectoriaA}{A}{El actor presiona el botón \IUbutton{+}.}
-	\UCpaso Agrega el siguiente Semestre en la numeración.
+	\UCpaso Agrega el siguiente Semestre en la numeración considerando la \BRref{BR43}{El número máximo de semestres que puede tener un Plan de Estudio es de 8.}[Trayectoria H]
     \UCpaso Continúa la trayectoria principal del \UCref{SP4-CU6} desde el paso 3.
 \end{UCtrayectoriaA}
 %------------------------ CU TRAYECTORIA ALTERNARIVA B -------------------------
@@ -101,3 +103,9 @@
 	\UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
 \end{UCtrayectoriaA}
 
+%------------------------ CU TRAYECTORIA ALTERNARIVA H -------------------------
+\begin{UCtrayectoriaA}{H}{El sistema detecta incumplimiento con la \BRref{BR43}{El número máximo de semestres que puede tener un Plan de Estudio es de 8.} }
+	\UCpaso Muestra el mensaje \MSGref{MSG60}{Error: Se alcanzó el número máximo de semestres.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
+\end{UCtrayectoriaA}
