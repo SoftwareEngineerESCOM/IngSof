@@ -1,6 +1,6 @@
 % REGISTRAR EL PROGRAMA EN EXTENSO: NAIBI.
 \begin{UseCase}{SP1-CU4}{Registrar el Programa en Extenso}{El usuario podrá registrar de manera más detallada las características fundamentales de la Unidad de Aprendizaje.}
-		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Versión}{\color{Gray}1.1}
 		\UCitem{Autor}{\color{Gray}Ramírez Martínez Janet Naibi.}
 		\UCitem{Supervisa}{\color{Gray}Cervantes Delgadillo Mauricio.}
 		\UCitem{Actor}{\hyperlink{Docente}{Docente}}
@@ -12,7 +12,11 @@
             \item Enseñanza.
             \item Vigencia.
             \item Intención educativa.
-            \item Tiempos asignados. 
+            \item Grado de estudios.
+            \item Conocimientos.
+            \item Experiencia profesional.
+            \item Habilidad.
+            \item Actitud.
           \end{itemize}
         }
 		\UCitem{Origen}{Teclado y Mouse.}
@@ -20,7 +24,7 @@
         	\begin{itemize}
         		\item MSG4. Los campos marcados con (*) son obligatorios.
                 \item MSG5. Registro finalizado exitosamente.
-                \item MSG9. Por el momento no se puede realizar el registro.
+                \item MSG25. Servicios no disponibles.
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -39,80 +43,89 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar PE} de la \IUref{SP1-IU}{Principal}.
+	\UCpaso[\UCactor] Selecciona la opción \IUbutton{Programa en Extenso} del menú superior.
 	
-	\UCpaso Extrae la información: ``Unidad Académica'', ``Programa Académico'', ``Unidad de Aprendizaje'', ``Área de Formación'', ``Semestre'', ``Créditos TEPIC/SATCA'', ``Propósito de la Unidad de Aprendizaje'' perteneciente al \UCref{SP1-CU1}. [Trayectoria A]
+	\UCpaso Extrae la información: ``Unidad Académica'', ``Programa Académico'', ``Unidad de Aprendizaje'', ``Área de Formación'', ``Semestre'' y ``Créditos TEPIC/SATCA'' perteneciente al identificador de la Unidad de Aprendizaje seleccionada en la interfaz de usuario \IUref{VTA}{Ver tareas}.
 	
-	\UCpaso Verifica que los catálogos contengan información. [Trayectoria B]
+	\UCpaso Calcula los tiempos asignados de la Unidad de Aprendizaje con base en la regla de negocios \BRref{BR44}{Calculo de los tiempos asignados.}
 	
-	\UCpaso Muestra la \IUref{IU.02}{Registrar el Programa en Extenso}. 
+	\UCpaso Verifica que los catálogos ``Modalidad'', ``Tipo'' y ``Enseñanza'' contengan información. [Trayectoria A]
 	
-	\UCpaso[\UCactor] Selecciona la Modalidad de la Unidad de Aprendizaje que está siendo registrada. %presencial, en linea, etc.
+	\UCpaso Muestra la \IUref{RPS}{Registrar Programa en Extenso}. 
 	
-	\UCpaso[\UCactor] Selecciona el Tipo de Unidad de Aprendizaje. %teorica/teórica-práctica/práctica.
+	\UCpaso[\UCactor] Selecciona la Modalidad de la Unidad de Aprendizaje. %presencial, en linea, etc.
+	
+	\UCpaso[\UCactor] Selecciona el/los tipo(s) de la Unidad de Aprendizaje. %teorica/teórica-práctica/práctica.
 	
 	\UCpaso[\UCactor] Selecciona la Enseñanza de la Unidad de Aprendizaje. %obligatoria, optativa, electiva, etc.
-	\UCpaso[\UCactor] Ingresa la Vigencia de la Unidad de Aprendizaje con base en la regla \BRref{BR26}{Vigencia de una Unidad de Aprendizaje}. [Trayectoria C]
+	
+	\UCpaso[\UCactor] Ingresa el año de vigencia de la Unidad de Aprendizaje con base en la regla \BRref{BR26}{Vigencia de una Unidad de Aprendizaje}. [Trayectoria B]
 	
 	\UCpaso[\UCactor] Ingresa la Intención Educativa de la Unidad de Aprendizaje.
 	
-	\UCpaso[\UCactor] Ingresa los Tiempos Asignados de la Unidad de Aprendizaje. [Trayectoria D]
+	\UCpaso[\UCactor] Ingresa el grado de estudios del docente que va a impartir la unidad de aprendizaje.
 	
-	\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}.
+	\UCpaso[\UCactor] Ingresa los conocimientos con los que debe contar el docente que va a impartir la unidad de aprendizaje.
+	
+	\UCpaso[\UCactor] Ingresa la experiencia profesional del docente que va a impartir la unidad de aprendizaje.
+	
+	\UCpaso[\UCactor] Ingresa las habilidades con las que debe contar el docente que va a impartir la unidad de aprendizaje.
+	
+	\UCpaso[\UCactor] Ingresa las actitudes con las que debe contar el docente que va a impartir la unidad de aprendizaje.
+	
+	\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria C]
         
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria E]
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente llenados. [Trayectoria D]
     
-    \UCpaso Guarda la información del Programa en Extenso en la base de datos.
+    \UCpaso Guarda la información del Programa en Extenso en la base de datos. [Trayectoria F]
     
     \UCpaso Muestra el mensaje \MSGref{MSG5.}{Registro finalizado exitosamente}.
     
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     
-    \UCpaso Muestra la interfaz de usuario \IUref{SP1-IU}{Principal}.
+    \UCpaso Muestra la interfaz de usuario \IUref{RPE}{Registrar Programa en Extenso}.
 \end{UCtrayectoria}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
 
-\begin{UCtrayectoriaA}{A}{No se ha realizado la elaboración del Programa Sintético.}
-	\UCpaso No muestra los datos provenientes del \UCref{SP1-CU1}.
-	\UCpaso Muestra el mensaje \MSGref{MSG41}{Debe llenar el Programa Sintético para realizar este registro}.
-	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Muestra la interfaz de usuario \IUref{SP1-IU}{Principal}.
+\begin{UCtrayectoriaA}{A}{Uno o más catálogos están vacíos.}
+	\UCpaso No encuentra información en los catálogos.
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{RPS}{Registrar programa en extenso}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA B -------------------------
 
-
-
-\begin{UCtrayectoriaA}{B}{Uno o más catálogos están vacíos.}
-	\UCpaso No encuentra información en los catálogos.
-    \UCpaso Muestra el mensaje \MSGref{MSG9.}{Por el momento no se puede realizar el registro.}
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Muestra la interfaz de usuario \IUref{SP1-IU}{Principal}.
+\begin{UCtrayectoriaA}{B}{La vigencia que seleccionó el docente es invalida.}
+	\UCpaso[\UCactor] Selecciona una fecha distinta a la fecha en la que está siendo registrada la Unidad de Aprendizaje.
+	\UCpaso Marca con color rojo el campo vigencia.
+	\UCpaso Continua en el paso 9 de la trayectoria principal del \UCref{SP1-CU4}
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
 
-\begin{UCtrayectoriaA}{C}{La vigencia que seleccionó el docente es invalida.}
-	\UCpaso[\UCactor] Selecciona una fecha distinta a la fecha en la que está siendo registrada la Unidad de Aprendizaje.
-	\UCpaso Muestra el mensaje \MSGref{MSG42}{Fecha invalida}.
-	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Continua en el paso 8 de la trayectoria principal del \UCref{SP1-CU4}
+\begin{UCtrayectoriaA}{C}{El actor desea guardar el progreso de su registro.}
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Guardar}
+\UCpaso Almacena la información.
+\UCpaso Muestra el \MSGref{MSG58}{Avances guardados exitosamente.}
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Aceptar} 
+\UCpaso Muestra la \IUref{RPE}{Registrar Programa en Extenso}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA D -------------------------
 
-\begin{UCtrayectoriaA}{D}{El docente quiere registrar los tiempos asignados de la Unidad de Aprendizaje.}
-	\UCpaso[\UCactor] Presiona el botón \BtnModal que se encuentra a un lado del campo ``Tiempos Asignados'' de la \IUref{IU.02}{Registrar el Programa en Extenso}.
-	\UCpaso Muestra el modal \IUref{MIU2.01}{Registrar Tiempos Asignados de la Unidad de Aprendizaje}.
-	\UCpaso Continua en el paso X de la trayectoria principal de \UCref{SP1-CU5}
-\end{UCtrayectoriaA}
-
-%------------------------ CU TRAYECTORIA ALTERNATIVA E -------------------------
-
-\begin{UCtrayectoriaA}{E}{Uno o más campos obligatorios no fueron contestados.}
+\begin{UCtrayectoriaA}{D}{Uno o más campos obligatorios no fueron contestados.}
 	\UCpaso Detecta uno o más campos sin contestar.
     \UCpaso Muestra el mensaje \MSGref{MSG4.}{Los campos marcados con (*) son obligatorios.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU4}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA D -------------------------
+
+\begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
+	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{RPE}{Registrar Programa en Extenso}.
 \end{UCtrayectoriaA}
