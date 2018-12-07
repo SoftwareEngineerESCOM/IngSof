@@ -1,4 +1,4 @@
-% REGISTRAR PLAN DE ESTUDIOS.
+% Editar Unidad de Aprendizaje.
 \begin{UseCase}{SP4-CU9}{Editar Unidad de Aprendizaje}{El usuario Jefe de Innovación modifica los datos de las Unidades de Aprendizaje registradas en el sistema.}
 	\UCitem{Versión}{\color{Gray}3.0}
 	\UCitem{Autor}{\color{Gray}Cervantes Moreno Christian Andres}
@@ -14,6 +14,7 @@
 			\item Horas Práctica/Semana
 			\item Área de Formación.
 			\item Semestre
+			\item Academia
 		\end{itemize}
 	}
 	\UCitem{Origen}{Teclado, Mouse}
@@ -48,7 +49,7 @@
 	\UCpaso[\UCactor] Elige el semestre que pertecene la Unidad de Aprendizaje a modificar, que se encuentra en la interfaz de usuario \IUref{CMC-J}{Consultar Mapa Curricular}.
 	\UCpaso[\UCactor] Presiona el boton \BtnLapiz de la Unidad de Aprendizaje que desea modificar.
 	%Sistema
-	\UCpaso Carga los catálogos: Área de formación y Semestre descrito en la \BRref{BR14}{Catálogos del Sistema}.[Trayectoria A]
+\UCpaso Carga los catálogos: Área de formación, Semestre y Academia descritos en la \BRref{BR14}{Catálogos del Sistema}.[Trayectoria A]
 	\UCpaso Muestra la interfaz de usuario \IUref{EUA-J}{Editar Unidad de Aprendizaje}.
 	\UCpaso[\UCactor] Modifica los campos deseados.
 	\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria B] [Trayectoria B.1]
