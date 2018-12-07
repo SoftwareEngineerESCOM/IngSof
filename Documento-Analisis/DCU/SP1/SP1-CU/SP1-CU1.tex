@@ -1,35 +1,40 @@
 %REGISTRAR PROGRAMA SINTÉTICO: JORGE
+\chapter{Especificación de casos de uso.}
 
-\begin{UseCase}{SP1-CU1}{Registrar Programa Sintético}{El usuario podrá registrar el Programa Sintético correspondiente a un Plan de Estudios.}
-    \UCitem{Versión}{\color{Gray}1.0}
+\begin{UseCase}{SP1-CU1}{Registrar Programa Sintético}{El actor podrá registrar el Programa Sintético correspondiente a una Unidad de Aprendizaje.}
+    \UCitem{Versión}{\color{Gray}1.1}
     \UCitem{Autor}{\color{Gray}Maldonado Carpio Jorge Enrique.}
-    \UCitem{Supervisa}{\color{Gray}Cervantes Delgadillo Mauricio.}
-    \UCitem{Actor}{\hyperlink{Usuario}{Docente y Jefe de Innovación Educativa.}}
+    \UCitem{Supervisa}{\color{Gray}Ramírez Martínez Janet Naibi.}
+    \UCitem{Actor}{\hyperlink{Docente}{Docente y Jefe de Innovación Educativa.}}
     \UCitem{Propósito}{Servir como marco de referencia para el registro de los demás atributos de la Unidad de Aprendizaje.}
-    \UCitem{Entradas}{Las entradas para el registro de tiempos de la Unidad de Aprendizaje serán:
+    \UCitem{Entradas}{Las entradas para el registro del Programa Sintético de la Unidad de Aprendizaje serán:
       \begin{itemize}
           \item Propósito de la Unidad de Aprendizaje.
-          \item Contenidos.
           \item Orientación Didáctica.
+          \item Contenidos.
           \item Evaluación y Acreditación.
       \end{itemize}
     }
     \UCitem{Origen}{Teclado y Mouse.}
     \UCitem{Salidas}{
     	\begin{itemize}
-          \item \MSGref{MSG4}{Los campos marcados con (*) son obligatorios.}
-          \item \MSGref{MSG5}{Registro finalizado exitosamente.}
-          \item \MSGref{MSG25}{Servicios no disponibles por el momento}.
-          \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-          \item \MSGref{MSG35}{Escribe información válida.}
-          \item Unidad Académica.
-          \item Programa Académico.
-          \item Unidad de Aprendizaje.
-          \item Semestre.
+    		\item Unidad Académica.
+          	\item Programa Académico.
+	        \item Unidad de Aprendizaje.
+	        \item Semestre.
+        	\item \MSGref{MSG5}{Registro finalizado exitosamente.}
+	        \item \MSGref{MSG25}{Servicios no disponibles}.
+    		\item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+          	\item \MSGref{MSG35}{Escribe información válida.}
+          	\item \MSGref{MSG44}{Este campo es requerido.}
      	\end{itemize}
     }
     \UCitem{Destino}{Pantalla.}
-    \UCitem{Precondiciones}{El usuario debe de haber ingresado al sistema como Docente o como Jefe de Innovación Educativa}
+    \UCitem{Precondiciones}{
+    	\begin{itemize}
+    		\item El actor debe de haber ingresado al sistema como Docente o como Jefe de Innovación Educativa.
+    		\item El docente debe tener asignada la unidad de aprendizaje.
+    	\end{itemize}}
     \UCitem{Postcondiciones}{El Programa Sintético queda registrado en el sistema.}
     \UCitem{Errores}{}
     \UCitem{Estado}{Revisión.}
@@ -39,65 +44,113 @@
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Programa Sintético} de la interfaz de usuario \IUref{}{Principal}
-\UCpaso Carga la información de los catálogos.
-\UCpaso Muestra la interfaz de usuario \IUref{IU.01}{Registrar el Programa Sintético}.
-\UCpaso[\UCactor] Ingresa el Propósito de la Unidad de Aprendizaje conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} [Trayectoria D] [Trayectoria E]. 
-\UCpaso[\UCactor] Ingresa la Orientación Didáctica conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} [Trayectoria D] [Trayectoria E].
-\UCpaso[\UCactor] Presiona el botón   \BtnModal que se encuentra a un lado del campo ``Contenidos'' [Trayectoria A].
-\UCpaso[\UCactor] Presiona el botón \BtnModal que se encuentra a un lado del campo ``Evaluación y Acreditación'' [Trayectoria B].
-\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar} [Trayectoria C].
-\UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados [Trayectoria D].
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Elaborar} de la interfaz de usuario \IUref{VTA}{Ver tareas}.
+
+\UCpaso Carga la información de la Unidad de Aprendizaje registrada por el Jefe de Innovación.
+
+\UCpaso Muestra la interfaz de usuario \IUref{RPS}{Registrar Programa Sintético}.
+
+\UCpaso[\UCactor] Ingresa el Propósito de la Unidad de Aprendizaje con base en las reglas de negocio \BRref{BR38}{Verificación de formularios al momento} y \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} [Trayectoria D] [Trayectoria E].
+
+\UCpaso[\UCactor] Ingresa la Orientación Didáctica con base en las reglas de negocio \BRref{BR38}{Verificación de formularios al momento} y \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} [Trayectoria D] [Trayectoria E].
+
+\UCpaso[\UCactor] Ingresa contenidos a la Unidad de Aprendizaje. [Trayectoria A]
+
+\UCpaso Muestra una tabla con los contenidos registrados en el paso anterior.
+
+\UCpaso[\UCactor] Ingresa la evaluación y acreditación de la Unidad de Aprendizaje. [Trayectoria B]
+
+\UCpaso Muestra una tabla con la evaluación y acreditación registrada en el paso anterior.
+
+\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria C]
+
+\UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados según la regla de negocio \BRref{BR39}{Todos los campos marcados con (*) son obligatorios}. [Trayectoria D]
+
+\UCpaso Muestra el mensaje \MSGref{MSG30}{¿Está seguro que desea finalizar? Ya no podrá realizar modificaciones.}
+
+\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}. [Trayectoria G]
+
+\UCpaso Cierra el mensaje.
+
 \UCpaso Guarda la información del Programa Sintético. [Trayectoria F].
+
 \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente.}
-\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{OK}. 
-\UCpaso Muestra la interfaz de usuario \IUref{IU1}{Principal}.
+
+\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+
+\UCpaso Deshabilita el formulario. 
+
 \end{UCtrayectoria}
 
 
-%------------------------ CU TRAYECTORIA ALTERNARTIVA A -------------------------
-\begin{UCtrayectoriaA}{B}{El usuario desea agregar un Contenido.}
-\UCpaso Abre un modal en el \UCref{SP1-CU2}.
-\UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP1-CU2}.
+%------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
+\begin{UCtrayectoriaA}{A}{El actor desea agregar contenidos a la Unidad de Aprendizaje.}
+
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar contenidos \BtnModal}.
+
+\UCpaso Muestra la \IUref{RC}{Registrar contenido}.
+
+\UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP1-CU2}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARTIVA B -------------------------
-\begin{UCtrayectoriaA}{B}{El usuario desea agregar la Evaluación y Acreditación.}
-\UCpaso Abre un modal en el \UCref{SP1-CU3}.
-\UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP1-CU3}.
+\begin{UCtrayectoriaA}{B}{El actor desea agregar la Evaluación y Acreditación de la Unidad de Aprendizaje.}
+
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar evaluación y acreditación \BtnModal}.
+
+\UCpaso Extrae la información del catálogo ``Acreditación'' de la base de datos. [Trayectoria B.1]
+
+\UCpaso Muestra el modal \IUref{REA}{Registrar Evaluación y Acreditación}.
+
+\UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP1-CU3}.
+\end{UCtrayectoriaA}
+%------------------------ CU TRAYECTORIA ALTERNARTIVA B.1 -------------------------
+
+\begin{UCtrayectoriaA}{B.1}{El catálogo está vacío}
+    \UCpaso No encuentra información en el catálogo ``Acreditación''.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra la \IUref{VTA}{Ver tareas}.
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARTIVA C -------------------------
-\begin{UCtrayectoriaA}{C}{El usuario desea cancelar el registro del Programa Sintético.}
-\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
-\UCpaso Muestra el \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-\UCpaso[\UCactor] Presiona el botón \IUbutton{Si} [Trayectoria C.1]
-\UCpaso Continua en el paso 8 de la trayectoria principal del \UCref{SP1-CU1}.
-\end{UCtrayectoriaA}
-
-%------------------------ CU TRAYECTORIA ALTERNARTIVA C.1 -------------------------
-\begin{UCtrayectoriaA}{C.1}{El usuario no desea cancelar el registro del Programa Sintético.}
-\UCpaso[\UCactor] Presiona el botón \IUbutton{No}
-\UCpaso Continua en el paso 8 de la trayectoria principal del \UCref{SP1-CU1}.
+%------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
+\begin{UCtrayectoriaA}{C}{El actor desea guardar el progreso de su registro.}
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Guardar}
+\UCpaso Almacena la información.
+\UCpaso Muestra el \MSGref{MSG58}{Avances guardados exitosamente.}
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Aceptar} 
+\UCpaso Muestra la \IUref{RPS}{Registrar Programa Sintético}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARTIVA D -------------------------
 \begin{UCtrayectoriaA}{D}{Uno o más campos obligatorios no fueron contestados.}
 \UCpaso Detecta uno o más campos sin contestar.
-\UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios.}
-\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-\UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU1}.
+
+\UCpaso Muestra el mensaje \MSGref{MSG44}{Este campo es requerido} debajo de los campos que no fueron contestados.
+
+\UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU1}
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARTIVA E -------------------------
-\begin{UCtrayectoriaA}{E}{El sistema detecta caracteres no válidos conforme al Modelo de Datos.}
-	\UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida} debajo del campo que incumplio con el diccionario de datos.
+\begin{UCtrayectoriaA}{E}{El sistema detecta caracteres no válidos conforme al diccionario de datos.}
+	\UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida} debajo del campo que incumplió según el diccionario de datos.
 	\UCpaso Continúa en el paso 4 de la trayectoria principal del \UCref{SP1-CU1}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNARTIVA F -------------------------
 \begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
-	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento}.
+	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
+	
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Continúa en el paso 13 de la trayectoria principal del \UCref{SP1-CU1}.
+	
+	\UCpaso Muestra la interfaz de usuario \IUref{RPS}{Registrar Programa Sintético}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNARTIVA G -------------------------
+\begin{UCtrayectoriaA}{G}{El actor aún no desea finalizar el registro}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
+	
+	\UCpaso Cierra el mensaje.
+	
+	\UCpaso Continúa en el paso 10 de la trayectoria principal del \UCref{SP1-CU1}.
 \end{UCtrayectoriaA}
