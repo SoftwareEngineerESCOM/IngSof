@@ -1,33 +1,12 @@
-\documentclass[10pt]{book}
-\usepackage{documento}
-\usepackage{procesos}
-\usepackage{verbatim} % comentarios
-
-
-\title{CP2 - DA}
-\subtitle{Componente 2: Documento de Análisis}
-\author{Ingeniería de Software}
-\date{\today}
-
-\begin{document}
-
-\maketitle
-\thispagestyle{empty}
-\tableofcontents
-
-
-
-% -------------------------------------------------------------------------------------------------------
-%-----------------------------REGISTRAR PROGRAMA SINTETICO  
-
-\chapter{Gestión de Programas Académicos}
+\chapter{Docente}
+\section{Gestión de Programas Académicos}
 \section{Registrar Programa Sintético}
 Para registrar un Programa Sintético correspondiente a una Unidad de Aprendizaje, primero se da click en en la pestaña \IUbutton{Ver Tareas} y la siguiente pantalla será desplegada:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \hypertarget{2}{\includegraphics[width=0.5\linewidth]{images/SP6/1.jpeg}}
-    \caption{Pantalla Listado Unidades de Aprendizaje} 
+    \caption{Pantalla Listado Unidades de Aprendizaje}
 \end{figure}
 
 En la pantalla anterior se muestra un listado de las Unidades de Aprendizaje asignadas al Docente.
@@ -35,7 +14,7 @@ En la pantalla anterior se muestra un listado de las Unidades de Aprendizaje asi
 Para registrar una Programa Sintético correspondiente a una Unidad de Aprendizaje, el Docente debe dar click sobre el nombre de la Unidad de Aprendizaje y se mostrará la pantalla:
 
 \pagebreak
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{images/SP6/1.jpeg}
     \caption{Pantalla para Registrar Programa Sintético}
@@ -52,24 +31,25 @@ Si el Docente desea:
 
 Al llenar todos los datos correctamente, el Docente dará click en el botón:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.1\linewidth]{images/SP6/BotonFinalizar.jpeg}
-    \caption{Botón Finalizar} 
+    \caption{Botón Finalizar}
 \end{figure}
 
 Se mostrara la siguiente pantalla:
-
-\begin{figure}[!hbtp]
-    \centering
-    \includegraphics[width=0.1\linewidth]{images/SP6/DeseaRegistro.jpeg}
-    \caption{¿Seguro que desea finalizar el registro?} 
-\end{figure}
-
+%%%%%%%%%%%%%%%%%%%%%%%% Corrección %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.1\linewidth]{images/SP6/DeseaRegistro.jpeg}
+%     \caption{¿Seguro que desea finalizar el registro?}
+% \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Al dar clic en \IUbutton{Aceptar} y si no se presentan errores se muestra el mensaje:
 
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.4\linewidth]{images/SP6/MSG5.png}
     \caption{Registro exitoso}
@@ -80,24 +60,24 @@ Al dar clic en \IUbutton{Aceptar} y si no se presentan errores se muestra el men
 El sistema bloquea el formulario y se procede al siguiente formulario. \hyperlink{RPE}{Registrar Programa en Extenso}
 
 
-Para continuar con el registro, usted tendrá que  dar click en \IUbutton{Cancelar}, el mensaje se cerrara y usted continuara 
+Para continuar con el registro, usted tendrá que  dar click en \IUbutton{Cancelar}, el mensaje se cerrara y usted continuara
 en el formulario para terminar el registro.
 
 \pagebreak
-Si el usuario requiere guardar el avance que ha ingresado: 
+Si el usuario requiere guardar el avance que ha ingresado:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.1\linewidth]{images/SP6/BotonGuardar.jpeg}
-    \caption{Botón Guardar} 
+    \caption{Botón Guardar}
 \end{figure}
 
-El sistema guarda la información ingresada y muestra el mensaje: 
+El sistema guarda la información ingresada y muestra el mensaje:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.4\linewidth]{images/SP6/BotonAvance.jpeg}
-    \caption{Botón Avances Guardados exitosamente.} 
+    \caption{Botón Avances Guardados exitosamente.}
 \end{figure}
 
 \subsubsection{Posibles errores}
@@ -108,26 +88,26 @@ El sistema guarda la información ingresada y muestra el mensaje:
         Si al momento de acceder a la pantalla de \hyperlink{registrarPS}{\textit{Registrar Programa Sintético}} o al intentar registrar una Unidad de Aprendizaje, aparece el siguiente mensajes:
                 %Imagen MSG7 Y MSG25
 
-        \begin{figure}[!hbtp]
+        \begin{figure}[H]
             \centering
             \includegraphics[width=0.4\linewidth]{images/SP6/MSGSN.png}
             \caption{Servicios no disponibles}
             \label{SND}
 
         \end{figure}
-        
+
         Significa que existió un error de conexión o del sistema. Al dar clic en en botón ''Aceptar'', el sistema lo redireccionará a la pantalla de \hyperlink{verTareas}{\textit{Listado de Unidades de Aprendizaje}}. Deberá esperar a que la página este disponible para  intentar acceder nuevamente.
 
         \item Campos vacíos al momento de ingresar un Programa Sintético
 
         Si usted deja en blanco algún campo o campos del formulario, y posteriormente dio clic en \IUbutton{Finalizar}, el sistema mostrará el siguiente mensaje debajo del campo o campos :
-                
-        \begin{figure}[!hbtp]
-            \centering
-            \includegraphics[width=0.1\linewidth]{images/SP6/MSG44.png}
-            \caption{Campos vacíos}
-            \label{mensaje44}
-       \end{figure}
+
+       %  \begin{figure}[H]
+       %      \centering
+       %      \includegraphics[width=0.1\linewidth]{images/SP6/MSG44.png}
+       %      \caption{Campos vacíos}
+       %      \label{mensaje44}
+       % \end{figure}
 
        Regresara al formulario, en donde usted deberá llenar el o los campos que dejo vacíos.
 
@@ -136,30 +116,30 @@ El sistema guarda la información ingresada y muestra el mensaje:
        Si al momento de dar clic en \IUbutton{Finalizar} aparece el siguiente mensaje:
           %Imagen MSG35
          % Imagen del MSG35
-        \begin{figure}[!hbtp]
-            \centering
-            \includegraphics[width=0.1\linewidth]{images/SP6/MSG35.png}
-            \caption{Campos incorrectos}
-            \label{mensaje35}
-        \end{figure}
+        % \begin{figure}[H]
+        %     \centering
+        %     \includegraphics[width=0.1\linewidth]{images/SP6/MSG35.png}
+        %     \caption{Campos incorrectos}
+        %     \label{mensaje35}
+        % \end{figure}
 
         Significa que la composición de los datos ingresados en el formulario no es la correcta. Tenga en cuenta lo siguiente:
 
         \begin{itemize}
-            \item 
-            \item 
-                            
+            \item
+            \item
+
         \end{itemize}
 
     \end{itemize}
-    
+
 \pagebreak
 \hypertarget{Registrar Contenido}{\section{Registrar Contenido}}
 
-Para registrar un Contenido correspondiente a un Programa Sintético, se debe acceder por medio del botón \IUbutton{Registrar Contenidos(*)} de la pantalla \hyperlink{RegistrarPS}{Registrar Programa Sintético}. Posteriormente se mostrará el siguiente formulario: 
+Para registrar un Contenido correspondiente a un Programa Sintético, se debe acceder por medio del botón \IUbutton{Registrar Contenidos(*)} de la pantalla \hyperlink{RegistrarPS}{Registrar Programa Sintético}. Posteriormente se mostrará el siguiente formulario:
 
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \hypertarget{RegistrarContenido}{\includegraphics[width=0.5\linewidth]{images/SP6/11.jpeg}}
     \caption{Pantalla para Registrar Contenido}
@@ -167,24 +147,24 @@ Para registrar un Contenido correspondiente a un Programa Sintético, se debe ac
 
 Al terminar, ya que los datos son llenados, el Docente dará click en el botón:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.1\linewidth]{images/SP6/BotonGuardar.jpeg}
-    \caption{Botón Guardar} 
+    \caption{Botón Guardar}
 \end{figure}
 
 Si el Docente desea cancelar el registro deberá dar click en el botón:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.1\linewidth]{images/SP6/BotonCancelar.jpeg}
-    \caption{Botón Cancelar} 
+    \caption{Botón Cancelar}
 \end{figure}
 \pagebreak
 \hypertarget{REyA}{\section{Registrar Evaluación y Acreditación}}
 
 
-Para registrar la Evaluación y Acreditación correspondiente a un Programa Sintético, se debe acceder por medio del botón \IUbutton{Evaluación y Acreditación(*)} de la pantalla \hyperlink{RegistrarPS}{Registrar Programa Sintético}. Posteriormente se mostrará el siguiente formulario: 
+Para registrar la Evaluación y Acreditación correspondiente a un Programa Sintético, se debe acceder por medio del botón \IUbutton{Evaluación y Acreditación(*)} de la pantalla \hyperlink{RegistrarPS}{Registrar Programa Sintético}. Posteriormente se mostrará el siguiente formulario:
 
 
 \begin{figure}[!h]
@@ -200,35 +180,35 @@ Posteriormente, se llenará el campo de evaluación con el nombre y el porcentaj
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.3\linewidth]{images/SP6/BotonEval.jpeg}
-    \caption{Botón Agregar Evaluación} 
+    \caption{Botón Agregar Evaluación}
 \end{figure}
 
 Y se desplegara un nuevo campo para el nombre de la evaluación y un nuevo campo para el procentaje de dicha evaluación.
 
-Si el Docente desea eliminar la ultima evaluación agregada deberá dar click al botón: 
+Si el Docente desea eliminar la ultima evaluación agregada deberá dar click al botón:
 
 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.3\linewidth]{images/SP6/BotonEliEval.jpeg}
-    \caption{Botón Eliminar Evaluación} 
+    \caption{Botón Eliminar Evaluación}
 \end{figure}
 
 
 Al terminar, ya que los datos son llenados, el Docente dará click en el botón:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.1\linewidth]{images/SP6/BotonGuardar.jpeg}
-    \caption{Botón Guardar} 
+    \caption{Botón Guardar}
 \end{figure}
 
 Si el Docente desea cancelar el registro deberá dar click en el botón:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.1\linewidth]{images/SP6/BotonCancelar.jpeg}
-    \caption{Botón Cancelar} 
+    \caption{Botón Cancelar}
 \end{figure}
 
 
@@ -236,7 +216,7 @@ Si el Docente desea cancelar el registro deberá dar click en el botón:
 \hypertarget{RegAcre}{\section{Registrar Acreditación}}
 
 
-Para registrar la Evaluación y Acreditación correspondiente a un Programa Sintético, se debe acceder por medio del botón \IUbutton{Registrar Acreditación} de la pantalla \hyperlink{RegistrarEC}{Registrar Evaluación y Acreditación}. Posteriormente se mostrará el siguiente formulario: 
+Para registrar la Evaluación y Acreditación correspondiente a un Programa Sintético, se debe acceder por medio del botón \IUbutton{Registrar Acreditación} de la pantalla \hyperlink{RegistrarEC}{Registrar Evaluación y Acreditación}. Posteriormente se mostrará el siguiente formulario:
 
 
 \begin{figure}[!h]
@@ -245,23 +225,22 @@ Para registrar la Evaluación y Acreditación correspondiente a un Programa Sint
     \caption{Pantalla para Registrar Acreditación}
 \end{figure}
 
-El Docente deberá ingresar el nombre del tipo de Acreditación deseado. Finalmente dará click en el botón: 
+El Docente deberá ingresar el nombre del tipo de Acreditación deseado. Finalmente dará click en el botón:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.1\linewidth]{images/SP6/BotonAceptar.jpeg}
-    \caption{Botón Aceptar} 
+    \caption{Botón Aceptar}
 \end{figure}
 
-Si el Docente desea cancelar el registro deberá dar click en el botón: 
+Si el Docente desea cancelar el registro deberá dar click en el botón:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.1\linewidth]{images/SP6/BotonCancelar.jpeg}
-    \caption{Botón Cancelar} 
+    \caption{Botón Cancelar}
 \end{figure}
 \pagebreak
-\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \hypertarget{RegPE}{\section{Registrar Programa en Extenso}}
 
 Para registrar el Programa en extenso correspondiente a una Unidad de Aprendizaje, primero se da click en en la pestaña \IUbutton{Ver Tareas}. y posteriormente en el botón \IUbutton{Programa en Extenso} y la siguiente pantalla será desplegada:
@@ -282,24 +261,24 @@ Si el Docente desea:
 
 Al llenar todos los datos correctamente, el Docente dará click en el botón:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.1\linewidth]{images/SP6/BotonFinalizar.jpeg}
-    \caption{Botón Finalizar} 
+    \caption{Botón Finalizar}
 \end{figure}
 
 Se mostrara la siguiente pantalla:
-
-\begin{figure}[!hbtp]
-    \centering
-    \includegraphics[width=0.1\linewidth]{images/SP6/DeseaRegistro.jpeg}
-    \caption{¿Seguro que desea finalizar el registro?} 
-\end{figure}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.1\linewidth]{images/SP6/DeseaRegistro.jpeg}
+%     \caption{¿Seguro que desea finalizar el registro?}
+% \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 Al dar clic en \IUbutton{Aceptar} y si no se presentan errores se muestra el mensaje:
 
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.4\linewidth]{images/SP6/MSG5.png}
     \caption{Registro exitoso}
@@ -310,24 +289,24 @@ Al dar clic en \IUbutton{Aceptar} y si no se presentan errores se muestra el men
 El sistema bloquea el formulario y se procede al siguiente formulario. \hyperlink{RegUT}{Registrar Unidad Temática}
 
 
-Para continuar con el registro, usted tendrá que  dar click en \IUbutton{Cancelar}, el mensaje se cerrara y usted continuara 
+Para continuar con el registro, usted tendrá que  dar click en \IUbutton{Cancelar}, el mensaje se cerrara y usted continuara
 en el formulario para terminar el registro.
 
 \pagebreak
-Si el usuario requiere guardar el avance que ha ingresado: 
+Si el usuario requiere guardar el avance que ha ingresado:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.1\linewidth]{images/SP6/BotonGuardar.jpeg}
-    \caption{Botón Guardar} 
+    \caption{Botón Guardar}
 \end{figure}
 
-El sistema guarda la información ingresada y muestra el mensaje: 
+El sistema guarda la información ingresada y muestra el mensaje:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.4\linewidth]{images/SP6/BotonAvance.jpeg}
-    \caption{Botón Avances Guardados exitosamente.} 
+    \caption{Botón Avances Guardados exitosamente.}
 \end{figure}
 
 \subsubsection{Posibles errores}
@@ -338,27 +317,27 @@ El sistema guarda la información ingresada y muestra el mensaje:
         Si al momento de acceder a la pantalla de \hyperlink{RegPE}{\textit{Registrar Programa en Extenso}} o al intentar registrar una Unidad de Aprendizaje, aparece el siguiente mensajes:
                 %Imagen MSG7 Y MSG25
 
-        \begin{figure}[!hbtp]
+        \begin{figure}[H]
             \centering
             \includegraphics[width=0.4\linewidth]{images/SP6/MSGSN.png}
             \caption{Servicios no disponibles}
             \label{SND}
 
         \end{figure}
-        
+
         Significa que existió un error de conexión o del sistema. Al dar clic en en botón ''Aceptar'', el sistema lo redireccionará a la pantalla de \hyperlink{verTareas}{\textit{Listado de Unidades de Aprendizaje}}. Deberá esperar a que la página este disponible para  intentar acceder nuevamente.
 
         \item Campos vacíos al momento de ingresar un Programa Sintético
 
         Si usted deja en blanco algún campo o campos del formulario, y posteriormente dio clic en \IUbutton{Finalizar}, el sistema mostrará el siguiente mensaje debajo del campo o campos :
-                
-        \begin{figure}[!hbtp]
-            \centering
-            \includegraphics[width=0.1\linewidth]{images/SP6/MSG44.png}
-            \caption{Campos vacíos}
-            \label{mensaje44}
-       \end{figure}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+       %  \begin{figure}[H]
+       %      \centering
+       %      \includegraphics[width=0.1\linewidth]{images/SP6/MSG44.png}
+       %      \caption{Campos vacíos}
+       %      \label{mensaje44}
+       % \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
        Regresara al formulario, en donde usted deberá llenar el o los campos que dejo vacíos.
 
        \item Los campos ingresados no son válidos
@@ -366,19 +345,20 @@ El sistema guarda la información ingresada y muestra el mensaje:
        Si al momento de dar clic en \IUbutton{Finalizar} aparece el siguiente mensaje:
           %Imagen MSG35
          % Imagen del MSG35
-        \begin{figure}[!hbtp]
-            \centering
-            \includegraphics[width=0.1\linewidth]{images/SP6/MSG35.png}
-            \caption{Campos incorrectos}
-            \label{mensaje35}
-        \end{figure}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%         \begin{figure}[H]
+%             \centering
+%             \includegraphics[width=0.1\linewidth]{images/SP6/MSG35.png}
+%             \caption{Campos incorrectos}
+%             \label{mensaje35}
+%         \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         Significa que la composición de los datos ingresados en el formulario no es la correcta. Tenga en cuenta lo siguiente:
 
         \begin{itemize}
-            \item 
-            \item 
-                            
+            \item
+            \item
+
         \end{itemize}
 
     \end{itemize}
@@ -407,24 +387,24 @@ Al llenar todos los datos correctamente, el Docente dará click en el botón:
 
 Al llenar todos los datos correctamente, el Docente dará click en el botón:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.1\linewidth]{images/SP6/BotonFinalizar.jpeg}
-    \caption{Botón Finalizar} 
+    \caption{Botón Finalizar}
 \end{figure}
 
 Se mostrara la siguiente pantalla:
-
-\begin{figure}[!hbtp]
-    \centering
-    \includegraphics[width=0.1\linewidth]{images/SP6/DeseaRegistro.jpeg}
-    \caption{¿Seguro que desea finalizar el registro?} 
-\end{figure}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.1\linewidth]{images/SP6/DeseaRegistro.jpeg}
+%     \caption{¿Seguro que desea finalizar el registro?}
+% \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Al dar clic en \IUbutton{Aceptar} y si no se presentan errores se muestra el mensaje:
 
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.4\linewidth]{images/SP6/MSG5.png}
     \caption{Registro exitoso}
@@ -435,24 +415,24 @@ Al dar clic en \IUbutton{Aceptar} y si no se presentan errores se muestra el men
 El sistema bloquea el formulario y se procede al siguiente formulario. \hyperlink{RPE}{Registrar Programa en Extenso}
 
 
-Para continuar con el registro, usted tendrá que  dar click en \IUbutton{Cancelar}, el mensaje se cerrara y usted continuara 
+Para continuar con el registro, usted tendrá que  dar click en \IUbutton{Cancelar}, el mensaje se cerrara y usted continuara
 en el formulario para terminar el registro.
 
 \pagebreak
-Si el usuario requiere guardar el avance que ha ingresado: 
+Si el usuario requiere guardar el avance que ha ingresado:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.1\linewidth]{images/SP6/BotonGuardar.jpeg}
-    \caption{Botón Guardar} 
+    \caption{Botón Guardar}
 \end{figure}
 
-El sistema guarda la información ingresada y muestra el mensaje: 
+El sistema guarda la información ingresada y muestra el mensaje:
 
-\begin{figure}[!hbtp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.4\linewidth]{images/SP6/BotonAvance.jpeg}
-    \caption{Botón Avances Guardados exitosamente.} 
+    \caption{Botón Avances Guardados exitosamente.}
 \end{figure}
 
 
@@ -463,5 +443,5 @@ El sistema guarda la información ingresada y muestra el mensaje:
 \hypertarget{REA}{\section{Registrar Evaluación de los Aprendizajes}}
 \pagebreak
 
-\end{document}
+\input{Docente/SP/GestionarTareas}
 
