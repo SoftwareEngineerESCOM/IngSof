@@ -7,7 +7,7 @@ Para consultar Unidades de Aprendizaje el Jefe de Innovación Educativa seleccio
     \caption{Pantalla Consultar Plan de Estudios}
     \label{consultarS}
 \end{figure}
-\clearpage
+\newpage
 Una vez en esa pantalla presiona un semestre desplegando las Unidades de Aprendizaje que tiene asociadas, como se muestra en la pantalla \hyperlink{consultarUA}{\textit{Consultar Planes de Estudios}}:\\
 \begin{figure}[H]
     \centering
@@ -16,7 +16,31 @@ Una vez en esa pantalla presiona un semestre desplegando las Unidades de Aprendi
     \label{consultarUA}
 \end{figure}
 En esta ultima pantalla el usuario puede realizar las tareas relacionadas a la gestión de Unidades de Aprendizaje, Registrar Unidad de Aprendizaje (verde), Editar Unidad de Aprendizaje (azul) y Eliminar Unidad de Aprendizaje (rojo).
-\clearpage
+\newpage
+\subsection{Agregar Semestres}
+Cuando el usuario presiona el botón \IUbutton{+} de la pantalla \hyperlink{consultarS}{\textit{Consultar Planes de Estudios}} se agrega un nuevo Semestre, a menos que ya existan 8 semestres en ese caso se muestra el siguiente mensaje:
+\begin{figure}[H]
+    \centering
+    \hypertarget{maxSemestres}{\includegraphics[width=0.7\linewidth]{images/GUA/maxSemestres}}
+    \caption{Maximo de Semestres: aparece cuando se intenta agregar un noveno semestre.}
+    \label{maxSemestres}
+\end{figure}
+\subsection{Eliminar Semestres}
+Cuando el usuario presiona el botón \IUbutton{X} de la pantalla \hyperlink{consultarS}{\textit{Consultar Planes de Estudios}} y el semestre seleccionado no cuenta con ninguna Unidad de Aprendizaje asociada se muestra el siguiente mensaje:
+\begin{figure}[H]
+    \centering
+    \hypertarget{eliminarS}{\includegraphics[width=0.7\linewidth]{images/GUA/eliminarS}}
+    \caption{Eliminar Semestre: solicita confirmación para eliminar permanentemente un Semestre}
+    \label{eliminarS}
+\end{figure}
+En caso que el semestre si este asociado a alguna Unidad de Aprendizaje se muestra este otro:
+\begin{figure}[H]
+    \centering
+    \hypertarget{errorEliminarS}{\includegraphics[width=0.7\linewidth]{images/GUA/errorEliminarS}}
+    \caption{Imposibilidad de Eliminar: este mensaje aparece cuando se intenta eliminar a un Semestre con Unidades de Aprendizaje asociadas.}
+    \label{errorEliminarS}
+\end{figure}
+\newpage
 \subsection{Registrar Unidades de Aprendizaje}
 Cuando el usuario presiona el botón \IUbutton{+}, el recuadro verde, en la pantalla \hyperlink{consultarUA}{\textit{Consultar Planes de Estudios}} se le redirecciona a la pantalla \hyperlink{registrarUA}{\textit{Registrar Unidad de Aprendizaje}}:\\
 \begin{figure}[H]
@@ -66,7 +90,7 @@ Si el usuario desea cancelar la operación debe presionar el botón \IUbutton{Ca
 \begin{figure}[H]
     \centering
     \hypertarget{cancelarR}{\includegraphics[width=0.7\linewidth]{images/GUA/cancelar}}
-    \caption{Cancelación: este mensaje nos permite finalizar la operacion sin guardar}
+    \caption{Cancelación: permite finalizar la operacion sin guardar}
     \label{cancelarR}
 \end{figure}
 \newpage
@@ -104,7 +128,7 @@ Si la operación pudo concluir sin errores se despliega el siguiente mensaje:\\
 \begin{figure}[H]
     \centering
     \hypertarget{modificacion}{\includegraphics[width=0.7\linewidth]{images/GUA/modificacion}}
-    \caption{Modificación exitosa: mensaje para notificar del exito de la operación}
+    \caption{Modificación exitosa: notifica del exito de la operación}
     \label{modificacion}
 \end{figure}
 En el caso de que ocurra un error aparecerá este otro:\\
@@ -118,7 +142,7 @@ Si decide cancelar la operación y presiona el botón \IUbutton{Cancelar} aparec
 \begin{figure}[H]
     \centering
     \hypertarget{cancelarE}{\includegraphics[width=0.7\linewidth]{images/GUA/cancelar}}
-    \caption{Cancelación: este mensaje nos permite finalizar la operacion sin guardar}
+    \caption{Cancelación: permite finalizar la operacion sin guardar}
     \label{cancelarE}
 \end{figure}
 \newpage
