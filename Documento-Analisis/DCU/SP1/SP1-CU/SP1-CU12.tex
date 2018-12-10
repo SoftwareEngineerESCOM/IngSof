@@ -1,14 +1,13 @@
 %REGISTRAR SISTEMA DE EVALUACIÓN: NAIBI
 \begin{UseCase}{SP1-CU12}{Registrar el sistema de evaluación}{El usuario podrá especificar el sistema de evaluación por periodo, así como asignar las unidades temáticas asocidas al mismo.}
-        \UCitem{Versión}{\color{Gray}1.0}
+        \UCitem{Versión}{\color{Gray}1.1}
         \UCitem{Autor}{\color{Gray}Ramírez Martínez Janet Naibi.}
         \UCitem{Supervisa}{\color{Gray}Cervantes Delgadillo Mauricio.}
         \UCitem{Actor}{\hyperlink{Docente}{Docente}}
-        \UCitem{Propósito}{Poder identificar qué porcentaje tiene cada unidad temática en relación con la evaluación final, y además saber qué unidades temáticas pertecen a qué periodo.}
+        \UCitem{Propósito}{Poder identificar qué porcentaje tiene cada unidad temática en relación con la evaluación final, y además saber qué unidades temáticas pertenecen a qué periodo.}
         \UCitem{Entradas}{Las entradas para el registro del sistema de evaluación serán:
           \begin{itemize}
             \item Periodo.
-            \item Unidad temática.
             \item Porcentaje.
           \end{itemize}
         }
@@ -18,15 +17,17 @@
                 \item MSG4. Los campos marcados con (*) son obligatorios.
                 \item MSG5. Registro finalizado exitosamente.
                 \item MSG23. Los porcentajes de evaluación no cumplen con el porcentaje total obligatorio.
-                \item MSG9. Por el momento no se puede realizar el registro.
+                \item MSG25. Servicios no disponibles.
+                \item MSG41. Debe llenar el Programa Sintético para realizar este registro.
+                \item MSG58. Avances guardados exitosamente.
+                \item MSG61. Debe llenar las Unidades Temáticas para realizar este registro.
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
         \UCitem{Precondiciones}{
             \begin{itemize}
                 \item Se debe haber realizado previamente el registro del Programa Sintético.
-                \item Se debe haber realizado previamente el registro de las Unidades Temáticas. 
-                \item El catálogo Unidad\_Tematica debe tener al menos un registro.
+                \item Se debe haber realizado previamente el registro de las Unidades Temáticas.
             \end{itemize}
         }
         \UCitem{Postcondiciones}{El sistema de evaluación queda registrado en el sistema.}
@@ -37,28 +38,25 @@
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar SE} de la \IUref{SP1-IU}{Principal}.
+    \UCpaso[\UCactor] Selecciona la opción \IUbutton{Relación de Prácticas} del menú superior.
     
-    \UCpaso Extrae la información de la Unidad Aprendizaje. [Trayectoria A]
+    \UCpaso Verifica que el programa sintético haya sido registrado. [Trayectoria A]
+    
+    \UCpaso Verifica que el registro de las unidades temáticas ya haya sido elaborado. [Trayectoria B]
+    
+    \UCpaso Muestra la interfaz de usuario \IUref{RSE}{Registrar Sistema de Evaluación}.
+    
+	\UCpaso[\UCactor] Selecciona el número del periodo al que pertenece la Unidad Temática.
 	
-	\UCpaso Verifica que el catálogo ``Unidad\_Tematica'' tenga al menos un registro. [Trayectoria B]
+	\UCpaso[\UCactor] Ingresa el porcentaje que se le atribuye a cada unidad temática ingresada con base en la regla de negocios \BRref{BR25}{La suma de los porcentajes de cada evaluación debe ser igual a 100\%}.
 	
-	\UCpaso Muestra la \IUref{IU.05}{Registrar Sistema de Evaluación}.
-	
-	\UCpaso[\UCactor] Ingresa el número del periodo. [Trayectoria C]
-	
-	\UCpaso[\UCactor] Selecciona la Unidad Temática que se evaluará en el periodo ingresado en el paso anterior.
-	
-	\UCpaso[\UCactor] Selecciona el porcentaje que se le atribuye a cada unidad temática ingresada.
-	
-	\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}.
+	\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria C]
         
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados. [Trayectoria D]
     
     \UCpaso Verifica que los porcentajes ingresados cumplan la regla de negocio \BRref{BR25}{La suma de los porcentajes de cada evaluación debe ser igual a 100\%.} [Trayectoria E]
     
-    \UCpaso Guarda la información del Sistema de Evaluación en la base de datos.
+    \UCpaso Guarda la información del Sistema de Evaluación. [Trayectoria F]
     
     \UCpaso Muestra el mensaje \MSGref{MSG5.}{Registro finalizado exitosamente}.
     
@@ -69,37 +67,41 @@
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
 
-\begin{UCtrayectoriaA}{A}{No se ha realizado la elaboración del Programa Sintético.}
-	\UCpaso No muestra los datos provenientes del \UCref{SP1-CU1}.
-	\UCpaso Muestra el mensaje \MSGref{MSG41}{Debe llenar el Programa Sintético para realizar este registro}.
-	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Muestra la interfaz de usuario \IUref{SP1-IU}{Principal}.
+\begin{UCtrayectoriaA}{A}{No se ha realizado el registro del Programa Sintético.}
+    \UCpaso[\UCactor] Selecciona la opción \IUbutton{Sistema de Evaluación} del menú superior.
+    \UCpaso Detecta que no se ha realizado el registro del Programa Sintético.
+        \UCpaso Muestra el mensaje \MSGref{MSG41}{Debe llenar el Programa Sintético para realizar este registro}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra la interfaz de usuario \IUref{RSE}{Registrar Sistema de Evalación.}
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA B -------------------------
 
-\begin{UCtrayectoriaA}{B}{El catálogo Unidad\_Tematica está vacio.}
-	\UCpaso No encuentra información en el catálogo Unidad\_Tematica.
-    \UCpaso Muestra el mensaje \MSGref{MSG9.}{Por el momento no se puede realizar el registro.}
+\begin{UCtrayectoriaA}{B}{No se ha realizado el registro de las Unidades Temáticas.}
+    \UCpaso[\UCactor] Selecciona la opción \IUbutton{Sistema de Evaluación} del menú superior.
+    \UCpaso Detecta que no se ha realizado el registro de las Unidades Temáticas.
+        \UCpaso Muestra el mensaje \MSGref{MSG61}{Debe llenar las Unidades Temáticas para realizar este registro}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-	\UCpaso Muestra la interfaz de usuario \IUref{SP1-IU}{Principal}.
+    \UCpaso Muestra la interfaz de usuario \IUref{RSE}{Registrar Sistema de Evalación.}
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
 
-\begin{UCtrayectoriaA}{C}{Desea registrar más de un periodo para el Sistema de Evaluación.}
-	\UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Periodo}.
-	\UCpaso Despliega los campos ``Periodo'', y ``Unidad Temática''.
-	\UCpaso Continua en el paso 5 de la trayectoria principal de \UCref{SP1-CU12}
+\begin{UCtrayectoriaA}{C}{El actor desea guardar el progreso de su registro.}
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Guardar}
+\UCpaso Almacena la información.
+\UCpaso Muestra el \MSGref{MSG58}{Avances guardados exitosamente.}
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Aceptar} 
+\UCpaso Muestra la interfaz de usuario \IUref{RSE}{Registrar Sistema de Evaluación}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA D -------------------------
 
 \begin{UCtrayectoriaA}{D}{Uno o más campos obligatorios no fueron contestados.}
 	\UCpaso Detecta uno o más campos sin contestar.
-    \UCpaso Muestra el mensaje \MSGref{MSG4.}{Los campos marcados con (*) son obligatorios.}
+    \UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU4}.
+    \UCpaso Continua en el paso 5 de la trayectoria principal del \UCref{SP1-CU12}.
 \end{UCtrayectoriaA}
 
 
@@ -109,7 +111,13 @@
     \UCpaso Detecta que la suma de los porcentajes dados por el usuario no cumplen con el 100\% requerido.
     \UCpaso Muestra el mensaje \MSGref{MSG23.}{Los porcentajes de evaluación no cumplen con el porcentaje total obligatorio.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 7 de la trayectoria principal del \UCref{SP1-CU12}.
+    \UCpaso Continua en el paso 6 de la trayectoria principal del \UCref{SP1-CU12}.
 \end{UCtrayectoriaA}
 
+%------------------------ CU TRAYECTORIA ALTERNATIVA F -------------------------
 
+\begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
+	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{RSE}{Registrar Sistema de Evaluación}.
+\end{UCtrayectoriaA}
