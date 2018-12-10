@@ -1,0 +1,56 @@
+\section{Instalación}
+
+\begin{figure}[!h]
+\raggedright
+\includegraphics[width=0.1\linewidth]{images/tecnologias/spring.png}
+\end{figure}
+
+\begin{figure}[!h]
+\raggedleft
+\includegraphics[width=0.1\linewidth]{images/tecnologias/angular.png}
+\end{figure}
+
+
+Para poder instalar el sistema se requiere:
+
+\begin{itemize}
+	\item Spring tools suite 4+
+  \item Angular 6+
+  \item Postgres 11+
+  \item Google Chrome versión 11+
+  \item Ubuntu 18.04 LTS
+\end{itemize}
+
+\subsection{Spring tools suite}
+Para instalar spring tools suite en linux se siguen los siguiente pasos:
+
+\begin{enumerate}
+  \item Instalar el JDK de java 1.8.1 que se encuentra en la carpeta APMSEjecutables/java.
+  \item Ejecutar el archivo STS dentro de la ruta APMSEjecutables/spring con el comando desde la consola. \textit{./STS}
+\end{enumerate}
+
+\subsection{Angular}
+Para instalar angular en linux se siguen los siguiente pasos:
+
+\begin{enumerate}
+  \item Instalar node js con los siguiente comandos:
+  \textit{sudo apt-get install nodejs} 
+  \newline\textit{sudo apt-get install npm}
+  \item Abrir una consola y ejecutar el comando:
+  \textit{npm install -g @angular/cl} 
+\end{enumerate}
+
+\subsection{Postgres}
+Para instalar postgres en linux se siguen los siguiente pasos:
+
+\begin{enumerate}
+  \item Ejecutar el comando en una consola. 
+  \textit{sudo apt-get install postgresql postgresql-contrib} 
+  \item Para acceder al servidor de postgres se ejecuta:
+  \textit{sudo -i -u postgres}seguido de:\textit{psql} 
+  \item Crear la base de datos con el siguiente comando: 
+  \textit{postgres: create database apms;} 
+  \item Para salir del terminal se ejecuta:
+  \textit{postgres: \q''} 
+\end{enumerate}
+
