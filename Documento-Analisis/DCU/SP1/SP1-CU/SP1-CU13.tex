@@ -8,12 +8,13 @@
         \UCitem{Entradas}{Las entradas para el registro de una bibliografía serán:
           \begin{itemize}
             \item Autor.
-            \item ISBN.
-            \item Título del libro.
             \item Año de publicación.
-            \item Edición.
-            \item Ciudad de publicación.
+            \item Título del libro.
+            \item Lugar de publicación.
             \item Editorial.
+            \item ISBN.
+            \item Tipo de bibliografía.
+            \item Unidad temática en la que se puede consultar esa bibliografía.
           \end{itemize}
         }
         \UCitem{Origen}{Teclado y Mouse}
@@ -21,93 +22,123 @@
             \begin{itemize}
                 \item MSG4. Los campos marcados con (*) son obligatorios.
                 \item MSG5. Registro finalizado exitosamente.
-                \item MSG6. ¿Seguro que desea cancelar el registro?
-                \item MSG8. El libro con el ISBN "Número de ISBN" ya existe.
-                \item MSG9. Por el momento no se puede realizar el registro.
+                \item MSG8. Ya existe un libro con ese ISBN.
+                \item MSG25. Servicios no disponibles.
+                \item MSG58. Avances guardados exitosamente.
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
         \UCitem{Precondiciones}{
             \begin{itemize}
                 \item La bibliografía que se desea registrar, no debe existir previamente en el sistema.
-                \item Los catálogos ``Tipo\_Bibliografía'' y ``Lugar\_Publicacion'' no deben estar vacios.
+                \item Los catálogos ``Tipo\_Bibliografía'' y ``Lugar\_Publicacion'' no deben estar vacíos.
             \end{itemize}}
         \UCitem{Postcondiciones}{La bibliografía queda registrada en el sistema.}
         \UCitem{Errores}{}
         \UCitem{Estado}{Revisión.}
-        \UCitem{Observaciones}{Si el autor no se encuentra en la lista de autores mostrados por esta interfaz, se tendrá que presionar el \IUbutton{Registrar autor} para ingresar el nuevo registro a la base de datos.}
+        \UCitem{Observaciones}{Si el autor no se encuentra en la lista de autores mostrados por esta interfaz, se tendrá que presionar el \IUbutton{Agregar autor} para ingresar el nuevo registro al sistema.}
 \end{UseCase}
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
 
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar bibliografía}.
+    \UCpaso[\UCactor] Selecciona la opción \IUbutton{Registrar bibliografía}.
 
     \UCpaso Busca en la base de datos la información de los catálogos ``Tipo\_Bibliografía'' y ``Lugar\_Publicacion''. [Trayectoria A]
 
-    \UCpaso Muestra la interfaz de usuario \IUref{IU6}{Registrar bibliografía}.
+    \UCpaso Muestra la interfaz de usuario \IUref{RB}{Registrar Bibliografía}.
 
     \UCpaso[\UCactor] Selecciona el(los) autor(es) de la lista de autores disponibles con base en la regla de negocio \BRref{BR23}{Un libro con más de 3 autores es sólo citado por los primeros 3.}. [Trayectoria B]
-
+    
     \UCpaso[\UCactor] Selecciona el año de publicación del libro que se está registrando.
-
+    
     \UCpaso[\UCactor] Ingresa el título del libro que desea registrar.
-
+    
     \UCpaso[\UCactor] Selecciona el lugar de publicación del libro que está siendo registrado.
-
-    \UCpaso[\UCactor] Selecciona la editorial del libro que está siendo registrado.
+    
+    \UCpaso[\UCactor] Ingresa la editorial del libro que está siendo registrado.
 
     \UCpaso[\UCactor] Ingresa el ISBN asociado al libro que está registrando con base en las reglas de negocio \BRref{BR21}{Un libro tiene un ISBN único.} y \BRref{BR22}{Longitud del ISBN}.
 
     \UCpaso[\UCactor] Selecciona el tipo de la bibliografía.
+    
+    \UCpaso[\UCactor] Selecciona la unidad temática a la que pertenece la bibliografía.
 
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Continuar}.
+    \UCpaso[\UCactor] Selecciona si la bibliografía es clásica o no.
+    
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria C] [Trayectoria D]
 
-    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados con base en la regla de negocio \BRref{BR13}{Todos los datos solicitados son obligatorios}. [Trayectoria C]
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados con base en la regla de negocio \BRref{BR13}{Todos los datos solicitados son obligatorios}. [Trayectoria E]
 
-    \UCpaso Valida que no exista un libro con el mismo ISBN. [Trayectoria D]
+    \UCpaso Valida que no exista un libro con el mismo ISBN. [Trayectoria F]
 
-    \UCpaso Guarda la información de la bibliografía en la base de datos.
+    \UCpaso Guarda la información de la bibliografía. [Trayectoria G]
 
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG2.}{Registro finalizado exitosamente.}
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente.}
 
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 
-    \UCpaso Muestra la interfaz de usuario \IUref{IU8}{Registrar Perfil Docente}.
+    \UCpaso Muestra la interfaz de usuario \IUref{RB}{Registrar bibliografía}.
 \end{UCtrayectoria}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
 
-\begin{UCtrayectoriaA}{A}{Los catálogos están vacios.}
+\begin{UCtrayectoriaA}{A}{Los catálogos están vacíos.}
     \UCpaso No encuentra información en los catálogos ``Tipo\_Bibliografía'' y ``Lugar\_Publicacion''.
-    \UCpaso El sistema muestra el mensaje \MSGref{MSG9.}{Por el momento no se puede realizar el registro.}
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    %\UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{CU1}.
+    \UCpaso Muestra la interfaz de usuario \IUref{RB}{Registrar Bibliografía}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA B -------------------------
 
 \begin{UCtrayectoriaA}{B}{No existe el(los) autor(es) requerido(s) en la lista de autores disponibles.}
     \UCpaso[\UCactor] No encuentra al autor requerido.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Autor} de la \IUref{IU6}{Registrar bibliografía.}
-    \UCpaso Muestra el modal \IUref{IU6.1}{Registrar Autor}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Agregar Autor} de la interfaz de usuario \IUref{RB}{Registrar Bibliografía.}
+    \UCpaso Muestra el modal \IUref{ATHR}{Registrar Autor}.
     \UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP1-CU14}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
 
-\begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados.}
+\begin{UCtrayectoriaA}{C}{El actor desea guardar el progreso de su registro.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Guardar}
+    \UCpaso Almacena la información.
+    \UCpaso Muestra el \MSGref{MSG58}{Avances guardados exitosamente.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Aceptar} 
+    \UCpaso Muestra la interfaz de usuario \IUref{RB}{Registrar Bibliografía}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA D -------------------------
+
+\begin{UCtrayectoriaA}{D}{El actor quiere agregar otra bibliografía a la Unidad de Aprendizaje.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Limpiar}.
+    \UCpaso Limpia todo el formulario.
+    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU13}
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA E -------------------------
+
+\begin{UCtrayectoriaA}{E}{Uno o más campos obligatorios no fueron contestados.}
     \UCpaso Detecta uno o más campos sin contestar.
     \UCpaso Muestra el mensaje \MSGref{MSG4.}{Los campos marcados con (*) son obligatorios.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU1}.
+    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU13}.
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA D -------------------------
+%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
 
-\begin{UCtrayectoriaA}{D}{El ISBN que se intenta registrar ya existe en el sistema.}
+\begin{UCtrayectoriaA}{F}{El ISBN que se intenta registrar ya existe en el sistema.}
     \UCpaso Encuentra un libro registrado con el mismo ISBN que el libro que se está registrando.
-    \UCpaso Muestra el mensaje \MSGref{MSG8.}{El libro con el ISBN "Número de ISBN" ya existe.}
+    \UCpaso Muestra el mensaje \MSGref{MSG8.}{Ya existe un libro con ese ISBN.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU1}.
+    \UCpaso Continua en el paso 9 de la trayectoria principal del \UCref{SP1-CU13}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA G -------------------------
+
+\begin{UCtrayectoriaA}{G}{Ocurre un error al momento de persistir los datos.}
+	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{RB}{Registrar Bibliografía}.
 \end{UCtrayectoriaA}
