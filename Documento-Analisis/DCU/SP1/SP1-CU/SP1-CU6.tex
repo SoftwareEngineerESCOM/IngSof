@@ -1,104 +1,160 @@
 %REGISTRAR UNIDAD TEMÁTICA: JORGE
-
 \begin{UseCase}{SP1-CU6}{Registrar Unidad Temática}{El usuario podrá registrar una Unidad Temática correspondiente a una Unidad de Aprendizaje}
-    \UCitem{Versión}{\color{Gray}1.0}
-    \UCitem{Autor}{\color{Gray}Maldonado Carpio Jorge Enrique.}
-    \UCitem{Supervisa}{\color{Gray}Cervantes Delgadillo Mauricio.}
-    \UCitem{Actor}{\hyperlink{Usuario}{Docente y Jefe de Innovación Educativa.}}
-    \UCitem{Propósito}{Poblar de Unidades Temáticas  a una Unidad de Aprendizaje.}
-    \UCitem{Entradas}{Las entradas para el registro de tiempos de la Unidad de Aprendizaje serán:
-      \begin{itemize}
-          \item Unidad de Aprendizaje.
-          \item Número de Unidad Tématica.
-          \item Nombre.
-          \item Unidad de Competencia.
-          \item Temas.
-          \item Estrategias de Aprendizaje.
-          \item Evaluación de los Aprendizajes.
-      \end{itemize}
-    }
-    \UCitem{Origen}{Teclado y Mouse.}
-    \UCitem{Salidas}{
-    \begin{itemize}
-          \item \MSGref{MSG4}{Los campos marcados con (*) son obligatorios}.
-          \item \MSGref{MSG5}{Registro finalizado exitosamente}.
-          \item \MSGref{MSG25}{Servicios no disponibles por el momento}.
-          \item \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-          \item \MSGref{MSG35}{Escribe información válida.}
-
-      \end{itemize}
-    }
-    \UCitem{Destino}{Pantalla.}
-    \UCitem{Precondiciones}{Los siguientes catálogos no deben de estar vacios:
-      \begin{itemize}
-          \item Unidad de Aprendizaje.
-      \end{itemize}
-      }
-    \UCitem{Postcondiciones}{La Unidad Temáticas queda registrado en el sistema y asociada a una Unidad de Aprendizaje.}
-    \UCitem{Errores}{}
-    \UCitem{Estado}{Revisión.}
-    \UCitem{Observaciones}{}
+		\UCitem{Versión}{\color{Gray}1.0}
+		\UCitem{Autor}{\color{Gray}Maldonado Carpio Jorge Enrique}
+		\UCitem{Supervisa}{\color{Gray}Ramírez Martínez Janet Naibi}
+		\UCitem{Actor}{\hyperlink{Usuario}{Usuario}}
+		\UCitem{Propósito}{Poblar de Unidades Temáticas a una Unidad de Aprendizaje.}
+		\UCitem{Entradas}{Las entradas para el registro de la o las Unidad Temáticas serán:
+          \begin{itemize}
+          	\item Unidad de Competencia.
+          	\item Temas.
+          	\item Estrategias de Aprendizaje.
+          	\item Evaluación de los Aprendizajes.
+          \end{itemize}
+        }
+		\UCitem{Origen}{Teclado y Mouse.}
+		\UCitem{Salidas}{
+		    \begin{itemize}
+		        \item MSG4. Los campos marcados con (*) son obligatorios.
+		        \item MSG5. Registro finalizado exitosamente.
+		        \item MSG9. Por el momento no se puede realizar el registro.    
+		        \item MSG25. Servicios no disponibles.
+		        \item MSG41. Debe llenar el Programa Sintético para realizar este registro.
+		        \item MSG58. Avances guardados exitosamente.
+		    \end{itemize}    
+		}
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{Se debe haber elaborado previamente el Programa Sintético de la Unidad de Aprendizaje.}
+		\UCitem{Postcondiciones}{La(s) Unidad(es) Temática(s) queda(n) registrada(s) en el sistema y asociada a una Unidad de Aprendizaje.}
+		\UCitem{Errores}{}
+		\UCitem{Estado}{Revisión.}
+		\UCitem{Observaciones}{}
 \end{UseCase}
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
+    
+    \UCpaso[\UCactor] Selecciona la opción \IUbutton{Unidad Temática} del menú superior.
+    
+    \UCpaso Verifica que se haya realizado el registro del Programa Sintético. [Trayectoria A]
+    
+    \UCpaso Extrae la información: ``Unidad de Aprendizaje'' perteneciente al identificador de la Unidad de Aprendizaje seleccionada en la interfaz de usuario \IUref{VTA}{Ver tareas}.
+    
+    \UCpaso Extrae la información ``Número'' y ``Nombre'' del catálogo ``Contenido'' registrado en Programa Sintético.
+    
+    \UCpaso Muestra la interfaz de usuario \IUref{RUT}{Registrar Unidad Temática}.
+    
+    \UCpaso[\UCactor] Ingresa la Unidad de Competencia de la Unidad Temática.
+    
+    \UCpaso[\UCactor] Ingresa temas a la Unidad Temática. [Trayectoria B]
+    
+    \UCpaso[\UCactor] Ingresa las Estrategias de Aprendizaje.
+    
+    \UCpaso[\UCactor] Ingresa la Evaluación de los Aprendizajes. [Trayectoria C]
+    
+    \UCpaso Termina el registro presionando el botón \IUbutton{Finalizar} [Trayectoria D]
+    
+    \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente llenados. [Trayectoria E]
+    
+    \UCpaso Muestra el mensaje \MSGref{MSG30}{¿Está seguro que desea finalizar? Ya no podrá realizar modificaciones.}
 
-\UCpaso[\UCactor] Presiona la opción \IUbutton{Registrar Unidad Temática} de la interfaz de usuario \IUref{IU1}{Principal}.
-\UCpaso Verifica que los catálogos de Unidad de Aprendizaje contengan información.
-\UCpaso Carga la información de los catálogos.
-\UCpaso Muestra la interfaz de usuario \IUref{SP1-U3}{Registro de Unidad Temática}.
-\UCpaso[\UCactor] Selecciona la Unidad de Aprendizaje conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} [Trayectoria D] [Trayectoria E].
-\UCpaso[\UCactor] Ingresa el número de Unidad Tématica conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} [Trayectoria D] [Trayectoria E].
-\UCpaso[\UCactor] Ingresa el nombre de la Unidad Temática conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} [Trayectoria D] [Trayectoria E].
-\UCpaso[\UCactor] Ingresa la Unidad de Competencia de la Unidad Temática conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} [Trayectoria D] [Trayectoria E].
-\UCpaso[\UCactor] Presiona el botón \BtnModal que se encuentra a un lado del campo ``Temas''  [Trayectoria A] 
-\UCpaso[\UCactor] Ingresa las Estrategias de Aprendizaje conforme al modelo de datos, la \BRref{BR38}{Verificación de formularios al momento} y la \BRref{BR39}{Todos los campos marcados con (*) son obligatorios} [Trayectoria D] [Trayectoria E].
-\UCpaso[\UCactor] Presiona el botón  \BtnModal que se encuentra a un lado del campo ``Evaluación de los Aprendizajes''[Trayectoria B] 
-\UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Guardar}. [Trayectoria C]
-\UCpaso Verifica que todos los campos marcados como obligatorios hayan sido llenados.[Trayectoria D]
-\UCpaso Guarda la información de la Unidad Temática [Trayectoria F].
-\UCpaso El sistema muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
-\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{OK}. 
-\UCpaso Muestra la interfaz de usuario \IUref{IU1}{Principal}.
+    \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}. [Trayectoria F]
+    
+    \UCpaso Guarda la información de la Unidad Temática. [Trayectoria G]
+    
+    \UCpaso Muestra el mensaje \MSGref{MSG5.}{Registro finalizado exitosamente}.
+    
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    
+    \UCpaso Muestra la interfaz de usuario \IUref{RUT}{Registrar Unidad Temática}.
+    
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{$\succ$} [Trayectoria H]
+
 \end{UCtrayectoria}
 
+%------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
 
-\begin{UCtrayectoriaA}{A}{El usuario desea agregar un tema.}
-\UCpaso Abre un modal en el \UCref{SP1-CU7}
-\UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP1-CU7}.
+\begin{UCtrayectoriaA}{A}{No se ha realizado el registro del Programa Sintético.}
+    \UCpaso[\UCactor] Selecciona la opción \IUbutton{Unidad Temática} del menú superior.
+    \UCpaso Detecta que no se ha realizado el registro del Programa Sintético.
+        \UCpaso Muestra el mensaje \MSGref{MSG41}{Debe llenar el Programa Sintético para realizar este registro}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra la \IUref{RUT}{Registrar Unidad Temática.}
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{El usuario desea agregar la Evaluación de los Aprendizajes.}
-\UCpaso Abre un modal en el \UCref{SP1-CU8}
-\UCpaso Continua en el paso 2 de la trayectoria principal del \UCref{SP1-CU8}.
+%------------------------ CU TRAYECTORIA ALTERNATIVA B -------------------------
+
+\begin{UCtrayectoriaA}{B}{El actor quiere agregar temas a la Unidad Temática.}
+
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Temas \BtnModal}.
+
+\UCpaso Muestra la \IUref{RTUA}{Registrar temas a la Unidad Temática}.
+
+\UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP1-CU7}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{C}{El usuario desea cancelar el registro del Programa Sintético.}
-\UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
-\UCpaso Muestra el \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
-\UCpaso[\UCactor] Presiona el botón \IUbutton{Si} [Trayectoria C.1]
-\UCpaso Continua en el paso 17 de la trayectoria principal del \UCref{SP1-CU6}.
+%------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
+
+\begin{UCtrayectoriaA}{C}{El actor quiere agregar la evaluación de los aprendizajes.}
+
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar Evaluación de los aprendizajes \BtnModal}.
+
+\UCpaso Muestra la interfaz de usuario \IUref{REDA}{Registrar Evaluaciones de Aprendizaje}.
+
+\UCpaso Continua en el paso 1 de la trayectoria principal del \UCref{SP1-CU9}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{C.1}{El usuario no desea cancelar el registro del Programa Sintético.}
-\UCpaso[\UCactor] Presiona el botón \IUbutton{No}
-\UCpaso Continua en el paso 12 de la trayectoria principal del \UCref{SP1-CU6}.
+%------------------------ CU TRAYECTORIA ALTERNATIVA D -------------------------
+
+\begin{UCtrayectoriaA}{D}{El actor desea guardar el progreso de su registro.}
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Guardar}. [Trayectoria E.1]
+\UCpaso Almacena la información.
+\UCpaso Muestra el \MSGref{MSG58}{Avances guardados exitosamente.}
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Aceptar} 
+\UCpaso Muestra la \IUref{RUT}{Registrar Unidad Temática}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{D}{Uno o más campos obligatorios no fueron contestados.}
-\UCpaso Detecta uno o más campos sin contestar.
-\UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios}.
-\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-\UCpaso Continua en el paso 6 de la trayectoria principal del \UCref{SP1-CU1}.
+%------------------------ CU TRAYECTORIA ALTERNATIVA D.1 -------------------------
+
+\begin{UCtrayectoriaA}{D.1}{Hay un error al momento de guardar los avances.}
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Guardar}.
+\UCpaso Muestra el \MSGref{MSG9}{Por el momento no se puede realizar el registro}.
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Aceptar} 
+\UCpaso Muestra la \IUref{RUT}{Registrar Unidad Temática}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{E}{El sistema detecta caracteres no válidos conforme al Modelo de Datos.}
-\UCpaso Muestra el mensaje \MSGref{MSG35}{Escribe información válida} debajo del campo que incumplio con el diccionario de datos.
-\UCpaso Continúa en el paso 6 de la trayectoria principal del \UCref{SP1-CU1}.
+%------------------------ CU TRAYECTORIA ALTERNATIVA E -------------------------
+
+\begin{UCtrayectoriaA}{E}{Uno o más campos obligatorios no fueron contestados.}
+	\UCpaso Detecta uno o más campos sin contestar.
+    \UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continua en el paso 6 de la trayectoria principal del \UCref{SP1-CU6}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{F}{Ocurre un error al momento de persistir los datos.}
-\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles por el momento}.
-\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-\UCpaso Continúa en el paso 17 de la trayectoria principal del \UCref{SP1-CU1}.
+%------------------------ CU TRAYECTORIA ALTERNATIVA F -------------------------
+
+\begin{UCtrayectoriaA}{F}{El actor aún no desea finalizar el registro}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
+	\UCpaso Cierra el mensaje.
+	\UCpaso Continúa en el paso 9 de la trayectoria principal del \UCref{SP1-CU6}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA G -------------------------
+
+\begin{UCtrayectoriaA}{G}{Ocurre un error al momento de persistir los datos.}
+	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{RUT}{Registrar Unidad Temática}..
+\end{UCtrayectoriaA}
+
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA H -------------------------
+
+\begin{UCtrayectoriaA}{H}{El actor registra todas las unidades temáticas que tenga la unidad de aprendizaje.}
+
+\UCpaso[\UCactor] Presiona el botón \IUbutton{$\succ$}.
+
+\UCpaso Continua en el paso 6 de la trayectoria principal del \UCref{SP1-CU6}.
 \end{UCtrayectoriaA}
