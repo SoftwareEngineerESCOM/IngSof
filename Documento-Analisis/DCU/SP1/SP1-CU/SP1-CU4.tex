@@ -27,6 +27,7 @@
                 \item MSG9. Por el momento no se puede realizar el registro.
                 \item MSG25. Servicios no disponibles.
                 \item MSG58. Avances guardados exitosamente.
+                \item MSG30. ¿Está seguro que desea finalizar? Ya no podrá realizar modificaciones.
         	\end{itemize}
         }
 		\UCitem{Destino}{Pantalla.}
@@ -79,9 +80,13 @@
         
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente llenados. [Trayectoria D]
     
+    \UCpaso Muestra el mensaje \MSGref{MSG30}{¿Está seguro que desea finalizar? Ya no podrá realizar modificaciones.}
+
+    \UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}. [Trayectoria E]
+    
     \UCpaso Guarda la información del Programa en Extenso en la base de datos. [Trayectoria F]
     
-    \UCpaso Muestra el mensaje \MSGref{MSG5.}{Registro finalizado exitosamente}.
+    \UCpaso Muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente}.
     
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     
@@ -128,9 +133,17 @@
 
 \begin{UCtrayectoriaA}{D}{Uno o más campos obligatorios no fueron contestados.}
 	\UCpaso Detecta uno o más campos sin contestar.
-    \UCpaso Muestra el mensaje \MSGref{MSG4.}{Los campos marcados con (*) son obligatorios.}
+    \UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 6 de la trayectoria principal del \UCref{SP1-CU4}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA E -------------------------
+
+\begin{UCtrayectoriaA}{E}{El actor aún no desea finalizar el registro}
+	\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
+	\UCpaso Cierra el mensaje.
+	\UCpaso Continúa en el paso 16 de la trayectoria principal del \UCref{SP1-CU4}.
 \end{UCtrayectoriaA}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA F -------------------------
@@ -140,3 +153,4 @@
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Muestra la interfaz de usuario \IUref{RPE}{Registrar Programa en Extenso}.
 \end{UCtrayectoriaA}
+
