@@ -1,0 +1,48 @@
+%REGISTRAR RECURSOS HUMANOS ENCARGADOS DEL DISEÑO/REDISEÑO DE LA UA: NAIBI.
+
+\begin{UseCase}{SP1-CU17}{Asignar Tareas}{El usuario podrá asignar tareas para el registro de Unidades de Aprendizaje a distintos Usuarios.}
+        \UCitem{Versión}{\color{Gray}1.0}
+        \UCitem{Autor}{\color{Gray}Ramírez Martínez Janet Naibi}
+        \UCitem{Supervisa}{\color{Gray}}
+        \UCitem{Actor}{\hyperlink{JIE}{Jefe de Innovación Educativa}}
+        \UCitem{Propósito}{Poder repartir el trabajo de registro de la Unidad de Aprendizaje.}
+        \UCitem{Origen}{Mouse}
+        \UCitem{Salidas}{
+            \begin{itemize}
+                \item \MSGref{MSG25}{Servicios no disponibles.}
+                \item \MSGref{MSG61}{¿Desea asignar la tarea a otor Usuario?}
+            \end{itemize}
+        }
+        \UCitem{Destino}{Pantalla.}
+        \UCitem{Precondiciones}{}
+        \UCitem{Postcondiciones}{El usuario al que se le asignó la tarea podrá ver la tarea y elaborarla.}
+        \UCitem{Errores}{}
+        \UCitem{Estado}{Revisión.}
+        \UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+    \UCpaso[\UCactor] Presiona el botón \BtnTask de la \IUref{IU1}{Principal}.
+    \UCpaso Muestra la pantalla \IUref{IU1}{Principal}.
+    \UCpaso[\UCactor] Selecciona el usuario al que le quiere asignar la tarea.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Asignar}.
+    \UCpaso Muestra el mensaje \MSGref{MSG61}{¿Desea asignar la tarea a otor Usuario?}.
+    \UCpaso Muestra el mensaje \MSGref{MSG61}{¿Desea asignar la tarea a otor Usuario?}.[Trayectoria A]
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.[Trayectoria B]
+    \UCpaso Muestra la pantalla \IUref{IU1}{Principal}.
+\end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{El Actor no selecciona ningún usuario.}
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no Disponibles}.
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Continúa en el paso 3 de la Trayectoria Principal.
+\end{UCtrayectoriaA}
+%------------------------ CU TRAYECTORIA ALTERNATIVA B-------------------------
+
+\begin{UCtrayectoriaA}{B}{Los catálogos ``Academia'' y ``Recurso\_Humano'' están vacíos.}
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
+    \UCpaso Continúa en el paso 3 de la Trayectoria Principal para asignar a otro usuario.
+\end{UCtrayectoriaA}

@@ -1,0 +1,105 @@
+%REGISTRAR RECURSOS HUMANOS ENCARGADOS DEL DISEÑO/REDISEÑO DE LA UA: NAIBI.
+
+\begin{UseCase}{SP1-CU16}{Registrar recursos humanos encargados del diseño/rediseño de la Unidad de Aprendizaje}{El usuario podrá registrar a las personas involucradas en el proceso de diseño/rediseño de una Unidad de Aprendizaje.}
+        \UCitem{Versión}{\color{Gray}1.0}
+        \UCitem{Autor}{\color{Gray}Ramírez Martínez Janet Naibi}
+        \UCitem{Supervisa}{\color{Gray}}
+        \UCitem{Actor}{\hyperlink{Docente}{Docente}}
+        \UCitem{Propósito}{Que se tenga constancias de las personas involucradas en el proceso del diseño/rediseño de la Unidad de Aprendizaje para futuras aclaraciones.}
+        \UCitem{Entradas}{Persona o academia encargada de la elaboración, revisión, aprobación y autorización de la Unidad de Aprendizaje.}
+        \UCitem{Origen}{Mouse}
+        \UCitem{Salidas}{
+            \begin{itemize}
+                \item MSG5. Registro finalizado exitosamente.
+                \item MSG30. ¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.
+                \item MSG44. Este campo es requerido.
+            \end{itemize}
+        }
+        \UCitem{Destino}{Pantalla.}
+        \UCitem{Precondiciones}{
+            \begin{itemize}
+                \item Los catálogos ``Academia'' y ``Recurso\_Humano'' debe tener al menos un registro.
+            \end{itemize}}
+        \UCitem{Postcondiciones}{Queda registrado en el sistema quién elaboró, revisó, aprobó y autorizó la Unidad de Aprendizaje.}
+        \UCitem{Errores}{}
+        \UCitem{Estado}{Revisión.}
+        \UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Registrar elaboración y autorización} de la \IUref{IU1}{Principal}.
+
+    \UCpaso Verifica que los catálogos ``Academia'' y ``Recurso\_Humano'' tengan al menos un registro. [Trayectoria A]
+
+    \UCpaso Muestra la \IUref{IU8}{Registrar elaboración y autorización de la Unidad de Aprendizaje}
+
+    \UCpaso[\UCactor] Selecciona el nombre de la academia encargada del diseño/rediseño de la Unidad de Aprendizaje.
+
+    \UCpaso[\UCactor] Selecciona el nombre del recurso humano encargado de revisar la Unidad de Aprendizaje.
+
+    \UCpaso[\UCactor] Selecciona el nombre del recurso humano encargado de aprobar la Unidad de Aprendizaje.
+
+    \UCpaso[\UCactor] Selecciona el nombre del recurso humano encargado de autorizar la Unidad de Aprendizaje.
+
+    \UCpaso[\UCactor] Termina el registro presionando el botón \IUbutton{Guardar}. [Trayectoria B]
+
+    \UCactor Verifica que todos los campos obligatorios hayan sido contestados con base en la regla de negocio \BRref{BR39}{Todos los campos marcados con (*) son obligatorios.} [Trayectoria C]
+
+    \UCpaso Muestra el mensaje \MSGref{MSG5}{Registro finalizado exitosamente.}
+
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+
+    \UCpaso Muestra la \IUref{IU1}{Principal}
+\end{UCtrayectoria}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{Los catálogos ``Academia'' y ``Recurso\_Humano'' están vacíos.}
+
+    \UCpaso No encuentra información en los catálogos ``Academia'' y ``Recurso\_Humano''.
+
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG9.}{Por el momento no se puede realizar el registro.}
+
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+
+    \UCpaso Muestra la \IUref{IU1}{Principal}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA B -------------------------
+
+\begin{UCtrayectoriaA}{B}{El actor desea cancelar el registro de la elaboración y autorización de la Unidad de Aprendizaje.}
+
+\UCpaso[\UCactor] Presiona el botón \IUbutton{Cerrar}.
+
+\UCpaso Muestra el mensaje \MSGref{MSG30}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+
+\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Si}. [Trayectoria B.1]
+
+\UCpaso Muestra la \IUref{IU1}{Principal}
+
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA B.1-------------------------
+
+\begin{UCtrayectoriaA}{B.1}{El actor no desea cancelar el registro de la elaboración y autorización de la Unidad de Aprendizaje.}
+
+\UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
+
+\UCpaso Cierra el mensaje.
+
+\UCpaso Continua en el paso 8 de la trayectoria principal del \UCref{SP1-CU16}
+
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
+
+\begin{UCtrayectoriaA}{C}{Uno o más campos obligatorios no fueron contestados.}
+    \UCpaso Detecta uno o más campos sin contestar.
+
+    \UCpaso Muestra el mensaje \MSGdes{MSG44}{Este campo es requerido} debajo de los campos que no fueron contestados.
+
+    \UCpaso[\UCactor] Selecciona algún dato en los campos requeridos.
+
+    \UCpaso Continua en el paso 8 de la trayectoria principal del \UCref{SP1-CU16}
+\end{UCtrayectoriaA}
