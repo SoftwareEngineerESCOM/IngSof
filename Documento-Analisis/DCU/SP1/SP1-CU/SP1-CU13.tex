@@ -25,6 +25,7 @@
                 \item MSG8. Ya existe un libro con ese ISBN.
                 \item MSG25. Servicios no disponibles.
                 \item MSG58. Avances guardados exitosamente.
+                \item MSG65. Solo se permite seleccionar a lo más 3 autores.
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
@@ -58,7 +59,7 @@
     
     \UCpaso[\UCactor] Ingresa la editorial del libro que está siendo registrado.
 
-    \UCpaso[\UCactor] Ingresa el ISBN asociado al libro que está registrando con base en las reglas de negocio \BRref{BR21}{Un libro tiene un ISBN único.} y \BRref{BR22}{Longitud del ISBN}.
+    \UCpaso[\UCactor] Ingresa el ISBN asociado al libro que está registrando con base en la regla de negocio \BRref{BR21}{Un libro tiene un ISBN único}.
 
     \UCpaso[\UCactor] Selecciona el tipo de la bibliografía.
     
@@ -66,7 +67,7 @@
 
     \UCpaso[\UCactor] Selecciona si la bibliografía es clásica o no.
     
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria C] [Trayectoria D]
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria C] [Trayectoria D] [Trayectoria H]
 
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente contestados con base en la regla de negocio \BRref{BR13}{Todos los datos solicitados son obligatorios}. [Trayectoria E]
 
@@ -126,7 +127,7 @@
     \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU13}.
 \end{UCtrayectoriaA}
 
-%------------------------ CU TRAYECTORIA ALTERNARIVA F -------------------------
+%------------------------ CU TRAYECTORIA ALTERNATIVA F -------------------------
 
 \begin{UCtrayectoriaA}{F}{El ISBN que se intenta registrar ya existe en el sistema.}
     \UCpaso Encuentra un libro registrado con el mismo ISBN que el libro que se está registrando.
@@ -141,4 +142,13 @@
 	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Muestra la interfaz de usuario \IUref{RB}{Registrar Bibliografía}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA H -------------------------
+
+\begin{UCtrayectoriaA}{H}{El actor seleccionó a más de 3 autores de la lista, incumpliendo la \BRref{BR23}{Un libro con más de 3 autores es sólo citado por los primeros 3.}}
+    \UCpaso[\UCactor] Seleccionó más de 3 autores en la lista de autores disponibles.
+    \UCpaso El sistema muestra el mensaje \MSGref{MSG65}{Solo se permite seleccionar a lo más 3 autores}.
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU13}
 \end{UCtrayectoriaA}
