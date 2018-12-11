@@ -49,7 +49,7 @@
 
     \UCpaso Muestra la interfaz de usuario \IUref{RB}{Registrar Bibliografía}.
 
-    \UCpaso[\UCactor] Selecciona el(los) autor(es) de la lista de autores disponibles con base en la regla de negocio \BRref{BR23}{Un libro con más de 3 autores es sólo citado por los primeros 3.}. [Trayectoria B]
+    \UCpaso[\UCactor] Selecciona el(los) autor(es) de la lista de autores disponibles con base en la regla de negocio \BRref{BR23}{Un libro con más de 3 autores es sólo citado por los primeros 3.} [Trayectoria B]
     
     \UCpaso[\UCactor] Selecciona el año de publicación del libro que se está registrando.
     
@@ -122,7 +122,7 @@
 
 \begin{UCtrayectoriaA}{E}{Uno o más campos obligatorios no fueron contestados.}
     \UCpaso Detecta uno o más campos sin contestar.
-    \UCpaso Muestra el mensaje \MSGref{MSG4.}{Los campos marcados con (*) son obligatorios.}
+    \UCpaso Muestra el mensaje \MSGref{MSG4}{Los campos marcados con (*) son obligatorios.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 4 de la trayectoria principal del \UCref{SP1-CU13}.
 \end{UCtrayectoriaA}
@@ -131,7 +131,7 @@
 
 \begin{UCtrayectoriaA}{F}{El ISBN que se intenta registrar ya existe en el sistema.}
     \UCpaso Encuentra un libro registrado con el mismo ISBN que el libro que se está registrando.
-    \UCpaso Muestra el mensaje \MSGref{MSG8.}{Ya existe un libro con ese ISBN.}
+    \UCpaso Muestra el mensaje \MSGref{MSG8}{Ya existe un libro con ese ISBN.}
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
     \UCpaso Continua en el paso 9 de la trayectoria principal del \UCref{SP1-CU13}.
 \end{UCtrayectoriaA}
