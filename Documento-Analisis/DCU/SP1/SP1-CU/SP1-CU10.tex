@@ -76,7 +76,7 @@
     
     \UCpaso[\UCactor] Ingresa el porcentaje de la evaluación registrada anteriormente con base en la regla \BRref{BR25}{La suma de los porcentajes de cada evaluación debe ser igual a 100\%}.
     
-    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria F] [Trayectoria G]
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Finalizar}. [Trayectoria F] [Trayectoria G] [Trayectoria L]
     
     \UCpaso Verifica que todos los campos marcados como obligatorios hayan sido completamente llenados. [Trayectoria H]
     
@@ -192,4 +192,13 @@
 	\UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles}.
 	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
 	\UCpaso Muestra la interfaz de usuario \IUref{RRP}{Registrar Relación de Prácticas}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA L -------------------------
+
+\begin{UCtrayectoriaA}{L}{El sistema detecta que el número de prácticas no es consecutivo.}
+	\UCpaso Muestra el mensaje \MSGref{MSG64}{El número de prácticas tiene que ser consecutivo.}
+	\UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+	\UCpaso Muestra la interfaz de usuario \IUref{RRP}{Registrar Relación de Prácticas}.
+	\UCpaso Continua en el paso 6 de la trayectoria principal del \UCref{SP1-CU10}
 \end{UCtrayectoriaA}
