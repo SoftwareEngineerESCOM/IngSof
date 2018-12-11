@@ -1,0 +1,41 @@
+%FINALIZAR REGISTRO DE LA UA: NAIBI.
+\begin{UseCase}{SP1-CU19}{Finalizar el registro de la Unidad de Aprendizaje}{El actor podrá finalizar completamente el registro de una Unidad de Aprendizaje.}
+        \UCitem{Versión}{\color{Gray}1.0}
+        \UCitem{Autor}{\color{Gray}Ramírez Martínez Janet Naibi}
+        \UCitem{Supervisa}{\color{Gray}Ramírez Martínez Janet Naibi}
+        \UCitem{Actor}{\hyperlink{Docente}{Docente}}
+        \UCitem{Propósito}{Que el actor pueda finalizar el registro de una Unidad de Aprendizaje para que esta cambie su estatus en la interfaz de usuario \IUref{VTA}{Ver tareas}}
+        \UCitem{Origen}{Mouse}
+        \UCitem{Salidas}{
+            \begin{itemize}
+                \item MSG5. Registro finalizado exitosamente.
+                \item MSG67. Registro incompleto.
+            \end{itemize}
+        }
+        \UCitem{Destino}{Pantalla.}
+        \UCitem{Precondiciones}{El Docente debe de haber completado todo el registro de la Unidad de Aprendizaje}.
+        \UCitem{Postcondiciones}{
+            \begin{itemize}
+                \item La Unidad de Aprendizaje cambia de estado a finalizada.
+                \item La Unidad de Aprendizaje queda completamente guardada en el sistema.
+            \end{itemize}}
+        \UCitem{Errores}{}
+        \UCitem{Estado}{Revisión.}
+        \UCitem{Observaciones}{}
+\end{UseCase}
+
+%--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
+\begin{UCtrayectoria}{Principal}
+    \UCpaso[\UCactor] Selecciona la opción \IUbutton{Finalizar registro} del menú superior.
+    \UCpaso Muestra la interfaz de usuario \IUref{FR}{Finalizar Registro}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Finalizar Registro}. [Trayectoria A]
+    \UCpaso Muestra la interfaz de usuario \IUref{VTA}{Ver Tareas}
+\end{UCtrayectoria}
+
+%--------------------------- TRAYECTORIA ALTERNATIVA A -------------------------
+
+\begin{UCtrayectoriaA}{A}{El sistema detecta algún registro incompleto.}
+    \UCpaso Muestra el mensaje \MSGref{Registro incompleto.}
+    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
+    \UCpaso Muestra la interfaz de usuario \IUref{FR}{Finalizar Registro}.
+\end{UCtrayectoriaA}
