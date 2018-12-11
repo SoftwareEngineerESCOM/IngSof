@@ -1,21 +1,23 @@
+%ASIGNAR TAREAS: NAIBI.
+
 %REGISTRAR RECURSOS HUMANOS ENCARGADOS DEL DISEÑO/REDISEÑO DE LA UA: NAIBI.
 
-\begin{UseCase}{SP1-CU17}{Asignar Tareas}{El usuario podrá asignar tareas para el registro de Unidades de Aprendizaje a distintos Usuarios.}
-        \UCitem{Versión}{\color{Gray}1.0}
+\begin{UseCase}{SP1-CU17}{Asignar Tareas}{El actor podrá asignar tareas para el registro de Unidades de Aprendizaje a distintos recursos humanos.}
+        \UCitem{Versión}{\color{Gray}1.1}
         \UCitem{Autor}{\color{Gray}Ramírez Martínez Janet Naibi}
-        \UCitem{Supervisa}{\color{Gray}}
+        \UCitem{Supervisa}{\color{Gray}Ramírez Martínez Janet Naibi}
         \UCitem{Actor}{\hyperlink{JIE}{Jefe de Innovación Educativa}}
         \UCitem{Propósito}{Poder repartir el trabajo de registro de la Unidad de Aprendizaje.}
         \UCitem{Origen}{Mouse}
         \UCitem{Salidas}{
             \begin{itemize}
                 \item \MSGref{MSG25}{Servicios no disponibles.}
-                \item \MSGref{MSG63}{¿Desea asignar la tarea a otor Usuario?}
+                \item \MSGref{MSG63}{¿Desea asignar la tarea a otro Usuario?}
             \end{itemize}
         }
         \UCitem{Destino}{Pantalla.}
-        \UCitem{Precondiciones}{}
-        \UCitem{Postcondiciones}{El usuario al que se le asignó la tarea podrá ver la tarea y elaborarla.}
+        \UCitem{Precondiciones}{Se deben haber registrado las unidades de aprendizaje que se quieren asignar a algún recurso humano}.
+        \UCitem{Postcondiciones}{El usuario al que se le asignó la tarea podrá ver la tarea en su menú correspondiente y elaborarla.}
         \UCitem{Errores}{}
         \UCitem{Estado}{Revisión.}
         \UCitem{Observaciones}{}
@@ -23,25 +25,58 @@
 
 %--------------------------- CU TRAYECTORIA PRINCIPAL -------------------------
 \begin{UCtrayectoria}{Principal}
-    \UCpaso[\UCactor] Presiona el botón \BtnTask de la \IUref{IU1}{Principal}.
-    \UCpaso Muestra la pantalla \IUref{IU1}{Principal}.
-    \UCpaso[\UCactor] Selecciona el usuario al que le quiere asignar la tarea.
-    \UCpaso[\UCactor] Presiona el botón \IUbutton{Asignar}.
-    \UCpaso Muestra el mensaje \MSGref{MSG63}{¿Desea asignar la tarea a otor Usuario?}.[Trayectoria A]
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{No}.[Trayectoria B]
-    \UCpaso Muestra la pantalla \IUref{IU1}{Principal}.
+    \UCpaso[\UCactor] Presiona el botón \BtnTask de la interfaz de usuario \IUref{CMC-J}{Consultar mapa curricular}.
+    \UCpaso Muestra la interfaz de usuario \IUref{AUA}{Asignar Unidades de Aprendizaje}.
+    \UCpaso[\UCactor] Selecciona el recurso humano al que le quiere asignar la elaboración de la Unidad de Aprendizaje.
+    \UCpaso[\UCactor] Termina la operación presionando el botón \IUbutton{Asignar}. [Trayectoria A] [Trayectoria B] [Trayectoria C]
+    \UCpaso Muestra el mensaje \MSGref{MSG63}{¿Desea asignar la tarea a otro usuario?}.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{No}. [Trayectoria D]
+    \UCpaso Muestra la interfaz de usuario \IUref{UAU}{Asignar Unidades de Aprendizaje}.
 \end{UCtrayectoria}
 
 %------------------------ CU TRAYECTORIA ALTERNATIVA A -------------------------
 
-\begin{UCtrayectoriaA}{A}{El Actor no selecciona ningún usuario.}
-    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no Disponibles}.
+\begin{UCtrayectoriaA}{A}{El actor selecciona a un recurso humano que ya ha sido asignado a esa tarea previamente.}
+    \UCpaso Muestra el mensaje \MSGref{MSG66}{Esta tarea ya fue asignada}.
     \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Aceptar}.
-    \UCpaso Continúa en el paso 3 de la Trayectoria Principal.
+    \UCpaso Muestra la interfaz de usuario \IUref{UAU}{Asignar Unidades de Aprendizaje}.
+    \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{SP1-CU17}.
 \end{UCtrayectoriaA}
-%------------------------ CU TRAYECTORIA ALTERNATIVA B-------------------------
 
-\begin{UCtrayectoriaA}{B}{Los catálogos ``Academia'' y ``Recurso\_Humano'' están vacíos.}
-    \UCpaso[\UCactor] Cierra el mensaje presionando el botón \IUbutton{Si}.
-    \UCpaso Continúa en el paso 3 de la Trayectoria Principal para asignar a otro usuario.
+%------------------------ CU TRAYECTORIA ALTERNATIVA B -------------------------
+
+\begin{UCtrayectoriaA}{B}{El actor desea cancelar la asignación de recursos humanos a una tarea.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Cancelar}
+    \UCpaso Muestra el mensaje \MSGref{MSG29}{¿Está seguro que desea cancelar? Se perderán todos los avances sin guardar.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Si}. [Trayectoria B.1]
+    \UCpaso Cierra el mensaje.
+    \UCpaso Muestra la interfaz de usuario \IUref{CMC-J}{Consultar mapa curricular}.
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA B.1 -------------------------
+
+\begin{UCtrayectoriaA}{B.1}{El actor no desea cancelar la asignación de recursos humanos a una tarea.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{No}.
+    \UCpaso Cierra el mensaje.
+    \UCpaso Muestra la interfaz de usuario \IUref{UAU}{Asignar Unidades de Aprendizaje}.
+    \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{SP1-CU17}
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA C -------------------------
+
+\begin{UCtrayectoriaA}{C}{El actor no selecciona ningún recurso humano y quiere finalizar.}
+    \UCpaso[\UCactor] No selecciona ningún recurso humano.
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Asignar}.
+    \UCpaso Muestra el mensaje \MSGref{MSG25}{Servicios no disponibles.}
+    \UCpaso Muestra la interfaz de usuario \IUref{UAU}{Asignar Unidades de Aprendizaje}.
+    \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{SP1-CU17}
+\end{UCtrayectoriaA}
+
+%------------------------ CU TRAYECTORIA ALTERNATIVA D -------------------------
+
+\begin{UCtrayectoriaA}{D}{El actor quiere asignar a otro recurso humano para la elaboración de la Unidad de Aprendizaje.}
+    \UCpaso[\UCactor] Presiona el botón \IUbutton{Si}.
+    \UCpaso Cierra el mensaje.
+    \UCpaso Muestra la \IUref{UAU}{Asignar Unidades de Aprendizaje}.
+    \UCpaso Continua en el paso 3 de la trayectoria principal del \UCref{SP1-CU17}.
 \end{UCtrayectoriaA}
