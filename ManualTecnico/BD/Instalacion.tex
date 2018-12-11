@@ -1,0 +1,45 @@
+\chapter{Instalación}
+
+\subsection{Propósito}
+Este manual tiene como fin, dar una pequeña guía de modo que el personal encargado de dar mantenimiento o hacer actualizaciones pueda tener un entorno de trabajo completo y pueda poner en producción los cambios realizados
+
+\subsection{Instalación del entorno de trabajo}
+Para llevar a cabo el proceso de instalación, el área de trabajo tiene que tener instalado:
+\begin{itemize}
+  \item JDK 1.8
+  \item JRE 8
+  \item Maven 3.6
+\end{itemize}
+
+Seguido de eso, se describen las herramientas y tecnologías que requiere para el entorno del trabajo del sistema:
+\begin{itemize}
+	\item Spring tools suite 4+
+  \item Angular 6
+  \item Postgres 11
+  \item Ubuntu 18.04 LTS
+\end{itemize}
+De no tener java y maven instalado ejecute el archivo instaladorJ.sh, para que sea instalado el entorno completo.
+Si ya tiene java y maven, ejecute el archivo instalador.sh, estos archivos se encargarán de ejecutar e instalar todo el entorno de trabajo.
+Para postgres, se tiene un apartado en las hojas siguientes ya que es de vital importancia un entorno de desarrollo limpio para la base de datos.
+
+Para ejecutar alguno de los scripts se debe de ejecutar el siguiente comando:
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.1\linewidth]{images/tecnologias/spring.png}
+  \caption{Linea de comando que ejecuta instalarJ.sh para instalar el entorno de trabajo con java.}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.1\linewidth]{images/tecnologias/spring.png}
+  \caption{Linea de comando que ejecuta intalar.sh para instalar el entorno de trabajo.}
+\end{figure}
+
+
+También se necesita tener una cuenta de github y una cuenta en el servicio de heroku para hacer el levantamiento de producción, para crear una cuenta diríjase a los links presentados:
+\begin{itemize}
+  \item \href{https://codigofacilito.com/articulos/como-crear-una-cuenta-y-un-repo-en-github}{Github}
+  \item \href{https://signup.heroku.com/dc}{Heroku}
+\end{itemize}
