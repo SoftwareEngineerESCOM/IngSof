@@ -5,6 +5,7 @@
 \usepackage{listings}
 \usepackage{keystroke}
 \usepackage{fancybox}
+\usepackage{float}
 \RequirePackage{pgfkeys}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -75,9 +76,9 @@
 
 \newcommand{\MSGdes}[2]{%
 	\hypertarget{#1}{\subsection{#1 #2}}%
-	\begin{figure}[htbp!]%
+	\begin{figure}[H]%
 		\begin{center}%
-			\includegraphics[width=0.75\textwidth]{images/MSG/ancla}%
+			\includegraphics[width=0.75\textwidth]{images/MSG/#1}%
 			\caption{#1 #2}%
 			\label{#1}%
 		\end{center}%
